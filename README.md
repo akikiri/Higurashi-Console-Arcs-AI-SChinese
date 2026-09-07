@@ -38,6 +38,37 @@
 
 正文、分支、附录和 Tips 通常沿用对应篇章的前缀，可据此在 `HigurashiEp04_Data/StreamingAssets/Update` 中定位文件。
 
+### 目录结构
+
+```text
+Higurashi-Console-Arcs-AI-SChinese/
+├─ README.md                         项目说明与安装方法
+├─ CONTRIBUTING.md                   校对、修改及提交说明
+├─ CHANGELOG.md                      版本更新记录
+└─ HigurashiEp04_Data/
+   ├─ localization.json              07th-Mod 界面及菜单文本
+   ├─ tips.json                      Tips 名称与相关索引文本
+   └─ StreamingAssets/
+      ├─ Update/                     可直接校对的剧情源脚本
+      │  ├─ chapterselect.txt        篇章选择界面与章节入口
+      │  ├─ &opening.txt             启动提示等文本
+      │  ├─ &choicesdialog.txt       选择模式界面文本
+      │  ├─ init.txt                 脚本初始化设置
+      │  └─ <篇章前缀>_*.txt         正文、分支、附录及 Tips 脚本
+      └─ CG/                         已汉化的图片资源
+         ├─ logo.png                 标题 Logo
+         ├─ logoblack.png            黑色背景用标题 Logo
+         ├─ title02.png              小尺寸标题 Logo
+         ├─ scenario/                篇章选择界面的篇章说明图
+         │  └─ <篇章目录>/description.png
+         ├─ text/                    剧情内文字图、标题图及结尾图
+         └─ tips/                    Tips 内嵌文字图片
+```
+
+`Update` 中的 `.txt` 是主要翻译源文件。修改后，07th-Mod 会在游戏启动时重新生成相应的编译脚本；仓库不收录 `CompiledUpdateScripts` 缓存。
+
+仓库也不包含 `HigurashiEp04_Data/sharedassets0.assets`。该文件保存本补丁使用的中文字形，但体积超过 GitHub 普通 Git 文件限制，请从 Release 安装包取得。
+
 澪尽篇 PS2 版（`haji_*`）以及澪尽篇・表中的 `LConsoleArc==10` 专用分支不属于本补丁的已完成范围。
 
 ## 安装前提
