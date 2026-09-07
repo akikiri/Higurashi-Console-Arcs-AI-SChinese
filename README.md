@@ -134,6 +134,7 @@ HigurashiEp04_Data/StreamingAssets/Update
 ## 已知问题
 
 - 澪尽篇中的“澪”字和“袴”字目前无法正常显示。
+- 部分图片中的文字与正文译文存在差异。
 
 ## 说明
 
