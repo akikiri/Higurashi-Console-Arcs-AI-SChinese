@@ -129,7 +129,7 @@ HigurashiEp04_Data/StreamingAssets/Update
 - 部分翻译文本来源：[BV1AN7C66EZF](https://www.bilibili.com/video/BV1AN7C66EZF)（UP主：人工大黑）
 - 中文字形来源：[BV12ecbz1EDq](https://www.bilibili.com/video/BV12ecbz1EDq)（UP主：-雪原）
 - 补丁制作者已完整实机游玩一遍，并在实机过程中校对、修正文本与显示问题。
-- 感谢 07th-Mod 团队提供 Steam 版主机章节支持。
+- 本补丁基于 07th-Mod 的 Steam 版主机章节功能制作。
 
 ## 已知问题
 
