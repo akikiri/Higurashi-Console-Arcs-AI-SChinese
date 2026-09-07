@@ -1,0 +1,787 @@
+void main()
+{
+
+
+//*Kakera no Sekai Day 75
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//M5 コピー薬
+
+	DrawScene("background/tk_ryou3_01", 1000 );
+	PlayBGM( 1, "yoru", 128, 0 );
+	Wait( 2000 );
+	DrawScene("background/tk_ryou1", 1000 );
+	FadeOutBGM(1, 200, TRUE);
+	PlayBGM(2, "hm06_28", 128, 0);
+
+//野村rvS20/00/VTK2_nomura2001.「…いかがでしょうか？kvS20/00/VTK2_nomura2002.　手前味噌で大変恐縮ですが…この分野に博識な先生なら、このデータも少しは有益なものをご提供できるかと思うのですが」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2001", 256, TRUE);
+	OutputLine(NULL, "「…いかがでしょうか？",
+			NULL, "「……您觉得如何？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2002", 256, TRUE);
+	OutputLine(NULL, "　手前味噌で大変恐縮ですが…この分野に博識な先生なら、このデータも少しは有益なものをご提供できるかと思うのですが」",
+			NULL, "容我冒昧自卖自夸一句……若是像先生这样精通该领域的人，这些数据想必也能为您提供些许有益的参考。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2001.「有益どころか…宝の地図だよ、これは！kvS20/00/VTK2_chiba2002.　素晴らしい…実に素晴らしい！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2001", 256, TRUE);
+	OutputLine(NULL, "「有益どころか…宝の地図だよ、これは！",
+			NULL, "「何止有价值……这简直是藏宝图啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2002", 256, TRUE);
+	OutputLine(NULL, "　素晴らしい…実に素晴らしい！」",
+			NULL, "太精彩了……实在是太精彩了。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/file", 1000 );
+
+//rファイルに記された薬の組成式と、その効能…そして、臨床データを食い入るように熟読しながら、その男は興奮を抑えきれないといった表情で身を乗り出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ファイルに記された薬の組成式と、その効能…そして、臨床データを食い入るように熟読しながら、その男は興奮を抑えきれないといった表情で身を乗り出す。",
+			NULL, "他贪婪地熟读着文件中记载的药物组成式、功效以及临床数据，脸上难掩兴奋，身体也向前探了出去。", Line_Normal);
+	ClearMessage();
+
+//r目の前のテーブルには、山海の珍味をふんだんにちりばめた料理が並べられていたが、彼はまるで眼中にないとばかりに隅へと押しやって、ネクタイを緩め襟元をくつろげた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "目の前のテーブルには、山海の珍味をふんだんにちりばめた料理が並べられていたが、彼はまるで眼中にないとばかりに隅へと押しやって、ネクタイを緩め襟元をくつろげた。",
+			NULL, "眼前的餐桌上摆着琳琅满目的山珍海味，可他仿佛完全没看见似的把菜推到一旁，松开领带，让领口敞开。", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2003.「ニューロン…神経細胞やその間隙のシナプス回路にて伝達される電気信号の制御操作は、脳神経の分野において悲願とも言えるものだった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2003", 256, TRUE);
+	OutputLine(NULL, "「ニューロン…神経細胞やその間隙のシナプス回路にて伝達される電気信号の制御操作は、脳神経の分野において悲願とも言えるものだった」",
+			NULL, "「操控神经元……也就是神经细胞及其间突触回路所传导的电信号，一直可以说是脑神经领域的夙愿。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2004.「ゆえに、それを可能にできる物質を発見すれば、間違いなくその研究者はノーベル賞すら手中に収めることができるだろう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2004", 256, TRUE);
+	OutputLine(NULL, "「ゆえに、それを可能にできる物質を発見すれば、間違いなくその研究者はノーベル賞すら手中に収めることができるだろう」",
+			NULL, "「因此，若能发现让它成为可能的物质，那名研究者无疑连诺贝尔奖都能收入囊中。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "kami", 256, 64);
+
+//千葉rvS20/00/VTK2_chiba2005.「…渡辺くん。kvS20/00/VTK2_chiba2006.これは、本当に…本当に確かなデータなのかね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2005", 256, TRUE);
+	OutputLine(NULL, "「…渡辺くん。",
+			NULL, "「……渡边君。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2006", 256, TRUE);
+	OutputLine(NULL, "これは、本当に…本当に確かなデータなのかね？」",
+			NULL, "这真的是……确凿无误的数据吗？」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2003.「ええ…それにつきましては、アルファベットプロジェクト内のＣスタッフ責任者になり代わって、保障させていただきます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2003", 256, TRUE);
+	OutputLine(NULL, "「ええ…それにつきましては、アルファベットプロジェクト内のＣスタッフ責任者になり代わって、保障させていただきます」",
+			NULL, "「是的。关于这一点，我可以代表字母计划内C组负责人向您保证。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2004.「事実、先日にはもはや治療は不可能かと思われてきた患者が、この試験薬の投与によって正常な意識を取り戻しました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2004", 256, TRUE);
+	OutputLine(NULL, "「事実、先日にはもはや治療は不可能かと思われてきた患者が、この試験薬の投与によって正常な意識を取り戻しました」",
+			NULL, "「事实上，就在前几天，一名原本已被认为无法治疗的患者，在使用这种试验药后恢复了正常意识。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2005.「それどころか、一応定期的な投薬が必須とはなっておりますが…すでに退院して、通常の生活を問題なく送っております」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2005", 256, TRUE);
+	OutputLine(NULL, "「それどころか、一応定期的な投薬が必須とはなっておりますが…すでに退院して、通常の生活を問題なく送っております」",
+			NULL, "「不止如此，虽然仍需要定期服药，但她已经出院，能够正常生活了。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2007.「…いや、素晴らしい話だよ。kvS20/00/VTK2_chiba2008.まさか、この放射性物質にそれだけの効果があったとは…まったくもって、驚きだ。kvS20/00/VTK2_chiba2009.私も、目からうろこが落ちる思いだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2007", 256, TRUE);
+	OutputLine(NULL, "「…いや、素晴らしい話だよ。",
+			NULL, "「……哎呀，真是了不起。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2008", 256, TRUE);
+	OutputLine(NULL, "まさか、この放射性物質にそれだけの効果があったとは…まったくもって、驚きだ。",
+			NULL, "没想到这种放射性物质竟有如此功效……实在令人惊讶。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2009", 256, TRUE);
+	OutputLine(NULL, "私も、目からうろこが落ちる思いだよ」",
+			NULL, "我也有种茅塞顿开的感觉啊。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2006.「先生の御見識も、さすがです。kvS20/00/VTK2_nomura2007.組成式をお読みになられただけで、この薬の特殊性がご理解いただけるのですから。kvS20/00/VTK2_nomura2008.理事会の高名な先生方も、先生にはとてもかないませんわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2006", 256, TRUE);
+	OutputLine(NULL, "「先生の御見識も、さすがです。",
+			NULL, "「先生的见识也不愧是一流。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2007", 256, TRUE);
+	OutputLine(NULL, "組成式をお読みになられただけで、この薬の特殊性がご理解いただけるのですから。",
+			NULL, "只读了组成式，就能理解这种药的特殊性。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2008", 256, TRUE);
+	OutputLine(NULL, "理事会の高名な先生方も、先生にはとてもかないませんわ」",
+			NULL, "理事会那些高名望的先生们，也远远及不上您。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2010.「はっはっ…これでも私は、医学部の出身でね。kvS20/00/VTK2_chiba2011.将来は官僚か医者か、ずいぶん悩んで迷ったものだよ。kvS20/00/VTK2_chiba2012.もっとも…今になって思えば、何を悩む必要があったのやら」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2010", 256, TRUE);
+	OutputLine(NULL, "「はっはっ…これでも私は、医学部の出身でね。",
+			NULL, "「哈哈……我好歹也是医学部出身。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2011", 256, TRUE);
+	OutputLine(NULL, "将来は官僚か医者か、ずいぶん悩んで迷ったものだよ。",
+			NULL, "年轻时还曾为将来当官僚还是当医生而烦恼过呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2012", 256, TRUE);
+	OutputLine(NULL, "もっとも…今になって思えば、何を悩む必要があったのやら」",
+			NULL, "不过现在想来，那种事有什么好烦恼的。」", Line_Normal);
+	ClearMessage();
+
+//r男はふぅ、とため息をついて、喉の渇きを癒すようにビールを一気に飲み干す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "男はふぅ、とため息をついて、喉の渇きを癒すようにビールを一気に飲み干す。",
+			NULL, "男人呼地叹了口气，像是要滋润干渴的喉咙，一口气喝干了啤酒。", Line_Normal);
+	ClearMessage();
+
+//rすかさず、空になったグラスには彼と向き合って座る女性が瓶を傾け、中身を満たしていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "すかさず、空になったグラスには彼と向き合って座る女性が瓶を傾け、中身を満たしていった。",
+			NULL, "坐在他对面的女子立刻拿起酒瓶，为他的空杯重新斟满。", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2013.「…正直に言って、これまで私は、雛見沢症候群という風土病についてはあまり興味がなかったのだよ。kvS20/00/VTK2_chiba2014.核はともかく、生化学についてはぜひとも研究を進めたいものが他にも山ほどある」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2013", 256, TRUE);
+	OutputLine(NULL, "「…正直に言って、これまで私は、雛見沢症候群という風土病についてはあまり興味がなかったのだよ。",
+			NULL, "「……老实说，直到现在为止，我对雏见泽症候群这种地方病并没有多少兴趣。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2014", 256, TRUE);
+	OutputLine(NULL, "核はともかく、生化学についてはぜひとも研究を進めたいものが他にも山ほどある」",
+			NULL, "核研究姑且不论，生物化学方面还有许多我更想推进的研究。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2015.「それなのに小さな村に起きた、特殊な風土病に予算を割り当てるのは無駄遣いだ、とな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2015", 256, TRUE);
+	OutputLine(NULL, "「それなのに小さな村に起きた、特殊な風土病に予算を割り当てるのは無駄遣いだ、とな」",
+			NULL, "「把预算分配给一个小村子里出现的特殊地方病，在我看来简直是浪费。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2016.「実際、脳に入り込んだ寄生体が人の意思や精神をのっとっていたなんて話は、出来の悪いＳＦの類…医学的には論ずるに足りんことだ。kvS20/00/VTK2_chiba2017.…そう思わんかね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2016", 256, TRUE);
+	OutputLine(NULL, "「実際、脳に入り込んだ寄生体が人の意思や精神をのっとっていたなんて話は、出来の悪いＳＦの類…医学的には論ずるに足りんことだ。",
+			NULL, "「说什么侵入脑部的寄生体会夺取人的意志和精神，那种说法不过是拙劣科幻的范畴……医学上根本不值得讨论。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2017", 256, TRUE);
+	OutputLine(NULL, "…そう思わんかね？」",
+			NULL, "……你不这么认为吗？」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2009.「先生のおっしゃる通りです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2009", 256, TRUE);
+	OutputLine(NULL, "「先生のおっしゃる通りです」",
+			NULL, "「正如先生所说。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2010.「実際、小泉先生の多大なご功績には尊敬の念を禁じえませんが…あの鷹野とかいう女研究者に何らかの弱みでも握られているのでは、と邪推したくなるほどの贔屓ぶりでした」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2010", 256, TRUE);
+	OutputLine(NULL, "「実際、小泉先生の多大なご功績には尊敬の念を禁じえませんが…あの鷹野とかいう女研究者に何らかの弱みでも握られているのでは、と邪推したくなるほどの贔屓ぶりでした」",
+			NULL, "「事实上，小泉先生的巨大功绩固然令人敬佩，但他对那个叫鹰野的女研究员过分偏袒，甚至让人忍不住怀疑是不是被她抓住了什么把柄。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2011.「その点につきましては、予算を仕切って管理を行うはずの我々の力が及ばず、誠に申し訳なく思っております」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2011", 256, TRUE);
+	OutputLine(NULL, "「その点につきましては、予算を仕切って管理を行うはずの我々の力が及ばず、誠に申し訳なく思っております」",
+			NULL, "「在这一点上，作为本应负责统筹和管理预算的人，我们却力有未逮，实在万分抱歉。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2018.「いやいや…あの小泉翁に逆らうのは、なかなかもって大変なことだ。kvS20/00/VTK2_chiba2019.君たちのせいだとは思っておらんよ。kvS20/00/VTK2_chiba2020.…だが、この試験薬に汎用性があるというのは、bひょうたん.<瓢箪>から駒というやつだな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2018", 256, TRUE);
+	OutputLine(NULL, "「いやいや…あの小泉翁に逆らうのは、なかなかもって大変なことだ。",
+			NULL, "「哪里哪里……要违逆小泉翁，可不是件容易事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2019", 256, TRUE);
+	OutputLine(NULL, "君たちのせいだとは思っておらんよ。",
+			NULL, "我并不认为那是你们的错。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2020", 256, TRUE);
+	OutputLine(NULL, "…だが、この試験薬に汎用性があるというのは、瓢箪(ひょうたん)から駒というやつだな」",
+			NULL, "……不过，这种试验药竟有泛用性，真可谓意外收获啊。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2021.「実に運がいい！kvS20/00/VTK2_chiba2022.　新発見とは、無駄な研究から生まれ出ることが多いというが、まさにその通りだ！kvS20/00/VTK2_chiba2023.　ぜひ今後も、この試験薬のデータ収集に努めてくれたまえ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2021", 256, TRUE);
+	OutputLine(NULL, "「実に運がいい！",
+			NULL, "「运气真好啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2022", 256, TRUE);
+	OutputLine(NULL, "　新発見とは、無駄な研究から生まれ出ることが多いというが、まさにその通りだ！",
+			NULL, "人们常说新发现往往诞生于看似无用的研究，这次正是如此。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2023", 256, TRUE);
+	OutputLine(NULL, "　ぜひ今後も、この試験薬のデータ収集に努めてくれたまえ！」",
+			NULL, "今后也请务必继续收集这种试验药的数据。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2012.「くすくす…ありがとうございます。kvS20/00/VTK2_nomura2013.そう言ってくださると、私どもも実行に踏み切った甲斐がありました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2012", 256, TRUE);
+	OutputLine(NULL, "「くすくす…ありがとうございます。",
+			NULL, "「呵呵……非常感谢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2013", 256, TRUE);
+	OutputLine(NULL, "そう言ってくださると、私どもも実行に踏み切った甲斐がありました」",
+			NULL, "您这么说，我们冒险执行也算值得了。」", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "down", 0, 0, 500 );
+
+//r女は２冊のファイルにまとめられた資料を受け取ると、恭しく微笑んで頭を下げる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "女は２冊のファイルにまとめられた資料を受け取ると、恭しく微笑んで頭を下げる。",
+			NULL, "女人接过整理成两册文件的资料，恭敬地微笑着低下头。", Line_Normal);
+	ClearMessage();
+
+//r…それは、雛見沢症候群の治療薬として所長の入江京介が作り上げた『Ｃ１０３』を、通常の精神病患者に投与した臨床試験のデータが記録されたものだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…それは、雛見沢症候群の治療薬として所長の入江京介が作り上げた『Ｃ１０３』を、通常の精神病患者に投与した臨床試験のデータが記録されたものだった。",
+			NULL, "……其中记录的是一项临床试验的数据：将入江京介所长研制的雏见泽症候群治疗药『C103』用于普通精神疾病患者。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/tk_ryou1", 1000 );
+
+//千葉rvS20/00/VTK2_chiba2024.「どうも日本では、脳神経などの精神医学に対して偏見が深くてな。kvS20/00/VTK2_chiba2025.その病の兆候を感じても、心や性格の弱さを先に論じて治療を怠ったり、また患者を隔離するなど粗略に扱ったりする傾向がある」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2024", 256, TRUE);
+	OutputLine(NULL, "「どうも日本では、脳神経などの精神医学に対して偏見が深くてな。",
+			NULL, "「日本对脑神经等精神医学领域的偏见实在很深。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2025", 256, TRUE);
+	OutputLine(NULL, "その病の兆候を感じても、心や性格の弱さを先に論じて治療を怠ったり、また患者を隔離するなど粗略に扱ったりする傾向がある」",
+			NULL, "即使察觉到病症征兆，也常先归咎于心灵或性格软弱而耽误治疗，或把患者隔离，粗暴对待。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2026.「…嘆かわしい話だ。kvS20/00/VTK2_chiba2027.先進国の基準に達した今こそ、そういった『文明病』の解明とケアが必要だというのに」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2026", 256, TRUE);
+	OutputLine(NULL, "「…嘆かわしい話だ。",
+			NULL, "「……令人叹息。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2027", 256, TRUE);
+	OutputLine(NULL, "先進国の基準に達した今こそ、そういった『文明病』の解明とケアが必要だというのに」",
+			NULL, "如今既然已经达到发达国家的水准，正该着手查明并治疗这类『文明病』。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2014.「おっしゃる通りです。kvS20/00/VTK2_nomura2015.文明が発達した社会はあらゆる情報や知識で複雑になり、人々の精神への負担はこれからさらに増大してゆくでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2014", 256, TRUE);
+	OutputLine(NULL, "「おっしゃる通りです。",
+			NULL, "「您说得极是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2015", 256, TRUE);
+	OutputLine(NULL, "文明が発達した社会はあらゆる情報や知識で複雑になり、人々の精神への負担はこれからさらに増大してゆくでしょう」",
+			NULL, "文明发达的社会充斥着各种信息和知识，结构愈发复杂，人们承受的精神负担今后还会进一步增加。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2016.「…ですが、カウンセリングなどの心療では長い治療期間と医師の高いスキルが求められ、患者やその家族への金銭面等の負担もばかにはなりません」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2016", 256, TRUE);
+	OutputLine(NULL, "「…ですが、カウンセリングなどの心療では長い治療期間と医師の高いスキルが求められ、患者やその家族への金銭面等の負担もばかにはなりません」",
+			NULL, "「……然而，心理咨询等心理治疗需要漫长的疗程和医生高超的技术，患者及其家属在经济等方面的负担也绝不轻。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2017.「ですから、投薬などの物質的な治療への道が可能となれば、医師と患者双方にとって良い改善策となりうるはず。kvS20/00/VTK2_nomura2018.それを期待されて海外から参入したのが、かのローウェル製薬だったのですが…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2017", 256, TRUE);
+	OutputLine(NULL, "「ですから、投薬などの物質的な治療への道が可能となれば、医師と患者双方にとって良い改善策となりうるはず。",
+			NULL, "「因此，如果能开辟药物治疗等生理层面的治疗途径，对医生和患者双方而言，都应当会成为一种良好的改善方案。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2018", 256, TRUE);
+	OutputLine(NULL, "それを期待されて海外から参入したのが、かのローウェル製薬だったのですが…」",
+			NULL, "正是怀着这样的期待，洛威尔制药才从海外进军日本……」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2028.「その意味で、ローウェル社から製造販売されていたプラシルαは、精神疾患の治療に常々悩まされていた医師たちの手助けとなる特効薬になると、私も期待していたのだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2028", 256, TRUE);
+	OutputLine(NULL, "「その意味で、ローウェル社から製造販売されていたプラシルαは、精神疾患の治療に常々悩まされていた医師たちの手助けとなる特効薬になると、私も期待していたのだよ」",
+			NULL, "「从这个意义上说，我也曾期待洛威尔公司生产销售的普拉希尔α，能成为帮助那些一直苦于治疗精神疾病的医生们的特效药。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2029.「自己弁護になるかも知れんが、私なりに医薬界の未来を考えての措置だった。kvS20/00/VTK2_chiba2030.それが、一部のマスコミどもの軽挙妄動によってバッシングの嵐にさらされて…酷い目にあった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2029", 256, TRUE);
+	OutputLine(NULL, "「自己弁護になるかも知れんが、私なりに医薬界の未来を考えての措置だった。",
+			NULL, "「这么说或许有自我辩护之嫌，但那是我基于自己对医药界未来的考虑所采取的措施。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2030", 256, TRUE);
+	OutputLine(NULL, "それが、一部のマスコミどもの軽挙妄動によってバッシングの嵐にさらされて…酷い目にあった」",
+			NULL, "结果却被一部分媒体的轻率妄动卷入抨击风暴，吃尽了苦头。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2031.「あのおかげで、日本の精神医学の進歩は１０年遅れたと言っても過言ではないだろう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2031", 256, TRUE);
+	OutputLine(NULL, "「あのおかげで、日本の精神医学の進歩は１０年遅れたと言っても過言ではないだろう」",
+			NULL, "「拜那件事所赐，日本精神医学的发展说是迟滞了十年也不为过。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2019.「ご苦労、お察しいたします。kvS20/00/VTK2_nomura2020.…先生の御同輩の大沼氏も、それで失脚なさいましたものね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2019", 256, TRUE);
+	OutputLine(NULL, "「ご苦労、お察しいたします。",
+			NULL, "「您的辛劳，我完全可以体会。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2020", 256, TRUE);
+	OutputLine(NULL, "…先生の御同輩の大沼氏も、それで失脚なさいましたものね」",
+			NULL, "……先生的同僚大沼先生，也因此失势了呢。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2032.「…良いライバルだった。kvS20/00/VTK2_chiba2033.やつが先に次長に昇格した時は、その見識の高さから間違いなく事務次官、その後は政界に打って出るものと期待していたのだがな。kvS20/00/VTK2_chiba2034.ああいう形になって、本当に残念だよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2032", 256, TRUE);
+	OutputLine(NULL, "「…良いライバルだった。",
+			NULL, "「……他是个好对手。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2033", 256, TRUE);
+	OutputLine(NULL, "やつが先に次長に昇格した時は、その見識の高さから間違いなく事務次官、その後は政界に打って出るものと期待していたのだがな。",
+			NULL, "他率先升任次长时，我看重他的过人见识，认定他必将成为事务次官，之后甚至会进军政界。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2034", 256, TRUE);
+	OutputLine(NULL, "ああいう形になって、本当に残念だよ」",
+			NULL, "最后变成那种局面，实在令人遗憾。」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	DrawScene("black", 1000 );
+	PlayBGM( 1, "yoru", 128, 0 );
+
+//rしみじみと顔を伏せて、男はグラスを口元に寄せる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しみじみと顔を伏せて、男はグラスを口元に寄せる。",
+			NULL, "男人感慨万千地垂下头，把酒杯送到嘴边。", Line_Normal);
+	ClearMessage();
+
+//r…だから、気付かなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…だから、気付かなかった。",
+			NULL, "……所以，他没有察觉。", Line_Normal);
+	ClearMessage();
+
+//rその時、女が何ともいえぬ笑みを浮かべていたことに…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、女が何ともいえぬ笑みを浮かべていたことに…。",
+			NULL, "他没有察觉，那一刻女人脸上正浮现出一抹难以形容的笑容……", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2021.「…先生。kvS20/00/VTK2_nomura2022.実はそのことで、折り入ってご相談があるんです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2021", 256, TRUE);
+	OutputLine(NULL, "「…先生。",
+			NULL, "「……先生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2022", 256, TRUE);
+	OutputLine(NULL, "実はそのことで、折り入ってご相談があるんです」",
+			NULL, "其实关于这件事，我有一件要紧的事情想同您商量。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2035.「ん…何かね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2035", 256, TRUE);
+	OutputLine(NULL, "「ん…何かね？」",
+			NULL, "「嗯？什么事？」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	DrawScene("background/tk_ryou1", 1000 );
+	PlayBGM(2, "hm02_12", 128, 0);
+
+//野村rvS20/00/VTK2_nomura2023.「医薬界の未来をご案じになられている先生を見込んで、腹を割って申し上げます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2023", 256, TRUE);
+	OutputLine(NULL, "「医薬界の未来をご案じになられている先生を見込んで、腹を割って申し上げます」",
+			NULL, "「我正是看中先生忧心医药界未来，才愿意坦诚相告。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2024.「先日、私のもとにローウェル社のエージェントが接触してきまして…ぜひとも先生と一度ご会合の機会をいただきたい、との依頼を承りました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2024", 256, TRUE);
+	OutputLine(NULL, "「先日、私のもとにローウェル社のエージェントが接触してきまして…ぜひとも先生と一度ご会合の機会をいただきたい、との依頼を承りました」",
+			NULL, "「前些日子，洛威尔公司的代理人与我接触，委托我务必请先生给他们一次会面的机会。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2025.「内容は、かつての『プラシル』の改良薬に関して…だそうです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2025", 256, TRUE);
+	OutputLine(NULL, "「内容は、かつての『プラシル』の改良薬に関して…だそうです」",
+			NULL, "「据说会谈内容是关于过去那种『普拉希尔』的改良药。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2036.「プラシルの…改良薬？kvS20/00/VTK2_chiba2037.　どういうことかね。kvS20/00/VTK2_chiba2038.まさか、また国内で販売する仲介をとってくれとでもいうつもりか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2036", 256, TRUE);
+	OutputLine(NULL, "「プラシルの…改良薬？",
+			NULL, "「普拉希尔的……改良药？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2037", 256, TRUE);
+	OutputLine(NULL, "　どういうことかね。",
+			NULL, "这是怎么回事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2038", 256, TRUE);
+	OutputLine(NULL, "まさか、また国内で販売する仲介をとってくれとでもいうつもりか？」",
+			NULL, "难道他们又想让我出面牵线，在国内销售吗？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r男は眉をひそめて、露骨に不快な表情を作る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "男は眉をひそめて、露骨に不快な表情を作る。",
+			NULL, "男人皱起眉头，露出了毫不掩饰的不快表情。", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 255, 255, 255, 255, 0, 250, TRUE );
+	DrawScene("background/mati12", 1000 );
+
+//r先年のローウェル訴訟とその後の疑獄は、プラシルの薬害問題が発端となって起きた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "先年のローウェル訴訟とその後の疑獄は、プラシルの薬害問題が発端となって起きた。",
+			NULL, "数年前的洛威尔诉讼以及之后的疑狱，正是由普拉希尔药害问题引发的。", Line_Normal);
+	ClearMessage();
+
+//rゆえに日本国内では現在、プラシルの名前は禁忌となっている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆえに日本国内では現在、プラシルの名前は禁忌となっている。",
+			NULL, "因此，在如今的日本国内，普拉希尔这个名字已经成了禁忌。", Line_Normal);
+	ClearMessage();
+
+//rそんな世情の中、たとえ改良薬といっても『プラシル』の名のついた薬を国内に持ち込んで、流通させられるわけがない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな世情の中、たとえ改良薬といっても『プラシル』の名のついた薬を国内に持ち込んで、流通させられるわけがない。",
+			NULL, "在这样的社会环境下，即便说是改良药，也不可能把冠有『普拉希尔』之名的药物带入国内并加以流通。", Line_Normal);
+	ClearMessage();
+
+//rしかも仲介したとなれば痛くもない腹を探られて、疑惑の目を向けられるのがおちだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかも仲介したとなれば痛くもない腹を探られて、疑惑の目を向けられるのがおちだ。",
+			NULL, "更何况一旦参与牵线，就会被人无端追查，招来怀疑的目光。", Line_Normal);
+	ClearMessage();
+
+//r最悪の場合その嫌疑がもとで、せっかく確立した今の地位を失うことだってありうるだろう…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "最悪の場合その嫌疑がもとで、せっかく確立した今の地位を失うことだってありうるだろう…。",
+			NULL, "最糟糕的情况下，甚至可能因那份嫌疑，失去好不容易才确立起来的地位……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeFilm( 250, TRUE );
+
+//千葉r-vS20/00/VTK2_chiba2039.（…冗談ではない）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2039", 256, TRUE);
+	OutputLine(NULL, "（…冗談ではない）",
+			NULL, "（……开什么玩笑。）", Line_Normal);
+	ClearMessage();
+
+//r医薬界の発展に貢献したいという気持ちは多少ある。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "医薬界の発展に貢献したいという気持ちは多少ある。",
+			NULL, "他多少也怀有为医药界发展作出贡献的意愿。", Line_Normal);
+	ClearMessage();
+
+//r…だが、それも自分の立場の安全を確保した上での話だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…だが、それも自分の立場の安全を確保した上での話だ。",
+			NULL, "……但那也必须建立在确保自身立场安全的基础上。", Line_Normal);
+	ClearMessage();
+
+//r国内経済は順調に成長しており、与党は可もなく不可もなくとはいえ大衆の支持を集めて、その中でも五本の指に入る実力者の彼は、将来の首相の座が約束されている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "国内経済は順調に成長しており、与党は可もなく不可もなくとはいえ大衆の支持を集めて、その中でも五本の指に入る実力者の彼は、将来の首相の座が約束されている。",
+			NULL, "国内经济顺利成长，执政党虽然称不上尽善尽美，却仍获得大众支持。而他作为其中屈指可数的实力派，未来的首相之位已经近在眼前。", Line_Normal);
+	ClearMessage();
+
+//r…にもかかわらず危ない橋を渡ってまで、名声を築き上げる必要はどこにもない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…にもかかわらず危ない橋を渡ってまで、名声を築き上げる必要はどこにもない。",
+			NULL, "……正因如此，他没有必要冒险渡过危桥去建立名声。", Line_Normal);
+	ClearMessage();
+
+//r正直に言って、理想は自らを飾り立てる建前と方便であり…何よりも貴重なのは現実だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "正直に言って、理想は自らを飾り立てる建前と方便であり…何よりも貴重なのは現実だった。",
+			NULL, "老实说，理想不过是装点自身的门面和权宜之辞，最宝贵的终究还是现实利益。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/tk_ryou1", 1000 );
+
+//野村rvS20/00/VTK2_nomura2026.「いえ、私がご相談したいのは、そんな無意味なことではありません。kvS20/00/VTK2_nomura2027.…先生。kvS20/00/VTK2_nomura2028.あなたは小泉先生のお立場に、ご自分がなってみたいと考えてことはございませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2026", 256, TRUE);
+	OutputLine(NULL, "「いえ、私がご相談したいのは、そんな無意味なことではありません。",
+			NULL, "「不，我想与您商谈的并非那种无意义的事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2027", 256, TRUE);
+	OutputLine(NULL, "…先生。",
+			NULL, "……先生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2028", 256, TRUE);
+	OutputLine(NULL, "あなたは小泉先生のお立場に、ご自分がなってみたいと考えてことはございませんか？」",
+			NULL, "您可曾想过，自己也站到小泉先生的那个位置上？」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+
+//千葉rvS20/00/VTK2_chiba2040.「…なに？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2040", 256, TRUE);
+	OutputLine(NULL, "「…なに？」",
+			NULL, "「……什么？」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm06_30", 128, 0);
+
+//野村rvS20/00/VTK2_nomura2029.「製薬業は、その産業の特殊性から食品や繊維などの軽化学や、製鉄・機械などの重化学…はては軍事にまでその影響力を持つ分野です」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2029", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "「製薬業は、その産業の特殊性から食品や繊維などの軽化学や、製鉄・機械などの重化学…はては軍事にまでその影響力を持つ分野です」",
+			NULL, "「制药业由于产业的特殊性，影响范围遍及食品、纤维等轻化工业，炼钢、机械等重化工业……甚至延伸到军事领域。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2030.「しかも薬は、そのノウハウさえ発見できれば低コストで大量に、しかも公定価格によって高利益が保証された商品のため、一獲千金が容易い産業と言われております」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2030", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "「しかも薬は、そのノウハウさえ発見できれば低コストで大量に、しかも公定価格によって高利益が保証された商品のため、一獲千金が容易い産業と言われております」",
+			NULL, "「而且药品只要掌握了制造诀窍，就能以低成本大量生产，又有公定价格保证高额利润，因此也被称为容易一夜暴富的产业。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2031.「戦前の日本におきましても、新興財閥を築き上げた大半の企業が金融を除けば製薬・製剤などの化学工業であった事実は、歴史が証明しているところです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2031", 256, TRUE);
+	OutputLine(NULL, "「戦前の日本におきましても、新興財閥を築き上げた大半の企業が金融を除けば製薬・製剤などの化学工業であった事実は、歴史が証明しているところです」",
+			NULL, "「战前日本也一样。除金融业外，多数建立新兴财阀的企业都出身于制药、制剂等化学工业，这一点已有历史证明。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2041.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2041", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2032.「しかし…残念ながら戦後、日本国内では薬剤の認可を下す審査が非常に厳しくなり、新薬の開発にかかる期間と経費は莫大なものとなりました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2032", 256, TRUE);
+	OutputLine(NULL, "「しかし…残念ながら戦後、日本国内では薬剤の認可を下す審査が非常に厳しくなり、新薬の開発にかかる期間と経費は莫大なものとなりました」",
+			NULL, "「然而遗憾的是，战后日本国内的药品审批变得极为严格，新药开发所需的时间和经费也膨胀到惊人的程度。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2033.「だからといって、他社の開発した薬のコピー…『ゾロゾロ品』を安価で売りさばいたところで、儲けなどたかが知れている」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2033", 256, TRUE);
+	OutputLine(NULL, "「だからといって、他社の開発した薬のコピー…『ゾロゾロ品』を安価で売りさばいたところで、儲けなどたかが知れている」",
+			NULL, "「可是，廉价贩卖其他公司开发药品的仿制品，终究也只能赚些蝇头小利。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2034.「ならば国内の認可など求めず、新薬を売りさばく道を探し出す…そういう発想の転換は、いかがでしょうか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2034", 256, TRUE);
+	OutputLine(NULL, "「ならば国内の認可など求めず、新薬を売りさばく道を探し出す…そういう発想の転換は、いかがでしょうか？」",
+			NULL, "「那么，换个思路，寻找一条绕过国内审批、直接销售新药的道路如何？」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2042.「なっ…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2042", 256, TRUE);
+	OutputLine(NULL, "「なっ…？！」",
+			NULL, "「什……？！」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2035.「このＣ１０３は試験薬のため、おそらく雛見沢症候群の研究とともに封印されるでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2035", 256, TRUE);
+	OutputLine(NULL, "「このＣ１０３は試験薬のため、おそらく雛見沢症候群の研究とともに封印されるでしょう」",
+			NULL, "「这种C103是试验药，恐怕会随着雏见泽症候群研究一同被封印。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2036.「世に出そうと目論んだところで、認可を得るまでにさらに１０年以上の時間が必要となり、その間に他国が新薬を開発して、時代遅れの産物となる可能性が高い」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2036", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "「世に出そうと目論んだところで、認可を得るまでにさらに１０年以上の時間が必要となり、その間に他国が新薬を開発して、時代遅れの産物となる可能性が高い」",
+			NULL, "「即使打算推向市场，取得许可还需要十年以上。在此期间，其他国家很可能已经开发出新药，使它沦为过时的产物。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2037.「…ですが、先生もおっしゃいました通り現時点では間違いなく、革命的な薬なのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2037", 256, TRUE);
+	OutputLine(NULL, "「…ですが、先生もおっしゃいました通り現時点では間違いなく、革命的な薬なのです」",
+			NULL, "「……不过，正如先生所说，至少在现阶段，它无疑是革命性的药物。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2038.「そのために私たちは、危険を冒してまで先生のため、このＣ１０３のノウハウを秘密裏に持ち出し、人道に反してまで臨床実験を重ねてまいりました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2038", 256, TRUE);
+	OutputLine(NULL, "「そのために私たちは、危険を冒してまで先生のため、このＣ１０３のノウハウを秘密裏に持ち出し、人道に反してまで臨床実験を重ねてまいりました」",
+			NULL, "「为此，我们不惜为先生冒险，秘密带出了这种C103的技术诀窍，甚至违背人道反复进行了临床实验。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2043.「…つまり君は、…この薬のデータを、ローウェル社に売れ…というのか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2043", 256, TRUE);
+	OutputLine(NULL, "「…つまり君は、…この薬のデータを、ローウェル社に売れ…というのか？」",
+			NULL, "「……也就是说，你要我……把这种药物的数据卖给洛威尔公司？」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2039.「そうです。kvS20/00/VTK2_nomura2040.もし、入江機関がこの薬の効能を知って、権利を日本国内の企業に売りつけたところで、先生が関与できるのは薬事審議会への口添えだけでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2039", 256, TRUE);
+	OutputLine(NULL, "「そうです。",
+			NULL, "「正是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2040", 256, TRUE);
+	OutputLine(NULL, "もし、入江機関がこの薬の効能を知って、権利を日本国内の企業に売りつけたところで、先生が関与できるのは薬事審議会への口添えだけでしょう」",
+			NULL, "就算入江机关知道了这种药物的功效，并把权利卖给日本国内企业，先生能参与的恐怕也只是替它在药事审议会上美言几句。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2041.「そんなことで、先生の懐に入り込む額などたかだか知れたもの」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2041", 256, TRUE);
+	OutputLine(NULL, "「そんなことで、先生の懐に入り込む額などたかだか知れたもの」",
+			NULL, "「那样能落进先生口袋里的金额，终究有限。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2042.「ですが、ローウェル社が現在進めている改良型プラシルの研究にこのデータを提示すれば、彼らは以前の名誉挽回とばかりにこれらを高く買い取ろうとするでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2042", 256, TRUE);
+	OutputLine(NULL, "「ですが、ローウェル社が現在進めている改良型プラシルの研究にこのデータを提示すれば、彼らは以前の名誉挽回とばかりにこれらを高く買い取ろうとするでしょう」",
+			NULL, "「可是，只要把这些数据提供给洛威尔公司正在推进的改良型普拉希尔研究，他们一定会为了挽回昔日名誉，高价买下。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2043.「もちろん、権利の所在は先生にありますから、売上ごとにマージンが追加されます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2043", 256, TRUE);
+	OutputLine(NULL, "「もちろん、権利の所在は先生にありますから、売上ごとにマージンが追加されます」",
+			NULL, "「当然，权利归先生所有，每一笔销售都会为您追加分成。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2044.「薬の独占権が５年間だとしても、その間に入ってくる利益は数十億…いえ、ローウェル社が世界的な企業であることを考慮すれば、その額は数百億にも達すると思われます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2044", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "「薬の独占権が５年間だとしても、その間に入ってくる利益は数十億…いえ、ローウェル社が世界的な企業であることを考慮すれば、その額は数百億にも達すると思われます」",
+			NULL, "「即便药品的独占权只有五年，其间获得的利润也有数十亿……不，考虑到洛威尔公司是世界级企业，金额恐怕会达到数百亿。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2045.「その富をバックにして、財界と政界を牛耳り…以後何十年にもわたって、先生が閣僚の顔ぶれを決定する…。kvS20/00/VTK2_nomura2046.…ふふふ、どうです？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2045", 256, TRUE);
+	OutputLine(NULL, "「その富をバックにして、財界と政界を牛耳り…以後何十年にもわたって、先生が閣僚の顔ぶれを決定する…。",
+			NULL, "「以那笔财富为后盾，掌控财界与政界……此后数十年，由先生决定阁僚人选。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2046", 256, TRUE);
+	OutputLine(NULL, "…ふふふ、どうです？」",
+			NULL, "……呵呵呵，您觉得如何？」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2047.「先生は、それだけの地位に就いてもおかしくない…我が国にとって貴重なお方だと、私は思っております」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2047", 256, TRUE);
+	OutputLine(NULL, "「先生は、それだけの地位に就いてもおかしくない…我が国にとって貴重なお方だと、私は思っております」",
+			NULL, "「我认为，先生完全有资格站到那样的位置上……您是我国珍贵的人才。」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2044.「…渡辺くん。kvS20/00/VTK2_chiba2045.君は、アルファベットプロジェクトが発足した当初の目的を知った上で、私にそう言ってるのかね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2044", 256, TRUE);
+	OutputLine(NULL, "「…渡辺くん。",
+			NULL, "「……渡边君。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2045", 256, TRUE);
+	OutputLine(NULL, "君は、アルファベットプロジェクトが発足した当初の目的を知った上で、私にそう言ってるのかね？」",
+			NULL, "你是在明知字母计划创设初衷的前提下，对我说这些吗？」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2046.「研究会で発見されたノウハウを外国に売るなど…明らかに背信行為ではないか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2046", 256, TRUE);
+	OutputLine(NULL, "「研究会で発見されたノウハウを外国に売るなど…明らかに背信行為ではないか」",
+			NULL, "「把研究会发现的技术诀窍卖给外国……这显然是背叛行为。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2048.「確かに…外国勢力に対抗するだけの次世代兵器を開発することが、このプロジェクトの骨子ではありました。kvS20/00/VTK2_nomura2049.ですが…現実にはどうです？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2048", 256, TRUE);
+	OutputLine(NULL, "「確かに…外国勢力に対抗するだけの次世代兵器を開発することが、このプロジェクトの骨子ではありました。",
+			NULL, "「确实，开发足以对抗外国势力的次世代兵器，是这个项目的核心。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2049", 256, TRUE);
+	OutputLine(NULL, "ですが…現実にはどうです？」",
+			NULL, "但现实又如何呢？」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2050.「冷戦状態が継続しているとはいえ、戦争が外交手段の一つと居直られていた時代は、すでに終わりました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2050", 256, TRUE);
+	OutputLine(NULL, "「冷戦状態が継続しているとはいえ、戦争が外交手段の一つと居直られていた時代は、すでに終わりました」",
+			NULL, "「冷战状态虽仍在持续，但将战争堂而皇之地视作外交手段之一的时代，已经结束了。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2051.「今後の国家間の力関係を決定するのは政治力もさることながら、それを裏付ける経済力です。kvS20/00/VTK2_nomura2052.核ミサイルをいくら持とうとも、それで恫喝して相手に言うことを聞かせるのはもはや、時代遅れ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2051", 256, TRUE);
+	OutputLine(NULL, "「今後の国家間の力関係を決定するのは政治力もさることながら、それを裏付ける経済力です。",
+			NULL, "「今后决定国家间力量关系的，除了政治力，更是支撑政治力的经济力。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2052", 256, TRUE);
+	OutputLine(NULL, "核ミサイルをいくら持とうとも、それで恫喝して相手に言うことを聞かせるのはもはや、時代遅れ」",
+			NULL, "无论拥有多少核导弹，靠它们恫吓对方服从的做法都已经过时了。」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2053.「…ならば、先生のような高潔の士に権力の座についていただいた上で、どのような形であれ日本国内に外貨を流入させる方策をとることこそ、真の愛国的行為ではありませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2053", 256, TRUE);
+	OutputLine(NULL, "「…ならば、先生のような高潔の士に権力の座についていただいた上で、どのような形であれ日本国内に外貨を流入させる方策をとることこそ、真の愛国的行為ではありませんか？」",
+			NULL, "「……那么，请先生这样高洁的人士坐上权力之位，并以某种形式为日本引入外汇，这才是真正的爱国行为吧？」", Line_Normal);
+	ClearMessage();
+
+//千葉rvS20/00/VTK2_chiba2047.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千葉</color>", NULL, "<color=#f5e6d3>千叶</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_chiba2047", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//野村rvS20/00/VTK2_nomura2054.「どうか、よく…お考えください。kvS20/00/VTK2_nomura2055.私は、先生のお人柄に惚れて、あなた様に絶対の忠誠を誓う者です。kvS20/00/VTK2_nomura2056.どうかそのことだけは、心の片隅にでもお留めおかれましたら幸甚でございます…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2054", 256, TRUE);
+	OutputLine(NULL, "「どうか、よく…お考えください。",
+			NULL, "「请您好好考虑。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2055", 256, TRUE);
+	OutputLine(NULL, "私は、先生のお人柄に惚れて、あなた様に絶対の忠誠を誓う者です。",
+			NULL, "我倾慕先生的人格，愿向您宣誓绝对忠诚。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>野村</color>", NULL, "<color=#f5e6d3>野村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_nomura2056", 256, TRUE);
+	OutputLine(NULL, "どうかそのことだけは、心の片隅にでもお留めおかれましたら幸甚でございます…」",
+			NULL, "若您能将这一点留在心中一隅，我便万分荣幸……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//r渡辺と呼ばれた女が、その男の執務室に呼ばれたのは…それから２日後のことだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "渡辺と呼ばれた女が、その男の執務室に呼ばれたのは…それから２日後のことだった。",
+			NULL, "被称作渡边的女人，被叫到那个男人的办公室，是两天后的事。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

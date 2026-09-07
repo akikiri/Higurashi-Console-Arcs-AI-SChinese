@@ -1,0 +1,463 @@
+void main()
+{
+
+
+//*Tokihogushi TIPS 5
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//末期の水
+
+	DrawScene("white", 1000 );
+	PlayBGM( 1, "addse09", 128, 0 );
+	DrawScene("background/kukou1", 1000 );
+
+//？？？rvS20/32/VTT_hanada3003.「…それにしても、お見事な手際でしたね。kvS20/32/VTT_hanada3004.ターゲットはわりと体格のいい少年でしたから、証拠も残さずどのようにして仕留めるのかと思っておりましたが…まさか、自分から窓を乗り越えさせるとは」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3003", 256, TRUE);
+	OutputLine(NULL, "「…それにしても、お見事な手際でしたね。",
+			NULL, "「……话说回来，您的手法真是漂亮。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3004", 256, TRUE);
+	OutputLine(NULL, "ターゲットはわりと体格のいい少年でしたから、証拠も残さずどのようにして仕留めるのかと思っておりましたが…まさか、自分から窓を乗り越えさせるとは」",
+			NULL, "目标是个体格相当健壮的少年，我还在想您要如何不留下证据地除掉他……没想到竟让他自己翻过了窗户」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3005.「さすがは、我々が見込んだだけのことはある」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3005", 256, TRUE);
+	OutputLine(NULL, "「さすがは、我々が見込んだだけのことはある」",
+			NULL, "「不愧是我们看中的人」", Line_Normal);
+	ClearMessage();
+
+//平沼rvS20/00/VTT_hiranuma3001.「くすくす、…あまりおだてないでください。kvS20/00/VTT_hiranuma3002.入院患者の世話を長らく勤めていたおかげで、ああいった場合の行動心理が少しは理解できるようになっただけですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>平沼</color>", NULL, "<color=#f5e6d3>平沼</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3001", 256, TRUE);
+	OutputLine(NULL, "「くすくす、…あまりおだてないでください。",
+			NULL, "「呵呵……请别太捧我。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3002", 256, TRUE);
+	OutputLine(NULL, "入院患者の世話を長らく勤めていたおかげで、ああいった場合の行動心理が少しは理解できるようになっただけですよ」",
+			NULL, "我只是长期照料住院患者，所以多少能理解人在那种情况下会采取什么行动而已」", Line_Normal);
+	ClearMessage();
+
+//rあからさまにお世辞とわかってはいたが、それでもいい気分には違いない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あからさまにお世辞とわかってはいたが、それでもいい気分には違いない。",
+			NULL, "虽然明知道那是露骨的奉承，可心情还是很好。", Line_Normal);
+	ClearMessage();
+
+//rなにしろ、自分でもここまで上手くいくとは思っていなかったほどの、会心のトリックだったからだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なにしろ、自分でもここまで上手くいくとは思っていなかったほどの、会心のトリックだったからだ。",
+			NULL, "毕竟，这个计策成功得如此漂亮，连她自己都没有料到。", Line_Normal);
+	ClearMessage();
+
+//平沼rvS20/00/VTT_hiranuma3003.「窓の施錠については管理責任を問われましたが、それも厳重注意程度で済みました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>平沼</color>", NULL, "<color=#f5e6d3>平沼</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3003", 256, TRUE);
+	OutputLine(NULL, "「窓の施錠については管理責任を問われましたが、それも厳重注意程度で済みました」",
+			NULL, "「关于窗户上锁的问题，我被追究了管理责任，不过也只受到了严厉警告」", Line_Normal);
+	ClearMessage();
+
+//平沼rvS20/00/VTT_hiranuma3004.「警察も、その程度で業務上過失致死罪を突きつけてくるはずはありませんしね。kvS20/00/VTT_hiranuma3005.その上で管理不行き届きの責任を取って辞職とあっても、誰も疑う人はいませんわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>平沼</color>", NULL, "<color=#f5e6d3>平沼</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3004", 256, TRUE);
+	OutputLine(NULL, "「警察も、その程度で業務上過失致死罪を突きつけてくるはずはありませんしね。",
+			NULL, "「警方也不会因为这点事就追究业务过失致死罪。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3005", 256, TRUE);
+	OutputLine(NULL, "その上で管理不行き届きの責任を取って辞職とあっても、誰も疑う人はいませんわ」",
+			NULL, "之后我再以管理不善为由辞职，也不会有人怀疑」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3006.「まったくです。kvS20/32/VTT_hanada3007.その完全犯罪の見返りは、お約束どおり相応のもので応えさせていただきますよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3006", 256, TRUE);
+	OutputLine(NULL, "「まったくです。",
+			NULL, "「确实如此。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3007", 256, TRUE);
+	OutputLine(NULL, "その完全犯罪の見返りは、お約束どおり相応のもので応えさせていただきますよ」",
+			NULL, "作为那场完美犯罪的回报，我们会按照约定奉上相应的酬劳」", Line_Normal);
+	ClearMessage();
+
+//平沼rvS20/00/VTT_hiranuma3006.「ありがとうございます。kvS20/00/VTT_hiranuma3007.着いた先で通帳を開いてみるのが楽しみですわ。kvS20/00/VTT_hiranuma3008.くすくす…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>平沼</color>", NULL, "<color=#f5e6d3>平沼</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3006", 256, TRUE);
+	OutputLine(NULL, "「ありがとうございます。",
+			NULL, "「谢谢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3007", 256, TRUE);
+	OutputLine(NULL, "着いた先で通帳を開いてみるのが楽しみですわ。",
+			NULL, "我很期待到达目的地后打开存折看看余额。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3008", 256, TRUE);
+	OutputLine(NULL, "くすくす…」",
+			NULL, "呵呵……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r…その金額の代償として、長年勤め上げた職を放り投げることには、何の未練も無かった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…その金額の代償として、長年勤め上げた職を放り投げることには、何の未練も無かった。",
+			NULL, "……为了那笔钱而抛弃自己工作多年的职位，她没有丝毫留恋。", Line_Normal);
+	ClearMessage();
+
+//r昼夜にわたって気の休まることなく義務付けられていた、入院患者たちへの対応。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "昼夜にわたって気の休まることなく義務付けられていた、入院患者たちへの対応。",
+			NULL, "昼夜不休、片刻不得放松地照料住院患者。", Line_Normal);
+	ClearMessage();
+
+//r完璧にこなして当たり前で、何か少しでも問題があればすぐに家族からクレームがあがり、最悪訴訟にまでも発展したことがあった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "完璧にこなして当たり前で、何か少しでも問題があればすぐに家族からクレームがあがり、最悪訴訟にまでも発展したことがあった。",
+			NULL, "工作做到尽善尽美被视为理所当然，只要稍有问题，家属立刻就会投诉，最严重时甚至闹上法庭。", Line_Normal);
+	ClearMessage();
+
+//r本来なら家族が世話をすべきものを自分たちに押し付けておきながら、自分たちは金を払っている客だ、と笠に着て、高圧的で理不尽な態度に出てくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "本来なら家族が世話をすべきものを自分たちに押し付けておきながら、自分たちは金を払っている客だ、と笠に着て、高圧的で理不尽な態度に出てくる。",
+			NULL, "他们把本该由家属照料的事强加给医护人员，却仗着自己是付钱的顾客，摆出盛气凌人、蛮不讲理的态度。", Line_Normal);
+	ClearMessage();
+
+//rしかも、それは年々酷くなる一方で、…看護師としての使命感も誇りも、もはやズタズタになっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかも、それは年々酷くなる一方で、…看護師としての使命感も誇りも、もはやズタズタになっていた。",
+			NULL, "而且，这种情况一年比一年严重……她身为护士的使命感与自豪感，早已被摧残得支离破碎。", Line_Normal);
+	ClearMessage();
+
+//rそれに加えて、近年は経費削減ということで看護師の数も減り、週に一度の休暇どころか連日残業続き。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに加えて、近年は経費削減ということで看護師の数も減り、週に一度の休暇どころか連日残業続き。",
+			NULL, "再加上近年以削减经费为名，护士人数减少，别说每周休假一次，连日加班都成了常态。", Line_Normal);
+	ClearMessage();
+
+//rさらに、それだけの働きをして貢献したというのに、…今度は医師会の方針で給与体系の見直しだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さらに、それだけの働きをして貢献したというのに、…今度は医師会の方針で給与体系の見直しだ。",
+			NULL, "更何况，她明明付出了那么多、作出了那么多贡献，如今又要依照医师会的方针调整工资体系。", Line_Normal);
+	ClearMessage();
+
+//rもう我慢の限界と思っていた折であったので、これだけの美味しい話に乗らない手は無かった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もう我慢の限界と思っていた折であったので、これだけの美味しい話に乗らない手は無かった。",
+			NULL, "正当我觉得忍耐已经到了极限时，面对这么划算的好事，根本没有理由错过。", Line_Normal);
+	ClearMessage();
+
+//rあとはほとぼりが冷めるまで外国を漫遊して、用意してくれた病院に再就職をすればいい…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あとはほとぼりが冷めるまで外国を漫遊して、用意してくれた病院に再就職をすればいい…。",
+			NULL, "接下来，只要在风头过去前去国外漫游一圈，再到他们准备好的医院重新就职就行了……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+	FadeOutBGM(1, 200, TRUE);
+	DrawScene("background/kukou1", 1000 );
+	PlayBGM(2, "hm05_22", 128, 0);
+
+//平沼rvS20/00/VTT_hiranuma3009.「…でも、死んだあの子の彼女には気の毒なことをしました。kvS20/00/VTT_hiranuma3010.遠路はるばる来たというのに、第一発見者にさせてしまいましたからね。kvS20/00/VTT_hiranuma3011.別の日にしてもよかったのですが…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>平沼</color>", NULL, "<color=#f5e6d3>平沼</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3009", 256, TRUE);
+	OutputLine(NULL, "「…でも、死んだあの子の彼女には気の毒なことをしました。",
+			NULL, "「……不过，我确实有些对不住那个死去孩子的女朋友。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3010", 256, TRUE);
+	OutputLine(NULL, "遠路はるばる来たというのに、第一発見者にさせてしまいましたからね。",
+			NULL, "她远道而来，我却害她成了第一发现者。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3011", 256, TRUE);
+	OutputLine(NULL, "別の日にしてもよかったのですが…」",
+			NULL, "其实换个日子也可以……」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3008.「仕方ありません。kvS20/32/VTT_hanada3009.患者はかなり正常な思考を取り戻して、しかも例の少女から色々と話を聞いていたようですからね。kvS20/32/VTT_hanada3010.情報の漏洩を防ぐためにも、必要な措置でした」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3008", 256, TRUE);
+	OutputLine(NULL, "「仕方ありません。",
+			NULL, "「这也没办法。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3009", 256, TRUE);
+	OutputLine(NULL, "患者はかなり正常な思考を取り戻して、しかも例の少女から色々と話を聞いていたようですからね。",
+			NULL, "患者已经恢复了相当程度的清醒与理智，而且似乎从那个少女那里听到了不少事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3010", 256, TRUE);
+	OutputLine(NULL, "情報の漏洩を防ぐためにも、必要な措置でした」",
+			NULL, "为了防止情报泄露，这是必要的措施」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3011.「もっとも、その前日に行う予定だった避難訓練が延期になっていなければ、ここまで回りくどいことをする必要は無かったかもしれませんが」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3011", 256, TRUE);
+	OutputLine(NULL, "「もっとも、その前日に行う予定だった避難訓練が延期になっていなければ、ここまで回りくどいことをする必要は無かったかもしれませんが」",
+			NULL, "「不过，如果原定前一天举行的疏散演习没有延期，也许就不必如此大费周章了」", Line_Normal);
+	ClearMessage();
+
+//平沼rvS20/00/VTT_hiranuma3012.「…そうですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>平沼</color>", NULL, "<color=#f5e6d3>平沼</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3012", 256, TRUE);
+	OutputLine(NULL, "「…そうですね」",
+			NULL, "「……是啊」", Line_Normal);
+	ClearMessage();
+
+//r火災報知機の故障は、とっさに思いついた苦肉の策だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "火災報知機の故障は、とっさに思いついた苦肉の策だった。",
+			NULL, "让火灾报警器发生故障，是她临时想出的苦肉计。", Line_Normal);
+	ClearMessage();
+
+//rそのあたりは機械に詳しい協力者がいなければ上手くいかないのでは、と不安に感じていたが、さすがはプロの工作員といったところだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そのあたりは機械に詳しい協力者がいなければ上手くいかないのでは、と不安に感じていたが、さすがはプロの工作員といったところだろう。",
+			NULL, "她原本还担心，若没有熟悉机械的帮手，这方面恐怕很难顺利实施；但对方不愧是专业特工。", Line_Normal);
+	ClearMessage();
+
+//r…目の前で笑う人物には謎というか、胡散臭いところは確かにある。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…目の前で笑う人物には謎というか、胡散臭いところは確かにある。",
+			NULL, "……眼前这个笑着的人，确实十分神秘，也处处透着可疑。", Line_Normal);
+	ClearMessage();
+
+//rそれでも、約束通りの大金と高飛びのためのチケットを手配してくれるのだから、それなりに信用してもいいかもしれない、と思い直していた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも、約束通りの大金と高飛びのためのチケットを手配してくれるのだから、それなりに信用してもいいかもしれない、と思い直していた。",
+			NULL, "即便如此，对方会按照约定准备巨款和逃往国外的机票，她便转念认为，或许可以信任几分。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3012.「とりあえず、…祝杯と言うのも不謹慎ではありますが、どうです？kvS20/32/VTT_hanada3013.　あいにく紙コップしかありませんが、ワインはなかなかの年代物です」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3012", 256, TRUE);
+	OutputLine(NULL, "「とりあえず、…祝杯と言うのも不謹慎ではありますが、どうです？",
+			NULL, "「总之……说是庆功酒或许有些不妥，您意下如何？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3013", 256, TRUE);
+	OutputLine(NULL, "　あいにく紙コップしかありませんが、ワインはなかなかの年代物です」",
+			NULL, "可惜只有纸杯，不过这瓶葡萄酒年份相当不错」", Line_Normal);
+	ClearMessage();
+
+//平沼rvS20/00/VTT_hiranuma3013.「あら、…これはボルドーの？kvS20/00/VTT_hiranuma3014.　はじめて見ましたわ、…ふふ、いい匂い」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>平沼</color>", NULL, "<color=#f5e6d3>平沼</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3013", 256, TRUE);
+	OutputLine(NULL, "「あら、…これはボルドーの？",
+			NULL, "「哎呀……这是波尔多的吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3014", 256, TRUE);
+	OutputLine(NULL, "　はじめて見ましたわ、…ふふ、いい匂い」",
+			NULL, "我还是第一次见……呵呵，好香」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3014.「落ち着き先では、このようなワインは山ほどご用意しておりますから。kvS20/32/VTT_hanada3015.まずは飲みはじめということで」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3014", 256, TRUE);
+	OutputLine(NULL, "「落ち着き先では、このようなワインは山ほどご用意しておりますから。",
+			NULL, "「到了落脚处后，这样的葡萄酒要多少有多少。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3015", 256, TRUE);
+	OutputLine(NULL, "まずは飲みはじめということで」",
+			NULL, "这一杯就先当作开个头吧」", Line_Normal);
+	ClearMessage();
+
+//平沼rvS20/00/VTT_hiranuma3015.「ええ、…いただきますわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>平沼</color>", NULL, "<color=#f5e6d3>平沼</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_hiranuma3015", 256, TRUE);
+	OutputLine(NULL, "「ええ、…いただきますわ」",
+			NULL, "「好……那我就不客气了」", Line_Normal);
+	ClearMessage();
+
+//rそして、なみなみと注いだ紙コップをそれぞれの手に持ち、軽く打ち鳴らす。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、なみなみと注いだ紙コップをそれぞれの手に持ち、軽く打ち鳴らす。",
+			NULL, "于是，两人各自拿起斟得满满的纸杯，轻轻碰了一下。", Line_Normal);
+	ClearMessage();
+
+//rあいにくグラスのように小気味よい音はなかったが、それは落ち着き先のレストランでゆっくり味わえばいいだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あいにくグラスのように小気味よい音はなかったが、それは落ち着き先のレストランでゆっくり味わえばいいだろう。",
+			NULL, "可惜没能听到玻璃杯碰撞时那种悦耳的声响，不过等到了落脚处的餐厅，再慢慢品味也不迟。", Line_Normal);
+	ClearMessage();
+
+//rそして中身を先に飲み干すと、その人は出発前に電話をかけてくると言って、席を立っていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして中身を先に飲み干すと、その人は出発前に電話をかけてくると言って、席を立っていった。",
+			NULL, "那个人先把杯中酒一饮而尽，随后说出发前要打个电话，便起身离开了。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3016.「……。kvS20/32/VTT_hanada3017.はい、今、例のものを飲ませました。kvS20/32/VTT_hanada3018.ええ、指紋は残しておりませんよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3016", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3017", 256, TRUE);
+	OutputLine(NULL, "はい、今、例のものを飲ませました。",
+			NULL, "是，刚才已经让她喝下那东西了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3018", 256, TRUE);
+	OutputLine(NULL, "ええ、指紋は残しておりませんよ」",
+			NULL, "是的，没有留下指纹。」", Line_Normal);
+	ClearMessage();
+
+//r受話器を肩と耳で挟みながら、指の腹に施した樹脂性のフィルムをゆっくりとはがす。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "受話器を肩と耳で挟みながら、指の腹に施した樹脂性のフィルムをゆっくりとはがす。",
+			NULL, "他用肩膀和耳朵夹着听筒，慢慢揭下贴在指腹上的树脂薄膜。", Line_Normal);
+	ClearMessage();
+
+//rもちろん、それをゴミ箱に捨てるような愚は犯さず、腰のポケットに押し込んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もちろん、それをゴミ箱に捨てるような愚は犯さず、腰のポケットに押し込んだ。",
+			NULL, "当然，他不会愚蠢到把它扔进垃圾桶，而是塞进了衣袋。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/aka1", 1000 );
+
+//？？？rvS20/32/VTT_hanada3019.「…そうですね。kvS20/32/VTT_hanada3020.県警の捜査一課が感づいたようですから、おそらく飛行機に乗り込む前になるかと。kvS20/32/VTT_hanada3021.ふふふ…いずれにしても、大騒ぎになりますよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3019", 256, TRUE);
+	OutputLine(NULL, "「…そうですね。",
+			NULL, "「……是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3020", 256, TRUE);
+	OutputLine(NULL, "県警の捜査一課が感づいたようですから、おそらく飛行機に乗り込む前になるかと。",
+			NULL, "县警搜查一课似乎已经察觉，恐怕会在她登机之前吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3021", 256, TRUE);
+	OutputLine(NULL, "ふふふ…いずれにしても、大騒ぎになりますよ」",
+			NULL, "呵呵呵……无论如何，都会闹得很大。」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3022.「激務のストレスの積み重ねで凶気を起こし、憂さ晴らしに患者を殺害。kvS20/32/VTT_hanada3023.そして、警察に追い詰められた末に、その惑乱を爆発させて自殺…。kvS20/32/VTT_hanada3024.なかなか説得力のあるシナリオだと思いませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3022", 256, TRUE);
+	OutputLine(NULL, "「激務のストレスの積み重ねで凶気を起こし、憂さ晴らしに患者を殺害。",
+			NULL, "「因繁重工作积累了巨大压力，最终陷入疯狂，为了泄愤杀害患者。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3023", 256, TRUE);
+	OutputLine(NULL, "そして、警察に追い詰められた末に、その惑乱を爆発させて自殺…。",
+			NULL, "随后被警方逼入绝境，最终彻底失控，自杀身亡……", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3024", 256, TRUE);
+	OutputLine(NULL, "なかなか説得力のあるシナリオだと思いませんか？」",
+			NULL, "您不觉得这是个相当有说服力的剧本吗？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/aka2", 1000 );
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3025.「…あははは、そんな言われ方は心外ですねぇ。kvS20/32/VTT_hanada3026.最後にとびっきり、いいワインを飲ませてやったんですよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3025", 256, TRUE);
+	OutputLine(NULL, "「…あははは、そんな言われ方は心外ですねぇ。",
+			NULL, "「……哈哈哈，您这么说我可真伤心啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3026", 256, TRUE);
+	OutputLine(NULL, "最後にとびっきり、いいワインを飲ませてやったんですよ？」",
+			NULL, "最后我还让她喝了特别好的葡萄酒呢。」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3027.「死出の旅には過ぎた代物だと思いますけどね。kvS20/32/VTT_hanada3028.まぁ、せめてもの慈悲、ってことで…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3027", 256, TRUE);
+	OutputLine(NULL, "「死出の旅には過ぎた代物だと思いますけどね。",
+			NULL, "「拿来当黄泉路上的伴手礼都太奢侈了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3028", 256, TRUE);
+	OutputLine(NULL, "まぁ、せめてもの慈悲、ってことで…」",
+			NULL, "不过，就当是最后一点慈悲吧……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/aka1", 1000 );
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3029.「…ああ、あと例の架空口座の通帳は回収済みです。kvS20/32/VTT_hanada3030.もっと派手に使いまくると思っていたんですけどね、引き出していたのはほんの少しだけでした」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3029", 256, TRUE);
+	OutputLine(NULL, "「…ああ、あと例の架空口座の通帳は回収済みです。",
+			NULL, "「……啊，还有，那个虚构账户的存折已经回收了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3030", 256, TRUE);
+	OutputLine(NULL, "もっと派手に使いまくると思っていたんですけどね、引き出していたのはほんの少しだけでした」",
+			NULL, "我还以为她会大肆挥霍，结果只取出了很少一部分」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3031.「…いやいや、金の使い方のわからない貧乏人は悲しいですねぇ。kvS20/32/VTT_hanada3032.見たこともない大金にビビっちゃったんでしょうか。kvS20/32/VTT_hanada3033.…それでは」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3031", 256, TRUE);
+	OutputLine(NULL, "「…いやいや、金の使い方のわからない貧乏人は悲しいですねぇ。",
+			NULL, "「……哎呀呀，不懂花钱的穷人还真可悲。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3032", 256, TRUE);
+	OutputLine(NULL, "見たこともない大金にビビっちゃったんでしょうか。",
+			NULL, "大概是被从没见过的巨款吓到了吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3033", 256, TRUE);
+	OutputLine(NULL, "…それでは」",
+			NULL, "……那么，再会」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	PlaySE(3, "dsse08", 256, 64);
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3034.「さて、そろそろかな。kvS20/32/VTT_hanada3035.……ん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3034", 256, TRUE);
+	OutputLine(NULL, "「さて、そろそろかな。",
+			NULL, "「好了，差不多到时候了吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3035", 256, TRUE);
+	OutputLine(NULL, "……ん？」",
+			NULL, "……嗯？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse18", 256, 64);
+	DrawScene("white", 1000 );
+	DrawScene("background/kukou1", 1000 );
+
+//rその時、公衆電話のすぐそばの通路をおびただしい数の警官が走り去って行く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、公衆電話のすぐそばの通路をおびただしい数の警官が走り去って行く。",
+			NULL, "就在这时，公共电话旁边的通道上，大批警察奔跑而过。", Line_Normal);
+	ClearMessage();
+
+//rそしてその流れの向こうでは、ひときわ大きなざわめきが聞こえてきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そしてその流れの向こうでは、ひときわ大きなざわめきが聞こえてきた。",
+			NULL, "而在人流的另一端，传来了格外喧闹的骚动声。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3036.「……さすがだな、時間ぴったり。kvS20/32/VTT_hanada3037.じゃあ平沼陽子さん、良い旅を。kvS20/32/VTT_hanada3038.くすくす、…あっははははははは」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3036", 256, TRUE);
+	OutputLine(NULL, "「……さすがだな、時間ぴったり。",
+			NULL, "「……真厉害，分秒不差。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3037", 256, TRUE);
+	OutputLine(NULL, "じゃあ平沼陽子さん、良い旅を。",
+			NULL, "那么，平沼阳子小姐，祝您旅途愉快。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3038", 256, TRUE);
+	OutputLine(NULL, "くすくす、…あっははははははは」",
+			NULL, "呵呵……啊哈哈哈哈哈哈哈」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

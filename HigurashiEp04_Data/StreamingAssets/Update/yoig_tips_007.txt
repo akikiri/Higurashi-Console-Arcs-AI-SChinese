@@ -1,0 +1,70 @@
+void main()
+{
+
+
+//*Yoigoshi TIPS 7
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//交通事故、居眠り運転で３人死亡
+
+	DrawScene("background/kai_ten", 1000 );
+	PlayBGM(2, "hm10_56", 128, 0);
+
+//r３日午後４時１５分ごろ、千葉県成田市の国道で、対向車線にはみ出したトラックが走行中の乗用車と正面衝突し、乗用車は大破した。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "３日午後４時１５分ごろ、千葉県成田市の国道で、対向車線にはみ出したトラックが走行中の乗用車と正面衝突し、乗用車は大破した。",
+			NULL, "3日下午4点15分左右，千叶县成田市一条国道上，一辆驶入对向车道的卡车与正在行驶的轿车迎面相撞，轿车严重损毁。", Line_Normal);
+	ClearMessage();
+
+//rこの事故で、乗用車に乗っていた日向忠さん（４４）、妻の由紀子さん（４３）、次女の雅恵さん（１３）が病院へ運ばれたが、全身打撲で意識不明のまま間もなく死亡した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "この事故で、乗用車に乗っていた日向忠さん（４４）、妻の由紀子さん（４３）、次女の雅恵さん（１３）が病院へ運ばれたが、全身打撲で意識不明のまま間もなく死亡した。",
+			NULL, "此次事故中，乘车的日向忠先生（44）、其妻由纪子女士（43）、次女雅惠小姐（13）被送往医院，三人全身挫伤、意识不明，不久后死亡。", Line_Normal);
+	ClearMessage();
+
+//rトラックを運転していた梶本和実容疑者（２２）は重傷を負って現在集中治療を受けているが、命は取り留めた模様。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "トラックを運転していた梶本和実容疑者（２２）は重傷を負って現在集中治療を受けているが、命は取り留めた模様。",
+			NULL, "驾驶卡车的加治本和实嫌疑人（22）身负重伤，目前正在接受集中治疗，性命已无大碍。", Line_Normal);
+	ClearMessage();
+
+//r成田署の調べによると、トラックは事故現場の直前から蛇行運転を続けており、居眠り運転が原因として梶本容疑者を自動車運転過失致死容疑にて逮捕した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "成田署の調べによると、トラックは事故現場の直前から蛇行運転を続けており、居眠り運転が原因として梶本容疑者を自動車運転過失致死容疑にて逮捕した。",
+			NULL, "据成田署调查，卡车在驶到事故现场前便一路左右摇摆，警方认定事故原因是驾驶员打瞌睡，并以汽车驾驶过失致死嫌疑逮捕加治本嫌疑人。", Line_Normal);
+	ClearMessage();
+
+//r関係者の話では日向さんたちは、卒業旅行先のアメリカから帰国した長女の真知子さん（１９）を迎えに空港へ行く途中で、事故に遭ったとのこと。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "関係者の話では日向さんたちは、卒業旅行先のアメリカから帰国した長女の真知子さん（１９）を迎えに空港へ行く途中で、事故に遭ったとのこと。",
+			NULL, "据相关人士称，日向先生一家当时正在前往机场，迎接结束美国毕业旅行回国的长女真知子小姐，途中遭遇事故。", Line_Normal);
+	ClearMessage();
+
+//r『両親と姉妹ともに仲が良い、幸せそうな家族だった。真知子さんが帰ってくるのをとても楽しみにしていたのに…』と、近所の親しかった主婦は突然の悲報に声を失っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『両親と姉妹ともに仲が良い、幸せそうな家族だった。真知子さんが帰ってくるのをとても楽しみにしていたのに…』と、近所の親しかった主婦は突然の悲報に声を失っていた。",
+			NULL, "『那是个父母和姐妹都感情很好、看起来很幸福的家庭。明明大家都那么期待真知子小姐回来……』一位与他们关系亲近的邻居主妇面对突如其来的噩耗，哽咽失声。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

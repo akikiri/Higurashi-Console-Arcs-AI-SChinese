@@ -1,0 +1,765 @@
+void main()
+{
+
+//*TIPS 133
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//閉店間際
+
+	DrawScene("white", 250 );
+	PlaySE(3, "addse11", 256, 64);
+	DrawScene("black", 750 );
+	Wait( 1000 );
+
+//守rvS20/00/VTT_mamoru3001.「あ、すみません。もう閉店で——、kvS20/00/VTT_mamoru3002.って、なんだ佐伯か」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3001", 256, TRUE);
+	OutputLine(NULL, "「あ、すみません。もう閉店で——、",
+			NULL, "「啊，不好意思。已经打烊——", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3002", 256, TRUE);
+	OutputLine(NULL, "って、なんだ佐伯か」",
+			NULL, "呃，原来是佐伯啊。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3105.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3105", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3003.「…どうした？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3003", 256, TRUE);
+	OutputLine(NULL, "「…どうした？」",
+			NULL, "「怎么了？」", Line_Normal);
+	ClearMessage();
+
+//r千紗登は店内に足を一歩踏み入れたまま、悄然と立ち尽くしている。その様子に違和感を覚えた守は、食器を洗う手を止めて彼女に向き直った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "千紗登は店内に足を一歩踏み入れたまま、悄然と立ち尽くしている。その様子に違和感を覚えた守は、食器を洗う手を止めて彼女に向き直った。",
+			NULL, "千纱登一只脚踏进店里，低垂着头站在那里。守察觉到她的样子有些不对，停下洗碗的手，转向她。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/saten1", 1000 );
+	PlayBGM( 2, "hm01_07", 128, 0 );
+	Wait( 500 );
+
+//千紗登rvS20/37/VTT_chisa3106.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3106", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r暗がりでよくわからなかったが、…千紗登の目元と鼻先がやけに、赤い。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "暗がりでよくわからなかったが、…千紗登の目元と鼻先がやけに、赤い。",
+			NULL, "昏暗中看不太清，……但千纱登的眼角和鼻尖红得异常。", Line_Normal);
+	ClearMessage();
+
+//rいつもなら何かの冗談かと思うところだが、…かつての記憶を思い出し、守は出かかった軽口を引っ込めた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いつもなら何かの冗談かと思うところだが、…かつての記憶を思い出し、守は出かかった軽口を引っ込めた。",
+			NULL, "平时守大概会以为她又在开什么玩笑，可他想起过去的记忆，把差点出口的调侃收了回去。", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3004.「とりあえず、…座れよ。kvS20/00/VTT_mamoru3005.なんか飲むか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3004", 256, TRUE);
+	OutputLine(NULL, "「とりあえず、…座れよ。",
+			NULL, "「总之，……先坐下吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3005", 256, TRUE);
+	OutputLine(NULL, "なんか飲むか？」",
+			NULL, "要喝点什么？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3107.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3107", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rふるふると首を振って、…そのあおりで何かが外れたのか、千紗登は再び溢れ出した涙をぐしぐしと拭う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ふるふると首を振って、…そのあおりで何かが外れたのか、千紗登は再び溢れ出した涙をぐしぐしと拭う。",
+			NULL, "她轻轻摇了摇头，……也许是这一晃让什么松开了，千纱登又开始用力擦拭再次涌出的眼泪。", Line_Normal);
+	ClearMessage();
+
+//r…仕方なく、守はカウンターから出ると、嗚咽交じりの彼女をあやすようにしてカウンター席へ強引に座らせた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…仕方なく、守はカウンターから出ると、嗚咽交じりの彼女をあやすようにしてカウンター席へ強引に座らせた。",
+			NULL, "……守无奈地从柜台后走出来，像哄着抽噎的孩子一样，半强行把她按到柜台座位上。", Line_Normal);
+	ClearMessage();
+
+//rそして、玄関のプレートを裏返して『ＣＬＯＳＥ』にする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、玄関のプレートを裏返して『ＣＬＯＳＥ』にする。",
+			NULL, "然后，他把门口的牌子翻到『打烊』。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/saten1", 1000 );
+
+//守rvS20/00/VTT_mamoru3006.「…座ったからには客なんだから、なんかメニューを言え。kvS20/00/VTT_mamoru3007.さっさと言わないと、鍋焼きうどん大盛りにするぞ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3006", 256, TRUE);
+	OutputLine(NULL, "「…座ったからには客なんだから、なんかメニューを言え。",
+			NULL, "「……既然坐下了就是客人，点一样东西。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3007", 256, TRUE);
+	OutputLine(NULL, "さっさと言わないと、鍋焼きうどん大盛りにするぞ」",
+			NULL, "再不快点说，我就给你上大份锅烧乌冬。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3108.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3108", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3008.「…わかったよ。ミックスジュースな？kvS20/00/VTT_mamoru3009.　後で文句言うなよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3008", 256, TRUE);
+	OutputLine(NULL, "「…わかったよ。ミックスジュースな？",
+			NULL, "「……知道了。混合果汁对吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3009", 256, TRUE);
+	OutputLine(NULL, "　後で文句言うなよ」",
+			NULL, "等下可别抱怨。」", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+//r慣れた手つきで、守はざく切りにしたフルーツと氷をミキサーに放り込み、ミルクとクリームをその上に落としてふたをする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "慣れた手つきで、守はざく切りにしたフルーツと氷をミキサーに放り込み、ミルクとクリームをその上に落としてふたをする。",
+			NULL, "守动作熟练地把切成大块的水果和冰块丢进搅拌机，又倒入牛奶和奶油，盖上盖子。", Line_Normal);
+	ClearMessage();
+
+//rそしてひとしきり攪拌してから、閉店間際に自分で飲もうと冷やしていたグラスを冷蔵庫から取り出し、出来上がったジュースをそこに注ぎ込んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そしてひとしきり攪拌してから、閉店間際に自分で飲もうと冷やしていたグラスを冷蔵庫から取り出し、出来上がったジュースをそこに注ぎ込んだ。",
+			NULL, "充分搅拌之后，他从冰箱里取出原本打算打烊前自用、已经冰好的玻璃杯，把做好的果汁倒了进去。", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3010.「…ほれ。kvS20/00/VTT_mamoru3011.さっさと飲まんと、液体が固体になるぞ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3010", 256, TRUE);
+	OutputLine(NULL, "「…ほれ。",
+			NULL, "「……给。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3011", 256, TRUE);
+	OutputLine(NULL, "さっさと飲まんと、液体が固体になるぞ」",
+			NULL, "快点喝，不然液体就要变固体了。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3109.「……うん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3109", 256, TRUE);
+	OutputLine(NULL, "「……うん」",
+			NULL, "「……嗯。」", Line_Normal);
+	ClearMessage();
+
+//rようやく千紗登は返事をすると、ストローを挿して二口ほど吸い込む。…その様子だけを見ると、いつもの豪快な闊達さは微塵も感じられなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ようやく千紗登は返事をすると、ストローを挿して二口ほど吸い込む。…その様子だけを見ると、いつもの豪快な闊達さは微塵も感じられなかった。",
+			NULL, "千纱登终于应了一声，插上吸管吸了两口。……光看那副样子，完全感觉不到她平时的豪爽开朗。", Line_Normal);
+	ClearMessage();
+
+//守r-vS20/00/VTT_mamoru3012.（…そういや、こいつストローなんて使ったの、何年ぶりかな）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3012", 256, TRUE);
+	OutputLine(NULL, "（…そういや、こいつストローなんて使ったの、何年ぶりかな）",
+			NULL, "（……说起来，这家伙用吸管这种东西，是多少年没见了啊）", Line_Normal);
+	ClearMessage();
+
+//rそんなことを内心で呟きながら、とりあえず洗い物だけ先に済ませようと背を向けかけた瞬間、…千紗登が、か細い声で守に呼びかけた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんなことを内心で呟きながら、とりあえず洗い物だけ先に済ませようと背を向けかけた瞬間、…千紗登が、か細い声で守に呼びかけた。",
+			NULL, "守在心里这么嘀咕着，正准备先转身把碗洗完，……千纱登用细弱的声音叫住了他。", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3110.「…守さん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3110", 256, TRUE);
+	OutputLine(NULL, "「…守さん」",
+			NULL, "「……守先生。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3013.「ん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3013", 256, TRUE);
+	OutputLine(NULL, "「ん？」",
+			NULL, "「嗯？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3111.「私って、…酷いやつかな？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3111", 256, TRUE);
+	OutputLine(NULL, "「私って、…酷いやつかな？」",
+			NULL, "「我是不是……很差劲啊？」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3014.「は…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3014", 256, TRUE);
+	OutputLine(NULL, "「は…？」",
+			NULL, "「哈……？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3112.「……。kvS20/37/VTT_chisa3113.酷いやつだよね、私って…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3112", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3113", 256, TRUE);
+	OutputLine(NULL, "酷いやつだよね、私って…」",
+			NULL, "我很差劲，对吧……」", Line_Normal);
+	ClearMessage();
+
+//r両手でグラスを抱え込むようにしながら、千紗登は俯き嗚咽をこらえている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "両手でグラスを抱え込むようにしながら、千紗登は俯き嗚咽をこらえている。",
+			NULL, "千纱登双手紧紧捧着玻璃杯，低着头忍住呜咽。", Line_Normal);
+	ClearMessage();
+
+//r守はその、肩を落として頼りなさげな彼女を見て、一瞬慰めの言葉を口にしかけたが、…思い直して別の言葉を選ぶことにした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "守はその、肩を落として頼りなさげな彼女を見て、一瞬慰めの言葉を口にしかけたが、…思い直して別の言葉を選ぶことにした。",
+			NULL, "守看着她垂着肩、无依无靠的样子，一瞬间差点说出安慰的话，……随后换了另一句。", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3015.「で？kvS20/00/VTT_mamoru3016.　…千紗登お嬢さまは、どういう答えがお望みなんだ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3015", 256, TRUE);
+	OutputLine(NULL, "「で？",
+			NULL, "「所以呢？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3016", 256, TRUE);
+	OutputLine(NULL, "　…千紗登お嬢さまは、どういう答えがお望みなんだ？」",
+			NULL, "……千纱登大小姐，您想听什么样的回答？」", Line_Normal);
+	ClearMessage();
+
+//rえっ、と少し驚いたように、千紗登は顔を上げる。それを見て守は呆れたように、眉間に皺を寄せて腕を組んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "えっ、と少し驚いたように、千紗登は顔を上げる。それを見て守は呆れたように、眉間に皺を寄せて腕を組んだ。",
+			NULL, "千纱登像是有些惊讶地抬起脸。守看见后，皱起眉头抱起手臂，像是很无奈。", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3017.「建前では、いい奴。kvS20/00/VTT_mamoru3018.普段の軽口で言えば、どうしようもない奴。kvS20/00/VTT_mamoru3019.自虐的な気分に浸りたいのなら言葉通り酷い奴、って言ってやるが…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3017", 256, TRUE);
+	OutputLine(NULL, "「建前では、いい奴。",
+			NULL, "「说场面话，就是好人。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3018", 256, TRUE);
+	OutputLine(NULL, "普段の軽口で言えば、どうしようもない奴。",
+			NULL, "按平时开玩笑的说法，就是没救的家伙。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3019", 256, TRUE);
+	OutputLine(NULL, "自虐的な気分に浸りたいのなら言葉通り酷い奴、って言ってやるが…？」",
+			NULL, "你想沉浸在自虐情绪里，我就照字面说你是个差劲的家伙……」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3114.「…本音では、どうなのさ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3114", 256, TRUE);
+	OutputLine(NULL, "「…本音では、どうなのさ？」",
+			NULL, "「……真心话呢？」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3020.「本音で言って、今のお前は信じるのか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3020", 256, TRUE);
+	OutputLine(NULL, "「本音で言って、今のお前は信じるのか？」",
+			NULL, "「我说了真心话，现在的你会信吗？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3115.「…だよね。kvS20/37/VTT_chisa3116.なんか、そう言うと思ったよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3115", 256, TRUE);
+	OutputLine(NULL, "「…だよね。",
+			NULL, "「……也是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3116", 256, TRUE);
+	OutputLine(NULL, "なんか、そう言うと思ったよ」",
+			NULL, "总觉得你会这么说。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3021.「…訂正。kvS20/00/VTT_mamoru3022.そういうところだけを言うなら、お前は酷いやつだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3021", 256, TRUE);
+	OutputLine(NULL, "「…訂正。",
+			NULL, "「……更正。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3022", 256, TRUE);
+	OutputLine(NULL, "そういうところだけを言うなら、お前は酷いやつだよ」",
+			NULL, "单说你这种地方，你确实是个差劲的家伙。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3117.「っ、…あ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3117", 256, TRUE);
+	OutputLine(NULL, "「っ、…あ」",
+			NULL, "「唔、……啊。」", Line_Normal);
+	ClearMessage();
+
+//r守から辛らつな言葉を投げかけられて、千紗登は思わず身をすくませる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "守から辛らつな言葉を投げかけられて、千紗登は思わず身をすくませる。",
+			NULL, "守抛来尖锐的话语，千纱登不由得缩起身子。", Line_Normal);
+	ClearMessage();
+
+//r…が、次の瞬間優しい表情で見つめる彼の視線を感じて、再び顔を上げた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…が、次の瞬間優しい表情で見つめる彼の視線を感じて、再び顔を上げた。",
+			NULL, "……可下一瞬间，她感觉到他正用温柔的表情注视着自己，便再次抬起了脸。", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3023.「俺は昔、…お前が、嫌いだった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3023", 256, TRUE);
+	OutputLine(NULL, "「俺は昔、…お前が、嫌いだった」",
+			NULL, "「我以前，……讨厌过你。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3118.「…知ってるよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3118", 256, TRUE);
+	OutputLine(NULL, "「…知ってるよ」",
+			NULL, "「……我知道。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3024.「過剰にお嬢さまっぽく振舞って、わがまま言いたい放題。kvS20/00/VTT_mamoru3025.そのくせにうじうじ暗くって、まるで自分が、世界一の悲劇のお姫様みたいに思ってる」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3024", 256, TRUE);
+	OutputLine(NULL, "「過剰にお嬢さまっぽく振舞って、わがまま言いたい放題。",
+			NULL, "「过分装出大小姐的样子，任性妄为，想说什么就说什么。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3025", 256, TRUE);
+	OutputLine(NULL, "そのくせにうじうじ暗くって、まるで自分が、世界一の悲劇のお姫様みたいに思ってる」",
+			NULL, "偏偏又阴沉扭捏，简直像把自己当成世界第一悲剧公主。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3026.「だからいつも慰めとか同情を求めて、そのわりに疑り深くて、誰の言葉にも満足できない奴だった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3026", 256, TRUE);
+	OutputLine(NULL, "「だからいつも慰めとか同情を求めて、そのわりに疑り深くて、誰の言葉にも満足できない奴だった」",
+			NULL, "「所以总是索求安慰和同情，偏偏又疑心很重，谁的话都没法让你满意。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3119.「あはは…ひどい言われようだなぁ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3119", 256, TRUE);
+	OutputLine(NULL, "「あはは…ひどい言われようだなぁ」",
+			NULL, "「啊哈哈……说得真狠啊。」", Line_Normal);
+	ClearMessage();
+
+//rとはいえ、言葉ほどの苛烈さは感じない。…なぜならそれは、千紗登が以前、守から諭されたことだったからだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とはいえ、言葉ほどの苛烈さは感じない。…なぜならそれは、千紗登が以前、守から諭されたことだったからだ。",
+			NULL, "话虽如此，她并没有感到话语本身那样的刺痛。……因为那些话，是守以前就教训过千纱登的内容。", Line_Normal);
+	ClearMessage();
+
+//r彼女に対してそこまで強く、親身になった言葉をかけてくれた人はいない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼女に対してそこまで強く、親身になった言葉をかけてくれた人はいない。",
+			NULL, "从来没有人对她说过那么严厉、那么设身处地的话。", Line_Normal);
+	ClearMessage();
+
+//rだから、覚えていた。そして、嬉しかった…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから、覚えていた。そして、嬉しかった…。",
+			NULL, "所以，她一直记得。也因此，很高兴……", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3027.「でも、お前は変わった。kvS20/00/VTT_mamoru3028.頑張って、努力して…前に進む速度はまだ遅くても、少なくとも顔を上げられる程度には明るくなった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3027", 256, TRUE);
+	OutputLine(NULL, "「でも、お前は変わった。",
+			NULL, "「可是，你变了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3028", 256, TRUE);
+	OutputLine(NULL, "頑張って、努力して…前に進む速度はまだ遅くても、少なくとも顔を上げられる程度には明るくなった」",
+			NULL, "你努力过，也拼命过……就算前进得还很慢，至少已经开朗到能抬起头了。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3029.「まぁ今みたく、いかにもお嬢様って感じの他力本願なところは、あんまり変わっていないけどな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3029", 256, TRUE);
+	OutputLine(NULL, "「まぁ今みたく、いかにもお嬢様って感じの他力本願なところは、あんまり変わっていないけどな」",
+			NULL, "「不过像现在这种大小姐式的依赖别人，这点倒没怎么变。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3120.「…じゃあ、今も嫌い、ってこと？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3120", 256, TRUE);
+	OutputLine(NULL, "「…じゃあ、今も嫌い、ってこと？」",
+			NULL, "「……那你现在也讨厌我？」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3030.「…俺がそんな博愛主義者に見えるか？kvS20/00/VTT_mamoru3031.　嫌な奴が閉店間際に来たら、叩き出すに決まってるだろ。kvS20/00/VTT_mamoru3032.お前、俺の何を見ていた？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3030", 256, TRUE);
+	OutputLine(NULL, "「…俺がそんな博愛主義者に見えるか？",
+			NULL, "「……我看起来像那种博爱主义者吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3031", 256, TRUE);
+	OutputLine(NULL, "　嫌な奴が閉店間際に来たら、叩き出すに決まってるだろ。",
+			NULL, "讨厌的家伙赶在打烊前进店，我肯定会把人赶出去。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3032", 256, TRUE);
+	OutputLine(NULL, "お前、俺の何を見ていた？」",
+			NULL, "你到底把我看成什么了？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3121.「……。kvS20/37/VTT_chisa3122.めちゃくちゃに自信過剰で、自分が正義だと信じている傲慢なところ、かな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3121", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3122", 256, TRUE);
+	OutputLine(NULL, "めちゃくちゃに自信過剰で、自分が正義だと信じている傲慢なところ、かな」",
+			NULL, "极度自信过剩，还坚信自己就是正义的傲慢家伙，之类的？」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3033.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3033", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3123.「……ぷっ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3123", 256, TRUE);
+	OutputLine(NULL, "「……ぷっ」",
+			NULL, "「……噗。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3034.「はは…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3034", 256, TRUE);
+	OutputLine(NULL, "「はは…」",
+			NULL, "「哈哈……」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3124.「あははっ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3124", 256, TRUE);
+	OutputLine(NULL, "「あははっ…」",
+			NULL, "「啊哈哈……」", Line_Normal);
+	ClearMessage();
+
+//rようやく可笑しさがこみ上げるほどに心が軽くなり、千紗登は守につられて笑う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ようやく可笑しさがこみ上げるほどに心が軽くなり、千紗登は守につられて笑う。",
+			NULL, "心情终于轻松到能涌出笑意，千纱登也被守带着笑了出来。", Line_Normal);
+	ClearMessage();
+
+//r珠子や暁、…もちろん夏美とも違って彼は、千紗登にとって気負いもなく弱みを見せられる『お兄さん』だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "珠子や暁、…もちろん夏美とも違って彼は、千紗登にとって気負いもなく弱みを見せられる『お兄さん』だった。",
+			NULL, "和珠子、晓，……当然也和夏美不同。对千纱登来说，他是能让她毫无负担地展现软弱的『哥哥』。", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3035.「なぁ、佐伯。kvS20/00/VTT_mamoru3036.…あんまり自虐的になって、楽をするなよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3035", 256, TRUE);
+	OutputLine(NULL, "「なぁ、佐伯。",
+			NULL, "「喂，佐伯。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3036", 256, TRUE);
+	OutputLine(NULL, "…あんまり自虐的になって、楽をするなよ？」",
+			NULL, "……别总是钻进自虐里，借此逃避现实。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3125.「…意味わかんない。kvS20/37/VTT_chisa3126.自虐的のどこが楽なのさ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3125", 256, TRUE);
+	OutputLine(NULL, "「…意味わかんない。",
+			NULL, "「……听不懂。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3126", 256, TRUE);
+	OutputLine(NULL, "自虐的のどこが楽なのさ？」",
+			NULL, "责备自己哪里算逃避了？」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3037.「そりゃ、自分を責めるのは簡単だからさ。kvS20/00/VTT_mamoru3038.相手を責めるとなると、その理由を説明しなきゃならんのだから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3037", 256, TRUE);
+	OutputLine(NULL, "「そりゃ、自分を責めるのは簡単だからさ。",
+			NULL, "「因为责备自己很简单啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3038", 256, TRUE);
+	OutputLine(NULL, "相手を責めるとなると、その理由を説明しなきゃならんのだから」",
+			NULL, "要是责备对方，就得说明理由。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3127.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3127", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r全くその通りだと、千紗登は思う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "全くその通りだと、千紗登は思う。",
+			NULL, "千纱登觉得他说得完全正确。", Line_Normal);
+	ClearMessage();
+
+//r相手に責任を求めて非難するためには、何が間違っていたのかを客観的にとらえて説明し、その人を納得させなければならない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "相手に責任を求めて非難するためには、何が間違っていたのかを客観的にとらえて説明し、その人を納得させなければならない。",
+			NULL, "要向对方追究责任并加以谴责，就必须客观把握并说明错在哪里，还要让那个人接受。", Line_Normal);
+	ClearMessage();
+
+//rただ自分の責任を転嫁し、相手を『非難』しているように見せかける行為は、実は『逃避』でしかないのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ自分の責任を転嫁し、相手を『非難』しているように見せかける行為は、実は『逃避』でしかないのだ。",
+			NULL, "单纯把自己的责任推给别人，看似是在『责怪』对方，实际上只是一种『逃避』。", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3039.「ま、あんまり難しく考えすぎるなよ。kvS20/00/VTT_mamoru3040.それに今のお前にゃ、昔にはなかったいいところがあるだろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3039", 256, TRUE);
+	OutputLine(NULL, "「ま、あんまり難しく考えすぎるなよ。",
+			NULL, "「好了，别想得太复杂。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3040", 256, TRUE);
+	OutputLine(NULL, "それに今のお前にゃ、昔にはなかったいいところがあるだろ？」",
+			NULL, "而且现在的你，也有以前没有的优点吧？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3128.「なに？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3128", 256, TRUE);
+	OutputLine(NULL, "「なに？」",
+			NULL, "「什么？」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3041.「つける薬が見つからないくらい最強に、お馬鹿なところだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3041", 256, TRUE);
+	OutputLine(NULL, "「つける薬が見つからないくらい最強に、お馬鹿なところだ」",
+			NULL, "「笨到无药可救，也强得不得了。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3129.「…それは、全然褒めてないね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3129", 256, TRUE);
+	OutputLine(NULL, "「…それは、全然褒めてないね」",
+			NULL, "「……这完全不是在夸我吧。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3042.「だいたい、悪いかもと思って後ろめたく行動するから、悪く感じるんだ。kvS20/00/VTT_mamoru3043.不安ってのは、簡単に相手に伝わるからな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3042", 256, TRUE);
+	OutputLine(NULL, "「だいたい、悪いかもと思って後ろめたく行動するから、悪く感じるんだ。",
+			NULL, "「说到底，觉得自己也许做错了，才会心虚地行动，于是看起来就像真的错了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3043", 256, TRUE);
+	OutputLine(NULL, "不安ってのは、簡単に相手に伝わるからな」",
+			NULL, "不安这种东西，很容易传给对方。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3044.「だからどんな時でも、正しいと自信を持っていけ。kvS20/00/VTT_mamoru3045.少なくとも自分が信じていないものを、誰かに信じさせるのは詐欺だろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3044", 256, TRUE);
+	OutputLine(NULL, "「だからどんな時でも、正しいと自信を持っていけ。",
+			NULL, "「所以无论什么时候，都要相信自己是正确的，充满自信地走下去。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3045", 256, TRUE);
+	OutputLine(NULL, "少なくとも自分が信じていないものを、誰かに信じさせるのは詐欺だろ？」",
+			NULL, "至少，让别人相信连自己都不信的东西，这就是诈骗吧？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3130.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3130", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3046.「たとえ、それが間違っていても、誰かに注意されてから直せばいい。kvS20/00/VTT_mamoru3047.で、以前のことは忘れて、新しくなった正義を信じて突き進む。kvS20/00/VTT_mamoru3048.そうなるためには、多少お馬鹿でなきゃ…だろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3046", 256, TRUE);
+	OutputLine(NULL, "「たとえ、それが間違っていても、誰かに注意されてから直せばいい。",
+			NULL, "「哪怕那是错的，被别人指出以后再改就行。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3047", 256, TRUE);
+	OutputLine(NULL, "で、以前のことは忘れて、新しくなった正義を信じて突き進む。",
+			NULL, "然后忘掉以前的事，相信更新过的正义，继续往前冲。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3048", 256, TRUE);
+	OutputLine(NULL, "そうなるためには、多少お馬鹿でなきゃ…だろ？」",
+			NULL, "要做到这种程度，总得稍微笨一点……你说呢？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3131.「…なんか、ムチャクチャな論理だよ～」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3131", 256, TRUE);
+	OutputLine(NULL, "「…なんか、ムチャクチャな論理だよ～」",
+			NULL, "「……总觉得这套逻辑乱七八糟啊~」", Line_Normal);
+	ClearMessage();
+
+//rそれでも、…千紗登はなんとなく、その意味を理解する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも、…千紗登はなんとなく、その意味を理解する。",
+			NULL, "即便如此，……千纱登还是隐约理解了他的意思。", Line_Normal);
+	ClearMessage();
+
+//r正しいと思い続けるためには、それだけの意志の強さと勇気が必要なのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "正しいと思い続けるためには、それだけの意志の強さと勇気が必要なのだ。",
+			NULL, "要持续相信自己是正确的，需要足够强韧的意志和勇气。", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3132.「それにしても先輩は、どうしてこう自信満々なのかな？kvS20/37/VTT_chisa3133.　その秘訣ってのをぜひご伝授願いたいところだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3132", 256, TRUE);
+	OutputLine(NULL, "「それにしても先輩は、どうしてこう自信満々なのかな？",
+			NULL, "「话说回来，前辈为什么总是这么自信满满啊？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3133", 256, TRUE);
+	OutputLine(NULL, "　その秘訣ってのをぜひご伝授願いたいところだよ」",
+			NULL, "那个秘诀，我还真想请你务必传授给我。」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3049.「そりゃまぁ、惚れた相手が『泰然自若な自信家が好き』、なんて言うからじゃないか。kvS20/00/VTT_mamoru3050.それに向けて、日々努力した結果だ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3049", 256, TRUE);
+	OutputLine(NULL, "「そりゃまぁ、惚れた相手が『泰然自若な自信家が好き』、なんて言うからじゃないか。",
+			NULL, "「这个嘛，大概是因为我喜欢的人说过，她『喜欢泰然自若的自信家』吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3050", 256, TRUE);
+	OutputLine(NULL, "それに向けて、日々努力した結果だ」",
+			NULL, "我每天都朝着那个方向努力，这就是结果。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3134.「えっ、…まだ諦めてなかったの？kvS20/37/VTT_chisa3135.　あの時きっぱりはっきり、謹んでお断りしたでしょうが！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3134", 256, TRUE);
+	OutputLine(NULL, "「えっ、…まだ諦めてなかったの？",
+			NULL, "「咦，……你还没放弃啊？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3135", 256, TRUE);
+	OutputLine(NULL, "　あの時きっぱりはっきり、謹んでお断りしたでしょうが！」",
+			NULL, "我那时候不是干脆利落、郑重其事地拒绝过你了吗！」", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3051.「それでも、この店に来るってのはまだ、見込みがあるってことだと信じているわけだ。kvS20/00/VTT_mamoru3052.…おかしくないだろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3051", 256, TRUE);
+	OutputLine(NULL, "「それでも、この店に来るってのはまだ、見込みがあるってことだと信じているわけだ。",
+			NULL, "「即便如此，我还是相信你会来这家店，这就说明还有希望。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3052", 256, TRUE);
+	OutputLine(NULL, "…おかしくないだろ？」",
+			NULL, "……这也没什么奇怪吧？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3136.「なーにいってんだか。kvS20/37/VTT_chisa3137.ここに来るのは、無料だからだよ。kvS20/37/VTT_chisa3138.でなきゃこんな汚い店、一人でなんか来るもんか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3136", 256, TRUE);
+	OutputLine(NULL, "「なーにいってんだか。",
+			NULL, "「你在说什么呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3137", 256, TRUE);
+	OutputLine(NULL, "ここに来るのは、無料だからだよ。",
+			NULL, "我会来这里，是因为免费啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3138", 256, TRUE);
+	OutputLine(NULL, "でなきゃこんな汚い店、一人でなんか来るもんか」",
+			NULL, "要不是这样，这种脏店我才不会一个人来。」", Line_Normal);
+	ClearMessage();
+
+//rそう、強がって返すのがいつもの口上なんだけど、…ホントの理由は、実は違う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう、強がって返すのがいつもの口上なんだけど、…ホントの理由は、実は違う。",
+			NULL, "没错，逞强地回敬，这才是我一贯的说法。……可真正的理由，其实另有原因。", Line_Normal);
+	ClearMessage();
+
+//r私はこの人といると、とことんまで甘えてしまいたくなるんだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私はこの人といると、とことんまで甘えてしまいたくなるんだ。",
+			NULL, "和这个人在一起，我就会忍不住想彻底依赖他。", Line_Normal);
+	ClearMessage();
+
+//rそして彼も、そんな私をどこまでも、何の見返りもなく支え続けてくれるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして彼も、そんな私をどこまでも、何の見返りもなく支え続けてくれるだろう。",
+			NULL, "而他也会一直支撑着这样的我，无论到哪里，都不求任何回报。", Line_Normal);
+	ClearMessage();
+
+//rそれはとても、嬉しい。…でも、悲しい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それはとても、嬉しい。…でも、悲しい。",
+			NULL, "那让我非常高兴。……可是，也让我难过。", Line_Normal);
+	ClearMessage();
+
+//r自分の弱さを、まるで正当化しているように思えるからだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "自分の弱さを、まるで正当化しているように思えるからだ。",
+			NULL, "因为我觉得，那像是在为自己的软弱寻找正当理由。", Line_Normal);
+	ClearMessage();
+
+//rだから今は、…この人に惚れたくない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから今は、…この人に惚れたくない。",
+			NULL, "所以现在，……我不想爱上这个人。", Line_Normal);
+	ClearMessage();
+
+//r少なくとも自分自身にそれなりの強い自信と意志を持って、対等に話ができるようになるまでは…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "少なくとも自分自身にそれなりの強い自信と意志を持って、対等に話ができるようになるまでは…。",
+			NULL, "至少在我自己拥有相应强烈的自信与意志，能够和他平等交谈以前……", Line_Normal);
+	ClearMessage();
+
+//守rvS20/00/VTT_mamoru3053.「でもま、久しぶりに聞いたな。kvS20/00/VTT_mamoru3054.…守『さん』」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>守</color>", NULL, "<color=#f5e6d3>守</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3053", 256, TRUE);
+	OutputLine(NULL, "「でもま、久しぶりに聞いたな。",
+			NULL, "「不过嘛，好久没听见你这么叫我了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mamoru3054", 256, TRUE);
+	OutputLine(NULL, "…守『さん』」",
+			NULL, "……守『先生』。」", Line_Normal);
+	ClearMessage();
+
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	PlaySE(3, "boyoon", 256, 64);
+	Wait( 1000 );
+
+//千紗登rvS20/37/VTT_chisa3139.「うぐっ？！kvS20/37/VTT_chisa3140.　し、しまった…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3139", 256, TRUE);
+	OutputLine(NULL, "「うぐっ？！",
+			NULL, "「呜咕？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3140", 256, TRUE);
+	OutputLine(NULL, "　し、しまった…！！」",
+			NULL, "糟、糟了……！！」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("white", 1000 );
+	DrawScene("background/sora2", 1000 );
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+//r自分に足りなかったもの、…あの子のためにできることは、なんだったのか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "自分に足りなかったもの、…あの子のためにできることは、なんだったのか。",
+			NULL, "自己缺少的东西，……以及为了那个孩子，我究竟能做到什么。", Line_Normal);
+	ClearMessage();
+
+//rそれをもっとよく考えたいと、千紗登は強く思っていた…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それをもっとよく考えたいと、千紗登は強く思っていた…。",
+			NULL, "千纱登强烈地想要更认真地思考这些……", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

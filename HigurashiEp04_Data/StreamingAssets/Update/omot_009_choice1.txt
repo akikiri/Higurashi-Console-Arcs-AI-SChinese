@@ -1,0 +1,63 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 9 choice 1
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 6, "sprite/si1a_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600263.「へ？　なんですかいきなり？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600263", 256, TRUE);
+	OutputLine(NULL, "「へ？　なんですかいきなり？」",
+			NULL, "「咦，怎么突然这样？」", Line_Normal);
+	ClearMessage();
+
+//rちょっと目を丸くして詩音は首をかしげる。それを見て、梨花ちゃんはスプーンを置くと俺の言葉を継いで言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ちょっと目を丸くして詩音は首をかしげる。それを見て、梨花ちゃんはスプーンを置くと俺の言葉を継いで言った。",
+			NULL, "诗音有些睁圆眼睛，歪了歪头。梨花酱见状放下勺子，接过我的话说道。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 6, "sprite/si1a_tohoho_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 5, "sprite/ri2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//梨花rvS14/05/210500517.「園崎系列のお店で働く、間宮リナという人のお話なのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500517", 256, TRUE);
+	OutputLine(NULL, "「園崎系列のお店で働く、間宮リナという人のお話なのです」",
+			NULL, "「是关于在园崎系列店里工作的，名叫间宫丽娜的人的话题。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1a_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600264.「園崎系列の店で…リナ？kvS14/06/210600265.　…知らないなー。kvS14/06/210600266.葛西は？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600264", 256, TRUE);
+	OutputLine(NULL, "「園崎系列の店で…リナ？",
+			NULL, "「园崎系列的店里……丽娜？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600265", 256, TRUE);
+	OutputLine(NULL, "　…知らないなー。",
+			NULL, "……没印象啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600266", 256, TRUE);
+	OutputLine(NULL, "葛西は？」",
+			NULL, "葛西？」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 15, "sprite/kasa_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//r葛西さんは少し考えるようにうつむく。やがて、口にしようかすまいか一瞬迷ったのちに、答えた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "葛西さんは少し考えるようにうつむく。やがて、口にしようかすまいか一瞬迷ったのちに、答えた。",
+			NULL, "葛西先生像是在思考似的稍稍低头。随后，他似乎犹豫了一瞬要不要说，接着回答。", Line_Normal);
+	ClearMessage();
+
+}

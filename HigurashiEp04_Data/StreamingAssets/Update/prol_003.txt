@@ -1,0 +1,273 @@
+void main()
+{
+
+
+//*Section 2 Prologue
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//警視庁公安部第七室捜査ファイル
+
+//prologue
+
+	DrawScene("black", 1000 );
+
+//r平成１８年　夏
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "平成１８年　夏",
+			NULL, "平成18年夏", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "dsse03", 128, 0 );
+	DrawScene("background/denwa", 1000 );
+
+//赤坂rvS05/13/321000001.「…これでよし、と」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/321000001", 256, TRUE);
+	OutputLine(NULL, "「…これでよし、と」",
+			NULL, "「……这样就行了。」", Line_Normal);
+	ClearMessage();
+
+//r引継ぎの資料を一通り整理し終えた私は、大きく背と腕を伸ばしながら軽い解放感を味わった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "引継ぎの資料を一通り整理し終えた私は、大きく背と腕を伸ばしながら軽い解放感を味わった。",
+			NULL, "把交接资料大致整理完后，我用力伸展腰背和双臂，感到些许如释重负。", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS05/13/321000002.「さすがに、結構な分量だったな。kvS05/13/321000003.…それにしても、ずいぶんと便利になったものだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/321000002", 256, TRUE);
+	OutputLine(NULL, "「さすがに、結構な分量だったな。",
+			NULL, "「分量还真是不少啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/321000003", 256, TRUE);
+	OutputLine(NULL, "…それにしても、ずいぶんと便利になったものだ」",
+			NULL, "……不过，现在可真是方便多了。」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	DrawScene("black", 1000 );
+	PlayBGM(2, "hm01_03", 128, 0);
+
+//r目の前の机に置かれたノートパソコンを見やりながら、ふと嘆息する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "目の前の机に置かれたノートパソコンを見やりながら、ふと嘆息する。",
+			NULL, "我望着眼前桌上的笔记本电脑，忽然轻轻叹息。", Line_Normal);
+	ClearMessage();
+
+//r現場からの、各事件に関する報告書。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "現場からの、各事件に関する報告書。",
+			NULL, "来自现场的各起案件报告。", Line_Normal);
+	ClearMessage();
+
+//r処務における様々な規定とマニュアル。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "処務における様々な規定とマニュアル。",
+			NULL, "关于行政事务的各种规定与手册。", Line_Normal);
+	ClearMessage();
+
+//rその他公安業務に関する法律、政令など…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その他公安業務に関する法律、政令など…。",
+			NULL, "其他与公安业务相关的法律、政令等……", Line_Normal);
+	ClearMessage();
+
+//r昔は閲覧のたびに、分厚いファイルに閉じられた書類を引っ張り出さなくてはならなくて辟易したものだが、今やこのＡ４サイズの端末からいくつか操作するだけで、すぐに全てを見ることができる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "昔は閲覧のたびに、分厚いファイルに閉じられた書類を引っ張り出さなくてはならなくて辟易したものだが、今やこのＡ４サイズの端末からいくつか操作するだけで、すぐに全てを見ることができる。",
+			NULL, "过去每次查阅，都得从厚厚的档案册里把文件翻找出来，实在令人厌烦。如今只要在这台A4大小的终端上操作几下，马上就能看到全部内容。", Line_Normal);
+	ClearMessage();
+
+//rしかも、データベース化のおかげで一々探す手間が大幅に短縮されたことは、とてもありがたい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかも、データベース化のおかげで一々探す手間が大幅に短縮されたことは、とてもありがたい。",
+			NULL, "而且多亏资料录入了数据库，逐份查找所费的功夫大幅减少，实在方便多了。", Line_Normal);
+	ClearMessage();
+
+//rおかげで、目の前にはいまだ旧時代のファイルが納められた本棚が所狭しと並んでいるが、それを開くことは滅多になくなり、今や埃が積もってしまっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おかげで、目の前にはいまだ旧時代のファイルが納められた本棚が所狭しと並んでいるが、それを開くことは滅多になくなり、今や埃が積もってしまっていた。",
+			NULL, "因此，眼前虽然还密密麻麻摆着存放旧式档案的书架，可这些档案已经很少再被翻开，如今都积起了灰。", Line_Normal);
+	ClearMessage();
+
+//r…そして、時の推移とともに変わったのは、資料の電子化だけではない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そして、時の推移とともに変わったのは、資料の電子化だけではない。",
+			NULL, "……而随着时光流逝而改变的，也不只是资料的电子化。", Line_Normal);
+	ClearMessage();
+
+//r肩書きも、環境も、…とどまることなく徐々に、時には急激に変わってゆく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "肩書きも、環境も、…とどまることなく徐々に、時には急激に変わってゆく。",
+			NULL, "头衔也好，环境也好……都在不断地逐渐变化，有时甚至会骤然改变。", Line_Normal);
+	ClearMessage();
+
+//rそんな変化の流れに、当然私も無縁ではいられなかった…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな変化の流れに、当然私も無縁ではいられなかった…。",
+			NULL, "而我当然也无法置身于这股变化的潮流之外……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ke_shiryou1_02", 1000 );
+
+//赤坂rvS05/13/321000004.「私が、校長か…。kvS05/13/321000005.はは、がらではないんだけどな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/321000004", 256, TRUE);
+	OutputLine(NULL, "「私が、校長か…。",
+			NULL, "「我当校长吗……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/321000005", 256, TRUE);
+	OutputLine(NULL, "はは、がらではないんだけどな」",
+			NULL, "哈哈，实在不像我的风格啊。」", Line_Normal);
+	ClearMessage();
+
+//r警視庁の公安部では今年、昨今の構造改革風潮の余波を受けて、大規模な組織の見直しが行われることとなった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "警視庁の公安部では今年、昨今の構造改革風潮の余波を受けて、大規模な組織の見直しが行われることとなった。",
+			NULL, "今年，警视厅公安部受到近来结构改革风潮的余波影响，决定进行大规模组织调整。", Line_Normal);
+	ClearMessage();
+
+//rそして私は、来年の春から警察学校の校長として赴任する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして私は、来年の春から警察学校の校長として赴任する。",
+			NULL, "而我将从明年春天起，赴任警察学校校长。", Line_Normal);
+	ClearMessage();
+
+//rとはいえさすがに、つい数日前に異動の辞令を受け取った時は、思わず目が点になったものだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とはいえさすがに、つい数日前に異動の辞令を受け取った時は、思わず目が点になったものだ。",
+			NULL, "话虽如此，几天前刚收到调动辞令的时候，我还是忍不住愣住了。", Line_Normal);
+	ClearMessage();
+
+//rピラミッド式に役職の椅子が減っていく以上、強力な学閥に属さない私がいつまでも公安畑にいられないとは覚悟していたが、…まさか教職とは予想外だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ピラミッド式に役職の椅子が減っていく以上、強力な学閥に属さない私がいつまでも公安畑にいられないとは覚悟していたが、…まさか教職とは予想外だった。",
+			NULL, "既然金字塔式的职位越往上越少，我也早有觉悟，自己这种没有强大学阀背景的人，无法永远留在公安系统。……可教职实在出乎意料。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+	DrawFilm( 2, 255, 225, 195, 255, 0, 500, TRUE );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 40, "sprite/miyuko_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ke_keijika1", 500 );
+
+//美雪rvS05/40/321500001.「きっと、神様のお告げだよ。kvS05/40/321500002.お父さんは今まで働きすぎだったから、そろそろ少しは休みなさい、ってね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s05/40/321500001", 256, TRUE);
+	OutputLine(NULL, "「きっと、神様のお告げだよ。",
+			NULL, "「一定是神明的启示啦。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s05/40/321500002", 256, TRUE);
+	OutputLine(NULL, "お父さんは今まで働きすぎだったから、そろそろ少しは休みなさい、ってね」",
+			NULL, "爸爸以前工作太拼命了，差不多也该稍微休息一下——神明一定是这么说的。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 500 );
+	FadeFilm( 500, TRUE );
+	DrawScene("background/ke_shiryou1_02", 1000 );
+
+//r…そう、娘が笑いながらいった言葉を思い返して、私はひとり苦笑する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そう、娘が笑いながらいった言葉を思い返して、私はひとり苦笑する。",
+			NULL, "……想起女儿笑着说出的这句话，我独自苦笑。", Line_Normal);
+	ClearMessage();
+
+//r他の同僚や上司と比べてそれほど猛烈に働いていたわけではないのだが、あの子にはそう見えるらしい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "他の同僚や上司と比べてそれほど猛烈に働いていたわけではないのだが、あの子にはそう見えるらしい。",
+			NULL, "和其他同事、上司相比，我并没有拼命工作到那种地步，可在那孩子眼里似乎就是如此。", Line_Normal);
+	ClearMessage();
+
+//rもっとも私も、公安という特殊な立場上、自分がどんな仕事をしているかを家族には説明してこなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もっとも私も、公安という特殊な立場上、自分がどんな仕事をしているかを家族には説明してこなかった。",
+			NULL, "不过，由于公安这一特殊身份，我从来没有向家人说明过自己具体在做什么工作。", Line_Normal);
+	ClearMessage();
+
+//rそのため娘は、周囲やメディアの風評をもとに大袈裟な解釈をしているような気がする…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そのため娘は、周囲やメディアの風評をもとに大袈裟な解釈をしているような気がする…。",
+			NULL, "所以女儿大概是根据周围和媒体的风评，作出了有些夸张的理解……", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS05/13/321000006.「この第７資料室の光景も、…あと数ヶ月か」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/321000006", 256, TRUE);
+	OutputLine(NULL, "「この第７資料室の光景も、…あと数ヶ月か」",
+			NULL, "「能看到第七资料室这副景象……也只剩几个月了吗。」", Line_Normal);
+	ClearMessage();
+
+//r改めて、周囲を見やる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "改めて、周囲を見やる。",
+			NULL, "我重新环视周围。", Line_Normal);
+	ClearMessage();
+
+//r…殺風景な光景だと常に思っていたが、いざ見納めとなると少し、物悲しい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…殺風景な光景だと常に思っていたが、いざ見納めとなると少し、物悲しい。",
+			NULL, "……我一直觉得这里的景象冷清单调，可真到要与它作别时，心里又有些寂寥。", Line_Normal);
+	ClearMessage();
+
+//rこの部屋は、私と仲間たちが数々の事件に挑み、戦い…その経緯と結果がしるされた、いわば『歴史』の宝物庫だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "この部屋は、私と仲間たちが数々の事件に挑み、戦い…その経緯と結果がしるされた、いわば『歴史』の宝物庫だ。",
+			NULL, "这个房间记录着我与同伴们挑战、奋战过的无数案件及其经过与结果，堪称一座『历史』的宝库。", Line_Normal);
+	ClearMessage();
+
+//r様々な困難を乗り越え、真相を暴き勝利を収めたものもあった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "様々な困難を乗り越え、真相を暴き勝利を収めたものもあった。",
+			NULL, "其中也有跨越重重困难，揭开真相并赢得胜利的案件。", Line_Normal);
+	ClearMessage();
+
+//rしかしそれとは逆に、結局ぎりぎりまで手がかりをつかんでおきながら、その途上でやむなく中断した未解決事件も数多く存在した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかしそれとは逆に、結局ぎりぎりまで手がかりをつかんでおきながら、その途上でやむなく中断した未解決事件も数多く存在した。",
+			NULL, "相反，也有许多一路紧追线索直至最后关头，却不得不半途终止的未解决案件。", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS05/13/321000007.「…その中のひとつが、…これだな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/321000007", 256, TRUE);
+	OutputLine(NULL, "「…その中のひとつが、…これだな」",
+			NULL, "「……其中之一……就是这个吧。」", Line_Normal);
+	ClearMessage();
+
+//rキーボードとマウスを操作し、セキュリティ保持のため静脈認証システムを経て、私はひとつの事件に関する資料フォルダを開く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "キーボードとマウスを操作し、セキュリティ保持のため静脈認証システムを経て、私はひとつの事件に関する資料フォルダを開く。",
+			NULL, "我操作键盘和鼠标，又通过为确保安全而设置的静脉识别认证，打开了一个案件的资料文件夹。", Line_Normal);
+	ClearMessage();
+
+//rそれは、…昭和５８年の６月。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それは、…昭和５８年の６月。",
+			NULL, "那是……昭和58年6月。", Line_Normal);
+	ClearMessage();
+
+//r中部地方のとある寒村で起こった、『雛見沢ガス災害』に関する資料だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "中部地方のとある寒村で起こった、『雛見沢ガス災害』に関する資料だった。",
+			NULL, "那是一份关于发生在中部地方某座寒村的『雏见泽瓦斯灾害』的资料。", Line_Normal);
+	ClearMessage();
+
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

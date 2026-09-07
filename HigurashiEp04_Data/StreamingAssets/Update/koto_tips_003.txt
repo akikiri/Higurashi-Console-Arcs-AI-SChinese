@@ -1,0 +1,675 @@
+
+void main()
+{
+
+
+//*Kotohogushi TIPS 3
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//剣術講座・基本編
+
+	DrawScene("white", 1000 );
+	DrawScene("background/sora", 1000 );
+	PlayBGM(2, "hm10_68", 128, 0);
+
+//羽入rvS20/45/VTT_hanyu3102.「え？　剣術を…ですか？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3102", 256, TRUE);
+	OutputLine(NULL, "「え？　剣術を…ですか？」",
+			NULL, "「咦？剑术……吗？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS20/47/VTT_ouka3001.「はいなのです。kvS20/47/VTT_ouka3001a.ぜひとも神様のその技、ボクにも教えてくださいなのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3001", 256, TRUE);
+	OutputLine(NULL, "「はいなのです。",
+			NULL, "「是的说。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3001a", 256, TRUE);
+	OutputLine(NULL, "ぜひとも神様のその技、ボクにも教えてくださいなのです」",
+			NULL, "请务必把神明大人的那套本领也教给我的说。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3103.「そ、それは…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3103", 256, TRUE);
+	OutputLine(NULL, "「そ、それは…」",
+			NULL, "「这、这个……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r折り入ってと言ってくるものだから、何を頼む気なのだろうと思っていたら、…まさか、剣術とは。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "折り入ってと言ってくるものだから、何を頼む気なのだろうと思っていたら、…まさか、剣術とは。",
+			NULL, "她郑重其事地说有事相求，我还以为她要拜托什么，没想到竟然是剑术。", Line_Normal);
+	ClearMessage();
+
+//rさすがに私もすぐには首肯できず、桜花の意図を計りかねていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さすがに私もすぐには首肯できず、桜花の意図を計りかねていた。",
+			NULL, "就连我也没法立刻点头答应，一时拿不准樱花的意图。", Line_Normal);
+	ClearMessage();
+
+//r…つい先日、しばらく『混血』の活動もなく安穏とした日々が続いたため、私は身体の鈍りを取り去ろうと思い、境内の奥で剣技の稽古をしていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…つい先日、しばらく『混血』の活動もなく安穏とした日々が続いたため、私は身体の鈍りを取り去ろうと思い、境内の奥で剣技の稽古をしていた。",
+			NULL, "……前几日『混血』暂时没有活动，安稳的日子持续了一阵。我为了让迟钝下来的身体活动起来，在境内深处练习剑技。", Line_Normal);
+	ClearMessage();
+
+//rその様子を、たまたま掃除にやってきた桜花に見とがめられたので、余興のつもりで木葉斬りといった剣舞を披露したのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その様子を、たまたま掃除にやってきた桜花に見とがめられたので、余興のつもりで木葉斬りといった剣舞を披露したのだ。",
+			NULL, "那一幕碰巧被前来打扫的樱花看见，于是我抱着助兴的心思，展示了斩落树叶之类的剑舞。", Line_Normal);
+	ClearMessage();
+
+//rしかし、…まさかそれを『見たい』ではなく『身につけたい』とは。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし、…まさかそれを『見たい』ではなく『身につけたい』とは。",
+			NULL, "可是……她竟然想『学会』，而非只是『想看』。", Line_Normal);
+	ClearMessage();
+
+//r幼子の無邪気な好奇心を呼び起こしてしまったことに、私は自分の軽率を後悔していた…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "幼子の無邪気な好奇心を呼び起こしてしまったことに、私は自分の軽率を後悔していた…。",
+			NULL, "我后悔自己的轻率，竟唤起了幼童天真无邪的好奇心。", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 47, "sprite/ri5_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ji2", 1000 );
+
+//羽入rvS20/45/VTT_hanyu3104.「…桜花、言っている意味がわかっているのですか？kvS20/45/VTT_hanyu3105.　あなたは仮にも、この古手神社の巫女」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3104", 256, TRUE);
+	OutputLine(NULL, "「…桜花、言っている意味がわかっているのですか？",
+			NULL, "「……樱花，你明白自己在说什么吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3105", 256, TRUE);
+	OutputLine(NULL, "　あなたは仮にも、この古手神社の巫女」",
+			NULL, "你好歹也是这座古手神社的巫女。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3106.「巫女とは本来、殺生などのケガレをもっとも忌み嫌うべき立場のはずです。kvS20/45/VTT_hanyu3107.それが、なぜ人斬りの道具の技を磨きたいと？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3106", 256, TRUE);
+	OutputLine(NULL, "「巫女とは本来、殺生などのケガレをもっとも忌み嫌うべき立場のはずです。",
+			NULL, "「巫女本应是最忌讳杀生这类污秽的身份。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3107", 256, TRUE);
+	OutputLine(NULL, "それが、なぜ人斬りの道具の技を磨きたいと？」",
+			NULL, "你为什么想磨练杀人兵器的技艺？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3002.「お願いなのです。kvS20/47/VTT_ouka3003.神社に泥棒が入らないように、ボクも剣術を学んでおきたいのですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3002", 256, TRUE);
+	OutputLine(NULL, "「お願いなのです。",
+			NULL, "「拜托您了的说。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3003", 256, TRUE);
+	OutputLine(NULL, "神社に泥棒が入らないように、ボクも剣術を学んでおきたいのですよ」",
+			NULL, "为了防备小偷闯进神社，我也想学会剑术的说。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3108.「…泥棒？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3108", 256, TRUE);
+	OutputLine(NULL, "「…泥棒？」",
+			NULL, "「……小偷？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3004.「…この村にも最近、外から移り住んできた人が増えてきました。kvS20/47/VTT_ouka3005.人を疑うのはよくありませんが、せめて万一の時のためにボクの身はボク自身で守る術を身につけておきたいのです。kvS20/47/VTT_ouka3006.…だめ、なのですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3004", 256, TRUE);
+	OutputLine(NULL, "「…この村にも最近、外から移り住んできた人が増えてきました。",
+			NULL, "「……最近村子里从外面搬来的人也变多了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3005", 256, TRUE);
+	OutputLine(NULL, "人を疑うのはよくありませんが、せめて万一の時のためにボクの身はボク自身で守る術を身につけておきたいのです。",
+			NULL, "怀疑别人并不好，可至少为了以防万一，我想学会保护自己的办法的说。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3006", 256, TRUE);
+	OutputLine(NULL, "…だめ、なのですか？」",
+			NULL, "……不行吗？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3109.「い、いえ…ダメというわけではありませんが、今でも私が、あなたの身の安全を守っているつもりです。kvS20/45/VTT_hanyu3110.その必要はないのではありませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3109", 256, TRUE);
+	OutputLine(NULL, "「い、いえ…ダメというわけではありませんが、今でも私が、あなたの身の安全を守っているつもりです。",
+			NULL, "「呃，也并非不行……只是我现在也一直在保护你的安全。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3110", 256, TRUE);
+	OutputLine(NULL, "その必要はないのではありませんか？」",
+			NULL, "你其实没有这个必要吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3007.「でも…神様も時々、この村を留守にすることがありますです。kvS20/47/VTT_ouka3008.神様にも大切な仕事があるのですから、いつまでも頼りきりはよくないと思ったのですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3007", 256, TRUE);
+	OutputLine(NULL, "「でも…神様も時々、この村を留守にすることがありますです。",
+			NULL, "「可是……神明大人有时也会离开村子。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3008", 256, TRUE);
+	OutputLine(NULL, "神様にも大切な仕事があるのですから、いつまでも頼りきりはよくないと思ったのですよ」",
+			NULL, "神明大人也有重要的工作，所以我觉得一直依赖您也不合适。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3111.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3111", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rその優しい気遣いに思わず顔がほころびかけたが、…その反面、そういう気持ちであればなおさら、剣技を教えるべきではないと考え直す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その優しい気遣いに思わず顔がほころびかけたが、…その反面、そういう気持ちであればなおさら、剣技を教えるべきではないと考え直す。",
+			NULL, "那份温柔体贴让我差点露出笑容，可另一方面，正因为她抱着这样的心情，我才觉得更该阻止她学习剑技。", Line_Normal);
+	ClearMessage();
+
+//rゆえに、私は。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆえに、私は。",
+			NULL, "于是，我。", Line_Normal);
+	ClearMessage();
+
+//r少々厳しい訓示をしておこうと思い立ち、腰にさした剣を抜くと…それを桜花に手渡した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "少々厳しい訓示をしておこうと思い立ち、腰にさした剣を抜くと…それを桜花に手渡した。",
+			NULL, "我决定稍微严厉地训诫她，拔出腰间的剑，将它交给樱花。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlayBGM( 1, "semi", 128, 0 );
+	PlaySE(3, "addse19", 256, 64);
+	DrawScene("white", 500 );
+	ModDrawCharacter(4, 47, "sprite/ri5_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/ji2", 500 );
+
+//桜花rvS20/47/VTT_ouka3009.「……みぃ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3009", 256, TRUE);
+	OutputLine(NULL, "「……みぃ？」",
+			NULL, "「……咪？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3112.「桜花。kvS20/45/VTT_hanyu3113.…その剣を抜いて、私に斬りかかってきなさい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3112", 256, TRUE);
+	OutputLine(NULL, "「桜花。",
+			NULL, "「樱花。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3113", 256, TRUE);
+	OutputLine(NULL, "…その剣を抜いて、私に斬りかかってきなさい」",
+			NULL, "……拔出那把剑，向我砍过来。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS20/47/VTT_ouka3010.「えっ…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3010", 256, TRUE);
+	OutputLine(NULL, "「えっ…？！」",
+			NULL, "「咦……？！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3114.「さぁ、桜花」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3114", 256, TRUE);
+	OutputLine(NULL, "「さぁ、桜花」",
+			NULL, "「来吧，樱花。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3011.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3011", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r桜花は戸惑いを満面に浮かべながら、手に持つ剣と私の顔を何度も交互に見つめる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花は戸惑いを満面に浮かべながら、手に持つ剣と私の顔を何度も交互に見つめる。",
+			NULL, "樱花满脸困惑，一次又一次地来回看着手中的剑和我的脸。", Line_Normal);
+	ClearMessage();
+
+//rそれでも、私がその場に立ったまましばらく無言でいたため、…彼女は仕方なく鞘から剣を抜き、おぼつかない足取りで私に向けて構えをとった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも、私がその場に立ったまましばらく無言でいたため、…彼女は仕方なく鞘から剣を抜き、おぼつかない足取りで私に向けて構えをとった。",
+			NULL, "即便如此，我仍站在原地沉默不语……她只好从鞘中拔出剑，脚步不稳地朝我摆出架势。", Line_Normal);
+	ClearMessage();
+
+//桜花rvS20/47/VTT_ouka3012.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3012", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3115.「…さ、かかってきなさい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3115", 256, TRUE);
+	OutputLine(NULL, "「…さ、かかってきなさい」",
+			NULL, "「……来，攻过来。」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+
+//桜花rvS20/47/VTT_ouka3013.「や、…やぁぁあぁッッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3013", 256, TRUE);
+	OutputLine(NULL, "「や、…やぁぁあぁッッ！！」",
+			NULL, "「呀、呀啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sword", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 500 );
+
+//羽入rvS20/45/VTT_hanyu3116.「……っ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3116", 256, TRUE);
+	OutputLine(NULL, "「……っ…！」",
+			NULL, "「……！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	DrawScene("black", 500 );
+	PlaySE(3, "dageki", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 500 );
+
+//桜花rvS20/47/VTT_ouka3014.「――みぃっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3014", 256, TRUE);
+	OutputLine(NULL, "「——みぃっ？！」",
+			NULL, "「——咪？！」", Line_Normal);
+	ClearMessage();
+
+//r幼い勇気を精いっぱいに振り絞って突っ込んできた桜花のその腕を、私はいともたやすく素手で払いのける。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "幼い勇気を精いっぱいに振り絞って突っ込んできた桜花のその腕を、私はいともたやすく素手で払いのける。",
+			NULL, "樱花鼓起幼小的勇气拼命冲来，我轻而易举地徒手拨开她的手臂。", Line_Normal);
+	ClearMessage();
+
+//r彼女は勢いあまってその場に尻餅をついて倒れ、その手を離れた剣は後方の地面に落ちて転がった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼女は勢いあまってその場に尻餅をついて倒れ、その手を離れた剣は後方の地面に落ちて転がった。",
+			NULL, "她因为冲得太猛，当场一屁股摔倒在地，脱手的剑落在后方的地上滚了出去。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "semi", 128, 0 );
+	DrawScene("background/ji2", 250 );
+	PlaySE(3, "addse13", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS20/47/VTT_ouka3015.「あ…っ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3015", 256, TRUE);
+	OutputLine(NULL, "「あ…っ？」",
+			NULL, "「啊……？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3117.「よく覚えておきなさい、桜花。kvS20/45/VTT_hanyu3118.剣術とはおのれを守るのではなく、相手を殺す技です。kvS20/45/VTT_hanyu3119.そして、稽古のさなかに相手か、その周囲の者…あるいは自分自身をも傷つけ、最悪の場合命を奪うこともある」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3117", 256, TRUE);
+	OutputLine(NULL, "「よく覚えておきなさい、桜花。",
+			NULL, "「好好记住，樱花。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3118", 256, TRUE);
+	OutputLine(NULL, "剣術とはおのれを守るのではなく、相手を殺す技です。",
+			NULL, "剑术是杀死对手的技艺，并非护身之术。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3119", 256, TRUE);
+	OutputLine(NULL, "そして、稽古のさなかに相手か、その周囲の者…あるいは自分自身をも傷つけ、最悪の場合命を奪うこともある」",
+			NULL, "而且在练习过程中，也会伤到对手、周围的人……甚至自己本身，最糟时还会夺走性命。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3120.「…ですから常に、相手を傷つける覚悟を持っていなければならない。kvS20/45/VTT_hanyu3121.生半可な気持ちで、やれるものではありませんよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3120", 256, TRUE);
+	OutputLine(NULL, "「…ですから常に、相手を傷つける覚悟を持っていなければならない。",
+			NULL, "「……所以必须时刻怀着伤害对手的觉悟。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3121", 256, TRUE);
+	OutputLine(NULL, "生半可な気持ちで、やれるものではありませんよ」",
+			NULL, "这不是凭半吊子的心情就能碰的东西。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS20/47/VTT_ouka3016.「っ……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3016", 256, TRUE);
+	OutputLine(NULL, "「っ……」",
+			NULL, "「唔……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r桜花はその愛くるしい瞳を潤ませながら、しゅんとうなだれる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花はその愛くるしい瞳を潤ませながら、しゅんとうなだれる。",
+			NULL, "樱花眼中含着泪水，可怜兮兮地垂下头。", Line_Normal);
+	ClearMessage();
+
+//rその、今にも泣き出しそうな表情に私の胸は激しく痛んだが、…ここは厳しく諭しておくほうが、彼女のためだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その、今にも泣き出しそうな表情に私の胸は激しく痛んだが、…ここは厳しく諭しておくほうが、彼女のためだろう。",
+			NULL, "看着她那副快要哭出来的表情，我的胸口剧烈地疼了起来……但我想，此时严厉地告诫她，才是为了她好。", Line_Normal);
+	ClearMessage();
+
+//rそう思って、怪我はないかと桜花のもとへと歩み寄ろうとしたその時…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう思って、怪我はないかと桜花のもとへと歩み寄ろうとしたその時…。",
+			NULL, "这么想着，我正要走到樱花身边，看看她有没有受伤时……", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlayBGM(2, "hm10_63", 128, 0);
+	PlaySE(3, "kyupirn", 256, 64);
+	DrawScene("white", 250 );
+	ModDrawCharacter(4, 47, "sprite/ri5_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/ji2", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS20/47/VTT_ouka3017.「も、…もう一度っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3017", 256, TRUE);
+	OutputLine(NULL, "「も、…もう一度っ！」",
+			NULL, "「再、再来一次！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3122.「…えっ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3122", 256, TRUE);
+	OutputLine(NULL, "「…えっ？」",
+			NULL, "「……咦？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS20/47/VTT_ouka3018.「もう一度、やらせてください！kvS20/47/VTT_ouka3019.　お願いなのです、羽入！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3018", 256, TRUE);
+	OutputLine(NULL, "「もう一度、やらせてください！",
+			NULL, "「请再让我试一次！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3019", 256, TRUE);
+	OutputLine(NULL, "　お願いなのです、羽入！」",
+			NULL, "拜托了的说，羽入！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3123.「……。kvS20/45/VTT_hanyu3124.いいでしょう。kvS20/45/VTT_hanyu3125.さぁ、いつでもかかって、kvS20/45/VTT_hanyu3126.――っ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3123", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3124", 256, TRUE);
+	OutputLine(NULL, "いいでしょう。",
+			NULL, "好吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3125", 256, TRUE);
+	OutputLine(NULL, "さぁ、いつでもかかって、",
+			NULL, "来，随时都可以攻过来，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3126", 256, TRUE);
+	OutputLine(NULL, "——っ？！」",
+			NULL, "——？！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "white", "up", 0, 0, 250 );
+	DrawScene("black", 500 );
+
+//桜花rvS20/47/VTT_ouka3020.「ったぁあぁぁっっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3020", 256, TRUE);
+	OutputLine(NULL, "「ったぁあぁぁっっ！！」",
+			NULL, "「嗒啊啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "addse14", 128, 0 );
+
+//r桜花は地面に転がった剣を拾い上げると、今度はためらいもなくそれを大きく頭上へと振り上げ、決死の表情で撃ちかかってくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花は地面に転がった剣を拾い上げると、今度はためらいもなくそれを大きく頭上へと振り上げ、決死の表情で撃ちかかってくる。",
+			NULL, "樱花拾起落在地上的剑，这一次毫不犹豫地将它高高举过头顶，带着拼死的表情砍了过来。", Line_Normal);
+	ClearMessage();
+
+//r一瞬、意表を突かれた私は息をのんでその場に固まったが、…それも、一瞬だけだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "一瞬、意表を突かれた私は息をのんでその場に固まったが、…それも、一瞬だけだった。",
+			NULL, "那出其不意的一击让我一瞬间屏住呼吸，僵在原地……但也只有一瞬间。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "sword", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 500 );
+	DrawScene("background/ji2", 250 );
+	PlaySE(3, "addse13", 256, 64);
+	PlayBGM( 1, "semi", 128, 0 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS20/47/VTT_ouka3021.「みぃっ…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3021", 256, TRUE);
+	OutputLine(NULL, "「みぃっ…？！」",
+			NULL, "「咪……？！」", Line_Normal);
+	ClearMessage();
+
+//r同じように腕を振るって、私は桜花の手から剣を叩き落とす。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "同じように腕を振るって、私は桜花の手から剣を叩き落とす。",
+			NULL, "我同样挥动手臂，将剑从樱花手中打落。", Line_Normal);
+	ClearMessage();
+
+//r…ただ、力加減を誤ってしまったせいか彼女の身体は、さっきよりも大きく跳ね飛ばされて地面に転がった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…ただ、力加減を誤ってしまったせいか彼女の身体は、さっきよりも大きく跳ね飛ばされて地面に転がった。",
+			NULL, "……只是，也许是我没控制好力道，她的身体比刚才被弹得更远，在地上滚了出去。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3127.「っ？kvS20/45/VTT_hanyu3128.　ご、ごめんなさい桜花！kvS20/45/VTT_hanyu3129.　大丈夫ですか？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3127", 256, TRUE);
+	OutputLine(NULL, "「っ？",
+			NULL, "「……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3128", 256, TRUE);
+	OutputLine(NULL, "　ご、ごめんなさい桜花！",
+			NULL, "对、对不起，樱花！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3129", 256, TRUE);
+	OutputLine(NULL, "　大丈夫ですか？！」",
+			NULL, "你没事吧？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3022.「っ、へ、平気なのですよ…。kvS20/47/VTT_ouka3023.にぱ～」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3022", 256, TRUE);
+	OutputLine(NULL, "「っ、へ、平気なのですよ…。",
+			NULL, "「唔，没、没事的说……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3023", 256, TRUE);
+	OutputLine(NULL, "にぱ～」",
+			NULL, "咪啪～」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3130.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3130", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r泥に汚れた頬を手の甲で拭いながら、すぐに起き上がった桜花はにっこりとほほ笑む。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "泥に汚れた頬を手の甲で拭いながら、すぐに起き上がった桜花はにっこりとほほ笑む。",
+			NULL, "樱花用手背擦掉沾在脸颊上的泥，立刻站起身来，露出灿烂的笑容。", Line_Normal);
+	ClearMessage();
+
+//r…その目はさっきよりも強く、そして活気に満ちた輝きをはらんでいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…その目はさっきよりも強く、そして活気に満ちた輝きをはらんでいた。",
+			NULL, "……那双眼睛比刚才更坚定，并且蕴含着充满生气的光芒。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_niko_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS20/47/VTT_ouka3024.「羽入、もう一度…もう一度なのです！kvS20/47/VTT_ouka3025.　今度は、もう少し上手に…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3024", 256, TRUE);
+	OutputLine(NULL, "「羽入、もう一度…もう一度なのです！",
+			NULL, "「羽入，再来一次……再来一次的说！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3025", 256, TRUE);
+	OutputLine(NULL, "　今度は、もう少し上手に…！」",
+			NULL, "这次我会做得更好一点……！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3131.「……。kvS20/45/VTT_hanyu3132.わかりました。kvS20/45/VTT_hanyu3133.そこまでの覚悟なら…承りましょう。kvS20/45/VTT_hanyu3134.ただし、女子とか幼子だからと言って、容赦はしませんからね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3131", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3132", 256, TRUE);
+	OutputLine(NULL, "わかりました。",
+			NULL, "我知道了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3133", 256, TRUE);
+	OutputLine(NULL, "そこまでの覚悟なら…承りましょう。",
+			NULL, "既然你有这样的觉悟……我就答应你。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3134", 256, TRUE);
+	OutputLine(NULL, "ただし、女子とか幼子だからと言って、容赦はしませんからね」",
+			NULL, "不过，别以为因为你是女子或幼童，我就会手下留情。」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm05_23", 128, 0);
+	ModDrawCharacter(4, 47, "sprite/ri5_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3026.「え…？kvS20/47/VTT_ouka3027.　じゃ、じゃあ…っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3026", 256, TRUE);
+	OutputLine(NULL, "「え…？",
+			NULL, "「咦……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3027", 256, TRUE);
+	OutputLine(NULL, "　じゃ、じゃあ…っ！」",
+			NULL, "那、那么……！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3135.「それから、言った以上は途中で投げ出したり、弱音を吐いたりすることは許しません。kvS20/45/VTT_hanyu3136.心してきなさい…いいですね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3135", 256, TRUE);
+	OutputLine(NULL, "「それから、言った以上は途中で投げ出したり、弱音を吐いたりすることは許しません。",
+			NULL, "「还有，既然说出口了，我不会允许你中途放弃或说丧气话。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3136", 256, TRUE);
+	OutputLine(NULL, "心してきなさい…いいですね？」",
+			NULL, "做好心理准备……明白了吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ri5_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS20/47/VTT_ouka3028.「は…はいなのですっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3028", 256, TRUE);
+	OutputLine(NULL, "「は…はいなのですっ！」",
+			NULL, "「是、是的说！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r桜花は満面に笑みをたたえながら、それこそ地面に頭がつきそうな勢いでぺこり、と頭を下げる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花は満面に笑みをたたえながら、それこそ地面に頭がつきそうな勢いでぺこり、と頭を下げる。",
+			NULL, "樱花满脸笑容，几乎要把头碰到地面似的深深低头行礼。", Line_Normal);
+	ClearMessage();
+
+//rそれを見た私は肩をすくめながら、練習用の木刀を取ってくると彼女に言いおいてその場をいったん立ち去った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それを見た私は肩をすくめながら、練習用の木刀を取ってくると彼女に言いおいてその場をいったん立ち去った。",
+			NULL, "看着她那样，我耸了耸肩，告诉她我去取练习用的木刀，便暂时离开了那里。", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	ModDrawCharacter(4, 45, "sprite/oha1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ji2", 1000 );
+
+//羽入rvS20/45/VTT_hanyu3137.「……信じられない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3137", 256, TRUE);
+	OutputLine(NULL, "「……信じられない」",
+			NULL, "「……难以置信。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//rゆるやかに繰り出されたはずの、桜花の二回目の一撃。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆるやかに繰り出されたはずの、桜花の二回目の一撃。",
+			NULL, "樱花第二次的一击，明明挥得很慢。", Line_Normal);
+	ClearMessage();
+
+//r私が弾き返そうと腕を伸ばしたその時、…構えるのもやっとであったはずの彼女はそれを見て、振りの軌道を変えたのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私が弾き返そうと腕を伸ばしたその時、…構えるのもやっとであったはずの彼女はそれを見て、振りの軌道を変えたのだ。",
+			NULL, "我伸出手臂准备弹开它时……本该勉强摆出架势的她，看准这一点改变了挥击的轨道。", Line_Normal);
+	ClearMessage();
+
+//rしかも…踏み込んだ右足からさらに左足を踏み出し、全体重を乗せて身体の向きを変えるという、定石では考えられない剣撃で…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかも…踏み込んだ右足からさらに左足を踏み出し、全体重を乗せて身体の向きを変えるという、定石では考えられない剣撃で…。",
+			NULL, "而且……她从踏出的右脚接着踏出左脚，将全身体重压上去改变身体方向，那是完全违背常理的一剑……", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS20/45/VTT_hanyu3138.「…偶然？kvS20/45/VTT_hanyu3139.　それとも…まさか…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3138", 256, TRUE);
+	OutputLine(NULL, "「…偶然？",
+			NULL, "「……偶然？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3139", 256, TRUE);
+	OutputLine(NULL, "　それとも…まさか…？！」",
+			NULL, "还是说……难道……？！」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

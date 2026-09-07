@@ -1,0 +1,105 @@
+void main()
+{
+
+
+//*Tokihogushi TIPS 4
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//診察カルテ
+
+	DrawScene("white", 1000 );
+	DrawScene("background/ke5", 1000 );
+	PlayBGM(2, "hm06_30", 128, 0);
+
+	PlayBGM( 0, "taip", 128, 0 );
+//r時間：１０月１１日（月）２１時１７分
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "時間：１０月１１日（月）２１時１７分",
+			NULL, "时间：10月11日（星期一）21时17分", Line_ContinueAfterTyping);
+	FadeOutBGM( 0, 200, FALSE  );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "taip", 128, 0 );
+//r対象者氏名：南井巴（２８）
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "対象者氏名：南井巴（２８）",
+			NULL, "受检者姓名：南井巴（28）", Line_ContinueAfterTyping);
+	FadeOutBGM( 0, 200, FALSE  );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "taip", 128, 0 );
+//r住所：愛知県垣内市在住
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "住所：愛知県垣内市在住",
+			NULL, "住址：爱知县垣内市", Line_ContinueAfterTyping);
+	FadeOutBGM( 0, 200, FALSE  );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "taip", 128, 0 );
+//r職業：愛知県警察本部垣内署勤務
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "職業：愛知県警察本部垣内署勤務",
+			NULL, "职业：任职于爱知县警察本部垣内署", Line_ContinueAfterTyping);
+	FadeOutBGM( 0, 200, FALSE  );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "taip", 128, 0 );
+//r症状：発熱および昏睡。頚部に×××（ドイツ語表記）
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "症状：発熱および昏睡。頚部に×××（ドイツ語表記）",
+			NULL, "症状：发热及昏睡。颈部有×××（以德语标注）", Line_ContinueAfterTyping);
+	FadeOutBGM( 0, 200, FALSE  );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "taip", 128, 0 );
+//r処方：解熱剤と栄養剤を投与。×××を２０ｃｃ注射。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "処方：解熱剤と栄養剤を投与。×××を２０ｃｃ注射。",
+			NULL, "处方：给予退烧药和营养剂，并注射×××20cc。", Line_ContinueAfterTyping);
+	FadeOutBGM( 0, 200, FALSE  );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "taip", 128, 0 );
+//rその他：××××××の疑い、症状レベルは××。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その他：××××××の疑い、症状レベルは××。",
+			NULL, "其他：疑似××××××，症状等级为××。", Line_ContinueAfterTyping);
+	FadeOutBGM( 0, 200, FALSE  );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 0, "taip", 128, 0 );
+//r穀倉大学付属病院へカルテをＦＡＸにて送付済み。経過観察を担当医に依頼、要報告のこと。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "穀倉大学付属病院へカルテをＦＡＸにて送付済み。経過観察を担当医に依頼、要報告のこと。",
+			NULL, "病历已通过传真发送至谷仓大学附属医院。已委托主治医生观察病情进展，须提交报告。", Line_ContinueAfterTyping);
+	FadeOutBGM( 0, 200, FALSE  );
+	OutputLineAll(NULL, "", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

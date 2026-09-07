@@ -1,0 +1,58 @@
+void main()
+{
+
+
+//*Kakera no Sekai Day 102
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//Z4 ヒント　
+
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	PlayBGM(2, "hm10_55", 128, 0);
+	DrawScene("background/oyashirosama", 1000 );
+
+//r…『ヒント　』にようこそ。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…『ヒント　』にようこそ。",
+			NULL, "……欢迎来到『提示Z4』。", Line_Normal);
+	ClearMessage();
+
+//r『澪尽し』へのゲートは、r＜!X!.その後の世界＞の『!X!1! 事件報告３』r＜!X!.その後の世界＞の『!X!2! 事件報告４』r＜!X!.その後の世界＞の『!X!3! 事件報告５』r＜!K!.解明の世界＞の『!K!6! 解々し編のカケラ』r…以上のカケラを見つけると、＜!L!.希望の世界＞の『!L!3! 澪尽し編のカケラ』が出てくるの。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "『澪尽し』へのゲートは、\n＜X.その後の世界＞の『X1 事件報告３』\n＜X.その後の世界＞の『X2 事件報告４』\n＜X.その後の世界＞の『X3 事件報告５』\n＜K.解明の世界＞の『K6 解々し編のカケラ』\n…以上のカケラを見つけると、＜L.希望の世界＞の『L3 澪尽し編のカケラ』が出てくるの。",
+			NULL, "通往『澪尽篇』的大门，\n只要找到＜X.其后的世界＞的『X1 事件报告3』\n、＜X.其后的世界＞的『X2 事件报告4』\n、＜X.其后的世界＞的『X3 事件报告5』\n、＜K.解明的世界＞的『K6 解解篇的碎片』\n……以上碎片，就会出现＜L.希望的世界＞的『L3 澪尽篇的碎片』。", Line_Normal);
+	ClearMessage();
+
+//rそれを選択した後に出てくる『!L!4! 逆回りの歯車』を見て、もう一度『!L!3! 澪尽し編のカケラ』を見れば進めるようになるわ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それを選択した後に出てくる『L4 逆回りの歯車』を見て、もう一度『L3 澪尽し編のカケラ』を見れば進めるようになるわ。",
+			NULL, "选择它之后，观看随后出现的『L4 逆转的齿轮』，再看一次『L3 澪尽篇的碎片』，就可以继续前进了。", Line_Normal);
+	ClearMessage();
+
+//r頑張ってちょうだい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "頑張ってちょうだい。",
+			NULL, "请加油哦。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

@@ -1,0 +1,444 @@
+void main()
+{
+
+//*TIPS 85
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//しっかりせんかいっ
+
+	DrawSceneWithMask("background/ng_kyo", "v_right", 0, 0, 1000 );
+	PlayBGM( 2, "hm01_04", 128, 0 );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 39, "sprite/tou1a_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 38, "sprite/tama1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3001.「…あら、暁ちゃん。kvS20/38/VTT_tama3002.うちのクラスに何か用？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3001", 256, TRUE);
+	OutputLine(NULL, "「…あら、暁ちゃん。",
+			NULL, "「……哎呀，晓。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3002", 256, TRUE);
+	OutputLine(NULL, "うちのクラスに何か用？」",
+			NULL, "来我们班有什么事？」", Line_Normal);
+	ClearMessage();
+
+//暁rvS20/39/VTT_akira3001.「あ、いや。kvS20/39/VTT_akira3002.タマにじゃなくて、チサにな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3001", 256, TRUE);
+	OutputLine(NULL, "「あ、いや。",
+			NULL, "「啊，没什么。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3002", 256, TRUE);
+	OutputLine(NULL, "タマにじゃなくて、チサにな」",
+			NULL, "我找的不是小珠，是千纱。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3028.「私にぃ？kvS20/37/VTT_chisa3029.…いや～、まいったねこりゃ。kvS20/37/VTT_chisa3030.あ、でも今週は何かと予定が入ってるから、来週でもいい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3028", 256, TRUE);
+	OutputLine(NULL, "「私にぃ？",
+			NULL, "「找我？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3029", 256, TRUE);
+	OutputLine(NULL, "…いや～、まいったねこりゃ。",
+			NULL, "……哎呀～这可难办了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3030", 256, TRUE);
+	OutputLine(NULL, "あ、でも今週は何かと予定が入ってるから、来週でもいい？」",
+			NULL, "啊，不过我这周安排挺满的，约到下周行吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_shinken_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3003.「…何の話をしてるんだ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3003", 256, TRUE);
+	OutputLine(NULL, "「…何の話をしてるんだ？」",
+			NULL, "「……你在说什么啊？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3031.「え、デートのお誘いでしょ？kvS20/37/VTT_chisa3032.　ああ、ちなみにディナーはフランス料理フルコースでよろしくね～」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3031", 256, TRUE);
+	OutputLine(NULL, "「え、デートのお誘いでしょ？",
+			NULL, "「咦，不是来约我出去玩吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3032", 256, TRUE);
+	OutputLine(NULL, "　ああ、ちなみにディナーはフランス料理フルコースでよろしくね～」",
+			NULL, "啊，顺便说一句，晚餐记得请我吃全套法餐哦～」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_sakebi_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3004.「違うっ！！kvS20/39/VTT_akira3005.　この前貸した教科書、返してもらいに来ただけだ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3004", 256, TRUE);
+	OutputLine(NULL, "「違うっ！！",
+			NULL, "「才不是！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3005", 256, TRUE);
+	OutputLine(NULL, "　この前貸した教科書、返してもらいに来ただけだ！！」",
+			NULL, "我只是来拿回上次借给你的课本而已！！」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3033.「あんだよぉ、ちょっとしたジョークだっての。kvS20/37/VTT_chisa3034.そんなにマジに怒るなよぉ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3033", 256, TRUE);
+	OutputLine(NULL, "「あんだよぉ、ちょっとしたジョークだっての。",
+			NULL, "「什么嘛，就是开个小玩笑。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3034", 256, TRUE);
+	OutputLine(NULL, "そんなにマジに怒るなよぉ」",
+			NULL, "别这么认真生气嘛。」", Line_Normal);
+	ClearMessage();
+
+//r私はぼやきながら、机の中にしまっていた教科書を取り出す。そして『ほらっ』と、ぞんざいなしぐさで差し出した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私はぼやきながら、机の中にしまっていた教科書を取り出す。そして『ほらっ』と、ぞんざいなしぐさで差し出した。",
+			NULL, "我一边抱怨，一边从课桌里取出收着的课本。然后说了声『喏』，随手递了过去。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1b_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3006.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3006", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3035.「…？kvS20/37/VTT_chisa3036.　どうしたのさ、暁」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3035", 256, TRUE);
+	OutputLine(NULL, "「…？",
+			NULL, "「……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3036", 256, TRUE);
+	OutputLine(NULL, "　どうしたのさ、暁」",
+			NULL, "怎么了，晓？」", Line_Normal);
+	ClearMessage();
+
+//暁rvS20/39/VTT_akira3007.「あ、いや別に…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3007", 256, TRUE);
+	OutputLine(NULL, "「あ、いや別に…」",
+			NULL, "「啊，没什么……」", Line_Normal);
+	ClearMessage();
+
+//r教科書を受け取りながら、暁は訝しげに教室を見渡している。…その様子があまりにもあからさまだったので、私はニヤリ、と意地の悪い笑みを浮かべて言ってやった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "教科書を受け取りながら、暁は訝しげに教室を見渡している。…その様子があまりにもあからさまだったので、私はニヤリ、と意地の悪い笑みを浮かべて言ってやった。",
+			NULL, "晓一边接过课本，一边疑惑地环视教室。……那副样子实在太明显，我露出坏心眼的笑，故意说道。", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3037.「夏美なら、トイレだよ。kvS20/37/VTT_chisa3038.覗きに行くならつれてってあげるけど～？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3037", 256, TRUE);
+	OutputLine(NULL, "「夏美なら、トイレだよ。",
+			NULL, "「夏美的话，上厕所去了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3038", 256, TRUE);
+	OutputLine(NULL, "覗きに行くならつれてってあげるけど～？」",
+			NULL, "你要偷看的话，我可以带你去哦～？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_sakebi_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3008.「——っ？！kvS20/39/VTT_akira3009.　そ、そんな趣味はねぇっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3008", 256, TRUE);
+	OutputLine(NULL, "「——っ？！",
+			NULL, "「——？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3009", 256, TRUE);
+	OutputLine(NULL, "　そ、そんな趣味はねぇっ！」",
+			NULL, "我、我才没那种爱好！」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3039.「あっはっはっはっ！kvS20/37/VTT_chisa3040.　やっぱりここに来た目的はそれかぁ～！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3039", 256, TRUE);
+	OutputLine(NULL, "「あっはっはっはっ！",
+			NULL, "「啊哈哈哈哈！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3040", 256, TRUE);
+	OutputLine(NULL, "　やっぱりここに来た目的はそれかぁ～！」",
+			NULL, "果然你跑来这里就是为了见她啊～！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_shinken_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3010.「ぐっ…！kvS20/39/VTT_akira3011.　じゃ、じゃあなっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3010", 256, TRUE);
+	OutputLine(NULL, "「ぐっ…！",
+			NULL, "「唔……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3011", 256, TRUE);
+	OutputLine(NULL, "　じゃ、じゃあなっ！」",
+			NULL, "那、那我走了！」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 200, TRUE );
+
+//r暁は耳まで顔を真っ赤にして、返す言葉を失う。そして、いたたまれずにぷいっと身を翻すと、小走りに教室を出て行った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "暁は耳まで顔を真っ赤にして、返す言葉を失う。そして、いたたまれずにぷいっと身を翻すと、小走りに教室を出て行った。",
+			NULL, "晓的脸红到了耳根，彻底说不出话来。然后他待不下去似的猛地转身，小跑着离开了教室。", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3041.「くっくっくっ…！kvS20/37/VTT_chisa3042.　ほーんと暁って、ヘタレ街道まっしぐらだよね～。kvS20/37/VTT_chisa3043.別に理由作らなくても、夏美に会いたかったら普通に来ればいいのにさぁ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3041", 256, TRUE);
+	OutputLine(NULL, "「くっくっくっ…！",
+			NULL, "「呵呵呵……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3042", 256, TRUE);
+	OutputLine(NULL, "　ほーんと暁って、ヘタレ街道まっしぐらだよね～。",
+			NULL, "晓这家伙，真是在怂包这条路上一骑绝尘啊～", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3043", 256, TRUE);
+	OutputLine(NULL, "別に理由作らなくても、夏美に会いたかったら普通に来ればいいのにさぁ」",
+			NULL, "想见夏美的话，明明不用找借口，直接来就好了嘛。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 38, "sprite/tama1_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3003.「暁ちゃんは、純情なんだよ。kvS20/38/VTT_tama3004.…誰かさんと違ってね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3003", 256, TRUE);
+	OutputLine(NULL, "「暁ちゃんは、純情なんだよ。",
+			NULL, "「晓很纯情嘛。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3004", 256, TRUE);
+	OutputLine(NULL, "…誰かさんと違ってね」",
+			NULL, "……和某人可不一样。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3044.「誰かさんって、誰のことだよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3044", 256, TRUE);
+	OutputLine(NULL, "「誰かさんって、誰のことだよ？」",
+			NULL, "「某人是指谁啊？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 38, "sprite/tama1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3005.「さ～？kvS20/38/VTT_tama3006.　誰のことでしょうか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3005", 256, TRUE);
+	OutputLine(NULL, "「さ～？",
+			NULL, "「谁知道呢～？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3006", 256, TRUE);
+	OutputLine(NULL, "　誰のことでしょうか？」",
+			NULL, "会是谁呢？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3045.「あのね～！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3045", 256, TRUE);
+	OutputLine(NULL, "「あのね～！」",
+			NULL, "「我说你啊～！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 38, "sprite/tama1_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3007.「あっはははは！kvS20/38/VTT_tama3008.…それに、それだけ本気ってことだと思うよ。kvS20/38/VTT_tama3009.暁ちゃんが、夏美のことを想ってる気持ちは、…ね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3007", 256, TRUE);
+	OutputLine(NULL, "「あっはははは！",
+			NULL, "「啊哈哈哈！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3008", 256, TRUE);
+	OutputLine(NULL, "…それに、それだけ本気ってことだと思うよ。",
+			NULL, "……而且，我觉得那说明他就是这么认真。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3009", 256, TRUE);
+	OutputLine(NULL, "暁ちゃんが、夏美のことを想ってる気持ちは、…ね」",
+			NULL, "晓对夏美的那份心意……是认真的。」", Line_Normal);
+	ClearMessage();
+
+//r………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 2, "hm04_19", 128, 0 );
+
+//千紗登rvS20/37/VTT_chisa3046.「私だってさ、…結構本気、だったんだよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3046", 256, TRUE);
+	OutputLine(NULL, "「私だってさ、…結構本気、だったんだよ？」",
+			NULL, "「我也是啊……其实也动过真心哦？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 38, "sprite/tama1_kanashimi_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3010.「わかってるよ。kvS20/38/VTT_tama3011.一応、私は…わかってるつもり。kvS20/38/VTT_tama3012.だから、今でも正直、…私はどうしたらいいのかなって、迷ってる」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3010", 256, TRUE);
+	OutputLine(NULL, "「わかってるよ。",
+			NULL, "「我知道。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3011", 256, TRUE);
+	OutputLine(NULL, "一応、私は…わかってるつもり。",
+			NULL, "至少，我自认为知道。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3012", 256, TRUE);
+	OutputLine(NULL, "だから、今でも正直、…私はどうしたらいいのかなって、迷ってる」",
+			NULL, "所以老实说，我到现在也还拿不定主意，究竟该怎么办。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3047.「それじゃ、…もし、私がぶち壊したいって言えば、kvS20/37/VTT_chisa3048.…あんたは協力してくれるって、こと？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3047", 256, TRUE);
+	OutputLine(NULL, "「それじゃ、…もし、私がぶち壊したいって言えば、",
+			NULL, "「那如果……我说我想把他们搅黄，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3048", 256, TRUE);
+	OutputLine(NULL, "…あんたは協力してくれるって、こと？」",
+			NULL, "……你会帮我，是吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 38, "sprite/tama1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3013.「そうね。kvS20/38/VTT_tama3014.あんたがそう望むなら、…一度限りで手を貸してあげるけど。kvS20/38/VTT_tama3015.…本気？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3013", 256, TRUE);
+	OutputLine(NULL, "「そうね。",
+			NULL, "「嗯。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3014", 256, TRUE);
+	OutputLine(NULL, "あんたがそう望むなら、…一度限りで手を貸してあげるけど。",
+			NULL, "你要是真这么希望，我可以帮你——只此一次。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3015", 256, TRUE);
+	OutputLine(NULL, "…本気？」",
+			NULL, "……你是认真的？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3049.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3049", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rあの子の恋を邪魔するのは、簡単だ。たった二、三言伝えただけで、…あの子はきっと、自分の恋心を永久に封印してしまうだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あの子の恋を邪魔するのは、簡単だ。たった二、三言伝えただけで、…あの子はきっと、自分の恋心を永久に封印してしまうだろう。",
+			NULL, "要妨碍那孩子的恋情很简单。只要告诉她两三句话……她一定会把自己的恋心永远锁死。", Line_Normal);
+	ClearMessage();
+
+//r私は、あの子の性格をたぶん、暁よりもわかっている。だから、自分の想いを優先するつもりになれば、…いくらでも取れる手段はあった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は、あの子の性格をたぶん、暁よりもわかっている。だから、自分の想いを優先するつもりになれば、…いくらでも取れる手段はあった。",
+			NULL, "我大概比晓更了解那孩子的性格。所以只要我打算优先自己的感情，……能采取的手段要多少有多少。", Line_Normal);
+	ClearMessage();
+
+//rきわめてフェアな、そして有効的なやり方で————。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "きわめてフェアな、そして有効的なやり方で————。",
+			NULL, "而且还是极其公平、行之有效的方式——", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 38, "sprite/tama1_kanashimi_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3016.「千紗登…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3016", 256, TRUE);
+	OutputLine(NULL, "「千紗登…」",
+			NULL, "「千纱登……」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3050.「……おいおい、タマさんよ。kvS20/37/VTT_chisa3051.なんて顔してるのかね、チミは？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3050", 256, TRUE);
+	OutputLine(NULL, "「……おいおい、タマさんよ。",
+			NULL, "「……喂喂，我说珠子小姐。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3051", 256, TRUE);
+	OutputLine(NULL, "なんて顔してるのかね、チミは？」",
+			NULL, "你这是摆的什么表情啊？」", Line_Normal);
+	ClearMessage();
+
+//r私はちょん、と珠子の前髪を軽く弾く。そしてはあっ、と息をひとつ吐いてから、両腕を上げて大きく伸びをした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私はちょん、と珠子の前髪を軽く弾く。そしてはあっ、と息をひとつ吐いてから、両腕を上げて大きく伸びをした。",
+			NULL, "我轻轻弹了一下珠子的刘海。然后“哈”地吐出一口气，举起双臂大大伸了个懒腰。", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3052.「まー、ちーちゃんとしてはだ。kvS20/37/VTT_chisa3053.好き合う同士なんだから『二人ともしっかりせんかいっ！』ってのが本音だけどね。kvS20/37/VTT_chisa3054.慌てる様子をからかうのも楽しいけど、そればっかりだといい加減飽きちゃうからさ～」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3052", 256, TRUE);
+	OutputLine(NULL, "「まー、ちーちゃんとしてはだ。",
+			NULL, "「嗯——站在千酱的立场上嘛。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3053", 256, TRUE);
+	OutputLine(NULL, "好き合う同士なんだから『二人ともしっかりせんかいっ！』ってのが本音だけどね。",
+			NULL, "既然两个人互相喜欢，我的真心话就是『你们两个都给我争气点！』", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3054", 256, TRUE);
+	OutputLine(NULL, "慌てる様子をからかうのも楽しいけど、そればっかりだといい加減飽きちゃうからさ～」",
+			NULL, "虽然逗他们慌慌张张的样子也很好玩，可光这样迟早会腻嘛～」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 38, "sprite/tama1_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3017.「あははは、全く。kvS20/38/VTT_tama3018.あんな感じだと二人とも、デートしても緊張しっぱなしで疲れちゃうでしょうねぇ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3017", 256, TRUE);
+	OutputLine(NULL, "「あははは、全く。",
+			NULL, "「啊哈哈哈，真是的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3018", 256, TRUE);
+	OutputLine(NULL, "あんな感じだと二人とも、デートしても緊張しっぱなしで疲れちゃうでしょうねぇ」",
+			NULL, "照他们那样，就算去约会也会一路紧张，最后累趴下吧。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3055.「う～む、…そうだ。kvS20/37/VTT_chisa3056.ここはひとつ、私たちが一肌脱ぐか！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3055", 256, TRUE);
+	OutputLine(NULL, "「う～む、…そうだ。",
+			NULL, "「唔——嗯……对了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3056", 256, TRUE);
+	OutputLine(NULL, "ここはひとつ、私たちが一肌脱ぐか！」",
+			NULL, "这种时候，就由我们来助他们一臂之力吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 38, "sprite/tama1_akire_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//珠子rvS20/38/VTT_tama3019.「一肌脱ぐって、…千紗登。kvS20/38/VTT_tama3020.あんたが言うと、なんかいやらしいんだけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6f6599>珠子</color>", NULL, "<color=#6f6599>珠子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3019", 256, TRUE);
+	OutputLine(NULL, "「一肌脱ぐって、…千紗登。",
+			NULL, "「助他们一臂之力……千纱登。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 38, "ps3/s20/38/vtt_tama3020", 256, TRUE);
+	OutputLine(NULL, "あんたが言うと、なんかいやらしいんだけど…」",
+			NULL, "这话从你嘴里说出来，怎么听着有点下流……」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3057.「失礼な！kvS20/37/VTT_chisa3058.　私はとてもフェアに、なおかつ有効的なやり方でだね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3057", 256, TRUE);
+	OutputLine(NULL, "「失礼な！",
+			NULL, "「太失礼了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3058", 256, TRUE);
+	OutputLine(NULL, "　私はとてもフェアに、なおかつ有効的なやり方でだね…」",
+			NULL, "我可是要用非常公平、而且行之有效的方式……」", Line_Normal);
+	ClearMessage();
+
+//rもしかしたら、…私はいつか、山ほど後悔するかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もしかしたら、…私はいつか、山ほど後悔するかもしれない。",
+			NULL, "或许……将来有一天，我会后悔得无以复加。", Line_Normal);
+	ClearMessage();
+
+//rでも。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも。",
+			NULL, "可是。", Line_Normal);
+	ClearMessage();
+
+//r今の私には、これが一番と思える選択だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今の私には、これが一番と思える選択だった。",
+			NULL, "但对现在的我而言，这是我认为最好的选择。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

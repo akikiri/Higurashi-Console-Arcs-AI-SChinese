@@ -1,0 +1,63 @@
+void main()
+{
+
+
+//*Kakera no Sekai Day 94
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//Y2 ヒント　
+
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	PlayBGM(2, "hm10_55", 128, 0);
+	DrawScene("background/oyashirosama", 1000 );
+
+//r…『ヒント　』にようこそ。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…『ヒント　』にようこそ。",
+			NULL, "……欢迎来到『提示』。", Line_Normal);
+	ClearMessage();
+
+//r＜!C!.古手一家の世界＞の『!C!6! 古手夫妻怪死事件』の出現条件を教えるわね。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜C.古手一家の世界＞の『C6 古手夫妻怪死事件』の出現条件を教えるわね。",
+			NULL, "我来告诉你＜C.古手一家的世界＞中『C6 古手夫妇怪死事件』的出现条件。", Line_Normal);
+	ClearMessage();
+
+//r＜!C!.古手一家の世界＞の『!C!5! 三番目の「検体」』r＜!D!.ダム戦争の世界＞の『!D!3! おやっさん』r…以上のカケラを見た後、選択できるようになるわよ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜C.古手一家の世界＞の『C5 三番目の「検体」』\n＜D.ダム戦争の世界＞の『D3 おやっさん』\n…以上のカケラを見た後、選択できるようになるわよ。",
+			NULL, "看过＜C.古手一家的世界＞的『C5 第三个「检体」』\n和＜D.水坝战争的世界＞的『D3 大叔』\n……以上碎片之后，就可以选择了。", Line_Normal);
+	ClearMessage();
+
+//rそして、r＜!E!.昭和５７年の世界＞の『!E!3! 部活結成』r＜!M!.陰謀の世界＞の『!M!1! 赤いカプセル薬』r…以上のカケラの出現に関わってくるわよ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、\n＜E.昭和５７年の世界＞の『E3 部活結成』\n＜M.陰謀の世界＞の『M1 赤いカプセル薬』\n…以上のカケラの出現に関わってくるわよ。",
+			NULL, "然后，\n这还关系到＜E.昭和57年的世界＞的『E3 社团成立』\n和＜M.阴谋的世界＞的『M1 红色胶囊药』\n……以上碎片的出现。", Line_Normal);
+	ClearMessage();
+
+//r頑張ってちょうだい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "頑張ってちょうだい。",
+			NULL, "请加油哦。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

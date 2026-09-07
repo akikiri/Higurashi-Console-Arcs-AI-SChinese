@@ -1,0 +1,81 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 9 choice 2
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 6, "sprite/si1a_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600267.「…なんですか、いきなり」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600267", 256, TRUE);
+	OutputLine(NULL, "「…なんですか、いきなり」",
+			NULL, "「……怎么突然说这个？」", Line_Normal);
+	ClearMessage();
+
+//r不快な名前を聞いたようにあからさまに眉間にしわを寄せながら、詩音は訝しげに首をかしげる。梨花ちゃんはスプーンを置くと、俺の言葉を継いで言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "不快な名前を聞いたようにあからさまに眉間にしわを寄せながら、詩音は訝しげに首をかしげる。梨花ちゃんはスプーンを置くと、俺の言葉を継いで言った。",
+			NULL, "像是听到了讨厌的名字，诗音明显皱起眉头，疑惑地歪了歪头。梨花酱放下勺子，接过我的话说道。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 6, "sprite/si1a_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 5, "sprite/ri2_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//梨花rvS14/05/210500518.「その鉄平の知人に、間宮リナという女性がいます。kvS14/05/210500519.…知りませんでしたか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500518", 256, TRUE);
+	OutputLine(NULL, "「その鉄平の知人に、間宮リナという女性がいます。",
+			NULL, "「那个铁平的熟人里，有一位名叫间宫丽娜的女性。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500519", 256, TRUE);
+	OutputLine(NULL, "…知りませんでしたか？」",
+			NULL, "……你不知道的说？」", Line_Normal);
+	ClearMessage();
+
+//詩音rvS14/06/210600268.「間宮…リナ？kvS14/06/210600269.　…知らないなー。kvS14/06/210600270.それがどうしたんですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600268", 256, TRUE);
+	OutputLine(NULL, "「間宮…リナ？",
+			NULL, "「间宫……丽娜？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600269", 256, TRUE);
+	OutputLine(NULL, "　…知らないなー。",
+			NULL, "……没印象啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600270", 256, TRUE);
+	OutputLine(NULL, "それがどうしたんですか？」",
+			NULL, "那又怎么了？」", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100670.「そいつ、園崎系列の店で働いているそうなんだけど…。kvS14/01/210100671.知ってるか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100670", 256, TRUE);
+	OutputLine(NULL, "「そいつ、園崎系列の店で働いているそうなんだけど…。",
+			NULL, "「听说那家伙在园崎系列的店里工作……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100671", 256, TRUE);
+	OutputLine(NULL, "知ってるか？」",
+			NULL, "你知道她吗？」", Line_Normal);
+	ClearMessage();
+
+//詩音rvS14/06/210600271.「…葛西？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600271", 256, TRUE);
+	OutputLine(NULL, "「…葛西？」",
+			NULL, "「……葛西？」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 15, "sprite/kasa_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//r詩音に尋ねられ、葛西さんは少し考えるようにうつむく。やがて、口にしようかすまいか一瞬迷ったのちに、答えた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "詩音に尋ねられ、葛西さんは少し考えるようにうつむく。やがて、口にしようかすまいか一瞬迷ったのちに、答えた。",
+			NULL, "被诗音询问后，葛西先生稍稍低头像是在思考。随后，他犹豫了一瞬要不要说，接着回答。", Line_Normal);
+	ClearMessage();
+
+}

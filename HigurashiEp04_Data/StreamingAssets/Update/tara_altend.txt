@@ -1,0 +1,376 @@
+void main()
+{
+
+//Alternate ending for Taraimawashi, unlocked by completing Tsukiotoshi
+//*TIPS 77
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//大災害その後
+
+	DrawScene( "black", 1000 );
+	PlayBGM( 1, "semi", 128, 0 );
+
+//护士rvS20/00/nurseA44001.「……あの、すみません。もうそろそろ……」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44001", 256, TRUE);
+	OutputLine(NULL, "「……あの、すみません。もうそろそろ……」",
+			NULL, "「……那个，不好意思。时间差不多了……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/sinryou_sinsatu4", 1000 );
+
+//r入り口でやり取りを見守っていた护士が、おずおずと大石と赤坂に話しかける。赤坂は肩越しに振り返って頷くと、なおも言葉を重ねようとする大石の肩に触れた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "入り口でやり取りを見守っていた护士が、おずおずと大石と赤坂に話しかける。赤坂は肩越しに振り返って頷くと、なおも言葉を重ねようとする大石の肩に触れた。",
+			NULL, "一直在门口看着双方交谈的护士，怯生生地向大石和赤坂开口。赤坂回头点了点头，随即伸手按住还想继续说下去的大石的肩膀。", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS20/13/441300061.「大石さん、……今日は、このくらいにしておきましょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300061", 256, TRUE);
+	OutputLine(NULL, "「大石さん、……今日は、このくらいにしておきましょう」",
+			NULL, "「大石先生……今天就先到这里吧。」", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700319.「………………すみません。あと、少しだけお願いします」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700319", 256, TRUE);
+	OutputLine(NULL, "「………………すみません。あと、少しだけお願いします」",
+			NULL, "「………………抱歉。请再给我一点时间。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "scene/027a", 1000 );
+
+//rそして大石は、手持ちの鞄から証拠保存用のビニール袋に入れたものを取り出す。その中に入っていたのは、……薄汚れたベレー帽だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして大石は、手持ちの鞄から証拠保存用のビニール袋に入れたものを取り出す。その中に入っていたのは、……薄汚れたベレー帽だった。",
+			NULL, "接着，大石从随身的提包里取出一个证物保存袋。装在里面的……是一顶沾着污迹的贝雷帽。", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700320.「園崎魅音さん。……この帽子に、見覚えはありませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700320", 256, TRUE);
+	OutputLine(NULL, "「園崎魅音さん。……この帽子に、見覚えはありませんか？」",
+			NULL, "「园崎魅音小姐……您对这顶帽子有印象吗？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "scene/027b", 1000 );
+
+//r大石はそう言いながら、少々手荒な動作で魅音の膝元に置く。その拍子に、魅音の手元からトランプがバラバラとこぼれ落ちたが、それには目も向けず大石はなおも魅音のうつむき顔を覗き込むように迫って尋ねた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "大石はそう言いながら、少々手荒な動作で魅音の膝元に置く。その拍子に、魅音の手元からトランプがバラバラとこぼれ落ちたが、それには目も向けず大石はなおも魅音のうつむき顔を覗き込むように迫って尋ねた。",
+			NULL, "大石说着，动作有些粗暴地把帽子放到魅音膝前。魅音手里的扑克牌随之散落一地，大石却连看也不看，只是继续逼近，试图窥视她低垂的面庞，追问道。", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700321.「見たこと、ありますよね？　……いや、あなたは絶対覚えているはずだ。kvS20/11/440700322.これは、あなたのお友達だった竜宮レナさんがいつもかぶっていた帽子ではありませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700321", 256, TRUE);
+	OutputLine(NULL, "「見たこと、ありますよね？　……いや、あなたは絶対覚えているはずだ。",
+			NULL, "「你见过它，对吧？……不，你绝对应该记得。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700322", 256, TRUE);
+	OutputLine(NULL, "これは、あなたのお友達だった竜宮レナさんがいつもかぶっていた帽子ではありませんか？」",
+			NULL, "这不正是你那位朋友——龙宫蕾娜经常戴着的帽子吗？」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/03/440300194.「……………………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300194", 256, TRUE);
+	OutputLine(NULL, "「……………………」",
+			NULL, "「……………………」", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700323.「これはですね、雛見沢村を流れる川の下流から発見されたものです。木箱に入って流れてきたものを、釣り人が発見してくれました。kvS20/11/440700324.ハムスターの死骸が入った、かごと一緒にね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700323", 256, TRUE);
+	OutputLine(NULL, "「これはですね、雛見沢村を流れる川の下流から発見されたものです。木箱に入って流れてきたものを、釣り人が発見してくれました。",
+			NULL, "「这顶帽子是在流经雏见泽村的河流下游发现的。一名钓鱼者发现了顺流漂来的木箱。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700324", 256, TRUE);
+	OutputLine(NULL, "ハムスターの死骸が入った、かごと一緒にね」",
+			NULL, "帽子就和装着仓鼠尸体的笼子一起，放在那个箱子里。」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/03/440300195.「……………………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300195", 256, TRUE);
+	OutputLine(NULL, "「……………………」",
+			NULL, "「……………………」", Line_Normal);
+	ClearMessage();
+
+//r大石の言葉を聞いているのかいないのか、魅音はうつろな目のままその帽子を見つめている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "大石の言葉を聞いているのかいないのか、魅音はうつろな目のままその帽子を見つめている。",
+			NULL, "也不知魅音是否听见了大石的话，她只是双目空洞地凝视着那顶帽子。", Line_Normal);
+	ClearMessage();
+
+//rその表情は感情が壊れてしまったように生気がなく、果たして言葉が届くのかどうかもわからない。……だが、大石は懸命に呼びかけるように、食い下がっていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その表情は感情が壊れてしまったように生気がなく、果たして言葉が届くのかどうかもわからない。……だが、大石は懸命に呼びかけるように、食い下がっていった。",
+			NULL, "她的表情毫无生气，仿佛情感早已彻底崩坏，让人甚至无法判断话语能否传入她心中。……然而，大石仍像是拼命呼唤她一般，执着地追问下去。", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700325.「わかりますか？　この帽子が一緒に入っていたということは、竜宮レナさんがその木箱を川に流したということだと考えられるのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700325", 256, TRUE);
+	OutputLine(NULL, "「わかりますか？　この帽子が一緒に入っていたということは、竜宮レナさんがその木箱を川に流したということだと考えられるのです」",
+			NULL, "「你明白吗？这顶帽子也在箱中，说明把木箱放进河里的人，很可能就是龙宫蕾娜。」", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700326.「しかし、その意図がわからない。でもあなたなら、これに込められたメッセージがわかるはずだ！kvS20/11/440700327.　いつも一緒に遊んでいた、友達のあなたなら！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700326", 256, TRUE);
+	OutputLine(NULL, "「しかし、その意図がわからない。でもあなたなら、これに込められたメッセージがわかるはずだ！",
+			NULL, "「可我们不明白她的用意。但如果是你，一定能够读懂她寄托在其中的信息！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700327", 256, TRUE);
+	OutputLine(NULL, "　いつも一緒に遊んでいた、友達のあなたなら！」",
+			NULL, "因为你是她的朋友，一直和她在一起玩！」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/03/440300196.「……………………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300196", 256, TRUE);
+	OutputLine(NULL, "「……………………」",
+			NULL, "「……………………」", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/sinryou_sinsatu4", 1000 );
+
+//大石rvS20/11/440700328.「……お願いです、園崎魅音さん……！　雛見沢に何が起こったのか、竜宮レナさんは何かを伝えようとした」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700328", 256, TRUE);
+	OutputLine(NULL, "「……お願いです、園崎魅音さん……！　雛見沢に何が起こったのか、竜宮レナさんは何かを伝えようとした」",
+			NULL, "「……拜托您了，园崎魅音小姐……！龙宫蕾娜一定是想传达雏见泽发生了什么。」", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700329.「これを解き明かせば、この大災害の秘密に少しでも迫ることができるはずなんです！　だから、目を覚ましてくださいッッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700329", 256, TRUE);
+	OutputLine(NULL, "「これを解き明かせば、この大災害の秘密に少しでも迫ることができるはずなんです！　だから、目を覚ましてくださいッッ！！」",
+			NULL, "「只要解开这条信息，我们一定就能更接近这场大灾害的秘密！所以，请你醒过来啊！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+
+//护士rvS20/00/nurseA44002.「け、刑事さんっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44002", 256, TRUE);
+	OutputLine(NULL, "「け、刑事さんっ？！」",
+			NULL, "「刑、刑警先生？！」", Line_Normal);
+	ClearMessage();
+
+//r声を荒げながら、大石は魅音の両肩をどやしつける。それを見かねて、护士がその巨体を魅音から強引に引き剥がした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "声を荒げながら、大石は魅音の両肩をどやしつける。それを見かねて、护士がその巨体を魅音から強引に引き剥がした。",
+			NULL, "大石厉声吼叫，同时用力摇晃魅音的双肩。护士实在看不下去，强行把他庞大的身体从魅音身边拉开。", Line_Normal);
+	ClearMessage();
+
+//护士rvS20/00/nurseA44003.「乱暴は止めてください！　刑事さんっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44003", 256, TRUE);
+	OutputLine(NULL, "「乱暴は止めてください！　刑事さんっ！！」",
+			NULL, "「请不要这么粗暴！刑警先生！！」", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700330.「っ！！　――――あ……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700330", 256, TRUE);
+	OutputLine(NULL, "「っ！！　————あ……！」",
+			NULL, "「唔！！————啊……！」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS20/13/441300062.「大石さん、落ち着いてください……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300062", 256, TRUE);
+	OutputLine(NULL, "「大石さん、落ち着いてください……！」",
+			NULL, "「大石先生，请冷静一点……！」", Line_Normal);
+	ClearMessage();
+
+//rそれを反射的に振り払おうとした大石だったが、赤坂の制止を受けて我に返り、……力なく、肩を落とした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それを反射的に振り払おうとした大石だったが、赤坂の制止を受けて我に返り、……力なく、肩を落とした。",
+			NULL, "大石下意识地想要甩开护士，却在赤坂的制止下回过神来……他无力地垂下了双肩。", Line_Normal);
+	ClearMessage();
+
+//护士rvS20/00/nurseA44004.「大丈夫ですか、園崎さんっ？　……もう、いい加減にしてください！kvS20/00/nurseA44005.　今日はもうお引取り願えますかっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44004", 256, TRUE);
+	OutputLine(NULL, "「大丈夫ですか、園崎さんっ？　……もう、いい加減にしてください！",
+			NULL, "「您没事吧，园崎小姐……？……真是的，请你们适可而止！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44005", 256, TRUE);
+	OutputLine(NULL, "　今日はもうお引取り願えますかっ！！」",
+			NULL, "今天请你们马上离开！！」", Line_Normal);
+	ClearMessage();
+
+//大石rvS20/11/440700331.「……すみません、やりすぎました。興奮してしまって……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700331", 256, TRUE);
+	OutputLine(NULL, "「……すみません、やりすぎました。興奮してしまって……」",
+			NULL, "「……对不起，我做得太过分了。一时有些激动……」", Line_Normal);
+	ClearMessage();
+
+//护士rvS20/00/nurseA44006.「こんな乱暴なことをするようでしたら、今後の面会は一切お断りさせていただきます！　ここは病院で、この人は患者さんなんですよ？！kvS20/00/nurseA44007.　それをっ――！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44006", 256, TRUE);
+	OutputLine(NULL, "「こんな乱暴なことをするようでしたら、今後の面会は一切お断りさせていただきます！　ここは病院で、この人は患者さんなんですよ？！",
+			NULL, "「既然你们会做出这种粗暴行为，今后一概不准再来探视！这里是医院，她是病人啊？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44007", 256, TRUE);
+	OutputLine(NULL, "　それをっ——！」",
+			NULL, "你们竟然还——！」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS20/13/441300063.「护士さん、……この人は、雛見沢で大勢の人を亡くしています。そのあたりの事情を、どうかご理解ください。kvS20/13/441300064.……お願いします」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300063", 256, TRUE);
+	OutputLine(NULL, "「护士さん、……この人は、雛見沢で大勢の人を亡くしています。そのあたりの事情を、どうかご理解ください。",
+			NULL, "「护士……他在雏见泽失去了许许多多的人。还请你体谅他的处境。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s20/13/441300064", 256, TRUE);
+	OutputLine(NULL, "……お願いします」",
+			NULL, "……拜托了。」", Line_Normal);
+	ClearMessage();
+
+//r激昂していた护士だったが、赤坂のとりなしでどうにか矛を収める。そして、赤坂は振り返り目顔で合図すると、大石は悄然と頷いた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "激昂していた护士だったが、赤坂のとりなしでどうにか矛を収める。そして、赤坂は振り返り目顔で合図すると、大石は悄然と頷いた。",
+			NULL, "护士原本怒不可遏，但在赤坂的劝解下，总算收起了怒火。赤坂回过头以眼神示意，大石便神情颓丧地点了点头。", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "scene/027b", 1000 );
+
+//大石rvS20/11/440700332.「……園崎魅音さん。その帽子は、ここに置いていきます。kvS20/11/440700333.また明日来ますので、何か思い出したら教えてください。kvS20/11/440700334.……それでは」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700332", 256, TRUE);
+	OutputLine(NULL, "「……園崎魅音さん。その帽子は、ここに置いていきます。",
+			NULL, "「……园崎魅音小姐。这顶帽子就留在这里。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700333", 256, TRUE);
+	OutputLine(NULL, "また明日来ますので、何か思い出したら教えてください。",
+			NULL, "我明天还会再来。如果想起了什么，请告诉我。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s20/11/440700334", 256, TRUE);
+	OutputLine(NULL, "……それでは」",
+			NULL, "……那么，告辞了。」", Line_Normal);
+	ClearMessage();
+
+//rそして、大石は赤坂に伴われて、病室を出て行った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、大石は赤坂に伴われて、病室を出て行った。",
+			NULL, "随后，大石在赤坂陪同下离开了病房。", Line_Normal);
+	ClearMessage();
+
+//护士rvS20/00/nurseA44008.「はぁ、まったく。大丈夫ですか、園崎さん……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44008", 256, TRUE);
+	OutputLine(NULL, "「はぁ、まったく。大丈夫ですか、園崎さん……？」",
+			NULL, "「唉，真是的。您没事吧，园崎小姐……？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "himeraretakyousou", 256, 64);
+	DrawScene( "scene/027c", 1000 );
+	PlayBGM( 1, "semi_r", 128, 0 );
+
+//魅音rvS20/03/440300197.「………………………………………………そうか……………………！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300197", 256, TRUE);
+	OutputLine(NULL, "「………………………………………………そうか……………………！」",
+			NULL, "「………………………………………………原来如此……………………！」", Line_Normal);
+	ClearMessage();
+
+//护士rvS20/00/nurseA44009.「――園崎さん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44009", 256, TRUE);
+	OutputLine(NULL, "「——園崎さん？」",
+			NULL, "「——园崎小姐？」", Line_Normal);
+	ClearMessage();
+
+//r黙って、うつろな表情で膝もとの帽子を見つめていた魅音は、その声とともに突然、顔を上げる。その目には、生気が宿ったように輝きが戻っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "黙って、うつろな表情で膝もとの帽子を見つめていた魅音は、その声とともに突然、顔を上げる。その目には、生気が宿ったように輝きが戻っていた。",
+			NULL, "魅音一直沉默着，以空洞的表情凝视膝前的帽子，此刻却随着那声低语猛然抬起头来。她的双眼重新泛起光芒，仿佛生命终于回到了其中。", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/03/440300198.「护士さん、お願い！　さっきの刑事さんを呼び戻して！kvS20/03/440300199.　まだ遠くに行っていないはずだから！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300198", 256, TRUE);
+	OutputLine(NULL, "「护士さん、お願い！　さっきの刑事さんを呼び戻して！",
+			NULL, "「护士，拜托你！快把刚才的刑警叫回来！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300199", 256, TRUE);
+	OutputLine(NULL, "　まだ遠くに行っていないはずだから！！」",
+			NULL, "他们应该还没走远！！」", Line_Normal);
+	ClearMessage();
+
+//护士rvS20/00/nurseA44010.「ど、どうしたのです、園崎さん……？　そ、それにあなた、……記憶が？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44010", 256, TRUE);
+	OutputLine(NULL, "「ど、どうしたのです、園崎さん……？　そ、それにあなた、……記憶が？！」",
+			NULL, "「怎、怎么了，园崎小姐……？而、而且您的……记忆？！」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/03/440300200.「わかった、……わかったんだ！　レナの伝えたかったことが！kvS20/03/440300201.　雛見沢で大災害なんて起きなかったんだよ！kvS20/03/440300202.　だからお願い、早く呼び戻してっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300200", 256, TRUE);
+	OutputLine(NULL, "「わかった、……わかったんだ！　レナの伝えたかったことが！",
+			NULL, "「我明白了……我明白了！蕾娜想要传达的事情！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300201", 256, TRUE);
+	OutputLine(NULL, "　雛見沢で大災害なんて起きなかったんだよ！",
+			NULL, "雏见泽根本没有发生什么大灾害！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300202", 256, TRUE);
+	OutputLine(NULL, "　だからお願い、早く呼び戻してっ！！」",
+			NULL, "所以拜托你，快把他们叫回来！！」", Line_Normal);
+	ClearMessage();
+
+//护士rvS20/00/nurseA44011.「わ、わかりました……。ちょ、ちょっと待っていてくださいね……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>护士</color>", NULL, "<color=#f5e6d3>护士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/nursea44011", 256, TRUE);
+	OutputLine(NULL, "「わ、わかりました……。ちょ、ちょっと待っていてくださいね……？」",
+			NULL, "「我、我知道了……请、请稍等一下……？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "background/sinryou_sinsatu4", 1000 );
+
+//魅音rvS20/03/440300203.「レナ……あんた、命をかけて伝えてくれたんだね……？　受け取ったから……私、確かにあんたのメッセージ、受け取ったから……！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s20/03/440300203", 256, TRUE);
+	OutputLine(NULL, "「レナ……あんた、命をかけて伝えてくれたんだね……？　受け取ったから……私、確かにあんたのメッセージ、受け取ったから……！！」",
+			NULL, "「蕾娜……你是赌上性命，把这件事传达给我的吧……？我收到了……你的信息，我确确实实收到了……！！」", Line_Normal);
+	ClearMessage();
+
+//r魅音はいとおしそうに、ビニール袋に封じられた帽子を胸に抱きしめる。そして、その薄汚れた染みが血痕であることを知って、もはや枯れたと思っていた涙をこぼした……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "魅音はいとおしそうに、ビニール袋に封じられた帽子を胸に抱きしめる。そして、その薄汚れた染みが血痕であることを知って、もはや枯れたと思っていた涙をこぼした……。",
+			NULL, "魅音满怀怜爱地把封在塑料袋里的帽子紧紧抱在胸前。当她明白那片污迹正是血痕时，原以为早已流干的泪水，再次从眼中滑落……", Line_Normal);
+	ClearMessage();
+
+	DrawScene( "black", 1000 );
+	FadeOutBGM( 1, 200, FALSE  );
+
+//rそして、翌日の早朝、５時１７分。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、翌日の早朝、５時１７分。",
+			NULL, "翌日清晨5时17分。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sinzouappaku", 256, 64);
+
+//r園崎魅音の、急性心不全による死亡が、確認された。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎魅音の、急性心不全による死亡が、確認された。",
+			NULL, "园崎魅音被确认因急性心力衰竭死亡。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering( 6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot( 7, "Title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot( 5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

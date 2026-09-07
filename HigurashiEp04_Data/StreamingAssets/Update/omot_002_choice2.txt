@@ -1,0 +1,166 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 2 choice 2
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+//r幸い、知恵先生は俺から見て背中を向けている。それに気づいて俺はとっさに、机の中にしまってあったノートを取り出してメッセージを書き、詩音に見えるように掲げた。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "幸い、知恵先生は俺から見て背中を向けている。それに気づいて俺はとっさに、机の中にしまってあったノートを取り出してメッセージを書き、詩音に見えるように掲げた。",
+			NULL, "幸好，知惠老师从我的角度看正背对着这边。我注意到这一点，立刻从桌肚里拿出收好的笔记本，写下信息，举起来让诗音看见。", Line_Normal);
+	ClearMessage();
+
+//r曰く、『とにかく褒めろ！！』と。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "曰く、『とにかく褒めろ！！』と。",
+			NULL, "上面写着：『总之先夸！！』", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 6, "sprite/si3_yowaki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600095.「……か、カレーは…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600095", 256, TRUE);
+	OutputLine(NULL, "「……か、カレーは…」",
+			NULL, "「……咖、咖喱是……」", Line_Normal);
+	ClearMessage();
+
+//知恵rvS14/22/211400031.「――カレーは？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400031", 256, TRUE);
+	OutputLine(NULL, "「——カレーは？」",
+			NULL, "「——咖喱呢？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 6, "sprite/si3_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600096.「す、すばらしい食べ物です…。kvS14/06/210600097.人間の生み出した、文化の叡智です…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600096", 256, TRUE);
+	OutputLine(NULL, "「す、すばらしい食べ物です…。",
+			NULL, "「是、是非常棒的食物……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600097", 256, TRUE);
+	OutputLine(NULL, "人間の生み出した、文化の叡智です…！」",
+			NULL, "是人类创造出来的，文化的智慧结晶……！」", Line_Normal);
+	ClearMessage();
+
+//rやっとのことで、精一杯考えたのだろう賛辞を口にする詩音。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "やっとのことで、精一杯考えたのだろう賛辞を口にする詩音。",
+			NULL, "诗音总算说出了大概是她绞尽脑汁想出来的赞美。", Line_Normal);
+	ClearMessage();
+
+//知恵rvS14/22/211400032.「――ええ、それは人類開闢以来不変の定理であります。kvS14/22/211400033.では、あなたのカレーに対する思いをぜひ聞かせてもらいましょう。kvS14/22/211400034.…はい、どうぞ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400032", 256, TRUE);
+	OutputLine(NULL, "「——ええ、それは人類開闢以来不変の定理であります。",
+			NULL, "「——是的，那是自人类开辟以来永恒不变的定理。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400033", 256, TRUE);
+	OutputLine(NULL, "では、あなたのカレーに対する思いをぜひ聞かせてもらいましょう。",
+			NULL, "那么，请务必让我听听你对咖喱的热爱。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400034", 256, TRUE);
+	OutputLine(NULL, "…はい、どうぞ」",
+			NULL, "……来，请说。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 6, "sprite/si3_odoroki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600098.「んがっ？！kvS14/06/210600099.　え、えと、えと……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600098", 256, TRUE);
+	OutputLine(NULL, "「んがっ？！",
+			NULL, "「嗯呃？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600099", 256, TRUE);
+	OutputLine(NULL, "　え、えと、えと……！」",
+			NULL, "呃，那个，那个……！」", Line_Normal);
+	ClearMessage();
+
+//知恵rvS14/22/211400035.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400035", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 6, "sprite/si3_yowaki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600100.「…あ、あう、あう、あう……っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600100", 256, TRUE);
+	OutputLine(NULL, "「…あ、あう、あう、あう……っ！」",
+			NULL, "「……啊、啊呜，啊呜，啊呜……！」", Line_Normal);
+	ClearMessage();
+
+//知恵rvS14/22/211400036.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400036", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 6, "sprite/si3_odoroki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/VT4Ba_shion1001.「………マ、マスター、かか、カレーライス…、kvS14/06/VT4Ba_shion1002.大盛で、４枚…っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetLocalFlag(LConsoleArc)==10) {
+		ModPlayVoiceLS(4, 6, "ps2/06/210600101", 540, TRUE);
+		OutputLine(NULL, "「………か、かか、カレーライス…、",
+				NULL, "\"...C-c-curry and rice, umm...", Line_WaitForInput);
+		ModPlayVoiceLS(4, 6, "ps2/06/210600102", 540, TRUE);
+		OutputLine(NULL, "大盛、４枚……っ！」",
+				NULL, "大份，四盘……！」", Line_Normal);
+	} else {
+		ModPlayVoiceLS(4, 6, "ps3/s14/06/vt4ba_shion1001", 256, TRUE);
+		OutputLine(NULL, "「………マ、マスター、かか、カレーライス…、",
+				NULL, "「……老、老板，咖咖、咖喱饭……", Line_WaitForInput);
+		ModPlayVoiceLS(4, 6, "ps3/s14/06/vt4ba_shion1002", 256, TRUE);
+		OutputLine(NULL, "大盛で、４枚…っ！」",
+				NULL, "大份，四盘……！」", Line_Normal);
+	}
+	ClearMessage();
+
+	PlaySE(3, "finish", 256, 64);
+	DrawScene("white", 250 );
+	ModDrawCharacter(4, 6, "sprite/si3_odoroki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/gk3", 1000 );
+
+//r……とっさとはいえ、その意味不明な珍妙回答にクラス全員が『はい？？』とあっけに取られた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……とっさとはいえ、その意味不明な珍妙回答にクラス全員が『はい？？』とあっけに取られた。",
+			NULL, "……虽说是情急之下，这个莫名其妙的离奇回答还是让全班都『啊？』地愣住了。", Line_Normal);
+	ClearMessage();
+
+//rしかし、それはカレー好きには共通する何かの符牒なのか、知恵先生の機嫌は一気に良くなり、張り詰めていた空気がぱあっ、とゆるやかに変わっていく。そして、
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし、それはカレー好きには共通する何かの符牒なのか、知恵先生の機嫌は一気に良くなり、張り詰めていた空気がぱあっ、とゆるやかに変わっていく。そして、",
+			NULL, "可那大概是咖喱爱好者之间通用的某种暗号吧，知惠老师的心情一下子好了起来，绷紧的空气也啪地缓和下来。然后，", Line_Normal);
+	ClearMessage();
+
+//知恵rvS14/22/211400037.「――よろしい。kvS14/22/211400038.私の気のせいでしたね。kvS14/22/211400039.ではみなさん、楽しい昼食を」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400037", 256, TRUE);
+	OutputLine(NULL, "「——よろしい。",
+			NULL, "「——很好。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400038", 256, TRUE);
+	OutputLine(NULL, "私の気のせいでしたね。",
+			NULL, "是我听错了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "ps3/s14/22/211400039", 256, TRUE);
+	OutputLine(NULL, "ではみなさん、楽しい昼食を」",
+			NULL, "那么各位，请享用愉快的午餐。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "door", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 500 );
+	DrawSceneWithMask( "black", "right", 0, 0, 500 );
+
+//rそう言って、知恵先生はにっこりと微笑むと、教室を出て行った。その途端、地獄の戒めから解放された詩音がへなへな～、とその場にへたり込む。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って、知恵先生はにっこりと微笑むと、教室を出て行った。その途端、地獄の戒めから解放された詩音がへなへな～、とその場にへたり込む。",
+			NULL, "说完，知惠老师嫣然一笑，离开了教室。就在那一刻，从地狱戒律中解放出来的诗音软绵绵地瘫坐在原地。", Line_Normal);
+	ClearMessage();
+
+}

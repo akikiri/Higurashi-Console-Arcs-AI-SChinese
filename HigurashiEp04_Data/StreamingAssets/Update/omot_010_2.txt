@@ -1,0 +1,100 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 10 after 1st question
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 1, "sprite/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 2, "sprite/re2a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200192.「何処で働いていようと、関係ない。kvS14/02/210200193.お父さんの好きになった人がどんな職業の人でも、別にどうでもいいことだと思う。kvS14/02/210200194.……違うかな？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200192", 256, TRUE);
+	OutputLine(NULL, "「何処で働いていようと、関係ない。",
+			NULL, "「在哪里工作都没关系。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200193", 256, TRUE);
+	OutputLine(NULL, "お父さんの好きになった人がどんな職業の人でも、別にどうでもいいことだと思う。",
+			NULL, "爸爸喜欢上的人是什么职业，我觉得都无所谓。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200194", 256, TRUE);
+	OutputLine(NULL, "……違うかな？」",
+			NULL, "……我说错了吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_majime_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100833.「いや、違わない。kvS14/01/210100834.……いい人なら、な」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100833", 256, TRUE);
+	OutputLine(NULL, "「いや、違わない。",
+			NULL, "「没错。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100834", 256, TRUE);
+	OutputLine(NULL, "……いい人なら、な」",
+			NULL, "……只要她是个好人」", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200195.「……それ、どういう意味かな？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200195", 256, TRUE);
+	OutputLine(NULL, "「……それ、どういう意味かな？」",
+			NULL, "「……那是什么意思呢？」", Line_Normal);
+	ClearMessage();
+
+//rレナの目が、ますます剣呑なものへと変わっていく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナの目が、ますます剣呑なものへと変わっていく。",
+			NULL, "蕾娜的眼神变得越来越危险。", Line_Normal);
+	ClearMessage();
+
+//r…おかしい。確かに聞かされて楽しい内容ではないが、…それにしてもレナの反応は、妙に排他的だ。だから私は思わず、余計かもと思ったがつい、口を挟んでしまった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…おかしい。確かに聞かされて楽しい内容ではないが、…それにしてもレナの反応は、妙に排他的だ。だから私は思わず、余計かもと思ったがつい、口を挟んでしまった。",
+			NULL, "……奇怪。听到这种内容确实开心不起来……可蕾娜的反应仍然异常地排外。所以我一时没忍住，虽然觉得多嘴，还是插了进来。", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GChoiceMode) == 0) {
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "<color=#aaaaaa>『レナはその人のこと、どう思っていますか？』</color>",
+				NULL, "<color=#aaaaaa>『蕾娜怎么看那个人？』</color>", Line_Normal);
+		ClearMessage();
+
+		SetGlobalFlag(GConsoleChoice, 1);
+	}
+	else
+	{
+		if (GetGlobalFlag(GChoiceMode) == 2) {
+			DrawBustshotWithFiltering( 6, "2choices_2", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+		}
+		else {
+			DrawBustshotWithFiltering( 6, "2choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+		}
+		char OmoteChoice9[2];
+
+		if(GetGlobalFlag(GLanguage) == 1)
+		{
+			OmoteChoice9[0] = "那个人是坏人";
+			OmoteChoice9[1] = "蕾娜，你怎么看她？";
+		}
+		else
+		{
+			OmoteChoice9[0] = "その人は、悪い人なのです。";
+			OmoteChoice9[1] = "レナはその人のこと、どう思っていますか？";
+		}
+
+		Select( 2, OmoteChoice9 );
+		DisableWindow();
+		FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+		if (LoadValueFromLocalWork( SelectResult ) == 0)
+		{
+			SetGlobalFlag(GConsoleChoice, 0);
+		}
+		else
+		{
+			SetGlobalFlag(GConsoleChoice, 1);
+		}
+	}
+}

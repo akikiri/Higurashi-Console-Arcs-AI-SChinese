@@ -1,0 +1,51 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 10 choice 1
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200186.「…いきなり、どうしたの？kvS14/02/210200187.　どうしてそんなことを聞くのかな？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200186", 256, TRUE);
+	OutputLine(NULL, "「…いきなり、どうしたの？",
+			NULL, "「……突然怎么了？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200187", 256, TRUE);
+	OutputLine(NULL, "　どうしてそんなことを聞くのかな？」",
+			NULL, "为什么要问这种事呢？」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 1, "sprite/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100829.「村でも噂になってるって。kvS14/01/210100830.その、…付き合ってる人が、クラブで働いている女の人だって」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100829", 256, TRUE);
+	OutputLine(NULL, "「村でも噂になってるって。",
+			NULL, "「听说村里也传开了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100830", 256, TRUE);
+	OutputLine(NULL, "その、…付き合ってる人が、クラブで働いている女の人だって」",
+			NULL, "那个……他正在交往的对象，是在俱乐部工作的女人」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200188.「……それがどうしたの」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200188", 256, TRUE);
+	OutputLine(NULL, "「……それがどうしたの」",
+			NULL, "「……那又怎么了」", Line_Normal);
+	ClearMessage();
+
+//rレナは固い口調で、ぴしゃりと言う。目が少し怒ったように、圭一を見返していた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナは固い口調で、ぴしゃりと言う。目が少し怒ったように、圭一を見返していた。",
+			NULL, "蕾娜用生硬的语气，斩钉截铁地说道。她的眼神带着些许怒意，直直回望圭一。", Line_Normal);
+	ClearMessage();
+
+}

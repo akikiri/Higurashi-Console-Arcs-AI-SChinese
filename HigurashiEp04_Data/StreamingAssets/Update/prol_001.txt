@@ -1,0 +1,292 @@
+void main()
+{
+
+
+//*Section 1 Prologue
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//興宮警察署事件調書
+
+//prologue
+
+	Wait( 500 );
+	PlayBGM( 1, "yoru", 128, 0 );
+	DrawScene("black", 1000 );
+
+//r……もやがかったような意識のすぐそばで、いびき交じりの寝息が聞こえてくる。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……もやがかったような意識のすぐそばで、いびき交じりの寝息が聞こえてくる。",
+			NULL, "……雾蒙蒙的意识边缘，传来夹着鼾声的呼吸。", Line_Normal);
+	ClearMessage();
+
+//rそれが自分のものだと気づいた私は、やや呆けた感じを引きずりつつゆっくりと目を開けた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それが自分のものだと気づいた私は、やや呆けた感じを引きずりつつゆっくりと目を開けた。",
+			NULL, "意识到那是自己的呼吸后，我带着些许恍惚，慢慢睁开了眼。", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 3, "waku_b", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/ke5", 1000 );
+
+//大石rvS01/11/VTF_oishi_0001.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0001", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r視界に映るのは、切れかけの蛍光灯の明かりに照らし出された、薄汚れた天井。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "視界に映るのは、切れかけの蛍光灯の明かりに照らし出された、薄汚れた天井。",
+			NULL, "映入眼帘的，是被快要熄灭的荧光灯照出的脏污天花板。", Line_Normal);
+	ClearMessage();
+
+//r軽い小休止で休憩室の長ソファに横になったつもりだったのだが、いつの間にか本格的に寝入ってしまっていたようだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "軽い小休止で休憩室の長ソファに横になったつもりだったのだが、いつの間にか本格的に寝入ってしまっていたようだ。",
+			NULL, "原本只是想在休息室的长沙发上小憩片刻，谁知不知什么时候睡沉了。", Line_Normal);
+	ClearMessage();
+
+//r変な姿勢で眠ったせいか、……肩と眉間あたりに、軽い鈍痛がする。まぁ、しばらく放っておけば血の巡りが戻って、少しはマシにもなるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "変な姿勢で眠ったせいか、……肩と眉間あたりに、軽い鈍痛がする。まぁ、しばらく放っておけば血の巡りが戻って、少しはマシにもなるだろう。",
+			NULL, "大概是睡姿别扭，……肩膀和眉心一带隐隐作痛。算了，过一会儿等血液流通起来，应该会好些吧。", Line_Normal);
+	ClearMessage();
+
+//大石rvS01/11/VTF_oishi_0002.「……ふぁ……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0002", 256, TRUE);
+	OutputLine(NULL, "「……ふぁ……」",
+			NULL, "「……呼啊……」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	DrawScene("white", 1000 );
+	PlayBGM(2, "hm01_07", 128, 0);
+	DrawScene("background/ke_ky2", 1000 );
+
+//r上体を起こし、こりの溜まった首筋に手を当てて揉みほぐしていると、自然にあくびが漏れる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "上体を起こし、こりの溜まった首筋に手を当てて揉みほぐしていると、自然にあくびが漏れる。",
+			NULL, "我撑起上身，用手揉着酸痛僵硬的后颈，不由自主地打了个哈欠。", Line_Normal);
+	ClearMessage();
+
+//r壁にかかった丸時計の短針はてっぺんを大きく越え、卓の上に置かれた灰皿の中では煙草が一本、吸い口まで焦げてしまっている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "壁にかかった丸時計の短針はてっぺんを大きく越え、卓の上に置かれた灰皿の中では煙草が一本、吸い口まで焦げてしまっている。",
+			NULL, "墙上圆钟的短针已经越过了顶点，桌上的烟灰缸里有一根烟，已经烧到了滤嘴。", Line_Normal);
+	ClearMessage();
+
+//r……吸った記憶は特になかったが、寝入る前に何となく、一服つきたくなったのかもしれない。うっかりソファの上にでも落としていれば、火事かボヤになっているところだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……吸った記憶は特になかったが、寝入る前に何となく、一服つきたくなったのかもしれない。うっかりソファの上にでも落としていれば、火事かボヤになっているところだ。",
+			NULL, "……我不记得自己点过烟，也许睡着前莫名想抽上一根吧。要是不小心掉在沙发上，这会儿恐怕已经着起火来了。", Line_Normal);
+	ClearMessage();
+
+//大石rvS01/11/VTF_oishi_0003.「……危ない、危ない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0003", 256, TRUE);
+	OutputLine(NULL, "「……危ない、危ない」",
+			NULL, "「……好险，好险。」", Line_Normal);
+	ClearMessage();
+
+//r苦笑とともにひとりごちながら、私は灰皿を持って立ち上がり、部屋の隅にある吸い殻入れの缶に灰を落とす。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "苦笑とともにひとりごちながら、私は灰皿を持って立ち上がり、部屋の隅にある吸い殻入れの缶に灰を落とす。",
+			NULL, "我苦笑着自言自语，拿起烟灰缸站起身，把烟灰倒进房间角落的烟蒂罐里。", Line_Normal);
+	ClearMessage();
+
+//r缶の中には、無数の吸い殻と黄土色に濁った水がうず高くつまっていて、つんとした刺激臭に思わず、顔をしかめる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "缶の中には、無数の吸い殻と黄土色に濁った水がうず高くつまっていて、つんとした刺激臭に思わず、顔をしかめる。",
+			NULL, "罐子里堆满了无数烟蒂，还积着浑浊的黄褐色脏水，那股刺鼻的气味让我不由得皱起脸。", Line_Normal);
+	ClearMessage();
+
+//r……もっとも、そのおかげで寝ぼけ気分がほぼ完全に吹き飛んでくれたが。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……もっとも、そのおかげで寝ぼけ気分がほぼ完全に吹き飛んでくれたが。",
+			NULL, "……不过托它的福，那股睡眼惺忪的感觉几乎彻底消失了。", Line_Normal);
+	ClearMessage();
+
+//大石rvS01/11/VTF_oishi_0004.「そろそろ、煙草ともオサラバしないとなぁ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0004", 256, TRUE);
+	OutputLine(NULL, "「そろそろ、煙草ともオサラバしないとなぁ」",
+			NULL, "「差不多也该跟香烟说再见了啊。」", Line_Normal);
+	ClearMessage();
+
+//r明日から――いや、時計を見るともう夜が明けて日付が変わったから、今日からか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "明日から——いや、時計を見るともう夜が明けて日付が変わったから、今日からか。",
+			NULL, "从明天起——不，看了眼时钟，天已经亮了，日期也变了，应该是从今天起吧。", Line_Normal);
+	ClearMessage();
+
+//r今後は、望む望まざるにかかわらず夜通しで起きている必要も、集中しすぎて煮詰まった頭を冷やす機会もなくなる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今後は、望む望まざるにかかわらず夜通しで起きている必要も、集中しすぎて煮詰まった頭を冷やす機会もなくなる。",
+			NULL, "今后无论愿意与否，都不用再通宵熬着，也少了给发胀的脑袋降温的机会。", Line_Normal);
+	ClearMessage();
+
+//rむしろ、何も考えず『ぼーっ』と過ごす時間のほうが多くなるのだから、健康のためにも止めるにはちょうどいい潮時だろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "むしろ、何も考えず『ぼーっ』と過ごす時間のほうが多くなるのだから、健康のためにも止めるにはちょうどいい潮時だろう。",
+			NULL, "反倒是什么都不想、只管发呆的时间会多起来，为了身体着想，现在正是戒烟的好时机吧。", Line_Normal);
+	ClearMessage();
+
+//r……とはいえ、もはや習慣のように染みついたものだから、やめられるかどうかの自信はあまりない。食う寝る打つ以外の楽しみで、それに代わるものがあるといいのだが。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……とはいえ、もはや習慣のように染みついたものだから、やめられるかどうかの自信はあまりない。食う寝る打つ以外の楽しみで、それに代わるものがあるといいのだが。",
+			NULL, "……不过，抽烟早已成了根深蒂固的习惯，能不能戒掉，我也没多少信心。要是在吃饭、睡觉、打牌之外，能找到什么取代它的乐子就好了。", Line_Normal);
+	ClearMessage();
+
+//大石rvS01/11/VTF_oishi_0005.「刑事以外の、日中の過ごし方……ねぇ。kvS01/11/VTF_oishi_0006.畑仕事なんて柄じゃないからなぁ……んっふっふっふっ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0005", 256, TRUE);
+	OutputLine(NULL, "「刑事以外の、日中の過ごし方……ねぇ。",
+			NULL, "「不当刑警了，白天该怎么打发……是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0006", 256, TRUE);
+	OutputLine(NULL, "畑仕事なんて柄じゃないからなぁ……んっふっふっふっ」",
+			NULL, "下地干农活可不像我的风格啊……嗯呵呵呵呵。」", Line_Normal);
+	ClearMessage();
+
+//r野良仕事で土いじりをしている自分の姿を想像して、なんだかおかしさを覚える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "野良仕事で土いじりをしている自分の姿を想像して、なんだかおかしさを覚える。",
+			NULL, "想象自己在田里摆弄泥土的模样，总觉得有些可笑。", Line_Normal);
+	ClearMessage();
+
+//r実に頼りない話だが、来週にでも出発する予定の新天地がどんなところなのか、さっぱり調べていなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "実に頼りない話だが、来週にでも出発する予定の新天地がどんなところなのか、さっぱり調べていなかった。",
+			NULL, "说来也真够不像话的，我连下周就要启程前往的新天地究竟是什么地方，都还没有查过。", Line_Normal);
+	ClearMessage();
+
+//r記憶に残る景色は、興宮の町以上の田舎……のはずだったが、最後に母親のもとへ帰郷したのは随分昔のことだから、今はどうなっているのか考えもつかない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "記憶に残る景色は、興宮の町以上の田舎……のはずだったが、最後に母親のもとへ帰郷したのは随分昔のことだから、今はどうなっているのか考えもつかない。",
+			NULL, "记忆里的景色，应该比兴宫镇还要乡下……可上次回到母亲身边已经是很久以前的事了，现在变成什么样子，我也想象不出来。", Line_Normal);
+	ClearMessage();
+
+//rなんでも、数年後に開港するという大規模空港の建設計画の一環で、交通はわりと便利になった――とは手紙に書かれていたが、……さてさて。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なんでも、数年後に開港するという大規模空港の建設計画の一環で、交通はわりと便利になった——とは手紙に書かれていたが、……さてさて。",
+			NULL, "听说作为几年后开港的大型机场建设计划的一环，交通已经方便了不少——信里倒是这么写的，不过……究竟如何呢。", Line_Normal);
+	ClearMessage();
+
+//大石rvS01/11/VTF_oishi_0007.「……ま、いいでしょう。kvS01/11/VTF_oishi_0008.命を取られるわけでもなし、行ってから知るのも一興ってやつです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0007", 256, TRUE);
+	OutputLine(NULL, "「……ま、いいでしょう。",
+			NULL, "「……哎，也好吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0008", 256, TRUE);
+	OutputLine(NULL, "命を取られるわけでもなし、行ってから知るのも一興ってやつです」",
+			NULL, "反正又不会要了我的命，到了之后再慢慢了解，也算别有一番趣味。」", Line_Normal);
+	ClearMessage();
+
+//rそれに、今後は年老いた婆さまの面倒を見るのだから、それだけでも結構な時間つぶしにはなる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに、今後は年老いた婆さまの面倒を見るのだから、それだけでも結構な時間つぶしにはなる。",
+			NULL, "而且今后还要照顾年迈的老母亲，光是这件事就够打发不少时间了。", Line_Normal);
+	ClearMessage();
+
+//r丈夫な身体を授けてくれた上、長い間親のことなど放ったらかしで好き勝手に生きさせてもらった。ここで親孝行の真似でもしておかなければ、天罰がくだるというものだ……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "丈夫な身体を授けてくれた上、長い間親のことなど放ったらかしで好き勝手に生きさせてもらった。ここで親孝行の真似でもしておかなければ、天罰がくだるというものだ……。",
+			NULL, "她不仅给了我一副结实的身体，这么多年来，我还一直把老人家丢在一边，自顾自地活着。现在要是连孝心都不尽上一点，可真要遭天谴了……", Line_Normal);
+	ClearMessage();
+
+//大石rvS01/11/VTF_oishi_0009.「天罰、……か」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0009", 256, TRUE);
+	OutputLine(NULL, "「天罰、……か」",
+			NULL, "「天谴……吗。」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	DrawScene("black", 1000 );
+
+//rふと頭に浮かんだ言葉を口の中で反芻しながら、私が目の前の卓に置かれた分厚いファイルのひとつを取り上げ、表紙に記したタイトルを見つめる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ふと頭に浮かんだ言葉を口の中で反芻しながら、私が目の前の卓に置かれた分厚いファイルのひとつを取り上げ、表紙に記したタイトルを見つめる。",
+			NULL, "我嘴里反复咀嚼着忽然浮现的词语，拿起面前桌上那册厚厚的档案，凝视着封面上的标题。", Line_Normal);
+	ClearMessage();
+
+//r『雛見沢連続怪死・失踪事件関連』――。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『雛見沢連続怪死・失踪事件関連』——。",
+			NULL, "『雏见泽连续怪死、失踪事件相关』——。", Line_Normal);
+	ClearMessage();
+
+//r本当に、天罰というものがもしも存在するのならば、おそらくこれほどのものはなかっただろう。少なくとも、人智では容易に測りがたいほどの規模……そして、不可解さだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "本当に、天罰というものがもしも存在するのならば、おそらくこれほどのものはなかっただろう。少なくとも、人智では容易に測りがたいほどの規模……そして、不可解さだった。",
+			NULL, "若是真有所谓天谴，恐怕也没有比这更严重的了。至少，那规模……以及离奇的程度，都远远超出了人智能够轻易衡量的范围。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ke_ky2", 1000 );
+	PlayBGM(2, "hm10_53", 128, 0);
+
+//大石rvS01/11/VTF_oishi_0010.「雛見沢、村……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0010", 256, TRUE);
+	OutputLine(NULL, "「雛見沢、村……」",
+			NULL, "「雏见泽，村……」", Line_Normal);
+	ClearMessage();
+
+//r正式名称、鹿骨市雛見沢地区。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "正式名称、鹿骨市雛見沢地区。",
+			NULL, "正式名称，鹿骨市雏见泽地区。", Line_Normal);
+	ClearMessage();
+
+//r人口２０００人程度のこの集落では、市長をはじめ公的な権威がほとんど通用せず、伝統的に力を持った『御三家』と呼ばれる名家が事実上支配する、古く排他的な土地だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "人口２０００人程度のこの集落では、市長をはじめ公的な権威がほとんど通用せず、伝統的に力を持った『御三家』と呼ばれる名家が事実上支配する、古く排他的な土地だった。",
+			NULL, "在这座人口约两千人的聚落里，市长等官方权威几乎不起作用，事实上由传统上极具影响力、被称为『御三家』的名门所支配，是一片古老而排外的土地。", Line_Normal);
+	ClearMessage();
+
+//rそして、『オヤシロさま』なる土着の神を敬う民間信仰が住民たちの間にて語り継がれ、……不信心者にくだされるという『祟り』が近年、続けざまに起こっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、『オヤシロさま』なる土着の神を敬う民間信仰が住民たちの間にて語り継がれ、……不信心者にくだされるという『祟り』が近年、続けざまに起こっていた。",
+			NULL, "而且，居民之间世代流传着敬奉土著神『御社神』的民间信仰。……近年来，传说会降在不信神者身上的『作祟』更是接连发生。", Line_Normal);
+	ClearMessage();
+
+//大石rvS01/11/VTF_oishi_0011.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>大石</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s01/11/vtf_oishi_0011", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rしかし、今ではその集落の存在は『なかった』ものとされて、わずかに残された人々も各地に散り散りとなっているという。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし、今ではその集落の存在は『なかった』ものとされて、わずかに残された人々も各地に散り散りとなっているという。",
+			NULL, "如今，那座聚落的存在已经被视为『从未有过』，少数幸存下来的人也据说散落到了各地。", Line_Normal);
+	ClearMessage();
+
+//rその発端となったのが、……ここにまとめた数々の事件だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その発端となったのが、……ここにまとめた数々の事件だった。",
+			NULL, "而这一切的开端……正是汇总在这里的诸多案件。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

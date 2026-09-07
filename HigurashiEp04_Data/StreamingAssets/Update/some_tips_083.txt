@@ -1,0 +1,97 @@
+void main()
+{
+
+//*TIPS 83
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//古新聞の社会面記事
+
+	DrawSceneWithMask("background/aka1", "v_right", 0, 0, 1000 );
+	PlayBGM( 2, "hm06_25", 128, 0 );
+
+//r２５日午前１時３０分ごろ、世田谷区在住の警視庁警部補、南井雄介さん（４３）方から出火、２階建ての木造平屋住宅と車庫約１７０平方メートルが全焼した。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "２５日午前１時３０分ごろ、世田谷区在住の警視庁警部補、南井雄介さん（４３）方から出火、２階建ての木造平屋住宅と車庫約１７０平方メートルが全焼した。",
+				NULL, "<size=-2>25日凌晨1点30分左右，家住世田谷区的警视厅警部补南井雄介（43岁）家中起火，两层木结构住宅及车库共约170平方米全部烧毁。", Line_Normal);
+	} else {
+		OutputLine(NULL, "２５日午前１時３０分ごろ、世田谷区在住の警視庁警部補、南井雄介さん（４３）方から出火、２階建ての木造平屋住宅と車庫約１７０平方メートルが全焼した。",
+				NULL, "25日凌晨1点30分左右，家住世田谷区的警视厅警部补南井雄介（43岁）家中起火，两层木结构住宅及车库共约170平方米全部烧毁。", Line_Normal);
+	}
+	ClearMessage();
+
+//r世田谷署の調べによると、隣の住宅に住んでいた会社員が帰宅直後南井さん宅の１階寝室より火が出ているのに気付き、１１９番通報した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "世田谷署の調べによると、隣の住宅に住んでいた会社員が帰宅直後南井さん宅の１階寝室より火が出ているのに気付き、１１９番通報した。",
+			NULL, "据世田谷署调查，住在隔壁的公司职员回家后不久，发现南井家一楼卧室起火，随即拨打119报警。", Line_Normal);
+	ClearMessage();
+
+//r駆けつけた消防隊によって午前２時ごろ鎮火したが、火元となった１階寝室からは南井さんと妻の円美さん（４１）が焼死体で発見された。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "駆けつけた消防隊によって午前２時ごろ鎮火したが、火元となった１階寝室からは南井さんと妻の円美さん（４１）が焼死体で発見された。",
+			NULL, "赶到的消防队于凌晨2点左右将火扑灭，但在起火的一楼卧室内发现了南井及其妻圆美（41岁）的烧焦遗体。", Line_Normal);
+	ClearMessage();
+
+//rまた、２階寝室で就寝中の長女のともえさん（１７）と次女のまどかさん（１３）は軽度の一酸化中毒と火傷を負ったものの、消防隊員に救助されて一命を取り留めた模様。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "また、２階寝室で就寝中の長女のともえさん（１７）と次女のまどかさん（１３）は軽度の一酸化中毒と火傷を負ったものの、消防隊員に救助されて一命を取り留めた模様。",
+			NULL, "此外，当时正在二楼卧室熟睡的长女巴（17岁）与次女圆（13岁）虽有轻度一氧化碳中毒及烧伤，但被消防员救出，保住了性命。", Line_Normal);
+	ClearMessage();
+
+//r同署は同日朝から実況見分を行っている。これまでのところ１階寝室には火の気がなく、今回の火災の原因は放火の可能性もあるとみて、事件と事故の両面で調査されている。
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "同署は同日朝から実況見分を行っている。これまでのところ１階寝室には火の気がなく、今回の火災の原因は放火の可能性もあるとみて、事件と事故の両面で調査されている。",
+				NULL, "<size=-2>该署自当日上午起展开现场勘查。目前确认一楼卧室并无火源，因此不排除纵火可能，正从案件与事故两方面进行调查。", Line_Normal);
+	} else {
+		OutputLine(NULL, "同署は同日朝から実況見分を行っている。これまでのところ１階寝室には火の気がなく、今回の火災の原因は放火の可能性もあるとみて、事件と事故の両面で調査されている。",
+				NULL, "该署自当日上午起展开现场勘查。目前确认一楼卧室并无火源，因此不排除纵火可能，正从案件与事故两方面进行调查。", Line_Normal);
+	}
+	ClearMessage();
+
+//rともえさんは女子走り高跳びの高校記録保持者で、今年の国体で東京都代表の有力候補として期待を集めていた。そのため、関係者は突然の凶事に衝撃を受けている。
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "ともえさんは女子走り高跳びの高校記録保持者で、今年の国体で東京都代表の有力候補として期待を集めていた。そのため、関係者は突然の凶事に衝撃を受けている。",
+				NULL, "<size=-2>巴是女子跳高项目的高中纪录保持者，并被视为今年国体东京都代表的有力人选。相关人士均对这场突如其来的不幸深感震惊。", Line_Normal);
+	} else {
+		OutputLine(NULL, "ともえさんは女子走り高跳びの高校記録保持者で、今年の国体で東京都代表の有力候補として期待を集めていた。そのため、関係者は突然の凶事に衝撃を受けている。",
+				NULL, "巴是女子跳高项目的高中纪录保持者，并被视为今年国体东京都代表的有力人选。相关人士均对这场突如其来的不幸深感震惊。", Line_Normal);
+	}
+	ClearMessage();
+
+//r近所の主婦は『サイレンを聞いて駆けつけたら、１階のあたりが激しく燃えていた。近所でも評判の仲の良い家族だったので、残された二人の娘さんが可哀相』と話していた。
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "近所の主婦は『サイレンを聞いて駆けつけたら、１階のあたりが激しく燃えていた。近所でも評判の仲の良い家族だったので、残された二人の娘さんが可哀相』と話していた。",
+				NULL, "<size=-3>附近一名主妇称：『听见警笛后赶过去时，一楼附近正烧得很厉害。他们一家感情很好，在邻里间也很有口碑，留下的两个女儿实在太可怜了。』", Line_Normal);
+	} else {
+		OutputLine(NULL, "近所の主婦は『サイレンを聞いて駆けつけたら、１階のあたりが激しく燃えていた。近所でも評判の仲の良い家族だったので、残された二人の娘さんが可哀相』と話していた。",
+				NULL, "附近一名主妇称：『听见警笛后赶过去时，一楼附近正烧得很厉害。他们一家感情很好，在邻里间也很有口碑，留下的两个女儿实在太可怜了。』", Line_Normal);
+	}
+	ClearMessage();
+
+//r昭和４６年６月４日　夕刊社会面より
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "昭和４６年６月４日　夕刊社会面より",
+			NULL, "昭和46年6月4日　摘自晚报社会版", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

@@ -1,0 +1,30 @@
+void main()
+{
+	ModEnableNVLModeInADVMode();
+	DrawScene("black", 1000 );
+	OutputLine(NULL, "この編には、会話の変更をもたらし、悪い結末を招く可能性のある選択が含まれます。この選択を見たいですか？",
+		   NULL, "本篇包含会改变对话内容，并可能导向坏结局的选项。是否要显示这些选项？", Line_Normal);
+
+	DrawBustshotWithFiltering( 6, "3choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+
+	char ChoiceMode[3];
+
+	if (GetGlobalFlag(GLanguage) == 1) {
+		ChoiceMode[0] = "跳过选项，直接进入好结局";
+		ChoiceMode[1] = "正常显示选项";
+		ChoiceMode[2] = "显示选项并标出正确答案";
+	} else {
+		ChoiceMode[0] = "選択を見せません。良い結末へ進みます";
+		ChoiceMode[1] = "普通のように選択する";
+		ChoiceMode[2] = "正解に記号をつける";
+	}
+
+	Select( 3, ChoiceMode );
+
+	SetGlobalFlag(GChoiceMode, LoadValueFromLocalWork(SelectResult));
+
+	ModDisableNVLModeInADVMode();
+	DisableWindow();
+	DrawScene("black", 250 );
+
+}

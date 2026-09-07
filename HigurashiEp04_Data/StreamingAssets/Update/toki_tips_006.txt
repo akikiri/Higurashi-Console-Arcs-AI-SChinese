@@ -1,0 +1,212 @@
+void main()
+{
+
+
+//*Tokihogushi TIPS 6
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//手の上で踊れ
+
+	DrawScene("background/minato_02", 1000 );
+	PlayBGM(2, "hm06_28", 128, 0);
+	PlayBGM( 1, "yoru", 128, 0 );
+
+//？？？rvS20/32/VTT_hanada3039.「…で、どうします？kvS20/32/VTT_hanada3040.　このまま放置か、処分か。kvS20/32/VTT_hanada3041.まぁ私としては、さっさと片付けるに越したことはないと思いますがね」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3039", 256, TRUE);
+	OutputLine(NULL, "「…で、どうします？",
+			NULL, "「……那么，要怎么做？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3040", 256, TRUE);
+	OutputLine(NULL, "　このまま放置か、処分か。",
+			NULL, "就这么放着，还是处理掉？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3041", 256, TRUE);
+	OutputLine(NULL, "まぁ私としては、さっさと片付けるに越したことはないと思いますがね」",
+			NULL, "依我看，还是尽快收拾掉最好」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTT_takano3001.「くすくす、…だめよ、そういう性急な考え方は」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3001", 256, TRUE);
+	OutputLine(NULL, "「くすくす、…だめよ、そういう性急な考え方は」",
+			NULL, "「呵呵……不行哦，这么急躁可不好」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTT_takano3002.「警察ってのはどんな形であれ身内を殺されると、徹底的に追いかけてくるんだから。kvS20/09/VTT_takano3003.あなた一人がスケープゴートになるというのなら、別に止めないけど」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3002", 256, TRUE);
+	OutputLine(NULL, "「警察ってのはどんな形であれ身内を殺されると、徹底的に追いかけてくるんだから。",
+			NULL, "「警察这种组织，只要自己人被杀，不管是以什么形式，都会彻底追查到底。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3003", 256, TRUE);
+	OutputLine(NULL, "あなた一人がスケープゴートになるというのなら、別に止めないけど」",
+			NULL, "你想一个人当替罪羊的话，我倒也不会拦你」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3042.「冗談じゃないですよ。kvS20/32/VTT_hanada3043.命知らずな刑事の命ひとつと自分の貴重な将来じゃ、全然わりが合いません」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3042", 256, TRUE);
+	OutputLine(NULL, "「冗談じゃないですよ。",
+			NULL, "「别开玩笑了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3043", 256, TRUE);
+	OutputLine(NULL, "命知らずな刑事の命ひとつと自分の貴重な将来じゃ、全然わりが合いません」",
+			NULL, "为了杀一个不要命的刑警，赔上我宝贵的前途，这笔账可太不划算了」", Line_Normal);
+	ClearMessage();
+
+//r苦い表情を作りながらも、その口調は軽い。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "苦い表情を作りながらも、その口調は軽い。",
+			NULL, "他摆出苦涩的表情，语气却很轻松。", Line_Normal);
+	ClearMessage();
+
+//rたとえ放置したところで、それほどの脅威とはとても思えないからだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "たとえ放置したところで、それほどの脅威とはとても思えないからだ。",
+			NULL, "因为就算放着她不管，他也实在不觉得那会构成多大威胁。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3044.「それにしても、ちょっと意外ですね。kvS20/32/VTT_hanada3045.関係のありそうなところは根こそぎ潰してかかるのが、あなたのやり方だと思っていましたが」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3044", 256, TRUE);
+	OutputLine(NULL, "「それにしても、ちょっと意外ですね。",
+			NULL, "「话说回来，还真有点意外呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3045", 256, TRUE);
+	OutputLine(NULL, "関係のありそうなところは根こそぎ潰してかかるのが、あなたのやり方だと思っていましたが」",
+			NULL, "我还以为把所有可能有关的地方都连根铲除，才是您的做法」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3046.「何の罪も無い女の子を殺したことに良心の痛みを感じて、今さら人道主義に方向転換ですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3046", 256, TRUE);
+	OutputLine(NULL, "「何の罪も無い女の子を殺したことに良心の痛みを感じて、今さら人道主義に方向転換ですか？」",
+			NULL, "「杀了一个无辜女孩后良心作痛，现在才决定转向人道主义了吗？」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTT_takano3004.「くすくす、…あなたも言うわね。kvS20/09/VTT_takano3005.別に、あの刑事さんを哀れんでのことじゃないわ。kvS20/09/VTT_takano3006.ただ、ちょっと面白い実験ができるかな、ってね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3004", 256, TRUE);
+	OutputLine(NULL, "「くすくす、…あなたも言うわね。",
+			NULL, "「呵呵，你也真敢说呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3005", 256, TRUE);
+	OutputLine(NULL, "別に、あの刑事さんを哀れんでのことじゃないわ。",
+			NULL, "我可不是出于同情，才留下那位刑警小姐的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3006", 256, TRUE);
+	OutputLine(NULL, "ただ、ちょっと面白い実験ができるかな、ってね」",
+			NULL, "我只是觉得，也许能做个有趣的小实验」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3047.「実験…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3047", 256, TRUE);
+	OutputLine(NULL, "「実験…？」",
+			NULL, "「实验……？」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTT_takano3007.「ええ。kvS20/09/VTT_takano3008.どうやらあの子、あとちょっとで末期発症に入りそうなの。kvS20/09/VTT_takano3009.でも、その状態にもかかわらず平静を保っている…。kvS20/09/VTT_takano3010.上手くやれば、新しい臨床データを入手できるんじゃないかしら」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3007", 256, TRUE);
+	OutputLine(NULL, "「ええ。",
+			NULL, "「是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3008", 256, TRUE);
+	OutputLine(NULL, "どうやらあの子、あとちょっとで末期発症に入りそうなの。",
+			NULL, "看来那孩子再过不久就要进入末期发症了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3009", 256, TRUE);
+	OutputLine(NULL, "でも、その状態にもかかわらず平静を保っている…。",
+			NULL, "可是，她在那种状态下仍然保持着平静……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3010", 256, TRUE);
+	OutputLine(NULL, "上手くやれば、新しい臨床データを入手できるんじゃないかしら」",
+			NULL, "一切顺利的话，也许能取得新的临床数据」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3048.「なるほど、モルモットですか…。kvS20/32/VTT_hanada3049.いや、さっき言った人道主義の言葉を撤回させてください。kvS20/32/VTT_hanada3050.あなたは、正真正銘の外道ですよ。kvS20/32/VTT_hanada3051.少なくとも人間じゃない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3048", 256, TRUE);
+	OutputLine(NULL, "「なるほど、モルモットですか…。",
+			NULL, "「原来如此，把她当实验品吗……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3049", 256, TRUE);
+	OutputLine(NULL, "いや、さっき言った人道主義の言葉を撤回させてください。",
+			NULL, "请允许我收回刚才那句人道主义的评价。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3050", 256, TRUE);
+	OutputLine(NULL, "あなたは、正真正銘の外道ですよ。",
+			NULL, "您真是个不折不扣的恶魔。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3051", 256, TRUE);
+	OutputLine(NULL, "少なくとも人間じゃない」",
+			NULL, "至少绝对算不上人类」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTT_takano3011.「くすくす、ありがと。kvS20/09/VTT_takano3012.最高の賛辞だわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3011", 256, TRUE);
+	OutputLine(NULL, "「くすくす、ありがと。",
+			NULL, "「呵呵，谢谢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3012", 256, TRUE);
+	OutputLine(NULL, "最高の賛辞だわ」",
+			NULL, "这可是最高的赞美」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3052.「それじゃ、潜伏する連絡員たちにはそのように伝えます。kvS20/32/VTT_hanada3053.よろしいですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3052", 256, TRUE);
+	OutputLine(NULL, "「それじゃ、潜伏する連絡員たちにはそのように伝えます。",
+			NULL, "「那么，我会照此通知潜伏中的联络员。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3053", 256, TRUE);
+	OutputLine(NULL, "よろしいですか？」",
+			NULL, "可以吧？」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTT_takano3013.「ええ、よろしくお願いね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtt_takano3013", 256, TRUE);
+	OutputLine(NULL, "「ええ、よろしくお願いね」",
+			NULL, "「嗯，拜托你了」", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "down", 0, 0, 500 );
+	FadeOutBGM(2, 200, FALSE);
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/moon_01", "up", 0, 0, 500 );
+
+//？？？rvS20/32/VTT_hanada3054.「全ては、己が手の平の上で踊る戯れ、…か。kvS20/32/VTT_hanada3055.まぁ、それもいいでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3054", 256, TRUE);
+	OutputLine(NULL, "「全ては、己が手の平の上で踊る戯れ、…か。",
+			NULL, "「一切都只是在自己掌心上起舞的戏码……是吗。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3055", 256, TRUE);
+	OutputLine(NULL, "まぁ、それもいいでしょう」",
+			NULL, "也罢，这样也好」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/32/VTT_hanada3056.「どちらが菩薩で孫悟空なのか、あとで思い知らせてやりますよ。kvS20/32/VTT_hanada3057.あっははははははは…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3056", 256, TRUE);
+	OutputLine(NULL, "「どちらが菩薩で孫悟空なのか、あとで思い知らせてやりますよ。",
+			NULL, "「之后我会让你明白，究竟谁才是菩萨，谁才是孙悟空。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 32, "ps3/s20/32/vtt_hanada3057", 256, TRUE);
+	OutputLine(NULL, "あっははははははは…」",
+			NULL, "啊哈哈哈哈哈哈哈……」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

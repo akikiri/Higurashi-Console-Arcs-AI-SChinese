@@ -54,12 +54,33 @@ SteamLibrary\steamapps\common\Higurashi 04 - Himatsubushi
 
 脚本编译缓存会由 07th-Mod 根据 `Update` 源脚本自动生成。详细安装、卸载和故障排除说明见压缩包内的 `README_安装说明.txt`。
 
+仓库中的未打包文件主要用于公开校对与协作。由于 `sharedassets0.assets` 超过 GitHub 普通 Git 文件的大小限制，仓库源码不包含完整字体资产，不能代替 Release 中的安装包。
+
+## 参与校对
+
+欢迎通过 Issue 或 Pull Request 提交错译、漏译、称呼、术语、标点及显示问题。
+
+剧情脚本位于：
+
+```text
+HigurashiEp04_Data/StreamingAssets/Update
+```
+
+修改脚本时请注意：
+
+- 只修改 `OutputLine`／`OutputLineAll` 中的中文译文字段，不修改日文原文。
+- 保留 `ModPlayVoiceLS`、`ClearMessage`、跳转标签、分支条件、演出指令及行控制参数。
+- 配音台词须保持对应语音文件的分句边界，不把下一条语音的信息提前合并。
+- 文件保持 UTF-8 编码，不添加 BOM。
+- 提交问题时建议附上脚本文件名、日文原句、实际译文及建议译文；标题请尽量避免直接剧透。
+
 ## 来源与致谢
 
 - 大部分文本由 GPT-5.6 Sol 翻译及精校。
 - 部分翻译文本来源：[BV1AN7C66EZF](https://www.bilibili.com/video/BV1AN7C66EZF)（UP主：人工大黑）
 - 中文字形来源：[BV12ecbz1EDq](https://www.bilibili.com/video/BV12ecbz1EDq)（UP主：-雪原）
-- 已完整实机游玩一遍，并在实机过程中校对、修正文本与显示问题。
+- 补丁制作者已完整实机游玩一遍，并在实机过程中校对、修正文本与显示问题。
+- 感谢 07th-Mod 团队提供 Steam 版主机章节支持。
 
 ## 已知问题
 
@@ -68,4 +89,3 @@ SteamLibrary\steamapps\common\Higurashi 04 - Himatsubushi
 ## 说明
 
 这是非官方、非商业性质的同人汉化补丁。游戏及相关素材的权利归原作者和权利方所有。
-

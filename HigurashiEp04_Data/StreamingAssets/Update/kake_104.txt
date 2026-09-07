@@ -1,0 +1,64 @@
+void main()
+{
+
+
+//*Kakera no Sekai Day 104
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//Z6 ヒント　　
+
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	PlayBGM(2, "hm10_55", 128, 0);
+	DrawScene("background/oyashirosama", 1000 );
+
+//r…『ヒント　　』にようこそ。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…『ヒント　　』にようこそ。",
+			NULL, "……欢迎来到『提示』。", Line_Normal);
+	ClearMessage();
+
+//r＜!G!.昭和５８の世界＞の『!G!3! 昭和５８年６月』の出現条件を教えるわね。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜G.昭和５８の世界＞の『G3 昭和５８年６月』の出現条件を教えるわね。",
+			NULL, "我来告诉你＜G.昭和58年的世界＞中『G3 昭和58年6月』的出现条件。", Line_Normal);
+	ClearMessage();
+
+//r＜!H!.仲間たちの世界＞の『!H!1! 前原圭一』r＜!G!.昭和５８年の世界＞の『!G!4! 終末への誘い』r…以上のカケラを見た後、選択できるようになるわよ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜H.仲間たちの世界＞の『H1 前原圭一』\n＜G.昭和５８年の世界＞の『G4 終末への誘い』\n…以上のカケラを見た後、選択できるようになるわよ。",
+			NULL, "看过＜H.伙伴们的世界＞的『H1 前原圭一』\n和＜G.昭和58年的世界＞的『G4 迈向终末的邀请』\n……以上碎片之后，就可以选择了。", Line_Normal);
+	ClearMessage();
+
+//rそして、r＜!J!.始まりの世界＞の『!J!1! 暇潰し編のカケラ』r＜!J!.始まりの世界＞の『!J!2! 鬼隠し編のカケラ』r＜!J!.始まりの世界＞の『!J!3! 綿流し編のカケラ』r＜!J!.始まりの世界＞の『!J!4! 祟殺し編のカケラ』r＜!J!.始まりの世界＞の『!J!5! 染伝し編のカケラ』r＜!J!.始まりの世界＞の『!J!6! 昼壊し編のカケラ』r…以上のカケラの出現に関わってくるわよ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "そして、\n＜J.始まりの世界＞の『J1 暇潰し編のカケラ』\n＜J.始まりの世界＞の『J2 鬼隠し編のカケラ』\n＜J.始まりの世界＞の『J3 綿流し編のカケラ』\n＜J.始まりの世界＞の『J4 祟殺し編のカケラ』\n＜J.始まりの世界＞の『J5 染伝し編のカケラ』\n＜J.始まりの世界＞の『J6 昼壊し編のカケラ』\n…以上のカケラの出現に関わってくるわよ。",
+			NULL, "然后，\n这还关系到＜J.起始的世界＞的『J1 暇溃篇碎片』\n和＜J.起始的世界＞的『J2 鬼隐篇碎片』\n以及＜J.起始的世界＞的『J3 绵流篇碎片』\n＜J.起始的世界＞的『J4 祟杀篇碎片』\n＜J.起始的世界＞的『J5 染传篇碎片』\n＜J.起始的世界＞的『J6 昼坏篇碎片』\n……以上碎片的出现。", Line_Normal);
+	ClearMessage();
+
+//r頑張ってちょうだい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "頑張ってちょうだい。",
+			NULL, "请加油哦。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

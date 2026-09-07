@@ -1,0 +1,1597 @@
+void main()
+{
+
+
+//*Yoigoshi Day 5B
+//After choosing お茶でもいれようか？ at choice dialog
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+//荒川rvS10/00/410100909.「お茶でもいれようか？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100909", 256, TRUE);
+	OutputLine(NULL, "「お茶でもいれようか？」",
+			NULL, "「要不要泡点茶？」", Line_Normal);
+	ClearMessage();
+
+//rみんなだって体が冷えているだろうし、お茶でも飲んであったまったほうがいいだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "みんなだって体が冷えているだろうし、お茶でも飲んであったまったほうがいいだろう。",
+			NULL, "大家身体应该也都冷透了，喝点茶暖一暖比较好。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeOutBGM(1, 200, TRUE);
+
+//r俺は台所に行き、何気なくシンクの蛇口をひねった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は台所に行き、何気なくシンクの蛇口をひねった。",
+			NULL, "我来到厨房，随手拧开水槽的水龙头。", Line_Normal);
+	ClearMessage();
+
+//r水は一滴も出ることなく、栓は何の手ごたえもなくくるくると回る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "水は一滴も出ることなく、栓は何の手ごたえもなくくるくると回る。",
+			NULL, "水一滴也没流出来，阀门毫无阻力地空转着。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/jsr1", 1000 );
+	PlayBGM(2, "hm10_54", 128, 0);
+
+//荒川rvS10/00/410100910.「あっ、そうか…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100910", 256, TRUE);
+	OutputLine(NULL, "「あっ、そうか…」",
+			NULL, "「啊，对了……」", Line_Normal);
+	ClearMessage();
+
+//rここは廃村だ。水道が出たり、コンロの火がついたりすることを当たり前のように思っていたが、考えてみれば、それらは出なくて当然だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ここは廃村だ。水道が出たり、コンロの火がついたりすることを当たり前のように思っていたが、考えてみれば、それらは出なくて当然だった。",
+			NULL, "这里是废村。我理所当然地以为会有自来水、炉灶能点火，可仔细想想，这些东西用不了才正常。", Line_Normal);
+	ClearMessage();
+
+//rその意味では、よくぞ電気だけでも生き残ってくれていた、というべきなんだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その意味では、よくぞ電気だけでも生き残ってくれていた、というべきなんだろう。",
+			NULL, "从这个意义上说，光是电还维持着，就已经该谢天谢地了吧。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100911.「水なんて、出るわけないよな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100911", 256, TRUE);
+	OutputLine(NULL, "「水なんて、出るわけないよな」",
+			NULL, "「水怎么可能流出来嘛。」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300555.「龍ノ介さん、お茶なら私がいれましょうか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300555", 256, TRUE);
+	OutputLine(NULL, "「龍ノ介さん、お茶なら私がいれましょうか」",
+			NULL, "「龙之介先生，要泡茶的话我来吧。」", Line_Normal);
+	ClearMessage();
+
+//r俺のあとを追ってきた美雪ちゃんの手には、すでにヤカンとペットボトルの水が握られている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺のあとを追ってきた美雪ちゃんの手には、すでにヤカンとペットボトルの水が握られている。",
+			NULL, "追着我来到厨房的美雪手里，已经拿着水壶和瓶装水。", Line_Normal);
+	ClearMessage();
+
+//rさすがに、彼女は手馴れていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さすがに、彼女は手馴れていた。",
+			NULL, "不得不说，她很熟练。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100912.「おっ。用意がいいね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100912", 256, TRUE);
+	OutputLine(NULL, "「おっ。用意がいいね」",
+			NULL, "「哦，准备得真周到。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300556.「キャンプ道具一式あれば、大抵のことはできますから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300556", 256, TRUE);
+	OutputLine(NULL, "「キャンプ道具一式あれば、大抵のことはできますから」",
+			NULL, "「有一整套露营装备的话，大多数事都能应付。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r美雪ちゃんはウインクすると、持参したペットボトルの水をヤカンに注ぐ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんはウインクすると、持参したペットボトルの水をヤカンに注ぐ。",
+			NULL, "美雪眨了眨眼，把自己带来的瓶装水倒进水壶里。", Line_Normal);
+	ClearMessage();
+
+//rそして、俺はコンロをひねってみる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、俺はコンロをひねってみる。",
+			NULL, "接着，我试着拧动炉灶。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse16", 256, 64);
+	Wait( 300 );
+	PlaySE(7, "addse16", 256, 64);
+	Wait( 300 );
+	PlaySE(3, "addse16", 256, 64);
+
+//r今度は、だが、カチカチカチカチ…という着火の音すらしない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今度は、だが、カチカチカチカチ…という着火の音すらしない。",
+			NULL, "这一次，连咔嗒咔嗒的点火声都没有响起。", Line_Normal);
+	ClearMessage();
+
+//rそれに気づいた美雪ちゃんがコンロの下の蓋を開ける。液漏れした乾電池が、着火スイッチのところで錆び付いていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに気づいた美雪ちゃんがコンロの下の蓋を開ける。液漏れした乾電池が、着火スイッチのところで錆び付いていた。",
+			NULL, "注意到这一点的美雪打开炉灶下面的盖子。漏液的干电池在点火开关那里已经锈住了。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/jsr1", 1000 );
+
+//美雪rvS10/40/410300557.「うーん…これはダメですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300557", 256, TRUE);
+	OutputLine(NULL, "「うーん…これはダメですね」",
+			NULL, "「嗯……这个不行了呢。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100913.「だな。kvS10/00/410100914.それによく考えてみれば…もし電池が使えたとしても、ここにガスが通ってる可能性も低いか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100913", 256, TRUE);
+	OutputLine(NULL, "「だな。",
+			NULL, "「是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100914", 256, TRUE);
+	OutputLine(NULL, "それによく考えてみれば…もし電池が使えたとしても、ここにガスが通ってる可能性も低いか」",
+			NULL, "而且仔细想想……就算电池能用，这里通着燃气的可能性也很低吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300558.「それもそうですね。kvS10/40/410300559.…あ、龍ノ介さん。ちょっと待っててもらえますか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300558", 256, TRUE);
+	OutputLine(NULL, "「それもそうですね。",
+			NULL, "「这倒也是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300559", 256, TRUE);
+	OutputLine(NULL, "…あ、龍ノ介さん。ちょっと待っててもらえますか？」",
+			NULL, "……啊，龙之介先生。能请你稍等一下吗？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100915.「あ、ああ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100915", 256, TRUE);
+	OutputLine(NULL, "「あ、ああ…？」",
+			NULL, "「啊、啊……？」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//rそう言って、美雪ちゃんは俺の返事も待たずに台所を出ていく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って、美雪ちゃんは俺の返事も待たずに台所を出ていく。",
+			NULL, "说完，美雪没有等我回答，就离开了厨房。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse22", 256, 64);
+	DrawScene("black", 1000 );
+
+//r仕方なく俺は、とにかく何か代わりになるようなものはないかと、俺は何気なくシンクの下の扉を開けてみる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "仕方なく俺は、とにかく何か代わりになるようなものはないかと、俺は何気なくシンクの下の扉を開けてみる。",
+			NULL, "没办法，我先随手打开水槽下方的柜门，想看看有没有什么能代替的东西。", Line_Normal);
+	ClearMessage();
+
+//r途端…、ゴキブリが一匹這い出してきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "途端…、ゴキブリが一匹這い出してきた。",
+			NULL, "就在那一瞬间……一只蟑螂爬了出来。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "boyoon", 256, 64);
+	DrawScene("white", 150 );
+	DrawScene("background/jsr1", 250 );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "down3", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//荒川rvS10/00/410100916.「うわぁっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100916", 256, TRUE);
+	OutputLine(NULL, "「うわぁっ？！」",
+			NULL, "「呜哇啊？！」", Line_Normal);
+	ClearMessage();
+
+//rその黒い物体はそのまま、窓の外へと脱走する。…いなくなったあともしばらく、俺は固まったまま動けなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その黒い物体はそのまま、窓の外へと脱走する。…いなくなったあともしばらく、俺は固まったまま動けなかった。",
+			NULL, "那团黑色东西就那么逃到了窗外。它消失之后，我还僵在原地好一会儿动弹不得。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100918.「ビビった～っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100918", 256, TRUE);
+	OutputLine(NULL, "「ビビった～っ！」",
+			NULL, "「吓死我了……！」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300560.「くすっ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300560", 256, TRUE);
+	OutputLine(NULL, "「くすっ…」",
+			NULL, "「扑哧……」", Line_Normal);
+	ClearMessage();
+
+//r背後から、笑い声。…美雪ちゃんだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "背後から、笑い声。…美雪ちゃんだった。",
+			NULL, "背后传来笑声。是美雪。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100919.「み、美雪ちゃん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100919", 256, TRUE);
+	OutputLine(NULL, "「み、美雪ちゃん…」",
+			NULL, "「美、美雪……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300561.「龍ノ介さんって、ほんと、面白いですよね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300561", 256, TRUE);
+	OutputLine(NULL, "「龍ノ介さんって、ほんと、面白いですよね」",
+			NULL, "「龙之介先生真的很有趣呢。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100920.「…面白い？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100920", 256, TRUE);
+	OutputLine(NULL, "「…面白い？」",
+			NULL, "「……有趣？」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300562.「だって、ゴキブリにあんなに驚くなんて…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300562", 256, TRUE);
+	OutputLine(NULL, "「だって、ゴキブリにあんなに驚くなんて…！」",
+			NULL, "「因为你居然会被蟑螂吓成那样……！」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100921.「そりゃー、驚くでしょ！kvS10/00/410100922.　…って、美雪ちゃん、もしかして全然平気なの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100921", 256, TRUE);
+	OutputLine(NULL, "「そりゃー、驚くでしょ！",
+			NULL, "「那当然会吓到吧！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100922", 256, TRUE);
+	OutputLine(NULL, "　…って、美雪ちゃん、もしかして全然平気なの？」",
+			NULL, "……话说美雪，你该不会完全不怕吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300563.「たかがゴキブリじゃないですか？kvS10/40/410300564.　ただの虫ですよ？　虫！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300563", 256, TRUE);
+	OutputLine(NULL, "「たかがゴキブリじゃないですか？",
+			NULL, "「不过就是蟑螂而已吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300564", 256, TRUE);
+	OutputLine(NULL, "　ただの虫ですよ？　虫！」",
+			NULL, "只是虫子啊，虫子！」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100923.「そりゃ、そうだけど…、kvS10/00/410100924.じゃ、平気で新聞紙なんかでバーン！　と叩いちゃうタイプ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100923", 256, TRUE);
+	OutputLine(NULL, "「そりゃ、そうだけど…、",
+			NULL, "「话是这么说……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100924", 256, TRUE);
+	OutputLine(NULL, "じゃ、平気で新聞紙なんかでバーン！　と叩いちゃうタイプ？」",
+			NULL, "那你是能随手拿报纸啪地一下拍死的类型？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300565.「あはは…！　殺すほどのこともないですよ。kvS10/40/410300566.ゴキブリは、ただの虫ですからね。kvS10/40/410300567.それ以上でもそれ以下でもないんです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300565", 256, TRUE);
+	OutputLine(NULL, "「あはは…！　殺すほどのこともないですよ。",
+			NULL, "「啊哈哈！也没必要杀掉它吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300566", 256, TRUE);
+	OutputLine(NULL, "ゴキブリは、ただの虫ですからね。",
+			NULL, "蟑螂只是虫子而已。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300567", 256, TRUE);
+	OutputLine(NULL, "それ以上でもそれ以下でもないんです」",
+			NULL, "仅此而已。」", Line_Normal);
+	ClearMessage();
+
+//rあっさりとした返答。…それが強がりでも何でもないことを示すように美雪ちゃんはシンクの扉を開け、中をのぞき込んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あっさりとした返答。…それが強がりでも何でもないことを示すように美雪ちゃんはシンクの扉を開け、中をのぞき込んだ。",
+			NULL, "她回答得很干脆。像是在证明那并非逞强，美雪打开水槽柜门，探头看向里面。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300568.「私、必要以上の殺生はしたくないんです。kvS10/40/410300569.だから虫が出てきても、被害がない限りは殺さない。kvS10/40/410300570.野外活動でも、ちょっと変わってるって言われましたけどね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300568", 256, TRUE);
+	OutputLine(NULL, "「私、必要以上の殺生はしたくないんです。",
+			NULL, "「我不想做无谓的杀生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300569", 256, TRUE);
+	OutputLine(NULL, "だから虫が出てきても、被害がない限りは殺さない。",
+			NULL, "所以就算有虫子出来，只要没有造成危害，我也不会杀。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300570", 256, TRUE);
+	OutputLine(NULL, "野外活動でも、ちょっと変わってるって言われましたけどね」",
+			NULL, "野外活动的时候，大家也说我有点奇怪呢。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100925.「そうなんだ。kvS10/00/410100926.でもそれって、根が優しいんだね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100925", 256, TRUE);
+	OutputLine(NULL, "「そうなんだ。",
+			NULL, "「这样啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100926", 256, TRUE);
+	OutputLine(NULL, "でもそれって、根が優しいんだね」",
+			NULL, "不过那说明你本性很温柔吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300571.「…優しいっていうのとは、ちょっと違うかもです。kvS10/40/410300572.殺すのは、必要最低限だけ。kvS10/40/410300573.死ぬ間際の相手の顔なんて、そうそう見たくないですから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300571", 256, TRUE);
+	OutputLine(NULL, "「…優しいっていうのとは、ちょっと違うかもです。",
+			NULL, "「……说温柔，可能有点不一样。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300572", 256, TRUE);
+	OutputLine(NULL, "殺すのは、必要最低限だけ。",
+			NULL, "只在绝对必要时才会杀生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300573", 256, TRUE);
+	OutputLine(NULL, "死ぬ間際の相手の顔なんて、そうそう見たくないですから」",
+			NULL, "我实在不想看见对方临死前的表情。」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+
+//荒川rvS10/00/410100927.「相手の顔…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100927", 256, TRUE);
+	OutputLine(NULL, "「相手の顔…？」",
+			NULL, "「对方的表情……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300574.「そうです。kvS10/40/410300575.恐怖と絶望でいっぱいの目…。kvS10/40/410300576.その目の奥には、こっちが呪われそうなほどの憎悪が滲んでいるんですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300574", 256, TRUE);
+	OutputLine(NULL, "「そうです。",
+			NULL, "「是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300575", 256, TRUE);
+	OutputLine(NULL, "恐怖と絶望でいっぱいの目…。",
+			NULL, "充满恐惧与绝望的眼睛……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300576", 256, TRUE);
+	OutputLine(NULL, "その目の奥には、こっちが呪われそうなほどの憎悪が滲んでいるんですよ」",
+			NULL, "那双眼睛深处渗出的憎恨，强烈得仿佛能诅咒人。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100928.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100928", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	PlayBGM(2, "hm06_25", 128, 0);
+
+//rゴキブリの目に…、憎悪…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゴキブリの目に…、憎悪…？",
+			NULL, "蟑螂的眼睛里……憎恨……？", Line_Normal);
+	ClearMessage();
+
+//r明るく言う美雪ちゃん。だがその明るさとは裏腹に、俺は言葉のニュアンスに微妙なものを感じて戸惑っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "明るく言う美雪ちゃん。だがその明るさとは裏腹に、俺は言葉のニュアンスに微妙なものを感じて戸惑っていた。",
+			NULL, "美雪说得很开朗。可与那份开朗相反，我从她话里的细微语感中感到异样，一时有些困惑。", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんの口ぶり…、ゴキブリではなく、人間に対するものだったら分からなくもない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんの口ぶり…、ゴキブリではなく、人間に対するものだったら分からなくもない。",
+			NULL, "美雪这番话……如果说的不是蟑螂，而是人，那倒还能理解。", Line_Normal);
+	ClearMessage();
+
+//rゴキブリの目なんか、だいたい見えねーし！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゴキブリの目なんか、だいたい見えねーし！",
+			NULL, "蟑螂的眼睛，一般根本看不见吧！", Line_Normal);
+	ClearMessage();
+
+//rだが…、ということは…、それは…、美雪ちゃんは、死ぬ間際の憎悪に満ちた相手の目を、見たことがあるってことを意味してしまうんじゃねーのか…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが…、ということは…、それは…、美雪ちゃんは、死ぬ間際の憎悪に満ちた相手の目を、見たことがあるってことを意味してしまうんじゃねーのか…？",
+			NULL, "可是……这岂不是意味着……美雪曾亲眼见过某人在临死前充满憎恨的眼神……？", Line_Normal);
+	ClearMessage();
+
+//rそれはつまり…、殺されかけている奴の目を見ているってことであり…、美雪ちゃんは…、人を殺したことがあるってことで…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それはつまり…、殺されかけている奴の目を見ているってことであり…、美雪ちゃんは…、人を殺したことがあるってことで…。",
+			NULL, "换句话说……她见过即将被杀的人那双眼睛……也就是说，美雪……曾经杀过人……", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/jsr1", 1000 );
+
+//荒川rvS10/00/410100929.「確かにまぁ、憎悪に満ちた虫の目なんて見たくねーよな。kvS10/00/410100930.はははっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100929", 256, TRUE);
+	OutputLine(NULL, "「確かにまぁ、憎悪に満ちた虫の目なんて見たくねーよな。",
+			NULL, "「确实啊，我也不想看见充满憎恨的虫子眼睛。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100930", 256, TRUE);
+	OutputLine(NULL, "はははっ！」",
+			NULL, "哈哈哈！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300577.「……本当ですね。kvS10/40/410300578.くすくす…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300577", 256, TRUE);
+	OutputLine(NULL, "「……本当ですね。",
+			NULL, "「……说得也是呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300578", 256, TRUE);
+	OutputLine(NULL, "くすくす…」",
+			NULL, "呵呵……」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//r下らない考えを一掃するように、俺は明るく笑いとばす。それに対して美雪ちゃんはさらっと答えると、手にしていたカセット・コンロを置いた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "下らない考えを一掃するように、俺は明るく笑いとばす。それに対して美雪ちゃんはさらっと答えると、手にしていたカセット・コンロを置いた。",
+			NULL, "像是要驱散无聊的念头，我故意明快地笑了过去。美雪则淡淡应了一声，把手里的卡式炉放了下来。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm01_07", 128, 0);
+
+//荒川rvS10/00/410100931.「おっ。用意がいいね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100931", 256, TRUE);
+	OutputLine(NULL, "「おっ。用意がいいね」",
+			NULL, "「哦，准备得挺周到嘛。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_lighter", 256, 64);
+
+//r俺の褒め言葉に美雪ちゃんはニッコリ笑い返すと、カセット・ボンベをセットし、スイッチをひねった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺の褒め言葉に美雪ちゃんはニッコリ笑い返すと、カセット・ボンベをセットし、スイッチをひねった。",
+			NULL, "听到我的夸奖，美雪微笑着回应，然后装上卡式气罐，转动了开关。", Line_Normal);
+	ClearMessage();
+
+//r俺がライターに火をつけてかざすと、ボンッ…！　と大げさな音がして火が点く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺がライターに火をつけてかざすと、ボンッ…！　と大げさな音がして火が点く。",
+			NULL, "我点燃打火机凑过去，只听『砰』的一声夸张响动，火燃了起来。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100932.「良かったな～！kvS10/00/410100933.　これでみんなで、茶が飲めるな！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100932", 256, TRUE);
+	OutputLine(NULL, "「良かったな～！",
+			NULL, "「太好了~", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100933", 256, TRUE);
+	OutputLine(NULL, "　これでみんなで、茶が飲めるな！」",
+			NULL, "这样大家就能喝茶了。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300581.「ええ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300581", 256, TRUE);
+	OutputLine(NULL, "「ええ」",
+			NULL, "「嗯。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300582.「…って、そういえば」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300582", 256, TRUE);
+	OutputLine(NULL, "「…って、そういえば」",
+			NULL, "「……说起来。」", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんはしまった、と言いたげに眉間にしわを寄せると、さらに戸棚をあさりはじめた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんはしまった、と言いたげに眉間にしわを寄せると、さらに戸棚をあさりはじめた。",
+			NULL, "美雪像是突然想起失误般皱起眉头，又开始翻找橱柜。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100934.「どうしたの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100934", 256, TRUE);
+	OutputLine(NULL, "「どうしたの？」",
+			NULL, "「怎么了？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300583.「…お茶っ葉です。kvS10/40/410300584.お茶は持ってこなかったんで。kvS10/40/410300585.うっかりしてたなぁ…失敗です」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300583", 256, TRUE);
+	OutputLine(NULL, "「…お茶っ葉です。",
+			NULL, "「……茶叶。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300584", 256, TRUE);
+	OutputLine(NULL, "お茶は持ってこなかったんで。",
+			NULL, "我没有带茶来。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300585", 256, TRUE);
+	OutputLine(NULL, "うっかりしてたなぁ…失敗です」",
+			NULL, "真是疏忽了……失策了。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100935.「あぁ、そうか。kvS10/00/410100936.…なるほど、美雪ちゃんも完璧というわけじゃないってことだな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100935", 256, TRUE);
+	OutputLine(NULL, "「あぁ、そうか。",
+			NULL, "「啊，是这样啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100936", 256, TRUE);
+	OutputLine(NULL, "…なるほど、美雪ちゃんも完璧というわけじゃないってことだな」",
+			NULL, "……原来如此，看来美雪也并非完美无缺嘛。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300586.「…むっ！kvS10/40/410300587.　それはちょっと心外ですね。kvS10/40/410300588.こんな場所でお茶を飲むような悠長が許されるとは思ってなかっただけですよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300586", 256, TRUE);
+	OutputLine(NULL, "「…むっ！",
+			NULL, "「……唔！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300587", 256, TRUE);
+	OutputLine(NULL, "　それはちょっと心外ですね。",
+			NULL, "这话有点让人不服呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300588", 256, TRUE);
+	OutputLine(NULL, "こんな場所でお茶を飲むような悠長が許されるとは思ってなかっただけですよ？」",
+			NULL, "我只是没想到在这种地方还能有悠闲喝茶的余地罢了哦？」", Line_Normal);
+	ClearMessage();
+
+//rそう言って、美雪ちゃんは頬を膨らませて反論する。…まぁ、そういう考え方もあるか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って、美雪ちゃんは頬を膨らませて反論する。…まぁ、そういう考え方もあるか。",
+			NULL, "说着，美雪鼓起脸颊反驳……嗯，这种想法也说得通。", Line_Normal);
+	ClearMessage();
+
+//rそう思いながら、俺は彼女と一緒にお茶を探し出したが、…ふと手を止めた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう思いながら、俺は彼女と一緒にお茶を探し出したが、…ふと手を止めた。",
+			NULL, "我一边这么想，一边和她一起找茶叶……却忽然停下了手。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300589.「？　どうしました？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300589", 256, TRUE);
+	OutputLine(NULL, "「？　どうしました？」",
+			NULL, "「怎么了？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100937.「いや、よく考えてみれば…。kvS10/00/410100938.あったとしても、それって二十年前のお茶っ葉だよな…？kvS10/00/410100939.　さすがにそれって、ヤバくない？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100937", 256, TRUE);
+	OutputLine(NULL, "「いや、よく考えてみれば…。",
+			NULL, "「不，我仔细一想……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100938", 256, TRUE);
+	OutputLine(NULL, "あったとしても、それって二十年前のお茶っ葉だよな…？",
+			NULL, "就算找到了，那也是二十年前的茶叶吧……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100939", 256, TRUE);
+	OutputLine(NULL, "　さすがにそれって、ヤバくない？」",
+			NULL, "这再怎么说也很危险吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300590.「言われてみれば…。kvS10/40/410300591.香りも味もしなさそうですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300590", 256, TRUE);
+	OutputLine(NULL, "「言われてみれば…。",
+			NULL, "「听你这么一说……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300591", 256, TRUE);
+	OutputLine(NULL, "香りも味もしなさそうですね」",
+			NULL, "感觉香气和味道都已经没了。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100940.「まぁ、封鎖が解除されたってことは多分残留汚染とかは大丈夫なんだろうけど…。kvS10/00/410100941.さすがに、食物はまずいかもな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100940", 256, TRUE);
+	OutputLine(NULL, "「まぁ、封鎖が解除されたってことは多分残留汚染とかは大丈夫なんだろうけど…。",
+			NULL, "「虽然封锁解除，大概说明残留污染之类的问题已经没事了……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100941", 256, TRUE);
+	OutputLine(NULL, "さすがに、食物はまずいかもな」",
+			NULL, "可食物这方面还是有点不妙吧。」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300593.「…ですね。kvS10/40/410300594.今さらですけど、お茶を飲むのは難しいかも…。kvS10/40/410300595.白湯にしましょうか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300593", 256, TRUE);
+	OutputLine(NULL, "「…ですね。",
+			NULL, "「……是呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300594", 256, TRUE);
+	OutputLine(NULL, "今さらですけど、お茶を飲むのは難しいかも…。",
+			NULL, "事到如今才说这个，喝茶可能有点困难……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300595", 256, TRUE);
+	OutputLine(NULL, "白湯にしましょうか？」",
+			NULL, "改喝白开水吧？」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600187.「あの…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600187", 256, TRUE);
+	OutputLine(NULL, "「あの…」",
+			NULL, "「那个……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300596.「……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300596", 256, TRUE);
+	OutputLine(NULL, "「……？」",
+			NULL, "「……？」", Line_Normal);
+	ClearMessage();
+
+//rその声に振り返ると、十和田さんがおずおずと歩いてくるのが見える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その声に振り返ると、十和田さんがおずおずと歩いてくるのが見える。",
+			NULL, "听见那声音回头一看，十和田小姐正怯生生地走过来。", Line_Normal);
+	ClearMessage();
+
+//rそしてその手には、２リットルのペットボトルのお茶が握られていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そしてその手には、２リットルのペットボトルのお茶が握られていた。",
+			NULL, "而她手里握着一瓶两升装的瓶装茶。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 40, "sprite/miyuko_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 42, "sprite/yae_akire_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600188.「あの…、良かったら、kvS10/42/410600189.これ…、温めませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600188", 256, TRUE);
+	OutputLine(NULL, "「あの…、良かったら、",
+			NULL, "「那个……如果可以的话，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600189", 256, TRUE);
+	OutputLine(NULL, "これ…、温めませんか？」",
+			NULL, "要不要把这个热一下？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100942.「えっ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100942", 256, TRUE);
+	OutputLine(NULL, "「えっ？」",
+			NULL, "「咦？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600190.「飲み残しで…、kvS10/42/410600191.工くんが口をつけて飲んでたヤツだから、悪いかなって思ってたんですけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600190", 256, TRUE);
+	OutputLine(NULL, "「飲み残しで…、",
+			NULL, "「这是喝剩下的……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600191", 256, TRUE);
+	OutputLine(NULL, "工くんが口をつけて飲んでたヤツだから、悪いかなって思ってたんですけど…」",
+			NULL, "工君直接对着瓶口喝过，所以我怕你们介意……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100943.「おぉー！　そんなの、ぜーんぜんＯＫよ？kvS10/00/410100944.　っていうか、もっと早く言ってくれよ！kvS10/00/410100945.　…なぁ、美雪ちゃん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100943", 256, TRUE);
+	OutputLine(NULL, "「おぉー！　そんなの、ぜーんぜんＯＫよ？",
+			NULL, "「哦哦！这种事完全没关系哦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100944", 256, TRUE);
+	OutputLine(NULL, "　っていうか、もっと早く言ってくれよ！",
+			NULL, "话说，你怎么不早点说啊！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100945", 256, TRUE);
+	OutputLine(NULL, "　…なぁ、美雪ちゃん？」",
+			NULL, "……对吧，美雪？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300597.「ええ、助かりますよ。十和田さん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300597", 256, TRUE);
+	OutputLine(NULL, "「ええ、助かりますよ。十和田さん」",
+			NULL, "「嗯，帮大忙了，十和田小姐。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_warai_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600192.「…良かった。kvS10/42/410600193.それじゃ…、これをみんなで飲みましょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600192", 256, TRUE);
+	OutputLine(NULL, "「…良かった。",
+			NULL, "「……太好了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600193", 256, TRUE);
+	OutputLine(NULL, "それじゃ…、これをみんなで飲みましょう」",
+			NULL, "那我们大家一起喝吧。」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//rそして美雪ちゃんはヤカンに受け取ったペットボトルのお茶を移しかえると、カセット・コンロの火にかけた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして美雪ちゃんはヤカンに受け取ったペットボトルのお茶を移しかえると、カセット・コンロの火にかけた。",
+			NULL, "接着，美雪把收到的瓶装茶倒进水壶里，放到卡式炉的火上。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100946.「いや～、助かった！kvS10/00/410100947.　腐ったお茶を飲んで、全員死ぬところだったぜ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100946", 256, TRUE);
+	OutputLine(NULL, "「いや～、助かった！",
+			NULL, "「哎呀，真是帮大忙了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100947", 256, TRUE);
+	OutputLine(NULL, "　腐ったお茶を飲んで、全員死ぬところだったぜ！」",
+			NULL, "差点喝了变质的茶，全员送命呢！」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300598.「龍ノ介さん、大袈裟ですよ。kvS10/40/410300599.そもそも、お茶は腐ったりするんですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300598", 256, TRUE);
+	OutputLine(NULL, "「龍ノ介さん、大袈裟ですよ。",
+			NULL, "「龙之介先生，你太夸张了啦。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300599", 256, TRUE);
+	OutputLine(NULL, "そもそも、お茶は腐ったりするんですか？」",
+			NULL, "茶真的会变质吗？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100948.「わかんねーよ？kvS10/00/410100949.　あれも一応、植物の成れの果てだからな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100948", 256, TRUE);
+	OutputLine(NULL, "「わかんねーよ？",
+			NULL, "「我哪知道啊？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100949", 256, TRUE);
+	OutputLine(NULL, "　あれも一応、植物の成れの果てだからな」",
+			NULL, "那玩意儿好歹也是植物变成的嘛。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300600.「…ですね。kvS10/40/410300601.とはいえ、そんなお茶を飲んだとしても、お腹を下す程度ですよ。kvS10/40/410300602.もし、死ぬとしたら…、kvS10/40/410300603.誰かが毒でも入れたということでしょうね――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300600", 256, TRUE);
+	OutputLine(NULL, "「…ですね。",
+			NULL, "「也是呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300601", 256, TRUE);
+	OutputLine(NULL, "とはいえ、そんなお茶を飲んだとしても、お腹を下す程度ですよ。",
+			NULL, "话虽如此，就算喝了那种茶，也顶多闹肚子吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300602", 256, TRUE);
+	OutputLine(NULL, "もし、死ぬとしたら…、",
+			NULL, "如果会死的话……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300603", 256, TRUE);
+	OutputLine(NULL, "誰かが毒でも入れたということでしょうね——」",
+			NULL, "那大概就是有人下了毒吧——」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100950.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100950", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんは小さく笑ったが、目は全く笑っていない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんは小さく笑ったが、目は全く笑っていない。",
+			NULL, "美雪轻轻笑了笑，眼里却完全没有笑意。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100951.「おいおい、美雪ちゃん。kvS10/00/410100952.それ、冗談になってないから！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100951", 256, TRUE);
+	OutputLine(NULL, "「おいおい、美雪ちゃん。",
+			NULL, "「喂喂，美雪。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100952", 256, TRUE);
+	OutputLine(NULL, "それ、冗談になってないから！」",
+			NULL, "这玩笑可一点都不好笑啊！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300604.「……そうですよね。kvS10/40/410300605.でも…、そういうことって、ありえるでしょう？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300604", 256, TRUE);
+	OutputLine(NULL, "「……そうですよね。",
+			NULL, "「……说得也是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300605", 256, TRUE);
+	OutputLine(NULL, "でも…、そういうことって、ありえるでしょう？」",
+			NULL, "可是……这种事也有可能发生吧？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100953.「それは、そうだけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100953", 256, TRUE);
+	OutputLine(NULL, "「それは、そうだけど…」",
+			NULL, "「这倒是……」", Line_Normal);
+	ClearMessage();
+
+//r考えてみれば、美雪ちゃんの言う通りだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "考えてみれば、美雪ちゃんの言う通りだ。",
+			NULL, "仔细一想，美雪说得对。", Line_Normal);
+	ClearMessage();
+
+//r敵が、俺たちから逃走手段と通信手段を奪って、皆殺しする気なのだとしたら、毒殺は手っ取り早い。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "敵が、俺たちから逃走手段と通信手段を奪って、皆殺しする気なのだとしたら、毒殺は手っ取り早い。",
+			NULL, "如果敌人夺走了我们的逃脱手段和通信手段，打算把我们全杀掉，毒杀就是最快的办法。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100954.「あ…、いや…。kvS10/00/410100955.ありえるけど、それじゃ、ここにいる誰かを疑ってるみたいじゃねーかよ！kvS10/00/410100956.　あははは、そんなことって…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100954", 256, TRUE);
+	OutputLine(NULL, "「あ…、いや…。",
+			NULL, "「啊……呃……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100955", 256, TRUE);
+	OutputLine(NULL, "ありえるけど、それじゃ、ここにいる誰かを疑ってるみたいじゃねーかよ！",
+			NULL, "是有可能啦，可这样听起来像是在怀疑这里的某个人啊！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100956", 256, TRUE);
+	OutputLine(NULL, "　あははは、そんなことって…」",
+			NULL, "哈哈哈，哪会有这种事……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300606.「あははは、冗談ですよ。kvS10/40/410300607.そんな真面目に返されると、私としても困ります！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300606", 256, TRUE);
+	OutputLine(NULL, "「あははは、冗談ですよ。",
+			NULL, "「哈哈哈，开玩笑的啦。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300607", 256, TRUE);
+	OutputLine(NULL, "そんな真面目に返されると、私としても困ります！」",
+			NULL, "你这么认真回答，我也很为难呢！」", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんは笑いながら、持参した紙コップを取り出した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんは笑いながら、持参した紙コップを取り出した。",
+			NULL, "美雪一边笑，一边拿出了自己带来的纸杯。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100957.「あ、あとは俺がやっとくよ。kvS10/00/410100958.これに注げばいいんだろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100957", 256, TRUE);
+	OutputLine(NULL, "「あ、あとは俺がやっとくよ。",
+			NULL, "「啊，后面交给我吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100958", 256, TRUE);
+	OutputLine(NULL, "これに注げばいいんだろ？」",
+			NULL, "倒进这个就行吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300608.「いいですよ。kvS10/40/410300609.私が、やりますから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300608", 256, TRUE);
+	OutputLine(NULL, "「いいですよ。",
+			NULL, "「没关系。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300609", 256, TRUE);
+	OutputLine(NULL, "私が、やりますから」",
+			NULL, "我来做就好。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100959.「…そう？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100959", 256, TRUE);
+	OutputLine(NULL, "「…そう？」",
+			NULL, "「……是吗？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeOutBGM(2, 200, FALSE);
+
+//r美雪ちゃんは、時折、チラチラと俺と十和田さんに目をやりながら、紙コップを並べる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんは、時折、チラチラと俺と十和田さんに目をやりながら、紙コップを並べる。",
+			NULL, "美雪把纸杯排开，时不时偷偷看向我和十和田小姐。", Line_Normal);
+	ClearMessage();
+
+//r十和田さんに視線を移すと、彼女はじっと、美雪ちゃんを見つめていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんに視線を移すと、彼女はじっと、美雪ちゃんを見つめていた。",
+			NULL, "我把视线转向十和田小姐，她正一动不动地盯着美雪。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 42, "sprite/yae_akire_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/jsr1", 1000 );
+	PlayBGM(2, "hm06_30", 128, 0);
+
+//十和田rvS10/42/410600194.「私のは、いいですよ。kvS10/42/410600195.さっき使ってたコップがありますから…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600194", 256, TRUE);
+	OutputLine(NULL, "「私のは、いいですよ。",
+			NULL, "「我的不用了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600195", 256, TRUE);
+	OutputLine(NULL, "さっき使ってたコップがありますから…」",
+			NULL, "我有刚才用过的杯子……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300610.「いいのよ、十和田さん。kvS10/40/410300611.紙コップ、いっぱいあるから遠慮しないで？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300610", 256, TRUE);
+	OutputLine(NULL, "「いいのよ、十和田さん。",
+			NULL, "「没关系的，十和田小姐。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300611", 256, TRUE);
+	OutputLine(NULL, "紙コップ、いっぱいあるから遠慮しないで？」",
+			NULL, "纸杯还有很多，别客气哦？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600196.「いいんです。kvS10/42/410600197.別に、遠慮なんかじゃないですから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600196", 256, TRUE);
+	OutputLine(NULL, "「いいんです。",
+			NULL, "「真的不用。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600197", 256, TRUE);
+	OutputLine(NULL, "別に、遠慮なんかじゃないですから」",
+			NULL, "我没有客气。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300612.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300612", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600198.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600198", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rお互いにヘタなことをさせないよう、けん制しているようにも見える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お互いにヘタなことをさせないよう、けん制しているようにも見える。",
+			NULL, "她们看起来也像是在互相牵制，防着对方做什么多余的事。", Line_Normal);
+	ClearMessage();
+
+//r何なんだよ、この雰囲気は…？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何なんだよ、この雰囲気は…？！",
+			NULL, "这气氛到底是怎么回事？！", Line_Normal);
+	ClearMessage();
+
+//r疑心暗鬼そのものじゃねーか！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "疑心暗鬼そのものじゃねーか！",
+			NULL, "根本就是在彼此疑神疑鬼嘛！", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100960.「…じゃ、俺はあっちに行ってるから。kvS10/00/410100961.あと、よろしく頼んでもいい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100960", 256, TRUE);
+	OutputLine(NULL, "「…じゃ、俺はあっちに行ってるから。",
+			NULL, "「……那我先去那边了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100961", 256, TRUE);
+	OutputLine(NULL, "あと、よろしく頼んでもいい？」",
+			NULL, "后面能拜托你吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300613.「あ、はい！　もちろん！kvS10/40/410300614.　十和田さんもあっちに行ってていいですよ？kvS10/40/410300615.　あと、私がやりますから！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300613", 256, TRUE);
+	OutputLine(NULL, "「あ、はい！　もちろん！",
+			NULL, "「啊，好的，当然！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300614", 256, TRUE);
+	OutputLine(NULL, "　十和田さんもあっちに行ってていいですよ？",
+			NULL, "十和田小姐也可以去那边哦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300615", 256, TRUE);
+	OutputLine(NULL, "　あと、私がやりますから！」",
+			NULL, "后面我来就好！」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600199.「いいえ。あとは、私がやります…！kvS10/42/410600200.　反町さんこそ、向こう行ってて下さい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600199", 256, TRUE);
+	OutputLine(NULL, "「いいえ。あとは、私がやります…！",
+			NULL, "「不用。后面我来……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600200", 256, TRUE);
+	OutputLine(NULL, "　反町さんこそ、向こう行ってて下さい」",
+			NULL, "倒是反町小姐，请你去那边待着。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100962.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100962", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300616.「……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300616", 256, TRUE);
+	OutputLine(NULL, "「……？」",
+			NULL, "「……？」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、思いがけないほど強い口調で言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、思いがけないほど強い口調で言った。",
+			NULL, "十和田小姐用出乎意料的强硬语气说道。", Line_Normal);
+	ClearMessage();
+
+//r思わず俺は、振り返って十和田さんの顔を見てしまう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "思わず俺は、振り返って十和田さんの顔を見てしまう。",
+			NULL, "我忍不住回头看向十和田小姐的脸。", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、美雪ちゃんに対する不信感を露にしている。…美雪ちゃんが、一体何をしたっていうんだ…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、美雪ちゃんに対する不信感を露にしている。…美雪ちゃんが、一体何をしたっていうんだ…？",
+			NULL, "十和田小姐毫不掩饰地流露出对美雪的不信任……美雪到底做了什么啊？", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300617.「私が、やりますから。kvS10/40/410300618.大丈夫よ、十和田さん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300617", 256, TRUE);
+	OutputLine(NULL, "「私が、やりますから。",
+			NULL, "「我来做。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300618", 256, TRUE);
+	OutputLine(NULL, "大丈夫よ、十和田さん」",
+			NULL, "没事的，十和田小姐。」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600201.「いいえ！kvS10/42/410600202.　お茶が沸いたら、私が持って行きますから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600201", 256, TRUE);
+	OutputLine(NULL, "「いいえ！",
+			NULL, "「不用！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600202", 256, TRUE);
+	OutputLine(NULL, "　お茶が沸いたら、私が持って行きますから」",
+			NULL, "茶烧好了之后，我来端过去。」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300619.「でも…ん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300619", 256, TRUE);
+	OutputLine(NULL, "「でも…ん…」",
+			NULL, "「可是……嗯……」", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんも、十和田さんが頑なに自分がやると言い張っていることに戸惑っている様子だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんも、十和田さんが頑なに自分がやると言い張っていることに戸惑っている様子だった。",
+			NULL, "美雪似乎也被十和田小姐固执地坚持自己来这件事弄得不知所措。", Line_Normal);
+	ClearMessage();
+
+//rムリもないだろう。ここまで拒絶されたら、俺だって気を悪くする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ムリもないだろう。ここまで拒絶されたら、俺だって気を悪くする。",
+			NULL, "这也难怪。被人拒绝到这种程度，换成我也会不舒服。", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600203.「反町さん…、kvS10/42/410600204.いいから、あっちに行ってて下さい…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600203", 256, TRUE);
+	OutputLine(NULL, "「反町さん…、",
+			NULL, "「反町小姐……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600204", 256, TRUE);
+	OutputLine(NULL, "いいから、あっちに行ってて下さい…」",
+			NULL, "请你去那边待着吧……」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300620.「でも十和田さん…、顔が、真っ青――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300620", 256, TRUE);
+	OutputLine(NULL, "「でも十和田さん…、顔が、真っ青——」",
+			NULL, "「可是十和田小姐，你的脸色很苍白——」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_sakebi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	PlaySE(3, "tataku", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//十和田rvS10/42/410600205.「…いいからあっちへ行ってッ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600205", 256, TRUE);
+	OutputLine(NULL, "「…いいからあっちへ行ってッ！」",
+			NULL, "「……快去那边！」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300621.「――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300621", 256, TRUE);
+	OutputLine(NULL, "「——」",
+			NULL, "「——」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、叩きつけるように怒鳴って、美雪ちゃんの声を遮った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、叩きつけるように怒鳴って、美雪ちゃんの声を遮った。",
+			NULL, "十和田小姐像是把声音砸出去一样怒吼，打断了美雪的话。", Line_Normal);
+	ClearMessage();
+
+//r今まで消え入りそうな声で話していただけに、俺も乙部も、美雪ちゃんも、驚き呆然として十和田さんを見る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今まで消え入りそうな声で話していただけに、俺も乙部も、美雪ちゃんも、驚き呆然として十和田さんを見る。",
+			NULL, "她刚才一直用快要消失的声音说话，所以我、乙部和美雪都惊得呆住，看着十和田小姐。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600206.「すみません…。kvS10/42/410600207.でも、本当に…、私は大丈夫ですから。kvS10/42/410600208.ここは、私がやりますから…。kvS10/42/410600209.みなさん、あっちへ行って寛いでいて下さい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600206", 256, TRUE);
+	OutputLine(NULL, "「すみません…。",
+			NULL, "「对不起……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600207", 256, TRUE);
+	OutputLine(NULL, "でも、本当に…、私は大丈夫ですから。",
+			NULL, "可是，我真的……没事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600208", 256, TRUE);
+	OutputLine(NULL, "ここは、私がやりますから…。",
+			NULL, "这里由我来做……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600209", 256, TRUE);
+	OutputLine(NULL, "みなさん、あっちへ行って寛いでいて下さい」",
+			NULL, "大家请去那边休息吧。」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300622.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300622", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、頑なにコンロの前を陣取ろうとする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、頑なにコンロの前を陣取ろうとする。",
+			NULL, "十和田小姐固执地占在炉子前。", Line_Normal);
+	ClearMessage();
+
+//rどうしてそこまでして…と考えてから、すぐに不吉な考えにたどり着いた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "どうしてそこまでして…と考えてから、すぐに不吉な考えにたどり着いた。",
+			NULL, "我刚想着她为什么要做到这个地步，马上就想到了不祥的可能。", Line_Normal);
+	ClearMessage();
+
+//rひょっとすると十和田さんは、美雪ちゃんにお茶をいれさせたくないんじゃないのか…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ひょっとすると十和田さんは、美雪ちゃんにお茶をいれさせたくないんじゃないのか…？",
+			NULL, "也许十和田小姐是不想让美雪泡茶吧？", Line_Normal);
+	ClearMessage();
+
+//rさっき彼女が、『誰かが毒でも…？』と冗談交じりに言っていたことを思い出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さっき彼女が、『誰かが毒でも…？』と冗談交じりに言っていたことを思い出す。",
+			NULL, "我想起刚才她半开玩笑说过『有人下毒什么的……』。", Line_Normal);
+	ClearMessage();
+
+//rまさか十和田さんは、それを真に受けて本当に毒でも入れるんじゃないかと疑って…、それでヤカンを見張ろうとしているんじゃないのか…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まさか十和田さんは、それを真に受けて本当に毒でも入れるんじゃないかと疑って…、それでヤカンを見張ろうとしているんじゃないのか…？",
+			NULL, "难道十和田小姐把那句话当真了，以为美雪真的会下毒，所以才要守着水壶？", Line_Normal);
+	ClearMessage();
+
+//r…ばかばかしい。美雪ちゃんがそんなこと、するわけが…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…ばかばかしい。美雪ちゃんがそんなこと、するわけが…。",
+			NULL, "……太荒唐了。美雪怎么可能做那种事。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100963.「それじゃ、二人ともあっち行ってなよ。kvS10/00/410100964.俺が茶をいれるからさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100963", 256, TRUE);
+	OutputLine(NULL, "「それじゃ、二人ともあっち行ってなよ。",
+			NULL, "「那你们两个都去那边吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100964", 256, TRUE);
+	OutputLine(NULL, "俺が茶をいれるからさ」",
+			NULL, "我来泡茶吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600210.「荒川さんも、あっちへ行っていて下さい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600210", 256, TRUE);
+	OutputLine(NULL, "「荒川さんも、あっちへ行っていて下さい」",
+			NULL, "「荒川先生也请去那边待着。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100965.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100965", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r間に入ってコトを収めるつもりでそう言ったのだが、十和田さんは、俺をも追い返してしまった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "間に入ってコトを収めるつもりでそう言ったのだが、十和田さんは、俺をも追い返してしまった。",
+			NULL, "我本想插进来把事情圆过去，结果十和田小姐连我也赶走了。", Line_Normal);
+	ClearMessage();
+
+//r…つまり、自分以外の誰も信用できないってことか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…つまり、自分以外の誰も信用できないってことか。",
+			NULL, "……也就是说，她谁都不信，只信自己。", Line_Normal);
+	ClearMessage();
+
+//rしょうがない。…とりあえず俺は訝しむ美雪ちゃんを促して、部屋に戻ることにした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しょうがない。…とりあえず俺は訝しむ美雪ちゃんを促して、部屋に戻ることにした。",
+			NULL, "没办法……总之我催着满脸疑惑的美雪，决定回房间。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	DrawScene("background/js7_01", 1000 );
+
+//rお茶が温まるまでの間、俺と美雪ちゃん、それに乙部の三人で、ぼんやりと畳に座っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お茶が温まるまでの間、俺と美雪ちゃん、それに乙部の三人で、ぼんやりと畳に座っていた。",
+			NULL, "等茶烧热的这段时间，我、美雪和乙部三个人呆呆地坐在榻榻米上。", Line_Normal);
+	ClearMessage();
+
+//r何を話したらいいのか、分からない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何を話したらいいのか、分からない。",
+			NULL, "我不知道该说些什么。", Line_Normal);
+	ClearMessage();
+
+//r乙部も同じ気持ちなのか、彼は誰とも視線を合わさないように、ずっとうつむいたままだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部も同じ気持ちなのか、彼は誰とも視線を合わさないように、ずっとうつむいたままだ。",
+			NULL, "乙部似乎也有同样的心情，他一直低着头，尽量不和任何人对上视线。", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんはといえば…、手持ち無沙汰に、天井を見上げたり、壁を見上げたり…。時々、ちらりと十和田さんに視線を走らせては、そっとため息をついている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんはといえば…、手持ち無沙汰に、天井を見上げたり、壁を見上げたり…。時々、ちらりと十和田さんに視線を走らせては、そっとため息をついている。",
+			NULL, "至于美雪……她无所事事地抬头看看天花板，又看看墙壁……偶尔偷偷瞥向十和田小姐，然后轻轻叹息。", Line_Normal);
+	ClearMessage();
+
+//rやがて、十和田さんが紙コップにお茶を入れて、持ってきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "やがて、十和田さんが紙コップにお茶を入れて、持ってきた。",
+			NULL, "不久，十和田小姐把茶倒进纸杯里，端了过来。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600211.「お待たせしました…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600211", 256, TRUE);
+	OutputLine(NULL, "「お待たせしました…」",
+			NULL, "「让各位久等了……」", Line_Normal);
+	ClearMessage();
+
+//rそう言いながら、十和田さんは、それぞれの目の前にコップを置く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言いながら、十和田さんは、それぞれの目の前にコップを置く。",
+			NULL, "十和田小姐一边这么说，一边把杯子放到每个人面前。", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600212.「すみません、量がまちまちになっちゃって…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600212", 256, TRUE);
+	OutputLine(NULL, "「すみません、量がまちまちになっちゃって…」",
+			NULL, "「对不起，量倒得有点不一样……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100966.「あぁ、その一番少ないのは、俺がもらうよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100966", 256, TRUE);
+	OutputLine(NULL, "「あぁ、その一番少ないのは、俺がもらうよ」",
+			NULL, "「啊，最少的那杯给我吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600213.「大丈夫ですよ。kvS10/42/410600214.私、少しでいいですから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600213", 256, TRUE);
+	OutputLine(NULL, "「大丈夫ですよ。",
+			NULL, "「没事的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600214", 256, TRUE);
+	OutputLine(NULL, "私、少しでいいですから」",
+			NULL, "我喝一点就够了。」", Line_Normal);
+	ClearMessage();
+
+//r俺は、十和田さんの目の前にあるコップに手を伸ばす。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は、十和田さんの目の前にあるコップに手を伸ばす。",
+			NULL, "我向十和田小姐面前的杯子伸出手。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//rだが、彼女はうっすらと微笑むと目の前のコップを取り上げた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、彼女はうっすらと微笑むと目の前のコップを取り上げた。",
+			NULL, "可是她淡淡一笑，拿起了自己面前的杯子。", Line_Normal);
+	ClearMessage();
+
+//r…さすがに、手に取ったものを取り返すことはできない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…さすがに、手に取ったものを取り返すことはできない。",
+			NULL, "……人家都拿到手里了，我总不能再抢回来。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200403.「…いただきます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200403", 256, TRUE);
+	OutputLine(NULL, "「…いただきます」",
+			NULL, "「……那我喝了。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300623.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300623", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100967.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100967", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r乙部も、おずおずとコップに手を伸ばす。…全員の動きが、どこかぎくしゃくしている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部も、おずおずとコップに手を伸ばす。…全員の動きが、どこかぎくしゃくしている。",
+			NULL, "乙部也怯生生地向杯子伸出手……所有人的动作都有些僵硬。", Line_Normal);
+	ClearMessage();
+
+//rやだなぁ、こういうの…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "やだなぁ、こういうの…。",
+			NULL, "真讨厌啊，这种感觉……", Line_Normal);
+	ClearMessage();
+
+//r俺は小さく深呼吸して気合を入れ、…わざと大きめの声で言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は小さく深呼吸して気合を入れ、…わざと大きめの声で言った。",
+			NULL, "我轻轻深呼吸给自己打气，故意用偏大的声音说道。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100968.「それじゃ…、俺が一番多いみたいで何か悪いけど…、kvS10/00/410100969.いただきまーす！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100968", 256, TRUE);
+	OutputLine(NULL, "「それじゃ…、俺が一番多いみたいで何か悪いけど…、",
+			NULL, "「那就……感觉我这一杯最多，有点不好意思……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100969", 256, TRUE);
+	OutputLine(NULL, "いただきまーす！」",
+			NULL, "我喝了！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rもちろん、空元気だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もちろん、空元気だ。",
+			NULL, "这当然只是强打精神。", Line_Normal);
+	ClearMessage();
+
+//r居心地の悪い雰囲気を少しでも変えて、ほっと息をつきたかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "居心地の悪い雰囲気を少しでも変えて、ほっと息をつきたかった。",
+			NULL, "我想稍微改变这股别扭的气氛，好好松一口气。", Line_Normal);
+	ClearMessage();
+
+//r俺は温かいお茶を一口飲み、ふーっと息を吐く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は温かいお茶を一口飲み、ふーっと息を吐く。",
+			NULL, "我喝了一口热茶，长长地吐了口气。", Line_Normal);
+	ClearMessage();
+
+//r喉から胃へと、温かいお茶がゆっくりと落ちていくのが分かる。改めて、体が冷え切っていたことを思い知った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "喉から胃へと、温かいお茶がゆっくりと落ちていくのが分かる。改めて、体が冷え切っていたことを思い知った。",
+			NULL, "我能感觉到热茶从喉咙慢慢落进胃里。这才重新意识到，自己的身体已经冷透了。", Line_Normal);
+	ClearMessage();
+
+//r…あんなに雨に打たれていたんだ。当然じゃないか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…あんなに雨に打たれていたんだ。当然じゃないか。",
+			NULL, "……淋了那么久的雨，这也是当然的。", Line_Normal);
+	ClearMessage();
+
+//r廃村に閉じ込められた上に、鬼隠しまで起きている。心だって、不安と緊張でガチガチに固まっていて当然だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "廃村に閉じ込められた上に、鬼隠しまで起きている。心だって、不安と緊張でガチガチに固まっていて当然だった。",
+			NULL, "被关在废村里，甚至还发生了鬼隐。心也早就被不安和紧张冻得僵硬。", Line_Normal);
+	ClearMessage();
+
+//r温かいお茶が、それらの緊張を解していく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "温かいお茶が、それらの緊張を解していく。",
+			NULL, "温热的茶慢慢化开了那些紧张感。", Line_Normal);
+	ClearMessage();
+
+//rお茶を全て飲み干すと、俺はふーっと深く息をついた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お茶を全て飲み干すと、俺はふーっと深く息をついた。",
+			NULL, "把茶全部喝完后，我深深地吐了口气。", Line_Normal);
+	ClearMessage();
+
+//r横を見ると、美雪ちゃんは身じろぎもせず座っている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "横を見ると、美雪ちゃんは身じろぎもせず座っている。",
+			NULL, "我往旁边一看，美雪一动不动地坐着。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(5, 40, "sprite/miyuko_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawScene("background/js7_01", 1000 );
+
+//荒川rvS10/00/410100970.「…美雪ちゃんは、飲まないの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100970", 256, TRUE);
+	OutputLine(NULL, "「…美雪ちゃんは、飲まないの？」",
+			NULL, "「……美雪，你不喝吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300624.「はい…。kvS10/40/410300625.何となく、気が進まなくて…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300624", 256, TRUE);
+	OutputLine(NULL, "「はい…。",
+			NULL, "「嗯……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300625", 256, TRUE);
+	OutputLine(NULL, "何となく、気が進まなくて…」",
+			NULL, "总觉得有点不想喝……」", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんは、自分の前に置かれた紙コップをじっと見つめている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんは、自分の前に置かれた紙コップをじっと見つめている。",
+			NULL, "美雪一直盯着放在自己面前的纸杯。", Line_Normal);
+	ClearMessage();
+
+//r十和田さんに、あれだけ露骨に疑われたのだ。気が進まないのもムリはない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんに、あれだけ露骨に疑われたのだ。気が進まないのもムリはない。",
+			NULL, "刚才被十和田小姐那么露骨地怀疑，她不想喝也很正常。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100971.「…気持ちは分かるけどさ…、kvS10/00/410100972.飲むと、ホッとするかもよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100971", 256, TRUE);
+	OutputLine(NULL, "「…気持ちは分かるけどさ…、",
+			NULL, "「……我懂你的心情啦……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100972", 256, TRUE);
+	OutputLine(NULL, "飲むと、ホッとするかもよ？」",
+			NULL, "喝下去也许会舒服一点哦？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_warai_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200404.「…ほんと。お茶って、なんかホッとしますよね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200404", 256, TRUE);
+	OutputLine(NULL, "「…ほんと。お茶って、なんかホッとしますよね…」",
+			NULL, "「……真的。茶这种东西，总觉得会让人安心呢……」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r乙部はお茶をすすると、壁に背をもたせかけて目を閉じる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部はお茶をすすると、壁に背をもたせかけて目を閉じる。",
+			NULL, "乙部啜了一口茶，背靠着墙闭上眼睛。", Line_Normal);
+	ClearMessage();
+
+//rまもなく乙部は、心地良さそうな顔でうとうとと眠り始めた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まもなく乙部は、心地良さそうな顔でうとうとと眠り始めた。",
+			NULL, "没多久，乙部就露出舒服的表情，迷迷糊糊地睡着了。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100973.「そうそう。kvS10/00/410100974.一息つくっていうかさー…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100973", 256, TRUE);
+	OutputLine(NULL, "「そうそう。",
+			NULL, "「对对。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100974", 256, TRUE);
+	OutputLine(NULL, "一息つくっていうかさー…」",
+			NULL, "该说是能喘口气吧……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	DrawScene("black", 1000 );
+
+//r俺も畳にゴロリと横になると、腕枕をする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺も畳にゴロリと横になると、腕枕をする。",
+			NULL, "我也往榻榻米上一躺，用手臂当枕头。", Line_Normal);
+	ClearMessage();
+
+//r目を閉じる寸前、ちらりと十和田さんに目をやる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "目を閉じる寸前、ちらりと十和田さんに目をやる。",
+			NULL, "闭上眼睛之前，我偷偷看了十和田小姐一眼。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/js7_01", 1000 );
+
+//r十和田さんは…、紙コップを手に体育座りをしたまま、じっと俺たちを見つめている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは…、紙コップを手に体育座りをしたまま、じっと俺たちを見つめている。",
+			NULL, "十和田小姐……手里拿着纸杯，抱膝坐着，一动不动地盯着我们。", Line_Normal);
+	ClearMessage();
+
+//r彼女のコップの中にあるお茶は、全く減っていない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼女のコップの中にあるお茶は、全く減っていない。",
+			NULL, "她杯子里的茶完全没有减少。", Line_Normal);
+	ClearMessage();
+
+//r十和田さんに話しかけようとしたが、強烈な睡魔が襲ってきて、やむなく俺は瞼を閉じた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんに話しかけようとしたが、強烈な睡魔が襲ってきて、やむなく俺は瞼を閉じた。",
+			NULL, "我本想和十和田小姐说话，强烈的睡意却袭了上来，我只能闭上眼睛。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_defkaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 1000, TRUE );
+	Wait( 250 );
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+	DrawSceneWithMask("tips/yoig004", "mask_1900", 7, 0, 300 );
+	SetValidityOfInput( FALSE );
+	Wait( 5000 );
+	SetValidityOfInput( TRUE );
+	DrawSceneWithMask("black", "mask_1900", 7, 0, 300 );
+
+}

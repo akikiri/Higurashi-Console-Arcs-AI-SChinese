@@ -1,0 +1,103 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 10 choice 3
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 1, "sprite/kei2_majime_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200196.「…悪い人って言われても、どう悪いのかよくわからないよ。kvS14/02/210200197.一体何が言いたいのかな？　…かな？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200196", 256, TRUE);
+	OutputLine(NULL, "「…悪い人って言われても、どう悪いのかよくわからないよ。",
+			NULL, "「……就算你说她是坏人，我也不知道她到底哪里坏啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200197", 256, TRUE);
+	OutputLine(NULL, "一体何が言いたいのかな？　…かな？」",
+			NULL, "你们到底想说什么呢……呢？」", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500576.「あまり、良い噂を聞かないのです。kvS14/05/210500577.…クラブのホステスさんというよりも、普段からの素行で」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500576", 256, TRUE);
+	OutputLine(NULL, "「あまり、良い噂を聞かないのです。",
+			NULL, "「我听到的传闻，并不太好。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500577", 256, TRUE);
+	OutputLine(NULL, "…クラブのホステスさんというよりも、普段からの素行で」",
+			NULL, "……倒不是因为她是俱乐部女招待，而是因为她平时的品行。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeOutBGM(2, 200, FALSE);
+
+//レナrvS14/02/210200198.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200198", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rレナは黙って、クッキーを一つ掴んでかじる。そして、それを食べ終わってからぼそ、と呟くようにいった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナは黙って、クッキーを一つ掴んでかじる。そして、それを食べ終わってからぼそ、と呟くようにいった。",
+			NULL, "蕾娜沉默着，抓起一块饼干咬了一口。然后等吃完之后，像低声自语一样说道。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_majime_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/re_h3", 1000 );
+
+//レナrvS14/02/210200199.「……リナさん、派手だもんね。kvS14/02/210200200.でも」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200199", 256, TRUE);
+	OutputLine(NULL, "「……リナさん、派手だもんね。",
+			NULL, "「……丽娜小姐，确实很张扬呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200200", 256, TRUE);
+	OutputLine(NULL, "でも」",
+			NULL, "可是」", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500578.「でも…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500578", 256, TRUE);
+	OutputLine(NULL, "「でも…？」",
+			NULL, "「可是……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_nande_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	PlayBGM(2, "hm10_61", 128, 0);
+
+//レナrvS14/02/210200201.「レナの家ね…、お母さんがいないの」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200201", 256, TRUE);
+	OutputLine(NULL, "「レナの家ね…、お母さんがいないの」",
+			NULL, "「蕾娜家里啊……妈妈不在。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS14/05/210500579.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500579", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rその話は、前にどこかで聞いた。この世界ではどうだろうかと思って、圭一をちら、と見上げる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その話は、前にどこかで聞いた。この世界ではどうだろうかと思って、圭一をちら、と見上げる。",
+			NULL, "这件事以前好像在什么地方听过。我不知这个世界里是否也是如此，便悄悄抬头看了圭一一眼。", Line_Normal);
+	ClearMessage();
+
+//r…ちょっと、息を飲んでいる。どうやら知らなかったようだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…ちょっと、息を飲んでいる。どうやら知らなかったようだ。",
+			NULL, "……他微微倒吸了一口气。看来他并不知道。", Line_Normal);
+	ClearMessage();
+
+}

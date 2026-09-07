@@ -1,0 +1,65 @@
+void main()
+{
+
+
+//*Kakera no Sekai Day 103
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//Z5 ヒント　　
+
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	PlayBGM(2, "hm10_55", 128, 0);
+	DrawScene("background/oyashirosama", 1000 );
+
+//r…『ヒント　　』にようこそ。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…『ヒント　　』にようこそ。",
+			NULL, "……欢迎来到『提示Z5』。", Line_Normal);
+	ClearMessage();
+
+//r＜!A!.鷹野三四の世界＞の『!A!4! サイコロの１』の出現条件を教えるわね。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "＜A.鷹野三四の世界＞の『A4 サイコロの１』の出現条件を教えるわね。",
+			NULL, "我来告诉你＜A.鹰野三四的世界＞中『A4 骰子的1』的出现条件。", Line_Normal);
+	ClearMessage();
+
+//r＜!A!.鷹野三四の世界＞の『!A!1! bやごうち.<谷河内>の採石場』r＜!A!.鷹野三四の世界＞の『!A!2! 定期監査』r＜!A!.鷹野三四の世界＞の『!A!3! 一二三四』r…以上のカケラを見た後、選択できるようになるわよ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "＜A.鷹野三四の世界＞の『A1 谷河内(やごうち)の採石場』\n＜A.鷹野三四の世界＞の『A2 定期監査』\n＜A.鷹野三四の世界＞の『A3 一二三四』\n…以上のカケラを見た後、選択できるようになるわよ。",
+			NULL, "看过＜A.鹰野三四的世界＞的『A1 谷河内（やごうち）的采石场』\n和＜A.鹰野三四的世界＞的『A2 定期监察』\n以及＜A.鹰野三四的世界＞的『A3 一二三四』\n……以上碎片之后，就可以选择了。", Line_Normal);
+	ClearMessage();
+
+//rそして、r＜!A!.鷹野三四の世界＞の『!A!5! 失意』r＜!A!.鷹野三四の世界＞の『!A!6! デジャヴ』r＜!V!.南井巴の世界＞の『!V!6! サイコロの６』r…以上のカケラの出現に関わってくるわよ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "そして、\n＜A.鷹野三四の世界＞の『A5 失意』\n＜A.鷹野三四の世界＞の『A6 デジャヴ』\n＜V.南井巴の世界＞の『V6 サイコロの６』\n…以上のカケラの出現に関わってくるわよ。",
+			NULL, "然后，\n这些还会关系到＜A.鹰野三四的世界＞的『A5 失意』\n和＜A.鹰野三四的世界＞的『A6 似曾相识』\n以及＜V.南井巴的世界＞的『V6 骰子的6』\n……以上碎片的出现。", Line_Normal);
+	ClearMessage();
+
+//r頑張ってちょうだい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "頑張ってちょうだい。",
+			NULL, "请加油哦。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

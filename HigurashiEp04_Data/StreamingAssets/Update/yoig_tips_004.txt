@@ -1,0 +1,374 @@
+void main()
+{
+
+
+//*Yoigoshi TIPS 4
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//ありがとう
+
+	Wait( 500 );
+	PlayBGM( 1, "kaze_lp", 128, 0 );
+	DrawScene("white", 1000 );
+	DrawScene("background/saiguden_03", 1000 );
+
+//魅音rvS20/43/VTT_mion3087.「……。kvS20/43/VTT_mion3088.あった」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3087", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3088", 256, TRUE);
+	OutputLine(NULL, "あった」",
+			NULL, "找到了。」", Line_Normal);
+	ClearMessage();
+
+//rようやく私は、祭具殿奥の棚の中から一振りの刀を探し当てる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ようやく私は、祭具殿奥の棚の中から一振りの刀を探し当てる。",
+			NULL, "我终于在祭具殿深处的架子里，找到了一把刀。", Line_Normal);
+	ClearMessage();
+
+//rそれは、園崎家伝来の刀剣…『玉弾きの刀』。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それは、園崎家伝来の刀剣…『玉弾きの刀』。",
+			NULL, "那是园崎家传承的刀剑……『弹丸之刀』。", Line_Normal);
+	ClearMessage();
+
+//rそしてこれは私…いや、私たちが捜し求める『モノ』を手に入れるための、大事な『鍵』だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そしてこれは私…いや、私たちが捜し求める『モノ』を手に入れるための、大事な『鍵』だった。",
+			NULL, "而这是我……不，是我们为了得到正在寻找的『东西』所需的重要『钥匙』。", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/43/VTT_mion3089.「しかしまぁ、鍵を探すだけでこんなにも手間取るとはねぇ。kvS20/43/VTT_mion3090.残すはありかを示した巻物ひとつだけど…、どこにしまってあるのか…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3089", 256, TRUE);
+	OutputLine(NULL, "「しかしまぁ、鍵を探すだけでこんなにも手間取るとはねぇ。",
+			NULL, "「不过嘛，只是找钥匙居然就费了这么大功夫。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3090", 256, TRUE);
+	OutputLine(NULL, "残すはありかを示した巻物ひとつだけど…、どこにしまってあるのか…」",
+			NULL, "剩下的只有标明所在之处的卷轴……可到底收在哪里了呢……」", Line_Normal);
+	ClearMessage();
+
+//r私は埃を払いながら、棚のあちこちに転がったそれらしきものに目を向けて眺め見る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は埃を払いながら、棚のあちこちに転がったそれらしきものに目を向けて眺め見る。",
+			NULL, "我一边拂去灰尘，一边看向散落在架子各处、像是目标的东西。", Line_Normal);
+	ClearMessage();
+
+//rとはいえ、これ以上はさすがに灯りがなくては探しにくい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とはいえ、これ以上はさすがに灯りがなくては探しにくい。",
+			NULL, "话虽如此，再往下找，果然还是没有灯光会很难。", Line_Normal);
+	ClearMessage();
+
+//魅音r-vS20/43/VTT_mion3091.（一度、集会所に戻るか）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3091", 256, TRUE);
+	OutputLine(NULL, "（一度、集会所に戻るか）",
+			NULL, "（先回集会所一趟吧。）", Line_Normal);
+	ClearMessage();
+
+//r…そう思った時だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そう思った時だった。",
+			NULL, "……就在我这么想的时候。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "suzu_1", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 500 );
+
+//魅音rvS20/43/VTT_mion3092.「……ん？kvS20/43/VTT_mion3093.　なんだい、戻ってきたのかい――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3092", 256, TRUE);
+	OutputLine(NULL, "「……ん？",
+			NULL, "「……嗯？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3093", 256, TRUE);
+	OutputLine(NULL, "　なんだい、戻ってきたのかい——」",
+			NULL, "怎么，回来了——」", Line_Normal);
+	ClearMessage();
+
+//r背後から足音のような気配が聞こえて、私は乙部たちかと思いながら振り返る。が、
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "背後から足音のような気配が聞こえて、私は乙部たちかと思いながら振り返る。が、",
+			NULL, "背后传来像是脚步声的气息，我以为是乙部他们，回过头去。可是，", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "suzu_1", 256, 64);
+	DrawScene("white", 1000 );
+	PlayBGM(2, "hm05_23", 128, 0);
+	DrawScene("scene/310", 1000 );
+
+//梨花rvS20/05/VTT_rika3006.「……みぃ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3006", 256, TRUE);
+	OutputLine(NULL, "「……みぃ」",
+			NULL, "「……咪。」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/43/VTT_mion3094.「――え…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3094", 256, TRUE);
+	OutputLine(NULL, "「——え…？」",
+			NULL, "「——咦……？」", Line_Normal);
+	ClearMessage();
+
+//rそこに立っていたのは、…まぎれもなく『あの子』だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そこに立っていたのは、…まぎれもなく『あの子』だった。",
+			NULL, "站在那里的……毫无疑问就是『那个孩子』。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//魅音rvS20/43/VTT_mion3095.「あ、あんた…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3095", 256, TRUE);
+	OutputLine(NULL, "「あ、あんた…！」",
+			NULL, "「你、你……！」", Line_Normal);
+	ClearMessage();
+
+//梨花rvS20/05/VTT_rika3007.「…何か、探し物があるの？kvS20/05/VTT_rika3008.　くすくす…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3007", 256, TRUE);
+	OutputLine(NULL, "「…何か、探し物があるの？",
+			NULL, "「……你在找什么东西吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3008", 256, TRUE);
+	OutputLine(NULL, "　くすくす…」",
+			NULL, "嘻嘻……」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/43/VTT_mion3096.「あ、あぁ…。kvS20/43/VTT_mion3097.ちょいと、ね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3096", 256, TRUE);
+	OutputLine(NULL, "「あ、あぁ…。",
+			NULL, "「啊、嗯……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3097", 256, TRUE);
+	OutputLine(NULL, "ちょいと、ね」",
+			NULL, "算是吧。」", Line_Normal);
+	ClearMessage();
+
+//r絞り出すような声で、それだけを答えるのが精一杯だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "絞り出すような声で、それだけを答えるのが精一杯だった。",
+			NULL, "我只能用挤出来般的声音，勉强回答这几个字。", Line_Normal);
+	ClearMessage();
+
+//r…自分でもわかるほど、顔が驚愕と戸惑いで固まりきっている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…自分でもわかるほど、顔が驚愕と戸惑いで固まりきっている。",
+			NULL, "……我自己也能感觉到，脸已经因惊愕和困惑彻底僵住。", Line_Normal);
+	ClearMessage();
+
+//梨花rvS20/05/VTT_rika3009.「くすくす、…そんなに怖い顔しないで。kvS20/05/VTT_rika3010.少しだけ、手伝ってあげたいと思ってね。kvS20/05/VTT_rika3011.…ほら」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3009", 256, TRUE);
+	OutputLine(NULL, "「くすくす、…そんなに怖い顔しないで。",
+			NULL, "「嘻嘻……别摆出那么可怕的脸。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3010", 256, TRUE);
+	OutputLine(NULL, "少しだけ、手伝ってあげたいと思ってね。",
+			NULL, "我只是想稍微帮帮你。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3011", 256, TRUE);
+	OutputLine(NULL, "…ほら」",
+			NULL, "……看。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse17", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("scene/310", 500 );
+
+//魅音rvS20/43/VTT_mion3098.「えっ？kvS20/43/VTT_mion3099.　あ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3098", 256, TRUE);
+	OutputLine(NULL, "「えっ？",
+			NULL, "「咦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3099", 256, TRUE);
+	OutputLine(NULL, "　あ…！」",
+			NULL, "啊……！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそして。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして。",
+			NULL, "然后。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+
+//r浮かび上がった『その子』はにこり、と笑うと、どこからともなくその足元に何かが転がり落ちてくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "浮かび上がった『その子』はにこり、と笑うと、どこからともなくその足元に何かが転がり落ちてくる。",
+			NULL, "浮现出来的『那个孩子』微微一笑，随后不知从哪里有什么东西滚落到她脚边。", Line_Normal);
+	ClearMessage();
+
+//r目を凝らしてみると、…それは古びた、ひとつの巻物。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "目を凝らしてみると、…それは古びた、ひとつの巻物。",
+			NULL, "我凝神看去……那是一卷古旧的卷轴。", Line_Normal);
+	ClearMessage();
+
+//rおそらく、…いや、間違いなく私の探していたものだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おそらく、…いや、間違いなく私の探していたものだった。",
+			NULL, "大概……不，毫无疑问，那就是我要找的东西。", Line_Normal);
+	ClearMessage();
+
+//rそれをありがたく頂戴するように拾い上げると、私はすぐ目の前の少女に向かって顔を上げる。もう、…さっきまでの恐怖は消え去っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それをありがたく頂戴するように拾い上げると、私はすぐ目の前の少女に向かって顔を上げる。もう、…さっきまでの恐怖は消え去っていた。",
+			NULL, "我怀着像是在接受馈赠般的感激，把它捡了起来，立刻抬头看向眼前的少女。刚才的恐惧已经消失了。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/310", 1000 );
+
+//魅音rvS20/43/VTT_mion3100.「ありがとよ、梨花ちゃん。kvS20/43/VTT_mion3101.おかげで助かったよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3100", 256, TRUE);
+	OutputLine(NULL, "「ありがとよ、梨花ちゃん。",
+			NULL, "「谢谢你，梨花。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3101", 256, TRUE);
+	OutputLine(NULL, "おかげで助かったよ」",
+			NULL, "多亏你，帮大忙了。」", Line_Normal);
+	ClearMessage();
+
+//梨花rvS20/05/VTT_rika3012.「…くすくす」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3012", 256, TRUE);
+	OutputLine(NULL, "「…くすくす」",
+			NULL, "「……嘻嘻。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "se051", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 1500 );
+	DrawScene("background/saiguden_03", 1000 );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//rそして、『梨花ちゃん』は。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、『梨花ちゃん』は。",
+			NULL, "然后，『梨花』。", Line_Normal);
+	ClearMessage();
+
+//r私に向かって微笑みながら近づくと、すっ、とすれ違ってゆく。そして、
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私に向かって微笑みながら近づくと、すっ、とすれ違ってゆく。そして、",
+			NULL, "她朝我微笑着走近，轻轻与我擦身而过。随后，", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "suzu_1", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("background/saiguden_03", 500 );
+
+//梨花rvS20/05/VTT_rika3013.「…先に行ってるわね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3013", 256, TRUE);
+	OutputLine(NULL, "「…先に行ってるわね」",
+			NULL, "「……我先过去了。」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/43/VTT_mion3102.「……え？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3102", 256, TRUE);
+	OutputLine(NULL, "「……え？」",
+			NULL, "「……咦？」", Line_Normal);
+	ClearMessage();
+
+//梨花rvS20/05/VTT_rika3014.「早く済ませたほうがいいわ。kvS20/05/VTT_rika3015.…もう、あまり時間は残っていないから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3014", 256, TRUE);
+	OutputLine(NULL, "「早く済ませたほうがいいわ。",
+			NULL, "「早点办完会比较好。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/vtt_rika3015", 256, TRUE);
+	OutputLine(NULL, "…もう、あまり時間は残っていないから」",
+			NULL, "……因为已经没剩多少时间了。」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/43/VTT_mion3103.「――あ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3103", 256, TRUE);
+	OutputLine(NULL, "「——あ」",
+			NULL, "「——啊。」", Line_Normal);
+	ClearMessage();
+
+//rそして、はっ、と我に返った私が振り返ってみると、そこにはもう誰もいない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、はっ、と我に返った私が振り返ってみると、そこにはもう誰もいない。",
+			NULL, "随后，我猛然回过神，再回头看去，那里已经谁都不在了。", Line_Normal);
+	ClearMessage();
+
+//rまるで夢でも見ていたような、…そんな光景だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まるで夢でも見ていたような、…そんな光景だった。",
+			NULL, "那仿佛做了一场梦……就是那样的光景。", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/43/VTT_mion3104.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3104", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rただ、私にはわかった。わかっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、私にはわかった。わかっていた。",
+			NULL, "不过，我明白。一直都明白。", Line_Normal);
+	ClearMessage();
+
+//rあの日にいなくなった彼女が、どうして私の前に現れたのか、ということを…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あの日にいなくなった彼女が、どうして私の前に現れたのか、ということを…。",
+			NULL, "我明白，在那一天消失的她，为什么会出现在我面前……", Line_Normal);
+	ClearMessage();
+
+//魅音rvS20/43/VTT_mion3105.「……ありがとう、梨花ちゃん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s20/43/vtt_mion3105", 256, TRUE);
+	OutputLine(NULL, "「……ありがとう、梨花ちゃん」",
+			NULL, "「……谢谢你，梨花。」", Line_Normal);
+	ClearMessage();
+
+//rそして私は、何も無い空間に向かって感謝の意を示すように、手に持った刀を掲げてみせる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして私は、何も無い空間に向かって感謝の意を示すように、手に持った刀を掲げてみせる。",
+			NULL, "然后，我朝着空无一人的空间，像是在表达感谢一样，举起手中的刀。", Line_Normal);
+	ClearMessage();
+
+//rその瞬間、暗闇の向こうで誰かが笑ったような…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その瞬間、暗闇の向こうで誰かが笑ったような…。",
+			NULL, "那一瞬间，黑暗彼端似乎有人笑了一声……", Line_Normal);
+	ClearMessage();
+
+//rそんな、気配がした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな、気配がした。",
+			NULL, "我感觉到了这样的气息。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

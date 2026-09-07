@@ -1,0 +1,381 @@
+void main()
+{
+
+//*TIPS 131
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//進路志望Ⅱ
+
+	DrawScene("white", 1000 );
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("background/sora2", 1000 );
+	Wait( 1000 );
+	DrawScene("white", 1000 );
+	Wait( 500 );
+	DrawScene("background/ng_kyo_01", 1000 );
+	PlayBGM( 2, "hm01_07", 128, 0 );
+	FadeOutBGM( 1, 200, FALSE  );
+	Wait( 500 );
+
+//千紗登rvS20/37/VTT_chisa3086.「ちょ、…ええっ？kvS20/37/VTT_chisa3087.　暁も陸央大にしたのぉ？！」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3086", 256, TRUE);
+	OutputLine(NULL, "「ちょ、…ええっ？",
+			NULL, "「等、……咦咦？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3087", 256, TRUE);
+	OutputLine(NULL, "　暁も陸央大にしたのぉ？！」",
+			NULL, "晓也选陆央大学了？！」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(3, 256, "sunset");
+	ModDrawCharacter(3, 39, "sprite/tou1a_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3012.「あ、ああ…。kvS20/39/VTT_akira3013.なんか、まずかったか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3012", 256, TRUE);
+	OutputLine(NULL, "「あ、ああ…。",
+			NULL, "「啊、啊啊……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3013", 256, TRUE);
+	OutputLine(NULL, "なんか、まずかったか？」",
+			NULL, "有什么不妥吗？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3088.「いや、まずくはないけどさ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3088", 256, TRUE);
+	OutputLine(NULL, "「いや、まずくはないけどさ…」",
+			NULL, "「倒也没什么不妥……」", Line_Normal);
+	ClearMessage();
+
+//r確か、陸央大の芸術学部はまだできて歴史も浅かったはず。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "確か、陸央大の芸術学部はまだできて歴史も浅かったはず。",
+			NULL, "我记得，陆央大学的艺术学部应该才刚成立，历史也还很短。", Line_Normal);
+	ClearMessage();
+
+//rそれに教官もたいした面子が揃っていないため、志望するのはよほどの物好きか、技量的にいまひとつの一軍半だと聞いていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに教官もたいした面子が揃っていないため、志望するのはよほどの物好きか、技量的にいまひとつの一軍半だと聞いていた。",
+			NULL, "而且听说教师阵容也称不上多强，志愿报那里的，要么是特别有怪癖的人，要么就是实力不上不下的二流水准。", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3089.「あんたの腕と実績なら、東京の美大だって引く手あまたでしょ？kvS20/37/VTT_chisa3090.　今の高校みたいに、奨学金とか特待生待遇とか…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3089", 256, TRUE);
+	OutputLine(NULL, "「あんたの腕と実績なら、東京の美大だって引く手あまたでしょ？",
+			NULL, "「以你的实力和成绩，就连东京的美大也会抢着要你吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3090", 256, TRUE);
+	OutputLine(NULL, "　今の高校みたいに、奨学金とか特待生待遇とか…」",
+			NULL, "像现在这所高中一样，奖学金或者特待生待遇什么的……」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3091.「いい先生もそっちの方が多いし、名を売る機会も環境も格段の違いなのに、なんでそっちにしなかったのさ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3091", 256, TRUE);
+	OutputLine(NULL, "「いい先生もそっちの方が多いし、名を売る機会も環境も格段の違いなのに、なんでそっちにしなかったのさ？」",
+			NULL, "「好老师也是那边更多，成名的机会和环境都完全不同，你为什么没选那边？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_hohoemi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3014.「別に、名前を売るために絵を描いてるわけじゃないしさ。kvS20/39/VTT_akira3015.それに…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3014", 256, TRUE);
+	OutputLine(NULL, "「別に、名前を売るために絵を描いてるわけじゃないしさ。",
+			NULL, "「我画画，本来就没想着出名。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3015", 256, TRUE);
+	OutputLine(NULL, "それに…」",
+			NULL, "而且……」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3092.「それに？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3092", 256, TRUE);
+	OutputLine(NULL, "「それに？」",
+			NULL, "「而且？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1b_tere_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3016.「……。kvS20/39/VTT_akira3017.い、いや、なんでもねぇよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3016", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3017", 256, TRUE);
+	OutputLine(NULL, "い、いや、なんでもねぇよ」",
+			NULL, "没、没什么。」", Line_Normal);
+	ClearMessage();
+
+//r慌ててたいした理由でもないように口をつぐんだが、…真っ赤になった顔を見れば、すぐにわかる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "慌ててたいした理由でもないように口をつぐんだが、…真っ赤になった顔を見れば、すぐにわかる。",
+			NULL, "他慌忙闭上嘴，像是理由没什么大不了，可只要看见那张涨红的脸，立刻就能明白。", Line_Normal);
+	ClearMessage();
+
+//rそういえば、…最近知ったんだけど陸央大は、あの子の志望する三咲大と姉妹校だった。そのため一般教養の授業ではいくつか、合同で行われているものもあると聞く。
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "そういえば、…最近知ったんだけど陸央大は、あの子の志望する三咲大と姉妹校だった。そのため一般教養の授業ではいくつか、合同で行われているものもあると聞く。",
+				NULL, "说起来，我最近才知道，陆央大学和那个孩子志愿报考的三崎大学是姐妹校。因此据说有几门通识课会联合开设。", Line_Normal);
+	} else {
+		OutputLine(NULL, "そういえば、…最近知ったんだけど陸央大は、あの子の志望する三咲大と姉妹校だった。そのため一般教養の授業ではいくつか、合同で行われているものもあると聞く。",
+				NULL, "说起来，我最近才知道，陆央大学和那个孩子志愿报考的三崎大学是姐妹校。因此据说有几门通识课会联合开设。", Line_Normal);
+	}
+	ClearMessage();
+
+//r当然そうなれば、顔を合わせる機会も増えるというやつで…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "当然そうなれば、顔を合わせる機会も増えるというやつで…。",
+			NULL, "这样一来，见面的机会自然也会增加……", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3093.「しっかしまぁ、あんたもベタぼれだねぇ。kvS20/37/VTT_chisa3094.いくら告白したてで不安だからって、自分の将来まで相手の都合で決めなくてもいいんじゃない？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3093", 256, TRUE);
+	OutputLine(NULL, "「しっかしまぁ、あんたもベタぼれだねぇ。",
+			NULL, "「不过话说回来，你也迷她迷得够深啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3094", 256, TRUE);
+	OutputLine(NULL, "いくら告白したてで不安だからって、自分の将来まで相手の都合で決めなくてもいいんじゃない？」",
+			NULL, "就算刚告白完心里不安，也不用连自己的将来都按对方的情况来定吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1b_sakebi_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+
+//暁rvS20/39/VTT_akira3018.「なっ？！kvS20/39/VTT_akira3019.　べ、別に俺は、公由のことで大学を決めたわけじゃっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3018", 256, TRUE);
+	OutputLine(NULL, "「なっ？！",
+			NULL, "「什？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3019", 256, TRUE);
+	OutputLine(NULL, "　べ、別に俺は、公由のことで大学を決めたわけじゃっ！！」",
+			NULL, "我、我选大学可没有因为公由……！！」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3095.「ん？kvS20/37/VTT_chisa3096.　私ゃ一言も夏美のことは言ってなかったんだけど～？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3095", 256, TRUE);
+	OutputLine(NULL, "「ん？",
+			NULL, "「嗯？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3096", 256, TRUE);
+	OutputLine(NULL, "　私ゃ一言も夏美のことは言ってなかったんだけど～？」",
+			NULL, "我可一句都没提夏美哦~？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_tere_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3020.「～～っ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3020", 256, TRUE);
+	OutputLine(NULL, "「～～っ！！」",
+			NULL, "「——！！」", Line_Normal);
+	ClearMessage();
+
+//r暁くん、自爆。単純なやつだねぇ～！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "暁くん、自爆。単純なやつだねぇ～！",
+			NULL, "晓同学当场自爆。真是个单纯的家伙啊~！", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3097.「あ、でも…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3097", 256, TRUE);
+	OutputLine(NULL, "「あ、でも…」",
+			NULL, "「啊，不过……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rふと気付く。このことを夏美が知ったら、どう思うだろうか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ふと気付く。このことを夏美が知ったら、どう思うだろうか。",
+			NULL, "我忽然想到。如果夏美知道这件事，她会怎么想呢。", Line_Normal);
+	ClearMessage();
+
+//r別に私は、暁が行くから陸央大を選んだわけじゃない。むしろ逆だし、同じ大学と言っても芸術学部と薬学部じゃ、もはや別の学校と言ってもいいくらいに離れている。
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "別に私は、暁が行くから陸央大を選んだわけじゃない。むしろ逆だし、同じ大学と言っても芸術学部と薬学部じゃ、もはや別の学校と言ってもいいくらいに離れている。",
+				NULL, "我选陆央大学并不是因为晓也要去。实际情况反而正好相反，而且就算是同一所大学，艺术学部和药学部也远到几乎可以说是另一所学校。", Line_Normal);
+	} else {
+		OutputLine(NULL, "別に私は、暁が行くから陸央大を選んだわけじゃない。むしろ逆だし、同じ大学と言っても芸術学部と薬学部じゃ、もはや別の学校と言ってもいいくらいに離れている。",
+				NULL, "我选陆央大学并不是因为晓也要去。实际情况反而正好相反，而且就算是同一所大学，艺术学部和药学部也远到几乎可以说是另一所学校。", Line_Normal);
+	}
+	ClearMessage();
+
+//rだけど、…私は以前、夏美に『陸央大はやめとけ』って言っちゃったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だけど、…私は以前、夏美に『陸央大はやめとけ』って言っちゃったのだ。",
+			NULL, "可是，……我以前对夏美说过『别选陆央大学』。", Line_Normal);
+	ClearMessage();
+
+//rそれは、あの子の今の成績だと明らかにきつかったし、私みたく浪人覚悟で受けるほどに家の人も理解はないと聞いていたからなんだけど…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それは、あの子の今の成績だと明らかにきつかったし、私みたく浪人覚悟で受けるほどに家の人も理解はないと聞いていたからなんだけど…。",
+			NULL, "那是因为以那个孩子现在的成绩来看，考那里明显很吃力，而且我也听说她家里人无法理解她像我这样做好复读的准备去考……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ng_kyo_01", 1000 );
+	ModDrawCharacter(3, 39, "sprite/tou1a_tere_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//千紗登rvS20/37/VTT_chisa3098.「ね、暁」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3098", 256, TRUE);
+	OutputLine(NULL, "「ね、暁」",
+			NULL, "「喂，晓。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3021.「なんだ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3021", 256, TRUE);
+	OutputLine(NULL, "「なんだ？」",
+			NULL, "「怎么？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3099.「そのさ、…暁が陸央大に行くって決めたこと、夏美には話した？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3099", 256, TRUE);
+	OutputLine(NULL, "「そのさ、…暁が陸央大に行くって決めたこと、夏美には話した？」",
+			NULL, "「那个啊，……你决定去陆央大学的事，跟夏美说了吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3022.「いや、まだだけど…それが？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3022", 256, TRUE);
+	OutputLine(NULL, "「いや、まだだけど…それが？」",
+			NULL, "「还没，不过……怎么了？」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3100.「うん。…ちょっとさ、事情があって。kvS20/37/VTT_chisa3101.あの子にはそのこと、まだ黙っててくれるかな？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3100", 256, TRUE);
+	OutputLine(NULL, "「うん。…ちょっとさ、事情があって。",
+			NULL, "「嗯。……有点情况。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3101", 256, TRUE);
+	OutputLine(NULL, "あの子にはそのこと、まだ黙っててくれるかな？」",
+			NULL, "这件事，你能先别告诉那个孩子吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3023.「は…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3023", 256, TRUE);
+	OutputLine(NULL, "「は…？」",
+			NULL, "「啊？」", Line_Normal);
+	ClearMessage();
+
+//r意味がわからず暁は最初きょとんとしていたが、私の説明を聞いてからは納得してくれた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "意味がわからず暁は最初きょとんとしていたが、私の説明を聞いてからは納得してくれた。",
+			NULL, "晓一开始不明所以，愣愣地看着我，但听完我的说明后，他还是理解了。", Line_Normal);
+	ClearMessage();
+
+//r暁としても、変な誤解を持たれたりするのは不本意ということだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "暁としても、変な誤解を持たれたりするのは不本意ということだろう。",
+			NULL, "对晓来说，被人产生奇怪的误会，想必也不是他愿意看到的。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 39, "sprite/tou1a_hohoemi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3024.「わかったよ。しばらく黙っておく。kvS20/39/VTT_akira3025.…でも、なんだか隠し事してるみたいで、いい気分じゃないよな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3024", 256, TRUE);
+	OutputLine(NULL, "「わかったよ。しばらく黙っておく。",
+			NULL, "「知道了。我暂时先保密。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3025", 256, TRUE);
+	OutputLine(NULL, "…でも、なんだか隠し事してるみたいで、いい気分じゃないよな」",
+			NULL, "……不过总觉得像在瞒着什么，心里不太舒服。」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3102.「おぅおぅ、えらく真面目だねぇ。kvS20/37/VTT_chisa3103.今からそんなんじゃ、浮気したときに一発でばれるよ～？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3102", 256, TRUE);
+	OutputLine(NULL, "「おぅおぅ、えらく真面目だねぇ。",
+			NULL, "「哎呦哎呦，真认真啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3103", 256, TRUE);
+	OutputLine(NULL, "今からそんなんじゃ、浮気したときに一発でばれるよ～？」",
+			NULL, "现在就这样，将来要是出轨，肯定一下就露馅了哦~？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+	ModDrawCharacter(3, 39, "sprite/tou1a_sakebi_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//暁rvS20/39/VTT_akira3026.「う、浮気なんてするかよっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c8647c>暁</color>", NULL, "<color=#c8647c>晓</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 39, "ps3/s20/39/vtt_akira3026", 256, TRUE);
+	OutputLine(NULL, "「う、浮気なんてするかよっ！！」",
+			NULL, "「我、我怎么可能出轨啊！！」", Line_Normal);
+	ClearMessage();
+
+//千紗登rvS20/37/VTT_chisa3104.「あっはっはっはっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fda762>千紗登</color>", NULL, "<color=#fda762>千纱登</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 37, "ps3/s20/37/vtt_chisa3104", 256, TRUE);
+	OutputLine(NULL, "「あっはっはっはっ！！」",
+			NULL, "「哈哈哈！！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("background/sora2", 1000 );
+
+//rとりあえず、夏美には時機を見て話してみるか。三咲大と陸央大が、姉妹校だってことを強調して。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とりあえず、夏美には時機を見て話してみるか。三咲大と陸央大が、姉妹校だってことを強調して。",
+			NULL, "总之，找个合适的时机跟夏美说吧。重点强调三崎大学和陆央大学是姐妹校。", Line_Normal);
+	ClearMessage();
+
+//r別に、やましい気持ちはこれっぽっちもないんだし、ストレートにちゃんと話せば夏美だって、きっと——。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "別に、やましい気持ちはこれっぽっちもないんだし、ストレートにちゃんと話せば夏美だって、きっと——。",
+			NULL, "反正我心里没有半点亏心，只要坦白说清楚，夏美也一定会——。", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sinzouappaku", 256, 64);
+	Negative( 500, TRUE );
+	FadeOutBGM( 1, 200, FALSE  );
+	FadeOutBGM( 2, 200, FALSE  );
+	Wait( 500 );
+	FadeFilm( 1000, TRUE );
+	PlayBGM( 1, "semi_r", 128, 0 );
+
+//r本当に、…そうか？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "本当に、…そうか？",
+			NULL, "真的，……是这样吗？", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

@@ -1,0 +1,487 @@
+void main()
+{
+
+
+//*Kakera no Sekai Day 44
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//G6 動き始めた陰謀
+
+	DrawScene("black", 500 );
+	PlayBGM( 1, "denwa", 128, 0 );
+	Wait( 2000 );
+	DrawScene("background/denwa", 1000 );
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "dsse08", 256, 64);
+	PlayBGM(2, "hm06_25", 128, 0);
+
+//？？？rvS20/09/VTK2_takano2001.「…もしもし。kvS20/09/VTK2_takano2002.ええ、私よ。kvS20/09/VTK2_takano2003.例の和製ジャンヌ・ダルクちゃんの、その後の様子はいかがかしら？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2001", 256, TRUE);
+	OutputLine(NULL, "「…もしもし。",
+			NULL, "「……喂。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2002", 256, TRUE);
+	OutputLine(NULL, "ええ、私よ。",
+			NULL, "嗯，是我。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2003", 256, TRUE);
+	OutputLine(NULL, "例の和製ジャンヌ・ダルクちゃんの、その後の様子はいかがかしら？」",
+			NULL, "那位日本的贞德小姐，后来情况怎么样？」", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2004.「くすくす…まさか、ただの好奇心よ。kvS20/09/VTK2_takano2005.別に怖いわけでもないわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2004", 256, TRUE);
+	OutputLine(NULL, "「くすくす…まさか、ただの好奇心よ。",
+			NULL, "「呵呵……哪有，只是好奇而已。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2005", 256, TRUE);
+	OutputLine(NULL, "別に怖いわけでもないわ」",
+			NULL, "我并没有害怕哦」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2006.「そっちではなんだか大げさなことになってるみたいだけど、私たちの研究計画の差し障りとまではならなそうだしね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2006", 256, TRUE);
+	OutputLine(NULL, "「そっちではなんだか大げさなことになってるみたいだけど、私たちの研究計画の差し障りとまではならなそうだしね」",
+			NULL, "「你们那边好像闹得挺夸张，不过看来还不至于妨碍我们的研究计划呢」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2007.「警察といっても、しょせんは法律の枠内でしか力を発揮できない、ただの公務員。kvS20/09/VTK2_takano2008.それを支配する『ご主人様』に対しては、大人しくこうべを垂れて尻尾を振るやつらの集まりよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2007", 256, TRUE);
+	OutputLine(NULL, "「警察といっても、しょせんは法律の枠内でしか力を発揮できない、ただの公務員。",
+			NULL, "「说是警察，终究也只是在法律框架里发挥力量的普通公务员。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2008", 256, TRUE);
+	OutputLine(NULL, "それを支配する『ご主人様』に対しては、大人しくこうべを垂れて尻尾を振るやつらの集まりよ」",
+			NULL, "面对支配自己的『主人』，他们不过是一群只会乖乖低头摇尾巴的家伙」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2009.「…そんなパワーゲームの中でどこまで頑張れるか、お手並み拝見ってところかしら。kvS20/09/VTK2_takano2010.うふふふ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2009", 256, TRUE);
+	OutputLine(NULL, "「…そんなパワーゲームの中でどこまで頑張れるか、お手並み拝見ってところかしら。",
+			NULL, "「……他们能在这种权力游戏里撑到什么地步，我就拭目以待吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2010", 256, TRUE);
+	OutputLine(NULL, "うふふふ…」",
+			NULL, "呵呵呵……」", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2011.「それで…今はどんな感じ？kvS20/09/VTK2_takano2012.　通常なら、そろそろ言動とか見かけとかに変化が出てきてもおかしくないんだけど…何か変化はあったかしら？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2011", 256, TRUE);
+	OutputLine(NULL, "「それで…今はどんな感じ？",
+			NULL, "「那么……现在情况怎么样？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2012", 256, TRUE);
+	OutputLine(NULL, "　通常なら、そろそろ言動とか見かけとかに変化が出てきてもおかしくないんだけど…何か変化はあったかしら？」",
+			NULL, "通常来说，差不多该在言行或外表上出现变化了……有什么变化吗？」", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2013.「…ふぅん、そう。kvS20/09/VTK2_takano2014.見たところ、とりたてて激しい躁鬱も見られず、仕事ぶりにも変わったところはなし。kvS20/09/VTK2_takano2015.周囲の評判も、良好…ね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2013", 256, TRUE);
+	OutputLine(NULL, "「…ふぅん、そう。",
+			NULL, "「……哦，是吗。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2014", 256, TRUE);
+	OutputLine(NULL, "見たところ、とりたてて激しい躁鬱も見られず、仕事ぶりにも変わったところはなし。",
+			NULL, "看起来没有特别剧烈的躁郁，工作表现也没什么变化。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2015", 256, TRUE);
+	OutputLine(NULL, "周囲の評判も、良好…ね」",
+			NULL, "周围评价也很好……呢」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2016.「ますます興味深いわ。kvS20/09/VTK2_takano2017.よっぽど、入江所長の改良した治療薬が身体に適合していたのかしら？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2016", 256, TRUE);
+	OutputLine(NULL, "「ますます興味深いわ。",
+			NULL, "「真是越来越有意思了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2017", 256, TRUE);
+	OutputLine(NULL, "よっぽど、入江所長の改良した治療薬が身体に適合していたのかしら？」",
+			NULL, "难道入江所长改良过的治疗药，特别适合她的身体吗？」", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2018.「ええ…そうよ。kvS20/09/VTK2_takano2019.症状が末期に至る前兆として、まず周囲の反応に対して猜疑心が強くなる。kvS20/09/VTK2_takano2020.ちょっとした冗談や失言が、自分の存在価値を否定する悪意や敵意に思えてきてね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2018", 256, TRUE);
+	OutputLine(NULL, "「ええ…そうよ。",
+			NULL, "「对……没错。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2019", 256, TRUE);
+	OutputLine(NULL, "症状が末期に至る前兆として、まず周囲の反応に対して猜疑心が強くなる。",
+			NULL, "症状进入末期前，首先会对周围人的反应产生强烈猜疑。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2020", 256, TRUE);
+	OutputLine(NULL, "ちょっとした冗談や失言が、自分の存在価値を否定する悪意や敵意に思えてきてね」",
+			NULL, "一点玩笑或失言，都会被理解成否定自身存在价值的恶意和敌意」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2021.「いわゆる、不安神経症っていえばいいのかしら。kvS20/09/VTK2_takano2022.そのうち、ありもしない存在や言動を妄想するようになって、思考が混乱し…精神が錯綜状態に陥る。kvS20/09/VTK2_takano2023.そこにはもう、理性も本能もないわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2021", 256, TRUE);
+	OutputLine(NULL, "「いわゆる、不安神経症っていえばいいのかしら。",
+			NULL, "「也许可以称作焦虑性神经症吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2022", 256, TRUE);
+	OutputLine(NULL, "そのうち、ありもしない存在や言動を妄想するようになって、思考が混乱し…精神が錯綜状態に陥る。",
+			NULL, "之后会开始臆想并不存在的人和言行，思维逐渐混乱……精神陷入错乱状态。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2023", 256, TRUE);
+	OutputLine(NULL, "そこにはもう、理性も本能もないわ」",
+			NULL, "到那时，理性和本能都会消失」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2024.「ただひたすら惑乱し、現実と虚構がぐちゃぐちゃになった状態から必死に逃れようとあがき、苦しみ、そして絶望へと至る。kvS20/09/VTK2_takano2025.末期症状に至った時の様子は、…ふふふ、なかなかに見ものよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2024", 256, TRUE);
+	OutputLine(NULL, "「ただひたすら惑乱し、現実と虚構がぐちゃぐちゃになった状態から必死に逃れようとあがき、苦しみ、そして絶望へと至る。",
+			NULL, "「她只会一味陷入迷乱，为了逃离现实与虚构混杂不清的状态而拼命挣扎、受尽痛苦，最终走向绝望。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2025", 256, TRUE);
+	OutputLine(NULL, "末期症状に至った時の様子は、…ふふふ、なかなかに見ものよ？」",
+			NULL, "到达末期症状时的模样，……呵呵呵，可是相当值得一看哦」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2026.「もうそれは人間じゃない…そうね、はっきり言ってしまえば『バケモノ』でしょうね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2026", 256, TRUE);
+	OutputLine(NULL, "「もうそれは人間じゃない…そうね、はっきり言ってしまえば『バケモノ』でしょうね」",
+			NULL, "「那已经不是人类了……嗯，直说的话，大概就是『怪物』吧」", Line_Normal);
+	ClearMessage();
+
+//r………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "………。",
+			NULL, "……。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2027.「…あら？kvS20/09/VTK2_takano2028.　そんなに私、面白がっているように聞こえるかしら？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2027", 256, TRUE);
+	OutputLine(NULL, "「…あら？",
+			NULL, "「……哎呀？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2028", 256, TRUE);
+	OutputLine(NULL, "　そんなに私、面白がっているように聞こえるかしら？」",
+			NULL, "听起来，我有那么乐在其中吗？」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2029.「くすくす…そんなことはないわよ。kvS20/09/VTK2_takano2030.私はただ、学術的に知りたいだけなの」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2029", 256, TRUE);
+	OutputLine(NULL, "「くすくす…そんなことはないわよ。",
+			NULL, "「呵呵……当然没有。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2030", 256, TRUE);
+	OutputLine(NULL, "私はただ、学術的に知りたいだけなの」",
+			NULL, "我只是想从学术角度了解而已」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2031.「青臭い正義感と、綺麗事だらけを並べ立てた信念とやらにすがって邁進する『エリート』さんが、醜くて汚い現実に直面して無力感に絶望した時、…どんなふうに変わるのか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2031", 256, TRUE);
+	OutputLine(NULL, "「青臭い正義感と、綺麗事だらけを並べ立てた信念とやらにすがって邁進する『エリート』さんが、醜くて汚い現実に直面して無力感に絶望した時、…どんなふうに変わるのか」",
+			NULL, "「那个靠着青涩正义感和满口漂亮话堆出的信念一路猛冲的『精英』小姐，在面对丑陋肮脏的现实时，被无力感逼到绝望之后，……究竟会变成什么样」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2032.「ほら…よく言うでしょう？kvS20/09/VTK2_takano2033.　高尚な理想と願望をもって勉学に励んでいた輩ほど、その素敵な夢が踏みにじられると自暴自棄になって、愚かな暴挙や現実逃避に走るものだと」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2032", 256, TRUE);
+	OutputLine(NULL, "「ほら…よく言うでしょう？",
+			NULL, "「你看……不是常说吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2033", 256, TRUE);
+	OutputLine(NULL, "　高尚な理想と願望をもって勉学に励んでいた輩ほど、その素敵な夢が踏みにじられると自暴自棄になって、愚かな暴挙や現実逃避に走るものだと」",
+			NULL, "越是怀着高尚理想和愿望努力求学的人，在美好的梦想被践踏时，越会自暴自弃，做出愚蠢暴行，或逃避现实」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2034.「そのジャンヌ・ダルクちゃん…いえ、女ドン・キホーテと呼んだほうがいいかしらね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2034", 256, TRUE);
+	OutputLine(NULL, "「そのジャンヌ・ダルクちゃん…いえ、女ドン・キホーテと呼んだほうがいいかしらね」",
+			NULL, "「那个小圣女贞德……不，叫她女唐吉诃德也许更合适呢」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2035.「その子が戦っていた悪魔がただの風車で、信じていた正義が実にもろくて惨めなものだったと知った後、…どんな行動に出るのか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2035", 256, TRUE);
+	OutputLine(NULL, "「その子が戦っていた悪魔がただの風車で、信じていた正義が実にもろくて惨めなものだったと知った後、…どんな行動に出るのか」",
+			NULL, "「在她知道自己对抗的恶魔只是风车，所相信的正义其实脆弱又凄惨之后，……会采取什么行动呢」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2036.「ひょっとしたら、末期発症を引き起こした状態で錯乱して…町中で大暴れするかもね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2036", 256, TRUE);
+	OutputLine(NULL, "「ひょっとしたら、末期発症を引き起こした状態で錯乱して…町中で大暴れするかもね」",
+			NULL, "「说不定，她会因末期发病而陷入错乱……在镇上大闹一场呢」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2037.「エリート警官、ストレスから精神を病んで無辜の市民を虐殺…なんて結末、想像しただけでも楽しそうだとは思わない？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2037", 256, TRUE);
+	OutputLine(NULL, "「エリート警官、ストレスから精神を病んで無辜の市民を虐殺…なんて結末、想像しただけでも楽しそうだとは思わない？」",
+			NULL, "「精英警察因为压力精神失常，屠杀无辜市民……这种结局，光是想想就很有趣，你不觉得吗？」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2038.「くすくす、うふふふふふ…あっはははははははっっ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2038", 256, TRUE);
+	OutputLine(NULL, "「くすくす、うふふふふふ…あっはははははははっっ！！！」",
+			NULL, "「呵呵，呵呵呵呵呵……啊哈哈哈哈哈哈哈！！！」", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……。", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2039.「そんなわけだから…引き続き、監視をよろしくね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2039", 256, TRUE);
+	OutputLine(NULL, "「そんなわけだから…引き続き、監視をよろしくね」",
+			NULL, "「就是这样……继续监视，拜托你了」", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2040.「ええ…ええ、野村さんにも、くれぐれとお伝えして。kvS20/09/VTK2_takano2041.それじゃ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2040", 256, TRUE);
+	OutputLine(NULL, "「ええ…ええ、野村さんにも、くれぐれとお伝えして。",
+			NULL, "「嗯……嗯，也请务必转告野村女士。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2041", 256, TRUE);
+	OutputLine(NULL, "それじゃ」",
+			NULL, "那就这样」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "dsse08", 256, 64);
+	PlayBGM( 1, "yoru", 128, 0 );
+
+//？？？rvS20/09/VTK2_takano2042.「………。kvS20/09/VTK2_takano2043.南井巴…か」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2042", 256, TRUE);
+	OutputLine(NULL, "「………。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2043", 256, TRUE);
+	OutputLine(NULL, "南井巴…か」",
+			NULL, "南井巴……吗」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r…不思議な気分だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…不思議な気分だった。",
+			NULL, "……这是一种不可思议的感觉。", Line_Normal);
+	ClearMessage();
+
+//rこちらには小泉のおじいちゃんほどではないが、国家権力がバックについている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "こちらには小泉のおじいちゃんほどではないが、国家権力がバックについている。",
+			NULL, "我们这边虽不及小泉爷爷，却有国家权力撑腰。", Line_Normal);
+	ClearMessage();
+
+//r計画の実行に当たって突き崩される要素は、特に見当たらない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "計画の実行に当たって突き崩される要素は、特に見当たらない。",
+			NULL, "目前看不出执行计划时有任何可能被攻破的薄弱环节。", Line_Normal);
+	ClearMessage();
+
+//r警察ふぜいが団結し、例の小娘がどんなに大立ち回りを演じたところで、組織の中枢にまで踏み込むことは困難…いや、不可能だろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "警察ふぜいが団結し、例の小娘がどんなに大立ち回りを演じたところで、組織の中枢にまで踏み込むことは困難…いや、不可能だろう。",
+			NULL, "就算那些警察团结起来，那个小丫头再怎么大显身手，也很难踏进组织中枢……不，应该说不可能。", Line_Normal);
+	ClearMessage();
+
+//rそれに、万一危ない状況に至ったとしても…今の流れだと直接的にその被害を受けるのは、我々の敵対勢力である奥野・千葉派だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに、万一危ない状況に至ったとしても…今の流れだと直接的にその被害を受けるのは、我々の敵対勢力である奥野・千葉派だ。",
+			NULL, "而且，即便情况发展到危险地步……按现在的走向，直接承受损害的也是我们的敌对势力，奥野、千叶派。", Line_Normal);
+	ClearMessage();
+
+//rこちらではない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "こちらではない。",
+			NULL, "不是我们这边。", Line_Normal);
+	ClearMessage();
+
+//rだから、そんな動きなど無視しても問題ない…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから、そんな動きなど無視しても問題ない…。",
+			NULL, "所以，无视那种动向也没有问题……", Line_Normal);
+	ClearMessage();
+
+//r全然、気にする必要はないはずなのに…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "全然、気にする必要はないはずなのに…。",
+			NULL, "明明完全没必要在意才对……", Line_Normal);
+	ClearMessage();
+
+//？？？rvS20/09/VTK2_takano2044.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2044", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rふと、机の上に取り出しておいた、…『南井巴』のカルテを見る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ふと、机の上に取り出しておいた、…『南井巴』のカルテを見る。",
+			NULL, "我忽然看向先前取出来放在桌上的……『南井巴』的病历。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	DrawScene("background/file", 1000 );
+	PlayBGM(2, "hm06_27", 128, 0);
+
+//r半年前、彼女が雛見沢にやってきた際に行った血液検査のデータに加えて、その身辺情報もレポートとしてまとめられてあった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "半年前、彼女が雛見沢にやってきた際に行った血液検査のデータに加えて、その身辺情報もレポートとしてまとめられてあった。",
+			NULL, "除了半年前她来到雏见泽时做的血液检查数据，她的个人背景资料也被整理成了报告。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "kami", 256, 64);
+
+//rそこには、両親を火災事故で失った過去や、警察学校から現在に至るまでの経歴が克明に綴られていて、…それを読んでいると、奇妙な違和感がこみ上げてくるのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "そこには、両親を火災事故で失った過去や、警察学校から現在に至るまでの経歴が克明に綴られていて、…それを読んでいると、奇妙な違和感がこみ上げてくるのだ。",
+			NULL, "那里详细记载着她因火灾事故失去双亲的过去，以及从警校到现在的履历……读着读着，一股奇妙的违和感便涌了上来。", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……。", Line_Normal);
+	ClearMessage();
+
+//rいや、違う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いや、違う。",
+			NULL, "不，不对。", Line_Normal);
+	ClearMessage();
+
+//rこれは違和感じゃない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "これは違和感じゃない。",
+			NULL, "这不是违和感。", Line_Normal);
+	ClearMessage();
+
+//rむしろ、それとは正反対の…そう、既視感だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "むしろ、それとは正反対の…そう、既視感だ。",
+			NULL, "倒不如说，是与之完全相反的……没错，既视感。", Line_Normal);
+	ClearMessage();
+
+//r不条理な『事故』で両親を失い、それまで持っていた全てを奪われ…不幸のどん底に叩き落とされながらも、なお故人の遺志を継いで這い上がってきた…雑草のようなしぶとさ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "不条理な『事故』で両親を失い、それまで持っていた全てを奪われ…不幸のどん底に叩き落とされながらも、なお故人の遺志を継いで這い上がってきた…雑草のようなしぶとさ。",
+			NULL, "因为荒唐的『事故』失去双亲，被夺走了曾经拥有的一切……被打进不幸的谷底，却仍继承死者的遗志重新爬起……那像杂草一样顽强的韧性。", Line_Normal);
+	ClearMessage();
+
+//r…似ている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…似ている。",
+			NULL, "……太像了。", Line_Normal);
+	ClearMessage();
+
+//r忌々しいほどにその境遇には類似性があり、…それを思うと、この形容しがたい気持ちがさらにかきたてられてゆくのを覚えずにはいられなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "忌々しいほどにその境遇には類似性があり、…それを思うと、この形容しがたい気持ちがさらにかきたてられてゆくのを覚えずにはいられなかった。",
+			NULL, "她的境遇相似得令人恼火……一想到这一点，我便无法抑制那份难以形容的感情愈发翻涌。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//？？？rvS20/09/VTK2_takano2045.「…ふん。kvS20/09/VTK2_takano2046.くだらない…本当に、くだらないわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2045", 256, TRUE);
+	OutputLine(NULL, "「…ふん。",
+			NULL, "「……哼。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/vtk2_takano2046", 256, TRUE);
+	OutputLine(NULL, "くだらない…本当に、くだらないわ」",
+			NULL, "无聊……真是无聊」", Line_Normal);
+	ClearMessage();
+
+//r首を振って、私はそれを机の引き出し奥に放り込む。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "首を振って、私はそれを机の引き出し奥に放り込む。",
+			NULL, "我摇了摇头，把它丢进书桌抽屉深处。", Line_Normal);
+	ClearMessage();
+
+//r…いいだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…いいだろう。",
+			NULL, "……好吧。", Line_Normal);
+	ClearMessage();
+
+//rどうせ結果と勝敗は明らかだろうが、それまでせいぜいあがいてみるといい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "どうせ結果と勝敗は明らかだろうが、それまでせいぜいあがいてみるといい。",
+			NULL, "反正结果和胜负都很明了，到那之前你就尽情挣扎吧。", Line_Normal);
+	ClearMessage();
+
+//rただ…お嬢ちゃん。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ…お嬢ちゃん。",
+			NULL, "只是……小姑娘。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/aka2", 1000 );
+
+//rその乗り越えてきた辛苦、そして不屈の意志と勇気は褒めてやるが、はっきりとこれだけは、覚えておけ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その乗り越えてきた辛苦、そして不屈の意志と勇気は褒めてやるが、はっきりとこれだけは、覚えておけ。",
+			NULL, "你一路克服的艰辛，还有那份不屈的意志与勇气，我可以称赞。但唯独这一点，你给我牢牢记住。", Line_Normal);
+	ClearMessage();
+
+//r私は、お前を認めない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は、お前を認めない。",
+			NULL, "我不会承认你。", Line_Normal);
+	ClearMessage();
+
+//r絶対に…！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "絶対に…！！",
+			NULL, "绝对不会……！！", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

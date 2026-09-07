@@ -1,0 +1,715 @@
+
+void main()
+{
+
+
+//*Kotohogushi TIPS 2
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//花嫁と、花婿の父
+
+	DrawScene("white", 1000 );
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("background/sora2", 1000 );
+
+//羽入rvS20/45/VTT_hanyu3051.「…やはり、来たか」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3051", 256, TRUE);
+	OutputLine(NULL, "「…やはり、来たか」",
+			NULL, "「……你果然来了。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse08", 256, 64);
+	DrawScene("black", 1000 );
+
+//r庭先へ足を向けて縁側に腰をおろし、後ろから近づいてくる気配に背を向けたまま、私はそう言って声をかける。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "庭先へ足を向けて縁側に腰をおろし、後ろから近づいてくる気配に背を向けたまま、私はそう言って声をかける。",
+			NULL, "我走向院子，在走廊边坐下，背对着从身后靠近的气息，如此出声说道。", Line_Normal);
+	ClearMessage();
+
+//r…今日は、陸が村の会合のために外出しており、帰りも遅くなると言っていた。ゆえに、彼の耳に届かぬよう話をするには最適の機会だろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…今日は、陸が村の会合のために外出しており、帰りも遅くなると言っていた。ゆえに、彼の耳に届かぬよう話をするには最適の機会だろう。",
+			NULL, "……今天陆为了村里的会合外出，还说会晚些回来。因此，这正是谈话传不到他耳中的绝佳机会。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	DrawScene("background/hu_engawa_04", 1000 );
+	PlayBGM(2, "hm01_07", 128, 0);
+
+//陸の父rvS20/00/VTT_rikuF3001.「……。kvS20/00/VTT_rikuF3002.私は、明日にはまた城下に戻らねばなりません。kvS20/00/VTT_rikuF3003.その前に、お話だけでもさせていただければと思いまして…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3001", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3002", 256, TRUE);
+	OutputLine(NULL, "私は、明日にはまた城下に戻らねばなりません。",
+			NULL, "我明天就得回城下。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3003", 256, TRUE);
+	OutputLine(NULL, "その前に、お話だけでもさせていただければと思いまして…」",
+			NULL, "在那之前，至少想请您容我说几句话……」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3052.「構わぬ。kvS20/45/VTT_hanyu3053.私も、そなたに伝えておくことがあったからな。kvS20/45/VTT_hanyu3054.…陸から、話を聞いたか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3052", 256, TRUE);
+	OutputLine(NULL, "「構わぬ。",
+			NULL, "「没关系。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3053", 256, TRUE);
+	OutputLine(NULL, "私も、そなたに伝えておくことがあったからな。",
+			NULL, "我也有话要告诉你。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3054", 256, TRUE);
+	OutputLine(NULL, "…陸から、話を聞いたか？」",
+			NULL, "……你从陆那里听说了吗？」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3004.「はい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3004", 256, TRUE);
+	OutputLine(NULL, "「はい」",
+			NULL, "「是。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rその返答を確かめてから、私は気持ちを鎮めるように軽く深呼吸する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その返答を確かめてから、私は気持ちを鎮めるように軽く深呼吸する。",
+			NULL, "确认了他的回答后，我像是要平复心情般轻轻深呼吸。", Line_Normal);
+	ClearMessage();
+
+//r陸は今朝がた、勤め先の城下から戻ったばかりの父と二人きりで話がある、といって奥の間へと引きこもっていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "陸は今朝がた、勤め先の城下から戻ったばかりの父と二人きりで話がある、といって奥の間へと引きこもっていった。",
+			NULL, "陆的父亲今早刚从任职的城下回来，陆说有话要和他单独谈谈，便与他一同进了里间。", Line_Normal);
+	ClearMessage();
+
+//rその間、私には祭具殿の掃除を頼んでその場所から遠ざけたあたり、…どんな話がなされていたのかはあえて聞くまでもなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その間、私には祭具殿の掃除を頼んでその場所から遠ざけたあたり、…どんな話がなされていたのかはあえて聞くまでもなかった。",
+			NULL, "其间他拜托我去打扫祭具殿，把我从那里支开。如此一来，谈了什么内容也就没有必要特意追问了。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/hu_engawa_04", 1000 );
+
+//羽入rvS20/45/VTT_hanyu3055.「そなたには、つまらぬ気苦労ばかりさせてしまっているな。kvS20/45/VTT_hanyu3056.陸の養育しかり、今回のことしかり…ありがたいというよりも、すまないと思っている」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3055", 256, TRUE);
+	OutputLine(NULL, "「そなたには、つまらぬ気苦労ばかりさせてしまっているな。",
+			NULL, "「我总是让你操些无谓的心。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3056", 256, TRUE);
+	OutputLine(NULL, "陸の養育しかり、今回のことしかり…ありがたいというよりも、すまないと思っている」",
+			NULL, "陆的养育也好，此次之事也好……比起感谢，我更觉得对不住你。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3005.「もったいないお言葉です。kvS20/00/VTT_rikuF3006.あれは心優しく、真面目で…身贔屓な欲目かもしれませんが、父親としても誇りに思えるほどの青年に成長してくれました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3005", 256, TRUE);
+	OutputLine(NULL, "「もったいないお言葉です。",
+			NULL, "「您言重了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3006", 256, TRUE);
+	OutputLine(NULL, "あれは心優しく、真面目で…身贔屓な欲目かもしれませんが、父親としても誇りに思えるほどの青年に成長してくれました」",
+			NULL, "那孩子心地善良，为人认真……也许有父亲偏爱的私心，但他已经成长为让我引以为傲的青年了。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3007.「今では実の我が子以上にも思えるほど愛おしい息子で、どこに出しても恥ずかしくないと自負しております」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3007", 256, TRUE);
+	OutputLine(NULL, "「今では実の我が子以上にも思えるほど愛おしい息子で、どこに出しても恥ずかしくないと自負しております」",
+			NULL, "「如今他已是我爱若亲生的儿子，无论带到哪里，我都敢自豪地介绍他。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3057.「…その見立ては、間違っていないぞ。kvS20/45/VTT_hanyu3058.そなたに託したのは、我ながらまこと英断であった。kvS20/45/VTT_hanyu3059.親があってこそ子の健やかなる成長は叶うものだと、そなたたち親子を見ているとつくづく思い知らされる」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3057", 256, TRUE);
+	OutputLine(NULL, "「…その見立ては、間違っていないぞ。",
+			NULL, "「……你的判断很正确。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3058", 256, TRUE);
+	OutputLine(NULL, "そなたに託したのは、我ながらまこと英断であった。",
+			NULL, "把他托付给你，连我自己都觉得是正确之举。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3059", 256, TRUE);
+	OutputLine(NULL, "親があってこそ子の健やかなる成長は叶うものだと、そなたたち親子を見ているとつくづく思い知らされる」",
+			NULL, "看着你们父子，我才深切明白，孩子正因有父母在，才能健健康康地成长。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3008.「…恐れ入ります」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3008", 256, TRUE);
+	OutputLine(NULL, "「…恐れ入ります」",
+			NULL, "「……不敢当。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeOutBGM(2, 200, FALSE);
+
+//rわずかに畳みの擦れる音。…陸の父が居間の端に座り込み、私をじっと見据える視線を感じる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "わずかに畳みの擦れる音。…陸の父が居間の端に座り込み、私をじっと見据える視線を感じる。",
+			NULL, "传来一阵轻微的榻榻米摩擦声。陆的父亲在起居室一角坐下，我能感觉到他正凝视着我。", Line_Normal);
+	ClearMessage();
+
+//r…だから、私は。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…だから、私は。",
+			NULL, "……所以，我。", Line_Normal);
+	ClearMessage();
+
+//rようやく決心をつけて振り返ると、彼に向き直っていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ようやく決心をつけて振り返ると、彼に向き直っていった。",
+			NULL, "终于下定决心转过身，正面对着他说道。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm10_62", 128, 0);
+	DrawScene("background/hu_engawa_04", 1000 );
+
+//羽入rvS20/45/VTT_hanyu3060.「…そなたの、考えを聞きたい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3060", 256, TRUE);
+	OutputLine(NULL, "「…そなたの、考えを聞きたい」",
+			NULL, "「……我想听听你的想法。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3009.「えっ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3009", 256, TRUE);
+	OutputLine(NULL, "「えっ…？」",
+			NULL, "「咦……？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3061.「回りくどい話は苦手でな…賛成か、それとも反対か。kvS20/45/VTT_hanyu3062.それだけを、聞かせてくれ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3061", 256, TRUE);
+	OutputLine(NULL, "「回りくどい話は苦手でな…賛成か、それとも反対か。",
+			NULL, "「我不擅长绕弯子……赞成，还是反对。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3062", 256, TRUE);
+	OutputLine(NULL, "それだけを、聞かせてくれ」",
+			NULL, "只要告诉我这一点。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3010.「……。kvS20/00/VTT_rikuF3011.諸手を挙げて賛成、というわけにはまいりません。kvS20/00/VTT_rikuF3012.それは、あなた様もご承知済みのはずです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3010", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3011", 256, TRUE);
+	OutputLine(NULL, "諸手を挙げて賛成、というわけにはまいりません。",
+			NULL, "我还无法举双手赞成。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3012", 256, TRUE);
+	OutputLine(NULL, "それは、あなた様もご承知済みのはずです」",
+			NULL, "这一点，想必您也早已明白。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3063.「だろうな…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3063", 256, TRUE);
+	OutputLine(NULL, "「だろうな…」",
+			NULL, "「也是……」", Line_Normal);
+	ClearMessage();
+
+//rこみ上げてきた苦笑を押し隠すように、私は顔を伏せる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "こみ上げてきた苦笑を押し隠すように、私は顔を伏せる。",
+			NULL, "我低下脸，像是在掩饰涌上来的苦笑。", Line_Normal);
+	ClearMessage();
+
+//r予想通りというか、期待通りというか…もし立場が逆であったとしたら、私ですらそう答えるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "予想通りというか、期待通りというか…もし立場が逆であったとしたら、私ですらそう答えるだろう。",
+			NULL, "该说是如预料中，还是如期望中呢……倘若立场对调，恐怕连我也会这么回答。", Line_Normal);
+	ClearMessage();
+
+//r親としての見識が狭いか広いかという論議は、この場合全くの無意味だった…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "親としての見識が狭いか広いかという論議は、この場合全くの無意味だった…。",
+			NULL, "在这种情况下，讨论作为父母的见识是狭窄还是开阔，完全没有意义。", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3013.「この村のほとんどの大人は、２０数年前にあった鬼の襲来をまだ覚えています」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3013", 256, TRUE);
+	OutputLine(NULL, "「この村のほとんどの大人は、２０数年前にあった鬼の襲来をまだ覚えています」",
+			NULL, "「这座村子里大多数成年人，都还记得二十多年前那次鬼族来袭。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3014.「そして、その恐ろしさや凄惨さは生存した者にとどまらず、その子や兄弟、移住してきた世帯に対しても語り継がれて、生々しい記憶となっております。kvS20/00/VTT_rikuF3015.そんな中…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3014", 256, TRUE);
+	OutputLine(NULL, "「そして、その恐ろしさや凄惨さは生存した者にとどまらず、その子や兄弟、移住してきた世帯に対しても語り継がれて、生々しい記憶となっております。",
+			NULL, "「那份恐惧与惨烈不只停留在幸存者心中，还被讲述给他们的孩子、兄弟，以及迁居而来的家庭，成了鲜明的记忆。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3015", 256, TRUE);
+	OutputLine(NULL, "そんな中…」",
+			NULL, "在这样的情形下……」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3064.「角を生やした私が身内にいては、何かと都合が悪かろう。kvS20/45/VTT_hanyu3065.…そういうことか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3064", 256, TRUE);
+	OutputLine(NULL, "「角を生やした私が身内にいては、何かと都合が悪かろう。",
+			NULL, "「若身边有个长着角的我在，许多事情都会变得不方便。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3065", 256, TRUE);
+	OutputLine(NULL, "…そういうことか？」",
+			NULL, "……你是这个意思吗？」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3016.「…意地の悪いことをおっしゃらないでください。kvS20/00/VTT_rikuF3017.ことは、我々親子の問題ではとどまりませぬ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3016", 256, TRUE);
+	OutputLine(NULL, "「…意地の悪いことをおっしゃらないでください。",
+			NULL, "「……请别说这么刻薄的话。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3017", 256, TRUE);
+	OutputLine(NULL, "ことは、我々親子の問題ではとどまりませぬ」",
+			NULL, "事情已经超出了我们父子的范围。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3018.「この村も一見、安穏の空気を取り戻したように映っておりますが、…本当は皆、鬼の襲来が再びありはしないかと内心恐れているのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3018", 256, TRUE);
+	OutputLine(NULL, "「この村も一見、安穏の空気を取り戻したように映っておりますが、…本当は皆、鬼の襲来が再びありはしないかと内心恐れているのです」",
+			NULL, "「这座村子表面上像是恢复了安宁……但其实大家心里都害怕鬼族会再次来袭。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3019.「確かに、オヤシロさまが我々の命を守ってくれたということは、私を含め何人かの人間が存じ上げていることですが、…その他大多数の者どもにとっては区別のつかぬもの」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3019", 256, TRUE);
+	OutputLine(NULL, "「確かに、オヤシロさまが我々の命を守ってくれたということは、私を含め何人かの人間が存じ上げていることですが、…その他大多数の者どもにとっては区別のつかぬもの」",
+			NULL, "「御社神守住了我们的性命，这一点我和几个人确实知晓……可对绝大多数人而言，他们分辨不出其中区别。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3020.「鬼が出たという噂ひとつで、村全体が恐慌に陥る危険性すらあり得るのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3020", 256, TRUE);
+	OutputLine(NULL, "「鬼が出たという噂ひとつで、村全体が恐慌に陥る危険性すらあり得るのです」",
+			NULL, "「只要传出有鬼现身的流言，整座村子甚至可能陷入恐慌。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3066.「そうだったな…。kvS20/45/VTT_hanyu3067.許せ、つまらぬことを言った」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3066", 256, TRUE);
+	OutputLine(NULL, "「そうだったな…。",
+			NULL, "「是啊……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3067", 256, TRUE);
+	OutputLine(NULL, "許せ、つまらぬことを言った」",
+			NULL, "原谅我，说了无聊的话。」", Line_Normal);
+	ClearMessage();
+
+//r自分の僻みっぽい物言いを恥じて、私は素直に頭を下げる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "自分の僻みっぽい物言いを恥じて、私は素直に頭を下げる。",
+			NULL, "我为自己那带着偏执的说法感到羞愧，坦率地低下了头。", Line_Normal);
+	ClearMessage();
+
+//rもっとも、陸の父が狭量な性分であれば、もう少しこの気も楽になったかもしれないのだが…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もっとも、陸の父が狭量な性分であれば、もう少しこの気も楽になったかもしれないのだが…。",
+			NULL, "不过，若陆的父亲是个心胸狭窄的人，或许我的心情还能稍微轻松些……", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3068.「……本当は、わかっている…つもりだ。kvS20/45/VTT_hanyu3069.私がここを去ることこそが、全てを丸く収める最善手なのだろう。kvS20/45/VTT_hanyu3070.…だが、…情けない話だが、どうしようもないのだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3068", 256, TRUE);
+	OutputLine(NULL, "「……本当は、わかっている…つもりだ。",
+			NULL, "「……其实，我自以为明白。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3069", 256, TRUE);
+	OutputLine(NULL, "私がここを去ることこそが、全てを丸く収める最善手なのだろう。",
+			NULL, "我离开这里，才是让一切圆满解决的最佳选择。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3070", 256, TRUE);
+	OutputLine(NULL, "…だが、…情けない話だが、どうしようもないのだ」",
+			NULL, "……可是……说来惭愧，我已经做不到了。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3071.「ここまで、陸に心を寄せることになるなど、…私は、思いもしなかった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3071", 256, TRUE);
+	OutputLine(NULL, "「ここまで、陸に心を寄せることになるなど、…私は、思いもしなかった」",
+			NULL, "「我从来没想到……自己竟会如此倾心于陆。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3021.「お察しいたします。kvS20/00/VTT_rikuF3022.…私とて木石でもなければ、また聖人でもございません」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3021", 256, TRUE);
+	OutputLine(NULL, "「お察しいたします。",
+			NULL, "「我明白您的心情。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3022", 256, TRUE);
+	OutputLine(NULL, "…私とて木石でもなければ、また聖人でもございません」",
+			NULL, "……我也有血有肉，也会动情。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3023.「誰かを愛し、求める想いは我々でさえ押し留めることができかねるもの。kvS20/00/VTT_rikuF3024.ゆえに、あなた様のお心を無下に否定する資格など、私にはないとわきまえております」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3023", 256, TRUE);
+	OutputLine(NULL, "「誰かを愛し、求める想いは我々でさえ押し留めることができかねるもの。",
+			NULL, "「爱慕某人、渴求某人的心意，连我们也难以压抑。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3024", 256, TRUE);
+	OutputLine(NULL, "ゆえに、あなた様のお心を無下に否定する資格など、私にはないとわきまえております」",
+			NULL, "因此，我深知自己没有资格随意否定您的心意。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3072.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3072", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3025.「それに…あの大人しい陸が、あなた様を娶ることに対しては頑として譲りませんでした。kvS20/00/VTT_rikuF3026.あなた様以外の女性を妻に迎えることは、金輪際ないと」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3025", 256, TRUE);
+	OutputLine(NULL, "「それに…あの大人しい陸が、あなた様を娶ることに対しては頑として譲りませんでした。",
+			NULL, "「而且……那个老实的陆，在迎娶您这件事上态度坚定，一步不退。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3026", 256, TRUE);
+	OutputLine(NULL, "あなた様以外の女性を妻に迎えることは、金輪際ないと」",
+			NULL, "他说今生今世，绝不会迎娶您以外的女子为妻。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3027.「それも、昨日今日の決心ではなく…あなた様とお会いした当初の頃より、ずっと意識し続けてきた想いとのこと。kvS20/00/VTT_rikuF3028.…その強い願い、親としてはぜひとも尊重してやりたく存じます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3027", 256, TRUE);
+	OutputLine(NULL, "「それも、昨日今日の決心ではなく…あなた様とお会いした当初の頃より、ずっと意識し続けてきた想いとのこと。",
+			NULL, "「那也不是一时冲动的决心……据说自从最初与您相遇之时起，他就一直怀着这份心意。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3028", 256, TRUE);
+	OutputLine(NULL, "…その強い願い、親としてはぜひとも尊重してやりたく存じます」",
+			NULL, "……作为父亲，我很想尊重他那强烈的愿望。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3073.「そなた…。kvS20/45/VTT_hanyu3074.本当に、それで…いいのか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3073", 256, TRUE);
+	OutputLine(NULL, "「そなた…。",
+			NULL, "「你……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3074", 256, TRUE);
+	OutputLine(NULL, "本当に、それで…いいのか？」",
+			NULL, "你真的觉得……这样可以吗？」", Line_Normal);
+	ClearMessage();
+
+//r私の念押しに対して、陸の父は穏やかな笑みを浮かべながら、しかし確かに…頷く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私の念押しに対して、陸の父は穏やかな笑みを浮かべながら、しかし確かに…頷く。",
+			NULL, "面对我的确认，陆的父亲露出温和的笑容，并且确实地点了点头。", Line_Normal);
+	ClearMessage();
+
+//r…その瞬間、目頭が熱くなって何かがこぼれ落ちそうになったが、私は懸命にそれをこらえて瞼を何度もしばたかせた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…その瞬間、目頭が熱くなって何かがこぼれ落ちそうになったが、私は懸命にそれをこらえて瞼を何度もしばたかせた。",
+			NULL, "……那一瞬间，眼眶发热，仿佛有什么就要滚落下来，我拼命忍住，不停眨着眼睛。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3075.「私は、…知っての通り、この地に住まうそなたたちの仲間ではない。kvS20/45/VTT_hanyu3076.ゆえに、人ならざる者とのいわれは当たらずとも遠からずのものだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3075", 256, TRUE);
+	OutputLine(NULL, "「私は、…知っての通り、この地に住まうそなたたちの仲間ではない。",
+			NULL, "「如你所知，我与你们这些生活在这片土地上的人并非同类。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3076", 256, TRUE);
+	OutputLine(NULL, "ゆえに、人ならざる者とのいわれは当たらずとも遠からずのものだ」",
+			NULL, "因此，说我是非人之物，虽不中亦不远。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3077.「……そんな相手を大切な我が子の妻と迎え入れて、…いいと、言ってくれるのか…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3077", 256, TRUE);
+	OutputLine(NULL, "「……そんな相手を大切な我が子の妻と迎え入れて、…いいと、言ってくれるのか…？」",
+			NULL, "「……你愿意让这样的我，成为你珍爱的孩子的妻子吗……？」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3029.「はい。kvS20/00/VTT_rikuF3030.あなた様が焼け落ちる屋敷から赤子を救い出し、それを私に預けたこと…今思えば、それは今日この時をもたらす運命であったのでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3029", 256, TRUE);
+	OutputLine(NULL, "「はい。",
+			NULL, "「是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3030", 256, TRUE);
+	OutputLine(NULL, "あなた様が焼け落ちる屋敷から赤子を救い出し、それを私に預けたこと…今思えば、それは今日この時をもたらす運命であったのでしょう」",
+			NULL, "您从燃烧的宅邸中救出婴儿，并将他托付给我……如今想来，那正是带来今日此刻的命运吧。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3031.「ならば、私としてはそれに従うだけでございます。kvS20/00/VTT_rikuF3032.…どうか、末永くあれを、よろしくお願いいたします」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3031", 256, TRUE);
+	OutputLine(NULL, "「ならば、私としてはそれに従うだけでございます。",
+			NULL, "「既然如此，我只需顺从这份命运。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3032", 256, TRUE);
+	OutputLine(NULL, "…どうか、末永くあれを、よろしくお願いいたします」",
+			NULL, "……还请您长久照顾那孩子。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3078.「っ…うむ…。kvS20/45/VTT_hanyu3079.誓う…あぁ、約束しよう…。kvS20/45/VTT_hanyu3080.陸と、古手の家のため…私の持つ全てを捧げる…！kvS20/45/VTT_hanyu3081.　彼の幸せのためなら、私はどんな苦難でも受け入れてみせようぞ…っ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3078", 256, TRUE);
+	OutputLine(NULL, "「っ…うむ…。",
+			NULL, "「唔……嗯……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3079", 256, TRUE);
+	OutputLine(NULL, "誓う…あぁ、約束しよう…。",
+			NULL, "我发誓……不，我答应你……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3080", 256, TRUE);
+	OutputLine(NULL, "陸と、古手の家のため…私の持つ全てを捧げる…！",
+			NULL, "为了陆和古手家……我会献出我所拥有的一切……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3081", 256, TRUE);
+	OutputLine(NULL, "　彼の幸せのためなら、私はどんな苦難でも受け入れてみせようぞ…っ…！」",
+			NULL, "只要为了他的幸福，无论怎样的苦难，我都甘愿承受……！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r私は顔をそむけて、思わずあふれ出た涙を見られないよう天を仰ぐ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は顔をそむけて、思わずあふれ出た涙を見られないよう天を仰ぐ。",
+			NULL, "我别过脸，仰望天空，不让他看见不由自主涌出的泪水。", Line_Normal);
+	ClearMessage();
+
+//r私が泣き顔を見せるのは、陸だけ。そう誓った以上、…鬼ヶ淵村の守り神として、この顔を見られるわけにはいかなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私が泣き顔を見せるのは、陸だけ。そう誓った以上、…鬼ヶ淵村の守り神として、この顔を見られるわけにはいかなかった。",
+			NULL, "能看见我哭脸的人只有陆。既然立下了这样的誓言……作为鬼渊村的守护神，我就不能让人看见这张脸。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("background/sora2", 1000 );
+
+//羽入rvS20/45/VTT_hanyu3082.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3082", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r夕暮れに染まった、朱の空。桜の甘やかな香りとともに、心地よいあたたかさがこの身体を包み込んでゆく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "夕暮れに染まった、朱の空。桜の甘やかな香りとともに、心地よいあたたかさがこの身体を包み込んでゆく。",
+			NULL, "染上暮色的朱红天空。伴随着樱花甜美的香气，舒适的暖意包裹住了这副身体。", Line_Normal);
+	ClearMessage();
+
+//r…これから先、どれだけ陸と一緒にいられるかはわからない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…これから先、どれだけ陸と一緒にいられるかはわからない。",
+			NULL, "……今后还能和陆共度多久，我并不知道。", Line_Normal);
+	ClearMessage();
+
+//rたとえ穏便に何事もなく毎日を送ったところで、…長命のリューンである私はどうしても、天寿を全うする彼を見送ることになるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "たとえ穏便に何事もなく毎日を送ったところで、…長命のリューンである私はどうしても、天寿を全うする彼を見送ることになるだろう。",
+			NULL, "即便平稳无事地度过每一天，身为长寿的琉恩的我，终究也会目送尽享天年的他离去。", Line_Normal);
+	ClearMessage();
+
+//rまた、『混血』との戦いの末に私が先に命を落としたとしても…彼にその死を見届けてもらうことは難しい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "また、『混血』との戦いの末に私が先に命を落としたとしても…彼にその死を見届けてもらうことは難しい。",
+			NULL, "即便我在与『混血』的战斗之后先一步丧命……要让他见证我的死亡，也很困难。", Line_Normal);
+	ClearMessage();
+
+//rゆえに私は結局、陸と一緒にあろうとあるまいと、ひとりで死を迎えることに違いはないのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆえに私は結局、陸と一緒にあろうとあるまいと、ひとりで死を迎えることに違いはないのだ。",
+			NULL, "因此，无论我是否与陆在一起，终究都将独自迎来死亡。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r……だけど。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……だけど。",
+			NULL, "……可是。", Line_Normal);
+	ClearMessage();
+
+//r自分の命よりも大切な人と時間と空間を共有し、それを記憶に留め置くことができる幸せは、…何にも代えがたいものだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "自分の命よりも大切な人と時間と空間を共有し、それを記憶に留め置くことができる幸せは、…何にも代えがたいものだった。",
+			NULL, "能与比自己性命更重要的人共享时间与空间，并将其留存在记忆之中的幸福，是任何事物都替代不了的。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	DrawScene("background/hu_engawa_04", 1000 );
+
+//陸の父rvS20/00/VTT_rikuF3033.「私も、できるだけの協力はさせていただきます。kvS20/00/VTT_rikuF3034.村の催事については、どのように対処すべきかを昨日、陸に申し上げておきましたので、万事お任せください」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3033", 256, TRUE);
+	OutputLine(NULL, "「私も、できるだけの協力はさせていただきます。",
+			NULL, "「我也会尽力协助。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3034", 256, TRUE);
+	OutputLine(NULL, "村の催事については、どのように対処すべきかを昨日、陸に申し上げておきましたので、万事お任せください」",
+			NULL, "关于村中祭祀该如何处理，我昨日已经告诉陆了，请一切放心交给我们。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3083.「…ありがとう。kvS20/45/VTT_hanyu3084.あと、…そなたに、話しておきたいことがある」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3083", 256, TRUE);
+	OutputLine(NULL, "「…ありがとう。",
+			NULL, "「……谢谢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3084", 256, TRUE);
+	OutputLine(NULL, "あと、…そなたに、話しておきたいことがある」",
+			NULL, "还有……有件事我想先告诉你。」", Line_Normal);
+	ClearMessage();
+
+//r私は陸の父に対して、これだけは伝えておかなくてはならないことを思い出す。そして気を落ち着けてから、ひとつひとつ…噛みしめるように言葉を紡いでいった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は陸の父に対して、これだけは伝えておかなくてはならないことを思い出す。そして気を落ち着けてから、ひとつひとつ…噛みしめるように言葉を紡いでいった。",
+			NULL, "我想起有一件事，无论如何都必须告诉陆的父亲。于是等心绪平静下来后，我一句一句，像是细细咀嚼般说了出来。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3085.「もしも…私の正体が村人に明かされることがあったなら、…遠慮はいらん。kvS20/45/VTT_hanyu3086.鬼として、私を殺せ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3085", 256, TRUE);
+	OutputLine(NULL, "「もしも…私の正体が村人に明かされることがあったなら、…遠慮はいらん。",
+			NULL, "「如果……我的真身被村人知晓了，便请别顾虑。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3086", 256, TRUE);
+	OutputLine(NULL, "鬼として、私を殺せ」",
+			NULL, "把我当成鬼，杀了我。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3087.「そして、この身をもって生贄となし、鬼の怒りを鎮める儀式に捧げるがよい。kvS20/45/VTT_hanyu3088.そうすることで…村の混乱は収まろう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3087", 256, TRUE);
+	OutputLine(NULL, "「そして、この身をもって生贄となし、鬼の怒りを鎮める儀式に捧げるがよい。",
+			NULL, "「然后用这副身体作为祭品，献给平息鬼族之怒的仪式。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3088", 256, TRUE);
+	OutputLine(NULL, "そうすることで…村の混乱は収まろう」",
+			NULL, "这样一来……村中的混乱便会平息。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//陸の父rvS20/00/VTT_rikuF3035.「っ、オヤシロさま…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3035", 256, TRUE);
+	OutputLine(NULL, "「っ、オヤシロさま…！」",
+			NULL, "「御、御社神大人……！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3089.「もちろん、私もそうならぬよう…常に配慮に努めよう。kvS20/45/VTT_hanyu3090.…ただ、念のための申し伝えを、そなたに託しておきたい。kvS20/45/VTT_hanyu3091.これを…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3089", 256, TRUE);
+	OutputLine(NULL, "「もちろん、私もそうならぬよう…常に配慮に努めよう。",
+			NULL, "「当然，我也会时时留心，尽力避免那种事发生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3090", 256, TRUE);
+	OutputLine(NULL, "…ただ、念のための申し伝えを、そなたに託しておきたい。",
+			NULL, "……只是，我想把这份以防万一的嘱托交给你。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3091", 256, TRUE);
+	OutputLine(NULL, "これを…」",
+			NULL, "这个……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "kami", 256, 64);
+	DrawScene("black", 1000 );
+
+//rそう言って私は、懐にしまっておいた封書を取り出して陸の父に差し出す。それを広げ、文面に目を通した彼は、…愕然とした表情で私に顔を戻した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って私は、懐にしまっておいた封書を取り出して陸の父に差し出す。それを広げ、文面に目を通した彼は、…愕然とした表情で私に顔を戻した。",
+			NULL, "说着，我从怀中取出一直收着的封书，递给陆的父亲。他展开信，读过内容后，带着愕然的表情重新看向我。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/hu_engawa_04", 250 );
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//陸の父rvS20/00/VTT_rikuF3036.「お…オヤシロさまっ！kvS20/00/VTT_rikuF3037.　こ、これは…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3036", 256, TRUE);
+	OutputLine(NULL, "「お…オヤシロさまっ！",
+			NULL, "「御、御社神大人！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3037", 256, TRUE);
+	OutputLine(NULL, "　こ、これは…？！」",
+			NULL, "这、这是……？！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3092.「…私たち、リューンを屠る術だ。kvS20/45/VTT_hanyu3093.そなたたちの持つ武器では、私の身体に致命傷を負わせることはかなわぬ。kvS20/45/VTT_hanyu3094.ゆえに…ここにそれを書き留めておいた」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3092", 256, TRUE);
+	OutputLine(NULL, "「…私たち、リューンを屠る術だ。",
+			NULL, "「……这是杀死我们琉恩的方法。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3093", 256, TRUE);
+	OutputLine(NULL, "そなたたちの持つ武器では、私の身体に致命傷を負わせることはかなわぬ。",
+			NULL, "凭你们拥有的武器，无法对我的身体造成致命伤。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3094", 256, TRUE);
+	OutputLine(NULL, "ゆえに…ここにそれを書き留めておいた」",
+			NULL, "所以……我将方法写在了这里。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3095.「万一の時があれば、…それを手練れの者に伝え、私を討つがよい。kvS20/45/VTT_hanyu3096.…頼んだぞ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3095", 256, TRUE);
+	OutputLine(NULL, "「万一の時があれば、…それを手練れの者に伝え、私を討つがよい。",
+			NULL, "「万一到了那一刻……就把它告诉身手高强的人，让他讨伐我。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3096", 256, TRUE);
+	OutputLine(NULL, "…頼んだぞ」",
+			NULL, "……拜托了。」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3038.「……。kvS20/00/VTT_rikuF3039.承知いたしました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3038", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3039", 256, TRUE);
+	OutputLine(NULL, "承知いたしました」",
+			NULL, "我明白了。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rこのことを、陸ではなくその父に伝える意図を察したのだろう…彼はゆっくりと頷く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "このことを、陸ではなくその父に伝える意図を察したのだろう…彼はゆっくりと頷く。",
+			NULL, "他似乎察觉到我把这件事告诉陆的父亲、而非告诉陆的意图，缓缓点了点头。", Line_Normal);
+	ClearMessage();
+
+//rなぜなら、陸にこれを伝えたところで返答は『否』に決まっているからだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なぜなら、陸にこれを伝えたところで返答は『否』に決まっているからだ。",
+			NULL, "因为即便把这件事告诉陆，他的回答也必定是『否』。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/hu_engawa_04", 1000 );
+
+//羽入rvS20/45/VTT_hanyu3097.「あと…この村の古文書は、そなたが管理を行っていると聞いたが、まことか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3097", 256, TRUE);
+	OutputLine(NULL, "「あと…この村の古文書は、そなたが管理を行っていると聞いたが、まことか？」",
+			NULL, "「还有……我听说这座村子的古文书由你保管，是真的吗？」", Line_Normal);
+	ClearMessage();
+
+//陸の父rvS20/00/VTT_rikuF3040.「はい、そうですが…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>陸の父</color>", NULL, "<color=#f5e6d3>陆的父亲</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_rikuf3040", 256, TRUE);
+	OutputLine(NULL, "「はい、そうですが…？」",
+			NULL, "「是的，确实如此……？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3098.「ならば…これも、そなたに頼っておきたい。kvS20/45/VTT_hanyu3099.鬼ヶ淵村に伝わる、鬼の伝承についてだ。kvS20/45/VTT_hanyu3100.今のままでは、鬼に対する恐怖が残ったままになろう。kvS20/45/VTT_hanyu3101.そこで……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3098", 256, TRUE);
+	OutputLine(NULL, "「ならば…これも、そなたに頼っておきたい。",
+			NULL, "「那么……这件事也想托付给你。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3099", 256, TRUE);
+	OutputLine(NULL, "鬼ヶ淵村に伝わる、鬼の伝承についてだ。",
+			NULL, "关于鬼渊村流传的鬼族传承。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3100", 256, TRUE);
+	OutputLine(NULL, "今のままでは、鬼に対する恐怖が残ったままになろう。",
+			NULL, "照现在这样，对鬼的恐惧会一直残留下去。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3101", 256, TRUE);
+	OutputLine(NULL, "そこで……」",
+			NULL, "所以……」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

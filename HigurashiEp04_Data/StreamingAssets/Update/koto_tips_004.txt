@@ -1,0 +1,260 @@
+void main()
+{
+
+
+//*Kotohogushi TIPS 4
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//剣術講座・応用編
+
+	DrawScene("white", 1000 );
+	PlayBGM(2, "hm04_18", 128, 0);
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 47, "sprite/ouka1b_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ji2", 1000 );
+
+//羽入rvS20/45/VTT_hanyu3140.「…桜花。kvS20/45/VTT_hanyu3141.あなたが、その剣技を使わざるを得ない機会に遭うのは、できれば無いことを祈りたいのですが…世の中にはもしも、ということがあります」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3140", 256, TRUE);
+	OutputLine(NULL, "「…桜花。",
+			NULL, "「……樱花。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3141", 256, TRUE);
+	OutputLine(NULL, "あなたが、その剣技を使わざるを得ない機会に遭うのは、できれば無いことを祈りたいのですが…世の中にはもしも、ということがあります」",
+			NULL, "但愿你永远不会遇到必须动用这门剑技的机会……可世上总有万一。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3142.「それゆえあなたには、その場面に直面した時の心構えだけを申し伝えておきます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3142", 256, TRUE);
+	OutputLine(NULL, "「それゆえあなたには、その場面に直面した時の心構えだけを申し伝えておきます」",
+			NULL, "「因此，我只把你面对那种场面时应有的心态告诉你。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS20/47/VTT_ouka3029.「…はい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3029", 256, TRUE);
+	OutputLine(NULL, "「…はい」",
+			NULL, "「……是。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3143.「まず、たとえ相手の技がつたないものだったとしても、決して油断せぬように」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3143", 256, TRUE);
+	OutputLine(NULL, "「まず、たとえ相手の技がつたないものだったとしても、決して油断せぬように」",
+			NULL, "「首先，即便对手的招式很拙劣，也绝不能大意。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3144.「男と違って、bおなご.<女子>の力はどこまで鍛えても限りがあります。kvS20/45/VTT_hanyu3145.ですから斬り合いから力押しとなれば、どんなに技を究めたところで不利劣勢は免れません」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3144", 256, TRUE);
+	OutputLine(NULL, "「男と違って、女子(おなご)の力はどこまで鍛えても限りがあります。",
+			NULL, "「与男子不同，女子的力气再怎么锻炼也终有极限。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3145", 256, TRUE);
+	OutputLine(NULL, "ですから斬り合いから力押しとなれば、どんなに技を究めたところで不利劣勢は免れません」",
+			NULL, "所以一旦演变成对砍和力量压制，技艺练得再精，也免不了落入劣势。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3030.「じゃあ…剣を持っていても、あまり相手は怖がってくれないの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3030", 256, TRUE);
+	OutputLine(NULL, "「じゃあ…剣を持っていても、あまり相手は怖がってくれないの？」",
+			NULL, "「也就是说……就算我拿着剑，对方也不太会害怕吗？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3146.「そうですね。kvS20/45/VTT_hanyu3147.戸惑いはしますが、…その後に抱く感情は、まず好奇心と軽侮。kvS20/45/VTT_hanyu3148.力の差を気で感じることができない素人ほど、恐怖を抱くことはほとんどないでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3146", 256, TRUE);
+	OutputLine(NULL, "「そうですね。",
+			NULL, "「是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3147", 256, TRUE);
+	OutputLine(NULL, "戸惑いはしますが、…その後に抱く感情は、まず好奇心と軽侮。",
+			NULL, "对方会有所迟疑……之后涌上来的，多半就是好奇和轻视。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3148", 256, TRUE);
+	OutputLine(NULL, "力の差を気で感じることができない素人ほど、恐怖を抱くことはほとんどないでしょう」",
+			NULL, "越是感受不到力量差距的外行，越难心生恐惧。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3149.「…ですが同時に、そこにこそ唯一の、そして決定的な勝機があることも覚えておいてください」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3149", 256, TRUE);
+	OutputLine(NULL, "「…ですが同時に、そこにこそ唯一の、そして決定的な勝機があることも覚えておいてください」",
+			NULL, "「……同时也请记住，那里正藏着唯一且决定性的胜机。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1a_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3031.「？　どういうこと？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3031", 256, TRUE);
+	OutputLine(NULL, "「？　どういうこと？」",
+			NULL, "「咦？什么意思？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3150.「つまり、相手は力でねじ伏せようと、初手の際に生まれる隙が無意識のうちに大きくなります。kvS20/45/VTT_hanyu3151.初手は心理的優劣を形成するにあたって、とても重要な行動ですからね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3150", 256, TRUE);
+	OutputLine(NULL, "「つまり、相手は力でねじ伏せようと、初手の際に生まれる隙が無意識のうちに大きくなります。",
+			NULL, "「也就是说，对方想靠力量压制你时，第一招露出的破绽会在无意识中变大。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3151", 256, TRUE);
+	OutputLine(NULL, "初手は心理的優劣を形成するにあたって、とても重要な行動ですからね」",
+			NULL, "毕竟第一招对形成心理上的优劣关系非常重要。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3152.「…でもその際、身体の各部ががら空きになる。kvS20/45/VTT_hanyu3153.ですから、その隙を逃すか逃さないかによって、その後の戦況が大きく変わってくるのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3152", 256, TRUE);
+	OutputLine(NULL, "「…でもその際、身体の各部ががら空きになる。",
+			NULL, "「……那一瞬间，身体各处都会空门大开。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3153", 256, TRUE);
+	OutputLine(NULL, "ですから、その隙を逃すか逃さないかによって、その後の戦況が大きく変わってくるのです」",
+			NULL, "所以能否抓住那个破绽，会大大左右之后的战况。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1a_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3032.「できた隙には最大限に付け込め、ってことね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3032", 256, TRUE);
+	OutputLine(NULL, "「できた隙には最大限に付け込め、ってことね？」",
+			NULL, "「意思是，要最大限度地利用出现的破绽，对吧？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3154.「さらに、斬りは攻撃を当てやすいのですが、そのぶん『線』として繰り出されるため防御もされやすい。kvS20/45/VTT_hanyu3155.しかし、刺突ならば相手にとっては『点』なので防御はもちろん、回避も難しい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3154", 256, TRUE);
+	OutputLine(NULL, "「さらに、斬りは攻撃を当てやすいのですが、そのぶん『線』として繰り出されるため防御もされやすい。",
+			NULL, "「再者，斩击虽然容易命中，却是以『线』挥出，也容易被防住。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3155", 256, TRUE);
+	OutputLine(NULL, "しかし、刺突ならば相手にとっては『点』なので防御はもちろん、回避も難しい」",
+			NULL, "刺突对对手来说则是『点』，不仅难以防御，也难以回避。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3156.「…ゆえに、力で劣る女性がもっとも効果的、かつ一撃必殺の威力を持つのは、刺突なのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3156", 256, TRUE);
+	OutputLine(NULL, "「…ゆえに、力で劣る女性がもっとも効果的、かつ一撃必殺の威力を持つのは、刺突なのです」",
+			NULL, "「……因此，对力量较弱的女性而言，最有效、最具一击必杀威力的招式，就是刺突。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3157.「ちなみに、理想的な刺突は一度目を隙を開けるための擬態とし、二度目を止めに使います。kvS20/45/VTT_hanyu3158.もっとも、これはよほどの技量と判断力を必要としますので、まだまだあなたが覚えるには早すぎますが…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3157", 256, TRUE);
+	OutputLine(NULL, "「ちなみに、理想的な刺突は一度目を隙を開けるための擬態とし、二度目を止めに使います。",
+			NULL, "「顺带一提，理想的刺突，是把第一次当作诱敌露出破绽的佯攻，第二次用来终结对方。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3158", 256, TRUE);
+	OutputLine(NULL, "もっとも、これはよほどの技量と判断力を必要としますので、まだまだあなたが覚えるには早すぎますが…」",
+			NULL, "只是，这需要相当高的技巧和判断力，现在的你学这个还太早……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1a_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3033.「なるほど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3033", 256, TRUE);
+	OutputLine(NULL, "「なるほど…」",
+			NULL, "「原来如此……」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3159.「それから…刺突の時、一番命中しやすく効果的な場所は、どこだと思いますか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3159", 256, TRUE);
+	OutputLine(NULL, "「それから…刺突の時、一番命中しやすく効果的な場所は、どこだと思いますか？」",
+			NULL, "「还有……刺突时，你觉得最容易命中、最有效的位置是哪里？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3034.「それは、…やっぱり胸とか、喉とか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3034", 256, TRUE);
+	OutputLine(NULL, "「それは、…やっぱり胸とか、喉とか？」",
+			NULL, "「这个……果然是胸口，或者喉咙之类的吗？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3160.「いいえ。kvS20/45/VTT_hanyu3161.誰しも攻撃を受けた際には、反射的に急所を守ろうとするものです。kvS20/45/VTT_hanyu3162.その時、真っ先に動くのは…手。kvS20/45/VTT_hanyu3163.そして攻撃の時にも、当然手が主体となって動く」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3160", 256, TRUE);
+	OutputLine(NULL, "「いいえ。",
+			NULL, "「并非如此。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3161", 256, TRUE);
+	OutputLine(NULL, "誰しも攻撃を受けた際には、反射的に急所を守ろうとするものです。",
+			NULL, "任何人在受到攻击时，都会下意识地保护要害。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3162", 256, TRUE);
+	OutputLine(NULL, "その時、真っ先に動くのは…手。",
+			NULL, "那时最先动起来的是……手。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3163", 256, TRUE);
+	OutputLine(NULL, "そして攻撃の時にも、当然手が主体となって動く」",
+			NULL, "攻击时自然也是以手为主体来行动。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3164.「…つまり、手は攻守一体の器官で、常に人の意図に基づいて無意識下で動きます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3164", 256, TRUE);
+	OutputLine(NULL, "「…つまり、手は攻守一体の器官で、常に人の意図に基づいて無意識下で動きます」",
+			NULL, "「……也就是说，手是攻防一体的器官，始终会根据人的意图在无意识中行动。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3035.「…それで？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3035", 256, TRUE);
+	OutputLine(NULL, "「…それで？」",
+			NULL, "「……然后呢？」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3165.「しかし、それだけに人は、手自体を守ろうという意識が薄い。kvS20/45/VTT_hanyu3166.ゆえに攻撃を受けた際は、それから逃れたり、防いだりする反応が他の身体のどこよりも遅れてしまうものなのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3165", 256, TRUE);
+	OutputLine(NULL, "「しかし、それだけに人は、手自体を守ろうという意識が薄い。",
+			NULL, "「也正因如此，人对手本身的防护意识很薄弱。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3166", 256, TRUE);
+	OutputLine(NULL, "ゆえに攻撃を受けた際は、それから逃れたり、防いだりする反応が他の身体のどこよりも遅れてしまうものなのです」",
+			NULL, "所以受到攻击时，躲避或防御的反应会比身体其他部位都慢。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1a_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS20/47/VTT_ouka3036.「でも、…動いているものに攻撃を当てるのは、難しいと思うけど」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s20/47/vtt_ouka3036", 256, TRUE);
+	OutputLine(NULL, "「でも、…動いているものに攻撃を当てるのは、難しいと思うけど」",
+			NULL, "「可是……要打中正在动的东西，我觉得很难。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS20/45/VTT_hanyu3167.「それでも、その動きの軌道は途中で容易に変えることができないので、予測点をつけやすいのです。kvS20/45/VTT_hanyu3168.だから刺突の時は、まず手を――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3167", 256, TRUE);
+	OutputLine(NULL, "「それでも、その動きの軌道は途中で容易に変えることができないので、予測点をつけやすいのです。",
+			NULL, "「即便如此，动作的轨道也很难在途中轻易改变，所以容易预判落点。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s20/45/vtt_hanyu3168", 256, TRUE);
+	OutputLine(NULL, "だから刺突の時は、まず手を——」",
+			NULL, "因此刺突时，先瞄准手——」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

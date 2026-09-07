@@ -1,0 +1,581 @@
+void main()
+{
+
+
+//*Yoigoshi TIPS 1
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//雛見沢へ
+
+	Wait( 500 );
+	PlayBGM( 1, "dsse03", 128, 0 );
+	DrawScene("white", 1000 );
+	DrawScene("background/kai_jyun", 1000 );
+	PlayBGM(2, "hm03_14", 128, 0);
+
+//三島rvS20/00/VTT_mishima3001.「あ、いたいた。kvS20/00/VTT_mishima3002.おーい、荒川ちゃん」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3001", 256, TRUE);
+	OutputLine(NULL, "「あ、いたいた。",
+			NULL, "「啊，找到了找到了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3002", 256, TRUE);
+	OutputLine(NULL, "おーい、荒川ちゃん」",
+			NULL, "喂——荒川小子。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3001.「……はい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3001", 256, TRUE);
+	OutputLine(NULL, "「……はい？」",
+			NULL, "「……是？」", Line_Normal);
+	ClearMessage();
+
+//rさっきコンビニで買ってきた夕刊のタブロイド誌から顔を上げて、俺は振り返る。声の主はスポーツ部で仲のいい三島記者だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さっきコンビニで買ってきた夕刊のタブロイド誌から顔を上げて、俺は振り返る。声の主はスポーツ部で仲のいい三島記者だった。",
+			NULL, "我从刚才在便利店买来的晚报小报上抬起头，转身看去。叫我的人是体育部那边关系不错的三岛记者。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3002.「あぁ三島さん、お疲れっす。kvS20/00/VTT_arakawa3003.…あれ？kvS20/00/VTT_arakawa3004.　確か今週いっぱいはシアトルって予定じゃ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3002", 256, TRUE);
+	OutputLine(NULL, "「あぁ三島さん、お疲れっす。",
+			NULL, "「啊，三岛先生，辛苦了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3003", 256, TRUE);
+	OutputLine(NULL, "…あれ？",
+			NULL, "……咦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3004", 256, TRUE);
+	OutputLine(NULL, "　確か今週いっぱいはシアトルって予定じゃ？」",
+			NULL, "我记得你这周应该都在西雅图吧？」", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3003.「うーん、そのつもりだったんだけどさ。kvS20/00/VTT_mishima3004.実はパスポートをうっかり更新していなくて…たははっ。kvS20/00/VTT_mishima3005.で、代わりに吉村に行ってもらうことになった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3003", 256, TRUE);
+	OutputLine(NULL, "「うーん、そのつもりだったんだけどさ。",
+			NULL, "「嗯，本来是这么打算的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3004", 256, TRUE);
+	OutputLine(NULL, "実はパスポートをうっかり更新していなくて…たははっ。",
+			NULL, "其实我一不小心忘了更新护照……哈哈。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3005", 256, TRUE);
+	OutputLine(NULL, "で、代わりに吉村に行ってもらうことになった」",
+			NULL, "所以改让吉村去了。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3005.「えー、吉村っすかぁ？kvS20/00/VTT_arakawa3006.　あいつの英語、結構怪しいのに…大丈夫ですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3005", 256, TRUE);
+	OutputLine(NULL, "「えー、吉村っすかぁ？",
+			NULL, "「咦——吉村吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3006", 256, TRUE);
+	OutputLine(NULL, "　あいつの英語、結構怪しいのに…大丈夫ですか？」",
+			NULL, "那家伙英语挺悬的……没问题吗？」", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3006.「なぁに、心配ないって。kvS20/00/VTT_mishima3007.取材の時にインタビュー内容も録音しておけって言っておいたからさ。kvS20/00/VTT_mishima3008.原稿と一緒に、こっちで確認するつもりだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3006", 256, TRUE);
+	OutputLine(NULL, "「なぁに、心配ないって。",
+			NULL, "「放心啦。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3007", 256, TRUE);
+	OutputLine(NULL, "取材の時にインタビュー内容も録音しておけって言っておいたからさ。",
+			NULL, "我跟他说采访时把内容也录下来。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3008", 256, TRUE);
+	OutputLine(NULL, "原稿と一緒に、こっちで確認するつもりだよ」",
+			NULL, "我打算跟稿子一起在这边确认。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3007.「いいのかなぁ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3007", 256, TRUE);
+	OutputLine(NULL, "「いいのかなぁ…」",
+			NULL, "「这样行吗……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rむしろ、吉村が不安なのは語学力よりも、取材度胸のほうだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "むしろ、吉村が不安なのは語学力よりも、取材度胸のほうだ。",
+			NULL, "比起语言能力，吉村真正让人担心的是采访胆量。", Line_Normal);
+	ClearMessage();
+
+//rおそらく上っ面の質問ばかり並べ立てて、面白みの無い話しか聞き出せないだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おそらく上っ面の質問ばかり並べ立てて、面白みの無い話しか聞き出せないだろう。",
+			NULL, "他大概只会罗列些表面问题，问出的也全是索然无味的话。", Line_Normal);
+	ClearMessage();
+
+//r…とはいえ、スポーツ記事は大選手の名前と写真だけ並べておけば、それなりの集客と話題性を望める。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…とはいえ、スポーツ記事は大選手の名前と写真だけ並べておけば、それなりの集客と話題性を望める。",
+			NULL, "……话虽如此，体育报道只要摆上大选手的名字和照片，就能有相应的吸引力和话题性。", Line_Normal);
+	ClearMessage();
+
+//rそこまで躍起になって、企画性を求めるものではないのかもしれない。…羨ましい話だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そこまで躍起になって、企画性を求めるものではないのかもしれない。…羨ましい話だ。",
+			NULL, "也许这个领域本来就不用那么拼命追求企划性。……真让人羡慕。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/kai_jyun", 1000 );
+
+//三島rvS20/00/VTT_mishima3009.「とりあえず俺は、明日から大阪だな。kvS20/00/VTT_mishima3010.亀田の２００勝達成も秒読みだし、そのあたりについてもじっくり聞いてくるよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3009", 256, TRUE);
+	OutputLine(NULL, "「とりあえず俺は、明日から大阪だな。",
+			NULL, "「总之我明天开始去大阪。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3010", 256, TRUE);
+	OutputLine(NULL, "亀田の２００勝達成も秒読みだし、そのあたりについてもじっくり聞いてくるよ」",
+			NULL, "龟田达成200胜也进入倒计时了，我会连那方面也好好问问。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3008.「亀田…ねぇ。kvS20/00/VTT_arakawa3009.『悲劇の剛速球投手』も、今じゃすっかり技巧派ですからね。kvS20/00/VTT_arakawa3010.ちょっとコントロールが悪くなると一気に崩れるから、見ているこっちが冷や冷やものですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3008", 256, TRUE);
+	OutputLine(NULL, "「亀田…ねぇ。",
+			NULL, "「龟田……啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3009", 256, TRUE);
+	OutputLine(NULL, "『悲劇の剛速球投手』も、今じゃすっかり技巧派ですからね。",
+			NULL, "『悲剧的刚速球投手』现在也彻底成技巧派了嘛。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3010", 256, TRUE);
+	OutputLine(NULL, "ちょっとコントロールが悪くなると一気に崩れるから、見ているこっちが冷や冷やものですよ」",
+			NULL, "只要控球稍微变差就会一下子崩盘，看的人都提心吊胆。」", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3011.「それより、見たよ今月の『幽霊村大特集号』！kvS20/00/VTT_mishima3012.　ずいぶん懐かしい話題持ってきたじゃない、雛見沢村なんてさぁ～！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3011", 256, TRUE);
+	OutputLine(NULL, "「それより、見たよ今月の『幽霊村大特集号』！",
+			NULL, "「比起那个，我看了你这月的『幽灵村大特集号』。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3012", 256, TRUE);
+	OutputLine(NULL, "　ずいぶん懐かしい話題持ってきたじゃない、雛見沢村なんてさぁ～！」",
+			NULL, "你可真拿了个够老的话题出来啊，居然是雏见泽村~」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3011.「はは、懐かしいっていうか…俺のライフワークみたいなネタですからね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3011", 256, TRUE);
+	OutputLine(NULL, "「はは、懐かしいっていうか…俺のライフワークみたいなネタですからね」",
+			NULL, "「哈哈，与其说怀念……这题材更像我的毕生事业。」", Line_Normal);
+	ClearMessage();
+
+//rなにしろ、数あるオカルト関連の話題の中でも一番資料を集めて面白おかしく煮詰めてきた、とっておきのやつだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なにしろ、数あるオカルト関連の話題の中でも一番資料を集めて面白おかしく煮詰めてきた、とっておきのやつだ。",
+			NULL, "毕竟在众多灵异相关话题里，它是我收集资料最多、也最能加工得有趣的压箱底素材。", Line_Normal);
+	ClearMessage();
+
+//rその上、ネットでは時々思い出したように新説が立ち上がって話題になり、俺自身もまだ外部に出していない類を山ほど持っている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その上、ネットでは時々思い出したように新説が立ち上がって話題になり、俺自身もまだ外部に出していない類を山ほど持っている。",
+			NULL, "再加上网上时不时就会像突然想起它一样冒出新说法并引发话题，我自己手里也还握着成堆没拿出去的资料。", Line_Normal);
+	ClearMessage();
+
+//rゆえに一定期間を置けば『今さら』的な使い古し感もない、便利なネタだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆえに一定期間を置けば『今さら』的な使い古し感もない、便利なネタだった。",
+			NULL, "因此只要隔一段时间再拿出来，就不会有『现在还提这个』的陈旧感，是个好用的题材。", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3013.「俺が学生の頃だから、２０年くらい前か。kvS20/00/VTT_mishima3014.あの時は大騒ぎになったよなぁ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3013", 256, TRUE);
+	OutputLine(NULL, "「俺が学生の頃だから、２０年くらい前か。",
+			NULL, "「那还是我学生时代，差不多20年前吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3014", 256, TRUE);
+	OutputLine(NULL, "あの時は大騒ぎになったよなぁ」",
+			NULL, "当时闹得可大了。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3012.「雛見沢大災害、ですよね。kvS20/00/VTT_arakawa3013.俺もテレビで見ましたよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3012", 256, TRUE);
+	OutputLine(NULL, "「雛見沢大災害、ですよね。",
+			NULL, "「雏见泽大灾害，对吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3013", 256, TRUE);
+	OutputLine(NULL, "俺もテレビで見ましたよ」",
+			NULL, "我也在电视上看过。」", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	FadeOutBGM(2, 200, FALSE);
+	FadeOutBGM(1, 200, FALSE);
+	Negative( 500, FALSE );
+	DrawScene("background/oni1", 1000 );
+	PlayBGM(2, "hm06_25", 128, 0);
+
+//r…昭和５８年。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…昭和５８年。",
+			NULL, "……昭和58年。", Line_Normal);
+	ClearMessage();
+
+//r沼から湧き出した火山性の猛毒ガスによって、中部地方にあった寒村、雛見沢村に住まう村人２千人あまりが一晩にして全滅した自然災害…通称、『雛見沢大災害』。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "沼から湧き出した火山性の猛毒ガスによって、中部地方にあった寒村、雛見沢村に住まう村人２千人あまりが一晩にして全滅した自然災害…通称、『雛見沢大災害』。",
+			NULL, "由沼泽中喷出的火山性剧毒气体，导致位于中部地方的寒村雏见泽村两千多名村民一夜之间全灭的自然灾害……俗称『雏见泽大灾害』。", Line_Normal);
+	ClearMessage();
+
+//rそれだけでも世間を揺るがした一大ニュースだったが、その後、雛見沢村の住民の親戚筋に当たる人々が次々と怪死や、奇行に走るという事件が続発した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それだけでも世間を揺るがした一大ニュースだったが、その後、雛見沢村の住民の親戚筋に当たる人々が次々と怪死や、奇行に走るという事件が続発した。",
+			NULL, "这本身就是震动世间的大新闻，而在那之后，与雏见泽村居民有亲戚关系的人又接连离奇死亡，或做出怪异举动，引发了一连串事件。", Line_Normal);
+	ClearMessage();
+
+//rある者は、家族を巻き込んで無理心中。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ある者は、家族を巻き込んで無理心中。",
+			NULL, "有人拉上家人一同自杀。", Line_Normal);
+	ClearMessage();
+
+//rある者は、知人や周囲の人々を巻き込んで自殺。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ある者は、知人や周囲の人々を巻き込んで自殺。",
+			NULL, "有人连累熟人和身边的人后自杀。", Line_Normal);
+	ClearMessage();
+
+//rそのいずれもが、凶行を起こすとはとても思えないほど平凡で、平穏な暮らしを送ってきた普通の人々であったために、その異常な奇怪さは目立っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そのいずれもが、凶行を起こすとはとても思えないほど平凡で、平穏な暮らしを送ってきた普通の人々であったために、その異常な奇怪さは目立っていた。",
+			NULL, "他们每一个人，都是平凡到难以想象会犯下凶行、一直过着平稳生活的普通人，因此那份异常的怪异格外醒目。", Line_Normal);
+	ClearMessage();
+
+//rゆえに、一時は雛見沢出身者への差別、そして風評被害が深刻な社会問題にも発展して、国会にも取り上げられたほどだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆえに、一時は雛見沢出身者への差別、そして風評被害が深刻な社会問題にも発展して、国会にも取り上げられたほどだ。",
+			NULL, "因此，雏见泽出身者遭到的歧视与风评受害，一度发展成严重社会问题，甚至被拿到国会上讨论。", Line_Normal);
+	ClearMessage();
+
+//rそして、それらの事件を起こした人々は、皆一様に口を揃えて言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、それらの事件を起こした人々は、皆一様に口を揃えて言った。",
+			NULL, "而引发那些事件的人们，全都异口同声地说。", Line_Normal);
+	ClearMessage();
+
+//r『あれは自然災害ではない。kオヤシロさまの祟りだ』――と。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『あれは自然災害ではない。",
+			NULL, "『那不是自然灾害。", Line_WaitForInput);
+	OutputLine(NULL, "オヤシロさまの祟りだ』——と。",
+			NULL, "那是御社神大人的作祟』——。", Line_Normal);
+	ClearMessage();
+
+//rそして、それは赤の他人から人づてに聞いた、無責任で根拠のない噂ばかりではない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、それは赤の他人から人づてに聞いた、無責任で根拠のない噂ばかりではない。",
+			NULL, "而那并非全是从陌生人那里辗转听来的、不负责任又没有根据的传闻。", Line_Normal);
+	ClearMessage();
+
+//r現に俺の父親も、それを…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "現に俺の父親も、それを…。",
+			NULL, "实际上，我的父亲也曾经……", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "c", 0, 0, 1000 );
+	PlayBGM( 1, "dsse03", 128, 0 );
+	FadeFilm( 1000, FALSE );
+	DrawScene("background/kai_jyun", 500 );
+
+//三島rvS20/00/VTT_mishima3015.「不気味というか…奇妙な話だったよなぁ。kvS20/00/VTT_mishima3016.もっとも、俺はお前と違って幽霊は信じないクチだけど」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3015", 256, TRUE);
+	OutputLine(NULL, "「不気味というか…奇妙な話だったよなぁ。",
+			NULL, "「该说阴森吗……真是奇妙的事啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3016", 256, TRUE);
+	OutputLine(NULL, "もっとも、俺はお前と違って幽霊は信じないクチだけど」",
+			NULL, "不过嘛，我跟你不同，从来不信幽灵。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3014.「はっは、オカルトライターに向かってはっきり言ってくれますねぇ。kvS20/00/VTT_arakawa3015.…でも、近年になって祟り以外の説がネット上で騒がれるようになったんですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3014", 256, TRUE);
+	OutputLine(NULL, "「はっは、オカルトライターに向かってはっきり言ってくれますねぇ。",
+			NULL, "「哈哈，您还真敢当着灵异写手的面直说啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3015", 256, TRUE);
+	OutputLine(NULL, "…でも、近年になって祟り以外の説がネット上で騒がれるようになったんですよ」",
+			NULL, "……不过近几年，网上开始热议作祟以外的说法了。」", Line_Normal);
+	ClearMessage();
+
+//r曰く、『ガス災害は国家陰謀によるものだ』とか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "曰く、『ガス災害は国家陰謀によるものだ』とか。",
+			NULL, "例如，『瓦斯灾害是国家阴谋造成的』之类。", Line_Normal);
+	ClearMessage();
+
+//rまた曰く、『村の封鎖は宇宙人の襲来を隠すため』とか…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "また曰く、『村の封鎖は宇宙人の襲来を隠すため』とか…。",
+			NULL, "又例如，『封锁村子是为了隐藏外星人来袭』之类……", Line_Normal);
+	ClearMessage();
+
+//rどれもこれも、確固たる証拠はない。あるわけがない。それでも、それらの風評は雛見沢の一件を単なるオカルト的なものに止めない、不思議な興味をかきたてていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "どれもこれも、確固たる証拠はない。あるわけがない。それでも、それらの風評は雛見沢の一件を単なるオカルト的なものに止めない、不思議な興味をかきたてていた。",
+			NULL, "这些说法都缺乏确凿证据——当然不可能有。即便如此，这些传闻仍勾起了一种奇妙的兴趣，让雏见泽事件超出了单纯灵异话题的范畴。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3016.「中には『そりゃねぇだろ』的なものもありましたが、なかなかに信憑性がありましてね。kvS20/00/VTT_arakawa3017.オカルト説を支持する俺としては、ぜひともその真偽を確かめてみるべきかと思ってます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3016", 256, TRUE);
+	OutputLine(NULL, "「中には『そりゃねぇだろ』的なものもありましたが、なかなかに信憑性がありましてね。",
+			NULL, "「里面也有些『这也太扯了吧』的东西，不过有些还挺有可信度。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3017", 256, TRUE);
+	OutputLine(NULL, "オカルト説を支持する俺としては、ぜひともその真偽を確かめてみるべきかと思ってます」",
+			NULL, "作为支持灵异说的我，觉得很有必要去确认它们的真伪。」", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3017.「へぇ…。kvS20/00/VTT_mishima3018.って、確かめるって…まさか、お前？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3017", 256, TRUE);
+	OutputLine(NULL, "「へぇ…。",
+			NULL, "「哦……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3018", 256, TRUE);
+	OutputLine(NULL, "って、確かめるって…まさか、お前？」",
+			NULL, "等等，确认……难道你？」", Line_Normal);
+	ClearMessage();
+
+//rそこで、ようやく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そこで、ようやく。",
+			NULL, "直到这时。", Line_Normal);
+	ClearMessage();
+
+//r三島さんは俺の机の足元にナップザックが置かれているのに気付いて、不安げに俺を見た。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "三島さんは俺の机の足元にナップザックが置かれているのに気付いて、不安げに俺を見た。",
+			NULL, "三岛先生注意到我的桌脚边放着背包，神色不安地看向我。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3018.「ええ、ご推察どおりですよ。kvS20/00/VTT_arakawa3019.とにかく行ってみりゃ、何かわかるかなって。kvS20/00/VTT_arakawa3020.そんなわけで、ちょっくら明日から雛見沢まで行ってきますわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3018", 256, TRUE);
+	OutputLine(NULL, "「ええ、ご推察どおりですよ。",
+			NULL, "「对，正如您猜的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3019", 256, TRUE);
+	OutputLine(NULL, "とにかく行ってみりゃ、何かわかるかなって。",
+			NULL, "总之去一趟，说不定能弄明白点什么。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3020", 256, TRUE);
+	OutputLine(NULL, "そんなわけで、ちょっくら明日から雛見沢まで行ってきますわ」",
+			NULL, "就是这么回事，我明天就稍微跑一趟雏见泽。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//三島rvS20/00/VTT_mishima3019.「ええぇっ？！kvS20/00/VTT_mishima3020.　あ、明日ぁぁあぁっっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3019", 256, TRUE);
+	OutputLine(NULL, "「ええぇっ？！",
+			NULL, "「咦咦？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3020", 256, TRUE);
+	OutputLine(NULL, "　あ、明日ぁぁあぁっっ？！」",
+			NULL, "明、明天啊啊啊？！」", Line_Normal);
+	ClearMessage();
+
+//r三島さんが仰天したのも無理はない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "三島さんが仰天したのも無理はない。",
+			NULL, "三岛先生会大吃一惊也很正常。", Line_Normal);
+	ClearMessage();
+
+//rなにしろ急な思い立ちの上、『災害が起こった６月に行くのは危険だ』と自分でも記事にしておきながら、その６月に行こうと言い出したのだから…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なにしろ急な思い立ちの上、『災害が起こった６月に行くのは危険だ』と自分でも記事にしておきながら、その６月に行こうと言い出したのだから…。",
+			NULL, "毕竟我这是突然起意，而且自己明明在文章里写过『灾害发生的6月前往很危险』，却偏偏说要在这个6月去……", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3021.「お、おいおいっ！kvS20/00/VTT_mishima3022.　今が何月かわかって、行くって言ってるのか？！kvS20/00/VTT_mishima3023.　こんな時期に行って、何かあっても知らねーぞ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3021", 256, TRUE);
+	OutputLine(NULL, "「お、おいおいっ！",
+			NULL, "「喂、喂喂！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3022", 256, TRUE);
+	OutputLine(NULL, "　今が何月かわかって、行くって言ってるのか？！",
+			NULL, "你知道现在是几月，还说要去吗？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3023", 256, TRUE);
+	OutputLine(NULL, "　こんな時期に行って、何かあっても知らねーぞ！！」",
+			NULL, "这种时期跑过去，出了什么事我可管不了啊！！」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3021.「なーに言ってんですか。kvS20/00/VTT_arakawa3022.幽霊を信じないってたった今言った、三島さんらしくもない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3021", 256, TRUE);
+	OutputLine(NULL, "「なーに言ってんですか。",
+			NULL, "「您在说什么呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3022", 256, TRUE);
+	OutputLine(NULL, "幽霊を信じないってたった今言った、三島さんらしくもない」",
+			NULL, "刚才才说自己不信幽灵，这话可不像三岛先生的风格。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3023.「それに、オカルトのネタを求めるライターとしては、一番何かありそうな時に行くのが正しいジャーナリズムのあり方だと思いますがね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3023", 256, TRUE);
+	OutputLine(NULL, "「それに、オカルトのネタを求めるライターとしては、一番何かありそうな時に行くのが正しいジャーナリズムのあり方だと思いますがね？」",
+			NULL, "「而且，作为搜寻灵异题材的撰稿人，挑最可能出事的时候前往，我觉得这才算真正的记者精神吧？」", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3024.「ま、まぁそうだけどさ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3024", 256, TRUE);
+	OutputLine(NULL, "「ま、まぁそうだけどさ…」",
+			NULL, "「也、也是啦……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3024.「とりあえず、ちゃんとデスク経由で編集長の了解済みで、経費も出るそうですから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3024", 256, TRUE);
+	OutputLine(NULL, "「とりあえず、ちゃんとデスク経由で編集長の了解済みで、経費も出るそうですから」",
+			NULL, "「总之，我已经经由主任得到总编辑的许可，听说经费也会报。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3025.「それでもまぁ、万が一俺が帰ってこなかったら『鬼隠し』にでも遭ったと思ってネタにしてくださいって言っておきましたし…なんつって」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3025", 256, TRUE);
+	OutputLine(NULL, "「それでもまぁ、万が一俺が帰ってこなかったら『鬼隠し』にでも遭ったと思ってネタにしてくださいって言っておきましたし…なんつって」",
+			NULL, "「我还说了，万一我回不来，就当我遭遇了『鬼隐』，拿去写成素材吧……开玩笑的。」", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3025.「笑えねぇよ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3025", 256, TRUE);
+	OutputLine(NULL, "「笑えねぇよ…」",
+			NULL, "「这笑不出来啊……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3026.「…おっと、もうこんな時間か。kvS20/00/VTT_arakawa3027.それじゃ俺、明日の準備がありますんで、お先です」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3026", 256, TRUE);
+	OutputLine(NULL, "「…おっと、もうこんな時間か。",
+			NULL, "「……哎呀，已经这个时间了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3027", 256, TRUE);
+	OutputLine(NULL, "それじゃ俺、明日の準備がありますんで、お先です」",
+			NULL, "那我还要准备明天的事，就先走了。」", Line_Normal);
+	ClearMessage();
+
+//三島rvS20/00/VTT_mishima3026.「あ、荒川ちゃんっ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>三島</color>", NULL, "<color=#f5e6d3>三岛</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_mishima3026", 256, TRUE);
+	OutputLine(NULL, "「あ、荒川ちゃんっ…！」",
+			NULL, "「荒、荒川小子……！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rひらひらと手を振って、心配げに見送る三島さんを尻目に俺は編集部を出て行った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ひらひらと手を振って、心配げに見送る三島さんを尻目に俺は編集部を出て行った。",
+			NULL, "我轻轻挥着手，在三岛先生担心的目送中走出了编辑部。", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+//r村民２千人あまりが死亡したほどの大規模なガス災害だったとはいえ、２０年以上も立ち入り禁止になっていた廃村、雛見沢村…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "村民２千人あまりが死亡したほどの大規模なガス災害だったとはいえ、２０年以上も立ち入り禁止になっていた廃村、雛見沢村…。",
+			NULL, "尽管那是造成两千多名村民死亡的大规模瓦斯灾害，雏见泽村依然是一个被禁止进入二十多年之久的废村……", Line_Normal);
+	ClearMessage();
+
+//r三島さんの言う通り、本当に幽霊が出てくるかどうかは正直、半信半疑だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "三島さんの言う通り、本当に幽霊が出てくるかどうかは正直、半信半疑だ。",
+			NULL, "正如三岛先生所说，那里是否真的会出现幽灵，我说实话半信半疑。", Line_Normal);
+	ClearMessage();
+
+//rただ、単なる幽霊村と片付けるには、足りない何かがあるかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、単なる幽霊村と片付けるには、足りない何かがあるかもしれない。",
+			NULL, "不过，也许有些东西让它无法被简单归为幽灵村。", Line_Normal);
+	ClearMessage();
+
+//rそして、俺が集めた資料だけではつかみきれなかった、超常的なオカルト話もひょっとしたら転がっているかもしれない…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、俺が集めた資料だけではつかみきれなかった、超常的なオカルト話もひょっとしたら転がっているかもしれない…。",
+			NULL, "而且，也许还能在那里找到仅凭我收集到的资料无法掌握的、超常的灵异故事……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/kai_jyun", 1000 );
+
+//荒川rvS20/00/VTT_arakawa3028.「…さて、鬼が出るか蛇が出るか。kvS20/00/VTT_arakawa3029.まさに、神のみぞ知るってやつだな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3028", 256, TRUE);
+	OutputLine(NULL, "「…さて、鬼が出るか蛇が出るか。",
+			NULL, "「……好了，是鬼出来，还是蛇出来。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3029", 256, TRUE);
+	OutputLine(NULL, "まさに、神のみぞ知るってやつだな」",
+			NULL, "这可真是只有神知道了。」", Line_Normal);
+	ClearMessage();
+
+//r…そういえば、雛見沢は昔、鬼の住む村って言われていたんだっけ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そういえば、雛見沢は昔、鬼の住む村って言われていたんだっけ。",
+			NULL, "……说起来，雏见泽从前好像被称作鬼居住的村子。", Line_Normal);
+	ClearMessage();
+
+//rそういう意味では、何が出てきてもおかしくないってやつだな。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そういう意味では、何が出てきてもおかしくないってやつだな。",
+			NULL, "从这个意义上说，出现什么都不奇怪。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//荒川rvS20/00/VTT_arakawa3030.「……ん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3030", 256, TRUE);
+	OutputLine(NULL, "「……ん？」",
+			NULL, "「……嗯？」", Line_Normal);
+	ClearMessage();
+
+//rその時、ジーパンの後ろポケットに入れた携帯電話がブルって、着信を告げる。開いて画面を見ると、相手は今日外出していた週刊セブンの編集長だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、ジーパンの後ろポケットに入れた携帯電話がブルって、着信を告げる。開いて画面を見ると、相手は今日外出していた週刊セブンの編集長だった。",
+			NULL, "就在这时，放在牛仔裤后口袋里的手机震动起来，通知我有来电。打开屏幕一看，对方是今天外出的《周刊七号》总编。", Line_Normal);
+	ClearMessage();
+
+//r珍しいな…編集長から直々に連絡なんて。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "珍しいな…編集長から直々に連絡なんて。",
+			NULL, "真少见……总编居然亲自联系我。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS20/00/VTT_arakawa3031.「はい、もしもし。kvS20/00/VTT_arakawa3032.…え、同行者ですか？kvS20/00/VTT_arakawa3033.　ええまぁ、いいですけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3031", 256, TRUE);
+	OutputLine(NULL, "「はい、もしもし。",
+			NULL, "「喂，您好。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3032", 256, TRUE);
+	OutputLine(NULL, "…え、同行者ですか？",
+			NULL, "……咦，同行者吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_arakawa3033", 256, TRUE);
+	OutputLine(NULL, "　ええまぁ、いいですけど…」",
+			NULL, "嗯，倒是可以……」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

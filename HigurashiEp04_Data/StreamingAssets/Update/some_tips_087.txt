@@ -1,0 +1,510 @@
+void main()
+{
+
+//*TIPS 87
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//優しいお姉ちゃん
+
+	DrawSceneWithMask("background/ke_s2", "v_right", 0, 0, 1000 );
+	PlayBGM( 1, "semi", 128, 0 );
+
+//藤田rvS20/31/VTT_fujita3041.「…あ、南井さん。kvS20/31/VTT_fujita3042.どうしました？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3041", 256, TRUE);
+	OutputLine(NULL, "「…あ、南井さん。",
+			NULL, "「……啊，南井小姐。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3042", 256, TRUE);
+	OutputLine(NULL, "どうしました？」",
+			NULL, "怎么了？」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3001.「あはははは、藤田さん。kvS20/29/VTT_madoka3002.『南井さん』だとお姉ちゃんと一緒で、ややこしいでしょ？kvS20/29/VTT_madoka3003.　私は『まどか』でいいですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3001", 256, TRUE);
+	OutputLine(NULL, "「あはははは、藤田さん。",
+			NULL, "「啊哈哈哈哈，藤田先生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3002", 256, TRUE);
+	OutputLine(NULL, "『南井さん』だとお姉ちゃんと一緒で、ややこしいでしょ？",
+			NULL, "叫『南井小姐』会和姐姐混在一起，很麻烦吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3003", 256, TRUE);
+	OutputLine(NULL, "　私は『まどか』でいいですよ」",
+			NULL, "叫我『小圆』就可以了。」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3043.「あ、あはは…。kvS20/31/VTT_fujita3044.了解しました、まどかさん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3043", 256, TRUE);
+	OutputLine(NULL, "「あ、あはは…。",
+			NULL, "「啊，啊哈哈……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3044", 256, TRUE);
+	OutputLine(NULL, "了解しました、まどかさん」",
+			NULL, "明白了，小圆小姐」", Line_Normal);
+	ClearMessage();
+
+//r藤田さんは苦笑しながら、照れくさそうな顔で言い直す。別に『ちゃん』付けでも私は一向に構わないんだけど、彼はそういう人だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "藤田さんは苦笑しながら、照れくさそうな顔で言い直す。別に『ちゃん』付けでも私は一向に構わないんだけど、彼はそういう人だった。",
+			NULL, "藤田先生苦笑着，有些难为情地改了口。其实叫我『小圆酱』也完全没关系，但他就是这样的人。", Line_Normal);
+	ClearMessage();
+
+//r…薫さんとの婚約発表以来、この署内で私に変な目を向けて陰口を叩く人の割合はたぶん、圧倒的に大多数だろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…薫さんとの婚約発表以来、この署内で私に変な目を向けて陰口を叩く人の割合はたぶん、圧倒的に大多数だろう。",
+			NULL, "……自从和薰先生公布订婚以来，这个署里用奇怪眼神看我、在背后说闲话的人，恐怕占了压倒性的多数。", Line_Normal);
+	ClearMessage();
+
+//rただ、その中でもこの人は間違いなく少数派にいるってことは、保証は何もないけど確信があった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、その中でもこの人は間違いなく少数派にいるってことは、保証は何もないけど確信があった。",
+			NULL, "只是，在那些人之中，这个人毫无疑问属于少数派。虽然没有任何保证，我却有这样的确信。", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3004.「お姉ちゃん…じゃなかった、南井警部はいますか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3004", 256, TRUE);
+	OutputLine(NULL, "「お姉ちゃん…じゃなかった、南井警部はいますか？」",
+			NULL, "「姐姐……不对，南井警部在吗？」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3045.「南井さんですか？kvS20/31/VTT_fujita3046.　…今、外回りに出ています。kvS20/31/VTT_fujita3047.ちょっと一人になりたいって言ってましたから、帰りは…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3045", 256, TRUE);
+	OutputLine(NULL, "「南井さんですか？",
+			NULL, "「南井小姐吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3046", 256, TRUE);
+	OutputLine(NULL, "　…今、外回りに出ています。",
+			NULL, "……她现在出去跑外勤了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3047", 256, TRUE);
+	OutputLine(NULL, "ちょっと一人になりたいって言ってましたから、帰りは…」",
+			NULL, "她说想一个人待一会儿，回来时间就……」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3005.「…そうですか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3005", 256, TRUE);
+	OutputLine(NULL, "「…そうですか」",
+			NULL, "「……这样啊」", Line_Normal);
+	ClearMessage();
+
+//rそれを聞いて、私は誰もいない次長席を見る。…なんとなく寂しげに映るのは、私が事件のことを聞いたからだろうか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それを聞いて、私は誰もいない次長席を見る。…なんとなく寂しげに映るのは、私が事件のことを聞いたからだろうか。",
+			NULL, "听到这话，我看向空无一人的次长席。……那位置莫名显得寂寞，是因为我听说了事件的事吗？", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3006.「藤田さんにも、色々お世話になったみたいですね。kvS20/29/VTT_madoka3007.…ありがとうございます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3006", 256, TRUE);
+	OutputLine(NULL, "「藤田さんにも、色々お世話になったみたいですね。",
+			NULL, "「看来姐姐也受了藤田先生不少照顾。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3007", 256, TRUE);
+	OutputLine(NULL, "…ありがとうございます」",
+			NULL, "……谢谢您」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3048.「いえ、自分は別に。kvS20/31/VTT_fujita3049.むしろ、南井さんのほうが…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3048", 256, TRUE);
+	OutputLine(NULL, "「いえ、自分は別に。",
+			NULL, "「哪里，我没做什么。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3049", 256, TRUE);
+	OutputLine(NULL, "むしろ、南井さんのほうが…」",
+			NULL, "倒是南井小姐她……」", Line_Normal);
+	ClearMessage();
+
+//r…昨日の夕方に事件現場から戻ってきたお姉ちゃんは、事情を知らなかった私の目から見ても、…痛々しいほどにやつれきっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…昨日の夕方に事件現場から戻ってきたお姉ちゃんは、事情を知らなかった私の目から見ても、…痛々しいほどにやつれきっていた。",
+			NULL, "……昨天傍晚从案发现场回来的姐姐，就连不知内情的我看来，也憔悴得令人心疼。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM( 1, 200, FALSE  );
+	PlayBGM( 2, "hm05_20", 128, 0 );
+
+//まどかrvS20/29/VTT_madoka3008.「…お姉ちゃん？kvS20/29/VTT_madoka3009.　どうし——」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3008", 256, TRUE);
+	OutputLine(NULL, "「…お姉ちゃん？",
+			NULL, "「……姐姐？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3009", 256, TRUE);
+	OutputLine(NULL, "　どうし——」",
+			NULL, "怎么——」", Line_Normal);
+	ClearMessage();
+
+//巴rvS20/28/VTT_tomoe3114.「——————」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#9d7f69>巴</color>", NULL, "<color=#9d7f69>巴</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 28, "ps3/s20/28/vtt_tomoe3114", 256, TRUE);
+	OutputLine(NULL, "「——————」",
+			NULL, "「——」", Line_Normal);
+	ClearMessage();
+
+//r廊下でそう呼びかけると、…お姉ちゃんはやさしく私の肩を叩いて微笑んでから、…無言で刑事一課のフロアに引き上げていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "廊下でそう呼びかけると、…お姉ちゃんはやさしく私の肩を叩いて微笑んでから、…無言で刑事一課のフロアに引き上げていった。",
+			NULL, "我在走廊里这样喊她，姐姐只是温柔地拍了拍我的肩膀，微笑之后，就一言不发地回到刑事一课的楼层去了。", Line_Normal);
+	ClearMessage();
+
+//rいつもならこんな時は、『職場でお姉ちゃんと呼ぶな』と、わざと堅苦しさを保って厳しく言い返してくるのに…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いつもならこんな時は、『職場でお姉ちゃんと呼ぶな』と、わざと堅苦しさを保って厳しく言い返してくるのに…。",
+			NULL, "平时这种时候，她总会故意摆出严肃的样子，厉声回我一句『在单位别叫我姐姐』……", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3010.「亡くなられた娘さんって、…お姉ちゃんと、親しかったんですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3010", 256, TRUE);
+	OutputLine(NULL, "「亡くなられた娘さんって、…お姉ちゃんと、親しかったんですか？」",
+			NULL, "「去世的那位姑娘……和姐姐很亲近吗？」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3050.「それほどってわけじゃないんですが…。kvS20/31/VTT_fujita3051.色々情報を提供してもらったりして、何度か顔を合わせていましたからね。kvS20/31/VTT_fujita3052.まして、最期はあんな死に方じゃ、…やりきれないですよ。kvS20/31/VTT_fujita3053.どこかで気付いて、最悪の事態も防げたんじゃないか、ってね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3050", 256, TRUE);
+	OutputLine(NULL, "「それほどってわけじゃないんですが…。",
+			NULL, "「也说不上特别亲近……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3051", 256, TRUE);
+	OutputLine(NULL, "色々情報を提供してもらったりして、何度か顔を合わせていましたからね。",
+			NULL, "只是她给我们提供过各种情报，所以见过几次面。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3052", 256, TRUE);
+	OutputLine(NULL, "まして、最期はあんな死に方じゃ、…やりきれないですよ。",
+			NULL, "更何况最后是那种死法……实在让人受不了。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3053", 256, TRUE);
+	OutputLine(NULL, "どこかで気付いて、最悪の事態も防げたんじゃないか、ってね…」",
+			NULL, "我们会想，也许在哪里察觉到的话，就能避免最坏的结果……」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3011.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3011", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rわかる。…お姉ちゃんは、そういう人だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "わかる。…お姉ちゃんは、そういう人だ。",
+			NULL, "我明白。……姐姐就是那样的人。", Line_Normal);
+	ClearMessage();
+
+//r全知全能なんてありえないとわかっていながら、…そうありたいと願う矛盾を抱えて職務を遂行しようとする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "全知全能なんてありえないとわかっていながら、…そうありたいと願う矛盾を抱えて職務を遂行しようとする。",
+			NULL, "她明知没人可能全知全能，却仍怀着想要做到一切的矛盾，努力履行自己的职责。", Line_Normal);
+	ClearMessage();
+
+//rそしてそれが果たしえなかったとき、自責の思いに打ちひしがれて、…ものすごく、落ち込むんだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そしてそれが果たしえなかったとき、自責の思いに打ちひしがれて、…ものすごく、落ち込むんだ。",
+			NULL, "而当她没能做到时，就会被自责压垮……变得非常消沉。", Line_Normal);
+	ClearMessage();
+
+//r刑事は、神様じゃない。だから誰も、お姉ちゃんのことを責めたりなんかしないだろう。…それなのに、彼女は気持ちを割り切ることができない、…本当に不器用な人だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "刑事は、神様じゃない。だから誰も、お姉ちゃんのことを責めたりなんかしないだろう。…それなのに、彼女は気持ちを割り切ることができない、…本当に不器用な人だった。",
+			NULL, "刑警不是神，所以谁也不会责怪姐姐。……可即便如此，她还是无法想开，真是个笨拙的人。", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3012.「……藤田さん。kvS20/29/VTT_madoka3013.私、時々思うんです。kvS20/29/VTT_madoka3014.お姉ちゃんって本当は、…刑事に向いてないんじゃないかって」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3012", 256, TRUE);
+	OutputLine(NULL, "「……藤田さん。",
+			NULL, "「……藤田先生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3013", 256, TRUE);
+	OutputLine(NULL, "私、時々思うんです。",
+			NULL, "我有时会想。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3014", 256, TRUE);
+	OutputLine(NULL, "お姉ちゃんって本当は、…刑事に向いてないんじゃないかって」",
+			NULL, "姐姐其实并不适合当刑警吧」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3054.「まどかさん…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3054", 256, TRUE);
+	OutputLine(NULL, "「まどかさん…？」",
+			NULL, "「小圆小姐……？」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3015.「今、この垣内署の管轄内だけで、どれくらいの人が死んでると思います？kvS20/29/VTT_madoka3016.　どれだけの人が犯罪をしでかしているか、知っていますか？kvS20/29/VTT_madoka3017.　十や二十、…それこそ百でもおさまらないくらいたくさんの人が悲しんで、苦しんで、…死んでいます。kvS20/29/VTT_madoka3018.そのひとつひとつに同情したり、後悔なんてしていたら、…心が持ちませんよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3015", 256, TRUE);
+	OutputLine(NULL, "「今、この垣内署の管轄内だけで、どれくらいの人が死んでると思います？",
+			NULL, "「现在，仅仅在垣内署管辖范围内，你觉得有多少人死去了？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3016", 256, TRUE);
+	OutputLine(NULL, "　どれだけの人が犯罪をしでかしているか、知っていますか？",
+			NULL, "又有多少人犯下了罪，你知道吗？", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3017", 256, TRUE);
+	OutputLine(NULL, "　十や二十、…それこそ百でもおさまらないくらいたくさんの人が悲しんで、苦しんで、…死んでいます。",
+			NULL, "十个、二十个……甚至一百个都打不住。有那么多人悲伤、痛苦……乃至死去。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3018", 256, TRUE);
+	OutputLine(NULL, "そのひとつひとつに同情したり、後悔なんてしていたら、…心が持ちませんよ」",
+			NULL, "要是对每一件事都同情、都后悔，心会撑不住的」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3055.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3055", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3019.「それに警察だって人間だから、…万能じゃないんです。kvS20/29/VTT_madoka3020.間違いだってあるし、できないこともある。kvS20/29/VTT_madoka3021.それなのにお姉ちゃんは、いつもみんなに応えようと頑張って、あっちこっちに動き回って、kvS20/29/VTT_madoka3022.…その分ボロボロになって、傷ついてる。kvS20/29/VTT_madoka3023.もっと割り切ってやらなきゃ、…ほんとに壊れちゃうのに…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3019", 256, TRUE);
+	OutputLine(NULL, "「それに警察だって人間だから、…万能じゃないんです。",
+			NULL, "「而且警察也是人，并非万能。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3020", 256, TRUE);
+	OutputLine(NULL, "間違いだってあるし、できないこともある。",
+			NULL, "会犯错，也有做不到的事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3021", 256, TRUE);
+	OutputLine(NULL, "それなのにお姉ちゃんは、いつもみんなに応えようと頑張って、あっちこっちに動き回って、",
+			NULL, "可姐姐总想回应所有人，拼命努力，到处奔走，", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3022", 256, TRUE);
+	OutputLine(NULL, "…その分ボロボロになって、傷ついてる。",
+			NULL, "……结果自己变得遍体鳞伤。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3023", 256, TRUE);
+	OutputLine(NULL, "もっと割り切ってやらなきゃ、…ほんとに壊れちゃうのに…」",
+			NULL, "明明再不学会看开一些，她真的会垮掉……」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3056.「…まどかさん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3056", 256, TRUE);
+	OutputLine(NULL, "「…まどかさん」",
+			NULL, "「……小圆小姐」", Line_Normal);
+	ClearMessage();
+
+//r幼い時から、正義感は周囲の誰よりも強い人だった。それは、死んだ父さんがそうだったから、その背中を一番近くで見続けてきた影響だと思う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "幼い時から、正義感は周囲の誰よりも強い人だった。それは、死んだ父さんがそうだったから、その背中を一番近くで見続けてきた影響だと思う。",
+			NULL, "她从小就是比周围任何人都更有正义感的人。我想，那是因为已故的父亲也是如此，而她始终在离他最近的地方望着他的背影。", Line_Normal);
+	ClearMessage();
+
+//r私だって、かつては誰にも、どんなことにも真摯でひたむきな両親に憧れていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私だって、かつては誰にも、どんなことにも真摯でひたむきな両親に憧れていた。",
+			NULL, "我曾经也憧憬过无论面对谁、面对什么事都真诚又专注的父母。", Line_Normal);
+	ClearMessage();
+
+//r…だけど、そのせいでいつも貧乏くじを引かされているふたりの姿を見ているうち、反発を覚えるようになっていったんだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…だけど、そのせいでいつも貧乏くじを引かされているふたりの姿を見ているうち、反発を覚えるようになっていったんだ。",
+			NULL, "……可是，看着他们总因为这样而吃亏，我心里渐渐生出了反感。", Line_Normal);
+	ClearMessage();
+
+//rそれに私は、…今までことあるごとに落ち込んだり、泣かないまでも悲しんでいる姉の姿を間近で、ずっと見てきている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに私は、…今までことあるごとに落ち込んだり、泣かないまでも悲しんでいる姉の姿を間近で、ずっと見てきている。",
+			NULL, "而且我至今为止，也一直在近旁看着姐姐每逢有事就消沉，即使不哭也悲伤的模样。", Line_Normal);
+	ClearMessage();
+
+//r…だから、痛ましい彼女を姿を目の当たりにするたび私は余計なことを教えてくれたものだと、両親に恨み言の一つもいいたい気分だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…だから、痛ましい彼女を姿を目の当たりにするたび私は余計なことを教えてくれたものだと、両親に恨み言の一つもいいたい気分だった。",
+			NULL, "……所以每当亲眼看到她那副令人心疼的模样，我都想埋怨父母一句：为什么偏偏要教给她这些多余的东西。", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3024.「…お姉ちゃんは、気が優しすぎるんです。kvS20/29/VTT_madoka3025.口とかはきついのに、相手のことを余計に考えちゃって。kvS20/29/VTT_madoka3026.せっかく必死に頑張って、試験に合格してエリートの道に進む資格を手に入れたのに、…無駄遣いしちゃってる気がします。kvS20/29/VTT_madoka3027.偉い刑事さんになったんだから、もっと仕事を割り切って考えて、できる範囲内で犯罪者を取り締まっていけば、勝手に出世できるのになぁ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3024", 256, TRUE);
+	OutputLine(NULL, "「…お姉ちゃんは、気が優しすぎるんです。",
+			NULL, "「……姐姐太温柔了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3025", 256, TRUE);
+	OutputLine(NULL, "口とかはきついのに、相手のことを余計に考えちゃって。",
+			NULL, "嘴上明明那么严厉，却总会过度替别人着想。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3026", 256, TRUE);
+	OutputLine(NULL, "せっかく必死に頑張って、試験に合格してエリートの道に進む資格を手に入れたのに、…無駄遣いしちゃってる気がします。",
+			NULL, "她好不容易拼命努力，通过考试，取得了走上精英道路的资格，我却觉得她在白白浪费这一切。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3027", 256, TRUE);
+	OutputLine(NULL, "偉い刑事さんになったんだから、もっと仕事を割り切って考えて、できる範囲内で犯罪者を取り締まっていけば、勝手に出世できるのになぁ…」",
+			NULL, "既然已经成了不起的刑警，就该把工作看开一些，只在能力范围内查办罪犯，这样自然就能一路升职了……」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3057.「はははは、ずいぶんな言われようですねぇ。kvS20/31/VTT_fujita3058.それじゃあ俺たち警察は、自分の出世のことだけを考えて犯人を捕まえていけばいいんですか？kvS20/31/VTT_fujita3059.　加害者の事情とか、被害者の悲哀なんて考慮する必要は…ないんですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3057", 256, TRUE);
+	OutputLine(NULL, "「はははは、ずいぶんな言われようですねぇ。",
+			NULL, "「哈哈哈哈，这话说得可真狠啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3058", 256, TRUE);
+	OutputLine(NULL, "それじゃあ俺たち警察は、自分の出世のことだけを考えて犯人を捕まえていけばいいんですか？",
+			NULL, "那么我们警察只要想着自己的升迁去抓犯人就行了吗？", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3059", 256, TRUE);
+	OutputLine(NULL, "　加害者の事情とか、被害者の悲哀なんて考慮する必要は…ないんですか？」",
+			NULL, "加害者的处境，或者被害者的悲哀，都没有考虑的必要吗？」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3028.「あっ、…ご、ごめんなさい。kvS20/29/VTT_madoka3029.そういうつもりじゃ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3028", 256, TRUE);
+	OutputLine(NULL, "「あっ、…ご、ごめんなさい。",
+			NULL, "「啊……对、对不起。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3029", 256, TRUE);
+	OutputLine(NULL, "そういうつもりじゃ…」",
+			NULL, "我不是那个意思……」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3060.「いや、わかっています。わかるつもりです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3060", 256, TRUE);
+	OutputLine(NULL, "「いや、わかっています。わかるつもりです」",
+			NULL, "「不，我明白。我想我明白你的意思。」", Line_Normal);
+	ClearMessage();
+
+//r藤田さんはおどけながら、気にしていないとばかりに笑ってくれる。…そして、優しい表情で遠くを見つめながら言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "藤田さんはおどけながら、気にしていないとばかりに笑ってくれる。…そして、優しい表情で遠くを見つめながら言った。",
+			NULL, "藤田先生打着圆场，笑得像是一点也没放在心上。……然后，他带着温柔的表情望向远处说道。", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3061.「…確かに、南井さんはあんまり賢くないです。kvS20/31/VTT_fujita3062.ほんとに賢かったら、準キャリア組なのにこんな辺鄙な場所に飛ばされて、それでも一生懸命に働くなんてこと、絶対にできないと思いますからね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3061", 256, TRUE);
+	OutputLine(NULL, "「…確かに、南井さんはあんまり賢くないです。",
+			NULL, "「……确实，南井小姐不怎么精明。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3062", 256, TRUE);
+	OutputLine(NULL, "ほんとに賢かったら、準キャリア組なのにこんな辺鄙な場所に飛ばされて、それでも一生懸命に働くなんてこと、絶対にできないと思いますからね」",
+			NULL, "要是真的精明，明明出身准精英组，却被调到这种偏僻地方，还能照样拼命工作，这种事绝对做不到。」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3030.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3030", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3063.「ですけど、…あ、内緒にしててくださいよ？kvS20/31/VTT_fujita3064.　知ったらきっと、怒ると思うから。kvS20/31/VTT_fujita3065.…ああいう性格の人だから、俺たちも忌憚なくボスと仰いで、頼りにできるんですよ。kvS20/31/VTT_fujita3066.確かにちょっと危なっかしいけど、真面目で一途で、kvS20/31/VTT_fujita3067.南井さんの正義感はほんと、見ていて清々しいですから。kvS20/31/VTT_fujita3068.…逆に俺はああいう人こそ、早く偉くなってトップに立ってもらいたいと思いますけどねぇ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3063", 256, TRUE);
+	OutputLine(NULL, "「ですけど、…あ、内緒にしててくださいよ？",
+			NULL, "「可是……啊，请替我保密哦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3064", 256, TRUE);
+	OutputLine(NULL, "　知ったらきっと、怒ると思うから。",
+			NULL, "她知道了肯定会生气。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3065", 256, TRUE);
+	OutputLine(NULL, "…ああいう性格の人だから、俺たちも忌憚なくボスと仰いで、頼りにできるんですよ。",
+			NULL, "……正因为她是那种性格，我们才能打心底把她奉为老大，放心地依靠她。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3066", 256, TRUE);
+	OutputLine(NULL, "確かにちょっと危なっかしいけど、真面目で一途で、",
+			NULL, "确实有点让人放心不下，但她认真又专注，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3067", 256, TRUE);
+	OutputLine(NULL, "南井さんの正義感はほんと、見ていて清々しいですから。",
+			NULL, "南井小姐的正义感，真的让人看着都觉得畅快。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3068", 256, TRUE);
+	OutputLine(NULL, "…逆に俺はああいう人こそ、早く偉くなってトップに立ってもらいたいと思いますけどねぇ」",
+			NULL, "……反过来说，我倒觉得正是那样的人，才应该快点升上去站到顶端」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3031.「…藤田さん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3031", 256, TRUE);
+	OutputLine(NULL, "「…藤田さん」",
+			NULL, "「……藤田先生」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3069.「それに——」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3069", 256, TRUE);
+	OutputLine(NULL, "「それに——」",
+			NULL, "「而且——」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3032.「…それに？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3032", 256, TRUE);
+	OutputLine(NULL, "「…それに？」",
+			NULL, "「……而且？」", Line_Normal);
+	ClearMessage();
+
+//藤田rvS20/31/VTT_fujita3070.「いや、やっぱりまどかさんは、南井さんの妹なんだな、って。kvS20/31/VTT_fujita3071.そういうふうに相手のことを考えてあれこれ悩むところなんて、そっくりですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#54636b>藤田</color>", NULL, "<color=#54636b>藤田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3070", 256, TRUE);
+	OutputLine(NULL, "「いや、やっぱりまどかさんは、南井さんの妹なんだな、って。",
+			NULL, "「不，我只是觉得，小圆小姐果然是南井小姐的妹妹啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 31, "ps3/s20/31/vtt_fujita3071", 256, TRUE);
+	OutputLine(NULL, "そういうふうに相手のことを考えてあれこれ悩むところなんて、そっくりですよ」",
+			NULL, "像这样为别人着想、为各种事烦恼的地方，简直一模一样」", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3033.「……似ていませんよ。kvS20/29/VTT_madoka3034.私はあの人みたいに戦わずに、…逃げちゃったから。kvS20/29/VTT_madoka3035.今さら追いつけないし、…そんな気も、ないです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3033", 256, TRUE);
+	OutputLine(NULL, "「……似ていませんよ。",
+			NULL, "「……才不像。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3034", 256, TRUE);
+	OutputLine(NULL, "私はあの人みたいに戦わずに、…逃げちゃったから。",
+			NULL, "我没有像她那样战斗，而是逃走了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3035", 256, TRUE);
+	OutputLine(NULL, "今さら追いつけないし、…そんな気も、ないです」",
+			NULL, "现在已经追不上她了……我也没有那个打算。」", Line_Normal);
+	ClearMessage();
+
+//r……だから、心が痛むんだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……だから、心が痛むんだ。",
+			NULL, "……所以，心才会痛。", Line_Normal);
+	ClearMessage();
+
+//rお姉ちゃんは、今まで本当に頑張って、努力して、…誰よりも幸せになる資格を手に入れた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お姉ちゃんは、今まで本当に頑張って、努力して、…誰よりも幸せになる資格を手に入れた。",
+			NULL, "姐姐一直以来真的很努力、很拼命……她比任何人都更有资格获得幸福。", Line_Normal);
+	ClearMessage();
+
+//rだから、もうその恩恵に心と身体を休めたって、誰も文句なんて言わない。言わせない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから、もうその恩恵に心と身体を休めたって、誰も文句なんて言わない。言わせない。",
+			NULL, "所以她现在就算让身心享受那份成果、好好休息，也不会有人抱怨。我也不会让别人抱怨。", Line_Normal);
+	ClearMessage();
+
+//rそれなのに、あの人はいまだに全力疾走のまま、道すがらたくさんの困難と苦労を背負い込んでしまっている…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それなのに、あの人はいまだに全力疾走のまま、道すがらたくさんの困難と苦労を背負い込んでしまっている…。",
+			NULL, "可她至今仍在全力奔跑，一路把无数困难和辛劳揽到自己肩上……", Line_Normal);
+	ClearMessage();
+
+//まどかrvS20/29/VTT_madoka3036.「……似てほしくない。kvS20/29/VTT_madoka3037.お姉ちゃんはお父さんのように、なってほしくない。kvS20/29/VTT_madoka3038.努力の数だけ頑張った人が損をするのは、…絶対、間違ってます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a4856e>まどか</color>", NULL, "<color=#a4856e>小圆</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3036", 256, TRUE);
+	OutputLine(NULL, "「……似てほしくない。",
+			NULL, "「……我不希望她像那个人。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3037", 256, TRUE);
+	OutputLine(NULL, "お姉ちゃんはお父さんのように、なってほしくない。",
+			NULL, "我不想让姐姐变得像爸爸。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 29, "ps3/s20/29/vtt_madoka3038", 256, TRUE);
+	OutputLine(NULL, "努力の数だけ頑張った人が損をするのは、…絶対、間違ってます」",
+			NULL, "越努力、越拼命的人反而越吃亏……这绝对是错的。」", Line_Normal);
+	ClearMessage();
+
+//r薫さんの肝いりで実現したという、垣内署への異動人事。…だけど、それが裏目に出てしまっているようで、余計に悲しかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "薫さんの肝いりで実現したという、垣内署への異動人事。…だけど、それが裏目に出てしまっているようで、余計に悲しかった。",
+			NULL, "这次调往垣内署，据说是薰先生极力促成的人事安排……可它似乎反而起了反效果，让我更加难过。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

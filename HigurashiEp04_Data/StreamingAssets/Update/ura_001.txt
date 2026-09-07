@@ -1,0 +1,1692 @@
+void main()
+{
+
+
+//*Miotsukushi Ura Day 1
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//澪尽し編・裏
+
+//#1 特捜と公安
+
+	ModPlayMovie("mv06");
+
+	DrawScene("white", 1000 );
+	PlayBGM( 1, "yoru", 128, 0 );
+	DrawScene("background/moon", 1000 );
+	Wait( 2000 );
+	DrawScene("black", 1000 );
+	DrawScene("background/tk_ryou1", 1000 );
+	PlayBGM(2, "hm01_07", 128, 0);
+	FadeOutBGM(1, 200, TRUE);
+
+//反町rvS14/00/VT4Bb_sorima1001.「おいおい、ずいぶん張り込んだ席を用意してくれたもんだなぁ。kvS14/00/VT4Bb_sorima1002.…大丈夫か？kvS14/00/VT4Bb_sorima1003.　割り箸じゃなく塗り箸を出される料亭なんて、俺ぁ久しぶりに来たぞ」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1001", 256, TRUE);
+	OutputLine(NULL, "「おいおい、ずいぶん張り込んだ席を用意してくれたもんだなぁ。",
+			NULL, "「喂喂，你还真给我准备了相当下本钱的座位啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1002", 256, TRUE);
+	OutputLine(NULL, "…大丈夫か？",
+			NULL, "没问题吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1003", 256, TRUE);
+	OutputLine(NULL, "　割り箸じゃなく塗り箸を出される料亭なんて、俺ぁ久しぶりに来たぞ」",
+			NULL, "像这种上的是漆筷、而不是一次性筷子的高级日料店，我可好久没来了。」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1001.「はっはっはっ、検事正殿がなにをおっしゃいますやら。kvS14/13/VT4Bb_akasaka1001a.ささ、まずは一献…反町さん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1001", 256, TRUE);
+	OutputLine(NULL, "「はっはっはっ、検事正殿がなにをおっしゃいますやら。",
+			NULL, "「哈哈哈，检事正大人这话说得。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1001a", 256, TRUE);
+	OutputLine(NULL, "ささ、まずは一献…反町さん」",
+			NULL, "来来，先喝一杯吧，反町先生。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそう言って私は、今仲居さんが持ってきてくれたばかりのビール瓶を目の前に座る男性…反町検事正に差し出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って私は、今仲居さんが持ってきてくれたばかりのビール瓶を目の前に座る男性…反町検事正に差し出す。",
+			NULL, "这么说着，我把女服务员刚端来的啤酒瓶，递给坐在眼前的男性——反町检事正。", Line_Normal);
+	ClearMessage();
+
+//r彼は、大学時代の先輩で…現在、東京地方検察庁の特捜部に勤めている検察官だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼は、大学時代の先輩で…現在、東京地方検察庁の特捜部に勤めている検察官だ。",
+			NULL, "他是我大学时代的前辈，现在是在东京地方检察厅特搜部任职的检察官。", Line_Normal);
+	ClearMessage();
+
+//r任官以来、大事件に数多くかかわってきた敏腕検事だが、女好きのする端正な容姿とぞんざいな言動もあってか、同性からの評価が真っ二つに分かれている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "任官以来、大事件に数多くかかわってきた敏腕検事だが、女好きのする端正な容姿とぞんざいな言動もあってか、同性からの評価が真っ二つに分かれている。",
+			NULL, "自任官以来，他参与过许多重大案件，是一名干练检察官。可也许因为他那副颇讨女人喜欢的端正容貌，以及粗鲁随意的言行，同性对他的评价可谓截然相反。", Line_Normal);
+	ClearMessage();
+
+//rそれでも、彼は大学のゼミ時代から何かと私のことを可愛がってくれて、今では家族ぐるみで付き合うほどの間柄だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも、彼は大学のゼミ時代から何かと私のことを可愛がってくれて、今では家族ぐるみで付き合うほどの間柄だった。",
+			NULL, "尽管如此，他从大学研讨班时代起就一直很照顾我，如今我们已经熟到两家人都来往的关系。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/tk_ryou1", 1000 );
+
+//反町rvS14/00/VT4Bb_sorima1004.「おぅ、すまん。kvS14/00/VT4Bb_sorima1005.…おっとと、よく冷えてやがるなぁ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1004", 256, TRUE);
+	OutputLine(NULL, "「おぅ、すまん。",
+			NULL, "「哦，谢了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1005", 256, TRUE);
+	OutputLine(NULL, "…おっとと、よく冷えてやがるなぁ」",
+			NULL, "哎呦，冰得真不错啊。」", Line_Normal);
+	ClearMessage();
+
+//rそう言って、反町さんはなみなみと注がれた黄金色の液体をグラスで受け止めると、私の手から瓶を引き取って、返杯の礼を取ってくれる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って、反町さんはなみなみと注がれた黄金色の液体をグラスで受け止めると、私の手から瓶を引き取って、返杯の礼を取ってくれる。",
+			NULL, "反町先生说着，用玻璃杯接住倒得满满的金色液体，又从我手中接过酒瓶，为我回礼倒酒。", Line_Normal);
+	ClearMessage();
+
+//rそれをありがたく頂戴してから、私たちはグラスを掲げ…かちん、と軽く打ち鳴らして乾杯を交わした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それをありがたく頂戴してから、私たちはグラスを掲げ…かちん、と軽く打ち鳴らして乾杯を交わした。",
+			NULL, "我恭敬地接下这份回礼后，我们举起杯子，轻轻碰出一声脆响，互相干杯。", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1006.「……ふぅ。kvS14/00/VT4Bb_sorima1007.いやいや、こういうところで飲むビールは格別にうまいなぁ！kvS14/00/VT4Bb_sorima1008.　それにこう…五臓六腑へ沁みわたる感じってのも、久々だと結構いいもんだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1006", 256, TRUE);
+	OutputLine(NULL, "「……ふぅ。",
+			NULL, "「…………呼。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1007", 256, TRUE);
+	OutputLine(NULL, "いやいや、こういうところで飲むビールは格別にうまいなぁ！",
+			NULL, "哎呀哎呀，在这种地方喝的啤酒格外好喝啊！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1008", 256, TRUE);
+	OutputLine(NULL, "　それにこう…五臓六腑へ沁みわたる感じってのも、久々だと結構いいもんだ」",
+			NULL, "而且这种沁入五脏六腑的感觉，久违了之后还真挺不错。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1002.「久々…？kvS14/13/VT4Bb_akasaka1003.　酒豪で鳴らした先輩らしくないですね。kvS14/13/VT4Bb_akasaka1004.最近はあまり飲まれないんですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1002", 256, TRUE);
+	OutputLine(NULL, "「久々…？",
+			NULL, "「久违？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1003", 256, TRUE);
+	OutputLine(NULL, "　酒豪で鳴らした先輩らしくないですね。",
+			NULL, "这可不像以酒豪闻名的前辈啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1004", 256, TRUE);
+	OutputLine(NULL, "最近はあまり飲まれないんですか？」",
+			NULL, "最近不怎么喝了吗？」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1009.「まぁな…帰りにちょっと立ち飲み屋で、軽く引っかける程度か」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1009", 256, TRUE);
+	OutputLine(NULL, "「まぁな…帰りにちょっと立ち飲み屋で、軽く引っかける程度か」",
+			NULL, "「算是吧……下班路上找家小酒馆，站着稍微喝一杯的程度。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1010.「忙しいってのもあるが…地検の連中に付き合って深酒すると、帰りが遅くなるだろう？kvS14/00/VT4Bb_sorima1011.　それだったら、早く帰って雄一の相手をしてやりたいからな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1010", 256, TRUE);
+	OutputLine(NULL, "「忙しいってのもあるが…地検の連中に付き合って深酒すると、帰りが遅くなるだろう？",
+			NULL, "「忙也是一个原因…………陪地检那帮家伙喝到烂醉，回家就会晚吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1011", 256, TRUE);
+	OutputLine(NULL, "　それだったら、早く帰って雄一の相手をしてやりたいからな」",
+			NULL, "有那个时间，我更想早点回去陪雄一。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1005.「…なるほど」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1005", 256, TRUE);
+	OutputLine(NULL, "「…なるほど」",
+			NULL, "「原来如此。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r空になった反町さんのグラスをビールで満たしながら、私は偉い人だ、と内心で感嘆する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "空になった反町さんのグラスをビールで満たしながら、私は偉い人だ、と内心で感嘆する。",
+			NULL, "我一边给反町先生空掉的杯子斟满啤酒，一边在心里感叹，他真是个了不起的人。", Line_Normal);
+	ClearMessage();
+
+//r彼の奥さんは、結婚して間もなく亡くなった。息子さんを産んだ後に身体を壊したことが原因らしい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼の奥さんは、結婚して間もなく亡くなった。息子さんを産んだ後に身体を壊したことが原因らしい。",
+			NULL, "他的妻子在结婚后不久就去世了。原因似乎是在生下儿子后身体垮了。", Line_Normal);
+	ClearMessage();
+
+//r反町さんはそれ以来、親御さんたちの力を借りながら長男の雄一くんを、男手ひとつで養っている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "反町さんはそれ以来、親御さんたちの力を借りながら長男の雄一くんを、男手ひとつで養っている。",
+			NULL, "自那以后，反町先生一边借助父母的力量，一边独自把长子雄一抚养成人。", Line_Normal);
+	ClearMessage();
+
+//r地検特捜部の主任という立場上、連日激務を科せられることが多く…その苦労は並大抵のものではないと容易に想像できるが、彼はそんなそぶりを見せることもない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "地検特捜部の主任という立場上、連日激務を科せられることが多く…その苦労は並大抵のものではないと容易に想像できるが、彼はそんなそぶりを見せることもない。",
+			NULL, "以地检特搜部主任的立场，他经常每天都要承受繁重的工作，那份辛劳绝非寻常人能想象，可他从不把那种样子表露出来。", Line_Normal);
+	ClearMessage();
+
+//rおかげで、夜の付き合いが悪いと一部の上司や同輩からは良い目で見られていないそうだが、女遊びも全くせずに家庭を大事にする…見かけとは違って本当に誠実な人だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おかげで、夜の付き合いが悪いと一部の上司や同輩からは良い目で見られていないそうだが、女遊びも全くせずに家庭を大事にする…見かけとは違って本当に誠実な人だった。",
+			NULL, "也正因如此，据说有些上司和同僚觉得他晚上应酬不积极而看他不顺眼。可他从不拈花惹草，始终珍视家庭……与表面给人的印象不同，其实是个真正诚实可靠的人。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/tk_ryou1", 1000 );
+
+//赤坂rvS14/13/VT4Bb_akasaka1006.「反町さんに比べると、私なんてまだまだですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1006", 256, TRUE);
+	OutputLine(NULL, "「反町さんに比べると、私なんてまだまだですね」",
+			NULL, "「和反町先生相比，我还差得远啊。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1007.「前に、娘が通う幼稚園で演劇発表会があったんですが…仕事で見に行ってやれず、あの子にはずいぶんむくれられてしまって。kvS14/13/VT4Bb_akasaka1008.機嫌を直してもらうのに、ずいぶん苦労しましたよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1007", 256, TRUE);
+	OutputLine(NULL, "「前に、娘が通う幼稚園で演劇発表会があったんですが…仕事で見に行ってやれず、あの子にはずいぶんむくれられてしまって。",
+			NULL, "「之前我女儿上的幼儿园举行戏剧发表会…………我因为工作没能去看，那孩子生了好久的闷气。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1008", 256, TRUE);
+	OutputLine(NULL, "機嫌を直してもらうのに、ずいぶん苦労しましたよ」",
+			NULL, "为了哄她高兴，我可费了不少劲。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1012.「ははは、そいつぁ運が悪かったな。kvS14/00/VT4Bb_sorima1013.とはいえ、美雪ちゃんにとっては今が一番、父親との接点を持ちたがる年頃だ。kvS14/00/VT4Bb_sorima1014.…あんまり続くと、思春期になった時に苦労するぞ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1012", 256, TRUE);
+	OutputLine(NULL, "「ははは、そいつぁ運が悪かったな。",
+			NULL, "「哈哈哈，那可真是不走运。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1013", 256, TRUE);
+	OutputLine(NULL, "とはいえ、美雪ちゃんにとっては今が一番、父親との接点を持ちたがる年頃だ。",
+			NULL, "话虽如此，对美雪来说，现在正是最想和父亲接触的年龄。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1014", 256, TRUE);
+	OutputLine(NULL, "…あんまり続くと、思春期になった時に苦労するぞ？」",
+			NULL, "这种事要是常有，等她到了青春期你可就要吃苦头喽？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1009.「ええ、心します。kvS14/13/VT4Bb_akasaka1010.とはいえ、家庭と仕事を両立してこそ一人前…なんて奥様方の声をよく耳にしますが、口で言うほど簡単なものではない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1009", 256, TRUE);
+	OutputLine(NULL, "「ええ、心します。",
+			NULL, "「是，我会记在心上。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1010", 256, TRUE);
+	OutputLine(NULL, "とはいえ、家庭と仕事を両立してこそ一人前…なんて奥様方の声をよく耳にしますが、口で言うほど簡単なものではない」",
+			NULL, "话虽如此，我常听太太们说，只有兼顾家庭和工作才算成熟独立，可这事绝没有嘴上说的那么简单。」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1011.「それをきちんとやっておられるあなたは凄いと、私は本気で思います」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1011", 256, TRUE);
+	OutputLine(NULL, "「それをきちんとやっておられるあなたは凄いと、私は本気で思います」",
+			NULL, "「您能把这件事做好，我是真心觉得很了不起。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1015.「まぁ、その点についてはお互い様だ。kvS14/00/VT4Bb_sorima1016.俺もよく手抜かりがあったり忘れたりして、後でしまった、と思ったことが何度あったかわからんよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1015", 256, TRUE);
+	OutputLine(NULL, "「まぁ、その点についてはお互い様だ。",
+			NULL, "「关于这一点，咱俩彼此彼此。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1016", 256, TRUE);
+	OutputLine(NULL, "俺もよく手抜かりがあったり忘れたりして、後でしまった、と思ったことが何度あったかわからんよ」",
+			NULL, "我也经常出差错或者忘东忘西，事后懊悔不已，这种事不知道有过多少次。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1017.「…だが、だからといって忙しさをその言い訳にはしたくない。kvS14/00/VT4Bb_sorima1018.それが、死んだ女房との約束だからな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1017", 256, TRUE);
+	OutputLine(NULL, "「…だが、だからといって忙しさをその言い訳にはしたくない。",
+			NULL, "「不过，我不想把忙碌当成借口。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1018", 256, TRUE);
+	OutputLine(NULL, "それが、死んだ女房との約束だからな」",
+			NULL, "因为这是我和亡妻的约定。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1012.「…反町さん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1012", 256, TRUE);
+	OutputLine(NULL, "「…反町さん」",
+			NULL, "「…………反町先生。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r亡くなられた奥さんとは幼馴染の関係で、職場でも評判になるほどの愛妻家だったらしい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "亡くなられた奥さんとは幼馴染の関係で、職場でも評判になるほどの愛妻家だったらしい。",
+			NULL, "听说他与亡妻是青梅竹马，而且在职场里也以爱妻家闻名。", Line_Normal);
+	ClearMessage();
+
+//r実際、人前では涙を一切見せなかったが…葬儀の時、斎場の外れで声を殺して泣いていた姿を、私は偶然目にしている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "実際、人前では涙を一切見せなかったが…葬儀の時、斎場の外れで声を殺して泣いていた姿を、私は偶然目にしている。",
+			NULL, "事实上，他在人前从未流过一滴眼泪。可葬礼那天，我偶然看见他在斋场外一角压低声音哭泣。", Line_Normal);
+	ClearMessage();
+
+//rいたたまれぬ思いのまま、どう言葉をかけるべきかと立ちつくす私に向かって『…他には黙っててくれや』と真っ赤な目で苦笑いを浮かべた顔は、今でも忘れられなかった…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いたたまれぬ思いのまま、どう言葉をかけるべきかと立ちつくす私に向かって『…他には黙っててくれや』と真っ赤な目で苦笑いを浮かべた顔は、今でも忘れられなかった…。",
+			NULL, "我心里难受得无法忍受，却也不知道该对他说什么，只能站在原地。他红着眼睛露出苦笑，对我说「替我保密啊」的表情，至今仍让我难以忘怀。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/tk_ryou1", 1000 );
+
+//赤坂rvS14/13/VT4Bb_akasaka1013.「……。kvS14/13/VT4Bb_akasaka1014.ということは、先輩の再婚話は当分、なさそうですね。kvS14/13/VT4Bb_akasaka1015.いやいや…もったいない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1013", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「…………", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1014", 256, TRUE);
+	OutputLine(NULL, "ということは、先輩の再婚話は当分、なさそうですね。",
+			NULL, "这么说来，前辈再婚的事短时间内大概不会有了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1015", 256, TRUE);
+	OutputLine(NULL, "いやいや…もったいない」",
+			NULL, "哎呀哎呀，真是可惜。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1016.「先輩と一緒にキャバクラとかへ飲みに行くと、そこに居合わせた綺麗なお姉ちゃんたちをみんなかっさらってしまうと、うちの上司がぼやいていたんですが」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1016", 256, TRUE);
+	OutputLine(NULL, "「先輩と一緒にキャバクラとかへ飲みに行くと、そこに居合わせた綺麗なお姉ちゃんたちをみんなかっさらってしまうと、うちの上司がぼやいていたんですが」",
+			NULL, "「我家上司还抱怨过，说只要和前辈一起去夜总会喝酒，你就会把在场的漂亮姐姐们全都带走。」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1017.「知っていますか？kvS14/13/VT4Bb_akasaka1018.　反町さんさえその気になれば、立候補者が多数いらっしゃるようですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1017", 256, TRUE);
+	OutputLine(NULL, "「知っていますか？",
+			NULL, "「您知道吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1018", 256, TRUE);
+	OutputLine(NULL, "　反町さんさえその気になれば、立候補者が多数いらっしゃるようですよ」",
+			NULL, "只要反町先生有那个意思，好像会有很多人自告奋勇呢。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1019.「はっはっはっ、どーだか！kvS14/00/VT4Bb_sorima1020.　そういう連中は俺がコブつきとわかりゃ、あっという間に逃げ出すさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1019", 256, TRUE);
+	OutputLine(NULL, "「はっはっはっ、どーだか！",
+			NULL, "「哈哈哈，谁知道呢！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1020", 256, TRUE);
+	OutputLine(NULL, "　そういう連中は俺がコブつきとわかりゃ、あっという間に逃げ出すさ」",
+			NULL, "那种人一知道我还带着个孩子，转眼就跑没影了。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1021.「金と肩書に寄ってくるやつぁ、そういうもんだ。kvS14/00/VT4Bb_sorima1022.悪いが、そんな有象無象の輩どもは、全部まとめてノーサンキューだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1021", 256, TRUE);
+	OutputLine(NULL, "「金と肩書に寄ってくるやつぁ、そういうもんだ。",
+			NULL, "「冲着钱和头衔靠过来的家伙，就是那种德性。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1022", 256, TRUE);
+	OutputLine(NULL, "悪いが、そんな有象無象の輩どもは、全部まとめてノーサンキューだよ」",
+			NULL, "抱歉啊，那些乌合之众，我全都敬谢不敏。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1019.「ははは、そう言うと思いましたよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1019", 256, TRUE);
+	OutputLine(NULL, "「ははは、そう言うと思いましたよ」",
+			NULL, "「哈哈哈，我就知道您会这么说。」", Line_Normal);
+	ClearMessage();
+
+//r…もちろん、それがすべてだとは思わない。中には本気で、反町さん自身の人となりを気に入って近づく女性もいるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…もちろん、それがすべてだとは思わない。中には本気で、反町さん自身の人となりを気に入って近づく女性もいるだろう。",
+			NULL, "当然，我也觉得那并非全部。她们之中或许也有人是真心欣赏反町先生的人品，才会接近他。", Line_Normal);
+	ClearMessage();
+
+//rただ、そういった人に対しても毅然と壁を作って接することが、亡き奥さんに対する彼なりの誠意の証なんだと思う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、そういった人に対しても毅然と壁を作って接することが、亡き奥さんに対する彼なりの誠意の証なんだと思う。",
+			NULL, "只是，即使面对那样的人，他也会毅然筑起一道墙来相处。我想这正是他对亡妻的诚意证明。", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1020.「まぁ…あの奥さん以上の女性なんて、そう簡単に見つかるわけがありませんからね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1020", 256, TRUE);
+	OutputLine(NULL, "「まぁ…あの奥さん以上の女性なんて、そう簡単に見つかるわけがありませんからね」",
+			NULL, "「不过…………像那位夫人那样的女性，可没那么容易找到啊。」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1021.「優しくて、綺麗で…大学のゼミで初めて先輩から紹介された時は、マドンナってのはきっとこういう人を言うんだろうな、って私たち全員、ため息をついたくらいですから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1021", 256, TRUE);
+	OutputLine(NULL, "「優しくて、綺麗で…大学のゼミで初めて先輩から紹介された時は、マドンナってのはきっとこういう人を言うんだろうな、って私たち全員、ため息をついたくらいですから」",
+			NULL, "「又温柔，又漂亮…………大学研讨班里前辈第一次把她介绍给我们时，我们所有人都叹气说，所谓女神大概就是这样的人吧。」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1022.「絶対先輩に騙されているか、弱みを握られているかのどっちかだって言ってるやつもいましたよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1022", 256, TRUE);
+	OutputLine(NULL, "「絶対先輩に騙されているか、弱みを握られているかのどっちかだって言ってるやつもいましたよ」",
+			NULL, "「还有人说，她绝对是被前辈骗了，或者被你捏住了什么把柄。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1023.「おいおい、いくらなんでも美化しすぎだっての」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1023", 256, TRUE);
+	OutputLine(NULL, "「おいおい、いくらなんでも美化しすぎだっての」",
+			NULL, "「喂喂，再怎么说你也美化过头了吧。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1024.「そりゃまぁ、見かけはまぁ悪くはなかったが…あれも結構気が強くて、お前たちの見ていないところだと俺の尻びしばし叩いてたんだぜ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1024", 256, TRUE);
+	OutputLine(NULL, "「そりゃまぁ、見かけはまぁ悪くはなかったが…あれも結構気が強くて、お前たちの見ていないところだと俺の尻びしばし叩いてたんだぜ？」",
+			NULL, "「她外表嘛，确实还算不错…………可那人也挺要强的，在你们看不见的地方，可是经常把我管得服服帖帖？」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1025.「キャバレーのマッチが見つかった日にゃ、本気で殺されるかと思った…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1025", 256, TRUE);
+	OutputLine(NULL, "「キャバレーのマッチが見つかった日にゃ、本気で殺されるかと思った…」",
+			NULL, "「发现夜总会火柴盒的那天，我还真以为自己要被她杀了…………」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1023.「そう…なんですか？kvS14/13/VT4Bb_akasaka1024.　すごく、意外な感じです…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1023", 256, TRUE);
+	OutputLine(NULL, "「そう…なんですか？",
+			NULL, "「是…………这样吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1024", 256, TRUE);
+	OutputLine(NULL, "　すごく、意外な感じです…」",
+			NULL, "感觉非常意外…………」", Line_Normal);
+	ClearMessage();
+
+//r反町さんの奥さんとは、亡くなる前に少しだけ話しただけだが…まさに良妻の言葉がぴったりと当てはまるような人だった。怒った顔なんて見たことがない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "反町さんの奥さんとは、亡くなる前に少しだけ話しただけだが…まさに良妻の言葉がぴったりと当てはまるような人だった。怒った顔なんて見たことがない。",
+			NULL, "我在反町先生的夫人去世前，只和她说过一点点话…………她正是良妻这个词最合适的那种人。我从没见过她生气的样子。", Line_Normal);
+	ClearMessage();
+
+//rもっとも、それこそが二人の仲睦まじさの裏返しであり、多少嫉妬深いところも深い愛情があったからだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もっとも、それこそが二人の仲睦まじさの裏返しであり、多少嫉妬深いところも深い愛情があったからだろう。",
+			NULL, "不过，这或许也正是两人亲密关系的另一面。她多少有些爱吃醋，也是因为有很深的爱意吧。", Line_Normal);
+	ClearMessage();
+
+//rまぁ…そんなすばらしい女性と比較されたのでは、多少の綺麗どころが束になって集まったところで、かすんでしまって当然というところか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まぁ…そんなすばらしい女性と比較されたのでは、多少の綺麗どころが束になって集まったところで、かすんでしまって当然というところか。",
+			NULL, "说到底，要被那样出色的女性相比，就算有一群漂亮女人聚在一起，也显得黯然失色吧。", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1026.「いやいや、別に操を立ててるってわけじゃないんだぞ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1026", 256, TRUE);
+	OutputLine(NULL, "「いやいや、別に操を立ててるってわけじゃないんだぞ？」",
+			NULL, "「哎呀哎呀，我也不是在为她守节啊？」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1027.「雄一のことを考えれば、やっぱり母親ってのがいるといないとじゃ、今後の情操教育に影響があるだろうしな。kvS14/00/VT4Bb_sorima1028.機会があれば、まぁ検討しないでもないつもりだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1027", 256, TRUE);
+	OutputLine(NULL, "「雄一のことを考えれば、やっぱり母親ってのがいるといないとじゃ、今後の情操教育に影響があるだろうしな。",
+			NULL, "「考虑到雄一，母亲这个角色有或没有，今后对他的情操教育都会有影响吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1028", 256, TRUE);
+	OutputLine(NULL, "機会があれば、まぁ検討しないでもないつもりだ」",
+			NULL, "要是有机会，我倒也不是不会考虑。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1025.「そうなんですか？kvS14/13/VT4Bb_akasaka1026.　ちなみに、やっぱり反町さんのタイプはうるさ型よりも、あの方のように清楚な女性が好みですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1025", 256, TRUE);
+	OutputLine(NULL, "「そうなんですか？",
+			NULL, "「是这样吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1026", 256, TRUE);
+	OutputLine(NULL, "　ちなみに、やっぱり反町さんのタイプはうるさ型よりも、あの方のように清楚な女性が好みですか？」",
+			NULL, "顺便问一下，反町先生喜欢的类型，果然比起强势型，还是像那位夫人一样清秀的女性吗？」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1029.「だから清楚はやめろっての。kvS14/00/VT4Bb_sorima1030.とりあえず、強いてあげるなら…自分の意見をしっかり持っている、目の綺麗な女性だな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1029", 256, TRUE);
+	OutputLine(NULL, "「だから清楚はやめろっての。",
+			NULL, "「都说别再说清秀了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1030", 256, TRUE);
+	OutputLine(NULL, "とりあえず、強いてあげるなら…自分の意見をしっかり持っている、目の綺麗な女性だな」",
+			NULL, "非要说的话…………是能坚定持有自己意见，眼睛漂亮的女性吧。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1031.「それでいて、自己主張が激しすぎず…相手を立てる慎ましさがあると、理想的だ。kvS14/00/VT4Bb_sorima1032.そんなやつと出会う機会があったら、すぐにでも男やもめの生活を返上してやるさ。kvS14/00/VT4Bb_sorima1033.あはははっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1031", 256, TRUE);
+	OutputLine(NULL, "「それでいて、自己主張が激しすぎず…相手を立てる慎ましさがあると、理想的だ。",
+			NULL, "「同时又不会过分主张自我，还懂得尊重对方，带着矜持，那就理想了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1032", 256, TRUE);
+	OutputLine(NULL, "そんなやつと出会う機会があったら、すぐにでも男やもめの生活を返上してやるさ。",
+			NULL, "要是有机会遇见那样的人，我立马就告别单身。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1033", 256, TRUE);
+	OutputLine(NULL, "あはははっ！」",
+			NULL, "啊哈哈哈！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1027.「じょ、条件厳しいですね…おっ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1027", 256, TRUE);
+	OutputLine(NULL, "「じょ、条件厳しいですね…おっ」",
+			NULL, "「条，条件还真苛刻啊…………咦？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rその時、ちょうどいいタイミングで座敷の襖が開いて、仲居さんが料理を載せた足つきの膳を中へと運びこんでくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、ちょうどいいタイミングで座敷の襖が開いて、仲居さんが料理を載せた足つきの膳を中へと運びこんでくる。",
+			NULL, "就在这时，时机正好，包间的拉门打开，女服务员端着摆好料理的带脚托盘走了进来。", Line_Normal);
+	ClearMessage();
+
+//rそして、私と反町さんの前にそれを丁寧なしぐさで置くと、それぞれの料理の説明を行ってから静かな足取りで出ていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、私と反町さんの前にそれを丁寧なしぐさで置くと、それぞれの料理の説明を行ってから静かな足取りで出ていった。",
+			NULL, "随后，她动作端庄地把托盘分别放到我和反町先生面前，说明了每道料理后，安静地退了出去。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/tk_ryou1", 1000 );
+
+//反町rvS14/00/VT4Bb_sorima1034.「しかし…どうして料亭ってのは、事前に料理の中身を話したがるんだろうかな。kvS14/00/VT4Bb_sorima1035.食う前にそれが何か分かったら、面白くないだろうに」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1034", 256, TRUE);
+	OutputLine(NULL, "「しかし…どうして料亭ってのは、事前に料理の中身を話したがるんだろうかな。",
+			NULL, "「不过…………为什么料亭总喜欢在吃之前说明料理内容呢？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1035", 256, TRUE);
+	OutputLine(NULL, "食う前にそれが何か分かったら、面白くないだろうに」",
+			NULL, "吃之前就知道那是什么，岂不是少了点乐趣。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1028.「ははは…確かに。kvS14/13/VT4Bb_akasaka1029.とはいえ、魚の名前がヤマメだのアユだのと説明されていないと、なんとなく味気ない感じもするじゃないですか。kvS14/13/VT4Bb_akasaka1030.私たちは食通じゃありませんから、魚の味の違いなんてわかりませんし」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1028", 256, TRUE);
+	OutputLine(NULL, "「ははは…確かに。",
+			NULL, "「哈哈哈…………确实。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1029", 256, TRUE);
+	OutputLine(NULL, "とはいえ、魚の名前がヤマメだのアユだのと説明されていないと、なんとなく味気ない感じもするじゃないですか。",
+			NULL, "话虽如此，要是没人告诉我们这是山女鱼还是香鱼，总觉得也有点乏味吧。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1030", 256, TRUE);
+	OutputLine(NULL, "私たちは食通じゃありませんから、魚の味の違いなんてわかりませんし」",
+			NULL, "我们又不是美食家，也分不清鱼味有什么差别。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1036.「ふむ、そういう考え方もあるか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1036", 256, TRUE);
+	OutputLine(NULL, "「ふむ、そういう考え方もあるか」",
+			NULL, "「嗯，也有这种想法啊。」", Line_Normal);
+	ClearMessage();
+
+//rそう言って反町さんは、焼き魚から骨と身を器用に取り分けていく。それを見て私も、自分の膳に箸をつけていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って反町さんは、焼き魚から骨と身を器用に取り分けていく。それを見て私も、自分の膳に箸をつけていった。",
+			NULL, "反町先生说着，熟练地把烤鱼的骨头和鱼肉分开。看着他的动作，我也开始动筷。", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1037.「…あぁそういや、魚といえば雄一がまたお前さんに、釣りを教えてもらいたいって言ってたぞ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1037", 256, TRUE);
+	OutputLine(NULL, "「…あぁそういや、魚といえば雄一がまたお前さんに、釣りを教えてもらいたいって言ってたぞ」",
+			NULL, "「啊，对了，说到鱼，雄一又说想让你教他钓鱼。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1031.「雄一くんが…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1031", 256, TRUE);
+	OutputLine(NULL, "「雄一くんが…？」",
+			NULL, "「雄一君吗？」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1038.「よっぽど魚釣りが気に入ったらしいな。kvS14/00/VT4Bb_sorima1039.この前も友達を何人か引き連れて、近くの川に行ってきたそうだ。kvS14/00/VT4Bb_sorima1040.…もっとも釣ってきたのは泥フナだから、とても食えやしなかったが」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1038", 256, TRUE);
+	OutputLine(NULL, "「よっぽど魚釣りが気に入ったらしいな。",
+			NULL, "「他看来相当喜欢钓鱼啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1039", 256, TRUE);
+	OutputLine(NULL, "この前も友達を何人か引き連れて、近くの川に行ってきたそうだ。",
+			NULL, "前几天还带着几个朋友去了附近的河边。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1040", 256, TRUE);
+	OutputLine(NULL, "…もっとも釣ってきたのは泥フナだから、とても食えやしなかったが」",
+			NULL, "不过钓回来的是泥鲫，实在没法吃。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1032.「ははは、そりゃよかった。kvS14/13/VT4Bb_akasaka1033.でも水場は危険ですから、よく注意しておいたほうがいいと思いますよ。kvS14/13/VT4Bb_akasaka1034.まだ小学生なんだから、川面に落ちると大変ですからね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1032", 256, TRUE);
+	OutputLine(NULL, "「ははは、そりゃよかった。",
+			NULL, "「哈哈哈，那太好了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1033", 256, TRUE);
+	OutputLine(NULL, "でも水場は危険ですから、よく注意しておいたほうがいいと思いますよ。",
+			NULL, "不过水边很危险，我觉得您还是好好叮嘱一下比较好。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1034", 256, TRUE);
+	OutputLine(NULL, "まだ小学生なんだから、川面に落ちると大変ですからね」",
+			NULL, "毕竟还是小学生，要是掉进河里可就糟了。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1041.「そうだな、今度注意しておこう。kvS14/00/VT4Bb_sorima1042.…あと、美雪ちゃんとまた会いたいってさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1041", 256, TRUE);
+	OutputLine(NULL, "「そうだな、今度注意しておこう。",
+			NULL, "「是啊，下次我会提醒他。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1042", 256, TRUE);
+	OutputLine(NULL, "…あと、美雪ちゃんとまた会いたいってさ」",
+			NULL, "还有，他说想再见美雪。」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "kyupirn", 256, 64);
+	DrawScene("white", 150 );
+	ModDrawCharacter(4, 13, "sprite/aks1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 0, FALSE );
+	DrawScene("background/tk_ryou1", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//赤坂rvS14/13/VT4Bb_akasaka1035.「……ほぉ？　美雪と…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1035", 256, TRUE);
+	OutputLine(NULL, "「……ほぉ？　美雪と…」",
+			NULL, "「……哦？和美雪……」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "kaze_lp", 128, 0 );
+	Negative( 1000, TRUE );
+
+//r魚から骨を取り除いていた私の箸が、ぴたりと止まる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "魚から骨を取り除いていた私の箸が、ぴたりと止まる。",
+			NULL, "我正挑着鱼刺，手中的筷子顿时停住了。", Line_Normal);
+	ClearMessage();
+
+//r確かに、この前一緒に沢釣りに行った時…二人はずいぶん、仲良さげに話していたな。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "確かに、この前一緒に沢釣りに行った時…二人はずいぶん、仲良さげに話していたな。",
+			NULL, "确实，前些天一起去溪钓时，他们两个聊得相当开心。", Line_Normal);
+	ClearMessage();
+
+//r美雪はあまり人見知りしない子だから、別に不思議な光景とは思わなかったが…しかし…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪はあまり人見知りしない子だから、別に不思議な光景とは思わなかったが…しかし…。",
+			NULL, "美雪本来就不怎么怕生，所以我并不觉得那是什么奇怪的景象…………然而…………", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	FadeFilm( 1000, TRUE );
+
+//反町rvS14/00/VT4Bb_sorima1043.「…おいこら、何固まってんだ？kvS14/00/VT4Bb_sorima1044.　まさかお前、今から花嫁の親父を気取るわけじゃないだろうな？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1043", 256, TRUE);
+	OutputLine(NULL, "「…おいこら、何固まってんだ？",
+			NULL, "「喂喂，你僵在那儿干什么？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1044", 256, TRUE);
+	OutputLine(NULL, "　まさかお前、今から花嫁の親父を気取るわけじゃないだろうな？」",
+			NULL, "你该不会现在就摆出新娘父亲的架势了吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//赤坂rvS14/13/VT4Bb_akasaka1036.「えっ？　あ、あははは…まさか、そんなことは。kvS14/13/VT4Bb_akasaka1037.そうですよね…まだ、小学生と幼稚園児ですから。kvS14/13/VT4Bb_akasaka1038.そういう話は、まだまだ先の楽しみってことで…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1036", 256, TRUE);
+	OutputLine(NULL, "「えっ？　あ、あははは…まさか、そんなことは。",
+			NULL, "「咦？啊，啊哈哈哈…………哪有那种事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1037", 256, TRUE);
+	OutputLine(NULL, "そうですよね…まだ、小学生と幼稚園児ですから。",
+			NULL, "说得也是…………一个还是小学生，一个还是幼儿园孩子。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1038", 256, TRUE);
+	OutputLine(NULL, "そういう話は、まだまだ先の楽しみってことで…」",
+			NULL, "那种话题，还早得很，就当成将来的乐趣吧…………」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1045.「…まぁ俺の場合、女房とはじめて知り合ったのは幼稚園の遠足の時だったが」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1045", 256, TRUE);
+	OutputLine(NULL, "「…まぁ俺の場合、女房とはじめて知り合ったのは幼稚園の遠足の時だったが」",
+			NULL, "「不过我跟我老婆第一次认识，是在幼儿园远足的时候。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//赤坂rvS14/13/VT4Bb_akasaka1039.「ぶほっっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1039", 256, TRUE);
+	OutputLine(NULL, "「ぶほっっ？！」",
+			NULL, "「噗咳？！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r落ち着けるつもりで流しこんだビールが気管に入って、思わずむせ込んでしまう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "落ち着けるつもりで流しこんだビールが気管に入って、思わずむせ込んでしまう。",
+			NULL, "为了冷静下来灌进嘴里的啤酒呛进气管，我不由得猛咳起来。", Line_Normal);
+	ClearMessage();
+
+//rそんな、私の慌てぶりを反町さんはおかしそうに笑って見ていたが、…ふいに、まだ開けていないビール瓶を手にとると、その栓を抜きながらぼそり、と切り出していった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな、私の慌てぶりを反町さんはおかしそうに笑って見ていたが、…ふいに、まだ開けていないビール瓶を手にとると、その栓を抜きながらぼそり、と切り出していった。",
+			NULL, "反町先生看着我慌张的样子，像是觉得很有趣地笑着。忽然，他拿起一瓶还没打开的啤酒，一边拔开瓶盖，一边低声开口。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "yoru", 128, 0 );
+	DrawScene("background/hu_tenjyou", 1000 );
+
+//反町rvS14/00/VT4Bb_sorima1046.「……で？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1046", 256, TRUE);
+	OutputLine(NULL, "「……で？」",
+			NULL, "「…………那么？」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1040.「はい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1040", 256, TRUE);
+	OutputLine(NULL, "「はい？」",
+			NULL, "「什么？」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1047.「そろそろ、聞かせてくれ。kvS14/00/VT4Bb_sorima1048.用があって、こんな宴席を設けたんだろう？kvS14/00/VT4Bb_sorima1049.　…さっき言ったように、俺はあんまり遅くまで飲みの席にかまけていられない。kvS14/00/VT4Bb_sorima1050.さっさと用件を話せ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1047", 256, TRUE);
+	OutputLine(NULL, "「そろそろ、聞かせてくれ。",
+			NULL, "「差不多该告诉我了吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1048", 256, TRUE);
+	OutputLine(NULL, "用があって、こんな宴席を設けたんだろう？",
+			NULL, "你是有事才安排这场酒席的吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1049", 256, TRUE);
+	OutputLine(NULL, "　…さっき言ったように、俺はあんまり遅くまで飲みの席にかまけていられない。",
+			NULL, "就像我刚才说的，我没法在酒席上耗到太晚。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1050", 256, TRUE);
+	OutputLine(NULL, "さっさと用件を話せ」",
+			NULL, "赶紧说正事。」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1041.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1041", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rその言葉に、私は崩していた足を組み直して居住まいを正し、軽く深呼吸しながら気持ちを落ち着ける。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その言葉に、私は崩していた足を組み直して居住まいを正し、軽く深呼吸しながら気持ちを落ち着ける。",
+			NULL, "听到这句话，我把散开的双腿重新盘正，端正坐姿，轻轻深呼吸，让心情平静下来。", Line_Normal);
+	ClearMessage();
+
+//r…アルコールの勢いを借りるのは卑怯だと、自分でもわかっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…アルコールの勢いを借りるのは卑怯だと、自分でもわかっていた。",
+			NULL, "我心里也明白，借酒壮胆很卑鄙。", Line_Normal);
+	ClearMessage();
+
+//rだが、そうでもなければ…とても、話す勇気が持てなかったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、そうでもなければ…とても、話す勇気が持てなかったのだ。",
+			NULL, "可是如果不这样，我实在拿不出开口的勇气。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlayBGM(2, "hm02_12", 128, 0);
+	ModDrawCharacter(4, 13, "sprite/aks1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/tk_ryou1", 1000 );
+
+//赤坂rvS14/13/VT4Bb_akasaka1042.「……。kvS14/13/VT4Bb_akasaka1043.公安は、例の捜査から…手を引くことになりました。kvS14/13/VT4Bb_akasaka1044.…すみません」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1042", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「…………", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1043", 256, TRUE);
+	OutputLine(NULL, "公安は、例の捜査から…手を引くことになりました。",
+			NULL, "公安决定退出那起搜查了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1044", 256, TRUE);
+	OutputLine(NULL, "…すみません」",
+			NULL, "…………对不起。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1051.「そうか…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1051", 256, TRUE);
+	OutputLine(NULL, "「そうか…」",
+			NULL, "「这样啊…………」", Line_Normal);
+	ClearMessage();
+
+//r思ったよりも落ち着いたしぐさで、反町さんは自分と私のグラスにビールを注ぐ。そしてぐい、とそれを一息に飲み干してから、やれやれと肩をすくめてため息をついた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "思ったよりも落ち着いたしぐさで、反町さんは自分と私のグラスにビールを注ぐ。そしてぐい、とそれを一息に飲み干してから、やれやれと肩をすくめてため息をついた。",
+			NULL, "反町先生的动作比我想象中更沉稳，他给自己和我的杯子倒上啤酒。随后，他一口气喝干，耸了耸肩，叹了口气。", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1052.「ま、なんとなくそうなるかもって予感は、少し前からあったからな。kvS14/00/VT4Bb_sorima1053.お前のせいじゃない…だからそこで謝るな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1052", 256, TRUE);
+	OutputLine(NULL, "「ま、なんとなくそうなるかもって予感は、少し前からあったからな。",
+			NULL, "「唉，我前阵子就有点预感会这样。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1053", 256, TRUE);
+	OutputLine(NULL, "お前のせいじゃない…だからそこで謝るな」",
+			NULL, "这不是你的错，所以别在那儿道歉。」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1045.「反町さん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1045", 256, TRUE);
+	OutputLine(NULL, "「反町さん…」",
+			NULL, "「反町先生…………」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1054.「だいたい水臭いとは思わんか？kvS14/00/VT4Bb_sorima1055.　馴れ合いってのはあんまり好きじゃないが、俺とお前の仲じゃないか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1054", 256, TRUE);
+	OutputLine(NULL, "「だいたい水臭いとは思わんか？",
+			NULL, "「你不觉得太见外了吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1055", 256, TRUE);
+	OutputLine(NULL, "　馴れ合いってのはあんまり好きじゃないが、俺とお前の仲じゃないか」",
+			NULL, "我虽然不怎么喜欢套近乎，但咱俩是什么交情。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1056.「この程度のことでご機嫌をとらなきゃ、なんていちいち気を回してたら、財布にいくら金が詰まってても足りないぜ？kvS14/00/VT4Bb_sorima1057.　…お前のそういうところ、俺は嫌いじゃないがな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1056", 256, TRUE);
+	OutputLine(NULL, "「この程度のことでご機嫌をとらなきゃ、なんていちいち気を回してたら、財布にいくら金が詰まってても足りないぜ？",
+			NULL, "「要是这种程度的事还得特地赔笑脸，那钱包里塞多少钱都不够啊？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1057", 256, TRUE);
+	OutputLine(NULL, "　…お前のそういうところ、俺は嫌いじゃないがな」",
+			NULL, "不过你这种性格，我倒是不讨厌。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1046.「……はい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1046", 256, TRUE);
+	OutputLine(NULL, "「……はい」",
+			NULL, "「是的。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r謝るなと言われた以上、さらに詫びるのはかえって失礼と思い、私はかしこまって頭を下げる。…それでも、申し訳なさと後ろめたさを感じずにはいられなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "謝るなと言われた以上、さらに詫びるのはかえって失礼と思い、私はかしこまって頭を下げる。…それでも、申し訳なさと後ろめたさを感じずにはいられなかった。",
+			NULL, "既然他说了别道歉，我再继续赔不是反而失礼，于是我恭敬地低下头。尽管如此，歉疚和内疚依然无法消散。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 2000 );
+	DrawFilm( 2, 128, 128, 128, 255, 0, 500, TRUE );
+	DrawScene("background/mati12", 1500 );
+
+//r…私たちが協力して捜査に当たっていたのは、とある政治家の不正行為。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…私たちが協力して捜査に当たっていたのは、とある政治家の不正行為。",
+			NULL, "我们协力调查的，是某位政治家的不正当行为。", Line_Normal);
+	ClearMessage();
+
+//r外資系の某企業をバイパスにして、国内の機密情報を漏えいさせ…その見返りとして贈賄を受け取っている事実を突き止めるというものだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "外資系の某企業をバイパスにして、国内の機密情報を漏えいさせ…その見返りとして贈賄を受け取っている事実を突き止めるというものだった。",
+			NULL, "调查内容是查明他以某家外资企业为通道，泄露国内机密情报，并收受作为回报的贿赂这一事实。", Line_Normal);
+	ClearMessage();
+
+//rさらに、最近の調べによってその贈収賄活動の背後に、戦後から強い発言力をもって政府閣僚を牛耳り続け、数ヶ月前に亡くなった某政商の存在が明るみになってきたのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "さらに、最近の調べによってその贈収賄活動の背後に、戦後から強い発言力をもって政府閣僚を牛耳り続け、数ヶ月前に亡くなった某政商の存在が明るみになってきたのだ。",
+			NULL, "此外，最近的调查显示，那起贿赂活动背后，还藏着某位数月前去世的政商。他自战后起便仗着巨大话语权，一直操纵着政府阁僚。", Line_Normal);
+	ClearMessage();
+
+//r彼によってうち立てられたその組織の規模たるや、かつての薬害スキャンダルとして一大事件にもなった『ローウェル疑獄』にも匹敵するほどのものだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼によってうち立てられたその組織の規模たるや、かつての薬害スキャンダルとして一大事件にもなった『ローウェル疑獄』にも匹敵するほどのものだった。",
+			NULL, "他一手建立的那个组织，规模甚至足以匹敌曾因药害丑闻轰动一时的『洛威尔疑狱』。", Line_Normal);
+	ClearMessage();
+
+//rゆえに反町さんをはじめとした東京地方検察庁の特捜部は、その全容と活動の詳細を徹底的に調べあげるため、総力を挙げて捜査にあたっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆえに反町さんをはじめとした東京地方検察庁の特捜部は、その全容と活動の詳細を徹底的に調べあげるため、総力を挙げて捜査にあたっていた。",
+			NULL, "因此，以反町先生为首的东京地方检察厅特搜部，为了彻底查明其全貌和活动细节，正动员全部力量展开搜查。", Line_Normal);
+	ClearMessage();
+
+//rそして、彼らにとって私たち公安部の活動は、敵方の情報収集と陽動のためにもなくてはならないものだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、彼らにとって私たち公安部の活動は、敵方の情報収集と陽動のためにもなくてはならないものだった。",
+			NULL, "而对他们来说，我们公安部的活动无论在收集敌方情报还是牵制对手方面，都不可或缺。", Line_Normal);
+	ClearMessage();
+
+//rまた、相手が政治家あるいは政商である可能性が高いこのヤマでは、我々警察がそれらに対しての逮捕権を確保するのは非常に難しいため、特捜部に対応してもらうのが一番早い。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "また、相手が政治家あるいは政商である可能性が高いこのヤマでは、我々警察がそれらに対しての逮捕権を確保するのは非常に難しいため、特捜部に対応してもらうのが一番早い。",
+			NULL, "另外，这个案子的对象很可能是政治家或政商，我们警方很难确保对他们的逮捕权限，所以交由特搜部处理才是最快的。", Line_Normal);
+	ClearMessage();
+
+//rだからこそ今回、本来ならあまり積極的に連携しない両者が手を組んで、捜査に当たっていたのだが…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だからこそ今回、本来ならあまり積極的に連携しない両者が手を組んで、捜査に当たっていたのだが…。",
+			NULL, "正因如此，原本并不太积极联手的双方，这次才携手展开调查…………", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+	FadeFilm( 500, TRUE );
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/tk_ryou1", 1000 );
+
+//赤坂rvS14/13/VT4Bb_akasaka1047.「正直言って…残念です。kvS14/13/VT4Bb_akasaka1048.せっかく、相手側の資料を内部告発の形で入手することができたのに…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1047", 256, TRUE);
+	OutputLine(NULL, "「正直言って…残念です。",
+			NULL, "「说实话…………我很遗憾。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1048", 256, TRUE);
+	OutputLine(NULL, "せっかく、相手側の資料を内部告発の形で入手することができたのに…」",
+			NULL, "好不容易以内部告发的形式拿到了对方的资料…………」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1058.「そういうもんさ。kvS14/00/VT4Bb_sorima1059.…というより、お前さんのつかんだものはそれだけ、連中にとっては致命的なものだったってことの証明さ。kvS14/00/VT4Bb_sorima1060.でなきゃ、こんな強引な干渉をやってくるわけがない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1058", 256, TRUE);
+	OutputLine(NULL, "「そういうもんさ。",
+			NULL, "「就是这么回事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1059", 256, TRUE);
+	OutputLine(NULL, "…というより、お前さんのつかんだものはそれだけ、連中にとっては致命的なものだったってことの証明さ。",
+			NULL, "换句话说，你抓到的东西，对那帮人来说就是这么致命。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1060", 256, TRUE);
+	OutputLine(NULL, "でなきゃ、こんな強引な干渉をやってくるわけがない」",
+			NULL, "否则他们也不会用这种强硬手段干涉。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1049.「反町さん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1049", 256, TRUE);
+	OutputLine(NULL, "「反町さん…」",
+			NULL, "「反町先生…………」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1061.「……。kvS14/00/VT4Bb_sorima1062.ちなみにお前さんがつかんだっていうその資料、見せてもらうというわけにはいかない…よな？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1061", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「…………", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1062", 256, TRUE);
+	OutputLine(NULL, "ちなみにお前さんがつかんだっていうその資料、見せてもらうというわけにはいかない…よな？」",
+			NULL, "顺便说一句，你说你拿到的那份资料，大概也不能让我看看…………对吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1050.「…すみません」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1050", 256, TRUE);
+	OutputLine(NULL, "「…すみません」",
+			NULL, "「不好意思。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1063.「はははは、わかってるって。kvS14/00/VT4Bb_sorima1064.公安は国益を守ること、つまり国家の安定をはかるのがその存在意義だからな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1063", 256, TRUE);
+	OutputLine(NULL, "「はははは、わかってるって。",
+			NULL, "「哈哈哈哈，我明白。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1064", 256, TRUE);
+	OutputLine(NULL, "公安は国益を守ること、つまり国家の安定をはかるのがその存在意義だからな」",
+			NULL, "公安的存在意义，就是守护国家利益，也就是维持国家稳定。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1065.「…あぁ、皮肉に受け取るなよ？kvS14/00/VT4Bb_sorima1066.　それが結局、俺たち地検と公安が今まで相容れなかった理由ってことさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1065", 256, TRUE);
+	OutputLine(NULL, "「…あぁ、皮肉に受け取るなよ？",
+			NULL, "「啊，别当成讽刺？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1066", 256, TRUE);
+	OutputLine(NULL, "　それが結局、俺たち地検と公安が今まで相容れなかった理由ってことさ」",
+			NULL, "这也正是我们地检和公安至今相容不来的理由。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそう言って、反町さんは空になったグラスを手の中で弄びながら、そこに映る何かを覗き込む。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って、反町さんは空になったグラスを手の中で弄びながら、そこに映る何かを覗き込む。",
+			NULL, "说完，反町先生在手中把玩着空杯，望向杯中映出的某个东西。", Line_Normal);
+	ClearMessage();
+
+//rそのしぐさを見て、私はそばにあったビール瓶を差し出そうとしたが、彼はそれを制するように手を上げると、おもむろに口を開いていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そのしぐさを見て、私はそばにあったビール瓶を差し出そうとしたが、彼はそれを制するように手を上げると、おもむろに口を開いていった。",
+			NULL, "看到他的动作，我正想把旁边的啤酒瓶递过去，可他像是制止我一样抬起手，然后缓缓开口。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/hu_tenjyou", 1000 );
+
+//反町rvS14/00/VT4Bb_sorima1067.「あの政商…小泉ってやつは、とんでもない野郎だった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1067", 256, TRUE);
+	OutputLine(NULL, "「あの政商…小泉ってやつは、とんでもない野郎だった」",
+			NULL, "「那个政商…………小泉那家伙，是个不得了的混蛋。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1068.「国の予算とか、政党への政治献金とかを指先三寸で思うがままに振り分け、勝手に研究会やら勉強会やらを開いては、子飼いの連中にバラまいて…勢力を広げていた」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1068", 256, TRUE);
+	OutputLine(NULL, "「国の予算とか、政党への政治献金とかを指先三寸で思うがままに振り分け、勝手に研究会やら勉強会やらを開いては、子飼いの連中にバラまいて…勢力を広げていた」",
+			NULL, "「国家预算也好，给政党的政治献金也好，全都由他一手操纵、随意分配。他还擅自开各种研究会、学习会，把钱撒给手下的人，不断扩大自己的势力。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1069.「この国が法治国家、そして議会制民主主義ってことを知った上で、それをあえて無視してあざ笑うような真似を、堂々としていやがった。kvS14/00/VT4Bb_sorima1070.…俺は、それが一番許せねぇ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1069", 256, TRUE);
+	OutputLine(NULL, "「この国が法治国家、そして議会制民主主義ってことを知った上で、それをあえて無視してあざ笑うような真似を、堂々としていやがった。",
+			NULL, "「他明知道这个国家是法治国家，也是议会制民主主义国家，却偏偏无视这些，还像嘲笑它们一样堂而皇之地胡作非为。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1070", 256, TRUE);
+	OutputLine(NULL, "…俺は、それが一番許せねぇ」",
+			NULL, "那一点，最让我无法原谅。」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1051.「……えぇ、全くです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1051", 256, TRUE);
+	OutputLine(NULL, "「……えぇ、全くです」",
+			NULL, "「…………是，我完全同意。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1071.「もっとも、やつはこの前死んだ。kvS14/00/VT4Bb_sorima1072.天寿を全うして、盛大にいい思い出とともに、…名誉も抱えてな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1071", 256, TRUE);
+	OutputLine(NULL, "「もっとも、やつはこの前死んだ。",
+			NULL, "「只不过，那家伙前阵子死了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1072", 256, TRUE);
+	OutputLine(NULL, "天寿を全うして、盛大にいい思い出とともに、…名誉も抱えてな」",
+			NULL, "寿终正寝，带着一大堆美好回忆，还有名誉一起走的。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1073.「…神も仏もねぇ結末で頭にくるが、それはともかくとしても組織はまだ、残ったままだ。kvS14/00/VT4Bb_sorima1074.そして、小泉以上に小賢しくて意地汚い連中が、それを動かして懐を肥やし続けている」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1073", 256, TRUE);
+	OutputLine(NULL, "「…神も仏もねぇ結末で頭にくるが、それはともかくとしても組織はまだ、残ったままだ。",
+			NULL, "「这个结局真是神佛皆无，想起来就火大。不过先不说那个，组织还好端端地留下来了。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1074", 256, TRUE);
+	OutputLine(NULL, "そして、小泉以上に小賢しくて意地汚い連中が、それを動かして懐を肥やし続けている」",
+			NULL, "而且一群比小泉更狡猾、更贪婪的家伙，还在驱动它继续中饱私囊。」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1075.「それをぶっ潰すのが、俺たち地検特捜部の役目さ。kvS14/00/VT4Bb_sorima1076.正義云々を語る以前に、法治国家の番人として…な」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1075", 256, TRUE);
+	OutputLine(NULL, "「それをぶっ潰すのが、俺たち地検特捜部の役目さ。",
+			NULL, "「把那玩意儿砸烂，就是我们地检特搜部的职责。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1076", 256, TRUE);
+	OutputLine(NULL, "正義云々を語る以前に、法治国家の番人として…な」",
+			NULL, "在谈论正义以前，作为法治国家的守门人…………」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1052.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1052", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//反町rvS14/00/VT4Bb_sorima1077.「…だが赤坂、お前たちは違う。kvS14/00/VT4Bb_sorima1078.情に流されて、自分の立場と職務を見失うってのは、俺たちも求めていない。kvS14/00/VT4Bb_sorima1079.…まぁ、お前さんはうまくいくように見守っていてくれや」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>反町</color>", NULL, "<color=#f5e6d3>反町</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1077", 256, TRUE);
+	OutputLine(NULL, "「…だが赤坂、お前たちは違う。",
+			NULL, "「不过赤坂，你们不一样。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1078", 256, TRUE);
+	OutputLine(NULL, "情に流されて、自分の立場と職務を見失うってのは、俺たちも求めていない。",
+			NULL, "被情绪牵着走，迷失自己的立场和职责，这也不是我们想看到的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_sorima1079", 256, TRUE);
+	OutputLine(NULL, "…まぁ、お前さんはうまくいくように見守っていてくれや」",
+			NULL, "总之，你就在旁边看着事情顺利推进吧。」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1053.「はい。kvS14/13/VT4Bb_akasaka1054.…後輩として、応援しています」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1053", 256, TRUE);
+	OutputLine(NULL, "「はい。",
+			NULL, "「是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1054", 256, TRUE);
+	OutputLine(NULL, "…後輩として、応援しています」",
+			NULL, "作为后辈，我会支援您。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/tk_ryou1", 1000 );
+
+//r私はそう答えて、手を差し出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私はそう答えて、手を差し出す。",
+			NULL, "我这样回答，伸出了手。", Line_Normal);
+	ClearMessage();
+
+//r反町さんは一瞬目を丸くしたが、…やがて、気恥ずかしそうにそれをしっかりと握り返してくれた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "反町さんは一瞬目を丸くしたが、…やがて、気恥ずかしそうにそれをしっかりと握り返してくれた。",
+			NULL, "反町先生一瞬间睁大了眼睛。随后，他像是有些难为情，却还是牢牢回握了我的手。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//r…青臭いと、笑われるかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…青臭いと、笑われるかもしれない。",
+			NULL, "也许会被他笑我太天真。", Line_Normal);
+	ClearMessage();
+
+//rだが、…今の私にできるのは、本当にそれくらいしかなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、…今の私にできるのは、本当にそれくらいしかなかった。",
+			NULL, "可是如今的我，真的只能做到这种程度。", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "down", 0, 0, 2000 );
+	FadeOutBGM(2, 200, FALSE);
+	Wait( 2000 );
+	PlaySE(3, "addse11", 256, 64);
+	DrawScene("white", 1000 );
+	DrawScene("background/saten1", 1000 );
+	PlayBGM(2, "hm01_04", 128, 0);
+
+//雪絵rvS14/00/VT4Bb_yukie1001.「…旅行、ですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1001", 256, TRUE);
+	OutputLine(NULL, "「…旅行、ですか？」",
+			NULL, "「…………旅行吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1055.「ああ。kvS14/13/VT4Bb_akasaka1056.しばらく休みどころか、家にも戻らない日が続いたからね。kvS14/13/VT4Bb_akasaka1057.ちょっと長めに休みをもらって、どこか温泉にでも行こうと思うんだが…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1055", 256, TRUE);
+	OutputLine(NULL, "「ああ。",
+			NULL, "「嗯。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1056", 256, TRUE);
+	OutputLine(NULL, "しばらく休みどころか、家にも戻らない日が続いたからね。",
+			NULL, "这阵子别说休息，连续好多天都没能回家。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1057", 256, TRUE);
+	OutputLine(NULL, "ちょっと長めに休みをもらって、どこか温泉にでも行こうと思うんだが…」",
+			NULL, "所以我想请个稍微长一点的假，去什么温泉之类的地方。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r…反町さんとの会合から、数日後。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…反町さんとの会合から、数日後。",
+			NULL, "与反町先生会面后的数日后。", Line_Normal);
+	ClearMessage();
+
+//r休みをもらった私は妻子を伴って、デパートに出掛けることにした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "休みをもらった私は妻子を伴って、デパートに出掛けることにした。",
+			NULL, "得到休假的我决定带着妻女去百货商店。", Line_Normal);
+	ClearMessage();
+
+//rここしばらく家族団らんの時間を作ってやれなかったためか、それを提案した時は二人に訝しげな目を向けられてしまったが…天気も良く、楽しい時間を過ごすことができた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ここしばらく家族団らんの時間を作ってやれなかったためか、それを提案した時は二人に訝しげな目を向けられてしまったが…天気も良く、楽しい時間を過ごすことができた。",
+			NULL, "或许是这阵子一直没能抽出时间陪伴家人，当我提出这个建议时，两人都用疑惑的目光看着我。不过天气很好，我们也度过了一段愉快的时间。", Line_Normal);
+	ClearMessage();
+
+//r特に美雪は、屋上広場で盛大に遊ぶことができて嬉しかったようで、…レストランで少し遅い昼食を取った後は、はちきれんばかりの笑みを浮かべて終始ご機嫌だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "特に美雪は、屋上広場で盛大に遊ぶことができて嬉しかったようで、…レストランで少し遅い昼食を取った後は、はちきれんばかりの笑みを浮かべて終始ご機嫌だった。",
+			NULL, "尤其是美雪，她似乎能在屋顶广场尽情玩耍而非常开心。在餐厅吃过稍晚的午餐后，她脸上挂着快要绽开的笑容，从头到尾都兴致高昂。", Line_Normal);
+	ClearMessage();
+
+//rもっとも、あまりの浮かれようで隣のテーブルに座る赤の他人にも話しかけたりしたため、さすがに見かねた雪絵が『知らない人には注意しなさい』とたしなめていたが…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もっとも、あまりの浮かれようで隣のテーブルに座る赤の他人にも話しかけたりしたため、さすがに見かねた雪絵が『知らない人には注意しなさい』とたしなめていたが…。",
+			NULL, "不过，她实在太兴奋，甚至还向坐在隔壁桌的陌生人搭话。雪绘终于看不下去，提醒她「要小心不认识的人」。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 13, "sprite/aks1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saten1", 1000 );
+
+//赤坂rvS14/13/VT4Bb_akasaka1058.「どうだろうか、雪絵？kvS14/13/VT4Bb_akasaka1059.　君も温泉は、嫌いじゃなかっただろう？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1058", 256, TRUE);
+	OutputLine(NULL, "「どうだろうか、雪絵？",
+			NULL, "「雪绘，你觉得怎么样？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1059", 256, TRUE);
+	OutputLine(NULL, "　君も温泉は、嫌いじゃなかっただろう？」",
+			NULL, "你也不讨厌温泉吧？」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1002.「え、ええ…まぁ。kvS14/00/VT4Bb_yukie1003.でも、大丈夫なのですか？kvS14/00/VT4Bb_yukie1004.　そんなに長い休みをもらうなんて、今までほとんどなかったのに…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1002", 256, TRUE);
+	OutputLine(NULL, "「え、ええ…まぁ。",
+			NULL, "「嗯，嗯…………还好。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1003", 256, TRUE);
+	OutputLine(NULL, "でも、大丈夫なのですか？",
+			NULL, "可是，真的没问题吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1004", 256, TRUE);
+	OutputLine(NULL, "　そんなに長い休みをもらうなんて、今までほとんどなかったのに…」",
+			NULL, "你以前几乎没有请过那么长的假…………」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1060.「ああ、心配ないよ。kvS14/13/VT4Bb_akasaka1061.室長からも、少し骨休めして来いってお達しがあったからね。kvS14/13/VT4Bb_akasaka1062.…美雪もどうだ？kvS14/13/VT4Bb_akasaka1063.　温泉、行ってみたいだろう？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1060", 256, TRUE);
+	OutputLine(NULL, "「ああ、心配ないよ。",
+			NULL, "「嗯，不用担心。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1061", 256, TRUE);
+	OutputLine(NULL, "室長からも、少し骨休めして来いってお達しがあったからね。",
+			NULL, "室长也传话说，让我稍微去休养一下。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1062", 256, TRUE);
+	OutputLine(NULL, "…美雪もどうだ？",
+			NULL, "美雪呢？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1063", 256, TRUE);
+	OutputLine(NULL, "　温泉、行ってみたいだろう？」",
+			NULL, "你也想去温泉吧？」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 13, "sprite/aks1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 34, "sprite/miyuki_hatena_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS14/34/VT4Bb_miyuki1001.「温泉…？kvS14/34/VT4Bb_miyuki1002.　それって、お風呂屋さん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1001", 256, TRUE);
+	OutputLine(NULL, "「温泉…？",
+			NULL, "「温泉？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1002", 256, TRUE);
+	OutputLine(NULL, "　それって、お風呂屋さん？」",
+			NULL, "那是澡堂吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 13, "sprite/aks1_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1064.「あははは、違う違う。kvS14/13/VT4Bb_akasaka1065.温泉ってのはね、山の中にある大きなお風呂場なんだ。kvS14/13/VT4Bb_akasaka1066.そこでホテルに泊まって、おいしい料理を食べよう。kvS14/13/VT4Bb_akasaka1067.美雪の好きな、釣りもできるはずだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1064", 256, TRUE);
+	OutputLine(NULL, "「あははは、違う違う。",
+			NULL, "「啊哈哈哈，不是，不是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1065", 256, TRUE);
+	OutputLine(NULL, "温泉ってのはね、山の中にある大きなお風呂場なんだ。",
+			NULL, "温泉是在山里很大的浴场。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1066", 256, TRUE);
+	OutputLine(NULL, "そこでホテルに泊まって、おいしい料理を食べよう。",
+			NULL, "我们可以住在那里的旅馆，还能吃到好吃的菜。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1067", 256, TRUE);
+	OutputLine(NULL, "美雪の好きな、釣りもできるはずだよ」",
+			NULL, "应该还能钓美雪喜欢的鱼哦。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 34, "sprite/miyuki_warai_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//美雪rvS14/34/VT4Bb_miyuki1003.「えっ…じゃあ、お出掛けなの？！kvS14/34/VT4Bb_miyuki1004.　わーい、温泉、温泉っ♪kvS14/34/VT4Bb_miyuki1005.　やったぁ～！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1003", 256, TRUE);
+	OutputLine(NULL, "「えっ…じゃあ、お出掛けなの？！",
+			NULL, "「咦？那就是要出门玩？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1004", 256, TRUE);
+	OutputLine(NULL, "　わーい、温泉、温泉っ♪",
+			NULL, "哇，温泉，温泉~", Line_WaitForInput);
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1005", 256, TRUE);
+	OutputLine(NULL, "　やったぁ～！」",
+			NULL, "太棒啦～！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(4, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//r美雪は飲んでいたジュースのグラスを取り落とさんばかりの勢いで、大はしゃぎする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪は飲んでいたジュースのグラスを取り落とさんばかりの勢いで、大はしゃぎする。",
+			NULL, "美雪欢呼雀跃，兴奋得差点把正在喝的果汁杯子掉到地上。", Line_Normal);
+	ClearMessage();
+
+//r狭い空間で暴れてしまったためにテーブルからフォークが落ち、少し耳障りな甲高い音が室内に響き渡った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "狭い空間で暴れてしまったためにテーブルからフォークが落ち、少し耳障りな甲高い音が室内に響き渡った。",
+			NULL, "她在狭窄空间里闹了起来，导致叉子从桌上掉落，略显刺耳的尖锐声响在室内响起。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "dsse101", 256, 64);
+	DrawScene("white", 150 );
+	ModDrawCharacter(5, 13, "sprite/aks1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 34, "sprite/miyuki_warai_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/saten1", 500 );
+
+//雪絵rvS14/00/VT4Bb_yukie1005.「こら美雪、静かにしなさい！kvS14/00/VT4Bb_yukie1006.　ここはおうちじゃないの、騒ぐと周りに迷惑でしょ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1005", 256, TRUE);
+	OutputLine(NULL, "「こら美雪、静かにしなさい！",
+			NULL, "「美雪，安静一点！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1006", 256, TRUE);
+	OutputLine(NULL, "　ここはおうちじゃないの、騒ぐと周りに迷惑でしょ？」",
+			NULL, "这里不是家里，吵闹会给周围的人添麻烦吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 34, "sprite/miyuki_huan_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//美雪rvS14/34/VT4Bb_miyuki1006.「っ？　…あぅ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1006", 256, TRUE);
+	OutputLine(NULL, "「っ？　…あぅ…」",
+			NULL, "「咦？……啊呜……」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1007.「ほら…フォークが落ちちゃったじゃないの。kvS14/00/VT4Bb_yukie1008.交換してもらわなきゃ…すみませーん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1007", 256, TRUE);
+	OutputLine(NULL, "「ほら…フォークが落ちちゃったじゃないの。",
+			NULL, "「你看，叉子都掉了吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1008", 256, TRUE);
+	OutputLine(NULL, "交換してもらわなきゃ…すみませーん」",
+			NULL, "得请人换一把…………不好意思——」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 34, "sprite/miyuki_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS14/34/VT4Bb_miyuki1007.「…ごめんなさい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1007", 256, TRUE);
+	OutputLine(NULL, "「…ごめんなさい」",
+			NULL, "「…………对不起。」", Line_Normal);
+	ClearMessage();
+
+//r雪絵に厳しい口調でたしなめられて、美雪は涙目でしゅんとなる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "雪絵に厳しい口調でたしなめられて、美雪は涙目でしゅんとなる。",
+			NULL, "被雪绘用严厉的语气责备后，美雪眼眶含泪，垂头丧气起来。", Line_Normal);
+	ClearMessage();
+
+//rただ、この子を騒がせてしまったのは、私が温泉の話をしてしまったからだ。そんな思いから私は、『まぁまぁ』ととりなし、なおもお小言を続けようとする雪絵を制していった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、この子を騒がせてしまったのは、私が温泉の話をしてしまったからだ。そんな思いから私は、『まぁまぁ』ととりなし、なおもお小言を続けようとする雪絵を制していった。",
+			NULL, "不过，让这孩子闹起来的原因是我提起了温泉。出于这样的想法，我说着「好了好了」打圆场，制止了还想继续说教的雪绘。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 13, "sprite/aks1_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1068.「雪絵…そんなに厳しく叱らなくても。kvS14/13/VT4Bb_akasaka1069.騒ぎたい年頃なんだから、大目に見てやればいいじゃないか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1068", 256, TRUE);
+	OutputLine(NULL, "「雪絵…そんなに厳しく叱らなくても。",
+			NULL, "「雪绘…………也不用这么严厉地骂她吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1069", 256, TRUE);
+	OutputLine(NULL, "騒ぎたい年頃なんだから、大目に見てやればいいじゃないか」",
+			NULL, "她正是想闹的年纪，稍微宽容一点也可以吧。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//雪絵rvS14/00/VT4Bb_yukie1009.「だめです。kvS14/00/VT4Bb_yukie1010.こういうしつけは子供の時にしっかりやっておかないと、美雪のためになりません。kvS14/00/VT4Bb_yukie1011.この子、幼稚園でも落ち着きがないって先生に注意されているのだから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1009", 256, TRUE);
+	OutputLine(NULL, "「だめです。",
+			NULL, "「不行。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1010", 256, TRUE);
+	OutputLine(NULL, "こういうしつけは子供の時にしっかりやっておかないと、美雪のためになりません。",
+			NULL, "这种规矩必须趁孩子小的时候好好教，对美雪才有好处。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1011", 256, TRUE);
+	OutputLine(NULL, "この子、幼稚園でも落ち着きがないって先生に注意されているのだから」",
+			NULL, "老师在幼儿园也提醒过，说这孩子坐不住。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 13, "sprite/aks1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1070.「しかしな…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1070", 256, TRUE);
+	OutputLine(NULL, "「しかしな…」",
+			NULL, "「可是…………」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1012.「それに、よその子たちはもっと大変なんですよ？kvS14/00/VT4Bb_yukie1013.　勉強とか、お稽古ごととか…美雪なんて、まだましなほうです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1012", 256, TRUE);
+	OutputLine(NULL, "「それに、よその子たちはもっと大変なんですよ？",
+			NULL, "「而且，别人家的孩子更辛苦呢？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1013", 256, TRUE);
+	OutputLine(NULL, "　勉強とか、お稽古ごととか…美雪なんて、まだましなほうです」",
+			NULL, "学习啦，才艺课啦…………美雪已经算轻松的了。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//雪絵rvS14/00/VT4Bb_yukie1014.「あなたはそんなことご存じじゃないから、甘いことをおっしゃるのでしょうけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1014", 256, TRUE);
+	OutputLine(NULL, "「あなたはそんなことご存じじゃないから、甘いことをおっしゃるのでしょうけど…」",
+			NULL, "「你不知道这些，所以才会说得那么轻松吧…………」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 13, "sprite/aks1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1071.「……すまん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1071", 256, TRUE);
+	OutputLine(NULL, "「……すまん」",
+			NULL, "「……抱歉。」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1015.「え？kvS14/00/VT4Bb_yukie1016.　あ…ご、ごめんなさい！kvS14/00/VT4Bb_yukie1017.　私、つい言いすぎてしまって…あなたのお仕事のことは、十分に分かっているつもりなのに…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1015", 256, TRUE);
+	OutputLine(NULL, "「え？",
+			NULL, "「咦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1016", 256, TRUE);
+	OutputLine(NULL, "　あ…ご、ごめんなさい！",
+			NULL, "啊…………对，对不起！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1017", 256, TRUE);
+	OutputLine(NULL, "　私、つい言いすぎてしまって…あなたのお仕事のことは、十分に分かっているつもりなのに…！」",
+			NULL, "我一不小心说过头了…………你的工作，我明明已经很理解了…………！」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm10_54", 128, 0);
+	DrawScene("black", 1000 );
+
+//rそう言って雪絵は、本当にすまなそうな顔で私に向かって、何度も頭を下げ続ける。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って雪絵は、本当にすまなそうな顔で私に向かって、何度も頭を下げ続ける。",
+			NULL, "雪绘这么说着，真的满脸愧疚地朝我一再低头。", Line_Normal);
+	ClearMessage();
+
+//r元々優しい上に、夫の仕事について愚痴や不平を言ったことなどまったくない、…本当に私には過ぎた女性だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "元々優しい上に、夫の仕事について愚痴や不平を言ったことなどまったくない、…本当に私には過ぎた女性だった。",
+			NULL, "她原本就温柔，而且从没对丈夫的工作发过牢骚或抱怨。对我来说，她真是好得让我受之有愧的女人。", Line_Normal);
+	ClearMessage();
+
+//r無意識のうちに剣呑な口調になってしまったのも、きっと私には言えない疲れや、悩みを抱えているからなのかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "無意識のうちに剣呑な口調になってしまったのも、きっと私には言えない疲れや、悩みを抱えているからなのかもしれない。",
+			NULL, "她会不由自主地说出那么刺人的话，也许是因为心里积攒着无法向我倾诉的疲惫和烦恼。", Line_Normal);
+	ClearMessage();
+
+//r…それを思うと、なお申し訳なさが募って仕方がなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…それを思うと、なお申し訳なさが募って仕方がなかった。",
+			NULL, "想到这一点，我心中的歉意就更强烈，难以抑制。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 13, "sprite/aks1_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 34, "sprite/miyuki_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/saten1", 1000 );
+
+//赤坂rvS14/13/VT4Bb_akasaka1072.「いや…美雪のしつけのことを考えれば、君の言う通りだ。kvS14/13/VT4Bb_akasaka1073.しばらくの間、家庭のことをすっかり任せっきりにして…色々と苦労をかけてしまった。kvS14/13/VT4Bb_akasaka1074.本当に、すまないと思っているんだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1072", 256, TRUE);
+	OutputLine(NULL, "「いや…美雪のしつけのことを考えれば、君の言う通りだ。",
+			NULL, "「不…………考虑到美雪的管教，你说得对。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1073", 256, TRUE);
+	OutputLine(NULL, "しばらくの間、家庭のことをすっかり任せっきりにして…色々と苦労をかけてしまった。",
+			NULL, "这段时间，我把家里的事完全交给你，让你吃了很多苦。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1074", 256, TRUE);
+	OutputLine(NULL, "本当に、すまないと思っているんだ」",
+			NULL, "我真的觉得很对不起。」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1018.「あなた…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1018", 256, TRUE);
+	OutputLine(NULL, "「あなた…」",
+			NULL, "「亲爱的…………」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1075.「だから、今度の旅行ではゆっくり骨休めしてくれないか？kvS14/13/VT4Bb_akasaka1076.　美雪のことは、私がしっかり面倒みるから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1075", 256, TRUE);
+	OutputLine(NULL, "「だから、今度の旅行ではゆっくり骨休めしてくれないか？",
+			NULL, "「所以这次旅行，你能好好休养一下吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1076", 256, TRUE);
+	OutputLine(NULL, "　美雪のことは、私がしっかり面倒みるから」",
+			NULL, "美雪就由我来好好照顾。」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1019.「そんな…あなただって、色々とお疲れなのに。kvS14/00/VT4Bb_yukie1020.あなたのほうこそ、ぜひ身体を休めてくださいな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1019", 256, TRUE);
+	OutputLine(NULL, "「そんな…あなただって、色々とお疲れなのに。",
+			NULL, "「怎么会…………你也已经很累了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1020", 256, TRUE);
+	OutputLine(NULL, "あなたのほうこそ、ぜひ身体を休めてくださいな」",
+			NULL, "你才更应该好好休息。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 13, "sprite/aks1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//赤坂rvS14/13/VT4Bb_akasaka1077.「いや、君のほうが…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1077", 256, TRUE);
+	OutputLine(NULL, "「いや、君のほうが…」",
+			NULL, "「不，还是你…………」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1021.「いいえ、あなたが…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1021", 256, TRUE);
+	OutputLine(NULL, "「いいえ、あなたが…」",
+			NULL, "「不，还是你…………」", Line_Normal);
+	ClearMessage();
+
+//rその時、お互いに譲り合っている私たちをぽかん、と見つめていた美雪が、急にぱっと明るい笑顔を浮かべて言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、お互いに譲り合っている私たちをぽかん、と見つめていた美雪が、急にぱっと明るい笑顔を浮かべて言った。",
+			NULL, "就在这时，一直呆呆看着互相谦让的我们的美雪，忽然露出明亮的笑容说道。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 34, "sprite/miyuki_warai_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//美雪rvS14/34/VT4Bb_miyuki1008.「…あははっ！kvS14/34/VT4Bb_miyuki1009.　パパとママって、らぶらぶ～！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1008", 256, TRUE);
+	OutputLine(NULL, "「…あははっ！",
+			NULL, "「啊哈哈！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1009", 256, TRUE);
+	OutputLine(NULL, "　パパとママって、らぶらぶ～！」",
+			NULL, "爸爸和妈妈好恩爱～！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 13, "sprite/aks1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//赤坂＆雪絵ro75.vS14/13/VT4Bb_akasaka1078|S14/00/VT4Bb_yukie1022.「「えっっ？！」」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>＆<color=#f5e6d3>雪絵</color>", NULL, "<color=#797d8a>赤坂</color>＆<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1078", 256, TRUE);
+	ModPlayVoiceLS(5, 0, "ps3/s14/00/vt4bb_yukie1022", 256, TRUE);
+	OutputLine(NULL, "「「えっっ？！」」",
+			NULL, "「「咦？！」」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rら、ラブラブ…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ら、ラブラブ…？",
+			NULL, "恩，恩爱…………？", Line_Normal);
+	ClearMessage();
+
+//r思いもよらなかった言葉に、私たちは顔を見合わせる。…その途端、気恥ずかしさがこみ上げてきて二人同時に俯き、首まで真っ赤にして縮こまった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "思いもよらなかった言葉に、私たちは顔を見合わせる。…その途端、気恥ずかしさがこみ上げてきて二人同時に俯き、首まで真っ赤にして縮こまった。",
+			NULL, "听到这句出乎意料的话，我们面面相觑。紧接着，害羞的感觉涌上心头，两个人同时低下头，红到脖子根，缩成一团。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 34, "sprite/miyuki_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saten1", 1000 );
+
+//美雪rvS14/34/VT4Bb_miyuki1010.「あー、パパとママ、顔真っ赤だー！kvS14/34/VT4Bb_miyuki1011.　あっついよー、このこのー！　ひゅーひゅー！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1010", 256, TRUE);
+	OutputLine(NULL, "「あー、パパとママ、顔真っ赤だー！",
+			NULL, "「啊，爸爸妈妈脸都红啦！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1011", 256, TRUE);
+	OutputLine(NULL, "　あっついよー、このこのー！　ひゅーひゅー！」",
+			NULL, "好热好热，羞羞脸～！咻咻～！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(4, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//赤坂rvS14/13/VT4Bb_akasaka1079.「みっ…美雪？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1079", 256, TRUE);
+	OutputLine(NULL, "「みっ…美雪？！」",
+			NULL, "「美、美雪？！」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1023.「こ、こらっ！kvS14/00/VT4Bb_yukie1024.　そんな言葉、どこで覚えてきたのっ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1023", 256, TRUE);
+	OutputLine(NULL, "「こ、こらっ！",
+			NULL, "「喂，喂！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1024", 256, TRUE);
+	OutputLine(NULL, "　そんな言葉、どこで覚えてきたのっ？」",
+			NULL, "这种话是从哪里学来的？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 34, "sprite/miyuki_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "pou", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//美雪rvS14/34/VT4Bb_miyuki1012.「幼稚園ー！kvS14/34/VT4Bb_miyuki1013.　森田先生が、教えてくれたの～♪」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1012", 256, TRUE);
+	OutputLine(NULL, "「幼稚園ー！",
+			NULL, "「幼儿园！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 34, "ps3/s14/34/vt4bb_miyuki1013", 256, TRUE);
+	OutputLine(NULL, "　森田先生が、教えてくれたの～♪」",
+			NULL, "森田老师教我的～」", Line_Normal);
+	ClearMessage();
+
+//赤坂＆雪絵ro75.vS14/13/VT4Bb_akasaka1080|S14/00/VT4Bb_yukie1025.「「…………」」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>＆<color=#f5e6d3>雪絵</color>", NULL, "<color=#797d8a>赤坂</color>＆<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1080", 256, TRUE);
+	ModPlayVoiceLS(5, 0, "ps3/s14/00/vt4bb_yukie1025", 256, TRUE);
+	OutputLine(NULL, "「「…………」」",
+			NULL, "「「…………」」", Line_Normal);
+	ClearMessage();
+
+//rおそるべし、最近の幼稚園教育。…先生とは、今度ゆっくり話し合ったほうがよさそうだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おそるべし、最近の幼稚園教育。…先生とは、今度ゆっくり話し合ったほうがよさそうだ。",
+			NULL, "可怕啊，最近的幼儿园教育。看来下次得和老师好好谈一谈了。", Line_Normal);
+	ClearMessage();
+
+//rとりあえず、照れ隠しに何度も咳払いをして気を落ち着けてから、…私は話を戻して雪絵に向き直っていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とりあえず、照れ隠しに何度も咳払いをして気を落ち着けてから、…私は話を戻して雪絵に向き直っていった。",
+			NULL, "总之，我为了掩饰尴尬咳了好几声，等自己冷静下来之后，才把话题拉回来重新面向雪绘。", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1081.「と…とにかく、美雪の面倒は交代で見て…お互い温泉で、ゆっくり羽を伸ばそう。kvS14/13/VT4Bb_akasaka1082.それでどうかな？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1081", 256, TRUE);
+	OutputLine(NULL, "「と…とにかく、美雪の面倒は交代で見て…お互い温泉で、ゆっくり羽を伸ばそう。",
+			NULL, "「总、总之，美雪就由我们轮流照看。我们俩都趁泡温泉的时候好好放松一下吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1082", 256, TRUE);
+	OutputLine(NULL, "それでどうかな？」",
+			NULL, "这样可以吗？」", Line_Normal);
+	ClearMessage();
+
+//雪絵rvS14/00/VT4Bb_yukie1026.「え、ええ…。kvS14/00/VT4Bb_yukie1027.あなたさえそれで、よろしければ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>雪绘</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1026", 256, TRUE);
+	OutputLine(NULL, "「え、ええ…。",
+			NULL, "「嗯、嗯……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/vt4bb_yukie1027", 256, TRUE);
+	OutputLine(NULL, "あなたさえそれで、よろしければ…」",
+			NULL, "只要你觉得这样就好…………」", Line_Normal);
+	ClearMessage();
+
+//赤坂rvS14/13/VT4Bb_akasaka1083.「よし…そうと決まれば今週の日曜、さっそく下見に行って来るよ。kvS14/13/VT4Bb_akasaka1084.行き先は…そうだな、和倉温泉なんてどうだ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>赤坂</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1083", 256, TRUE);
+	OutputLine(NULL, "「よし…そうと決まれば今週の日曜、さっそく下見に行って来るよ。",
+			NULL, "「好，既然决定了，这周日我马上去踩点。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s14/13/vt4bb_akasaka1084", 256, TRUE);
+	OutputLine(NULL, "行き先は…そうだな、和倉温泉なんてどうだ？」",
+			NULL, "目的地嘛…………对了，和仓温泉怎么样？」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

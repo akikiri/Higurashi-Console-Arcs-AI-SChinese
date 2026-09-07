@@ -1,0 +1,289 @@
+void main()
+{
+
+
+//*Miotsukushi Omote TIPS 3
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//無法者の末路
+
+	DrawScene("black", 1000 );
+	PlayBGM( 1, "higurasi", 128, 0 );
+	PlaySE(3, "dsse105", 256, 64);
+
+//rはあっ、はあっ、はあっ、はあっ、はあっ、はあっ、………………！
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "はあっ、はあっ、はあっ、はあっ、はあっ、はあっ、………………！",
+			NULL, "哈啊、哈啊、哈啊、哈啊、哈啊、哈啊…………！", Line_Normal);
+	ClearMessage();
+
+//rようやく、警察の怒声と足音が聞こえなくなったところで足を止める。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ようやく、警察の怒声と足音が聞こえなくなったところで足を止める。",
+			NULL, "终于，等警察的怒吼声和脚步声都听不见了，我才停下脚步。", Line_Normal);
+	ClearMessage();
+
+//rすでに全身汗だくで、足どころか身体中の筋肉ががくがくと震えていることに加えて、肺はもう爆発寸前のように熱く、内部から破裂しそうにずきずきと痛かった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "すでに全身汗だくで、足どころか身体中の筋肉ががくがくと震えていることに加えて、肺はもう爆発寸前のように熱く、内部から破裂しそうにずきずきと痛かった。",
+			NULL, "我早已浑身汗湿，不只是双腿，全身的肌肉都在不停发抖；肺部也像快要爆炸般灼热，仿佛要从内部裂开似的阵阵刺痛。", Line_Normal);
+	ClearMessage();
+
+//rくそ…………！　目が回る。胃の中を全て途中で吐き出したのに、まだえづくように喉から空気の塊がせりあがって、最悪の気分だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "くそ…………！　目が回る。胃の中を全て途中で吐き出したのに、まだえづくように喉から空気の塊がせりあがって、最悪の気分だ。",
+			NULL, "可恶……头晕目眩。明明胃里的东西已经在半路吐了个精光，喉咙里却还像反胃一样涌上空气块，感觉糟透了。", Line_Normal);
+	ClearMessage();
+
+//r服とズボンは汗と泥と、そして吐瀉物ですっかり汚れて、惨めこの上ない格好だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "服とズボンは汗と泥と、そして吐瀉物ですっかり汚れて、惨めこの上ない格好だった。",
+			NULL, "衣服和裤子被汗水、泥土以及呕吐物弄得一塌糊涂，狼狈到了极点。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	ModSetLayerFilter(4, 256, "sunset");
+	ModDrawCharacter(4, 21, "sprite/tetu_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/mo2_01", 150 );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	PlayBGM(2, "hm02_09", 128, 0);
+
+//鉄平rvS20/21/442000026.「ううっ……くそっ……！　畜生ッッ……！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>铁平</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000026", 256, TRUE);
+	OutputLine(NULL, "「ううっ……くそっ……！　畜生ッッ……！！」",
+			NULL, "「呜呜……可恶……！畜生……！」", Line_Normal);
+	ClearMessage();
+
+//rこうなったのも、あの疫病神のせいだ。ろくすっぽ何もできないくせに、うるさいやつらを呼びつけて、逆らって、あまつさえ警察まで…………！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "こうなったのも、あの疫病神のせいだ。ろくすっぽ何もできないくせに、うるさいやつらを呼びつけて、逆らって、あまつさえ警察まで…………！",
+			NULL, "事情会变成这样，全都是那个瘟神害的。明明什么都做不好，却把那些烦人的家伙叫来，敢反抗，甚至还叫来了警察……！", Line_Normal);
+	ClearMessage();
+
+//rクスリのことを警察に教えたのも、きっとあいつだろう。律子にすら内緒で、巧妙に今まで隠してきたのに、あいつのせいですべてがおじゃんだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "クスリのことを警察に教えたのも、きっとあいつだろう。律子にすら内緒で、巧妙に今まで隠してきたのに、あいつのせいですべてがおじゃんだ。",
+			NULL, "把药的事告诉警察的，也一定是那家伙。连律子都一直瞒着，至今都藏得那么巧妙，却因为那家伙全都泡汤了。", Line_Normal);
+	ClearMessage();
+
+//r今までの恐喝や暴力行為では証拠がないと逃れることができたが、薬物ともなれば話は違う。間違いなく、実刑で２、３年は放り込まれるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今までの恐喝や暴力行為では証拠がないと逃れることができたが、薬物ともなれば話は違う。間違いなく、実刑で２、３年は放り込まれるだろう。",
+			NULL, "之前那些恐吓和暴力行为，只要没有证据还能逃过去，可一旦牵扯到药物，事情就不同了。毫无疑问，我会被判实刑，关上两三年吧。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 21, "sprite/tetu_3_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlaySE(3, "addse13", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//鉄平rvS20/21/442000027.「くそったれがぁ……殺してやる……！　戻ったら、絶対殺してやらぁぁあぁっっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>铁平</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000027", 256, TRUE);
+	OutputLine(NULL, "「くそったれがぁ……殺してやる……！　戻ったら、絶対殺してやらぁぁあぁっっ！！」",
+			NULL, "「该死的……我要杀了她……！回去之后，我绝对要杀了她啊啊啊！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//？？？rvS20/09/440900083.「――――無理よ。残念ね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>???</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900083", 256, TRUE);
+	OutputLine(NULL, "「————無理よ。残念ね」",
+			NULL, "「——办不到的。真遗憾。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//鉄平rvS20/21/442000028.「んなっ……？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>铁平</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000028", 256, TRUE);
+	OutputLine(NULL, "「んなっ……？！」",
+			NULL, "「什么……？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 9, "sprite/ta1_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/mo3_01", 1000 );
+
+//rその冷たい声を背後に聞いて、慌てて振り返る。そこには、乾いた笑みを顔に浮かべる女が立っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その冷たい声を背後に聞いて、慌てて振り返る。そこには、乾いた笑みを顔に浮かべる女が立っていた。",
+			NULL, "背后传来那道冰冷的声音，我慌忙回过头去。那里站着一个脸上浮着冷笑的女人。", Line_Normal);
+	ClearMessage();
+
+//rこいつ…………確か、そうだ。入江診療所に勤めていた、看護師の――。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "こいつ…………確か、そうだ。入江診療所に勤めていた、看護師の——。",
+			NULL, "这家伙…………对了，我记得。是在入江诊疗所工作的那个护士——。", Line_Normal);
+	ClearMessage();
+
+//鉄平rvS20/21/442000029.「へ、へへ…………！　ちょうどええわ、行きがけの駄賃じゃ。おとなしくせんね……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>铁平</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000029", 256, TRUE);
+	OutputLine(NULL, "「へ、へへ…………！　ちょうどええわ、行きがけの駄賃じゃ。おとなしくせんね……！」",
+			NULL, "「嘿、嘿嘿……正好，顺手捞一把。乖乖听话……！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//鷹野rvS20/09/440900084.「――あら、私をどうするつもり？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900084", 256, TRUE);
+	OutputLine(NULL, "「——あら、私をどうするつもり？」",
+			NULL, "「——哎呀，你打算把我怎么样？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//鉄平rvS20/21/442000030.「き、決まってんね……！　お前は、サツから逃げおおせるまでの、人質じゃあ……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>铁平</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000030", 256, TRUE);
+	OutputLine(NULL, "「き、決まってんね……！　お前は、サツから逃げおおせるまでの、人質じゃあ……！」",
+			NULL, "「还、还用问吗……！你就是我逃过警察之前的人质……！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 9, "sprite/ta1_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//鷹野rvS20/09/440900085.「…………くすくすくす。つくづく生まれの卑しいやつってのは、考えることまで浅ましいってことね…………くすくすくす！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900085", 256, TRUE);
+	OutputLine(NULL, "「…………くすくすくす。つくづく生まれの卑しいやつってのは、考えることまで浅ましいってことね…………くすくすくす！」",
+			NULL, "「……呵呵呵。出身卑贱的人，连想的事情都这么浅薄，真是让人感叹……呵呵呵」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r…………な、なんだ、この女…………？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………な、なんだ、この女…………？！",
+			NULL, "……怎、怎么回事，这个女人……？！", Line_Normal);
+	ClearMessage();
+
+//r大振りのナイフを目の前にしても、全く動じる様子がない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "大振りのナイフを目の前にしても、全く動じる様子がない。",
+			NULL, "即使眼前对着一把大号刀具，她也完全没有动摇的样子。", Line_Normal);
+	ClearMessage();
+
+//rそれどころか、その氷のような微笑をますます冷たくさせて、鋭く見開いた目で見据えながら、ゆっくりと、……土を踏みしめるように緩慢な動作で歩み寄ってくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それどころか、その氷のような微笑をますます冷たくさせて、鋭く見開いた目で見据えながら、ゆっくりと、……土を踏みしめるように緩慢な動作で歩み寄ってくる。",
+			NULL, "甚至，她那如冰般的微笑变得越发冰冷，锐利睁大的眼睛紧盯着他，以缓慢得像是踏实泥土般的动作，一步步走近。", Line_Normal);
+	ClearMessage();
+
+//rそう、……まるで獲物を前にして牙を剥き、爪を伸ばす肉食動物のように……残酷で、脅威的な雰囲気が全身から吹き出すようで、……脅しているこちらが押されている？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう、……まるで獲物を前にして牙を剥き、爪を伸ばす肉食動物のように……残酷で、脅威的な雰囲気が全身から吹き出すようで、……脅しているこちらが押されている？！",
+			NULL, "没错……就像面对猎物时露出獠牙、伸出利爪的肉食动物……残酷而充满威胁的气息仿佛从她全身喷涌而出……明明是自己在威胁她，却反而被她压了回去。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse17", 256, 64);
+	DrawScene("white", 150 );
+	ModDrawCharacter(4, 9, "sprite/ta1_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/mo3_01", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//鉄平rvS20/21/442000031.「と、……止まらんねっ！！　こ、これが目に入らな――？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>铁平</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000031", 256, TRUE);
+	OutputLine(NULL, "「と、……止まらんねっ！！　こ、これが目に入らな——？！」",
+			NULL, "「停、……别过来！你、你看不到这个——？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//鷹野rvS20/09/440900086.「入らないわね。そんな大きなもの。もっとも――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900086", 256, TRUE);
+	OutputLine(NULL, "「入らないわね。そんな大きなもの。もっとも——」",
+			NULL, "「看不到呢。这么大的东西。再说——」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "mc071", 256, 64);
+	DrawScene("white", 150 );
+	ModDrawCharacter(4, 9, "sprite/ta1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/mo3_01", 150 );
+
+//鉄平rvS20/21/442000032.「ぎゃあっっ？！　ぐ、ぐあぁぁあぁっっ…………！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>铁平</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000032", 256, TRUE);
+	OutputLine(NULL, "「ぎゃあっっ？！　ぐ、ぐあぁぁあぁっっ…………！！」",
+			NULL, "「呀啊啊啊！咕、咕啊啊啊啊……！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 9, "sprite/ta1_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//鷹野rvS20/09/440900087.「この鉛弾なら、あなたの目の中には入るかもね。――試してあげましょうか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900087", 256, TRUE);
+	OutputLine(NULL, "「この鉛弾なら、あなたの目の中には入るかもね。——試してあげましょうか？」",
+			NULL, "「这种铅弹，倒是也许能进到你的眼睛里。——要试试看吗？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "mc071", 256, 64);
+	DrawScene("white", 150 );
+	ModDrawCharacter(4, 9, "sprite/ta1_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/mo3_01", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	PlaySE(4, "mc071", 256, 64);
+	DrawScene("white", 150 );
+	ModDrawCharacter(4, 9, "sprite/ta1_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/mo3_01", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	PlaySE(3, "mc071", 256, 64);
+	DrawScene("white", 150 );
+	ModDrawCharacter(4, 9, "sprite/ta1_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/mo3_01", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	PlaySE(4, "addse13", 256, 64);
+	DrawScene("black", 500 );
+
+//鷹野rvS20/09/440900088.「……あら、もう終わり？　ただの威嚇射撃なのに、勝手に気絶しちゃって……くすくすくす……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900088", 256, TRUE);
+	OutputLine(NULL, "「……あら、もう終わり？　ただの威嚇射撃なのに、勝手に気絶しちゃって……くすくすくす……！」",
+			NULL, "「……哎呀，这就结束了？明明只是威吓射击，居然自己吓晕过去了……呵呵呵……」", Line_Normal);
+	ClearMessage();
+
+//r……………………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……………………。",
+			NULL, "……………………。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "tatakiwaru", 256, 64);
+	DrawScene("white", 150 );
+	ModDrawCharacter(4, 9, "sprite/ta1_iradachi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/mo3_01", 150 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//鷹野rvS20/09/440900089.「……楽には死なせてあげないわよ。不愉快なこと思い出させやがって……！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s20/09/440900089", 256, TRUE);
+	OutputLine(NULL, "「……楽には死なせてあげないわよ。不愉快なこと思い出させやがって……！！」",
+			NULL, "「……我可不会让你轻松死掉。竟敢让我想起不愉快的事情……！」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

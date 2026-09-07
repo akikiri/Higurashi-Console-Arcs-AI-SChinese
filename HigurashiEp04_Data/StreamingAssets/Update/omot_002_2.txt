@@ -1,0 +1,919 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 2 continued
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 2, "sprite/re1a_bikkuri_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawScene("background/gk3", 1000 );
+	PlayBGM(2, "hm01_06", 128, 0);
+
+//レナrvS14/02/210200028.「だ、大丈夫かな詩ぃちゃん？！」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200028", 256, TRUE);
+	OutputLine(NULL, "「だ、大丈夫かな詩ぃちゃん？！」",
+			NULL, "「没、没事吧，小诗？！」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 6, "sprite/si3_yowaki_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600103.「…じゅ、寿命が４半世紀は縮まりました……！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600103", 256, TRUE);
+	OutputLine(NULL, "「…じゅ、寿命が４半世紀は縮まりました……！！」",
+			NULL, "「……寿、寿命缩短了四分之一个世纪……」", Line_Normal);
+	ClearMessage();
+
+//rその台詞すら、大げさには聞こえない。どこぞのコミックなら、今ごろ詩音の髪の毛は真っ白になってるはずだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その台詞すら、大げさには聞こえない。どこぞのコミックなら、今ごろ詩音の髪の毛は真っ白になってるはずだ。",
+			NULL, "就连这句话听起来也一点都不夸张。要是放在某部漫画里，现在诗音的头发应该已经全白了。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 4, "sprite/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS14/04/210400067.「ま、まったく…少しは考えて発言してもらいたいものですわね。kvS14/04/210400068.一時はどうなることかと思いましてよ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400067", 256, TRUE);
+	OutputLine(NULL, "「ま、まったく…少しは考えて発言してもらいたいものですわね。",
+			NULL, "「真、真是的……请你说话前稍微动动脑子好吗。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400068", 256, TRUE);
+	OutputLine(NULL, "一時はどうなることかと思いましてよ…」",
+			NULL, "我刚才一度还以为要出大事了呢。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si3_ikari_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600104.「誰のせいだ、誰のッッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600104", 256, TRUE);
+	OutputLine(NULL, "「誰のせいだ、誰のッッ！！！」",
+			NULL, "「都是谁害的，谁啊！！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 4, "sprite/sa1a_hannbeso_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS14/04/210400069.「ひ、ひぃっ！？！kvS14/04/210400070.　そ、それ以上近づいたらまた、これを――、kvS14/04/210400071.ふぁえっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400069", 256, TRUE);
+	OutputLine(NULL, "「ひ、ひぃっ！？！",
+			NULL, "「咿、咿呀？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400070", 256, TRUE);
+	OutputLine(NULL, "　そ、それ以上近づいたらまた、これを——、",
+			NULL, "你、你再靠近的话，我就再用这个——，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400071", 256, TRUE);
+	OutputLine(NULL, "ふぁえっ？！」",
+			NULL, "咦咦？！」", Line_Normal);
+	ClearMessage();
+
+//rとっさに切り札である缶詰をつかもうとした沙都子は、さっき置いたはずの場所に手を伸ばして空をつかみ、ぎょっとなって顔を戻す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とっさに切り札である缶詰をつかもうとした沙都子は、さっき置いたはずの場所に手を伸ばして空をつかみ、ぎょっとなって顔を戻す。",
+			NULL, "沙都子急忙想抓住自己的王牌罐头，手伸向刚才放着的地方却抓了个空，吓得猛然抬起脸。", Line_Normal);
+	ClearMessage();
+
+//rそこには、果たして――。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そこには、果たして——。",
+			NULL, "在那里，果然——。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si3_huteki_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600105.「お探しの品は、こちらでしょうか…っっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600105", 256, TRUE);
+	OutputLine(NULL, "「お探しの品は、こちらでしょうか…っっ？！」",
+			NULL, "「您要找的东西，是这个吗……？！」", Line_Normal);
+	ClearMessage();
+
+//r口元は笑いながら、それでも目だけは全く笑っていない表情で凄みながら、詩音はいつの間にか奪取した缶詰を掲げてみせた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "口元は笑いながら、それでも目だけは全く笑っていない表情で凄みながら、詩音はいつの間にか奪取した缶詰を掲げてみせた。",
+			NULL, "诗音嘴角带笑，眼睛却完全没有笑意，带着威压举起了不知何时夺来的罐头。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si3_majime_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600106.「……くっ……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600106", 256, TRUE);
+	OutputLine(NULL, "「……くっ……！」",
+			NULL, "「……唔……！」", Line_Normal);
+	ClearMessage();
+
+//rよく見ると眉間には深い皺が寄って、その額には脂汗が浮かんでいる。…そんなにも嫌なのかよ、缶詰が？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "よく見ると眉間には深い皺が寄って、その額には脂汗が浮かんでいる。…そんなにも嫌なのかよ、缶詰が？！",
+			NULL, "仔细一看，她眉间皱得很深，额头上还浮着冷汗。……你就那么讨厌罐头吗？！", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si3_tokui_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600107.「とりあえず――これはポイ、っと」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600107", 256, TRUE);
+	OutputLine(NULL, "「とりあえず——これはポイ、っと」",
+			NULL, "「总之——这个就扔掉吧」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "fly", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//r詩音は窓の外に、缶詰を投げ捨てた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "詩音は窓の外に、缶詰を投げ捨てた。",
+			NULL, "诗音把罐头扔出了窗外。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_can", 256, 64);
+	ModDrawCharacter(5, 4, "sprite/sa1a_odoroki_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS14/04/210400072.「あああっっ？！kvS14/04/210400073.　缶のぽ、ポイ捨てはいけませんのよっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400072", 256, TRUE);
+	OutputLine(NULL, "「あああっっ？！",
+			NULL, "「啊啊啊啊！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400073", 256, TRUE);
+	OutputLine(NULL, "　缶のぽ、ポイ捨てはいけませんのよっ？！」",
+			NULL, "罐、罐头可不能乱扔啊！」", Line_Normal);
+	ClearMessage();
+
+//詩音rvS14/06/210600108.「ふぅ…そうですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600108", 256, TRUE);
+	OutputLine(NULL, "「ふぅ…そうですね」",
+			NULL, "「呼……说得也是」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si3_majime_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600109.「でもま、ここまできたら私も本気ということで――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600109", 256, TRUE);
+	OutputLine(NULL, "「でもま、ここまできたら私も本気ということで——」",
+			NULL, "「不过，既然都到这一步了，我也该认真起来了——」", Line_Normal);
+	ClearMessage();
+
+	FadeAllBustshots( 200, TRUE );
+	PlaySE(3, "kaminari2", 256, 64);
+
+//rゴゴゴゴゴゴゴゴゴ……！！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゴゴゴゴゴゴゴゴゴ……！！！",
+			NULL, "轰轰轰轰轰轰轰轰……", Line_Normal);
+	ClearMessage();
+
+//r全身から蒼銀の闘気を吹き出し、詩音はゆっくりと足を踏み出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "全身から蒼銀の闘気を吹き出し、詩音はゆっくりと足を踏み出す。",
+			NULL, "诗音全身喷涌着苍银色斗气，缓缓迈出脚步。", Line_Normal);
+	ClearMessage();
+
+//r心なしか、その歩みごとに床が『みしっ』ではなく『じゅっ…！』と嫌すぎる臭いとともにしなる音が聞こえるのは…きっと気のせいではないのだろう。そう思いたい。うん。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "心なしか、その歩みごとに床が『みしっ』ではなく『じゅっ…！』と嫌すぎる臭いとともにしなる音が聞こえるのは…きっと気のせいではないのだろう。そう思いたい。うん。",
+			NULL, "也许是错觉，她每走一步，地板发出的声音都不像『吱呀』，而是伴着极其讨厌的焦臭声『滋……』地扭曲起来……这一定不是错觉吧。我想这么相信。嗯。", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 6, "sprite/si3_ikari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600110.「覚悟しぃや……沙都子ぉぉっっ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600110", 256, TRUE);
+	OutputLine(NULL, "「覚悟しぃや……沙都子ぉぉっっ！！！」",
+			NULL, "「做好觉悟吧……沙都子！！」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(4, 4, "sprite/sa1a_hannbeso_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS14/04/210400074.「ひ……ひあぁぁあっっ！？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400074", 256, TRUE);
+	OutputLine(NULL, "「ひ……ひあぁぁあっっ！？！」",
+			NULL, "「咿……咿呀啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r殺される――間違いなく、殺されるっっ？！　その迫力に怯えまくった沙都子はだっ、と文字通り脱兎のごとく逃げ出す。しかし、
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "殺される——間違いなく、殺されるっっ？！　その迫力に怯えまくった沙都子はだっ、と文字通り脱兎のごとく逃げ出す。しかし、",
+			NULL, "会被杀——毫无疑问，会被杀！！被那股气势吓到魂飞魄散的沙都子，啪地一下，真的像脱兔一样逃了出去。可是，", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 6, "sprite/si3_huteki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600111.「富田！kvS14/06/210600112.　岡村っ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600111", 256, TRUE);
+	OutputLine(NULL, "「富田！",
+			NULL, "「富田！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600112", 256, TRUE);
+	OutputLine(NULL, "　岡村っ！！」",
+			NULL, "冈村！！」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 24, "sprite/tomita1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 25, "sprite/oka1_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//富田＆岡村ro75.vS14/24/212400001|S14/25/212500001.「「はいっ！！」」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>＆<color=#7a7e7d>岡村</color>", NULL, "<color=#a17d6b>富田</color>＆<color=#7a7e7d>冈村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 24, "ps3/s14/24/212400001", 256, TRUE);
+	ModPlayVoiceLS(5, 25, "ps3/s14/25/212500001", 256, TRUE);
+	OutputLine(NULL, "「「はいっ！！」」",
+			NULL, "「「是！！」」", Line_Normal);
+	ClearMessage();
+
+	FadeAllBustshots( 200, TRUE );
+
+//r詩音の号令とともに、富田君と岡村君が素早く同時に立ち上がり、教室の入り口の前に立ち塞がった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "詩音の号令とともに、富田君と岡村君が素早く同時に立ち上がり、教室の入り口の前に立ち塞がった。",
+			NULL, "随着诗音一声令下，富田同学和冈村同学迅速同时起身，挡在了教室入口前。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 24, "sprite/tomita1_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(4, 4, "sprite/sa1a_hannbeso_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	ModDrawCharacter(3, 25, "sprite/oka1_shinken_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS14/04/210400075.「なっ？！kvS14/04/210400076.　と、富田さんと岡村さん？？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400075", 256, TRUE);
+	OutputLine(NULL, "「なっ？！",
+			NULL, "「什？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400076", 256, TRUE);
+	OutputLine(NULL, "　と、富田さんと岡村さん？？」",
+			NULL, "富、富田同学和冈村同学？！」", Line_Normal);
+	ClearMessage();
+
+//富田rvS14/24/212400002.「すまん、北条！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>富田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 24, "ps3/s14/24/212400002", 256, TRUE);
+	OutputLine(NULL, "「すまん、北条！」",
+			NULL, "「抱歉，北条」", Line_Normal);
+	ClearMessage();
+
+//岡村rvS14/25/212500002.「お前に恨みはないが、許してくれ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#7a7e7d>岡村</color>", NULL, "<color=#7a7e7d>冈村</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 25, "ps3/s14/25/212500002", 256, TRUE);
+	OutputLine(NULL, "「お前に恨みはないが、許してくれ！」",
+			NULL, "「我跟你无冤无仇，可你原谅我吧」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 4, "sprite/sa1a_odoroki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//沙都子rvS14/04/210400077.「ど、どうして……、はっ！？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400077", 256, TRUE);
+	OutputLine(NULL, "「ど、どうして……、はっ！？！」",
+			NULL, "「为、为什么……啊？！」", Line_Normal);
+	ClearMessage();
+
+//rぎょっ！　と沙都子が振り返ると、数歩後ろの距離に立つ詩音が手に持ったカラフルな紙切れを、ひらひらと口元で振っている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ぎょっ！　と沙都子が振り返ると、数歩後ろの距離に立つ詩音が手に持ったカラフルな紙切れを、ひらひらと口元で振っている。",
+			NULL, "沙都子惊得回头一看，几步之外的诗音正拿着一张色彩鲜艳的纸片，在嘴边轻轻晃着。", Line_Normal);
+	ClearMessage();
+
+//rその紙切れには、大きな目立つ文字が印刷されていた…そう、『デザートフェスタ食べ放題ご招待券』と！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その紙切れには、大きな目立つ文字が印刷されていた…そう、『デザートフェスタ食べ放題ご招待券』と！！",
+			NULL, "那张纸片上印着醒目的大字……没错，『甜点嘉年华自助招待券』。", Line_Normal);
+	ClearMessage();
+
+	FadeAllBustshots( 200, TRUE );
+	ModDrawCharacter(4, 6, "sprite/si3_wink_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600113.「さっきの台詞、そっくり返しますね。kvS14/06/210600114.『切り札は最後の最後に取っておく』。kvS14/06/210600115.くっくっくっ…♪」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600113", 256, TRUE);
+	OutputLine(NULL, "「さっきの台詞、そっくり返しますね。",
+			NULL, "「刚才那句台词，我原封不动还给你。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600114", 256, TRUE);
+	OutputLine(NULL, "『切り札は最後の最後に取っておく』。",
+			NULL, "『王牌要留到最后的最后』。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600115", 256, TRUE);
+	OutputLine(NULL, "くっくっくっ…♪」",
+			NULL, "呵呵呵呵……~」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 6, "sprite/si3_wink_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 4, "sprite/sa1a_hannbeso_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS14/04/210400078.「あ、あうあうあうあうあうあうあうあう…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400078", 256, TRUE);
+	OutputLine(NULL, "「あ、あうあうあうあうあうあうあうあう…」",
+			NULL, "「啊、啊呜啊呜啊呜啊呜啊呜啊呜……」", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 255, 255, 255, 255, 0, 1000, TRUE );
+
+//r…経過時間１８分にて北条沙都子、bギブアップ.<投了>。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…経過時間１８分にて北条沙都子、投了(ギブアップ)。",
+			NULL, "……经过时间18分，北条沙都子，投降。", Line_Normal);
+	ClearMessage();
+
+//rちなみにトトカルチョは、勝利者無しに終わった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ちなみにトトカルチョは、勝利者無しに終わった。",
+			NULL, "顺带一提，竞猜最终无人获胜。", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "down", 0, 0, 1500 );
+	FadeFilm( 500, TRUE );
+	Wait( 1500 );
+	PlayBGM(2, "hm10_68", 128, 0);
+	ModDrawCharacter(4, 3, "sprite/me1a_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/gk1", 1000 );
+
+//魅音rvS14/03/210300055.「ちぇ～、今度こそ親の胴元独り占めのはずだったのに～～！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300055", 256, TRUE);
+	OutputLine(NULL, "「ちぇ～、今度こそ親の胴元独り占めのはずだったのに～～！」",
+			NULL, "「切～，这次本来该由庄家独吞奖金的～～」", Line_Normal);
+	ClearMessage();
+
+//r魅音は悔しそうに席に戻ると、ミートボールをぱくりと口に放り込んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "魅音は悔しそうに席に戻ると、ミートボールをぱくりと口に放り込んだ。",
+			NULL, "魅音一脸不甘地回到座位，把肉丸子一口塞进嘴里。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 3, "sprite/me1a_tohoho_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re1a_komaru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200029.「み、魅ぃちゃん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200029", 256, TRUE);
+	OutputLine(NULL, "「み、魅ぃちゃん…」",
+			NULL, "「小、小魅……」", Line_Normal);
+	ClearMessage();
+
+//r小鬼だ…小鬼がいる…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "小鬼だ…小鬼がいる…。",
+			NULL, "是小鬼……这里有个小鬼……。", Line_Normal);
+	ClearMessage();
+
+//rレナでさえ引きつった笑みのまま、呆れるやら何とやらで複雑な表情だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナでさえ引きつった笑みのまま、呆れるやら何とやらで複雑な表情だった。",
+			NULL, "就连蕾娜也挂着僵硬的笑容，露出不知该说无奈还是别的什么的复杂表情。", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100033.「魅音、さすがにいくらなんでもやりすぎだろ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100033", 256, TRUE);
+	OutputLine(NULL, "「魅音、さすがにいくらなんでもやりすぎだろ…？」",
+			NULL, "「魅音，这再怎么说也太过火了吧……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 3, "sprite/me1a_tokui_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS14/03/210300056.「いーのいーの。kvS14/03/210300057.沙都子だって部活メンバーなんだからさ、これくらいの試練は耐えてみせないと、ね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300056", 256, TRUE);
+	OutputLine(NULL, "「いーのいーの。",
+			NULL, "「没事没事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300057", 256, TRUE);
+	OutputLine(NULL, "沙都子だって部活メンバーなんだからさ、これくらいの試練は耐えてみせないと、ね」",
+			NULL, "沙都子也是社团成员嘛，这点考验总得挺过去，对吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 3, "sprite/me1a_wink_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS14/03/210300058.「詩音に関してはもっと論外、これくらい平気だって！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300058", 256, TRUE);
+	OutputLine(NULL, "「詩音に関してはもっと論外、これくらい平気だって！」",
+			NULL, "「至于诗音就更不用说了，这种程度小意思啦」", Line_Normal);
+	ClearMessage();
+
+	FadeAllBustshots( 200, TRUE );
+	ModDrawCharacter(4, 6, "sprite/si3_majime_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600116.「お姉…あんたにいつか、天罰が下ることを祈ってますから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600116", 256, TRUE);
+	OutputLine(NULL, "「お姉…あんたにいつか、天罰が下ることを祈ってますから」",
+			NULL, "「姐姐……我衷心祈祷你哪天遭天谴」", Line_Normal);
+	ClearMessage();
+
+//rじろっ、と恨めしげな視線を送りながら、詩音は沙都子に紙ナプキンを手渡す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "じろっ、と恨めしげな視線を送りながら、詩音は沙都子に紙ナプキンを手渡す。",
+			NULL, "诗音一边投去怨恨的眼神，一边把纸巾递给沙都子。", Line_Normal);
+	ClearMessage();
+
+//r『カボチャ尽くしの昼食はかわいそう』とのレナの提案と、一矢報いたファイヤーガッツに免じて、ミートボールをしこたまゲットした沙都子はさっきまでの半ベソ顔は何処へやら…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『カボチャ尽くしの昼食はかわいそう』とのレナの提案と、一矢報いたファイヤーガッツに免じて、ミートボールをしこたまゲットした沙都子はさっきまでの半ベソ顔は何処へやら…。",
+			NULL, "在蕾娜提出『午饭全是南瓜太可怜了』的建议后，又看在沙都子反击过一次的火焰胆气份上，她拿到了满满一堆肉丸子，刚才那副快哭出来的脸早已不见踪影……。", Line_Normal);
+	ClearMessage();
+
+//r満足そうな笑顔で腹をさすっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "満足そうな笑顔で腹をさすっていた。",
+			NULL, "她正一脸满足地摸着肚子。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 6, "sprite/si3_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(5, 4, "sprite/sa1a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//rまぁ…なんだかんだで、いいコンビだと思う。意外と言えば意外だったけど、本当の姉妹といっても、誰も疑ったりしないだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まぁ…なんだかんだで、いいコンビだと思う。意外と言えば意外だったけど、本当の姉妹といっても、誰も疑ったりしないだろう。",
+			NULL, "嗯……怎么说呢，我觉得她们真是一对好搭档。虽说有点意外，可要说她们是真正的姐妹，大概也没人会怀疑吧。", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100034.「でもま、詩音が加わると賑やかでいいよな！kvS14/01/210100035.　いっそのこと、正式にこっちに転校して来いよ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100034", 256, TRUE);
+	OutputLine(NULL, "「でもま、詩音が加わると賑やかでいいよな！",
+			NULL, "「不过啊，诗音加入之后热闹多了也挺好。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100035", 256, TRUE);
+	OutputLine(NULL, "　いっそのこと、正式にこっちに転校して来いよ！」",
+			NULL, "干脆正式转学到这边来吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si3_wink_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600117.「あはははは！kvS14/06/210600118.　そうしたいのは山々ですけど、さすがにバァさんが許してくれませんよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600117", 256, TRUE);
+	OutputLine(NULL, "「あはははは！",
+			NULL, "「啊哈哈哈。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600118", 256, TRUE);
+	OutputLine(NULL, "　そうしたいのは山々ですけど、さすがにバァさんが許してくれませんよ」",
+			NULL, "我当然很想这么做，可奶奶肯定不会允许啦。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 4, "sprite/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS14/04/210400079.「ご勘弁ですわ！kvS14/04/210400080.　たまにでも来るたびに大騒動ですのに、毎日毎時間だとさすがに身体が持ちませんことよ！　べー」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400079", 256, TRUE);
+	OutputLine(NULL, "「ご勘弁ですわ！",
+			NULL, "「饶了我吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400080", 256, TRUE);
+	OutputLine(NULL, "　たまにでも来るたびに大騒動ですのに、毎日毎時間だとさすがに身体が持ちませんことよ！　べー」",
+			NULL, "偶尔来一次都会闹得鸡飞狗跳，要是每天每小时都这样，我的身体可撑不住呢。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si3_tokui_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600119.「明日はアスパラガス弁当で行きましょうか。kvS14/06/210600120.もちろん生で、マヨネーズだけで」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600119", 256, TRUE);
+	OutputLine(NULL, "「明日はアスパラガス弁当で行きましょうか。",
+			NULL, "「明天就做芦笋便当吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600120", 256, TRUE);
+	OutputLine(NULL, "もちろん生で、マヨネーズだけで」",
+			NULL, "当然是生的，只配蛋黄酱。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 4, "sprite/sa1a_naku_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS14/04/210400081.「ふ、ふあぁぁぁんっっ！kvS14/04/210400082.　れ、レナさあぁん、詩音さんがいじめますのよ～～っっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400081", 256, TRUE);
+	OutputLine(NULL, "「ふ、ふあぁぁぁんっっ！",
+			NULL, "「呜、呜啊啊啊啊！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400082", 256, TRUE);
+	OutputLine(NULL, "　れ、レナさあぁん、詩音さんがいじめますのよ～～っっ！！」",
+			NULL, "蕾、蕾娜同学，诗音同学欺负我啦～～！！」", Line_Normal);
+	ClearMessage();
+
+	FadeAllBustshots( 200, TRUE );
+	ModDrawCharacter(4, 2, "sprite/re1a_kaii_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS14/02/210200030.「は、はうぅ～～！　沙都子ちゃんの泣き顔、かぁいい☆kvS14/02/210200031.　大丈夫だよ、レナが――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200030", 256, TRUE);
+	OutputLine(NULL, "「は、はうぅ～～！　沙都子ちゃんの泣き顔、かぁいい☆",
+			NULL, "「哈、哈呜～～沙都子哭起来好可爱", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200031", 256, TRUE);
+	OutputLine(NULL, "　大丈夫だよ、レナが——」",
+			NULL, "放心吧，蕾娜会——」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 200, TRUE );
+	ModDrawCharacter(4, 6, "sprite/si3_def_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//詩音rvS14/06/210600121.「あら、こんなところにチケットが。kvS14/06/210600122.デザートフェスタの招待券♪」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600121", 256, TRUE);
+	OutputLine(NULL, "「あら、こんなところにチケットが。",
+			NULL, "「哎呀，这里怎么有张票。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600122", 256, TRUE);
+	OutputLine(NULL, "デザートフェスタの招待券♪」",
+			NULL, "甜点嘉年华招待券~」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	PlaySE(3, "finish", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//rしゅぱぱぱっっ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しゅぱぱぱっっ！！",
+			NULL, "刷啪啪！！", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 2, "sprite/re1a_warai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS14/02/210200032.「お姉さんの言うことは聞いたほうがいいよ？　はぅ～♪」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200032", 256, TRUE);
+	OutputLine(NULL, "「お姉さんの言うことは聞いたほうがいいよ？　はぅ～♪」",
+			NULL, "「还是听姐姐的话比较好哦。哈呜～」", Line_Normal);
+	ClearMessage();
+
+//r早っ！　変わり身早っ？！　しかもチケットもう手に取ってるし！　…つーか詩音、レナの扱い方までもはや取得済みかよ？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "早っ！　変わり身早っ？！　しかもチケットもう手に取ってるし！　…つーか詩音、レナの扱い方までもはや取得済みかよ？！",
+			NULL, "好快！！变脸也太快了！！而且票已经拿到手里了？！话说诗音，你连蕾娜的使用方法都掌握了吗？！", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 4, "sprite/sa1a_hannbeso_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS14/04/210400083.「卑怯でございますわよ！kvS14/04/210400084.　モノで人の関心を買おうなどと！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400083", 256, TRUE);
+	OutputLine(NULL, "「卑怯でございますわよ！",
+			NULL, "「太卑鄙了吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400084", 256, TRUE);
+	OutputLine(NULL, "　モノで人の関心を買おうなどと！！」",
+			NULL, "居然想用东西收买人心！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si3_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS14/06/210600123.「あはははっ、ルーズドッグの声が心地いいですねぇ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600123", 256, TRUE);
+	OutputLine(NULL, "「あはははっ、ルーズドッグの声が心地いいですねぇ！！」",
+			NULL, "「啊哈哈哈，败犬的叫声真悦耳呢」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 4, "sprite/sa1a_naku_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS14/04/210400085.「し、詩音さんは横暴ですわー！kvS14/04/210400086.　梨花ぁ、あなたも何とか言ってくださいまし――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400085", 256, TRUE);
+	OutputLine(NULL, "「し、詩音さんは横暴ですわー！",
+			NULL, "「诗、诗音同学太蛮横了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400086", 256, TRUE);
+	OutputLine(NULL, "　梨花ぁ、あなたも何とか言ってくださいまし——」",
+			NULL, "梨花，你也说她几句——」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	ModDrawCharacter(3, 6, "sprite/si3_majime_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(5, 4, "sprite/sa1a_akireru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//沙都子rvS14/04/210400087.「あ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400087", 256, TRUE);
+	OutputLine(NULL, "「あ…」",
+			NULL, "「啊……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//圭一rvS14/01/210100036.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100036", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200033.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200033", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS14/03/210300059.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300059", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//詩音rvS14/06/210600124.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600124", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rそう、いつものように賑やかで、大騒ぎなこの昼休み。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう、いつものように賑やかで、大騒ぎなこの昼休み。",
+			NULL, "没错，这是和平时一样热闹、吵闹的午休。", Line_Normal);
+	ClearMessage();
+
+//rそれ以外にも、楽しく、ふざけあって、大真面目に部活で勝負しあう放課後。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それ以外にも、楽しく、ふざけあって、大真面目に部活で勝負しあう放課後。",
+			NULL, "除此之外，还有愉快嬉闹、认真在社团里一决胜负的放学后。", Line_Normal);
+	ClearMessage();
+
+	if (GetLocalFlag(LConsoleArc)==10) {
+	//r本来なら、少し控えめでも確実な存在感でいるはずの一人が、…ここ１週間ほどずっと、…輪の外に、いた。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "本来なら、少し控えめでも確実な存在感でいるはずの一人が、この数週間……俺たちの輪の外に、いた。",
+				NULL, "本来应该以稍显低调却确实的存在感待在这里的一个人……这大约一周以来，一直在圈子之外。", Line_Normal);
+		ClearMessage();
+	} else {
+	//r本来なら、少し控えめでも確実な存在感でいるはずの一人が、…ここ１週間ほどずっと、…輪の外に、いた。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "本来なら、少し控えめでも確実な存在感でいるはずの一人が、…ここ１週間ほどずっと、…輪の外に、いた。",
+				NULL, "本来有一个人虽稍显低调，却始终有着明确的存在感……可这一周左右，她一直待在大家的圈子之外。", Line_Normal);
+		ClearMessage();
+
+	//r転校してきた当初、彼女は沙都子とつるんでよく俺をからかってきたり、その一方で何かと気を遣ってくれたものだ。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "転校してきた当初、彼女は沙都子とつるんでよく俺をからかってきたり、その一方で何かと気を遣ってくれたものだ。",
+				NULL, "刚转学来的时候，她常和沙都子一起捉弄我，另一方面也总是处处照顾我。", Line_Normal);
+		ClearMessage();
+
+	//rそれがなぜか、…ある日を境にふっつりと、距離を置くようになったのだ。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "それがなぜか、…ある日を境にふっつりと、距離を置くようになったのだ。",
+				NULL, "可不知为什么，从某一天开始，她忽然和大家拉开了距离。", Line_Normal);
+		ClearMessage();
+
+	//rひょっとして、俺が何か嫌われるようなことをしたのだろうか？…そう思って魅音にも聞いてみたが、どうやらそうでもないらしい。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "ひょっとして、俺が何か嫌われるようなことをしたのだろうか？…そう思って魅音にも聞いてみたが、どうやらそうでもないらしい。",
+				NULL, "难道我做了什么惹她讨厌的事吗？……我这么想着，也问过魅音，可似乎并不是那样。", Line_Normal);
+		ClearMessage();
+
+	//rそれに、会話が減ったのは俺だけじゃない。魅音やレナ、そしてなにより同居人の沙都子に対してもだった…。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "それに、会話が減ったのは俺だけじゃない。魅音やレナ、そしてなにより同居人の沙都子に対してもだった…。",
+				NULL, "而且，减少交谈的对象也不只是我。对魅音、蕾娜，以及最重要的同居人沙都子，她也一样……。", Line_Normal);
+		ClearMessage();
+	}
+	PlayBGM( 1, "semi", 128, 0 );
+	ModDrawCharacter(4, 2, "sprite/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/gk1", 1000 );
+
+//レナrvS14/02/210200034.「…ほんとに、どうしちゃったのかな、梨花ちゃん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200034", 256, TRUE);
+	OutputLine(NULL, "「…ほんとに、どうしちゃったのかな、梨花ちゃん…」",
+			NULL, "「……梨花酱到底怎么了呢……」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 2, "sprite/re1a_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 3, "sprite/me1a_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS14/03/210300060.「ん、まぁ…今年の風邪は、たち悪いって言うからね。kvS14/03/210300061.あんまり構いすぎて、かえって無理させちゃかわいそうだしさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300060", 256, TRUE);
+	OutputLine(NULL, "「ん、まぁ…今年の風邪は、たち悪いって言うからね。",
+			NULL, "「嗯，哎……今年的感冒都说挺难缠嘛。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300061", 256, TRUE);
+	OutputLine(NULL, "あんまり構いすぎて、かえって無理させちゃかわいそうだしさ」",
+			NULL, "关心得太过，反而害她勉强自己也怪可怜的。」", Line_Normal);
+	ClearMessage();
+
+//r……魅音はそう言うが、本当はみんなわかっている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……魅音はそう言うが、本当はみんなわかっている。",
+			NULL, "……魅音是这么说的，可大家其实都明白。", Line_Normal);
+	ClearMessage();
+
+//r梨花ちゃんが元気ないのは、なにか悩みがあるからなんだ、ということに。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "梨花ちゃんが元気ないのは、なにか悩みがあるからなんだ、ということに。",
+			NULL, "梨花酱没精神，是因为她心里有烦恼。", Line_Normal);
+	ClearMessage();
+
+//rそしてそれだけに、力になりたいとは思うが、…梨花ちゃんの悩みの正体がわからない以上、何もできない状態が続いていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そしてそれだけに、力になりたいとは思うが、…梨花ちゃんの悩みの正体がわからない以上、何もできない状態が続いていた。",
+			NULL, "正因为如此，大家都想帮她一把。可只要不知道梨花酱烦恼的真面目，就始终什么也做不了。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 6, "sprite/si3_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600125.「で、今梨花ちゃまは？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600125", 256, TRUE);
+	OutputLine(NULL, "「で、今梨花ちゃまは？」",
+			NULL, "「所以，现在小梨花大人……？」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS14/03/210300062.「さぁ…鞄まだあるみたいだし、帰ってはいないと思うけど」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300062", 256, TRUE);
+	OutputLine(NULL, "「さぁ…鞄まだあるみたいだし、帰ってはいないと思うけど」",
+			NULL, "「谁知道呢……书包好像还在，我想她应该还没回去」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 4, "sprite/sa1a_akireru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS14/04/210400088.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400088", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si3_yowaki_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600126.「あ、さと――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600126", 256, TRUE);
+	OutputLine(NULL, "「あ、さと——」",
+			NULL, "「啊，沙都——」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 4, "sprite/sa1a_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//r隣で消沈する沙都子に気づき、詩音が声をかけようとする。が、暗い気持ちを振り払うかのように顔を上げると、沙都子は元気のいい笑顔で言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "隣で消沈する沙都子に気づき、詩音が声をかけようとする。が、暗い気持ちを振り払うかのように顔を上げると、沙都子は元気のいい笑顔で言った。",
+			NULL, "诗音注意到身旁消沉的沙都子，正要开口搭话。可沙都子仿佛要甩开阴郁的心情一般抬起头，用精神十足的笑容说道。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 4, "sprite/sa1a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS14/04/210400089.「まぁ、そんなに心配することはございませんわ！kvS14/04/210400090.　昨日の夜だってちゃんと夕食を召し上がりましたし、きっとそろそろ風邪も治ることだと思いますのよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400089", 256, TRUE);
+	OutputLine(NULL, "「まぁ、そんなに心配することはございませんわ！",
+			NULL, "「哎呀，大家用不着那么担心。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400090", 256, TRUE);
+	OutputLine(NULL, "　昨日の夜だってちゃんと夕食を召し上がりましたし、きっとそろそろ風邪も治ることだと思いますのよ？」",
+			NULL, "她昨晚也好好吃了晚饭，我想感冒也差不多快好了。」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 2, "sprite/re1a_nande_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//レナrvS14/02/210200035.「沙都子ちゃん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200035", 256, TRUE);
+	OutputLine(NULL, "「沙都子ちゃん…」",
+			NULL, "「沙都子。」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm10_54", 128, 0);
+
+//圭一rvS14/01/210100037.「……そっか。kvS14/01/210100038.沙都子がそう言うなら、間違いないよな！kvS14/01/210100039.　よーし、それなら風邪が治ったときには、みんなで全快祝いやってやろうぜ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100037", 256, TRUE);
+	OutputLine(NULL, "「……そっか。",
+			NULL, "「……这样啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100038", 256, TRUE);
+	OutputLine(NULL, "沙都子がそう言うなら、間違いないよな！",
+			NULL, "既然沙都子这么说，那肯定没错。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100039", 256, TRUE);
+	OutputLine(NULL, "　よーし、それなら風邪が治ったときには、みんなで全快祝いやってやろうぜ！！」",
+			NULL, "好，那等她感冒好了，我们大家就给她办个痊愈庆祝会吧！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 2, "sprite/re1a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//レナrvS14/02/210200036.「だね？　だね！kvS14/02/210200037.　そのときはレナも、思いっきり腕ふるっちゃうから！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200036", 256, TRUE);
+	OutputLine(NULL, "「だね？　だね！",
+			NULL, "「对呀对呀！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200037", 256, TRUE);
+	OutputLine(NULL, "　そのときはレナも、思いっきり腕ふるっちゃうから！！」",
+			NULL, "到时候蕾娜也会大显身手哦！」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 3, "sprite/me1a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS14/03/210300063.「あはははは！kvS14/03/210300064.　それじゃおじさんも、盛大に美味しいもの準備しておくよ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300063", 256, TRUE);
+	OutputLine(NULL, "「あはははは！",
+			NULL, "「啊哈哈哈。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s14/03/210300064", 256, TRUE);
+	OutputLine(NULL, "　それじゃおじさんも、盛大に美味しいもの準備しておくよ！」",
+			NULL, "那大叔我也准备一大堆好吃的吧。」", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100040.「おおぉう！　魅音の盛大な料理～～じゅるるるっ！kvS14/01/210100041.　もちろん沙都子のはない！kvS14/01/210100042.　俺が全部いただく！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100040", 256, TRUE);
+	OutputLine(NULL, "「おおぉう！　魅音の盛大な料理～～じゅるるるっ！",
+			NULL, "「喔喔喔！魅音准备的一大堆料理～～口水都要流出来了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100041", 256, TRUE);
+	OutputLine(NULL, "　もちろん沙都子のはない！",
+			NULL, "当然沙都子的份没有！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100042", 256, TRUE);
+	OutputLine(NULL, "　俺が全部いただく！！」",
+			NULL, "全都由我吃掉！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 4, "sprite/sa1a_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS14/04/210400091.「をーっほっほっほっほっ！kvS14/04/210400092.　圭一さんは進歩がありませんわぁ！！kvS14/04/210400093.　極悪非道の詩音さんに鍛えられた私が、そう簡単に勝利を譲ると思いまして？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400091", 256, TRUE);
+	OutputLine(NULL, "「をーっほっほっほっほっ！",
+			NULL, "「哦呵呵呵呵！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400092", 256, TRUE);
+	OutputLine(NULL, "　圭一さんは進歩がありませんわぁ！！",
+			NULL, "圭一还是一点长进都没有呢！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400093", 256, TRUE);
+	OutputLine(NULL, "　極悪非道の詩音さんに鍛えられた私が、そう簡単に勝利を譲ると思いまして？！」",
+			NULL, "被极恶非道的诗音同学锻炼过的我，会那么轻易把胜利让出去吗？」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 6, "sprite/si3_ikari_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//詩音rvS14/06/210600127.「だぅぅるれぇぇが、極悪ですかぁぁ～～っっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600127", 256, TRUE);
+	OutputLine(NULL, "「だぅぅるれぇぇが、極悪ですかぁぁ～～っっ！！」",
+			NULL, "「谁～～才是极恶啊～～！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "a5_13391", 256, 64);
+	ModDrawCharacter(3, 4, "sprite/sa1a_naku_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS14/04/210400094.「ふ、ふあぁぁぁぁあんんっっ！！kvS14/04/210400095.　い、痛い痛い痛い痛い、いたい～～っっ！！kvS14/04/210400096.　げ、ゲンコツで頭グリグリは反則ですわぁ～～～っっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400094", 256, TRUE);
+	OutputLine(NULL, "「ふ、ふあぁぁぁぁあんんっっ！！",
+			NULL, "「呜、呜啊啊啊啊啊！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400095", 256, TRUE);
+	OutputLine(NULL, "　い、痛い痛い痛い痛い、いたい～～っっ！！",
+			NULL, "痛痛痛痛痛，好痛～～！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s14/04/210400096", 256, TRUE);
+	OutputLine(NULL, "　げ、ゲンコツで頭グリグリは反則ですわぁ～～～っっ！！」",
+			NULL, "用拳头钻脑袋是犯规啊～～！！」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 2, "sprite/re1a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//レナrvS14/02/210200038.「あはははははは！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200038", 256, TRUE);
+	OutputLine(NULL, "「あはははははは！！！」",
+			NULL, "「啊哈哈哈哈！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/gr2", 1000 );
+
+//rそんな感じで、賑やかに過ぎてゆく昼休み。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな感じで、賑やかに過ぎてゆく昼休み。",
+			NULL, "午休就这样热热闹闹地过去了。", Line_Normal);
+	ClearMessage();
+
+//r梨花ちゃん、…何を悩んでいるかは分からないけど、いつか打ち明けてくれることをみんなで待ってるからな。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "梨花ちゃん、…何を悩んでいるかは分からないけど、いつか打ち明けてくれることをみんなで待ってるからな。",
+			NULL, "梨花酱，不管你在烦恼什么，大家都会等到你愿意说出来的那一天。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

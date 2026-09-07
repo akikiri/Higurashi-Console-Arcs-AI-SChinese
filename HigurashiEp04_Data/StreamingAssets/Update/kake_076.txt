@@ -1,0 +1,416 @@
+void main()
+{
+
+
+//*Kakera no Sekai Day 76
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//M6 臨床試験開始
+
+	DrawScene("background/byo_ten", 1000 );
+	PlayBGM(2, "hm06_27", 128, 0);
+
+//精神科医rvS20/00/VTK2_menD2001.「…どうですか、その後の具合は？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2001", 256, TRUE);
+	OutputLine(NULL, "「…どうですか、その後の具合は？」",
+			NULL, "「……后来感觉怎么样？」", Line_Normal);
+	ClearMessage();
+
+//夏美rvS20/36/VTK2_natsumi2015.「あ、はい。kvS20/36/VTK2_natsumi2016.おかげさまで、最近…気分がいいんです。kvS20/36/VTK2_natsumi2017.夜もよく眠れるようになりましたし…外を歩いていても頭痛がしたり、急に気分が悪くなったりすることはなくなりました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#94a567>夏美</color>", NULL, "<color=#94a567>夏美</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2015", 256, TRUE);
+	OutputLine(NULL, "「あ、はい。",
+			NULL, "「啊，是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2016", 256, TRUE);
+	OutputLine(NULL, "おかげさまで、最近…気分がいいんです。",
+			NULL, "托您的福，最近……感觉好多了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2017", 256, TRUE);
+	OutputLine(NULL, "夜もよく眠れるようになりましたし…外を歩いていても頭痛がしたり、急に気分が悪くなったりすることはなくなりました」",
+			NULL, "晚上也能睡着了，在外面走路时也不会头痛，或者突然难受了。」", Line_Normal);
+	ClearMessage();
+
+//r目の前に座っているお医者さんの問診に答えながら、私はほっと息をついて…嬉しさをかみしめる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "目の前に座っているお医者さんの問診に答えながら、私はほっと息をついて…嬉しさをかみしめる。",
+			NULL, "我一边回答面前医生的询问，一边松了口气，细细品味心中的喜悦。", Line_Normal);
+	ClearMessage();
+
+//r大人の人に話しかけられた時、相手の顔を見て言葉を返す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "大人の人に話しかけられた時、相手の顔を見て言葉を返す。",
+			NULL, "被大人搭话时，能够看着对方的脸回话。", Line_Normal);
+	ClearMessage();
+
+//r…そんな、普通の人なら当たり前のしぐさが、少し前の私は全くできなかったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そんな、普通の人なら当たり前のしぐさが、少し前の私は全くできなかったのだ。",
+			NULL, "……这种对普通人来说理所当然的举动，不久前的我却完全做不到。", Line_Normal);
+	ClearMessage();
+
+//rそれが今、ちゃんと問題なくできている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それが今、ちゃんと問題なくできている。",
+			NULL, "而现在，我已经能好好做到。", Line_Normal);
+	ClearMessage();
+
+//rお医者さんの視線とぶつかっても動悸で息苦しくなることもなく、目まいで視界が暗くなることもない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お医者さんの視線とぶつかっても動悸で息苦しくなることもなく、目まいで視界が暗くなることもない。",
+			NULL, "即使对上医生的视线，我也不会心悸到呼吸困难，视野也不会因眩晕而暗下来。", Line_Normal);
+	ClearMessage();
+
+//r…自分でも、確かな手ごたえを感じる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…自分でも、確かな手ごたえを感じる。",
+			NULL, "……连我自己也感觉到了确切的变化。", Line_Normal);
+	ClearMessage();
+
+//r私の『心』は数ヶ月前に処方された薬を飲むようになってから、ずいぶんと強くなっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私の『心』は数ヶ月前に処方された薬を飲むようになってから、ずいぶんと強くなっていた。",
+			NULL, "自从数个月前开始服用处方药后，我的『心』已经坚强了许多。", Line_Normal);
+	ClearMessage();
+
+//夏美rvS20/36/VTK2_natsumi2018.「あの…ありがとうございました。kvS20/36/VTK2_natsumi2019.今まで、どんな治療を受けても全然、いい感じにならなかったのに…。kvS20/36/VTK2_natsumi2020.あの薬のおかげで、近頃はなんとなく景色が広くなったっていうか…明るく見えるんです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#94a567>夏美</color>", NULL, "<color=#94a567>夏美</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2018", 256, TRUE);
+	OutputLine(NULL, "「あの…ありがとうございました。",
+			NULL, "「那个……真的非常谢谢您。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2019", 256, TRUE);
+	OutputLine(NULL, "今まで、どんな治療を受けても全然、いい感じにならなかったのに…。",
+			NULL, "以前无论接受什么治疗，都完全感觉没有好转……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2020", 256, TRUE);
+	OutputLine(NULL, "あの薬のおかげで、近頃はなんとなく景色が広くなったっていうか…明るく見えるんです」",
+			NULL, "多亏那种药，最近总觉得眼前的景色像是变得开阔了……看起来也更明亮了。」", Line_Normal);
+	ClearMessage();
+
+//夏美rvS20/36/VTK2_natsumi2021.「…あ、変なこと言ってすみません。kvS20/36/VTK2_natsumi2022.つまり、その」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#94a567>夏美</color>", NULL, "<color=#94a567>夏美</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2021", 256, TRUE);
+	OutputLine(NULL, "「…あ、変なこと言ってすみません。",
+			NULL, "「……啊，说了奇怪的话，对不起。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2022", 256, TRUE);
+	OutputLine(NULL, "つまり、その」",
+			NULL, "也就是说，那个……」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2002.「いいんですよ。kvS20/00/VTK2_menD2003.素直に感じたまま話してくれるほうが、こちらも状態を理解しやすくなりますから。kvS20/00/VTK2_menD2004.…視界が広く、明るくなったのはいい傾向です。kvS20/00/VTK2_menD2005.それだけ頭と心に余裕が出てきた証拠ですからね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2002", 256, TRUE);
+	OutputLine(NULL, "「いいんですよ。",
+			NULL, "「没关系。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2003", 256, TRUE);
+	OutputLine(NULL, "素直に感じたまま話してくれるほうが、こちらも状態を理解しやすくなりますから。",
+			NULL, "把自己真实的感觉说出来，反而更便于我们理解你的状态。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2004", 256, TRUE);
+	OutputLine(NULL, "…視界が広く、明るくなったのはいい傾向です。",
+			NULL, "……视野变宽、变明亮，这是好征兆。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2005", 256, TRUE);
+	OutputLine(NULL, "それだけ頭と心に余裕が出てきた証拠ですからね」",
+			NULL, "这说明你的头脑和内心都有了余力。」", Line_Normal);
+	ClearMessage();
+
+//夏美rvS20/36/VTK2_natsumi2023.「あ、あはは…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#94a567>夏美</color>", NULL, "<color=#94a567>夏美</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2023", 256, TRUE);
+	OutputLine(NULL, "「あ、あはは…」",
+			NULL, "「啊，啊哈哈……」", Line_Normal);
+	ClearMessage();
+
+//r思わず口をついて出てきた笑い声に、私自身が逆に驚く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "思わず口をついて出てきた笑い声に、私自身が逆に驚く。",
+			NULL, "自己不由自主发出的笑声，反倒让我吃了一惊。", Line_Normal);
+	ClearMessage();
+
+//r意識せず自然に笑ったのは、…本当に久しぶりだったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "意識せず自然に笑ったのは、…本当に久しぶりだったのだ。",
+			NULL, "这样不经意间自然地笑出来……真的已经很久没有过了。", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "c", 0, 0, 1000 );
+
+//夏美rvS20/36/VTK2_natsumi2024.「…っ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#94a567>夏美</color>", NULL, "<color=#94a567>夏美</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2024", 256, TRUE);
+	OutputLine(NULL, "「…っ…」",
+			NULL, "「……唔……」", Line_Normal);
+	ClearMessage();
+
+//r…笑い声のあとに、目から涙がこぼれ出てくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…笑い声のあとに、目から涙がこぼれ出てくる。",
+			NULL, "……笑声过后，泪水从眼眶里溢了出来。", Line_Normal);
+	ClearMessage();
+
+//rずっとこのまま、晴れない沈鬱な思いを抱えながら生きていかなければいけないと思って、…それが余計に、私の絶望を深い闇へと落とし込んでいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ずっとこのまま、晴れない沈鬱な思いを抱えながら生きていかなければいけないと思って、…それが余計に、私の絶望を深い闇へと落とし込んでいた。",
+			NULL, "我一直以为自己必须就这样抱着无法散去的阴郁活下去……而这份想法又把我的绝望进一步推入深深的黑暗。", Line_Normal);
+	ClearMessage();
+
+//r何を見ても、何を話しても何をしても、たとえようもない倦怠感が全身を包み込んで…生きる意欲さえ、時には失いかけていたほどだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何を見ても、何を話しても何をしても、たとえようもない倦怠感が全身を包み込んで…生きる意欲さえ、時には失いかけていたほどだった。",
+			NULL, "无论看什么、说什么、做什么，难以形容的倦怠感都会包住全身……有时甚至让我几乎失去活下去的意志。", Line_Normal);
+	ClearMessage();
+
+//rだけど…そんな重く苦しい呪縛がようやく、私の中から薄らぎつつある。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だけど…そんな重く苦しい呪縛がようやく、私の中から薄らぎつつある。",
+			NULL, "可是……那沉重而痛苦的束缚，终于开始从我心中渐渐淡去。", Line_Normal);
+	ClearMessage();
+
+//r真っ暗でなにも見えなかった目の前に、小さいけれど確かな光がやっと、見えてきたんだ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "真っ暗でなにも見えなかった目の前に、小さいけれど確かな光がやっと、見えてきたんだ…。",
+			NULL, "在漆黑一片、什么都看不见的前方，我终于看见了一点微小却确切的光……", Line_Normal);
+	ClearMessage();
+
+//夏美rvS20/36/VTK2_natsumi2025.「…ぅぐ…、っ…！kvS20/36/VTK2_natsumi2026.　せ、先生…私、わたし…っ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#94a567>夏美</color>", NULL, "<color=#94a567>夏美</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2025", 256, TRUE);
+	OutputLine(NULL, "「…ぅぐ…、っ…！",
+			NULL, "「……呜……唔……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2026", 256, TRUE);
+	OutputLine(NULL, "　せ、先生…私、わたし…っ…！」",
+			NULL, "医、医生……我，我……！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/byo_ten", 1000 );
+
+//精神科医rvS20/00/VTK2_menD2006.「ほらほら、泣いてはいけませんよ。kvS20/00/VTK2_menD2007.あなたはこの２ヶ月、本当によく頑張りました。kvS20/00/VTK2_menD2008.心が元気を取り戻せば、きっと元通りの生活に戻れます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2006", 256, TRUE);
+	OutputLine(NULL, "「ほらほら、泣いてはいけませんよ。",
+			NULL, "「好了好了，别哭了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2007", 256, TRUE);
+	OutputLine(NULL, "あなたはこの２ヶ月、本当によく頑張りました。",
+			NULL, "这两个月里，你真的很努力。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2008", 256, TRUE);
+	OutputLine(NULL, "心が元気を取り戻せば、きっと元通りの生活に戻れます」",
+			NULL, "只要心重新恢复精神，你一定能回到原来的生活。」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2009.「だから、笑顔になって…ね？kvS20/00/VTK2_menD2010.　あと少し…慌てず焦らず、ゆっくり一緒に頑張りましょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2009", 256, TRUE);
+	OutputLine(NULL, "「だから、笑顔になって…ね？",
+			NULL, "「所以，笑一笑……好吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2010", 256, TRUE);
+	OutputLine(NULL, "　あと少し…慌てず焦らず、ゆっくり一緒に頑張りましょう」",
+			NULL, "还差一点……别慌也别急，我们一起慢慢努力吧。」", Line_Normal);
+	ClearMessage();
+
+//夏美rvS20/36/VTK2_natsumi2027.「はい…はいっ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#94a567>夏美</color>", NULL, "<color=#94a567>夏美</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 36, "ps3/s20/36/vtk2_natsumi2027", 256, TRUE);
+	OutputLine(NULL, "「はい…はいっ…！」",
+			NULL, "「好……好的……！」", Line_Normal);
+	ClearMessage();
+
+//rそう言ってお医者さんは、嗚咽に震える私の背中を撫でさすってくれる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言ってお医者さんは、嗚咽に震える私の背中を撫でさすってくれる。",
+			NULL, "医生这样说着，轻轻抚摸着我因呜咽而颤抖的后背。", Line_Normal);
+	ClearMessage();
+
+//rあたたかくて、やわらかくて…とても、優しい感触。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あたたかくて、やわらかくて…とても、優しい感触。",
+			NULL, "那是温暖、柔软……非常温柔的触感。", Line_Normal);
+	ClearMessage();
+
+//rよかった…本当に、よかった…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "よかった…本当に、よかった…！",
+			NULL, "太好了……真的，太好了……！", Line_Normal);
+	ClearMessage();
+
+//r最初は不安だったけど、この人に勧められた薬を飲む決心をして…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "最初は不安だったけど、この人に勧められた薬を飲む決心をして…。",
+			NULL, "一开始我很不安，但还是下定决心，服用了这个人推荐给我的药……", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	DrawScene("black", 1000 );
+	Wait( 2000 );
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//r…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/denwa", 1000 );
+	PlayBGM(2, "hm02_12", 128, 0);
+
+//精神科医rvS20/00/VTK2_menD2011.「…はい。kvS20/00/VTK2_menD2012.例の中学生の患者さんですが、非常に素晴らしい回復ぶりです。kvS20/00/VTK2_menD2013.血液検査の数値も通常値にかなり近づき、脈拍や発汗量も安定してきました」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2011", 256, TRUE);
+	OutputLine(NULL, "「…はい。",
+			NULL, "「……是。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2012", 256, TRUE);
+	OutputLine(NULL, "例の中学生の患者さんですが、非常に素晴らしい回復ぶりです。",
+			NULL, "关于那位中学生患者，她恢复得非常出色。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2013", 256, TRUE);
+	OutputLine(NULL, "血液検査の数値も通常値にかなり近づき、脈拍や発汗量も安定してきました」",
+			NULL, "血液检查数值已经相当接近正常值，脉搏和出汗量也稳定了下来。」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2014.「最初の頃は、少し突っ込んだ問診をしただけで発作状態に陥っていたのですが…近頃は自分の思考内容をかなり正確に把握して、会話も整合性がはっきりと見られます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2014", 256, TRUE);
+	OutputLine(NULL, "「最初の頃は、少し突っ込んだ問診をしただけで発作状態に陥っていたのですが…近頃は自分の思考内容をかなり正確に把握して、会話も整合性がはっきりと見られます」",
+			NULL, "「起初，只要稍微深入问诊，她就会陷入发作状态……但最近她已经能相当准确地把握自己的思考内容，对话也明显变得连贯。」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2015.「若干、感情の起伏の制御に苦しんでいるようですが、心理テストも極端な結果を出すことがなくなりましたし…近日中に日常生活へ復帰させても、ほぼ問題はないかと」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2015", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "「若干、感情の起伏の制御に苦しんでいるようですが、心理テストも極端な結果を出すことがなくなりましたし…近日中に日常生活へ復帰させても、ほぼ問題はないかと」",
+			NULL, "「她似乎仍有些难以控制情绪起伏，不过心理测试已经不会再出现极端结果……近期让她恢复日常生活，应该基本没有问题。」", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2016.「いえいえ、私のカウンセリングは通常通りで、特別なものは用いておりません。kvS20/00/VTK2_menD2017.やはり、先生にご紹介していただいた試薬が治療につながったのだと思います」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2016", 256, TRUE);
+	OutputLine(NULL, "「いえいえ、私のカウンセリングは通常通りで、特別なものは用いておりません。",
+			NULL, "「不不，我的心理咨询还是照常进行，并没有使用特别的方法。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2017", 256, TRUE);
+	OutputLine(NULL, "やはり、先生にご紹介していただいた試薬が治療につながったのだと思います」",
+			NULL, "果然，还是您介绍的试验药带来了治疗效果。」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2018.「それにしても…今回の試薬を用いて臨床試験を行った患者は４人目になりますが、彼女を合わせて３人が社会復帰ともなれば、十分な効能性です」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2018", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "「それにしても…今回の試薬を用いて臨床試験を行った患者は４人目になりますが、彼女を合わせて３人が社会復帰ともなれば、十分な効能性です」",
+			NULL, "「话说回来……她是第四名使用本次试药进行临床试验的患者。算上她已有三人能够重返社会，药效已经足够充分了。」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2019.「私の知り合いの医師も、効き目の良さに驚いておりましたし…この調子で今回の臨床データが集まれば、慎重になっている薬事審議会の委員さんもきっと納得してくれますよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2019", 256, TRUE);
+	OutputLine(NULL, "「私の知り合いの医師も、効き目の良さに驚いておりましたし…この調子で今回の臨床データが集まれば、慎重になっている薬事審議会の委員さんもきっと納得してくれますよ」",
+			NULL, "「我认识的医生也对它的出色药效感到惊讶。只要照这个势头积累临床数据，态度谨慎的药事审议会委员们也一定会认可。」", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2020.「…え？kvS20/00/VTK2_menD2021.　その残る１人の反応ですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2020", 256, TRUE);
+	OutputLine(NULL, "「…え？",
+			NULL, "「……咦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2021", 256, TRUE);
+	OutputLine(NULL, "　その残る１人の反応ですか？」",
+			NULL, "您问剩下那1人的反应？」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2022.「そうですね…効き目がないというわけではないのですが、少々気になる症状がみられましたので、服用時の心身状態を確認した上で再度投与を行う予定です」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2022", 256, TRUE);
+	OutputLine(NULL, "「そうですね…効き目がないというわけではないのですが、少々気になる症状がみられましたので、服用時の心身状態を確認した上で再度投与を行う予定です」",
+			NULL, "「这个嘛……药效确实存在，只是出现了一些令人介意的症状，所以我打算确认服药时的身心状态后，再次进行投药。」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2023.「おそらく別の薬との併用で起こった事例だとは思うのですが…場合によっては、その臨床結果をbアラート.<要注意報告>として製薬会社に提出させていただきます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2023", 256, TRUE);
+	OutputLine(NULL, "「おそらく別の薬との併用で起こった事例だとは思うのですが…場合によっては、その臨床結果を要注意報告(アラート)として製薬会社に提出させていただきます」",
+			NULL, "「我想大概是与其他药物并用引起的案例……视情况而定，我会把那份临床结果作为警示报告提交给制药公司。」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2024.「…あ、もちろんその資料は、正規の臨床データからは除外しておきますので」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2024", 256, TRUE);
+	OutputLine(NULL, "「…あ、もちろんその資料は、正規の臨床データからは除外しておきますので」",
+			NULL, "「……啊，当然，那份资料会从正式临床数据中排除。」", Line_Normal);
+	ClearMessage();
+
+//r……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2025.「…いえ、その報告はこの電話では、まだ申し上げられません。kvS20/00/VTK2_menD2026.あまりに突発的で、この薬の副作用かどうかも現状では判別しかねますので…もう少し、お時間をいただけますか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2025", 256, TRUE);
+	OutputLine(NULL, "「…いえ、その報告はこの電話では、まだ申し上げられません。",
+			NULL, "「……不，这份报告还不能在电话里向您说明。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2026", 256, TRUE);
+	OutputLine(NULL, "あまりに突発的で、この薬の副作用かどうかも現状では判別しかねますので…もう少し、お時間をいただけますか？」",
+			NULL, "事发太突然，目前还无法判断是不是这种药物的副作用……能再给我一点时间吗？」", Line_Normal);
+	ClearMessage();
+
+//精神科医rvS20/00/VTK2_menD2027.「万一の場合は、まっさきに先生にお知らせいたします。kvS20/00/VTK2_menD2028.…それでは」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2027", 256, TRUE);
+	OutputLine(NULL, "「万一の場合は、まっさきに先生にお知らせいたします。",
+			NULL, "「万一发生什么情况，我会第一时间通知您。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2028", 256, TRUE);
+	OutputLine(NULL, "…それでは」",
+			NULL, "……那么先告辞了。」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "dsse08", 256, 64);
+
+//精神科医rvS20/00/VTK2_menD2029.「………。k|yvS20/00/VTK2_menD2030.薬の成分的には、絶対に起こり得ないはずなんだけど。kvS20/00/VTK2_menD2031.服用後に幻覚を見る、なんてのは…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>精神科医</color>", NULL, "<color=#f5e6d3>精神科医</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2029", 256, TRUE);
+	OutputLine(NULL, "「………。",
+			NULL, "「……", Line_WaitForInput);
+	PlayBGM( 1, "suzu", 128, 0 );
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2030", 256, TRUE);
+	OutputLine(NULL, "薬の成分的には、絶対に起こり得ないはずなんだけど。",
+			NULL, "从药物成分上来说，按理绝对不该发生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtk2_mend2031", 256, TRUE);
+	OutputLine(NULL, "服用後に幻覚を見る、なんてのは…」",
+			NULL, "服药后出现幻觉这种事……」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

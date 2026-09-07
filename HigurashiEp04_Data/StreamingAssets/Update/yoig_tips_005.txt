@@ -1,0 +1,562 @@
+void main()
+{
+
+
+//*Yoigoshi TIPS 5
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//夕焼け
+
+	DrawScene("white", 1000 );
+	DrawScene("background/kuruma2_02", 1000 );
+	PlayBGM(2, "hm01_07", 128, 0);
+
+//千秋rvS20/00/VTT_chiaki3001.「…あら？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千秋</color>", NULL, "<color=#f5e6d3>千秋</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3001", 256, TRUE);
+	OutputLine(NULL, "「…あら？」",
+			NULL, "「……哎呀？」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3001.「どうしました、千秋さん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3001", 256, TRUE);
+	OutputLine(NULL, "「どうしました、千秋さん？」",
+			NULL, "「怎么了，千秋小姐？」", Line_Normal);
+	ClearMessage();
+
+//千秋rvS20/00/VTT_chiaki3002.「ねぇ見て、マチちゃん。kvS20/00/VTT_chiaki3003.なんだか一雨来そうな天気じゃない？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千秋</color>", NULL, "<color=#f5e6d3>千秋</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3002", 256, TRUE);
+	OutputLine(NULL, "「ねぇ見て、マチちゃん。",
+			NULL, "「你看，小真。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3003", 256, TRUE);
+	OutputLine(NULL, "なんだか一雨来そうな天気じゃない？」",
+			NULL, "总觉得这天气快要下雨了吧？」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3002.「そうかなぁ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3002", 256, TRUE);
+	OutputLine(NULL, "「そうかなぁ…」",
+			NULL, "「是吗……」", Line_Normal);
+	ClearMessage();
+
+//r窓の外に目を向ける千秋さんの横に身を乗り出して、私は空を見上げる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "窓の外に目を向ける千秋さんの横に身を乗り出して、私は空を見上げる。",
+			NULL, "我探身到望向窗外的千秋小姐身旁，抬头看向天空。", Line_Normal);
+	ClearMessage();
+
+//r確かに、彼女の言葉通りちょっと空が暗い。それでも、鮮やかな朱に染まった夕焼けはどこまでも広く、そして綺麗だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "確かに、彼女の言葉通りちょっと空が暗い。それでも、鮮やかな朱に染まった夕焼けはどこまでも広く、そして綺麗だった。",
+			NULL, "确实，正如她所说，天空有些昏暗。即便如此，被鲜艳朱红染上的晚霞仍无边无际地铺展开来，美丽极了。", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3003.「ね、芥川さん。kvS20/00/VTT_machiko3004.ちょっとだけ、窓開けてもいいですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3003", 256, TRUE);
+	OutputLine(NULL, "「ね、芥川さん。",
+			NULL, "「芥川先生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3004", 256, TRUE);
+	OutputLine(NULL, "ちょっとだけ、窓開けてもいいですか？」",
+			NULL, "我可以稍微开一下窗吗？」", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3001.「ああ、いいよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3001", 256, TRUE);
+	OutputLine(NULL, "「ああ、いいよ」",
+			NULL, "「嗯，可以。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r運転する芥川さんにロックを外してもらって、私は後部座席の窓を開ける。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "運転する芥川さんにロックを外してもらって、私は後部座席の窓を開ける。",
+			NULL, "开车的芥川先生替我解开车窗锁，我打开了后座的车窗。", Line_Normal);
+	ClearMessage();
+
+//rその途端、さっきまではかすかにしか聞こえなかったひぐらしの大合唱が響き渡り、爽やかに澄み切った空気が涼風となって車内に飛び込んできた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その途端、さっきまではかすかにしか聞こえなかったひぐらしの大合唱が響き渡り、爽やかに澄み切った空気が涼風となって車内に飛び込んできた。",
+			NULL, "就在那一刻，刚才还只能隐约听见的寒蝉的大合唱响彻起来，清爽澄澈的空气化作凉风，扑进车内。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("white", 1000 );
+	DrawScene("background/kuruma2_02", 1000 );
+
+//真知子rvS20/00/VTT_machiko3005.「綺麗…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3005", 256, TRUE);
+	OutputLine(NULL, "「綺麗…」",
+			NULL, "「好美……」", Line_Normal);
+	ClearMessage();
+
+//rそれは、私の住む都会では決して見ることのできなかった、本当の意味での大空。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それは、私の住む都会では決して見ることのできなかった、本当の意味での大空。",
+			NULL, "那是在我所居住的都市里绝对看不到的、真正意义上的广阔天空。", Line_Normal);
+	ClearMessage();
+
+//r視界を遮る邪魔な建造物は何もなく、吸い込まれそうなほどの夕焼けが一面に広がって見えた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "視界を遮る邪魔な建造物は何もなく、吸い込まれそうなほどの夕焼けが一面に広がって見えた。",
+			NULL, "没有任何碍眼的建筑物遮挡视野，仿佛要将人吸进去般的晚霞在眼前铺满一片。", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3006.「ほら、千秋さんもこっち来て見てみて？　ホント絶景だよ～？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3006", 256, TRUE);
+	OutputLine(NULL, "「ほら、千秋さんもこっち来て見てみて？　ホント絶景だよ～？」",
+			NULL, "「你看，千秋小姐也过来看看嘛。真的美极了哦~？」", Line_Normal);
+	ClearMessage();
+
+//千秋rvS20/00/VTT_chiaki3004.「ええ、本当ね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千秋</color>", NULL, "<color=#f5e6d3>千秋</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3004", 256, TRUE);
+	OutputLine(NULL, "「ええ、本当ね…」",
+			NULL, "「嗯，真的呢……」", Line_Normal);
+	ClearMessage();
+
+//r千秋さんは苦笑しながら、私の背中越しに空を仰ぎ見る。そしてぽつり、と寂しそうな声で言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "千秋さんは苦笑しながら、私の背中越しに空を仰ぎ見る。そしてぽつり、と寂しそうな声で言った。",
+			NULL, "千秋小姐苦笑着，从我背后仰望天空。随后，她用寂寞的声音轻轻说道。", Line_Normal);
+	ClearMessage();
+
+//千秋rvS20/00/VTT_chiaki3005.「ひぐらしが鳴いて、鳥が飛んで、木々が生い茂って。kvS20/00/VTT_chiaki3006.…ここが廃村なんて、なんだか信じられないくらいだわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千秋</color>", NULL, "<color=#f5e6d3>千秋</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3005", 256, TRUE);
+	OutputLine(NULL, "「ひぐらしが鳴いて、鳥が飛んで、木々が生い茂って。",
+			NULL, "「寒蝉在鸣叫，鸟儿在飞，树木也郁郁葱葱。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3006", 256, TRUE);
+	OutputLine(NULL, "…ここが廃村なんて、なんだか信じられないくらいだわ」",
+			NULL, "……这里居然是废村，总觉得让人难以置信。」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3007.「……あ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3007", 256, TRUE);
+	OutputLine(NULL, "「……あ」",
+			NULL, "「……啊。」", Line_Normal);
+	ClearMessage();
+
+//r『廃村』。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『廃村』。",
+			NULL, "『废村』。", Line_Normal);
+	ClearMessage();
+
+//rその言葉を聞いて私も、自分がこれから向かう先のことを思い出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その言葉を聞いて私も、自分がこれから向かう先のことを思い出す。",
+			NULL, "听见这个词，我也想起了自己接下来要前往的地方。", Line_Normal);
+	ClearMessage();
+
+//rそうだ。ここは、もう誰も住まなくなった場所なんだ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そうだ。ここは、もう誰も住まなくなった場所なんだ…。",
+			NULL, "对了。这里已经是再也无人居住的地方……", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3008.「ねぇ、乙部くん。kvS20/00/VTT_machiko3009.どうしてこの村には誰も住まなくなったか、知ってる？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3008", 256, TRUE);
+	OutputLine(NULL, "「ねぇ、乙部くん。",
+			NULL, "「乙部君。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3009", 256, TRUE);
+	OutputLine(NULL, "どうしてこの村には誰も住まなくなったか、知ってる？」",
+			NULL, "你知道这个村子为什么没人住了吗？」", Line_Normal);
+	ClearMessage();
+
+//乙部rvS20/41/VTT_otobe3029.「……。kvS20/41/VTT_otobe3030.さぁ、知らない。kvS20/41/VTT_otobe3031.雑誌には、ただのオカルトスポットって紹介されてただけだし…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s20/41/vtt_otobe3029", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s20/41/vtt_otobe3030", 256, TRUE);
+	OutputLine(NULL, "さぁ、知らない。",
+			NULL, "不知道。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s20/41/vtt_otobe3031", 256, TRUE);
+	OutputLine(NULL, "雑誌には、ただのオカルトスポットって紹介されてただけだし…」",
+			NULL, "杂志上也只是把它介绍成普通的灵异景点……」", Line_Normal);
+	ClearMessage();
+
+//r助手席に座る乙部くんはぼんやりと外の景色を見つめながら、少し気だるそうにそう答える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "助手席に座る乙部くんはぼんやりと外の景色を見つめながら、少し気だるそうにそう答える。",
+			NULL, "坐在副驾驶座上的乙部君望着窗外景色，神情恍惚，用有些倦怠的语气这样回答。", Line_Normal);
+	ClearMessage();
+
+//rなんとなく、あまり今から向かう場所に関心がないというか、…別のことに思いを馳せているようにも見受けられた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なんとなく、あまり今から向かう場所に関心がないというか、…別のことに思いを馳せているようにも見受けられた。",
+			NULL, "总觉得，他对即将前往的地方兴趣不大……看起来也像是在想着别的事。", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3010.「千秋さんはどうです？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3010", 256, TRUE);
+	OutputLine(NULL, "「千秋さんはどうです？」",
+			NULL, "「千秋小姐呢？」", Line_Normal);
+	ClearMessage();
+
+//千秋rvS20/00/VTT_chiaki3007.「私も、あまり知らないの。kvS20/00/VTT_chiaki3008.昔、何か大変な事故があったってことくらいしか…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千秋</color>", NULL, "<color=#f5e6d3>千秋</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3007", 256, TRUE);
+	OutputLine(NULL, "「私も、あまり知らないの。",
+			NULL, "「我知道得也不多。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3008", 256, TRUE);
+	OutputLine(NULL, "昔、何か大変な事故があったってことくらいしか…」",
+			NULL, "只知道很久以前好像发生过一场很严重的事故……」", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3002.「はは、そうか。kvS20/00/VTT_akuta3003.雛見沢大災害のことなんて、若い子は知らないんだね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3002", 256, TRUE);
+	OutputLine(NULL, "「はは、そうか。",
+			NULL, "「哈哈，是吗。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3003", 256, TRUE);
+	OutputLine(NULL, "雛見沢大災害のことなんて、若い子は知らないんだね」",
+			NULL, "年轻人已经不知道雏见泽大灾害了啊。」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3011.「？　…芥川さんはご存じなんですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3011", 256, TRUE);
+	OutputLine(NULL, "「？　…芥川さんはご存じなんですか？」",
+			NULL, "「……芥川先生知道吗？」", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3004.「ああ、２０年くらい前かな。kvS20/00/VTT_akuta3005.一時期大騒ぎにもなったんだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3004", 256, TRUE);
+	OutputLine(NULL, "「ああ、２０年くらい前かな。",
+			NULL, "「嗯，大概是20年前吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3005", 256, TRUE);
+	OutputLine(NULL, "一時期大騒ぎにもなったんだよ」",
+			NULL, "当时闹得很大。」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3012.「大騒ぎ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3012", 256, TRUE);
+	OutputLine(NULL, "「大騒ぎ…？」",
+			NULL, "「闹得很大……？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r私は身を乗り出して、運転席に顔を向ける。芥川さんは運転に注意しながら、バックミラー越しに私を見て頷いた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は身を乗り出して、運転席に顔を向ける。芥川さんは運転に注意しながら、バックミラー越しに私を見て頷いた。",
+			NULL, "我探出身子，把脸转向驾驶座。芥川先生一边注意驾驶，一边透过后视镜看着我，点了点头。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	DrawScene("white", 1000 );
+	DrawScene("background/kuruma2_02", 1000 );
+	PlayBGM(2, "hm05_22", 128, 0);
+
+//芥川rvS20/00/VTT_akuta3006.「大災害が起きる前まで、雛見沢は誰の関心も集めない、よくある日本の忘れられた小村に過ぎなかった。kvS20/00/VTT_akuta3007.…だけど、昭和５８年の６月に全てが変わってしまった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3006", 256, TRUE);
+	OutputLine(NULL, "「大災害が起きる前まで、雛見沢は誰の関心も集めない、よくある日本の忘れられた小村に過ぎなかった。",
+			NULL, "「在大灾害发生前，雏见泽只是一个常见的、被日本遗忘的小村子，谁也不会关心。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3007", 256, TRUE);
+	OutputLine(NULL, "…だけど、昭和５８年の６月に全てが変わってしまった」",
+			NULL, "……可是，昭和58年6月，一切都改变了。」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3013.「……。kvS20/00/VTT_machiko3014.いったい、何があったんですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3013", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3014", 256, TRUE);
+	OutputLine(NULL, "いったい、何があったんですか？」",
+			NULL, "到底发生了什么？」", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3008.「村人が寝静まった深夜に、突如上流の沼から猛毒の火山性ガスが発生して、村の全域を飲み込んだのさ。kvS20/00/VTT_akuta3009.そして、たった一夜にして２千人もの命が奪われた…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3008", 256, TRUE);
+	OutputLine(NULL, "「村人が寝静まった深夜に、突如上流の沼から猛毒の火山性ガスが発生して、村の全域を飲み込んだのさ。",
+			NULL, "「村民都已熟睡的深夜，上游沼泽突然喷出剧毒火山气体，吞没了整个村子。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3009", 256, TRUE);
+	OutputLine(NULL, "そして、たった一夜にして２千人もの命が奪われた…」",
+			NULL, "然后，仅仅一夜之间，两千多条生命就这样被夺走了……」", Line_Normal);
+	ClearMessage();
+
+//rこの異常とも思える大災害の惨状もさることながら、大自然の脅威を目の当たりにして、当時の人々は怯えたという。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "この異常とも思える大災害の惨状もさることながら、大自然の脅威を目の当たりにして、当時の人々は怯えたという。",
+			NULL, "据说，当时的人们亲眼目睹这场近乎异常的大灾害惨状，以及大自然的威胁，心中充满恐惧。", Line_Normal);
+	ClearMessage();
+
+//r元々、日本は火山の多い国だ。活動を休止、あるいは完全に停止している火山帯とはいえ、いつ何時その猛威をふるうとも限らない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "元々、日本は火山の多い国だ。活動を休止、あるいは完全に停止している火山帯とはいえ、いつ何時その猛威をふるうとも限らない。",
+			NULL, "日本本来就是火山众多的国家。即使是已经休眠、甚至完全停止活动的火山带，也不知道什么时候会再度发威。", Line_Normal);
+	ClearMessage();
+
+//rそして、地質学的に言えば地面の下に、それらの猛毒ガスが存在していない地域を探すほうが難しいほどで…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、地質学的に言えば地面の下に、それらの猛毒ガスが存在していない地域を探すほうが難しいほどで…。",
+			NULL, "从地质学上说，地下很难找到完全没有这类剧毒气体存在的地区……", Line_Normal);
+	ClearMessage();
+
+//rゆえに、『自分の町でも、あるいは同じことが…』と考えるのも当然のことで、酷い場合は心的なストレスを抱える人も続出した――。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆえに、『自分の町でも、あるいは同じことが…』と考えるのも当然のことで、酷い場合は心的なストレスを抱える人も続出した——。",
+			NULL, "因此，人们自然会想到『自己的城镇也可能发生同样的事……』，严重时甚至接连有人承受了巨大的精神压力——", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3010.「…でも、騒ぎはそれだけでは収まらなかった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3010", 256, TRUE);
+	OutputLine(NULL, "「…でも、騒ぎはそれだけでは収まらなかった」",
+			NULL, "「……可是，骚动并没有就此平息。」", Line_Normal);
+	ClearMessage();
+
+//r雛見沢村の縁者たちは、そのガス災害を自分たちが信仰する土着の神――『オヤシロさま』の祟りであると妄信して騒ぎ立てていたそうだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "雛見沢村の縁者たちは、そのガス災害を自分たちが信仰する土着の神——『オヤシロさま』の祟りであると妄信して騒ぎ立てていたそうだ。",
+			NULL, "据说，与雏见泽村民有亲属关系的人们，把那场瓦斯灾害盲信成自己信奉的本土神——『御社神』的作祟，四处喧嚷。", Line_Normal);
+	ClearMessage();
+
+//rそして祟りを畏れ、凶気に取り憑かれた人々は奇妙な言動を振りかざして周囲を巻き込み、一部では奇怪な事件、猟奇的な殺人行為にも及んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして祟りを畏れ、凶気に取り憑かれた人々は奇妙な言動を振りかざして周囲を巻き込み、一部では奇怪な事件、猟奇的な殺人行為にも及んだ。",
+			NULL, "于是，畏惧作祟、被凶气缠身的人们开始做出奇异言行，牵连周围，一部分甚至演变成怪异事件和猎奇杀人行为。", Line_Normal);
+	ClearMessage();
+
+//rそれが、当時の人々の不安と怯気に拍車をかけていった…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それが、当時の人々の不安と怯気に拍車をかけていった…。",
+			NULL, "这一切又进一步助长了当时人们的不安与畏惧……", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3015.「オヤシロさまの…祟り？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3015", 256, TRUE);
+	OutputLine(NULL, "「オヤシロさまの…祟り？」",
+			NULL, "「御社神的……作祟？」", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3011.「ああ。そしてそれに過剰反応する形で、村の縁者を排斥しようとする差別意識と機運が全国に吹き荒れた」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3011", 256, TRUE);
+	OutputLine(NULL, "「ああ。そしてそれに過剰反応する形で、村の縁者を排斥しようとする差別意識と機運が全国に吹き荒れた」",
+			NULL, "「啊。于是，排斥村子相关者的歧视意识和风潮，以过度反应的形式席卷了全国。」", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3012.「実際、根も葉もない噂だけで社会的な制裁を受けたり、将来の進路を閉ざされたりしてね。kvS20/00/VTT_akuta3013.今でもそこの出身というだけで、就職や結婚に障害が発生した話も聞いている」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3012", 256, TRUE);
+	OutputLine(NULL, "「実際、根も葉もない噂だけで社会的な制裁を受けたり、将来の進路を閉ざされたりしてね。",
+			NULL, "「实际上，有人仅仅因为毫无根据的传闻就受到社会制裁，未来道路也被堵死。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3013", 256, TRUE);
+	OutputLine(NULL, "今でもそこの出身というだけで、就職や結婚に障害が発生した話も聞いている」",
+			NULL, "如今也还能听到，只因出身那里，就在就业和结婚上遇到阻碍的事。」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3016.「…まるで、異端者狩りですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3016", 256, TRUE);
+	OutputLine(NULL, "「…まるで、異端者狩りですね」",
+			NULL, "「……简直像猎杀异端。」", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3014.「まったくだ。kvS20/00/VTT_akuta3015.そして、その騒ぎの中心になったのがここ、雛見沢村だ。kvS20/00/VTT_akuta3016.だからここは日本の歴史上から抹殺された、文字通り幽霊の村なんだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3014", 256, TRUE);
+	OutputLine(NULL, "「まったくだ。",
+			NULL, "「一点没错。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3015", 256, TRUE);
+	OutputLine(NULL, "そして、その騒ぎの中心になったのがここ、雛見沢村だ。",
+			NULL, "而那场骚动的中心，就是这里，雏见泽村。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3016", 256, TRUE);
+	OutputLine(NULL, "だからここは日本の歴史上から抹殺された、文字通り幽霊の村なんだよ」",
+			NULL, "所以这里是从日本历史上被抹去的，名副其实的幽灵村。」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3017.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3017", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r私はさっきまでの晴れやかな気持ちを捨て去って、窓を閉める。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私はさっきまでの晴れやかな気持ちを捨て去って、窓を閉める。",
+			NULL, "我收起刚才还很轻快的心情，关上了车窗。", Line_Normal);
+	ClearMessage();
+
+//rなんだか、吸い込んだ空気が得体の知れないものに思えて、思わず吐き気がこみ上げてきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なんだか、吸い込んだ空気が得体の知れないものに思えて、思わず吐き気がこみ上げてきた。",
+			NULL, "总觉得吸进肺里的空气像是什么来路不明的东西，一阵恶心不由得涌了上来。", Line_Normal);
+	ClearMessage();
+
+//芥川rvS20/00/VTT_akuta3017.「…あと、ガスはその後も不定期に噴出を続けてね。kvS20/00/VTT_akuta3018.こうして立ち入り禁止が解かれるまで、２０年以上もの歳月を要したんだ。kvS20/00/VTT_akuta3019.…さすがに今は、それもなくなっていると思うけどね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>芥川</color>", NULL, "<color=#f5e6d3>芥川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3017", 256, TRUE);
+	OutputLine(NULL, "「…あと、ガスはその後も不定期に噴出を続けてね。",
+			NULL, "「……之后，瓦斯仍然不定期喷发。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3018", 256, TRUE);
+	OutputLine(NULL, "こうして立ち入り禁止が解かれるまで、２０年以上もの歳月を要したんだ。",
+			NULL, "直到像现在这样解除禁止进入，花了二十多年。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_akuta3019", 256, TRUE);
+	OutputLine(NULL, "…さすがに今は、それもなくなっていると思うけどね」",
+			NULL, "……不过现在总算已经没有了吧。」", Line_Normal);
+	ClearMessage();
+
+//千秋rvS20/00/VTT_chiaki3009.「…嘘みたいね。kvS20/00/VTT_chiaki3010.こんな綺麗な村が少し前まで、毒ガスで覆われていたなんて…。kvS20/00/VTT_chiaki3011.私には、とても信じられない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千秋</color>", NULL, "<color=#f5e6d3>千秋</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3009", 256, TRUE);
+	OutputLine(NULL, "「…嘘みたいね。",
+			NULL, "「……像假的一样。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3010", 256, TRUE);
+	OutputLine(NULL, "こんな綺麗な村が少し前まで、毒ガスで覆われていたなんて…。",
+			NULL, "这么美丽的村子，直到不久前还被毒气覆盖着……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3011", 256, TRUE);
+	OutputLine(NULL, "私には、とても信じられない」",
+			NULL, "我实在难以相信。」", Line_Normal);
+	ClearMessage();
+
+//乙部rvS20/41/VTT_otobe3032.「……。kvS20/41/VTT_otobe3033.幽霊の村、で思い出したんだけど」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s20/41/vtt_otobe3032", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s20/41/vtt_otobe3033", 256, TRUE);
+	OutputLine(NULL, "幽霊の村、で思い出したんだけど」",
+			NULL, "说到幽灵村，我倒想起来了。」", Line_Normal);
+	ClearMessage();
+
+//rその時、助手席に座る乙部くんが携帯電話をいじりながらぼそり、といった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、助手席に座る乙部くんが携帯電話をいじりながらぼそり、といった。",
+			NULL, "这时，坐在副驾驶座上的乙部一边摆弄手机，一边低声说道。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/kuruma2_02", 1000 );
+
+//乙部rvS20/41/VTT_otobe3034.「この村、…出るらしいんだ。kvS20/41/VTT_otobe3035.あっという間に、一夜にして滅んだせいで自分の死に気づいていない、村人たちの霊が…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s20/41/vtt_otobe3034", 256, TRUE);
+	OutputLine(NULL, "「この村、…出るらしいんだ。",
+			NULL, "「这个村子……好像会闹鬼。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s20/41/vtt_otobe3035", 256, TRUE);
+	OutputLine(NULL, "あっという間に、一夜にして滅んだせいで自分の死に気づいていない、村人たちの霊が…」",
+			NULL, "因为一夜之间突然毁灭，还没意识到自己已经死去的村民们的灵魂……」", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3018.「そう、なんだ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3018", 256, TRUE);
+	OutputLine(NULL, "「そう、なんだ…」",
+			NULL, "「这样啊……」", Line_Normal);
+	ClearMessage();
+
+//r確かに、状況もわからないままあっという間に死んだとあっては、自分が死んだことにすら気付かずに霊魂となって『出てくる』こともあるかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "確かに、状況もわからないままあっという間に死んだとあっては、自分が死んだことにすら気付かずに霊魂となって『出てくる』こともあるかもしれない。",
+			NULL, "确实，如果连状况都没弄清就转眼死去，也许连自己已经死了都没有察觉，就化作灵魂「出现」了。", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+//rそれでも、いい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも、いい。",
+			NULL, "即便如此，也好。", Line_Normal);
+	ClearMessage();
+
+//rどんな形でも、もう会えないよりはそっちのほうが、ずっと…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "どんな形でも、もう会えないよりはそっちのほうが、ずっと…。",
+			NULL, "无论以什么形式，都比再也见不到要好得多……", Line_Normal);
+	ClearMessage();
+
+//真知子rvS20/00/VTT_machiko3019.「死者の村、か…。kvS20/00/VTT_machiko3020.その出てくる霊って、やっぱりこの村で死んだ人限定なのかなぁ。kvS20/00/VTT_machiko3021.他のところで死んじゃったら、会えないのかなぁ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>真知子</color>", NULL, "<color=#f5e6d3>真知子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3019", 256, TRUE);
+	OutputLine(NULL, "「死者の村、か…。",
+			NULL, "「死者之村吗……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3020", 256, TRUE);
+	OutputLine(NULL, "その出てくる霊って、やっぱりこの村で死んだ人限定なのかなぁ。",
+			NULL, "那些会出现的灵魂，果然只限于在这个村子里死去的人吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_machiko3021", 256, TRUE);
+	OutputLine(NULL, "他のところで死んじゃったら、会えないのかなぁ…」",
+			NULL, "要是在别的地方死掉，就见不到了吗……」", Line_Normal);
+	ClearMessage();
+
+//千秋rvS20/00/VTT_chiaki3012.「…マチちゃん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>千秋</color>", NULL, "<color=#f5e6d3>千秋</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_chiaki3012", 256, TRUE);
+	OutputLine(NULL, "「…マチちゃん？」",
+			NULL, "「……小真？」", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("white", 1000 );
+	DrawScene("background/sora2", 1000 );
+
+//rでも、もういい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも、もういい。",
+			NULL, "不过，已经够了。", Line_Normal);
+	ClearMessage();
+
+//rどちらにせよ、もうすぐ、会えるんだから。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "どちらにせよ、もうすぐ、会えるんだから。",
+			NULL, "无论是哪一种，反正马上就能见到了。", Line_Normal);
+	ClearMessage();
+
+//rきっとみんなには、もうすぐ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "きっとみんなには、もうすぐ…。",
+			NULL, "我一定，很快就能见到大家……", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

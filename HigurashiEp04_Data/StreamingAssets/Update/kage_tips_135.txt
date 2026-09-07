@@ -1,0 +1,244 @@
+void main()
+{
+
+//*TIPS 135
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//まどかからの手紙
+
+	DrawSceneWithMask("background/sora", "v_right", 0, 0, 1000 );
+	PlaySE(3, "kami", 256, 64);
+	PlayBGM( 2, "hm10_73", 128, 0 );
+	Wait( 500 );
+
+//r——拝啓。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "——拝啓。",
+			NULL, "——敬启。", Line_Normal);
+	ClearMessage();
+
+//rお元気ですか？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お元気ですか？",
+			NULL, "您身体还好吗？", Line_Normal);
+	ClearMessage();
+
+//r私たちは相変わらず、かんかん照りのお日様の下でとても元気にやっています。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私たちは相変わらず、かんかん照りのお日様の下でとても元気にやっています。",
+			NULL, "我们还是老样子，在炎炎烈日下过得很有精神。", Line_Normal);
+	ClearMessage();
+
+//r引っ越してきた当初は村の人たちも少しよそよそしかったけど、今ではすっかり仲良しです。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "引っ越してきた当初は村の人たちも少しよそよそしかったけど、今ではすっかり仲良しです。",
+			NULL, "刚搬来时，村里的人多少还有些生分，现在已经完全熟络了。", Line_Normal);
+	ClearMessage();
+
+//rつい先月にあった薫さんの還暦祝いには、たくさんの人たちがお祝いに訪れてくれました。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "つい先月にあった薫さんの還暦祝いには、たくさんの人たちがお祝いに訪れてくれました。",
+			NULL, "上个月薰先生过六十大寿时，来了很多人为他庆祝。", Line_Normal);
+	ClearMessage();
+
+//r…あ、そうそう！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…あ、そうそう！",
+			NULL, "……啊，对了。", Line_Normal);
+	ClearMessage();
+
+//r薫さんは恥ずかしがったけど、そのお祝いでは彼に赤いチャンチャンコを着せちゃいました！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "薫さんは恥ずかしがったけど、そのお祝いでは彼に赤いチャンチャンコを着せちゃいました！",
+			NULL, "薰先生虽然很害羞，我们还是在庆祝会上让他穿上了红色还历坎肩。", Line_Normal);
+	ClearMessage();
+
+//r『一生ものだから、ね？』なんて言葉巧みに冗談半分に着せてみましたが、予想以上に結構イケてます。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『一生ものだから、ね？』なんて言葉巧みに冗談半分に着せてみましたが、予想以上に結構イケてます。",
+			NULL, "我半开玩笑地哄他说『这可是一辈子的纪念哦』，结果比想象中还挺合适的。", Line_Normal);
+	ClearMessage();
+
+//rそして笑えます。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして笑えます。",
+			NULL, "而且还挺逗的。", Line_Normal);
+	ClearMessage();
+
+//rせっかくだから、今度写真を送りますね？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "せっかくだから、今度写真を送りますね？",
+			NULL, "机会难得，我下次把照片寄给您吧？", Line_Normal);
+	ClearMessage();
+
+//r今年とれたての夏みかんも同梱しましたので、よかったら一緒にご賞味ください。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今年とれたての夏みかんも同梱しましたので、よかったら一緒にご賞味ください。",
+			NULL, "我还一起寄了今年刚摘的夏橙，您方便的话也请尝尝。", Line_Normal);
+	ClearMessage();
+
+//rそれから私は、この前ついにお姉ちゃんよりも年上になってしまいました。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それから私は、この前ついにお姉ちゃんよりも年上になってしまいました。",
+			NULL, "还有，我前阵子终于比姐姐年纪更大了。", Line_Normal);
+	ClearMessage();
+
+//r…自分の子どもたちに『おばさん』と呼ばせてやる前に自分がおばさんになったことが、すごく残念です。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…自分の子どもたちに『おばさん』と呼ばせてやる前に自分がおばさんになったことが、すごく残念です。",
+			NULL, "……遗憾的是，还没来得及让自己的孩子叫姐姐一声『阿姨』，我自己倒先成了阿姨。", Line_Normal);
+	ClearMessage();
+
+//rでも案外、なってみると三十路も悪くないものですね。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも案外、なってみると三十路も悪くないものですね。",
+			NULL, "可真正到了这个年纪，三十岁也意外地挺好。", Line_Normal);
+	ClearMessage();
+
+//r…なんて赤坂さんに言ったら、怒られるかな？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…なんて赤坂さんに言ったら、怒られるかな？",
+			NULL, "……要是我把这话告诉赤坂先生，他会生气吗？", Line_Normal);
+	ClearMessage();
+
+//r…最近ようやく、私はお姉ちゃんの墓前で泣かずに立てるようになりました。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…最近ようやく、私はお姉ちゃんの墓前で泣かずに立てるようになりました。",
+			NULL, "……最近，我终于能站在姐姐墓前，不再哭出来了。", Line_Normal);
+	ClearMessage();
+
+//rお墓はお父さんとお母さんの近くに、とも思いましたが、今ではこっちに無理やりつれてきて、正解だったと思います。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お墓はお父さんとお母さんの近くに、とも思いましたが、今ではこっちに無理やりつれてきて、正解だったと思います。",
+			NULL, "我原本也想过把墓安在父母附近，可现在觉得，硬把姐姐带到这边来是正确的。", Line_Normal);
+	ClearMessage();
+
+//rお姉ちゃんはいつも一生懸命で、こっちが息苦しくなるくらいに全力疾走でした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お姉ちゃんはいつも一生懸命で、こっちが息苦しくなるくらいに全力疾走でした。",
+			NULL, "姐姐总是拼尽全力，拼到让身边的人都觉得喘不过气。", Line_Normal);
+	ClearMessage();
+
+//rでも、さすがにこのステキな自然の中だと他にすることがなくて、ゆっくり休むしかないと思いますから。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも、さすがにこのステキな自然の中だと他にすることがなくて、ゆっくり休むしかないと思いますから。",
+			NULL, "不过，在这么美丽的大自然里，她实在也没什么别的事可做，只能慢慢休息了。", Line_Normal);
+	ClearMessage();
+
+//r…あ、でも天国にも警察があったら、ひょっとして今頃走り回っているかもしれませんね？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…あ、でも天国にも警察があったら、ひょっとして今頃走り回っているかもしれませんね？",
+			NULL, "……啊，可如果天国也有警察，她现在说不定已经到处奔走了呢。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "kami", 256, 64);
+
+//rそれから、赤坂さん。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それから、赤坂さん。",
+			NULL, "还有，赤坂先生。", Line_Normal);
+	ClearMessage();
+
+//r今後お姉ちゃんのことで、あまりご自分のことを責めないであげてください。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今後お姉ちゃんのことで、あまりご自分のことを責めないであげてください。",
+			NULL, "以后关于姐姐的事，请您少责备自己一些。", Line_Normal);
+	ClearMessage();
+
+//rこのことは、蔵ちゃんにも同じことを伝えました。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "このことは、蔵ちゃんにも同じことを伝えました。",
+			NULL, "这句话，我也同样告诉了藏酱。", Line_Normal);
+	ClearMessage();
+
+//r誰のせいでもない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "誰のせいでもない。",
+			NULL, "谁都没有错。", Line_Normal);
+	ClearMessage();
+
+//rお姉ちゃんは自分の職務を果たしただけなので、犯人に対する以外の自責他責は筋違いだと、身内の立場を利用して強く、お二人には言わせていただきます。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お姉ちゃんは自分の職務を果たしただけなので、犯人に対する以外の自責他責は筋違いだと、身内の立場を利用して強く、お二人には言わせていただきます。",
+			NULL, "姐姐只是履行了自己的职责，所以除了犯人之外，除追究犯人以外，责怪自己或其他任何人都没有道理。请允许我利用家属的立场，强硬地对两位这么说。", Line_Normal);
+	ClearMessage();
+
+//rむしろ、その思いを他の事件捜査と犯人逮捕に向けてくれたほうが、私…いえ、私たちは嬉しいです。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "むしろ、その思いを他の事件捜査と犯人逮捕に向けてくれたほうが、私…いえ、私たちは嬉しいです。",
+			NULL, "请把这份心意用于其他案件的调查和犯人逮捕。这样一来，我……还有我们，都会很高兴。", Line_Normal);
+	ClearMessage();
+
+//r薫さんも時々、犯人を自分の在職中に捕まえられなかったことが一番の心残りだと言って、申し訳なさそうに墓前で手を合わせたりします。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "薫さんも時々、犯人を自分の在職中に捕まえられなかったことが一番の心残りだと言って、申し訳なさそうに墓前で手を合わせたりします。",
+			NULL, "薰先生有时也会说，没能在自己任职期间抓住犯人，是他最大的遗憾，还会很抱歉地在墓前合掌。", Line_Normal);
+	ClearMessage();
+
+//r（…そのたびに私、思いっきりどやしつけちゃっています！）
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "（…そのたびに私、思いっきりどやしつけちゃっています！）",
+			NULL, "（……每到那种时候，我都会狠狠训他一顿！）", Line_Normal);
+	ClearMessage();
+
+//rでも、藤田さんたちが頑張ってくれたおかげで去年、ようやく容疑者を捕まえることができました。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも、藤田さんたちが頑張ってくれたおかげで去年、ようやく容疑者を捕まえることができました。",
+			NULL, "不过，多亏藤田先生他们努力，去年终于逮捕了嫌疑人。", Line_Normal);
+	ClearMessage();
+
+//rだからお姉ちゃんはきっと、最後まで諦めずに頑張ってくれたみんなに感謝しているんじゃないかなって、私は思っています。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だからお姉ちゃんはきっと、最後まで諦めずに頑張ってくれたみんなに感謝しているんじゃないかなって、私は思っています。",
+			NULL, "所以我想，姐姐一定很感谢所有坚持到最后也没有放弃的人。", Line_Normal);
+	ClearMessage();
+
+//rこれからもお仕事、頑張ってください。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "これからもお仕事、頑張ってください。",
+			NULL, "今后也请继续努力工作。", Line_Normal);
+	ClearMessage();
+
+//r警視総監…は、さすがに無理でもそれに近いくらいの高級官僚になって、世の中の平和のためにご活躍されることを私と私の家族、そしてお姉ちゃんと一緒に祈っております。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "警視総監…は、さすがに無理でもそれに近いくらいの高級官僚になって、世の中の平和のためにご活躍されることを私と私の家族、そしてお姉ちゃんと一緒に祈っております。",
+			NULL, "警视总监……也许实在太难了，但我和我的家人，还有姐姐，都会一起祈愿您成为接近那个位置的高级官员，为世间和平大展身手。", Line_Normal);
+	ClearMessage();
+
+//rそのためにも、どうかお身体をご自愛ください。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そのためにも、どうかお身体をご自愛ください。",
+			NULL, "也请您为此好好保重身体。", Line_Normal);
+	ClearMessage();
+
+//rそれでは、また。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでは、また。",
+			NULL, "那么，再会。", Line_Normal);
+	ClearMessage();
+
+//r山沖　まどか
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "山沖　まどか",
+			NULL, "山冲圆", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 3000 );
+	FadeOutBGM( 2, 1000, FALSE  );
+	SetValidityOfInput( TRUE );
+
+}

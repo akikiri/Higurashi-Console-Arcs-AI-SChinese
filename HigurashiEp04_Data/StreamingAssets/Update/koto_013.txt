@@ -1,0 +1,4291 @@
+void main()
+{
+
+
+//*Kotohogushi Day 13
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//#13 憎しみと絶望の果てに
+
+	DrawScene("white", 1000 );
+	PlayBGM( 1, "yoru", 128, 0 );
+	DrawScene("background/moon", 1000 );
+	Wait( 2000 );
+	DrawScene("black", 1000 );
+	DrawScene("background/hu_ima", 1000 );
+
+//r…魔央が古手家にやってきたのは、夜も更けた遅い時間だった。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…魔央が古手家にやってきたのは、夜も更けた遅い時間だった。",
+			NULL, "……魔央来到古手家时，夜色已经很深了。", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040158.「…悪いね。kvS16/00/DS43040159.病人のいるところ、遅くに押しかけてさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040158", 256, TRUE);
+	OutputLine(NULL, "「…悪いね。",
+			NULL, "「……抱歉啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040159", 256, TRUE);
+	OutputLine(NULL, "病人のいるところ、遅くに押しかけてさ」",
+			NULL, "明知道这里有病人，还这么晚来打扰」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 47, "sprite/ouka1b_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010438.「いえ、大丈夫です。kvS16/47/DS43010439.主人も風花も、たった今寝たところですから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010438", 256, TRUE);
+	OutputLine(NULL, "「いえ、大丈夫です。",
+			NULL, "「没关系。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010439", 256, TRUE);
+	OutputLine(NULL, "主人も風花も、たった今寝たところですから」",
+			NULL, "夫君和风花都刚刚睡下」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040160.「さっき公由の本家に行ったら、志乃さんはこっちだって聞いてね。kvS16/00/DS43040161.桜花にも早いところ知らせておきたかったし、ちょうどいいかなって」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040160", 256, TRUE);
+	OutputLine(NULL, "「さっき公由の本家に行ったら、志乃さんはこっちだって聞いてね。",
+			NULL, "「刚才我去了公由本家，听说志乃小姐在这边。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040161", 256, TRUE);
+	OutputLine(NULL, "桜花にも早いところ知らせておきたかったし、ちょうどいいかなって」",
+			NULL, "我也想早点让樱花知道，正好就过来了」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそう言って魔央は桜花と、正次の看病を手伝うため古手家を訪れていた志乃に向き直って居住まいを正す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って魔央は桜花と、正次の看病を手伝うため古手家を訪れていた志乃に向き直って居住まいを正す。",
+			NULL, "这么说着，魔央转向樱花，以及为了帮忙照顾正次而来到古手家的志乃，端正了坐姿。", Line_Normal);
+	ClearMessage();
+
+//r燭台のみの薄暗がりでその表情はよく見えなかったが、…彼女の声の響きが、おおよその状況を物語っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "燭台のみの薄暗がりでその表情はよく見えなかったが、…彼女の声の響きが、おおよその状況を物語っていた。",
+			NULL, "烛台映出的光线十分昏暗，看不清她的表情……但从她的语气中，也足以听出大致的状况。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/hu_tenjyou", 1000 );
+
+//志乃rvS16/00/DS43030372.「…あまり、いい話ではなさそうね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030372", 256, TRUE);
+	OutputLine(NULL, "「…あまり、いい話ではなさそうね」",
+			NULL, "「……听起来，情况不太妙」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040162.「ああ。領主さまから正式にお呼びがかかって、お屋敷に出頭した叔父貴がさっき、戻ってきた。kvS16/00/DS43040163.簡単にいえば、『鬼の薬』はこの国全体の専売になることが決まったらしい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040162", 256, TRUE);
+	OutputLine(NULL, "「ああ。領主さまから正式にお呼びがかかって、お屋敷に出頭した叔父貴がさっき、戻ってきた。",
+			NULL, "「嗯。领主大人正式传唤，去宅邸应召的叔父刚刚回来了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040163", 256, TRUE);
+	OutputLine(NULL, "簡単にいえば、『鬼の薬』はこの国全体の専売になることが決まったらしい」",
+			NULL, "简单讲，『鬼之药』好像已经决定由整个国家专营」", Line_Normal);
+	ClearMessage();
+
+//rこの地方では、領主の政に従って年貢などの管理を行い、村人たちに指示を下す代官職を代々園崎家の出身者が務めている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "この地方では、領主の政に従って年貢などの管理を行い、村人たちに指示を下す代官職を代々園崎家の出身者が務めている。",
+			NULL, "在这个地方，园崎家历代都有人出任代官，依照领主的政令管理年贡等事务，并向村民下达指示。", Line_Normal);
+	ClearMessage();
+
+//rそして、先代であった魔央の夫の死後は、彼女の息子が元服するまで父方の叔父が代理としてその任にあたっていたのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、先代であった魔央の夫の死後は、彼女の息子が元服するまで父方の叔父が代理としてその任にあたっていたのだ。",
+			NULL, "而在身为前代的魔央丈夫去世后，直到她的儿子元服为止，都由父方的叔父代理此职。", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010440.「それでは、できあがった薬を全部、お上が買い上げるということですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010440", 256, TRUE);
+	OutputLine(NULL, "「それでは、できあがった薬を全部、お上が買い上げるということですか？」",
+			NULL, "「也就是说，做好的药都会由官府买走吗？」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040164.「いや、…もっと悪い」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040164", 256, TRUE);
+	OutputLine(NULL, "「いや、…もっと悪い」",
+			NULL, "「不……更糟」", Line_Normal);
+	ClearMessage();
+
+//r魔央は苛立ちも抑えられないように髪をかきむしって、頭を抱える。そして、不安げに顔を見合わせる志乃と桜花の前に、懐から取り出した書簡を広げてみせた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "魔央は苛立ちも抑えられないように髪をかきむしって、頭を抱える。そして、不安げに顔を見合わせる志乃と桜花の前に、懐から取り出した書簡を広げてみせた。",
+			NULL, "魔央像是抑制不住烦躁般抓乱头发，抱住脑袋。随后，她在不安地互相看着的志乃和樱花面前，展开了从怀中取出的书信。", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030373.「それは…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030373", 256, TRUE);
+	OutputLine(NULL, "「それは…？」",
+			NULL, "「这是……？」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040165.「領主さま直々の申渡書だ。kvS16/00/DS43040166.薬の製作者は『鬼の薬』の処方箋…つまり、薬の原料と調合法を記した指南書を提出しろ、ってさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040165", 256, TRUE);
+	OutputLine(NULL, "「領主さま直々の申渡書だ。",
+			NULL, "「这是领主大人亲自下达的命令。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040166", 256, TRUE);
+	OutputLine(NULL, "薬の製作者は『鬼の薬』の処方箋…つまり、薬の原料と調合法を記した指南書を提出しろ、ってさ」",
+			NULL, "要制药者交出『鬼之药』的处方，也就是记载药材和调制方法的指南。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010441.「え…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010441", 256, TRUE);
+	OutputLine(NULL, "「え…？」",
+			NULL, "「咦……？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//志乃rvS16/00/DS43030374.「そんな…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030374", 256, TRUE);
+	OutputLine(NULL, "「そんな…！」",
+			NULL, "「怎么会……！」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlayBGM(2, "hm03_16", 128, 0);
+	DrawScene("black", 1000 );
+
+//rその意味が分からず首をかしげる桜花とは対照的に、志乃は非難交じりにうめく。そして魔央も同じ感想を持ったのか、溜息をついて首を振ってみせた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その意味が分からず首をかしげる桜花とは対照的に、志乃は非難交じりにうめく。そして魔央も同じ感想を持ったのか、溜息をついて首を振ってみせた。",
+			NULL, "与还没明白意思、歪着头的樱花相反，志乃带着责备似的语气低声呻吟。魔央似乎也有同样的感想，叹了口气，摇了摇头。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1a_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/hu_ima", 1000 );
+
+//桜花rvS16/47/DS43010442.「あの…お義母さま、どういうことですか？kvS16/47/DS43010443.　提出するものが薬と処方箋とでは、何かが違ってくるのでしょうか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010442", 256, TRUE);
+	OutputLine(NULL, "「あの…お義母さま、どういうことですか？",
+			NULL, "「那个……婆婆大人，这是什么意思？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010443", 256, TRUE);
+	OutputLine(NULL, "　提出するものが薬と処方箋とでは、何かが違ってくるのでしょうか？」",
+			NULL, "献上药和献上处方，有什么区别吗？」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030375.「……。kvS16/00/DS43030376.薬を納めるだけなら、原料の採取と調合はこの鬼ヶ淵村…もっと言えばあなた、桜花しかできない現状を維持できる」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030375", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030376", 256, TRUE);
+	OutputLine(NULL, "薬を納めるだけなら、原料の採取と調合はこの鬼ヶ淵村…もっと言えばあなた、桜花しかできない現状を維持できる」",
+			NULL, "只献上药的话，就还能维持由鬼渊村采集原料和调制……更准确地说，只有你，樱花，才能制作这种药的现状。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030377.「でも処方箋を渡せば、あなた以外の人も『鬼の薬』を作ることができるようになってしまう。kvS16/00/DS43030378.…大違いよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030377", 256, TRUE);
+	OutputLine(NULL, "「でも処方箋を渡せば、あなた以外の人も『鬼の薬』を作ることができるようになってしまう。",
+			NULL, "「可一旦交出处方，除了你以外的人也能制作『鬼之药』了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030378", 256, TRUE);
+	OutputLine(NULL, "…大違いよ」",
+			NULL, "……这差别太大了。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010444.「？　…それに、何か問題が？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010444", 256, TRUE);
+	OutputLine(NULL, "「？　…それに、何か問題が？」",
+			NULL, "「咦？……那有什么问题吗？」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040167.「何か、って…桜花はそれでいいのかよ？kvS16/00/DS43040168.　あんたが苦労して見つけてきた薬の処方が、ほとんど二束三文で他人のものになっちまうんだぞ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040167", 256, TRUE);
+	OutputLine(NULL, "「何か、って…桜花はそれでいいのかよ？",
+			NULL, "「你说有什么……樱花，你自己这样也行吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040168", 256, TRUE);
+	OutputLine(NULL, "　あんたが苦労して見つけてきた薬の処方が、ほとんど二束三文で他人のものになっちまうんだぞ？」",
+			NULL, "你费了那么大劲才找到的药方，几乎要被别人用白菜价拿走了啊？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010445.「あっ…そうか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010445", 256, TRUE);
+	OutputLine(NULL, "「あっ…そうか」",
+			NULL, "「啊……原来如此。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそう言われて桜花は、魔央たちが自分のことを気遣って悩んでくれていることをようやく理解する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言われて桜花は、魔央たちが自分のことを気遣って悩んでくれていることをようやく理解する。",
+			NULL, "听她这么说，樱花这才明白，魔央她们是在为自己担心才如此烦恼。", Line_Normal);
+	ClearMessage();
+
+//r…その、まったく自分の利益や報酬を考えていなかった彼女の反応を見て、さすがに志乃と魔央は顔を見合せてやれやれ、と肩をすくめ合った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…その、まったく自分の利益や報酬を考えていなかった彼女の反応を見て、さすがに志乃と魔央は顔を見合せてやれやれ、と肩をすくめ合った。",
+			NULL, "……看到她完全没考虑自己利益和报酬的反应，志乃和魔央终于对视一眼，无奈地耸了耸肩。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/hu_ima", 1000 );
+
+//魔央rvS16/00/DS43040169.「まったく…あの薬は、あんたが作ったんだろ？kvS16/00/DS43040170.　だったら少しくらい、処方に費やした努力の報酬をよこせ、っていっても罰は当たらないのにさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040169", 256, TRUE);
+	OutputLine(NULL, "「まったく…あの薬は、あんたが作ったんだろ？",
+			NULL, "「真是的……那药是你做出来的吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040170", 256, TRUE);
+	OutputLine(NULL, "　だったら少しくらい、処方に費やした努力の報酬をよこせ、っていっても罰は当たらないのにさ」",
+			NULL, "既然这样，就算要求对研究出处方所花的心力稍作补偿，也不会遭报应吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010446.「努力、と言われても…。kvS16/47/DS43010447.私は、オヤシロさまの神託を受けてこの薬の作り方を教えていただいただけですから。kvS16/47/DS43010448.私が何かをもらういわれはありませんよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010446", 256, TRUE);
+	OutputLine(NULL, "「努力、と言われても…。",
+			NULL, "「说到辛劳……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010447", 256, TRUE);
+	OutputLine(NULL, "私は、オヤシロさまの神託を受けてこの薬の作り方を教えていただいただけですから。",
+			NULL, "我只是领受了御社神大人的神谕，得知了这种药的做法而已。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010448", 256, TRUE);
+	OutputLine(NULL, "私が何かをもらういわれはありませんよ」",
+			NULL, "我没有理由收取报酬。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030379.「まぁ…そういう無欲なのが、桜花のいいところなんだけどね。kvS16/00/DS43030380.それでも、あなたが神のお告げを聞いたおかげで病に苦しむたくさんの人が救われた。kvS16/00/DS43030381.…それは事実なんだから、存分に誇ってもいいのよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030379", 256, TRUE);
+	OutputLine(NULL, "「まぁ…そういう無欲なのが、桜花のいいところなんだけどね。",
+			NULL, "「嗯……这种无欲无求，正是樱花的优点。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030380", 256, TRUE);
+	OutputLine(NULL, "それでも、あなたが神のお告げを聞いたおかげで病に苦しむたくさんの人が救われた。",
+			NULL, "但也正因为你听见了神明的启示，许多受病痛折磨的人才得救。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030381", 256, TRUE);
+	OutputLine(NULL, "…それは事実なんだから、存分に誇ってもいいのよ？」",
+			NULL, "……这是事实，你完全可以为此自豪？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010449.「はぁ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010449", 256, TRUE);
+	OutputLine(NULL, "「はぁ…」",
+			NULL, "「唉……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそう褒められても、桜花の気分は複雑だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう褒められても、桜花の気分は複雑だった。",
+			NULL, "被这样夸奖，樱花的心情却很复杂。", Line_Normal);
+	ClearMessage();
+
+//r多くの人の命を救うことができたのは、確かに望んだ願いであったので本当にうれしい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "多くの人の命を救うことができたのは、確かに望んだ願いであったので本当にうれしい。",
+			NULL, "能够拯救许多人的性命，确实实现了她一直以来的愿望，她也由衷感到高兴。", Line_Normal);
+	ClearMessage();
+
+//r…でも、実際に薬を作って救ってくれたのは自身ではなく、羽入だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…でも、実際に薬を作って救ってくれたのは自身ではなく、羽入だった。",
+			NULL, "……可是，实际制出药、救下大家的人，是羽入。", Line_Normal);
+	ClearMessage();
+
+//r無理な願いを快く受け入れて、最高の形で答えてくれた姿の見えない、私の友達…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "無理な願いを快く受け入れて、最高の形で答えてくれた姿の見えない、私の友達…。",
+			NULL, "那位爽快接受了她无理的请求，并以最好的方式回应她的、看不见身影的朋友……", Line_Normal);
+	ClearMessage();
+
+//rそんな彼女の優しさを利用して自分の名を高めたようでもあって、…桜花はむしろ、恥ずかしいとさえ感じていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな彼女の優しさを利用して自分の名を高めたようでもあって、…桜花はむしろ、恥ずかしいとさえ感じていた。",
+			NULL, "她仿佛利用了那份温柔来抬高自己的名声……樱花甚至感到羞愧。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/hu_tenjyou", 1000 );
+
+//魔央rvS16/00/DS43040171.「まぁ、それはいいとして。kvS16/00/DS43040172.とりあえず、領主さまはその処方箋と引き換えに今年の年貢の免除と、困窮状態の村人たちのために食糧などの支援を行ってくれるそうだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040171", 256, TRUE);
+	OutputLine(NULL, "「まぁ、それはいいとして。",
+			NULL, "「好了，这事先放一边。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040172", 256, TRUE);
+	OutputLine(NULL, "とりあえず、領主さまはその処方箋と引き換えに今年の年貢の免除と、困窮状態の村人たちのために食糧などの支援を行ってくれるそうだ」",
+			NULL, "总之，领主大人似乎会以那份处方为交换，免除今年的年贡，并向困顿的村民提供粮食之类的援助。」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040173.「…ただし、『鬼の薬』に関しての管理はすべて領主さまのものとなり、私たちは毎年一定量の薬を買い上げてもらうことになる」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040173", 256, TRUE);
+	OutputLine(NULL, "「…ただし、『鬼の薬』に関しての管理はすべて領主さまのものとなり、私たちは毎年一定量の薬を買い上げてもらうことになる」",
+			NULL, "「……只是，『鬼之药』相关的管理权会全部归领主大人所有，我们每年都要让他收购一定数量的药。」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040174.「確かに村としての収益は増えるし、悪い条件ではないだろう。kvS16/00/DS43040175.…だけど処方箋を渡すとなると、この先事情が変わってこないとも限らない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040174", 256, TRUE);
+	OutputLine(NULL, "「確かに村としての収益は増えるし、悪い条件ではないだろう。",
+			NULL, "「村子的收益确实会增加，条件也算优厚。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040175", 256, TRUE);
+	OutputLine(NULL, "…だけど処方箋を渡すとなると、この先事情が変わってこないとも限らない」",
+			NULL, "……但一旦交出处方，今后的情况很可能会变。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030382.「…そうね。kvS16/00/DS43030383.鬼ヶ淵村以外の原料を使って、どの薬師でも調合が可能となれば、この村にわざわざ頼まなくても別の場所から仕入れることができる」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030382", 256, TRUE);
+	OutputLine(NULL, "「…そうね。",
+			NULL, "「……是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030383", 256, TRUE);
+	OutputLine(NULL, "鬼ヶ淵村以外の原料を使って、どの薬師でも調合が可能となれば、この村にわざわざ頼まなくても別の場所から仕入れることができる」",
+			NULL, "如果用鬼渊村以外的原料，任何药师都能调制，那他们特意找这个村子的必要就没了，可以从别的地方进货。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030384.「そうなると、当然領主さまに専売品として買い上げられる際、額は安く叩かれることになる。kvS16/00/DS43030385.この額で納得がいかないのならよその場所で仕入れる、とでも言われて。kvS16/00/DS43030386.…そんなところでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030384", 256, TRUE);
+	OutputLine(NULL, "「そうなると、当然領主さまに専売品として買い上げられる際、額は安く叩かれることになる。",
+			NULL, "「到时候，被领主大人当作专营品收购时，价格自然会被压低。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030385", 256, TRUE);
+	OutputLine(NULL, "この額で納得がいかないのならよその場所で仕入れる、とでも言われて。",
+			NULL, "他还会说，接受不了这个价，那我就去别处进货。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030386", 256, TRUE);
+	OutputLine(NULL, "…そんなところでしょう」",
+			NULL, "……大概就是这样吧。」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040176.「そして専売となると、私たちで自由に売りさばくこともできなくなる。kvS16/00/DS43040177.もちろん、桜花が今やっているような無料で配布なんて、ご法度だ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040176", 256, TRUE);
+	OutputLine(NULL, "「そして専売となると、私たちで自由に売りさばくこともできなくなる。",
+			NULL, "「而且成了专营，我们也没法自由销售。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040177", 256, TRUE);
+	OutputLine(NULL, "もちろん、桜花が今やっているような無料で配布なんて、ご法度だ」",
+			NULL, "当然，像樱花现在这样免费分发，肯定也会被禁止。」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040178.「そして毎年、一定量の納入義務があるから桜花以外にも調合を手伝う人手が必要。kvS16/00/DS43040179.…明るい未来、というわけにはいかないだろうね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040178", 256, TRUE);
+	OutputLine(NULL, "「そして毎年、一定量の納入義務があるから桜花以外にも調合を手伝う人手が必要。",
+			NULL, "「每年还会有固定的交货义务，所以除了樱花以外，也需要人手帮忙调制。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040179", 256, TRUE);
+	OutputLine(NULL, "…明るい未来、というわけにはいかないだろうね」",
+			NULL, "……这恐怕称不上光明的未来。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010450.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010450", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r当初は予想もしていなかった展開に、桜花は暗然とした面持ちできゅっ、と襟元を掴む。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "当初は予想もしていなかった展開に、桜花は暗然とした面持ちできゅっ、と襟元を掴む。",
+			NULL, "面对起初完全没预料到的局面，樱花神情黯然，紧紧抓住了衣襟。", Line_Normal);
+	ClearMessage();
+
+//r二人の話を聞いていても、決して喜ばしく思っていないことがよくわかる。むしろ余計な気苦労と手間が増えて、辟易としているようにも見えた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "二人の話を聞いていても、決して喜ばしく思っていないことがよくわかる。むしろ余計な気苦労と手間が増えて、辟易としているようにも見えた。",
+			NULL, "听着两人的话，她也很清楚，她们并没有为此高兴。她们看上去甚至像是因为多了许多操心和麻烦而疲惫不堪。", Line_Normal);
+	ClearMessage();
+
+//桜花r-vS16/47/DS43010451.（…やっぱり、間違いだったんだろうか）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010451", 256, TRUE);
+	OutputLine(NULL, "（…やっぱり、間違いだったんだろうか）",
+			NULL, "（……果然，是我做错了吗？）", Line_Normal);
+	ClearMessage();
+
+//rそんな疑問さえ、桜花の胸の内にわき起こって…悲しくなる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな疑問さえ、桜花の胸の内にわき起こって…悲しくなる。",
+			NULL, "这样的疑问也在樱花心中涌起，让她悲伤起来。", Line_Normal);
+	ClearMessage();
+
+//r羽入の力に頼ったのは、ただ病に苦しむ人々を救いたいだけだった。そして何よりも、夫や娘…家族を守りたかったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "羽入の力に頼ったのは、ただ病に苦しむ人々を救いたいだけだった。そして何よりも、夫や娘…家族を守りたかったのだ。",
+			NULL, "她借助羽入的力量，只是想救那些受病痛折磨的人们。更重要的是，她想守护丈夫、女儿和家人。", Line_Normal);
+	ClearMessage();
+
+//rそれが今や領主までも巻き込んで、大きな利害関係の波が鬼ヶ淵村全体を覆ってしまっている…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それが今や領主までも巻き込んで、大きな利害関係の波が鬼ヶ淵村全体を覆ってしまっている…。",
+			NULL, "如今事情却连领主都卷了进来，巨大的利害漩涡已经笼罩了整个鬼渊村……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/hu_ima", 1000 );
+
+//志乃rvS16/00/DS43030387.「その申渡書に、再検討をお願いする余地は？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030387", 256, TRUE);
+	OutputLine(NULL, "「その申渡書に、再検討をお願いする余地は？」",
+			NULL, "「那份命令书里，有没有请求重新斟酌的余地？」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040180.「ない、こともないと思う。kvS16/00/DS43040181.…私の勝手な想像だけど、領主さまは状況を正確に理解していないようだ。kvS16/00/DS43040182.模倣が簡単にできるようなら、すぐにでも実施に移すつもりらしいけどね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040180", 256, TRUE);
+	OutputLine(NULL, "「ない、こともないと思う。",
+			NULL, "「我想，多少还是有的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040181", 256, TRUE);
+	OutputLine(NULL, "…私の勝手な想像だけど、領主さまは状況を正確に理解していないようだ。",
+			NULL, "……只是我的猜测，领主大人好像还没准确理解状况。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040182", 256, TRUE);
+	OutputLine(NULL, "模倣が簡単にできるようなら、すぐにでも実施に移すつもりらしいけどね」",
+			NULL, "如果能轻易仿制，他似乎马上就打算实施。」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040183.「でも、もし原料の採集と製作に手間と技術、そして知識が必要だったら、準備期間や条件はもう少し有利にできるかもしれない。kvS16/00/DS43040184.…すべては桜花の、処方箋の内容次第だ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040183", 256, TRUE);
+	OutputLine(NULL, "「でも、もし原料の採集と製作に手間と技術、そして知識が必要だったら、準備期間や条件はもう少し有利にできるかもしれない。",
+			NULL, "「但如果采集原料和制作都需要工夫、技术和知识，准备时间和条件也许能谈得更有利。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040184", 256, TRUE);
+	OutputLine(NULL, "…すべては桜花の、処方箋の内容次第だ」",
+			NULL, "……一切都取决于樱花的处方内容。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010452.「…いずれにせよ、処方箋の提出は絶対条件なのですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010452", 256, TRUE);
+	OutputLine(NULL, "「…いずれにせよ、処方箋の提出は絶対条件なのですね」",
+			NULL, "「……无论如何，交出处方都是绝对条件，对吧？」", Line_Normal);
+	ClearMessage();
+
+//rはぁ、と桜花はため息をついて、悄然と肩を落とす。…それを見て志乃は、自分たちの力不足を恥じずにはいられなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "はぁ、と桜花はため息をついて、悄然と肩を落とす。…それを見て志乃は、自分たちの力不足を恥じずにはいられなかった。",
+			NULL, "樱花『唉』地叹了口气，颓然垂下肩膀。看着她，志乃禁不住为自己的无力感到羞愧。", Line_Normal);
+	ClearMessage();
+
+//rこのような欲望むき出しの世知辛い話題は、心優しい桜花には似つかわしくないものだ。本来なら彼女に代わって自分たちが、穏便に処理すべきであったのに…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "このような欲望むき出しの世知辛い話題は、心優しい桜花には似つかわしくないものだ。本来なら彼女に代わって自分たちが、穏便に処理すべきであったのに…。",
+			NULL, "这种欲望赤裸、世情冷酷的话题，本来就和心地善良的樱花格格不入。原本应该由她们代替樱花，把事情平稳处理掉才对……", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040185.「…桜花」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040185", 256, TRUE);
+	OutputLine(NULL, "「…桜花」",
+			NULL, "「……樱花。」", Line_Normal);
+	ClearMessage();
+
+//rその時、ふと魔央は少し言い淀むように視線を泳がせてから、意を決して顔を上げ、桜花に向かって訊ねかけた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、ふと魔央は少し言い淀むように視線を泳がせてから、意を決して顔を上げ、桜花に向かって訊ねかけた。",
+			NULL, "这时，魔央忽然像是有些难以启齿般移开视线，随后下定决心抬起头，向樱花问道。", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040186.「桜花は、夢の中で『オヤシロさま』から処方についてお告げをもらって、あの薬を調合したって言ってたよな。kvS16/00/DS43040187.…それ、本当なのかい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040186", 256, TRUE);
+	OutputLine(NULL, "「桜花は、夢の中で『オヤシロさま』から処方についてお告げをもらって、あの薬を調合したって言ってたよな。",
+			NULL, "「樱花，你说过是在梦里从『御社神大人』那里得到了处方的启示，才调制出那种药的吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040187", 256, TRUE);
+	OutputLine(NULL, "…それ、本当なのかい？」",
+			NULL, "……那是真的吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010453.「え？　ええ…本当です」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010453", 256, TRUE);
+	OutputLine(NULL, "「え？　ええ…本当です」",
+			NULL, "「咦？嗯……是真的。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030388.「魔央さん…？kvS16/00/DS43030389.　ひょっとしてあなた、桜花が嘘をついているとでも？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030388", 256, TRUE);
+	OutputLine(NULL, "「魔央さん…？",
+			NULL, "「魔央小姐……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030389", 256, TRUE);
+	OutputLine(NULL, "　ひょっとしてあなた、桜花が嘘をついているとでも？」",
+			NULL, "难道你觉得樱花在说谎？」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040188.「まさか！kvS16/00/DS43040189.　私は桜花を全面的に信じているし、そもそもこの子が嘘を言うなんて、お天道様が西から昇る以上にありえないっての！kvS16/00/DS43040190.　…だけど」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040188", 256, TRUE);
+	OutputLine(NULL, "「まさか！",
+			NULL, "「怎么可能！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040189", 256, TRUE);
+	OutputLine(NULL, "　私は桜花を全面的に信じているし、そもそもこの子が嘘を言うなんて、お天道様が西から昇る以上にありえないっての！",
+			NULL, "我完全相信樱花，再说这孩子会说谎，比太阳从西边升起还离谱！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040190", 256, TRUE);
+	OutputLine(NULL, "　…だけど」",
+			NULL, "……只是。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030390.「だけど…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030390", 256, TRUE);
+	OutputLine(NULL, "「だけど…？」",
+			NULL, "「只是……？」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040191.「もし、そうだとしたら…処方箋をあんた以外の人間に教えると、何か問題は起こらないだろうか？kvS16/00/DS43040192.　たとえば、オヤシロさまの祟りとか…そんなのが」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040191", 256, TRUE);
+	OutputLine(NULL, "「もし、そうだとしたら…処方箋をあんた以外の人間に教えると、何か問題は起こらないだろうか？",
+			NULL, "「如果真是这样……把处方告诉你以外的人，会不会惹出什么问题？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040192", 256, TRUE);
+	OutputLine(NULL, "　たとえば、オヤシロさまの祟りとか…そんなのが」",
+			NULL, "比如，御社神大人的作祟之类……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010454.「祟り…ですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010454", 256, TRUE);
+	OutputLine(NULL, "「祟り…ですか？」",
+			NULL, "「作祟……吗？」", Line_Normal);
+	ClearMessage();
+
+//r一瞬、羽入の姿が脳裏に浮かんで、…思わず吹き出しそうになるのを辛うじてこらえる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "一瞬、羽入の姿が脳裏に浮かんで、…思わず吹き出しそうになるのを辛うじてこらえる。",
+			NULL, "一瞬间，羽入的身影浮现在脑海里……她差点笑出来，好不容易才忍住。", Line_Normal);
+	ClearMessage();
+
+//rただ、笑うのは失礼な話だった。冗談でも何でもなく、魔央は真剣にオヤシロさまの祟りの可能性について心配していたからだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、笑うのは失礼な話だった。冗談でも何でもなく、魔央は真剣にオヤシロさまの祟りの可能性について心配していたからだ。",
+			NULL, "不过，笑出来也很失礼。因为魔央并非开玩笑，而是真心担忧御社神大人作祟的可能。", Line_Normal);
+	ClearMessage();
+
+//rそれは、オヤシロさま…すなわち羽入の存在と正体を知らない志乃もまた、畏れる思いは同じ。だからこそ二人は、真剣に桜花の意見を聞こうとしていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それは、オヤシロさま…すなわち羽入の存在と正体を知らない志乃もまた、畏れる思いは同じ。だからこそ二人は、真剣に桜花の意見を聞こうとしていた。",
+			NULL, "志乃也一样，她不知道御社神大人，也就是羽入的存在和真身，因此心中同样敬畏。正因如此，两人才认真听取樱花的意见。", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030391.「どうなの、桜花？kvS16/00/DS43030392.　あなたはどう思う？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030391", 256, TRUE);
+	OutputLine(NULL, "「どうなの、桜花？",
+			NULL, "「怎么样，樱花？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030392", 256, TRUE);
+	OutputLine(NULL, "　あなたはどう思う？」",
+			NULL, "你怎么想？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1a_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//桜花rvS16/47/DS43010455.「私は、…そうですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010455", 256, TRUE);
+	OutputLine(NULL, "「私は、…そうですね」",
+			NULL, "「我……这个嘛。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r桜花はこほん、と咳払いしてから、そっと視線を畳に落として思案に暮れる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花はこほん、と咳払いしてから、そっと視線を畳に落として思案に暮れる。",
+			NULL, "樱花轻轻咳了一声，悄悄把视线落到榻榻米上，陷入沉思。", Line_Normal);
+	ClearMessage();
+
+//r普段の振る舞いから考えて、羽入が村人たちに危害を加える『祟り』のようなものを下すとはとても思えない。ゆえに、おそらく確信を込めて『ない』と言い切れるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "普段の振る舞いから考えて、羽入が村人たちに危害を加える『祟り』のようなものを下すとはとても思えない。ゆえに、おそらく確信を込めて『ない』と言い切れるだろう。",
+			NULL, "从羽入平日的举止来看，她很难想象羽入会降下伤害村人的『作祟』。所以，她大概能怀着确信断言并无此事。", Line_Normal);
+	ClearMessage();
+
+//rただ、…それがなかったとしても、彼女が協力してくれるかどうかは別問題だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、…それがなかったとしても、彼女が協力してくれるかどうかは別問題だった。",
+			NULL, "只是……即便没有作祟，她是否愿意协助，又是另一回事。", Line_Normal);
+	ClearMessage();
+
+//r…先日彼女に指摘された、厳しい一言が思い起こされる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…先日彼女に指摘された、厳しい一言が思い起こされる。",
+			NULL, "……她想起前些天羽入指出的那句严厉的话。", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0, 0, 0, 128, 0, 250, TRUE );
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS49070116.「わかってください、桜花。kvS16/45/DS49070117.過ぎたる技術や特異な恵みはかえって無用な争いを呼び、不幸のもとともなりかねない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds49070116", 256, TRUE);
+	OutputLine(NULL, "「わかってください、桜花。",
+			NULL, "「请你明白，樱花。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds49070117", 256, TRUE);
+	OutputLine(NULL, "過ぎたる技術や特異な恵みはかえって無用な争いを呼び、不幸のもとともなりかねない」",
+			NULL, "过度的技术和特异的恩惠，反而会招来无谓的争斗，也可能成为不幸的根源。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS49070118.「…村人全てを本当の意味で救うというのならば、その先のことまで考えを巡らせなくてはいけないのです。kvS16/45/DS49070119.ただ、この病をこの村から追い出しただけで済む話ではないのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds49070118", 256, TRUE);
+	OutputLine(NULL, "「…村人全てを本当の意味で救うというのならば、その先のことまで考えを巡らせなくてはいけないのです。",
+			NULL, "「……如果真要从根本上拯救所有村民，就必须连今后的事也考虑周全。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds49070119", 256, TRUE);
+	OutputLine(NULL, "ただ、この病をこの村から追い出しただけで済む話ではないのです」",
+			NULL, "把这种病赶出村子，事情并不会就此结束。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeFilm( 250, TRUE );
+
+//桜花r-vS16/47/DS43010456.（…無理だ。絶対、断られる）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010456", 256, TRUE);
+	OutputLine(NULL, "（…無理だ。絶対、断られる）",
+			NULL, "（……办不到。她一定会拒绝。）", Line_Normal);
+	ClearMessage();
+
+//r人の命を救うのならまだしも、この村の富を、そして立場を守るがために力を貸してくれ、などと頼んだところで同意してくれるはずがない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "人の命を救うのならまだしも、この村の富を、そして立場を守るがために力を貸してくれ、などと頼んだところで同意してくれるはずがない。",
+			NULL, "倘若是为了救人性命倒还好，可要她为了守住这个村子的财富和地位而借出力量，她绝对不会同意。", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//rしかし、領主の命令は絶対だ。おそらく逆らえば、自分だけではなく家族も、村もただではすまないだろう…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし、領主の命令は絶対だ。おそらく逆らえば、自分だけではなく家族も、村もただではすまないだろう…。",
+			NULL, "然而，领主的命令是绝对的。恐怕一旦违抗，遭殃的会是自己、家人，乃至整个村子……", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030393.「…桜花？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030393", 256, TRUE);
+	OutputLine(NULL, "「…桜花？」",
+			NULL, "「……樱花？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 47, "sprite/ouka1b_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/hu_ima", 1000 );
+
+//桜花rvS16/47/DS43010457.「……。kvS16/47/DS43010458.少し、時間をもらえますか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010457", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010458", 256, TRUE);
+	OutputLine(NULL, "少し、時間をもらえますか」",
+			NULL, "可以给我一点时间吗？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r『はい』とも『いいえ』とも答えられず、桜花は返事を差し控える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『はい』とも『いいえ』とも答えられず、桜花は返事を差し控える。",
+			NULL, "『樱花既无法回答『是』，也无法回答『否』，只能暂且保留答复。", Line_Normal);
+	ClearMessage();
+
+//rとりあえず、『明後日には返事をする』とだけ二人には伝えて、桜花は夫と娘の様子を見に寝室へと足を運んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とりあえず、『明後日には返事をする』とだけ二人には伝えて、桜花は夫と娘の様子を見に寝室へと足を運んだ。",
+			NULL, "她只告诉两人『后天会给出答复』，随后便去寝室查看丈夫和女儿的情况。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/rouka1_02", 1000 );
+
+//桜花rvS16/47/DS43010459.「……………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010459", 256, TRUE);
+	OutputLine(NULL, "「……………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r廊下を歩きながら、桜花ははぁ、とため息をつく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "廊下を歩きながら、桜花ははぁ、とため息をつく。",
+			NULL, "走在走廊上，樱花『唉』地叹了口气。", Line_Normal);
+	ClearMessage();
+
+//桜花r-vS16/47/DS43010460.（どうして、こんなことになってしまったのだろう…）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010460", 256, TRUE);
+	OutputLine(NULL, "（どうして、こんなことになってしまったのだろう…）",
+			NULL, "（为什么，会变成这样呢……）", Line_Normal);
+	ClearMessage();
+
+//rそんな後悔と戸惑いがぐるぐると胸の中で渦巻いて、息苦しいほどの気鬱が肩に重くのしかかっていた…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな後悔と戸惑いがぐるぐると胸の中で渦巻いて、息苦しいほどの気鬱が肩に重くのしかかっていた…。",
+			NULL, "这样的后悔与困惑在胸中不停打转，令人窒息的阴郁沉沉压在肩头……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 2000 );
+	FadeOutBGM(2, 200, FALSE);
+	Wait( 2000 );
+	PlayBGM(2, "hm06_29", 128, 0);
+	ModSetLayerFilter(4, 256, "night");
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saiguden_01", 1000 );
+
+//羽入rvS16/45/DS43071799.「…いいですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071799", 256, TRUE);
+	OutputLine(NULL, "「…いいですよ」",
+			NULL, "「……好吧。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010461.「え…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010461", 256, TRUE);
+	OutputLine(NULL, "「え…？！」",
+			NULL, "「咦……？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071800.「教えることについては、私に特に異存はありません。kvS16/45/DS43071801.少々時間がかかってしまいますが、手順通りに行えばあなたたちの技術でも、おそらく調合は可能でしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071800", 256, TRUE);
+	OutputLine(NULL, "「教えることについては、私に特に異存はありません。",
+			NULL, "「关于教给他们这件事，我并没有特别异议。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071801", 256, TRUE);
+	OutputLine(NULL, "少々時間がかかってしまいますが、手順通りに行えばあなたたちの技術でも、おそらく調合は可能でしょう」",
+			NULL, "虽然会花一点时间，但只要按步骤进行，以你们的技术大概也能调制出来。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010462.「…本当に？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010462", 256, TRUE);
+	OutputLine(NULL, "「…本当に？」",
+			NULL, "「……真的吗？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r怪訝な表情を浮かべながら、桜花は私に念を押してくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "怪訝な表情を浮かべながら、桜花は私に念を押してくる。",
+			NULL, "樱花露出诧异的表情，再次向我确认。", Line_Normal);
+	ClearMessage();
+
+//r…おそらく、彼女は先日のことから考えて、私が反対すると思っていたのだろう。心外とまでは言わないが、さすがに用心が過ぎるのではないか、と内心苦笑した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…おそらく、彼女は先日のことから考えて、私が反対すると思っていたのだろう。心外とまでは言わないが、さすがに用心が過ぎるのではないか、と内心苦笑した。",
+			NULL, "……大概是因为前些天的事，她以为我会反对吧。虽说我还谈不上受伤，但也在心里苦笑，觉得她实在太谨慎了。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saiguden_01", 1000 );
+
+//羽入rvS16/45/DS43071802.「この薬を世に出した時点で、すでに覚悟していたことです。kvS16/45/DS43071803.それに、別に私が明かさなくても知識のある人間が薬自体を調べれば、いずれ中身を解析できるでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071802", 256, TRUE);
+	OutputLine(NULL, "「この薬を世に出した時点で、すでに覚悟していたことです。",
+			NULL, "「从把这种药带到世上的那一刻起，我就已经有了觉悟。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071803", 256, TRUE);
+	OutputLine(NULL, "それに、別に私が明かさなくても知識のある人間が薬自体を調べれば、いずれ中身を解析できるでしょう」",
+			NULL, "况且，即便我不公开，有知识的人只要调查药本身，迟早也能解析出成分。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071804.「…それが遅いか、早いかの違いだけですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071804", 256, TRUE);
+	OutputLine(NULL, "「…それが遅いか、早いかの違いだけですよ」",
+			NULL, "「……区别只是时间早晚而已。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010463.「よかった…ありがとう、羽入」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010463", 256, TRUE);
+	OutputLine(NULL, "「よかった…ありがとう、羽入」",
+			NULL, "「太好了……谢谢你，羽入。」", Line_Normal);
+	ClearMessage();
+
+//rほう、と吐息をついて胸をなでおろし、桜花は深々と頭を下げる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ほう、と吐息をついて胸をなでおろし、桜花は深々と頭を下げる。",
+			NULL, "樱花长长松了口气，放下心来，深深低下头。", Line_Normal);
+	ClearMessage();
+
+//rただ、…それよりも私は、彼女に対しては別の心配を抱いていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、…それよりも私は、彼女に対しては別の心配を抱いていた。",
+			NULL, "只是……比起这件事，我对她另有担忧。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071805.「しかし、…桜花。kvS16/45/DS43071806.それで本当に、いいのですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071805", 256, TRUE);
+	OutputLine(NULL, "「しかし、…桜花。",
+			NULL, "「可是……樱花。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071806", 256, TRUE);
+	OutputLine(NULL, "それで本当に、いいのですか？」",
+			NULL, "这样真的好吗？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010464.「え…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010464", 256, TRUE);
+	OutputLine(NULL, "「え…？」",
+			NULL, "「咦……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071807.「この薬を飲めばこの地はおろか、全国で蔓延している例の疫病をすべて治癒させることができます。kvS16/45/DS43071808.…それで、本当に大丈夫なのですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071807", 256, TRUE);
+	OutputLine(NULL, "「この薬を飲めばこの地はおろか、全国で蔓延している例の疫病をすべて治癒させることができます。",
+			NULL, "「只要喝下这种药，这片土地，甚至全国蔓延的那种疫病，都能得到治愈。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071808", 256, TRUE);
+	OutputLine(NULL, "…それで、本当に大丈夫なのですか？」",
+			NULL, "……这样真的可以吗？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010465.「ええ、もちろんよ。kvS16/47/DS43010466.より多くの人が救われるのなら、素晴らしいことじゃないの」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010465", 256, TRUE);
+	OutputLine(NULL, "「ええ、もちろんよ。",
+			NULL, "「嗯，当然。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010466", 256, TRUE);
+	OutputLine(NULL, "より多くの人が救われるのなら、素晴らしいことじゃないの」",
+			NULL, "能救下更多的人，这是一件很美好的事吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071809.「……。kvS16/45/DS43071810.やはり、あなたは人の悪意をよく理解していませんね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071809", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071810", 256, TRUE);
+	OutputLine(NULL, "やはり、あなたは人の悪意をよく理解していませんね」",
+			NULL, "果然，你还没有充分理解人的恶意呢。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010467.「……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010467", 256, TRUE);
+	OutputLine(NULL, "「……？」",
+			NULL, "「……？」", Line_Normal);
+	ClearMessage();
+
+//rきょとん、と桜花は目を丸くする。私ははぁ、とため息をついて、噛んで聞かせるように言葉をつなげていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "きょとん、と桜花は目を丸くする。私ははぁ、とため息をついて、噛んで聞かせるように言葉をつなげていった。",
+			NULL, "樱花愣愣地睁圆了眼睛。我『唉』地叹了口气，像要细细讲给她听一样继续说下去。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071811.「その薬があれば、助かる。kvS16/45/DS43071812.しかし、なければ死ぬ。kvS16/45/DS43071813.その、生き死にがかかった状況下で薬を売りさばけば、どのような事態になると思いますか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071811", 256, TRUE);
+	OutputLine(NULL, "「その薬があれば、助かる。",
+			NULL, "「有那种药，就能得救。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071812", 256, TRUE);
+	OutputLine(NULL, "しかし、なければ死ぬ。",
+			NULL, "失去那种药，就会死。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071813", 256, TRUE);
+	OutputLine(NULL, "その、生き死にがかかった状況下で薬を売りさばけば、どのような事態になると思いますか？」",
+			NULL, "在这种攸关生死的情况下贩卖药物，你觉得会发生什么？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rおそらく病人たちは生きるためにそれを必死に求めて、需要は拡大する。ゆえに売る側は富を築くために、値をつり上げることだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おそらく病人たちは生きるためにそれを必死に求めて、需要は拡大する。ゆえに売る側は富を築くために、値をつり上げることだろう。",
+			NULL, "病人们大概会为了活下去而拼命追求它，需求也会不断扩大。于是售卖的一方为了积累财富，必然会抬高价格。", Line_Normal);
+	ClearMessage();
+
+//rそして、その価値が世に広まれば広まるほど、薬を非合法の手段を用いてでも我が物にしようともくろむ輩が出てくる――いや、もう実際に出てしまったか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、その価値が世に広まれば広まるほど、薬を非合法の手段を用いてでも我が物にしようともくろむ輩が出てくる——いや、もう実際に出てしまったか。",
+			NULL, "而它的价值越是传遍世间，就越会有人企图用非法手段将药据为己有——不，实际上已经有人这么做了。", Line_Normal);
+	ClearMessage();
+
+//r少なくとも、薬の存在は病の治療には貢献しても、それ以外の面では全く違う効果をもたらす可能性が十分にあるのだ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "少なくとも、薬の存在は病の治療には貢献しても、それ以外の面では全く違う効果をもたらす可能性が十分にあるのだ…。",
+			NULL, "至少，药的存在即便能帮助治疗疾病，也完全可能在其他方面带来截然不同的结果……", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010468.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010468", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saiguden_01", 1000 );
+
+//羽入rvS16/45/DS43071814.「過ぎたるものを世に広めれば、それをめぐって欲望と思惑、そして衝突と争いが生まれます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071814", 256, TRUE);
+	OutputLine(NULL, "「過ぎたるものを世に広めれば、それをめぐって欲望と思惑、そして衝突と争いが生まれます」",
+			NULL, "「把过度的东西传播到世上，围绕它的欲望、盘算、冲突和争斗就会随之诞生。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071815.「人を救うものであったはずなのに、それが逆に人を苦しめるものへと変わることも十分ありうる。kvS16/45/DS43071816.その危険を理解した上で、あなたはその責任を背負うことができますか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071815", 256, TRUE);
+	OutputLine(NULL, "「人を救うものであったはずなのに、それが逆に人を苦しめるものへと変わることも十分ありうる。",
+			NULL, "「原本应该救人的东西，也完全可能反过来变成折磨人的东西。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071816", 256, TRUE);
+	OutputLine(NULL, "その危険を理解した上で、あなたはその責任を背負うことができますか？」",
+			NULL, "理解这种危险之后，你还能承担这份责任吗？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS16/47/DS43010469.「っ……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010469", 256, TRUE);
+	OutputLine(NULL, "「っ……」",
+			NULL, "「唔……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071817.「私は、桜花が村人たちを救いたいという願いを叶えるつもりで、この薬をあなたに渡した。kvS16/45/DS43071818.そしてあなたは願いどおり、この村を救った。kvS16/45/DS43071819.それで十分だったはずです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071817", 256, TRUE);
+	OutputLine(NULL, "「私は、桜花が村人たちを救いたいという願いを叶えるつもりで、この薬をあなたに渡した。",
+			NULL, "「我是为了实现樱花想拯救村民的愿望，才把这种药交给你的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071818", 256, TRUE);
+	OutputLine(NULL, "そしてあなたは願いどおり、この村を救った。",
+			NULL, "而你也如愿救下了这个村子。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071819", 256, TRUE);
+	OutputLine(NULL, "それで十分だったはずです」",
+			NULL, "那原本就足够了。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071820.「なのに、その規模は拡大して、あなたの意思など届かないところにまで達している。kvS16/45/DS43071821.…違いますか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071820", 256, TRUE);
+	OutputLine(NULL, "「なのに、その規模は拡大して、あなたの意思など届かないところにまで達している。",
+			NULL, "「可现在，事情的规模已经扩大，甚至到达了你的意志触及不到的地方。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071821", 256, TRUE);
+	OutputLine(NULL, "…違いますか？」",
+			NULL, "……我说错了吗？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010470.「…ううん、違わないわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010470", 256, TRUE);
+	OutputLine(NULL, "「…ううん、違わないわ」",
+			NULL, "「……没有，你说得对。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r桜花はばつが悪そうにうつむいて、視線を落とす。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花はばつが悪そうにうつむいて、視線を落とす。",
+			NULL, "樱花像是难为情般低下头，垂下了视线。", Line_Normal);
+	ClearMessage();
+
+//rこれだけ素直に認めるということは、彼女は私に相談する前から色々と考えて、…自分の行動に対して疑問を抱きながらここへやってきたのだと思う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "これだけ素直に認めるということは、彼女は私に相談する前から色々と考えて、…自分の行動に対して疑問を抱きながらここへやってきたのだと思う。",
+			NULL, "她如此坦率地承认，说明她在来找我商量之前就已经想了很多……也一直对自己的行动抱有疑问。", Line_Normal);
+	ClearMessage();
+
+//r村を救ったように、ただ全国の疫病患者を薬で治療するのであれば、桜花はきっと迷いなく私に協力を求めたことだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "村を救ったように、ただ全国の疫病患者を薬で治療するのであれば、桜花はきっと迷いなく私に協力を求めたことだろう。",
+			NULL, "如果只是像拯救村子那样，用药治疗全国的疫病患者，樱花一定会毫不犹豫地请求我协助。", Line_Normal);
+	ClearMessage();
+
+//rただ、今回に関しては明らかに、様々な各方面の利害が見えすぎていた。ゆえに彼女も、自分の選択が正しいかどうかの確たる保証を信じることができないのだ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、今回に関しては明らかに、様々な各方面の利害が見えすぎていた。ゆえに彼女も、自分の選択が正しいかどうかの確たる保証を信じることができないのだ…。",
+			NULL, "只是这次，方方面面的利害关系都暴露得太清楚了。因此，她也无法确信自己的选择一定正确……", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saiguden_01", 1000 );
+
+//桜花rvS16/47/DS43010471.「私の今やろうとしていることは、薬で人を救うことじゃない。kvS16/47/DS43010472.その薬で、この村を潤すこと」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010471", 256, TRUE);
+	OutputLine(NULL, "「私の今やろうとしていることは、薬で人を救うことじゃない。",
+			NULL, "「我现在要做的，并不是用药救人。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010472", 256, TRUE);
+	OutputLine(NULL, "その薬で、この村を潤すこと」",
+			NULL, "而是用那种药，让这个村子富裕起来。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010473.「…最初の目的とは明らかに違っているし、そもそも命の救済に対価をつけるなんてことは、医薬に身を置く立場でもない私が行うのは僭越で傲慢な行いよ。kvS16/47/DS43010474.…わかっているの、それくらいは」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010473", 256, TRUE);
+	OutputLine(NULL, "「…最初の目的とは明らかに違っているし、そもそも命の救済に対価をつけるなんてことは、医薬に身を置く立場でもない私が行うのは僭越で傲慢な行いよ。",
+			NULL, "「……这和最初的目的明显不同。况且，给拯救生命标上价码这种事，由我这样并非医药之道中人来做，实在僭越又傲慢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010474", 256, TRUE);
+	OutputLine(NULL, "…わかっているの、それくらいは」",
+			NULL, "……我明白，这点我还是明白的。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071822.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071822", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010475.「それどころか、もっと違う意味での不幸を招き入れる種を生み出しているだけかもしれない。kvS16/47/DS43010476.…あなたの言うとおりよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010475", 256, TRUE);
+	OutputLine(NULL, "「それどころか、もっと違う意味での不幸を招き入れる種を生み出しているだけかもしれない。",
+			NULL, "「甚至，我也许只是在制造会招来另一种不幸的种子。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010476", 256, TRUE);
+	OutputLine(NULL, "…あなたの言うとおりよ」",
+			NULL, "……正如你所说。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010477.「この薬は、たくさんの人を救ってくれた。kvS16/47/DS43010478.でも、それが誰かに邪な思いを抱かせることになるなんて、考えもしなかった…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010477", 256, TRUE);
+	OutputLine(NULL, "「この薬は、たくさんの人を救ってくれた。",
+			NULL, "「这种药救了许多人。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010478", 256, TRUE);
+	OutputLine(NULL, "でも、それが誰かに邪な思いを抱かせることになるなんて、考えもしなかった…」",
+			NULL, "可是我从没想过，它会让某些人萌生邪念……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071823.「桜花…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071823", 256, TRUE);
+	OutputLine(NULL, "「桜花…」",
+			NULL, "「樱花……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r…そんなことは、私にだってわかっている。桜花は本当に、純粋な優しさで誰かを救いたかっただけなのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そんなことは、私にだってわかっている。桜花は本当に、純粋な優しさで誰かを救いたかっただけなのだ。",
+			NULL, "……这种事，我当然也明白。樱花真的只是凭着纯粹的温柔，想要救下别人。", Line_Normal);
+	ClearMessage();
+
+//rもちろん、当初のその想いには偉大な両親に恥じないような自分でいたいという、ある意味で保守的な考えもあっただろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もちろん、当初のその想いには偉大な両親に恥じないような自分でいたいという、ある意味で保守的な考えもあっただろう。",
+			NULL, "当然，她最初的想法中，也有想成为无愧于伟大双亲之人的念头，从某种意义上说，那是一种守旧的想法。", Line_Normal);
+	ClearMessage();
+
+//rそれでも、桜花はちゃんとその間違いに気づいて、心を改めることができた。だからこそ私は、彼女に力を貸そうと決意したのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも、桜花はちゃんとその間違いに気づいて、心を改めることができた。だからこそ私は、彼女に力を貸そうと決意したのだ。",
+			NULL, "即便如此，樱花还是察觉到了自己的错误，也愿意改过。正因如此，我才决定助她一臂之力。", Line_Normal);
+	ClearMessage();
+
+//rにもかかわらずこの世の中の愚か者たちは、そんな優しい心を食い物にして肥え太らんと企み動き、繊細な彼女の心を無残に切り刻んでいる…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "にもかかわらずこの世の中の愚か者たちは、そんな優しい心を食い物にして肥え太らんと企み動き、繊細な彼女の心を無残に切り刻んでいる…。",
+			NULL, "然而世上的愚人们，却盘算着利用那份温柔中饱私囊，把她纤细的心残忍地切碎……", Line_Normal);
+	ClearMessage();
+
+//羽入r-vS16/45/DS43071824.（志乃も志乃だ。何のための義母か…）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071824", 256, TRUE);
+	OutputLine(NULL, "（志乃も志乃だ。何のための義母か…）",
+			NULL, "（志乃也是。她这个婆婆究竟是做什么的……）", Line_Normal);
+	ClearMessage();
+
+//r桜花をこんな状況にまで追い込んでおきながら、なんら彼女の力になってあげられないかつての親友に対しても、私は不快感を覚える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花をこんな状況にまで追い込んでおきながら、なんら彼女の力になってあげられないかつての親友に対しても、私は不快感を覚える。",
+			NULL, "志乃眼看樱花被逼到这种境地，却没能为她提供任何帮助。面对这位曾经的挚友，我也感到了不快。", Line_Normal);
+	ClearMessage();
+
+//r先日の一件では、実の母子以上の関係を築いてくれているものと見直しかけていただけに、その失望は大きかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "先日の一件では、実の母子以上の関係を築いてくれているものと見直しかけていただけに、その失望は大きかった。",
+			NULL, "前些天那件事里，我才刚觉得她们建立起了胜过亲母女的关系，因此这份失望更加强烈。", Line_Normal);
+	ClearMessage();
+
+//rもちろん、志乃にはその立場に見合った事情があり、そして彼女なりに対応すべく諸々の方策を練ってくれていることは理解できる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もちろん、志乃にはその立場に見合った事情があり、そして彼女なりに対応すべく諸々の方策を練ってくれていることは理解できる。",
+			NULL, "当然，我也理解志乃有符合她立场的难处，也理解她已经用自己的方式思考了各种对策。", Line_Normal);
+	ClearMessage();
+
+//rしかし、もはやそれではだめだった。全然、足りなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし、もはやそれではだめだった。全然、足りなかった。",
+			NULL, "然而，现在那些已经行不通了。远远不够。", Line_Normal);
+	ClearMessage();
+
+//r桜花を、そしてその家族を守るためには、すべてをぶち壊す覚悟こそが必要なのだ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花を、そしてその家族を守るためには、すべてをぶち壊す覚悟こそが必要なのだ…。",
+			NULL, "为了守护樱花和她的家人，需要的是把一切都打碎的觉悟……", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saiguden_01", 1000 );
+
+//羽入rvS16/45/DS43071825.「…桜花」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071825", 256, TRUE);
+	OutputLine(NULL, "「…桜花」",
+			NULL, "「……樱花。」", Line_Normal);
+	ClearMessage();
+
+//rだから、私は。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから、私は。",
+			NULL, "所以，我……", Line_Normal);
+	ClearMessage();
+
+//r決して受け入れてもらえないだろうと思いながらも、言わずにはいられなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "決して受け入れてもらえないだろうと思いながらも、言わずにはいられなかった。",
+			NULL, "我明知她绝不会接受，却还是忍不住说了出口。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071826.「この村を出ましょう。kvS16/45/DS43071827.…もう、それが一番だと思います」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071826", 256, TRUE);
+	OutputLine(NULL, "「この村を出ましょう。",
+			NULL, "「离开这个村子吧。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071827", 256, TRUE);
+	OutputLine(NULL, "…もう、それが一番だと思います」",
+			NULL, "……我认为，这已经是最好的办法了。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010479.「え…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010479", 256, TRUE);
+	OutputLine(NULL, "「え…？」",
+			NULL, "「咦……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071828.「あなたがこの村にいる限り、『鬼の薬』を求める声はおさまらない。kvS16/45/DS43071829.逆にいえば、あなたさえいなくなれば、この村は元通りになるのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071828", 256, TRUE);
+	OutputLine(NULL, "「あなたがこの村にいる限り、『鬼の薬』を求める声はおさまらない。",
+			NULL, "「只要你还在这个村子，寻求『鬼之药』的声音就不会平息。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071829", 256, TRUE);
+	OutputLine(NULL, "逆にいえば、あなたさえいなくなれば、この村は元通りになるのです」",
+			NULL, "换句话说，只要你离开，这个村子就会恢复原状。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS16/47/DS43010480.「……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010480", 256, TRUE);
+	OutputLine(NULL, "「……！」",
+			NULL, "「……！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rはっ、と息をのんで、桜花はその場に固まる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "はっ、と息をのんで、桜花はその場に固まる。",
+			NULL, "樱花倒吸一口气，僵在原地。", Line_Normal);
+	ClearMessage();
+
+//rそう。…あえて酷い言い方をすれば、今の桜花は、はっきり言って鬼ヶ淵村にとって邪魔者だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう。…あえて酷い言い方をすれば、今の桜花は、はっきり言って鬼ヶ淵村にとって邪魔者だった。",
+			NULL, "没错……用最残酷的说法，如今的樱花，对鬼渊村来说已经成了碍事的存在。", Line_Normal);
+	ClearMessage();
+
+//r死の病から逃れられる薬を桜花が提供したことで、初めは生を求め…続いて財を求めた連中が欲望をむき出しに、この村にやってくるようになった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "死の病から逃れられる薬を桜花が提供したことで、初めは生を求め…続いて財を求めた連中が欲望をむき出しに、この村にやってくるようになった。",
+			NULL, "樱花提供了能让人摆脱致死疫病的药，最初追求生命，随后追求财富的人们，开始带着赤裸的欲望来到这个村子。", Line_Normal);
+	ClearMessage();
+
+//rそれによって、ようやく『鬼』の脅威もなくなって穏便に暮らしていた人々の暮らしが、急に騒がしくなってしまったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それによって、ようやく『鬼』の脅威もなくなって穏便に暮らしていた人々の暮らしが、急に騒がしくなってしまったのだ。",
+			NULL, "于是，原本终于摆脱『鬼』的威胁、过上安稳日子的人们，生活一下子不得安宁。", Line_Normal);
+	ClearMessage();
+
+//rならば、…桜花自身がいなくなれば、どうなるか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ならば、…桜花自身がいなくなれば、どうなるか。",
+			NULL, "那么……如果樱花本人消失，会怎样呢？", Line_Normal);
+	ClearMessage();
+
+//rおそらく彼女の行方を求めて、しばらくの間志乃や村人たちは各地を駆けずり回って歩くだろう。領主も捜索隊を出して、その行方を求めるかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おそらく彼女の行方を求めて、しばらくの間志乃や村人たちは各地を駆けずり回って歩くだろう。領主も捜索隊を出して、その行方を求めるかもしれない。",
+			NULL, "恐怕志乃和村民们会为了寻找她的下落，暂时四处奔走。领主也可能派出搜索队，追查她的去向。", Line_Normal);
+	ClearMessage();
+
+//rだが、最終的に消息を絶つことに成功すれば、薬の調合法を知っている人間は鬼ヶ淵村には存在しなくなる。そして薬もいずれ、すべて消費される。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、最終的に消息を絶つことに成功すれば、薬の調合法を知っている人間は鬼ヶ淵村には存在しなくなる。そして薬もいずれ、すべて消費される。",
+			NULL, "但最终只要成功断绝音讯，鬼渊村就再也没有知道药物调制法的人。药也终有一天会全部耗尽。", Line_Normal);
+	ClearMessage();
+
+//rそうすれば盗賊たちも、そして領主も薬の入手とそれに伴う富の収得を諦めざるをえなくなり、鬼ヶ淵村から関心が消えうせて、…村は元の平穏を取り戻すだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そうすれば盗賊たちも、そして領主も薬の入手とそれに伴う富の収得を諦めざるをえなくなり、鬼ヶ淵村から関心が消えうせて、…村は元の平穏を取り戻すだろう。",
+			NULL, "这样一来，盗贼们和领主都只能放弃获取药物及其带来的财富，对鬼渊村的关注也会消失……村子大概会取回原本的平静。", Line_Normal);
+	ClearMessage();
+
+//rだから、…桜花さえ鬼ヶ淵村からいなくなれば、いい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから、…桜花さえ鬼ヶ淵村からいなくなれば、いい。",
+			NULL, "所以……只要樱花离开鬼渊村就好。", Line_Normal);
+	ClearMessage();
+
+//r乱暴で残酷な対処法だが、…最も有効で、そしてこの場合は唯一ともいえるものだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乱暴で残酷な対処法だが、…最も有効で、そしてこの場合は唯一ともいえるものだった。",
+			NULL, "这是粗暴而残酷的处理方法，却最为有效。在这种情况下，也近乎唯一。", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010481.「私…私は…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010481", 256, TRUE);
+	OutputLine(NULL, "「私…私は…」",
+			NULL, "「我……我……」", Line_Normal);
+	ClearMessage();
+
+//rぎゅっ、と両手を握りしめて、桜花は辛い心情をこらえる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ぎゅっ、と両手を握りしめて、桜花は辛い心情をこらえる。",
+			NULL, "樱花紧紧握住双手，压抑着痛苦的心情。", Line_Normal);
+	ClearMessage();
+
+//r何よりも他人の幸せを、自分の幸せと感じる優しい女性、…それが、桜花だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何よりも他人の幸せを、自分の幸せと感じる優しい女性、…それが、桜花だ。",
+			NULL, "她是一个把别人的幸福也当作自己幸福的温柔女性……那就是樱花。", Line_Normal);
+	ClearMessage();
+
+//rゆえに、こういう言い方は卑怯だと思いつつも、私はなおも言い募っていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ゆえに、こういう言い方は卑怯だと思いつつも、私はなおも言い募っていった。",
+			NULL, "所以，虽然我也觉得这种说法很卑鄙，却还是继续劝了下去。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saiguden_01", 1000 );
+
+//羽入rvS16/45/DS43071830.「わかっています。kvS16/45/DS43071831.今までにもあなたと話してきた私だから、村を捨てたくない気持ちは、よくわかっています」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071830", 256, TRUE);
+	OutputLine(NULL, "「わかっています。",
+			NULL, "「我明白。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071831", 256, TRUE);
+	OutputLine(NULL, "今までにもあなたと話してきた私だから、村を捨てたくない気持ちは、よくわかっています」",
+			NULL, "正因为我过去曾和你谈过这些，所以我很清楚你不想舍弃村子的心情。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071832.「…ですが、あなたがいることであなたの愛した人々が傷つくというのなら、あなたはここにいるべきではない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071832", 256, TRUE);
+	OutputLine(NULL, "「…ですが、あなたがいることであなたの愛した人々が傷つくというのなら、あなたはここにいるべきではない」",
+			NULL, "「……可是，如果你的存在会让你所爱的人们受伤，你就不该继续留在这里。」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071833.「あなたが不幸せの原因を作っているのだとしたら、あなたもきっと幸せだとは感じられないのではありませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071833", 256, TRUE);
+	OutputLine(NULL, "「あなたが不幸せの原因を作っているのだとしたら、あなたもきっと幸せだとは感じられないのではありませんか？」",
+			NULL, "「如果你成了他人不幸的源头，你自己也一定感受不到幸福吧？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010482.「っ…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010482", 256, TRUE);
+	OutputLine(NULL, "「っ…！！」",
+			NULL, "「唔……！！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071834.「それに…出ていくといっても、村を捨てるという意味ではありません。kvS16/45/DS43071835.騒動が収まって、すべてが片付いたらまた、戻ってくればいいだけの話です」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071834", 256, TRUE);
+	OutputLine(NULL, "「それに…出ていくといっても、村を捨てるという意味ではありません。",
+			NULL, "「而且……所谓离开，并不意味着舍弃村子。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071835", 256, TRUE);
+	OutputLine(NULL, "騒動が収まって、すべてが片付いたらまた、戻ってくればいいだけの話です」",
+			NULL, "等骚动平息，一切解决之后，你再回来就可以了。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071836.「それまではどこかに身をひそめ、あなた自身も傷ついた心を休めて癒してはいかがでしょう？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071836", 256, TRUE);
+	OutputLine(NULL, "「それまではどこかに身をひそめ、あなた自身も傷ついた心を休めて癒してはいかがでしょう？」",
+			NULL, "「在那之前，先找个地方藏身，让你受伤的心也休息、疗愈一下，怎么样？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010483.「羽入…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010483", 256, TRUE);
+	OutputLine(NULL, "「羽入…」",
+			NULL, "「羽入……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071837.「安心してください。kvS16/45/DS43071838.あなたと、夫、そして娘…。kvS16/45/DS43071839.三人が平和に暮らしてゆけるだけの環境は、私がこの身に代えても守ってみせます。kvS16/45/DS43071840.誓ってもいいです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071837", 256, TRUE);
+	OutputLine(NULL, "「安心してください。",
+			NULL, "「请放心。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071838", 256, TRUE);
+	OutputLine(NULL, "あなたと、夫、そして娘…。",
+			NULL, "你、你的丈夫，还有女儿……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071839", 256, TRUE);
+	OutputLine(NULL, "三人が平和に暮らしてゆけるだけの環境は、私がこの身に代えても守ってみせます。",
+			NULL, "哪怕付出我的生命，我也会守住能让你们三人平静生活的地方。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071840", 256, TRUE);
+	OutputLine(NULL, "誓ってもいいです」",
+			NULL, "我可以发誓。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071841.「そしてあなたたち家族が鬼ヶ淵村に戻るその時まで私は、あなたのことをずっと見届けましょう。kvS16/45/DS43071842.どうですか、桜花？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071841", 256, TRUE);
+	OutputLine(NULL, "「そしてあなたたち家族が鬼ヶ淵村に戻るその時まで私は、あなたのことをずっと見届けましょう。",
+			NULL, "「直到你们一家回到鬼渊村的那一天为止，我都会一直守望着你。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071842", 256, TRUE);
+	OutputLine(NULL, "どうですか、桜花？」",
+			NULL, "怎么样，樱花？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010484.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010484", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r…この言い方は予想以上に桜花にとっては効果的だったのか、彼女は激昂も拒絶もせず、自分の思考の中に入ってしばらくじっと黙り込む。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…この言い方は予想以上に桜花にとっては効果的だったのか、彼女は激昂も拒絶もせず、自分の思考の中に入ってしばらくじっと黙り込む。",
+			NULL, "……这种说法似乎比预想中更打动樱花，她既没有激动，也没有拒绝，而是沉入自己的思绪，沉默了好一会儿。", Line_Normal);
+	ClearMessage();
+
+//rそして、とりあえず肯定はないだろうと思いながらも、返答を促そうと口を開きかけた…その時。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、とりあえず肯定はないだろうと思いながらも、返答を促そうと口を開きかけた…その時。",
+			NULL, "然后，就在我以为她暂时不会答应，正要开口催促她回答的时候……", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+
+//桜花rvS16/47/DS43010485.「…ごめんなさい、羽入」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010485", 256, TRUE);
+	OutputLine(NULL, "「…ごめんなさい、羽入」",
+			NULL, "「……对不起，羽入。」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm10_69", 128, 0);
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saiguden_01", 1000 );
+
+//羽入rvS16/45/DS43071843.「えっ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071843", 256, TRUE);
+	OutputLine(NULL, "「えっ？」",
+			NULL, "「咦？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010486.「少しだけ…ええ、少しだけでいい。kvS16/47/DS43010487.考える時間をもらえるかしら…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010486", 256, TRUE);
+	OutputLine(NULL, "「少しだけ…ええ、少しだけでいい。",
+			NULL, "「只要一点点……嗯，只要一点时间就好。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010487", 256, TRUE);
+	OutputLine(NULL, "考える時間をもらえるかしら…？」",
+			NULL, "能给我一些思考的时间吗……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071844.「桜花…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071844", 256, TRUE);
+	OutputLine(NULL, "「桜花…」",
+			NULL, "「樱花……」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010488.「あなたの言うこと、とてもその通りだと思う。kvS16/47/DS43010489.でも、まだその決意を固めるだけの勇気が、私にはない。kvS16/47/DS43010490.…だから、もう少しだけ、心の整理をさせてもらってもいい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010488", 256, TRUE);
+	OutputLine(NULL, "「あなたの言うこと、とてもその通りだと思う。",
+			NULL, "「我觉得你说得非常有道理。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010489", 256, TRUE);
+	OutputLine(NULL, "でも、まだその決意を固めるだけの勇気が、私にはない。",
+			NULL, "可是，我还没有足够的勇气下定决心。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010490", 256, TRUE);
+	OutputLine(NULL, "…だから、もう少しだけ、心の整理をさせてもらってもいい？」",
+			NULL, "……所以，能让我再整理一下心情吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS16/45/DS43071845.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071845", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r意外だった。村を出ることに、まさか賛同するなんて。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "意外だった。村を出ることに、まさか賛同するなんて。",
+			NULL, "这让我很意外。她居然赞同离开村子。", Line_Normal);
+	ClearMessage();
+
+//rそして、それだけに私は桜花の懸案の深さを、…その苦渋の表情にうかがい知ることができた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、それだけに私は桜花の懸案の深さを、…その苦渋の表情にうかがい知ることができた。",
+			NULL, "也正因为如此，我从她痛苦的表情里看出了樱花心中顾虑有多深。", Line_Normal);
+	ClearMessage();
+
+//r彼女は村を捨ててでも、…今の問題を解決しようと思っている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼女は村を捨ててでも、…今の問題を解決しようと思っている。",
+			NULL, "她甚至愿意舍弃村子，也想解决眼前的问题。", Line_Normal);
+	ClearMessage();
+
+//rそこまで彼女は、追い詰められているのか…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そこまで彼女は、追い詰められているのか…。",
+			NULL, "她已经被逼到这种地步了吗……", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/saiguden_01", 1000 );
+
+//羽入rvS16/45/DS43071846.「……。kvS16/45/DS43071847.わかりました。kvS16/45/DS43071848.それでは私は、今求められている分の薬だけでも作っておきましょう。kvS16/45/DS43071849.明日の昼ごろには出来上がるので、神社に持っていきますね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071846", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071847", 256, TRUE);
+	OutputLine(NULL, "わかりました。",
+			NULL, "我明白了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071848", 256, TRUE);
+	OutputLine(NULL, "それでは私は、今求められている分の薬だけでも作っておきましょう。",
+			NULL, "那么，我先把现在需要的那份药做出来。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071849", 256, TRUE);
+	OutputLine(NULL, "明日の昼ごろには出来上がるので、神社に持っていきますね」",
+			NULL, "明天中午左右就能完成，我会带去神社。」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010491.「…ええ。kvS16/47/DS43010492.ありがとう、それじゃ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010491", 256, TRUE);
+	OutputLine(NULL, "「…ええ。",
+			NULL, "「……嗯。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010492", 256, TRUE);
+	OutputLine(NULL, "ありがとう、それじゃ…」",
+			NULL, "谢谢，那我先告辞了……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse16", 256, 64);
+	DrawScene("black", 1000 );
+
+//rそう言って桜花は、とりあえずにっこりと笑って祭具殿を出てゆく。そして私も薬の製造を行うべく、鬼ヶ淵の柳桜のもとへと向かった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って桜花は、とりあえずにっこりと笑って祭具殿を出てゆく。そして私も薬の製造を行うべく、鬼ヶ淵の柳桜のもとへと向かった。",
+			NULL, "说完，樱花姑且露出微笑，离开了祭具殿。随后我也为了制药，前往鬼渊的柳樱所在之处。", Line_Normal);
+	ClearMessage();
+
+	Wait( 2000 );
+	FadeOutBGM(2, 200, FALSE);
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("white", 1000 );
+	DrawScene("background/sora2", 1000 );
+
+//r…私は鬼ヶ淵から外に出て、沼のほとりに置いてあった行李を拾い上げる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…私は鬼ヶ淵から外に出て、沼のほとりに置いてあった行李を拾い上げる。",
+			NULL, "……我从鬼渊出来，捡起放在沼泽边的行李箱。", Line_Normal);
+	ClearMessage();
+
+//rそして出来上がった薬の束をその中いっぱいに詰めてふたを閉め、両手で抱え込んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして出来上がった薬の束をその中いっぱいに詰めてふたを閉め、両手で抱え込んだ。",
+			NULL, "然后把做好的药束塞满里面，合上盖子，用双手抱住。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071850.「よいしょ、っと…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071850", 256, TRUE);
+	OutputLine(NULL, "「よいしょ、っと…」",
+			NULL, "「嘿咻……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down3", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//r結構な重みだが、持ち運べないほどではない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "結構な重みだが、持ち運べないほどではない。",
+			NULL, "虽然相当沉，但还没到搬不动的程度。", Line_Normal);
+	ClearMessage();
+
+//rとりあえず、物を持った状態では身体を『虚体』に切り替えることができないため、私は古手神社までの人目につかない獣道へ踏み入って進んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とりあえず、物を持った状態では身体を『虚体』に切り替えることができないため、私は古手神社までの人目につかない獣道へ踏み入って進んだ。",
+			NULL, "总之，拿着东西时身体无法切换成『虚体』，于是我踏上了通往古手神社、不会引人注意的兽道。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071851.「それにしても…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071851", 256, TRUE);
+	OutputLine(NULL, "「それにしても…」",
+			NULL, "「话说回来……」", Line_Normal);
+	ClearMessage();
+
+//r…嫌な予感がする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…嫌な予感がする。",
+			NULL, "……我有种不好的预感。", Line_Normal);
+	ClearMessage();
+
+//r実は昨日、私は鬼ヶ淵に来る前に偶然、志乃と魔央に出会ったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "実は昨日、私は鬼ヶ淵に来る前に偶然、志乃と魔央に出会ったのだ。",
+			NULL, "其实昨天，我在来到鬼渊之前，偶然遇见了志乃和魔央。", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "c", 0, 0, 2000 );
+	DrawFilm( 2, 255, 225, 195, 255, 0, 500, TRUE );
+	DrawScene("background/so2", 1000 );
+	FadeOutBGM(1, 200, TRUE);
+	PlayBGM(2, "hm05_22", 128, 0);
+
+//r魔央は若い衆を数名ひきつれており、どこか遠くに行くつもりなのかbかご.<駕籠>を呼んでいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "魔央は若い衆を数名ひきつれており、どこか遠くに行くつもりなのか駕籠(かご)を呼んでいた。",
+			NULL, "魔央带着几名年轻人，看样子像是要去远方，还叫来了轿子。", Line_Normal);
+	ClearMessage();
+
+//rそして志乃もまた外出着で、二人は皆から離れて門前に立ち、何事かを話し込んでいるようだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして志乃もまた外出着で、二人は皆から離れて門前に立ち、何事かを話し込んでいるようだった。",
+			NULL, "志乃也穿着外出的衣服，两人站在离众人稍远的门前，似乎在谈些什么。", Line_Normal);
+	ClearMessage();
+
+//羽入r-vS16/45/DS43071852.（なんだろう…？）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071852", 256, TRUE);
+	OutputLine(NULL, "（なんだろう…？）",
+			NULL, "（怎么回事……？）", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r一応仲直りしたとはいえ、意外な取り合わせに奇異を感じた私は、『虚体』のまま二人のそばにそっと近寄っていく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "一応仲直りしたとはいえ、意外な取り合わせに奇異を感じた私は、『虚体』のまま二人のそばにそっと近寄っていく。",
+			NULL, "虽说两人算是和好了，可这意外的组合让我觉得奇怪，于是我保持『虚体』，悄悄靠近她们身边。", Line_Normal);
+	ClearMessage();
+
+//rすると…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "すると…。",
+			NULL, "然后……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/so3", 1000 );
+
+//志乃rvS16/00/DS43030394.「…それじゃ、魔央さん。kvS16/00/DS43030395.そちらはよろしく頼むわね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030394", 256, TRUE);
+	OutputLine(NULL, "「…それじゃ、魔央さん。",
+			NULL, "「……那么，魔央小姐。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030395", 256, TRUE);
+	OutputLine(NULL, "そちらはよろしく頼むわね」",
+			NULL, "那边就拜托你了。」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040193.「ああ。kvS16/00/DS43040194.叔父貴には、領主さまに薬の話をしばらく待ってくれ、って説得してくれるよう、頭下げてみるよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040193", 256, TRUE);
+	OutputLine(NULL, "「ああ。",
+			NULL, "「嗯。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040194", 256, TRUE);
+	OutputLine(NULL, "叔父貴には、領主さまに薬の話をしばらく待ってくれ、って説得してくれるよう、頭下げてみるよ」",
+			NULL, "我会去向叔父低头，请他劝领主大人把药的事暂且缓一缓。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030396.「専売とか、処方箋とかの話なら、私たちも飲むことができたのだけどね。kvS16/00/DS43030397.例の話だけは、絶対に承知するわけにはいかないから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030396", 256, TRUE);
+	OutputLine(NULL, "「専売とか、処方箋とかの話なら、私たちも飲むことができたのだけどね。",
+			NULL, "「如果只是专营和处方的事，我们还能接受。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030397", 256, TRUE);
+	OutputLine(NULL, "例の話だけは、絶対に承知するわけにはいかないから」",
+			NULL, "可唯独那件事，我们绝对不能答应。」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040195.「…だよな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040195", 256, TRUE);
+	OutputLine(NULL, "「…だよな」",
+			NULL, "「……是啊。」", Line_Normal);
+	ClearMessage();
+
+//羽入r-vS16/45/DS43071853.（例の話…？）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071853", 256, TRUE);
+	OutputLine(NULL, "（例の話…？）",
+			NULL, "（那件事……？）", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r二人の表情が、異様に真剣で覚悟を秘めたものだったので…それを見ていた私の胸がどくん、と跳ねる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "二人の表情が、異様に真剣で覚悟を秘めたものだったので…それを見ていた私の胸がどくん、と跳ねる。",
+			NULL, "两人的表情异常认真，还带着某种觉悟……看到那副神情，我的心脏猛地一跳。", Line_Normal);
+	ClearMessage();
+
+//rいったい、それは…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いったい、それは…？",
+			NULL, "究竟，那是什么……？", Line_Normal);
+	ClearMessage();
+
+//r私が桜花から聞かされた以外の真実が、何かあるということなのだろうか？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私が桜花から聞かされた以外の真実が、何かあるということなのだろうか？",
+			NULL, "难道还有樱花没有告诉我的真相吗？", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/so3", 1000 );
+
+//魔央rvS16/00/DS43040196.「にしても、冗談じゃないよ。kvS16/00/DS43040197.相手の国が疫病で苦しんでいるところに付け込んで、鬼の薬を取引材料に使おうなんてさ。kvS16/00/DS43040198.桜花が聞いたら、卒倒して倒れちまうよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040196", 256, TRUE);
+	OutputLine(NULL, "「にしても、冗談じゃないよ。",
+			NULL, "「话说回来，这也太荒唐了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040197", 256, TRUE);
+	OutputLine(NULL, "相手の国が疫病で苦しんでいるところに付け込んで、鬼の薬を取引材料に使おうなんてさ。",
+			NULL, "趁对方国家正被疫病折磨，把鬼之药拿来当交易筹码。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040198", 256, TRUE);
+	OutputLine(NULL, "桜花が聞いたら、卒倒して倒れちまうよ」",
+			NULL, "樱花要是听见了，肯定会昏过去。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030398.「そうね。kvS16/00/DS43030399.…人を救うのならともかく、相手を脅して言うことを聞かせる手伝いなんて、あの子には絶対させられないわ。kvS16/00/DS43030400.まして、戦の道具になんて…冗談じゃない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030398", 256, TRUE);
+	OutputLine(NULL, "「そうね。",
+			NULL, "「是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030399", 256, TRUE);
+	OutputLine(NULL, "…人を救うのならともかく、相手を脅して言うことを聞かせる手伝いなんて、あの子には絶対させられないわ。",
+			NULL, "……如果是救人也就罢了，要她帮忙威胁对方、让对方听命，绝对不能让那孩子做。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030400", 256, TRUE);
+	OutputLine(NULL, "まして、戦の道具になんて…冗談じゃない」",
+			NULL, "更别说把它当成战争的工具……太荒唐了。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071854.「……っ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071854", 256, TRUE);
+	OutputLine(NULL, "「……っ！！」",
+			NULL, "「……唔……！！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r私は愕然とその場に立ち尽くして、吹きあがりそうになる激情を必死に抑え込む。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は愕然とその場に立ち尽くして、吹きあがりそうになる激情を必死に抑え込む。",
+			NULL, "我愕然地站在原地，拼命压住几乎要喷涌而出的激情。", Line_Normal);
+	ClearMessage();
+
+//r…志乃と魔央の話では、領主は領地をめぐって争っている隣国に対し、薬の提供を戦略的な道具として取り扱おうと考えている、とのことだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…志乃と魔央の話では、領主は領地をめぐって争っている隣国に対し、薬の提供を戦略的な道具として取り扱おうと考えている、とのことだった。",
+			NULL, "……按照志乃和魔央的说法，领主想把药的供应当作战略工具，用来对付围绕领地起争端的邻国。", Line_Normal);
+	ClearMessage();
+
+//r病に苦しむ領民の救済は、この国でも隣の国でも深刻な問題だ。ゆえに、その有効な解決手段があるともなれば、政事を預かる立場としては垂涎の代物だろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "病に苦しむ領民の救済は、この国でも隣の国でも深刻な問題だ。ゆえに、その有効な解決手段があるともなれば、政事を預かる立場としては垂涎の代物だろう。",
+			NULL, "拯救受病痛折磨的领民，对这个国家和邻国都是严重问题。因此，掌管政务的人得知有有效的解决手段，自然会垂涎。", Line_Normal);
+	ClearMessage();
+
+//rだが、そのためには人道さえも自らの利害の中に組み込むだと…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、そのためには人道さえも自らの利害の中に組み込むだと…？",
+			NULL, "可他竟为此连人道都要拿来为自身利益所用……？", Line_Normal);
+	ClearMessage();
+
+//rなんてことを…なんて下劣で非情な行いを考えているのだ、ここの領主は？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なんてことを…なんて下劣で非情な行いを考えているのだ、ここの領主は？！",
+			NULL, "怎么会……这里的领主究竟在盘算多么卑劣又冷酷的事？！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/so3", 1000 );
+
+//魔央rvS16/00/DS43040199.「納得させられるかは、微妙だけどね…。kvS16/00/DS43040200.それで、お志乃さんは？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040199", 256, TRUE);
+	OutputLine(NULL, "「納得させられるかは、微妙だけどね…。",
+			NULL, "「能不能说服他还不好说……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040200", 256, TRUE);
+	OutputLine(NULL, "それで、お志乃さんは？」",
+			NULL, "那，志乃夫人呢？」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030401.「万一に備えて、隣の村にかけ合ってみようと思うの。kvS16/00/DS43030402.あそこの倉庫には疫病が再発した時のための予備が残してあったから、最悪の場合はそれを納めるようにする」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030401", 256, TRUE);
+	OutputLine(NULL, "「万一に備えて、隣の村にかけ合ってみようと思うの。",
+			NULL, "「我想以防万一，去和邻村交涉。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030402", 256, TRUE);
+	OutputLine(NULL, "あそこの倉庫には疫病が再発した時のための予備が残してあったから、最悪の場合はそれを納めるようにする」",
+			NULL, "那边的仓库里还留着疫病复发时用的备用药，最坏的情况下就用那份交上去。」", Line_Normal);
+	ClearMessage();
+
+//志乃rvS16/00/DS43030403.「少なくとも桜花の耳には、今回の話は入れたくない。kvS16/00/DS43030404.私たちで何とか対処しましょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>志乃</color>", NULL, "<color=#f5e6d3>志乃</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030403", 256, TRUE);
+	OutputLine(NULL, "「少なくとも桜花の耳には、今回の話は入れたくない。",
+			NULL, "「至少，我不想让樱花听见这件事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43030404", 256, TRUE);
+	OutputLine(NULL, "私たちで何とか対処しましょう」",
+			NULL, "我们来想办法处理吧。」", Line_Normal);
+	ClearMessage();
+
+//魔央rvS16/00/DS43040201.「ああ、そっちはよろしく。…それじゃ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>魔央</color>", NULL, "<color=#f5e6d3>魔央</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/ds43040201", 256, TRUE);
+	OutputLine(NULL, "「ああ、そっちはよろしく。…それじゃ」",
+			NULL, "「嗯，那边就拜托你了。……那我走了。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse08", 256, 64);
+	DrawScene("black", 1000 );
+
+//r二人は頷き合って、魔央はbかご.<駕籠>に乗り、志乃は徒歩でそれぞれの行先に向かって去ってゆく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "二人は頷き合って、魔央は駕籠(かご)に乗り、志乃は徒歩でそれぞれの行先に向かって去ってゆく。",
+			NULL, "两人互相点头，魔央坐上轿子，志乃则步行，各自朝目的地离去。", Line_Normal);
+	ClearMessage();
+
+//rそれを見送りながら私は、…桜花をこの村に住まわせるべきでないという思いをますます強めていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それを見送りながら私は、…桜花をこの村に住まわせるべきでないという思いをますます強めていった。",
+			NULL, "目送她们离开时，我更加确信，樱花不该继续住在这个村子里。", Line_Normal);
+	ClearMessage();
+
+//羽入r-vS16/45/DS43071855.（やはり、もう一度桜花を説得しよう）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071855", 256, TRUE);
+	OutputLine(NULL, "（やはり、もう一度桜花を説得しよう）",
+			NULL, "（果然，我要再劝一次樱花）", Line_Normal);
+	ClearMessage();
+
+//rこんな醜くて汚い世界は、あの子には似つかわしくない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "こんな醜くて汚い世界は、あの子には似つかわしくない。",
+			NULL, "这样丑陋污秽的世界，配不上那个孩子。", Line_Normal);
+	ClearMessage();
+
+//r多少強引でも、もう迷っていられなかった。この村から連れ出すほうがきっと、あの子は幸せになれるはずなのだから…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "多少強引でも、もう迷っていられなかった。この村から連れ出すほうがきっと、あの子は幸せになれるはずなのだから…。",
+			NULL, "哪怕稍微强硬一些，我也已经不能再犹豫。把她带离这个村子，她一定会更幸福……", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 250, TRUE );
+	DrawSceneWithMask( "white", "c", 0, 0, 2000 );
+	FadeOutBGM(2, 200, FALSE);
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("background/sora6", 1000 );
+
+//r途中で休むことも忘れて、私は藪や叢を描き分けながらどんどん山道を進んでゆく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "途中で休むことも忘れて、私は藪や叢を描き分けながらどんどん山道を進んでゆく。",
+			NULL, "途中我连休息都忘了，拨开灌木和草丛，不断沿着山路前进。", Line_Normal);
+	ClearMessage();
+
+//r知らず速くなる、足取り。一人でいると不安ばかりが増大して、もう我慢できなくなっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "知らず速くなる、足取り。一人でいると不安ばかりが増大して、もう我慢できなくなっていた。",
+			NULL, "脚步不知不觉加快。独自一人时，不安只会越发膨胀，我已经快要无法忍受。", Line_Normal);
+	ClearMessage();
+
+//r…沼を出た時にはあまり感じなかったのに、なぜだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…沼を出た時にはあまり感じなかったのに、なぜだろう。",
+			NULL, "……离开沼泽时明明没怎么感觉到，为什么呢？", Line_Normal);
+	ClearMessage();
+
+//rまぁ、いい。こんな暗い気分も、きっと桜花の顔を見れば消えてしまうのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まぁ、いい。こんな暗い気分も、きっと桜花の顔を見れば消えてしまうのだ。",
+			NULL, "算了。只要见到樱花的脸，这种阴暗的心情一定会消失。", Line_Normal);
+	ClearMessage();
+
+//r薬を持っていけば、きっと桜花は喜んでくれる。そして昨日の志乃と魔央がしていた話を聞けば、村を出る決意をなおのこと固めてくれるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "薬を持っていけば、きっと桜花は喜んでくれる。そして昨日の志乃と魔央がしていた話を聞けば、村を出る決意をなおのこと固めてくれるだろう。",
+			NULL, "带着药过去，樱花一定会高兴。而且听了昨天志乃和魔央的谈话，她一定会更加坚定离开村子的决心。", Line_Normal);
+	ClearMessage();
+
+//rそうすれば、気持ちが軽くなる。きっと、救われる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そうすれば、気持ちが軽くなる。きっと、救われる。",
+			NULL, "那样一来，心情就会轻松。一定会得到拯救。", Line_Normal);
+	ClearMessage();
+
+//rだから…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから…。",
+			NULL, "那么……", Line_Normal);
+	ClearMessage();
+
+//rお願いだから…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "お願いだから…。",
+			NULL, "拜托了……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 2000 );
+	Wait( 2000 );
+	FadeOutBGM(1, 200, TRUE);
+
+//rでも。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも。",
+			NULL, "可是。", Line_Normal);
+	ClearMessage();
+
+//r私が、桜花の住む神社で見たものは。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私が、桜花の住む神社で見たものは。",
+			NULL, "我在樱花所住的神社里看见的，是。", Line_Normal);
+	ClearMessage();
+
+//r血走った目を剥き、それぞれが得物を手に持った村人と。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "血走った目を剥き、それぞれが得物を手に持った村人と。",
+			NULL, "一群村民瞪着充血的眼睛，各自手持凶器。", Line_Normal);
+	ClearMessage();
+
+//rそれに取り囲まれて、荒縄に両手を縛られ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに取り囲まれて、荒縄に両手を縛られ。",
+			NULL, "而她被他们包围，双手被粗绳绑住。", Line_Normal);
+	ClearMessage();
+
+//r境内の最も高い木に吊るされた……傷だらけの、桜花だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "境内の最も高い木に吊るされた……傷だらけの、桜花だった。",
+			NULL, "吊在境内最高的树上……浑身是伤的，樱花。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse13", 256, 64);
+	DrawScene("background/ji1_01", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlayBGM(2, "hm03_17", 128, 0);
+
+//羽入rvS16/45/DS43071856.「なっ…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071856", 256, TRUE);
+	OutputLine(NULL, "「なっ…？！」",
+			NULL, "「什……？！」", Line_Normal);
+	ClearMessage();
+
+//r愕然と私は、手に持っていた行李が地面に落ちたことも忘れてその場に固まってしまう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "愕然と私は、手に持っていた行李が地面に落ちたことも忘れてその場に固まってしまう。",
+			NULL, "我愕然僵在原地，甚至忘了手中的行李箱已经掉到地上。", Line_Normal);
+	ClearMessage();
+
+//r…どういうことだ？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…どういうことだ？",
+			NULL, "……这是怎么回事？", Line_Normal);
+	ClearMessage();
+
+//rいったい、なにがあった…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いったい、なにがあった…？",
+			NULL, "到底发生了什么……？", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMa1000.「くっくっくっ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_murama1000", 256, TRUE);
+	OutputLine(NULL, "「くっくっくっ…」",
+			NULL, "「呵呵呵呵……」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1001.「へっへっへっ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1001", 256, TRUE);
+	OutputLine(NULL, "「へっへっへっ…」",
+			NULL, "「嘿嘿嘿嘿……」", Line_Normal);
+	ClearMessage();
+
+//r下卑た笑いを浮かべながら、村人たちは先日の盗賊たちの一件でもあったように面白がって、桜花を見上げている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "下卑た笑いを浮かべながら、村人たちは先日の盗賊たちの一件でもあったように面白がって、桜花を見上げている。",
+			NULL, "村民们露出卑俗的笑容，像前些天围观那些盗贼时一样，以看热闹的神情仰望着樱花。", Line_Normal);
+	ClearMessage();
+
+//rその中には、私の薬で危篤を脱した者も数多く…いや、ほとんどそうじゃないか！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その中には、私の薬で危篤を脱した者も数多く…いや、ほとんどそうじゃないか！",
+			NULL, "其中还有许多人靠我的药脱离了生命危险……不，这里几乎全是这种人！", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071857.「……あ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071857", 256, TRUE);
+	OutputLine(NULL, "「……あ…」",
+			NULL, "「……啊……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r桜花が、木に吊るされている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花が、木に吊るされている。",
+			NULL, "樱花，被吊在树上。", Line_Normal);
+	ClearMessage();
+
+//r真っ白だった巫女服は、袴よりも赤く、黒く染まり。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "真っ白だった巫女服は、袴よりも赤く、黒く染まり。",
+			NULL, "原本雪白的巫女服，如今染得比袴还红、还黑。", Line_Normal);
+	ClearMessage();
+
+//rちょっと大きめだとからかっていた袂は、酷い責めの跡なのか無残に引き裂かれ、白い素肌が見えている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ちょっと大きめだとからかっていた袂は、酷い責めの跡なのか無残に引き裂かれ、白い素肌が見えている。",
+			NULL, "那双我曾笑她做得有些偏大的衣袖，像是遭受酷刑后被撕得惨不忍睹，露出了白净的肌肤。", Line_Normal);
+	ClearMessage();
+
+//r太陽の光を反射して綺麗だと、何度となく褒めた黒髪は艶を失って千々に乱れ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "太陽の光を反射して綺麗だと、何度となく褒めた黒髪は艶を失って千々に乱れ。",
+			NULL, "那头我曾无数次称赞在阳光下反射得很美的黑发，失去了光泽，凌乱成一绺一绺。", Line_Normal);
+	ClearMessage();
+
+//r陶磁器のように白く、透き通るように可愛かった顔は、青黒い痣で醜く歪んでいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "陶磁器のように白く、透き通るように可愛かった顔は、青黒い痣で醜く歪んでいた。",
+			NULL, "那张如陶瓷般洁白、清秀可爱的脸，被青黑色的淤痕扭曲得面目全非。", Line_Normal);
+	ClearMessage();
+
+//rそんな桜花を、村人はどう見ているのか…覗き込んで、背筋に氷を差し込まれたようにぞっとなる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな桜花を、村人はどう見ているのか…覗き込んで、背筋に氷を差し込まれたようにぞっとなる。",
+			NULL, "我窥视着村民们究竟用怎样的眼神看着这样的樱花，顿时像被冰刺入脊背般战栗。", Line_Normal);
+	ClearMessage();
+
+//r彼らの目には、獰猛な肉食獣のような殺意。そして嫌らしいほど濁った、好奇と貪欲。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼らの目には、獰猛な肉食獣のような殺意。そして嫌らしいほど濁った、好奇と貪欲。",
+			NULL, "他们眼中有如凶猛肉食兽般的杀意，还有浑浊到令人作呕的好奇与贪欲。", Line_Normal);
+	ClearMessage();
+
+//rこれが…これが、桜花が心を込めて助けようとした、村人の姿だというのか…っ？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "これが…これが、桜花が心を込めて助けようとした、村人の姿だというのか…っ？！",
+			NULL, "这就是……这就是樱花真心想要拯救的村民的模样吗……？！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_01", 1000 );
+
+//村男rvS16/00/VT4D_muraMa1001.「巫女さまー、どうですか～？　答える気になりましたかぁ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_murama1001", 256, TRUE);
+	OutputLine(NULL, "「巫女さまー、どうですか～？　答える気になりましたかぁ？」",
+			NULL, "「巫女大人——感觉怎么样啊？想回答了吗？」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010493.「……う…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010493", 256, TRUE);
+	OutputLine(NULL, "「……う…」",
+			NULL, "「……呜……」", Line_Normal);
+	ClearMessage();
+
+//r桜花は答えず、ただうめき声を上げるだけ。それが余計に、痛々しい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花は答えず、ただうめき声を上げるだけ。それが余計に、痛々しい。",
+			NULL, "樱花没有回答，只发出低低的呻吟。那反而显得更加痛苦。", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1002.「聞こえてるのかよぉ、おい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1002", 256, TRUE);
+	OutputLine(NULL, "「聞こえてるのかよぉ、おい」",
+			NULL, "「听见没有啊，喂。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//rそれでも、そばにいる男は意に介した風もなく、持っていた木材で桜花の顎を持ち上げた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも、そばにいる男は意に介した風もなく、持っていた木材で桜花の顎を持ち上げた。",
+			NULL, "即便如此，旁边的男人也毫不在意，用手里的木棍抬起樱花的下巴。", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1003.「ふん…だんまりかよ。意外にしぶといよな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1003", 256, TRUE);
+	OutputLine(NULL, "「ふん…だんまりかよ。意外にしぶといよな」",
+			NULL, "「嗯……装哑巴啊。还真够顽强的。」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMc1001.「…いいのか？　これだけ責めたら、かえって口を利かなくなるんじゃないか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1001", 256, TRUE);
+	OutputLine(NULL, "「…いいのか？　これだけ責めたら、かえって口を利かなくなるんじゃないか？」",
+			NULL, "「……这样没问题吗？折腾成这样，反而会让她再也开不了口吧？」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1004.「大丈夫だろ。ダンナは死んじまったけど、まだ娘は生きてるしな。弱ったところで連れ出せば、さすがに黙ってられないさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1004", 256, TRUE);
+	OutputLine(NULL, "「大丈夫だろ。ダンナは死んじまったけど、まだ娘は生きてるしな。弱ったところで連れ出せば、さすがに黙ってられないさ」",
+			NULL, "「没事吧？她男人虽然死了，女儿还活着呢。等她虚弱些再把孩子带出来，她总该没法继续沉默了。」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMc1002.「生きてる、ね…。確かに、息さえしてれば『生きてる』ことになるがな…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1002", 256, TRUE);
+	OutputLine(NULL, "「生きてる、ね…。確かに、息さえしてれば『生きてる』ことになるがな…」",
+			NULL, "「活着啊……确实，只要还有气，就算是『活着』嘛……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rなにっっ？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なにっっ？！",
+			NULL, "什么……？！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_01", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS16/47/DS43010494.「っ！kvS16/47/DS43010495.　あ、あなたたち…ま、まさか…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010494", 256, TRUE);
+	OutputLine(NULL, "「っ！",
+			NULL, "「唔！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010495", 256, TRUE);
+	OutputLine(NULL, "　あ、あなたたち…ま、まさか…？！」",
+			NULL, "你、你们……难、难道……？！」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMa1002.「ああ、別に殺したわけじゃありませんよ。居間でもみ合っていたら、勝手に血を吐いてくたばっちまっただけなんですから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_murama1002", 256, TRUE);
+	OutputLine(NULL, "「ああ、別に殺したわけじゃありませんよ。居間でもみ合っていたら、勝手に血を吐いてくたばっちまっただけなんですから」",
+			NULL, "「啊，我们可没杀他。只是在起居间扭打的时候，他自己吐血死掉了而已。」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMa1003.「ま、娘さんは無事ですし。もっともあんまりぴーぴー泣いてうるさいんで、蹴飛ばしてやったら動かなくなっちゃいましたけどね～」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_murama1003", 256, TRUE);
+	OutputLine(NULL, "「ま、娘さんは無事ですし。もっともあんまりぴーぴー泣いてうるさいんで、蹴飛ばしてやったら動かなくなっちゃいましたけどね～」",
+			NULL, "「至于女儿嘛，还平安着。只不过她一直哇哇哭得太吵，我踢了她一脚，她就不动了～」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010496.「そ、そんなっ…！！kvS16/47/DS43010497.　あ、ああっ…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010496", 256, TRUE);
+	OutputLine(NULL, "「そ、そんなっ…！！",
+			NULL, "「怎、怎么会……！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010497", 256, TRUE);
+	OutputLine(NULL, "　あ、ああっ…！！」",
+			NULL, "啊、啊啊……！！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r愕然と目を見開いて、桜花は嗚咽すらも忘れてがたがたと震える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "愕然と目を見開いて、桜花は嗚咽すらも忘れてがたがたと震える。",
+			NULL, "樱花愕然睁大眼睛，连呜咽都忘了，浑身剧烈发抖。", Line_Normal);
+	ClearMessage();
+
+//rなんという…なんということをっ！！　この人非人どもがっっ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なんという…なんということをっ！！　この人非人どもがっっ！！",
+			NULL, "怎么会……怎么会做出这种事！！这群丧尽天良的东西！！", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMc1003.「なぁ、…本当に大丈夫なのかよ？　仮にもオヤシロさまの巫女に、こんなことして…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1003", 256, TRUE);
+	OutputLine(NULL, "「なぁ、…本当に大丈夫なのかよ？　仮にもオヤシロさまの巫女に、こんなことして…」",
+			NULL, "「喂……真的没问题吗？她好歹也是御社神大人的巫女，我们居然对她做这种事……」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1005.「いいんだよ、こいつらは鬼に魂を売ったやつらなんだから！　むしろ俺たちは鬼退治をした正義の士、ってことになるかな？　あっははははは！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1005", 256, TRUE);
+	OutputLine(NULL, "「いいんだよ、こいつらは鬼に魂を売ったやつらなんだから！　むしろ俺たちは鬼退治をした正義の士、ってことになるかな？　あっははははは！！」",
+			NULL, "「没关系啦，这些家伙把灵魂卖给了鬼！倒不如说，我们是在讨伐鬼的正义之士吧？啊哈哈哈哈！！」", Line_Normal);
+	ClearMessage();
+
+//r鬼退治…？　鬼を退治する、だと…？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "鬼退治…？　鬼を退治する、だと…？！",
+			NULL, "讨伐鬼……？你说要讨伐鬼……？！", Line_Normal);
+	ClearMessage();
+
+//rそうか…こいつら、最近鬼ヶ淵にやってきた連中の一派か！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そうか…こいつら、最近鬼ヶ淵にやってきた連中の一派か！",
+			NULL, "原来如此……这些家伙，是最近来到鬼渊的那帮人的一伙！", Line_Normal);
+	ClearMessage();
+
+//r前に見かけた時、妙な感じで桜花たちを見ていたから、ずっと気になっていたが…こいつら、『鬼』の恐ろしさを知らないのだ…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "前に見かけた時、妙な感じで桜花たちを見ていたから、ずっと気になっていたが…こいつら、『鬼』の恐ろしさを知らないのだ…！",
+			NULL, "之前看到他们时，他们看樱花她们的眼神就很古怪，我一直很在意……这些家伙，根本不知道『鬼』的可怕……！", Line_Normal);
+	ClearMessage();
+
+//rだから…だから本来、祟りを畏れて手出しを禁忌としてきた古手家を襲って…桜花まで…っ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから…だから本来、祟りを畏れて手出しを禁忌としてきた古手家を襲って…桜花まで…っ！！",
+			NULL, "所以……所以他们才会袭击本应因畏惧作祟而被视为禁忌的古手家……甚至对樱花……！！", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMc1004.「それよりも…本当にあるんだろうな、お宝？　殿様も軍勢を構えてきた以上、行って何も見つかりませんでした、だと俺たちの命が危ないぞ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1004", 256, TRUE);
+	OutputLine(NULL, "「それよりも…本当にあるんだろうな、お宝？　殿様も軍勢を構えてきた以上、行って何も見つかりませんでした、だと俺たちの命が危ないぞ」",
+			NULL, "「比起这个……宝贝真的存在吧？殿下都已经整军过来了，要是去了什么都没找到，我们的命可就危险了。」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1006.「ああ、平気平気！　巫女さんの後をつけて、ちゃんと確かめてきたからな！　どうやらあのオヤシロさまの泉…鬼ヶ淵に秘密があるみたいだぜ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1006", 256, TRUE);
+	OutputLine(NULL, "「ああ、平気平気！　巫女さんの後をつけて、ちゃんと確かめてきたからな！　どうやらあのオヤシロさまの泉…鬼ヶ淵に秘密があるみたいだぜ？」",
+			NULL, "「啊，放心放心！我跟在巫女后面，已经确认过了！看来那座御社神大人的泉水……鬼渊里有秘密啊？」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1007.「…まぁ、それでなくともこの前の薬があれば、また大もうけできるって！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1007", 256, TRUE);
+	OutputLine(NULL, "「…まぁ、それでなくともこの前の薬があれば、また大もうけできるって！」",
+			NULL, "「……再说，就算没有宝贝，只要有前些天那种药，也能再大赚一笔！」", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0, 0, 0, 192, 0, 250, TRUE );
+	DrawScene("background/aka2", 1000 );
+
+//羽入rvS16/45/DS43071858.……え？
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071858", 256, TRUE);
+	OutputLine(NULL, "……え？",
+			NULL, "……咦？", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1008.「しっかし、この巫女さんも人が良いよなぁ。ちょっと調子悪いふりしてたら、薬をただで呉れるんだもの。それを隣村の病人に高値で売りつけて、こちとら大助かりってか！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1008", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "", Line_Continue); }
+	OutputLine(NULL, "「しっかし、この巫女さんも人が良いよなぁ。ちょっと調子悪いふりしてたら、薬をただで呉れるんだもの。それを隣村の病人に高値で売りつけて、こちとら大助かりってか！」",
+			NULL, "「不过，这位巫女还真是个大好人啊。只要稍微装装身体不适，她就会白送药给我们。再把药高价卖给邻村的病人，我们可就赚大了！」", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0, 0, 0, 128, 0, 250, TRUE );
+
+//羽入rvS16/45/DS43071859.今……こいつら……なんて…？
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071859", 256, TRUE);
+	OutputLine(NULL, "今……こいつら……なんて…？",
+			NULL, "刚才……这些家伙……说了什么……？", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMa1004.「まぁ、当てが外れた分、稼がせてもらわないとな。神輿に乗せておだてておけば、少しは恩恵にあずかれるかと思ってたんだが」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_murama1004", 256, TRUE);
+	OutputLine(NULL, "「まぁ、当てが外れた分、稼がせてもらわないとな。神輿に乗せておだてておけば、少しは恩恵にあずかれるかと思ってたんだが」",
+			NULL, "「既然原本的盘算落空了，总得让我们赚回来嘛。本来还以为只要把她捧上神轿奉承着，多少能沾点好处呢。」", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0, 0, 0, 64, 0, 250, TRUE );
+
+//羽入rvS16/45/DS43071860.神輿……おだてて……だと？！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071860", 256, TRUE);
+	OutputLine(NULL, "神輿……おだてて……だと？！",
+			NULL, "把她捧上神轿……奉承她……竟然是这么想的？！", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1009.「バカみたいに『みんな仲良く』なんて繰り返して、まぁご立派なお考えだことで。もっとも、俺たちは他の連中がどうなろうと、知ったこっちゃないがね！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1009", 256, TRUE);
+	OutputLine(NULL, "「バカみたいに『みんな仲良く』なんて繰り返して、まぁご立派なお考えだことで。もっとも、俺たちは他の連中がどうなろうと、知ったこっちゃないがね！」",
+			NULL, "「她像个傻子一样反复说『大家要和睦相处』，哎呀，想法可真高尚。可惜我们才不管别人会变成怎样呢！」", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 250, TRUE );
+
+//羽入rvS16/45/DS43071861.………………。
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071861", 256, TRUE);
+	OutputLine(NULL, "………………。",
+			NULL, "……", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMc1005.「そうだそうだ！　あいつらとは俺たちは違うんだ！　なんせ、俺たちには――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1005", 256, TRUE);
+	OutputLine(NULL, "「そうだそうだ！　あいつらとは俺たちは違うんだ！　なんせ、俺たちには——」",
+			NULL, "「就是说啊！我们跟那些家伙可不一样！毕竟我们有——」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	Negative( 1000, FALSE );
+	PlaySE(3, "sinzouappaku", 256, 64);
+	DrawScene("black", 500 );
+	DrawScene("background/ji1_01", 500 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//村男rvS16/00/VT4D_muraMa1005.「鬼が、――味方してるんだからな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_murama1005", 256, TRUE);
+	OutputLine(NULL, "「鬼が、——味方してるんだからな」",
+			NULL, "「鬼——站在我们这边啊。」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "semi_r", 128, 0 );
+	FadeFilm( 1000, FALSE );
+	DrawScene("black", 500 );
+
+//羽入rvS16/45/DS43071862.………誰が。
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071862", 256, TRUE);
+	OutputLine(NULL, "………誰が。",
+			NULL, "……谁？", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071863.だれが……味方だと？
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071863", 256, TRUE);
+	OutputLine(NULL, "だれが……味方だと？",
+			NULL, "谁……站在你们这边？", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071864.こんなやつらの…ために……。
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071864", 256, TRUE);
+	OutputLine(NULL, "こんなやつらの…ために……。",
+			NULL, "为了……这种家伙……", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071865.こんな、蒙昧で臆病で下劣で恥知らずで傲慢で嘘吐きで野蛮で最低な、醜い汚い儚いゴミ生物のために私は……！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071865", 256, TRUE);
+	OutputLine(NULL, "こんな、蒙昧で臆病で下劣で恥知らずで傲慢で嘘吐きで野蛮で最低な、醜い汚い儚いゴミ生物のために私は……！",
+			NULL, "为了这种愚昧、怯懦、卑劣、无耻、傲慢、撒谎、野蛮、下贱、丑陋、污秽、脆弱的废物生物，我竟然……！", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071866.私…と……桜花……は…！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071866", 256, TRUE);
+	OutputLine(NULL, "私…と……桜花……は…！",
+			NULL, "我……和……樱花……竟然……！", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071867.ヲウカハアァァァアァァァッッ！！！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071867", 256, TRUE);
+	OutputLine(NULL, "ヲウカハアァァァアァァァッッ！！！",
+			NULL, "樱花啊啊啊啊啊啊啊啊啊啊！！！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "a6", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 2000 );
+	Wait( 2000 );
+	PlaySE(3, "furu", 256, 64);
+	DrawScene("background/ji1_01", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlayBGM(2, "hm07_33", 128, 0);
+
+//村男rvS16/00/VT4D_muraMb1010.「…？　おい、どうした？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1010", 256, TRUE);
+	OutputLine(NULL, "「…？　おい、どうした？」",
+			NULL, "「……？喂，怎么了？」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMa1006.「――――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_murama1006", 256, TRUE);
+	OutputLine(NULL, "「————」",
+			NULL, "「————」", Line_Normal);
+	ClearMessage();
+
+//rふいに動きを止め、その場に立ったまま口をぽかん、と開く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ふいに動きを止め、その場に立ったまま口をぽかん、と開く。",
+			NULL, "他忽然停住动作，站在原地，嘴巴呆呆地张开。", Line_Normal);
+	ClearMessage();
+
+//rそう言ってぽん、と肩を叩いたその瞬間。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言ってぽん、と肩を叩いたその瞬間。",
+			NULL, "就在他这么说着，啪地拍上对方肩膀的瞬间。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 500 );
+
+//rごろんっ、…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ごろんっ、…。",
+			NULL, "咚噜……", Line_Normal);
+	ClearMessage();
+
+//r足元に石のような塊が奇妙に鈍い音を立てて、転がり落ちてくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "足元に石のような塊が奇妙に鈍い音を立てて、転がり落ちてくる。",
+			NULL, "一块像石头般的东西发出奇妙而沉闷的声音，滚落到脚边。", Line_Normal);
+	ClearMessage();
+
+//rなんだろうと思って、見下ろすと、…それは、人間の顔。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なんだろうと思って、見下ろすと、…それは、人間の顔。",
+			NULL, "他低头想看那是什么……那是人的脸。", Line_Normal);
+	ClearMessage();
+
+//rそして。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして。",
+			NULL, "然后。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse07", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu2", "c", 0, 0, 500 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//村男rvS16/00/VT4D_muraMb1011.「ひ、ひぃぃぃっっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1011", 256, TRUE);
+	OutputLine(NULL, "「ひ、ひぃぃぃっっ？！」",
+			NULL, "「咿、咿呀啊啊啊？！」", Line_Normal);
+	ClearMessage();
+
+//r真っ赤に染まった鮮血がまるで小さな間欠泉のように噴き出し、周囲の男どもの顔や身体に降り注ぐ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "真っ赤に染まった鮮血がまるで小さな間欠泉のように噴き出し、周囲の男どもの顔や身体に降り注ぐ。",
+			NULL, "染得鲜红的血液像小型间歇泉一般喷涌而出，洒在周围男人们的脸和身体上。", Line_Normal);
+	ClearMessage();
+
+//rその、肩から上を失った身体の向こうに立っていたモノ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その、肩から上を失った身体の向こうに立っていたモノ。",
+			NULL, "站在那具失去肩膀以上部位的身体后面的东西。", Line_Normal);
+	ClearMessage();
+
+//rそれは…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それは…。",
+			NULL, "那是。", Line_Normal);
+	ClearMessage();
+
+//rそれは、まさしく…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それは、まさしく…。",
+			NULL, "那正是……", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//村男rvS16/00/VT4D_muraMc1006.「ひっ、ひぃぃっ…ひゃあぁぁあぁぁぁっっっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1006", 256, TRUE);
+	OutputLine(NULL, "「ひっ、ひぃぃっ…ひゃあぁぁあぁぁぁっっっ！！」",
+			NULL, "「咿、咿呀……呀啊啊啊啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1012.「おっ…鬼だ…！　鬼が出たぁぁあぁぁっっっ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1012", 256, TRUE);
+	OutputLine(NULL, "「おっ…鬼だ…！　鬼が出たぁぁあぁぁっっっ！！！」",
+			NULL, "「鬼……是鬼……！鬼出来了啊啊啊啊！！！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/sil3a", 250 );
+	PlaySE(3, "dsse139", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//rグルゥ…グルルゥッッ…！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "グルゥ…グルルゥッッ…！！",
+			NULL, "咕噜……咕噜噜……！！", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071868.「…きさまらが……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071868", 256, TRUE);
+	OutputLine(NULL, "「…きさまらが……！」",
+			NULL, "「……你们这些人……！」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMc1007.「あ…ああぁっっ……！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1007", 256, TRUE);
+	OutputLine(NULL, "「あ…ああぁっっ……！！」",
+			NULL, "「啊、啊啊啊……！！」", Line_Normal);
+	ClearMessage();
+
+//村男rvS16/00/VT4D_muraMb1013.「た、助け…たす、けて……っ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1013", 256, TRUE);
+	OutputLine(NULL, "「た、助け…たす、けて……っ！！」",
+			NULL, "「救、救命……救、救我……！！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/sil4a", 250 );
+	PlaySE(3, "dsse142", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071869.「貴様らが…桜花を……私の桜花をぉぉおォォッッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071869", 256, TRUE);
+	OutputLine(NULL, "「貴様らが…桜花を……私の桜花をぉぉおォォッッ！！」",
+			NULL, "「是你们……把樱花……把我的樱花啊啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 500 );
+
+//村男rvS16/00/VT4D_muraMc1008.「ぎゃぁぁあぁぁぁっっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1008", 256, TRUE);
+	OutputLine(NULL, "「ぎゃぁぁあぁぁぁっっ！！」",
+			NULL, "「呀啊啊啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//村男rvS16/00/VT4D_muraMb1014.「ぐっ…ぐががっっ…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramb1014", 256, TRUE);
+	OutputLine(NULL, "「ぐっ…ぐががっっ…？！」",
+			NULL, "「呜……呜嘎嘎……？！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//村男rvS16/00/VT4D_muraMc1009.「ひいぃぃ…ひぃぃぃっっ……！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村男</color>", NULL, "<color=#f5e6d3>村男</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_muramc1009", 256, TRUE);
+	OutputLine(NULL, "「ひいぃぃ…ひぃぃぃっっ……！！」",
+			NULL, "「咿……咿呀啊啊……！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse07", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu2", "c", 0, 0, 500 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 1000 );
+	DrawScene("black", 500 );
+	DrawScene("scene/sil4a", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(3, "dsse142", 256, 64);
+
+//羽入rvS16/45/DS43071870.「……死ね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071870", 256, TRUE);
+	OutputLine(NULL, "「……死ね…」",
+			NULL, "「死吧。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071871.「貴様らに生きる資格など、私が認めない！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071871", 256, TRUE);
+	OutputLine(NULL, "「貴様らに生きる資格など、私が認めない！！」",
+			NULL, "「你们没有活下去的资格，我绝不承认！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071872.「貴様らに生きる権利など、私が与えない！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071872", 256, TRUE);
+	OutputLine(NULL, "「貴様らに生きる権利など、私が与えない！！」",
+			NULL, "「你们没有活下去的权利，我绝不赐予！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071873.「死ね…人間どもよ……！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071873", 256, TRUE);
+	OutputLine(NULL, "「死ね…人間どもよ……！！」",
+			NULL, "「去死吧……人类们……！！」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(5, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(5, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(5, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//羽入rvS16/45/DS43071874.「死ね…死ね…死ね…死ね…死ね…死ね…死ね…死ね…死ね…死ね…死ね…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071874", 256, TRUE);
+	OutputLine(NULL, "「死ね…死ね…死ね…死ね…死ね…死ね…死ね…死ね…死ね…死ね…死ね…！！」",
+			NULL, "「去死……去死……去死……去死……去死……去死……去死……去死……去死……去死……去死……！！」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+	DrawScene("black", 500 );
+	PlaySE(5, "addse07", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu2", "c", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+	PlaySE(3, "dsse142", 256, 64);
+	DrawScene("black", 1000 );
+	PlaySE(5, "thisikuki", 256, 64);
+	Wait( 500 );
+	PlaySE(3, "thisikuki", 256, 64);
+	Wait( 500 );
+	PlaySE(5, "thisikuki", 256, 64);
+	Wait( 500 );
+	PlaySE(3, "thisikuki", 256, 64);
+	Wait( 500 );
+	PlaySE(5, "thisikuki", 256, 64);
+	Wait( 500 );
+	PlaySE(3, "thisikuki", 256, 64);
+	Wait( 500 );
+	PlaySE(5, "thisikuki", 256, 64);
+	Wait( 500 );
+	PlaySE(3, "thisikuki", 256, 64);
+	Wait( 500 );
+	FadeOutBGM(1, 200, TRUE);
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(5, "a6", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 2000 );
+	Wait( 2000 );
+	DrawScene("black", 2000 );
+	Wait( 3000 );
+	PlayBGM( 1, "honou", 128, 0 );
+	DrawScene("white", 2000 );
+	DrawScene("background/jyt2_01", 2000 );
+
+//r気がつくと、辺り一面は業火に包まれていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "気がつくと、辺り一面は業火に包まれていた。",
+			NULL, "回过神来，周围一带已经被业火包围。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "bb", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//r吹き荒れる灼熱の烈風に、黒い灰となって舞い踊る、焼け爛れた木の葉の群れ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "吹き荒れる灼熱の烈風に、黒い灰となって舞い踊る、焼け爛れた木の葉の群れ。",
+			NULL, "被灼热烈风吹得狂舞的，是化作黑灰、烧得焦烂的树叶。", Line_Normal);
+	ClearMessage();
+
+//r草花はケシ炭と化し、大木はついさっきまで生い茂った枝葉の代わりに、紅蓮の炎を身にまとい、bあび.<阿鼻>の咆哮を上げている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "草花はケシ炭と化し、大木はついさっきまで生い茂った枝葉の代わりに、紅蓮の炎を身にまとい、阿鼻(あび)の咆哮を上げている。",
+			NULL, "草花化作焦炭，大树披上红莲烈火，取代了方才还繁茂的枝叶，发出阿鼻的咆哮。", Line_Normal);
+	ClearMessage();
+
+//rそして、大地は。――
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、大地は。——",
+			NULL, "而大地——", Line_Normal);
+	ClearMessage();
+
+//rおびただしく流れて川となった赤い血と、もはや誰かれとも分からぬ無数の骸で覆い尽くされて、本来の土肌さえ隙間のようにしか見えなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おびただしく流れて川となった赤い血と、もはや誰かれとも分からぬ無数の骸で覆い尽くされて、本来の土肌さえ隙間のようにしか見えなかった。",
+			NULL, "被流成河的鲜红血液，以及已经分不清谁是谁的无数尸骸覆盖殆尽，原本的土色只在缝隙间勉强可见。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256,250 );
+	DrawScene("white", 250 );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 45, "sprite/oha4_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/jyt2_01", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071875.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071875", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "white", "down", 0, 0, 250 );
+	DrawScene("black", 500 );
+
+//r手を払い、長く伸びた爪にまとわり付いた返り血を振り落とす。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "手を払い、長く伸びた爪にまとわり付いた返り血を振り落とす。",
+			NULL, "我挥了挥手，甩掉沾在长长指甲上的飞溅鲜血。", Line_Normal);
+	ClearMessage();
+
+//rそして、いまだ逃げずに私に刀を向ける勇敢な…いや、愚かな兵士３人にゆっくりと振り返ると、足の裏に擦れた砂利の音を感じつつ、歩みを一歩、前に踏みしめた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、いまだ逃げずに私に刀を向ける勇敢な…いや、愚かな兵士３人にゆっくりと振り返ると、足の裏に擦れた砂利の音を感じつつ、歩みを一歩、前に踏みしめた。",
+			NULL, "然后，我缓缓回头看向仍未逃走、还对我举刀的三名勇敢……不，愚蠢的士兵，一边感受脚底擦过砂砾的声音，一边向前踏出一步。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 45, "sprite/oha4_niyari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/jyt2_01", 1000 );
+	PlaySE(3, "dsse132", 256, 64);
+
+//兵士rvS16/00/VT4D_heiA1001.「……ひっ、…ひ…っ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>兵士</color>", NULL, "<color=#f5e6d3>兵士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_heia1001", 256, TRUE);
+	OutputLine(NULL, "「……ひっ、…ひ…っ？！」",
+			NULL, "「……咿……咿……？！」", Line_Normal);
+	ClearMessage();
+
+//兵士rvS16/00/VT4D_heiB1001.「く、…来るな…来るなぁぁ…っ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>兵士</color>", NULL, "<color=#f5e6d3>兵士</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_heib1001", 256, TRUE);
+	OutputLine(NULL, "「く、…来るな…来るなぁぁ…っ！！」",
+			NULL, "「别、别过来……别过来啊啊……！！」", Line_Normal);
+	ClearMessage();
+
+//r剣の先だけでなく、全身をがたがたと震わせながら、目の前の男たちは私の歩みとともにじりっ、じりっ、と後退してゆく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "剣の先だけでなく、全身をがたがたと震わせながら、目の前の男たちは私の歩みとともにじりっ、じりっ、と後退してゆく。",
+			NULL, "不只是剑尖，连全身都在剧烈发抖。眼前的男人们随着我的步伐，一点一点向后退去。", Line_Normal);
+	ClearMessage();
+
+//r背中を向ければ、追って斬られるとでも思っているのだろうか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "背中を向ければ、追って斬られるとでも思っているのだろうか。",
+			NULL, "他们是觉得一旦背对我，就会被追上斩杀吗？", Line_Normal);
+	ClearMessage();
+
+//r明らかに熱風によるものではない大粒の汗を玉のように流しながら、それでも恐怖に見開いた目を私に向けたままでいるのは、とても殊勝なことだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "明らかに熱風によるものではない大粒の汗を玉のように流しながら、それでも恐怖に見開いた目を私に向けたままでいるのは、とても殊勝なことだ。",
+			NULL, "他们流下明显并非热风所致的大颗汗珠，却仍用因恐惧而瞪大的眼睛盯着我，倒也算值得称道。", Line_Normal);
+	ClearMessage();
+
+//r熊や獣なら、さぞかし有効だっただろう。…しかし、私は獣でもないし、またかれらが常日頃口にする『神』のように、慈悲深くもなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "熊や獣なら、さぞかし有効だっただろう。…しかし、私は獣でもないし、またかれらが常日頃口にする『神』のように、慈悲深くもなかった。",
+			NULL, "如果对手是熊或野兽，这招想必很有效。可是，我并非野兽，也不像他们平日口中所说的『神』那样慈悲。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "furu", 256, 64);
+	ModDrawCharacter(4, 45, "sprite/oha4_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 500, TRUE );
+	PlaySE(3, "nageru", 256, 64);
+	DrawSceneWithMask( "white", "up", 0, 0, 250 );
+	DrawScene("black", 500 );
+	PlayBGM( 1, "kaze_lp", 128, 0 );
+
+//r瞬きの間に距離をつめると、私は両手の爪を三人の兵士に向けて突き出し、それぞれの身体をためらいもなく串刺しにする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "瞬きの間に距離をつめると、私は両手の爪を三人の兵士に向けて突き出し、それぞれの身体をためらいもなく串刺しにする。",
+			NULL, "我在眨眼间拉近距离，双手的爪子朝三名士兵刺出，毫不犹豫地贯穿了他们各自的身体。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	PlaySE(3, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "right", 0, 0, 250 );
+	DrawSceneWithMask( "black", "right", 0, 0, 250 );
+	PlaySE(3, "nageru", 256, 64);
+	DrawSceneWithMask( "white", "down", 0, 0, 250 );
+	DrawScene("black", 500 );
+
+//rひとりは、喉を。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ひとりは、喉を。",
+			NULL, "一个，刺穿喉咙。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 500 );
+
+//rその反対側は、心の臓を。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その反対側は、心の臓を。",
+			NULL, "另一个，刺穿心脏。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 500 );
+
+//rそして、二人よりもわずか２歩ほど後方だった男には、そいつが反射的に背を向けた瞬間、延髄にずぶり、と指の付け根まで突き刺していた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、二人よりもわずか２歩ほど後方だった男には、そいつが反射的に背を向けた瞬間、延髄にずぶり、と指の付け根まで突き刺していた。",
+			NULL, "至于只站在那两人身后约2步处的男人，在他反射性地转身那一瞬间，我的手指已经深深刺进他的延髓，一直没到指根。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse07", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu2", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 1000 );
+	PlaySE(3, "down", 256, 64);
+
+//r物言わずに、三人の男たちはどさり、と倒れ伏して動かなくなる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "物言わずに、三人の男たちはどさり、と倒れ伏して動かなくなる。",
+			NULL, "三名男人连话都没能说出口，就扑通倒地，再也不动了。", Line_Normal);
+	ClearMessage();
+
+//rすでに血の脂がべっとりと付いているので、薙ぎ払ったときの切れ味は鈍らだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "すでに血の脂がべっとりと付いているので、薙ぎ払ったときの切れ味は鈍らだ。",
+			NULL, "爪上已经沾满了血脂，横扫时的锋利也钝了下来。", Line_Normal);
+	ClearMessage();
+
+//rそれでも細く尖ったこの爪は彼らが武器として持ち出したどんなものよりも硬く、そしてこの程度の華奢な肉体など力を込めなくても易々と刺し貫くことができた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも細く尖ったこの爪は彼らが武器として持ち出したどんなものよりも硬く、そしてこの程度の華奢な肉体など力を込めなくても易々と刺し貫くことができた。",
+			NULL, "即便如此，这双细长尖锐的爪子，也比他们拿来当武器的任何东西都要坚硬。区区这种纤弱的肉身，甚至无需用力就能轻易贯穿。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "furu", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("scene/sil6a", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlayBGM(2, "hm08_38", 128, 0);
+
+//羽入r-vS16/45/DS43071876.（――残りは、あと何人だ）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071876", 256, TRUE);
+	OutputLine(NULL, "（——残りは、あと何人だ）",
+			NULL, "（——还剩下多少人）", Line_Normal);
+	ClearMessage();
+
+//r息をついて呼吸を整える間、私は狩り残した『連中』の数を思い出そうとした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "息をついて呼吸を整える間、私は狩り残した『連中』の数を思い出そうとした。",
+			NULL, "我一边吐气调整呼吸，一边试着回想还剩多少『猎物』。", Line_Normal);
+	ClearMessage();
+
+//r…が、無意味を悟ってすぐにやめる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…が、無意味を悟ってすぐにやめる。",
+			NULL, "……但我立刻意识到这毫无意义，便停了下来。", Line_Normal);
+	ClearMessage();
+
+//rはじまってから数時間、軍将格の者は覚えているだけでも５人、総指揮を取っていた大将もほんの数分前、数合も交わすこともなく討ち果たした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "はじまってから数時間、軍将格の者は覚えているだけでも５人、総指揮を取っていた大将もほんの数分前、数合も交わすこともなく討ち果たした。",
+			NULL, "从开始到现在已过去数小时，单是我记得的将领级人物就有五个。就连统率全军的大将，也在几分钟前没过几招就被我斩杀了。", Line_Normal);
+	ClearMessage();
+
+//r上の者を喪えば我先に逃げ出すのは当然のことで、いまや差し向けられた軍勢は多くの者が退却して、ほとんどこの近辺には残っていない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "上の者を喪えば我先に逃げ出すのは当然のことで、いまや差し向けられた軍勢は多くの者が退却して、ほとんどこの近辺には残っていない。",
+			NULL, "上头的人一死，下面的人争先恐后逃命也是理所当然。如今被派来的军势大多已经撤退，这附近几乎没剩下什么人。", Line_Normal);
+	ClearMessage();
+
+//r敵が戦意を喪失してしまっている以上、さらに獲物を求める必要はなかったし、また数を重ねたところで敵の命運はもはや決してしまっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "敵が戦意を喪失してしまっている以上、さらに獲物を求める必要はなかったし、また数を重ねたところで敵の命運はもはや決してしまっていた。",
+			NULL, "既然敌人已经丧失战意，我也没有继续寻找猎物的必要。再杀多少人，敌方的命运也早已注定。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rふと、私のそばの大木が根元からみしみしと傾き始め、やがて耐え切れなくなったのか轟音を立てて大地に崩れ落ちる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ふと、私のそばの大木が根元からみしみしと傾き始め、やがて耐え切れなくなったのか轟音を立てて大地に崩れ落ちる。",
+			NULL, "忽然，我身旁的大树从根部开始嘎吱嘎吱地倾斜，最后像是撑不住了，发出轰响倒塌在大地上。", Line_Normal);
+	ClearMessage();
+
+//rそれをぼんやりと、無関心な思いで見やってから、私は叢を踏み分け見晴らしのよい高台へと出た。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それをぼんやりと、無関心な思いで見やってから、私は叢を踏み分け見晴らしのよい高台へと出た。",
+			NULL, "我只是漠不关心地看了它一眼，随后拨开草丛，来到一处视野开阔的高地。", Line_Normal);
+	ClearMessage();
+
+//r月明かりに照らされる村のあちこちに、点在して見えるたいまつの火。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "月明かりに照らされる村のあちこちに、点在して見えるたいまつの火。",
+			NULL, "月光照耀下的村子各处，点点火把的光芒散落可见。", Line_Normal);
+	ClearMessage();
+
+//rついさっき、やつらがここに来るまではその数も多く、また整然と並んで一糸乱れぬ動きを見せていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ついさっき、やつらがここに来るまではその数も多く、また整然と並んで一糸乱れぬ動きを見せていた。",
+			NULL, "就在刚才，在那些家伙来到这里之前，火把数量还多得多，而且排列整齐，行动也毫无紊乱。", Line_Normal);
+	ClearMessage();
+
+//rだが、今や見えるたいまつは数時間前の半分以下になり、いくつものグループに集まっては、不安定な動きを繰り返している。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、今や見えるたいまつは数時間前の半分以下になり、いくつものグループに集まっては、不安定な動きを繰り返している。",
+			NULL, "但如今能看见的火把只剩数小时前的一半不到，分成了好几群，不安地来回晃动。", Line_Normal);
+	ClearMessage();
+
+//r…惨めだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…惨めだ。",
+			NULL, "……真是凄惨。", Line_Normal);
+	ClearMessage();
+
+//r唾棄したくなる思いを胸のうちに含み、私は自分でもぞっとなるほど冷酷に澄んだ心で、その惑乱のさまをじっと見つめた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "唾棄したくなる思いを胸のうちに含み、私は自分でもぞっとなるほど冷酷に澄んだ心で、その惑乱のさまをじっと見つめた。",
+			NULL, "我胸中含着想要唾弃的情绪，以连自己都感到发寒的冷酷澄澈之心，静静凝视着那副慌乱的景象。", Line_Normal);
+	ClearMessage();
+
+//rこれが、やつらの好奇心によってもたらされた結果。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "これが、やつらの好奇心によってもたらされた結果。",
+			NULL, "这就是那些家伙的好奇心招来的结果。", Line_Normal);
+	ClearMessage();
+
+//r身に過ぎた欲望と、図に乗りすぎた高慢に神が下した、いわば天罰。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "身に過ぎた欲望と、図に乗りすぎた高慢に神が下した、いわば天罰。",
+			NULL, "这是神对他们过分的欲望和得意忘形的傲慢降下的，所谓天罚。", Line_Normal);
+	ClearMessage();
+
+//rそう、今この瞬間。私はやつらの神だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう、今この瞬間。私はやつらの神だった。",
+			NULL, "没错，就在这一刻。我就是那些家伙的神。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/sil4a", 250 );
+	PlaySE(3, "dsse140", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071877.「あはははは…。k|yvS16/45/DS43071878.あはははははははは…っっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071877", 256, TRUE);
+	OutputLine(NULL, "「あはははは…。",
+			NULL, "「啊哈哈哈哈……", Line_WaitForInput);
+	PlaySE(3, "dsse142", 256, 64);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071878", 256, TRUE);
+	OutputLine(NULL, "あはははははははは…っっ！！」",
+			NULL, "啊哈哈哈哈哈哈哈哈……！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "white", "down", 0, 0, 250 );
+	DrawScene("black", 500 );
+	Wait( 1000 );
+	PlaySE(3, "dsse10", 256, 64);
+
+//村人rvS16/00/VT4D_villiMc1003.「た、助けてくれぇぇっっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>村民</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_villimc1003", 256, TRUE);
+	OutputLine(NULL, "「た、助けてくれぇぇっっ！！」",
+			NULL, "「救、救救我啊啊！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse12", 256, 64);
+
+//村人rvS16/00/VT4D_villiMd1003.「お、鬼が…鬼が出たあぁぁッッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>村民</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s16/00/vt4d_villimd1003", 256, TRUE);
+	OutputLine(NULL, "「お、鬼が…鬼が出たあぁぁッッ！！」",
+			NULL, "「鬼、鬼……鬼出来了啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse139", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//rグォォォッ、グォォォッッ…！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "グォォォッ、グォォォッッ…！！",
+			NULL, "咕哦哦哦、咕哦哦哦……！！", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "honou", 128, 0 );
+	DrawScene("white", 1000 );
+	DrawScene("background/honoo", 1000 );
+
+//r燃える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "燃える。",
+			NULL, "燃烧。", Line_Normal);
+	ClearMessage();
+
+//r全てが天にも届くような炎に包まれて、燃えている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "全てが天にも届くような炎に包まれて、燃えている。",
+			NULL, "一切都被仿佛直达天际的烈焰包围，熊熊燃烧着。", Line_Normal);
+	ClearMessage();
+
+//r目に映るは地獄に咲き誇る紅蓮と、その猛威から必死に逃げ惑う人々。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "目に映るは地獄に咲き誇る紅蓮と、その猛威から必死に逃げ惑う人々。",
+			NULL, "映入眼帘的，是在地狱中盛放的红莲，以及拼命逃离其威势的人们。", Line_Normal);
+	ClearMessage();
+
+//r耳に届くのはbあびきょうかん.<阿鼻叫喚>の悲鳴と、住まいや倉庫が焼け崩れる轟音。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "耳に届くのは阿鼻叫喚(あびきょうかん)の悲鳴と、住まいや倉庫が焼け崩れる轟音。",
+			NULL, "传入耳中的，是阿鼻叫唤的惨叫，以及住处和仓库烧塌时的轰鸣。", Line_Normal);
+	ClearMessage();
+
+//rこの世界の生物は、火を特に恐れる。…文明と知能レベルが極めて未熟である証拠だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "この世界の生物は、火を特に恐れる。…文明と知能レベルが極めて未熟である証拠だ。",
+			NULL, "这个世界的生物尤其恐惧火焰。……这正是文明与智能水平极其低下的证据。", Line_Normal);
+	ClearMessage();
+
+//rさすがに集落にまで下りてくれば、勇敢かそれとも蛮勇にでも剣か何かを持って立ち向かってくるやつがいるかな、と期待していたが。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さすがに集落にまで下りてくれば、勇敢かそれとも蛮勇にでも剣か何かを持って立ち向かってくるやつがいるかな、と期待していたが。",
+			NULL, "我还期待着，既然都来到聚落里了，总该有几个勇敢，或者说有匹夫之勇的家伙拿着剑之类的东西来迎战吧。", Line_Normal);
+	ClearMessage();
+
+//r…どうやらわが身の命を守ることだけが至上命題であるらしく、そんな余裕はなさそうだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…どうやらわが身の命を守ることだけが至上命題であるらしく、そんな余裕はなさそうだった。",
+			NULL, "……看来他们的至高使命只有保住自己的性命，根本没有那种余裕。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071879.「――――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071879", 256, TRUE);
+	OutputLine(NULL, "「————」",
+			NULL, "「————」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rふと、建物の影に目を向ける。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ふと、建物の影に目を向ける。",
+			NULL, "忽然，我把目光投向建筑物的阴影。", Line_Normal);
+	ClearMessage();
+
+//rおそらく逃げ遅れたのだろう、母親らしき女とその腕の中で小さな娘が、がたがたと震え私を見ていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おそらく逃げ遅れたのだろう、母親らしき女とその腕の中で小さな娘が、がたがたと震え私を見ていた。",
+			NULL, "大概是逃晚了吧，一个像是母亲的女人，和她怀里年幼的女儿，正瑟瑟发抖地看着我。", Line_Normal);
+	ClearMessage();
+
+//rその瞳に揺れているのは、恐怖と、…憎悪か。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その瞳に揺れているのは、恐怖と、…憎悪か。",
+			NULL, "那双眼睛里摇曳着的，是恐惧，……还是憎恨。", Line_Normal);
+	ClearMessage();
+
+//rしかしどれだけ相手を憎んでも、気持ちだけでは立ち向かえないことを理解できないのは、彼らが弱者だからなのか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかしどれだけ相手を憎んでも、気持ちだけでは立ち向かえないことを理解できないのは、彼らが弱者だからなのか。",
+			NULL, "然而无论多么憎恨对方，仅凭心情也无法挺身反抗。连这一点都无法理解，是因为他们本就是弱者吗？", Line_Normal);
+	ClearMessage();
+
+//rそうだ。弱者は弱者らしく、身の程を知れ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そうだ。弱者は弱者らしく、身の程を知れ。",
+			NULL, "没错。弱者就该像个弱者，认清自己的分量。", Line_Normal);
+	ClearMessage();
+
+//r自分たちがいかに分不相応なものを望んで、そのためには同朋を傷つけることも厭わない無慈悲をも許すことができたのか、その愚かさをじっくりと反芻するがいい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "自分たちがいかに分不相応なものを望んで、そのためには同朋を傷つけることも厭わない無慈悲をも許すことができたのか、その愚かさをじっくりと反芻するがいい。",
+			NULL, "你们究竟奢望了多么不配拥有的东西，又为了它容许了连同胞都可以伤害的残忍，好好去反省自己的愚蠢吧。", Line_Normal);
+	ClearMessage();
+
+//r貴様らが言う死後の世界――地獄というところで。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "貴様らが言う死後の世界——地獄というところで。",
+			NULL, "就在你们所说的死后世界——那个名叫地狱的地方。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM(1, 200, TRUE);
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "white", "down", 0, 0, 250 );
+	DrawScene("black", 500 );
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 500 );
+	PlaySE(3, "addse07", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu2", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//羽入rvS16/45/DS43071880.「きひゃははははははっっ！！k|yvS16/45/DS43071881.　あーひゃははははははははっっっ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071880", 256, TRUE);
+	OutputLine(NULL, "「きひゃははははははっっ！！",
+			NULL, "「嘻呀哈哈哈哈哈哈！！", Line_WaitForInput);
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(5, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071881", 256, TRUE);
+	OutputLine(NULL, "　あーひゃははははははははっっっ！！！」",
+			NULL, "啊——嘻呀哈哈哈哈哈哈哈！！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(5, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(5, "thisikuki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+	PlaySE(3, "dsse142", 256, 64);
+	DrawScene("white", 2000 );
+	DrawScene("black", 2000 );
+	Wait( 2000 );
+	PlayBGM( 1, "honou", 128, 0 );
+	DrawScene("background/jyt2_01", 1000 );
+
+//r逃げ遅れた者たちをあらかた片付けて、私はひとつの道をまっすぐ、悠然と歩んでいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "逃げ遅れた者たちをあらかた片付けて、私はひとつの道をまっすぐ、悠然と歩んでいた。",
+			NULL, "我大致收拾掉逃晚的人之后，便沿着一条道路悠然向前走去。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/sil3a", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(3, "dsse139", 256, 64);
+
+//羽入rvS16/45/DS43071882.「ふふ、うふふふふふふふふ。kvS16/45/DS43071883.あははははははははは…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071882", 256, TRUE);
+	OutputLine(NULL, "「ふふ、うふふふふふふふふ。",
+			NULL, "「呵呵，唔呵呵呵呵呵呵呵。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071883", 256, TRUE);
+	OutputLine(NULL, "あははははははははは…！！」",
+			NULL, "啊哈哈哈哈哈哈哈哈……！！」", Line_Normal);
+	ClearMessage();
+
+//r…ああ、聞こえる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…ああ、聞こえる。",
+			NULL, "……啊啊，听得见。", Line_Normal);
+	ClearMessage();
+
+//r声がだんだん、近くなる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "声がだんだん、近くなる。",
+			NULL, "声音渐渐近了。", Line_Normal);
+	ClearMessage();
+
+//rさっきまではうるさい騒音であったものが、徐々に人の声へと変わってゆく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さっきまではうるさい騒音であったものが、徐々に人の声へと変わってゆく。",
+			NULL, "刚才还只是吵闹噪音的东西，逐渐变成了人的声音。", Line_Normal);
+	ClearMessage();
+
+//rその言葉は全て、悲痛。恐怖。哀願。そして、――絶望。おそらくそのたぐいか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その言葉は全て、悲痛。恐怖。哀願。そして、——絶望。おそらくそのたぐいか。",
+			NULL, "那些话语全都是悲痛。恐惧。哀求。以及，——绝望。大概就是那一类。", Line_Normal);
+	ClearMessage();
+
+//rもはや、耳を澄ませて聞くまでもなかった。唯一の脱出路であるはずの、鬼ヶ淵村と隣村を結ぶつり橋が落ちていれば、当然そうなるだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もはや、耳を澄ませて聞くまでもなかった。唯一の脱出路であるはずの、鬼ヶ淵村と隣村を結ぶつり橋が落ちていれば、当然そうなるだろう。",
+			NULL, "已经无需侧耳细听了。原本应是唯一逃生路的鬼渊村与邻村相连的吊桥已经断落，自然会变成这样。", Line_Normal);
+	ClearMessage();
+
+//r助かると思っていればいるほど、死地に追い込まれたときの絶望は増大する。やつらは今、深い谷底を前にどんな顔をしているのか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "助かると思っていればいるほど、死地に追い込まれたときの絶望は増大する。やつらは今、深い谷底を前にどんな顔をしているのか。",
+			NULL, "越是相信自己能得救，被逼入死地时的绝望就越深。那些家伙如今站在深谷之前，会是什么表情呢？", Line_Normal);
+	ClearMessage();
+
+//r…そう思うと、熱くたぎった、愉悦にも似た感情が胸のうちからこみ上げてきて、思わず苦笑した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そう思うと、熱くたぎった、愉悦にも似た感情が胸のうちからこみ上げてきて、思わず苦笑した。",
+			NULL, "……一想到这里，胸中便涌起一股灼热翻腾、近似愉悦的情感，我不由得苦笑起来。", Line_Normal);
+	ClearMessage();
+
+//羽入r-vS16/45/DS43071884.（――結局、私は鬼…か）
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071884", 256, TRUE);
+	OutputLine(NULL, "（——結局、私は鬼…か）",
+			NULL, "（——到头来，我是鬼……吗）", Line_Normal);
+	ClearMessage();
+
+//rすでに捨てた感情だと思っていたのに、私の血が獲物を欲して騒ぎ立てる。どれだけ取り繕ってみても、この戦いに向けて伸びた爪と牙を見れば、誰も信じまい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "すでに捨てた感情だと思っていたのに、私の血が獲物を欲して騒ぎ立てる。どれだけ取り繕ってみても、この戦いに向けて伸びた爪と牙を見れば、誰も信じまい。",
+			NULL, "我以为自己早已舍弃了这份感情，可我的血却渴求猎物，喧嚣不止。无论再怎么粉饰，只要看见为了这场战斗而伸长的爪与牙，谁都不会相信。", Line_Normal);
+	ClearMessage();
+
+//r…桜花でさえ、きっと。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…桜花でさえ、きっと。",
+			NULL, "……就连樱花，也一定会。", Line_Normal);
+	ClearMessage();
+
+//rそう思うと、少しだけ寂しい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう思うと、少しだけ寂しい。",
+			NULL, "想到这里，我有一点寂寞。", Line_Normal);
+	ClearMessage();
+
+//rそれでも。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも。",
+			NULL, "……即使如此！", Line_Normal);
+	ClearMessage();
+
+//r私に残された道は、もうこれしかなかったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私に残された道は、もうこれしかなかったのだ。",
+			NULL, "留给我的道路，已经只有这一条了。", Line_Normal);
+	ClearMessage();
+
+//rそうだ。…きっと桜花なら、あの子なら、わかってくれる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そうだ。…きっと桜花なら、あの子なら、わかってくれる。",
+			NULL, "没错。……樱花一定会懂，那个孩子一定会懂。", Line_Normal);
+	ClearMessage();
+
+//rわかってくれるはずだ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "わかってくれるはずだ…。",
+			NULL, "她应该会懂的……", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071885.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071885", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rふと立ち止まって、耳を澄ませる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ふと立ち止まって、耳を澄ませる。",
+			NULL, "忽然停下脚步，侧耳倾听。", Line_Normal);
+	ClearMessage();
+
+//r…叫び声は、ずいぶん小さくなった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…叫び声は、ずいぶん小さくなった。",
+			NULL, "……叫喊声已经小了许多。", Line_Normal);
+	ClearMessage();
+
+//rかわりに惨めったらしく湿った、すすり泣きの声が聞こえる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "かわりに惨めったらしく湿った、すすり泣きの声が聞こえる。",
+			NULL, "取而代之的，是凄惨而湿冷的啜泣声。", Line_Normal);
+	ClearMessage();
+
+//rもはや、観念したか。…いや、まだなにかにすがりたくて、叶うこともない祈りを神にでも捧げているのだろうか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もはや、観念したか。…いや、まだなにかにすがりたくて、叶うこともない祈りを神にでも捧げているのだろうか。",
+			NULL, "已经认命了吗？……还是说，他们仍想抓住些什么，向神献上根本不会实现的祈祷呢？", Line_Normal);
+	ClearMessage();
+
+//rいいだろう。聞いてやろうぞ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いいだろう。聞いてやろうぞ。",
+			NULL, "好吧。就让我听听吧。", Line_Normal);
+	ClearMessage();
+
+//r私はオヤシロ様なり。貴様ら蒙昧で臆病な、ちっぽけな下等生物が崇め奉る、至高の神だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私はオヤシロ様なり。貴様ら蒙昧で臆病な、ちっぽけな下等生物が崇め奉る、至高の神だ。",
+			NULL, "我乃御社神。是你们这些蒙昧又胆怯、渺小的下等生物顶礼膜拜的至高之神。", Line_Normal);
+	ClearMessage();
+
+//rさぁ、祈れ。そして懺悔しろ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さぁ、祈れ。そして懺悔しろ。",
+			NULL, "来，祈祷吧。然后忏悔吧。", Line_Normal);
+	ClearMessage();
+
+//r貴様らの思い上がった行いを。愚劣きわまる考えを。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "貴様らの思い上がった行いを。愚劣きわまる考えを。",
+			NULL, "忏悔你们狂妄自大的行径，忏悔你们愚不可及的念头。", Line_Normal);
+	ClearMessage();
+
+//rさすればせめて、苦しみの少ない死を祈りの深いやつらから順に与えよう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さすればせめて、苦しみの少ない死を祈りの深いやつらから順に与えよう。",
+			NULL, "如此一来，至少我会从祈祷最虔诚的人开始，依次赐予痛苦较少的死亡。", Line_Normal);
+	ClearMessage();
+
+//rもっとも、恐怖だけは死んだほうがましなほどに味わわせてやるがな。くっくっくっく…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もっとも、恐怖だけは死んだほうがましなほどに味わわせてやるがな。くっくっくっく…！",
+			NULL, "当然，唯独恐惧，我会让你们品尝到生不如死的程度。呵呵呵呵……！", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071877.「あはははは…。kvS16/45/DS43071878.あはははははははは…っっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071877", 256, TRUE);
+	OutputLine(NULL, "「あはははは…。",
+			NULL, "「啊哈哈哈哈……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071878", 256, TRUE);
+	OutputLine(NULL, "あはははははははは…っっ！！」",
+			NULL, "啊哈哈哈哈哈哈哈哈……！！」", Line_Normal);
+	ClearMessage();
+
+//r…さて、祭もそろそろ終わりだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…さて、祭もそろそろ終わりだ。",
+			NULL, "……好了，祭典也差不多该结束了。", Line_Normal);
+	ClearMessage();
+
+//rおそらく縮こまって震えているであろう、やつらにどのような死を呉れてやろうか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おそらく縮こまって震えているであろう、やつらにどのような死を呉れてやろうか。",
+			NULL, "那些家伙大概正缩成一团发抖吧，我该赐给他们怎样的死法呢？", Line_Normal);
+	ClearMessage();
+
+//rそう思って、にたり…と笑いながら舌なめずりをしていたその時…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう思って、にたり…と笑いながら舌なめずりをしていたその時…。",
+			NULL, "我这么想着，咧嘴一笑，舔了舔嘴唇，就在那时……", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "dsse132", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 500 );
+	PlayBGM( 1, "kaze_lp", 128, 0 );
+
+//r背後に、人の気配がして立ち止まる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "背後に、人の気配がして立ち止まる。",
+			NULL, "背后有人气息，我停下了脚步。", Line_Normal);
+	ClearMessage();
+
+//r感じるのは、殺気…いや、こんなに澄んだ気配はそれじゃない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "感じるのは、殺気…いや、こんなに澄んだ気配はそれじゃない。",
+			NULL, "感觉到的是杀气……不，这样澄澈的气息并非杀气。", Line_Normal);
+	ClearMessage();
+
+//rさっき狩りもらした、兵士の誰かだろうか。…そう思い私は、振り返る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さっき狩りもらした、兵士の誰かだろうか。…そう思い私は、振り返る。",
+			NULL, "是刚才漏掉的某个士兵吗？……我这么想着，转过身去。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071886.「――――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071886", 256, TRUE);
+	OutputLine(NULL, "「————」",
+			NULL, "「————」", Line_Normal);
+	ClearMessage();
+
+//r半身で、振り返った姿勢のまま、私は。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "半身で、振り返った姿勢のまま、私は。",
+			NULL, "我维持着半侧身回头的姿势，就那样。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "jikuunosakeme", 256, 64);
+	Negative( 250, TRUE );
+	DrawScene("scene/406a", 1000 );
+	Wait( 500 );
+	FadeFilm( 1500, FALSE );
+	DrawScene("black", 1000 );
+
+//羽入rvS16/45/DS43071887.「……な…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071887", 256, TRUE);
+	OutputLine(NULL, "「……な…？」",
+			NULL, "「……什……？」", Line_Normal);
+	ClearMessage();
+
+//r凍りついたように、動けなくなった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "凍りついたように、動けなくなった。",
+			NULL, "像被冻结了一样，动弹不得。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406a", 250 );
+	PlaySE(3, "addse13", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlayBGM(2, "hm10_62", 128, 0);
+
+//羽入rvS16/45/DS43071888.「……桜、花…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071888", 256, TRUE);
+	OutputLine(NULL, "「……桜、花…？！」",
+			NULL, "「……樱、花……？！」", Line_Normal);
+	ClearMessage();
+
+//rそこに立っていたのは、紛れもなく桜花だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そこに立っていたのは、紛れもなく桜花だった。",
+			NULL, "站在那里的人，毫无疑问就是樱花。", Line_Normal);
+	ClearMessage();
+
+//r燃え盛る村の炎を背後にして、責めを受けて汚れ乱れた巫女服のまま。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "燃え盛る村の炎を背後にして、責めを受けて汚れ乱れた巫女服のまま。",
+			NULL, "她背对着燃烧正盛的村中火焰，仍穿着那身受辱后污损凌乱的巫女服。", Line_Normal);
+	ClearMessage();
+
+//rその右手には、ぎらりと鈍く輝く剣が一振り…握られていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その右手には、ぎらりと鈍く輝く剣が一振り…握られていた。",
+			NULL, "她的右手中，握着一柄泛着钝亮光芒的剑……", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071889.「桜花…。kvS16/45/DS43071890.け、怪我は大丈夫なのです、か…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071889", 256, TRUE);
+	OutputLine(NULL, "「桜花…。",
+			NULL, "「樱花……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071890", 256, TRUE);
+	OutputLine(NULL, "け、怪我は大丈夫なのです、か…？」",
+			NULL, "伤、伤势没事吧……？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rまさかここまで来る体力があるとも思っていなかった私は、真っ先に桜花の具合を案じて声をかける。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まさかここまで来る体力があるとも思っていなかった私は、真っ先に桜花の具合を案じて声をかける。",
+			NULL, "我完全没想到她还有体力走到这里，于是最先担心起樱花的状况，向她开口。", Line_Normal);
+	ClearMessage();
+
+//rしかし。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし。",
+			NULL, "可是——", Line_Normal);
+	ClearMessage();
+
+//r桜花は冷たい表情のまま、…じっと無言で、私をまっすぐ見つめていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花は冷たい表情のまま、…じっと無言で、私をまっすぐ見つめていた。",
+			NULL, "樱花仍是一脸冰冷，……静静无言地，笔直凝视着我。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406a", 1000 );
+
+//羽入rvS16/45/DS43071891.「お、桜花…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071891", 256, TRUE);
+	OutputLine(NULL, "「お、桜花…？」",
+			NULL, "「樱、樱花……？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406c", 250 );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS16/47/DS43010498.「……、ぐっ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010498", 256, TRUE);
+	OutputLine(NULL, "「……、ぐっ…！」",
+			NULL, "「……呜！……！」", Line_Normal);
+	ClearMessage();
+
+//rやがて、桜花は傷が痛むのか、苦しそうに顔をゆがめて膝を折る。それを見て、慌てて私は彼女の元へと駆け寄った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "やがて、桜花は傷が痛むのか、苦しそうに顔をゆがめて膝を折る。それを見て、慌てて私は彼女の元へと駆け寄った。",
+			NULL, "不久，樱花似乎因伤口疼痛，痛苦地扭曲脸庞，屈下膝盖。看到这一幕，我慌忙跑到她身边。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse10", 256, 64);
+	DrawScene("black", 1000 );
+
+//羽入rvS16/45/DS43071892.「だ、大丈夫ですかっ？kvS16/45/DS43071893.　おう――？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071892", 256, TRUE);
+	OutputLine(NULL, "「だ、大丈夫ですかっ？",
+			NULL, "「没、没事吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071893", 256, TRUE);
+	OutputLine(NULL, "　おう——？！」",
+			NULL, "樱——？！」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010499.「……っ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010499", 256, TRUE);
+	OutputLine(NULL, "「……っ！！」",
+			NULL, "「……！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("scene/406a", 250 );
+	PlaySE(3, "dsse20", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071894.「……………え？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071894", 256, TRUE);
+	OutputLine(NULL, "「……………え？」",
+			NULL, "「……咦？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r一瞬。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "一瞬。",
+			NULL, "一瞬。", Line_Normal);
+	ClearMessage();
+
+//r私は何が起こったのか、よく分からなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は何が起こったのか、よく分からなかった。",
+			NULL, "我完全不明白发生了什么。", Line_Normal);
+	ClearMessage();
+
+//rいや、違う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いや、違う。",
+			NULL, "不，不对。", Line_Normal);
+	ClearMessage();
+
+//r脳が、目の前の事実を拒絶した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "脳が、目の前の事実を拒絶した。",
+			NULL, "大脑拒绝接受眼前的事实。", Line_Normal);
+	ClearMessage();
+
+//r桜花が……私に、剣を振るったのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花が……私に、剣を振るったのだ。",
+			NULL, "樱花……对我挥下了剑。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071895.「……な……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071895", 256, TRUE);
+	OutputLine(NULL, "「……な……？」",
+			NULL, "「……什……？」", Line_Normal);
+	ClearMessage();
+
+//r剣先をかすめた頬から、血が流れ出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "剣先をかすめた頬から、血が流れ出す。",
+			NULL, "被剑尖擦过的脸颊上，鲜血流了出来。", Line_Normal);
+	ClearMessage();
+
+//r大した傷でもなく、痛みも感じなかった。それよりも…冷たく、寒い…頭を思い切り殴られたような衝撃があった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "大した傷でもなく、痛みも感じなかった。それよりも…冷たく、寒い…頭を思い切り殴られたような衝撃があった。",
+			NULL, "伤势并不严重，我也没有感觉到疼痛。比起那些……更有一种冰冷、发寒……仿佛脑袋被狠狠殴打的冲击。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071896.「な、なにを……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071896", 256, TRUE);
+	OutputLine(NULL, "「な、なにを……？」",
+			NULL, "「你、你在做什么……？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406c", 250 );
+	PlaySE(3, "furu", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS16/47/DS43010500.「――――あなたの、弱点…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010500", 256, TRUE);
+	OutputLine(NULL, "「————あなたの、弱点…」",
+			NULL, "「————你的弱点……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse20", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("scene/406a", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//r桜花は呟きながら、手に持つ剣の刃に手のひらを当てると、そっと握り締めて自らの血を剣の刃先へと注ぎ込む。そして、俯いていた顔をきっ、と上げた瞬間――一気に間合いを詰めて斬りかかってきた！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花は呟きながら、手に持つ剣の刃に手のひらを当てると、そっと握り締めて自らの血を剣の刃先へと注ぎ込む。そして、俯いていた顔をきっ、と上げた瞬間——一気に間合いを詰めて斬りかかってきた！",
+			NULL, "樱花低声说着，将手掌贴上手中剑刃，轻轻握紧，让自己的血流向剑锋。接着，她猛地抬起低垂的脸——一口气拉近距离，向我斩来！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	DrawScene("black", 500 );
+
+//羽入rvS16/45/DS43071897.「わあぁぁっっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071897", 256, TRUE);
+	OutputLine(NULL, "「わあぁぁっっ？！」",
+			NULL, "「哇啊啊？！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "metal43", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 500 );
+
+//rとっさに私は爪を構え、その一撃を防ぐ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とっさに私は爪を構え、その一撃を防ぐ。",
+			NULL, "我反射性地架起爪子，挡下那一击。", Line_Normal);
+	ClearMessage();
+
+//rしかし、易々と受け止めるはずの爪は剣と交わった瞬間、飴の棒を叩き折るかのように根元から砕け、宙に舞って地面に突き刺さった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし、易々と受け止めるはずの爪は剣と交わった瞬間、飴の棒を叩き折るかのように根元から砕け、宙に舞って地面に突き刺さった。",
+			NULL, "然而本应轻易接住剑刃的爪，在与剑相交的瞬间，像被敲断的糖棒一样从根部粉碎，飞上半空后刺入地面。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406a", 250 );
+	PlaySE(3, "tataku", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071898.「なっ……？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071898", 256, TRUE);
+	OutputLine(NULL, "「なっ……？！」",
+			NULL, "「什……？！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406b", 1000 );
+
+//桜花rvS16/47/DS43010501.「同種の血は、諸刃の剣。kvS16/47/DS43010502.身体の硬質化を妨げてしまうから…だったわよね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010501", 256, TRUE);
+	OutputLine(NULL, "「同種の血は、諸刃の剣。",
+			NULL, "「同种的血，是双刃剑。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010502", 256, TRUE);
+	OutputLine(NULL, "身体の硬質化を妨げてしまうから…だったわよね？」",
+			NULL, "因为它会妨碍身体硬质化……对吧？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071899.「そっ…？kvS16/45/DS43071900.　お、桜花それは…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071899", 256, TRUE);
+	OutputLine(NULL, "「そっ…？",
+			NULL, "「那……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071900", 256, TRUE);
+	OutputLine(NULL, "　お、桜花それは…？！」",
+			NULL, "樱、樱花，那是……？！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406c", 1000 );
+
+//桜花rvS16/47/DS43010503.「もうひとつ。kvS16/47/DS43010504.あなたの身体を守る結界も…同じことっっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010503", 256, TRUE);
+	OutputLine(NULL, "「もうひとつ。",
+			NULL, "「还有一个。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010504", 256, TRUE);
+	OutputLine(NULL, "あなたの身体を守る結界も…同じことっっ！！」",
+			NULL, "保护你身体的结界……也是一样！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sword", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	DrawScene("black", 250 );
+
+//羽入rvS16/45/DS43071901.「ぐわぁぁあぁぁっっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071901", 256, TRUE);
+	OutputLine(NULL, "「ぐわぁぁあぁぁっっ！！」",
+			NULL, "「咕哇啊啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 500 );
+	PlaySE(3, "addse07", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu2", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//r袈裟懸けに斬られ、防ぐ間もなかった私は右肩を押さえてよろめく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "袈裟懸けに斬られ、防ぐ間もなかった私は右肩を押さえてよろめく。",
+			NULL, "我被斜斜砍中，连防御都来不及，只能按住右肩踉跄后退。", Line_Normal);
+	ClearMessage();
+
+//rじくじくと、生温い鮮血が傷口からあふれ出して、ものすごい激痛が全身を駆け巡って失神しそうになった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "じくじくと、生温い鮮血が傷口からあふれ出して、ものすごい激痛が全身を駆け巡って失神しそうになった。",
+			NULL, "温热的鲜血从伤口一阵阵溢出，强烈到可怕的剧痛窜遍全身，几乎让我昏过去。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそうだ…思い出した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そうだ…思い出した。",
+			NULL, "对了……我想起来了。", Line_Normal);
+	ClearMessage();
+
+//r『bグリフィス.<混血>』との戦闘以外で傷を負ったのは…二十数年前のこと。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『混血(グリフィス)』との戦闘以外で傷を負ったのは…二十数年前のこと。",
+			NULL, "『除了和『混血』战斗以外，我上一次受伤……已经是二十多年前的事。", Line_Normal);
+	ClearMessage();
+
+//r沢で熊と格闘になり、うっかり踏んだ木の根もとで足を傷つけて以来だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "沢で熊と格闘になり、うっかり踏んだ木の根もとで足を傷つけて以来だった。",
+			NULL, "那时我在山涧和熊搏斗，不小心踩到树根，把脚弄伤。自那以后就再也没有过。", Line_Normal);
+	ClearMessage();
+
+//rそしてあの時、助けてくれたのは――目の前の優しいひとの、父だった人物。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そしてあの時、助けてくれたのは——目の前の優しいひとの、父だった人物。",
+			NULL, "而那时，救了我的——正是眼前这个温柔之人的父亲。", Line_Normal);
+	ClearMessage();
+
+//rその娘が、剣を振るって私を、傷つける……？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その娘が、剣を振るって私を、傷つける……？！",
+			NULL, "他的女儿，如今挥剑伤了我……？！", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071902.「ど、どうしてなのです…桜花っ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071902", 256, TRUE);
+	OutputLine(NULL, "「ど、どうしてなのです…桜花っ？！」",
+			NULL, "「为、为什么的说……樱花？！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406a", 1000 );
+
+//桜花rvS16/47/DS43010505.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010505", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r桜花は答えない。ただ黙って剣に自らの血を染み渡らせながら、私の隙をうかがうように間合いを詰めてきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花は答えない。ただ黙って剣に自らの血を染み渡らせながら、私の隙をうかがうように間合いを詰めてきた。",
+			NULL, "樱花没有回答。她只是沉默着让自己的血浸透剑身，同时窥伺我的破绽，慢慢逼近。", Line_Normal);
+	ClearMessage();
+
+//rその眉間には、わずかに歪んだしわが見える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その眉間には、わずかに歪んだしわが見える。",
+			NULL, "她的眉间，能看见一丝扭曲的皱纹。", Line_Normal);
+	ClearMessage();
+
+//rそれが、桜花の苦悩を表していると…私は、信じたかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それが、桜花の苦悩を表していると…私は、信じたかった。",
+			NULL, "我想相信，那正表现着樱花的痛苦。", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071903.「桜花、なぜなのです？kvS16/45/DS43071904.　なぜ、私に剣を？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071903", 256, TRUE);
+	OutputLine(NULL, "「桜花、なぜなのです？",
+			NULL, "「樱花，为什么的说？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071904", 256, TRUE);
+	OutputLine(NULL, "　なぜ、私に剣を？！」",
+			NULL, "为什么要向我举剑？！」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010506.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010506", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071905.「おかしいでしょう？　変でしょうっ？kvS16/45/DS43071906.　私は桜花のことが、大好きだった！kvS16/45/DS43071907.　あなたの願いは、何でも聞いてきた！kvS16/45/DS43071908.　無茶なことさえもっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071905", 256, TRUE);
+	OutputLine(NULL, "「おかしいでしょう？　変でしょうっ？",
+			NULL, "「这不是很奇怪吗？很反常吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071906", 256, TRUE);
+	OutputLine(NULL, "　私は桜花のことが、大好きだった！",
+			NULL, "我明明最喜欢樱花了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071907", 256, TRUE);
+	OutputLine(NULL, "　あなたの願いは、何でも聞いてきた！",
+			NULL, "你的愿望，我什么都听了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071908", 256, TRUE);
+	OutputLine(NULL, "　無茶なことさえもっ！」",
+			NULL, "连任性的事也一样！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071909.「あなたが危ない目に遭うと解ったときは、力になりたいと言った！kvS16/45/DS43071910.　本気で思った！kvS16/45/DS43071911.　それなのに…なのに、なぜっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071909", 256, TRUE);
+	OutputLine(NULL, "「あなたが危ない目に遭うと解ったときは、力になりたいと言った！",
+			NULL, "「我知道你会遇到危险时，说过想帮你的忙！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071910", 256, TRUE);
+	OutputLine(NULL, "　本気で思った！",
+			NULL, "我是真心这么想的！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071911", 256, TRUE);
+	OutputLine(NULL, "　それなのに…なのに、なぜっ？！」",
+			NULL, "可是……可是，为什么？！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406b", 1000 );
+
+//桜花rvS16/47/DS43010507.「………人は……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010507", 256, TRUE);
+	OutputLine(NULL, "「………人は……」",
+			NULL, "「……人类……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 500 );
+
+//rそっと、桜花は無表情のまま、流れる血をそのままに手のひらを添え、剣を両手に構える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そっと、桜花は無表情のまま、流れる血をそのままに手のひらを添え、剣を両手に構える。",
+			NULL, "樱花轻轻地、仍旧面无表情，任由鲜血流淌，将手掌贴上剑柄，双手持剑。", Line_Normal);
+	ClearMessage();
+
+//r次で、私を倒す――その強い思いが、黒い瞳からびりびりと伝わってきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "次で、私を倒す——その強い思いが、黒い瞳からびりびりと伝わってきた。",
+			NULL, "下一击就要打倒我——那强烈的意志，从她漆黑的瞳孔中刺痛般传来。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406a", 1000 );
+
+//桜花rvS16/47/DS43010508.「人はね……鬼と住むことは…できないの…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010508", 256, TRUE);
+	OutputLine(NULL, "「人はね……鬼と住むことは…できないの…」",
+			NULL, "「人啊……无法和鬼……住在一起的……」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071912.「……なっ……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071912", 256, TRUE);
+	OutputLine(NULL, "「……なっ……！」",
+			NULL, "「……什！……！」", Line_Normal);
+	ClearMessage();
+
+//rそれでも。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それでも。",
+			NULL, "……即使如此！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406c", 1000 );
+
+//桜花rvS16/47/DS43010509.「夢を見たわ…。kvS16/47/DS43010510.あなたと、私の家族と、楽しく過ごす夢…。kvS16/47/DS43010511.娘もきっと、あなたのことを大好きになると、思った…。kvS16/47/DS43010512.だって、私があなたのこと、大好きだったから…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010509", 256, TRUE);
+	OutputLine(NULL, "「夢を見たわ…。",
+			NULL, "「我做了一个梦……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010510", 256, TRUE);
+	OutputLine(NULL, "あなたと、私の家族と、楽しく過ごす夢…。",
+			NULL, "梦见和你，还有我的家人，快乐地生活在一起……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010511", 256, TRUE);
+	OutputLine(NULL, "娘もきっと、あなたのことを大好きになると、思った…。",
+			NULL, "我以为女儿也一定会喜欢上你……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010512", 256, TRUE);
+	OutputLine(NULL, "だって、私があなたのこと、大好きだったから…」",
+			NULL, "因为我曾经那么喜欢你……」", Line_Normal);
+	ClearMessage();
+
+//rその目は、かすかに…、いや、はっきりと潤んで、涙に揺れていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その目は、かすかに…、いや、はっきりと潤んで、涙に揺れていた。",
+			NULL, "那双眼睛微微……不，是清楚地湿润了，在泪光中摇曳。", Line_Normal);
+	ClearMessage();
+
+//rわからない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "わからない。",
+			NULL, "……不知道。", Line_Normal);
+	ClearMessage();
+
+//rどうして、そんなに悲しい顔で、私を見るの。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "どうして、そんなに悲しい顔で、私を見るの。",
+			NULL, "为什么，要用那么悲伤的表情看着我呢？", Line_Normal);
+	ClearMessage();
+
+//r私といるときが、一番楽しい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私といるときが、一番楽しい。",
+			NULL, "和我在一起的时候，最开心。", Line_Normal);
+	ClearMessage();
+
+//rそう言って…笑顔でそう言ってくれたのは、桜花――あなただったのに！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って…笑顔でそう言ってくれたのは、桜花——あなただったのに！！",
+			NULL, "明明这样说过……带着笑容这样告诉我的人，是樱花——就是你啊！！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071913.「どうして、あなたはあんなやつらをかばうのですっ？！kvS16/45/DS43071914.　やつらは、あなたを騙した！kvS16/45/DS43071915.　それどころか、付け込んで利用しようとした！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071913", 256, TRUE);
+	OutputLine(NULL, "「どうして、あなたはあんなやつらをかばうのですっ？！",
+			NULL, "「为什么，你要袒护那些家伙的说？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071914", 256, TRUE);
+	OutputLine(NULL, "　やつらは、あなたを騙した！",
+			NULL, "那些家伙，骗了你！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071915", 256, TRUE);
+	OutputLine(NULL, "　それどころか、付け込んで利用しようとした！」",
+			NULL, "甚至还想趁机利用你！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071916.「それだけで万死、生きるに値しないッ！kvS16/45/DS43071917.　しかもやつらは、あなたと、あなたの家族をッッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071916", 256, TRUE);
+	OutputLine(NULL, "「それだけで万死、生きるに値しないッ！",
+			NULL, "「光凭这一点，他们就该死万遍，根本没有活着的价值！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071917", 256, TRUE);
+	OutputLine(NULL, "　しかもやつらは、あなたと、あなたの家族をッッ！！」",
+			NULL, "而且那些家伙，还对你和你的家人！！」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010513.「………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010513", 256, TRUE);
+	OutputLine(NULL, "「………」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071918.「殺されて当然なんだ、やつらはっ！kvS16/45/DS43071919.　私と、桜花の思いを、時間をめちゃめちゃにしてっ！kvS16/45/DS43071920.　生きていても益はない、最低最悪の生物だ！！kvS16/45/DS43071921.　いや、生物と同列に扱うことすらおぞましい！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071918", 256, TRUE);
+	OutputLine(NULL, "「殺されて当然なんだ、やつらはっ！",
+			NULL, "「他们死有余辜啊！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071919", 256, TRUE);
+	OutputLine(NULL, "　私と、桜花の思いを、時間をめちゃめちゃにしてっ！",
+			NULL, "把我和樱花的心意、我们的时光，全都毁得一塌糊涂！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071920", 256, TRUE);
+	OutputLine(NULL, "　生きていても益はない、最低最悪の生物だ！！",
+			NULL, "他们是活着也毫无益处、最低劣最恶心的生物！！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071921", 256, TRUE);
+	OutputLine(NULL, "　いや、生物と同列に扱うことすらおぞましい！」",
+			NULL, "不，把他们和生物相提并论都令人作呕！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071922.「害を吐き散らかして、この世のありとあらゆるものを食い散らかして蝕むゴミだ！！！　kvS16/45/DS43071923.そうでしょう、桜花っ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071922", 256, TRUE);
+	OutputLine(NULL, "「害を吐き散らかして、この世のありとあらゆるものを食い散らかして蝕むゴミだ！！！　",
+			NULL, "「他们是散播毒害、啃食侵蚀世上一切的垃圾！！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071923", 256, TRUE);
+	OutputLine(NULL, "そうでしょう、桜花っ？！」",
+			NULL, "对吧，樱花？！」", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010514.「……そうよ。kvS16/47/DS43010515.でもね、羽入――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010514", 256, TRUE);
+	OutputLine(NULL, "「……そうよ。",
+			NULL, "「……是啊。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010515", 256, TRUE);
+	OutputLine(NULL, "でもね、羽入——」",
+			NULL, "可是呢，羽入——」", Line_Normal);
+	ClearMessage();
+
+//r桜花の瞳から…大粒の涙が、ぽろりと零れ落ちて流れる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花の瞳から…大粒の涙が、ぽろりと零れ落ちて流れる。",
+			NULL, "樱花的眼中……大颗泪珠啪嗒一声滚落。", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010516.「私も…その最低最悪の、生物なの。kvS16/47/DS43010517.ゴミなのです、母さま…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010516", 256, TRUE);
+	OutputLine(NULL, "「私も…その最低最悪の、生物なの。",
+			NULL, "「我也是……那种最低劣最恶心的，生物。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010517", 256, TRUE);
+	OutputLine(NULL, "ゴミなのです、母さま…？」",
+			NULL, "也是垃圾啊，母亲大人……？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071924.「――！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071924", 256, TRUE);
+	OutputLine(NULL, "「——！！！」",
+			NULL, "「——！！！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r知っていた…？　この子は、最初から自分の出生を知っていて、私を――？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "知っていた…？　この子は、最初から自分の出生を知っていて、私を——？！",
+			NULL, "她知道……？这个孩子从一开始就知道自己的出身，也知道我就是她的——？！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071925.「…ち、違う！kvS16/45/DS43071926.　桜花は、私のっ――！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071925", 256, TRUE);
+	OutputLine(NULL, "「…ち、違う！",
+			NULL, "「……不、不是！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071926", 256, TRUE);
+	OutputLine(NULL, "　桜花は、私のっ——！」",
+			NULL, "樱花是，我的！——！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "tataku", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS16/47/DS43010518.「違わないっっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010518", 256, TRUE);
+	OutputLine(NULL, "「違わないっっ！！」",
+			NULL, "「就是这样！！」", Line_Normal);
+	ClearMessage();
+
+//rやがて、ゆっくりと。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "やがて、ゆっくりと。",
+			NULL, "随后，慢慢地。", Line_Normal);
+	ClearMessage();
+
+//r本当に、…ゆっくりと顔を上げて、…桜花は、微笑んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "本当に、…ゆっくりと顔を上げて、…桜花は、微笑んだ。",
+			NULL, "真的，……慢慢地抬起脸，……樱花微笑了。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406b", 1000 );
+
+//桜花rvS16/47/DS43010519.「そして…この惨劇を生んだのは、紛れもない私。kvS16/47/DS43010520.私が母さまに、無理なお願いをしてしまったから。kvS16/47/DS43010521.…母さまを、頼ってしまったから…っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010519", 256, TRUE);
+	OutputLine(NULL, "「そして…この惨劇を生んだのは、紛れもない私。",
+			NULL, "「而且……造成这场惨剧的人，毫无疑问是我。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010520", 256, TRUE);
+	OutputLine(NULL, "私が母さまに、無理なお願いをしてしまったから。",
+			NULL, "因为我向母亲大人提出了无理的请求。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010521", 256, TRUE);
+	OutputLine(NULL, "…母さまを、頼ってしまったから…っ！」",
+			NULL, "……因为我，依赖了母亲大人……！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071927.「そ、そんなの…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071927", 256, TRUE);
+	OutputLine(NULL, "「そ、そんなの…」",
+			NULL, "「那、那种事……」", Line_Normal);
+	ClearMessage();
+
+//r私は、震える声を絞り出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は、震える声を絞り出す。",
+			NULL, "我挤出颤抖的声音。", Line_Normal);
+	ClearMessage();
+
+//r否定したかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "否定したかった。",
+			NULL, "我想否定它。", Line_Normal);
+	ClearMessage();
+
+//r陸と出会い、桜花が生まれて、…この世界で得られた、幸せな時間。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "陸と出会い、桜花が生まれて、…この世界で得られた、幸せな時間。",
+			NULL, "与陆相遇，樱花诞生，……我在这个世界得到的幸福时光。", Line_Normal);
+	ClearMessage();
+
+//rそれが、この惨劇につながったなんて…認められない。認められるわけがなかった！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それが、この惨劇につながったなんて…認められない。認められるわけがなかった！",
+			NULL, "那竟然连接着这场惨剧……我无法承认。根本无法承认！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("scene/406c", 1000 );
+
+//桜花rvS16/47/DS43010522.「だから…裁かれるべきは、私。kvS16/47/DS43010523.そして、この村への災厄を守るため、この生命を投げ出すのが…古手の家に生まれた者の、定め……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010522", 256, TRUE);
+	OutputLine(NULL, "「だから…裁かれるべきは、私。",
+			NULL, "「所以……应该受审判的是我。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010523", 256, TRUE);
+	OutputLine(NULL, "そして、この村への災厄を守るため、この生命を投げ出すのが…古手の家に生まれた者の、定め……！」",
+			NULL, "而为了守护这个村子免遭灾厄，献出这条性命……就是生于古手家之人的宿命……！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "tataku", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS16/45/DS43071928.「なんで…なんでそうなるのですか、桜花っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071928", 256, TRUE);
+	OutputLine(NULL, "「なんで…なんでそうなるのですか、桜花っ！」",
+			NULL, "「为什么……为什么会变成这样啊，樱花！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r間違ってる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "間違ってる。",
+			NULL, "这错了。", Line_Normal);
+	ClearMessage();
+
+//r間違ってる、桜花！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "間違ってる、桜花！",
+			NULL, "错了啊，樱花！", Line_Normal);
+	ClearMessage();
+
+//rそんな運命、あなたには似合わない！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そんな運命、あなたには似合わない！",
+			NULL, "那样的命运，配不上你！", Line_Normal);
+	ClearMessage();
+
+//r桜花は、もっと幸せで生きる資格があるはずなんだっ！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "桜花は、もっと幸せで生きる資格があるはずなんだっ！",
+			NULL, "樱花应该有资格更加幸福地活下去啊！", Line_Normal);
+	ClearMessage();
+
+//桜花rvS16/47/DS43010524.「だから――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010524", 256, TRUE);
+	OutputLine(NULL, "「だから——」",
+			NULL, "「所以——」", Line_Normal);
+	ClearMessage();
+
+//rすっ、と桜花は剣を正眼に構える。そして――。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "すっ、と桜花は剣を正眼に構える。そして——。",
+			NULL, "樱花刷地将剑摆成正眼架势。然后——", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse20", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("scene/406c", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//桜花rvS16/47/DS43010525.「かかって来いッッ！kvS16/47/DS43010526.　この――バケモノォォオォォッッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6a7ad6>桜花</color>", NULL, "<color=#6a7ad6>樱花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010525", 256, TRUE);
+	OutputLine(NULL, "「かかって来いッッ！",
+			NULL, "「放马过来！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 47, "ps3/s16/47/ds43010526", 256, TRUE);
+	OutputLine(NULL, "　この——バケモノォォオォォッッ！！！」",
+			NULL, "你这个——怪物啊啊啊啊！！！」", Line_Normal);
+	ClearMessage();
+
+//羽入rvS16/45/DS43071929.「う…ウワアァァァアァァ――ッッッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 45, "ps3/s16/45/ds43071929", 256, TRUE);
+	OutputLine(NULL, "「う…ウワアァァァアァァ——ッッッ！！！」",
+			NULL, "「呜……呜哇啊啊啊啊——！！！」", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "k1-swing", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	DrawScene("black", 250 );
+	PlaySE(3, "rena-swing", 256, 64);
+	DrawSceneWithMask( "white", "right", 0, 0, 250 );
+	DrawScene("black", 250 );
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

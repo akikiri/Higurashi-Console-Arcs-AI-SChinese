@@ -1,0 +1,183 @@
+void main()
+{
+
+//*TIPS 54
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//大災害
+
+	DrawScene("background/hi1", 1000 );
+	PlayBGM(2, "hm04_19", 128, 0);
+
+//r昭和５８年６月２２日未明。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "昭和５８年６月２２日未明。",
+			NULL, "昭和58年6月22日凌晨。", Line_Normal);
+	ClearMessage();
+
+//r鹿骨市雛見沢村で、広域災害が発生。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "鹿骨市雛見沢村で、広域災害が発生。",
+			NULL, "鹿骨市雏见泽村发生大范围灾害。", Line_Normal);
+	ClearMessage();
+
+//r雛見沢地区水源地のひとつ、鬼ヶ淵沼より火山性ガス（硫化水素・二酸化炭素）が噴出し、村内全域を覆った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "雛見沢地区水源地のひとつ、鬼ヶ淵沼より火山性ガス（硫化水素・二酸化炭素）が噴出し、村内全域を覆った。",
+			NULL, "火山气体（硫化氢、二氧化碳）从雏见泽地区水源之一的鬼渊沼喷出，覆盖全村。", Line_Normal);
+	ClearMessage();
+
+//r犠牲者１２００余名。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "犠牲者１２００余名。",
+			NULL, "遇难者逾1200人。", Line_Normal);
+	ClearMessage();
+
+//r行方不明者２０余名。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "行方不明者２０余名。",
+			NULL, "失踪者逾20人。", Line_Normal);
+	ClearMessage();
+
+//r周辺自治体から約６０万人が避難する空前の大災害となった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "周辺自治体から約６０万人が避難する空前の大災害となった。",
+			NULL, "周边地方行政区域约有60万人被疏散，酿成前所未有的重大灾害。", Line_Normal);
+	ClearMessage();
+
+//rその後の調査により、鬼ヶ淵沼の直下にマグマ溜りと温泉があることがわかり、そこより湧き出したガスが、災害の原因であると断定した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その後の調査により、鬼ヶ淵沼の直下にマグマ溜りと温泉があることがわかり、そこより湧き出したガスが、災害の原因であると断定した。",
+			NULL, "后续调查发现，鬼渊沼正下方存在岩浆库与温泉，最终认定由此涌出的气体是本次灾害的成因。", Line_Normal);
+	ClearMessage();
+
+//rまた、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を『祟り』と騒ぐ者が続出し、初期の混乱を煽り立てた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "また、災害発生直後から、雛見沢村の伝承になぞらえてこの災害を『祟り』と騒ぐ者が続出し、初期の混乱を煽り立てた。",
+			NULL, "此外，灾害发生后不久，大批民众援引雏见泽村传说，将此次灾害称为『作祟』，加剧了初期的混乱。", Line_Normal);
+	ClearMessage();
+
+//r雛見沢村には、祟りがあると瘴気が湧き出して、村を滅ぼすとの伝承があったといい、学者からは過去にも同様のガス災害があり、それが伝承として残ったのではないかと指摘する声があがっている。
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "雛見沢村には、祟りがあると瘴気が湧き出して、村を滅ぼすとの伝承があったといい、学者からは過去にも同様のガス災害があり、それが伝承として残ったのではないかと指摘する声があがっている。",
+			NULL, "<size=-2>据称，雏见泽村流传着作祟时会涌出瘴气、毁灭村庄的传说。有学者指出，过去或许也曾发生类似的气体灾害，并以传说的形式流传下来。", Line_Normal);
+	} else {
+		OutputLine(NULL, "雛見沢村には、祟りがあると瘴気が湧き出して、村を滅ぼすとの伝承があったといい、学者からは過去にも同様のガス災害があり、それが伝承として残ったのではないかと指摘する声があがっている。",
+			NULL, "据称，雏见泽村流传着作祟时会涌出瘴气、毁灭村庄的传说。有学者指出，过去或许也曾发生类似的气体灾害，并以传说的形式流传下来。", Line_Normal);
+	}
+	ClearMessage();
+
+//r一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、『オヤシロさまの祟り説』を煽り立てた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "一部の過激な週刊誌報道は、雛見沢村で数年間にわたり起こっていた連続怪死事件の延長にあるのではないかとし、『オヤシロさまの祟り説』を煽り立てた。",
+			NULL, "部分言论激进的周刊声称，本次灾害可能是雏见泽村数年来连续怪死事件的延续，并大肆渲染『御社神作祟说』。", Line_Normal);
+	ClearMessage();
+
+//rまた、災害を免れた雛見沢村住民の親類筋の人間たちが、災害後、体調不良を次々に訴え入院し、その一部が原因不明の病死を遂げた事も、それをさらに過激に煽り立てた。
+	if (GetGlobalFlag(GADVMode)) {
+		OutputLineAll("", NULL, Line_ContinueAfterTyping);
+		OutputLine(NULL, "また、災害を免れた雛見沢村住民の親類筋の人間たちが、災害後、体調不良を次々に訴え入院し、その一部が原因不明の病死を遂げた事も、それをさらに過激に煽り立てた。",
+			NULL, "<size=-2>此外，逃过灾害的雏见泽村民之亲属在灾后接连出现身体不适并住院，其中一部分人更因不明原因病逝，使舆论进一步趋于激烈。", Line_Normal);
+	} else {
+		OutputLine(NULL, "また、災害を免れた雛見沢村住民の親類筋の人間たちが、災害後、体調不良を次々に訴え入院し、その一部が原因不明の病死を遂げた事も、それをさらに過激に煽り立てた。",
+			NULL, "此外，逃过灾害的雏见泽村民之亲属在灾后接连出现身体不适并住院，其中一部分人更因不明原因病逝，使舆论进一步趋于激烈。", Line_Normal);
+	}
+	ClearMessage();
+
+//rその上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、…もう全国に波及する衝撃には歯止めがなくなっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その上、オヤシロさまの祟りに取り憑かれたと自称する親類筋の何人かが奇怪な方法で自殺を遂げると、…もう全国に波及する衝撃には歯止めがなくなっていた。",
+			NULL, "其后，又有数名亲属自称遭御社神作祟附体，以离奇方式自杀……至此，席卷全国的冲击已再也无法遏止。", Line_Normal);
+	ClearMessage();
+
+//r真夜中に音もなく忍び寄り、人々を殺してしまう恐ろしい毒ガスの妄想は日本全国へ飛び火し、不眠・呼吸困難・頭痛・めまい等を訴える人間を続出させた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "真夜中に音もなく忍び寄り、人々を殺してしまう恐ろしい毒ガスの妄想は日本全国へ飛び火し、不眠・呼吸困難・頭痛・めまい等を訴える人間を続出させた。",
+			NULL, "关于可在深夜无声逼近、夺人性命的恐怖毒气之妄想蔓延至日本全国，接连有人声称出现失眠、呼吸困难、头痛、眩晕等症状。", Line_Normal);
+	ClearMessage();
+
+//r中には取り憑かれたと自称し、奇行を行なう者もいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "中には取り憑かれたと自称し、奇行を行なう者もいた。",
+			NULL, "其中也有人自称遭到附体，并做出怪异举动。", Line_Normal);
+	ClearMessage();
+
+//rそれらのほとんどは過激な報道による思い込みによるものだったが、…後にこれらの雛見沢大災害に起因する精神疾患を雛見沢症候群と呼ぶまでに至る…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それらのほとんどは過激な報道による思い込みによるものだったが、…後にこれらの雛見沢大災害に起因する精神疾患を雛見沢症候群と呼ぶまでに至る…。",
+			NULL, "这些情况大多源于激进报道所造成的心理暗示……然而后来，由雏见泽大灾害引发的此类精神疾病，甚至被统称为『雏见泽综合征』……", Line_Normal);
+	ClearMessage();
+
+//rさまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さまざまな噂や憶測の的となった雛見沢村地区は現在、封鎖され、その上空の飛行も禁止されている。",
+			NULL, "成为各种传闻与臆测中心的雏见泽村地区目前已被封锁，其上空亦禁止飞行。", Line_Normal);
+	ClearMessage();
+
+//rガスの濃度低下により、一度は封鎖が解除されかけたが、同年秋に再びガスの噴出が確認され、再び周辺一帯は封鎖された。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ガスの濃度低下により、一度は封鎖が解除されかけたが、同年秋に再びガスの噴出が確認され、再び周辺一帯は封鎖された。",
+			NULL, "随着气体浓度降低，封锁一度接近解除；但同年秋季再次确认有气体喷出，周边地区遂重新封锁。", Line_Normal);
+	ClearMessage();
+
+//r現地には、生活の痕跡を残したまま、朽ちるに任せた村が、こんこんと眠り続けているという話である…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "現地には、生活の痕跡を残したまま、朽ちるに任せた村が、こんこんと眠り続けているという話である…。",
+			NULL, "据说，在那片土地上，一座保留着生活痕迹、任凭岁月侵蚀的村庄，至今仍在静静沉睡……", Line_Normal);
+	ClearMessage();
+
+//r最終的な生存者は、雛見沢村に在住の女子学生、園崎魅音さんのみ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "最終的な生存者は、雛見沢村に在住の女子学生、園崎魅音さんのみ。",
+			NULL, "最终确认的生还者，仅有居住在雏见泽村的女学生园崎魅音。", Line_Normal);
+	ClearMessage();
+
+//r救出時は衰弱が激しく、中度の脱水症状で意識が混濁していたが、必死の救命活動の結果、一命を取り留めた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "救出時は衰弱が激しく、中度の脱水症状で意識が混濁していたが、必死の救命活動の結果、一命を取り留めた。",
+			NULL, "获救时，她身体极度虚弱，因中度脱水而意识混浊；经全力抢救，最终保住了性命。", Line_Normal);
+	ClearMessage();
+
+//r現在は県内の総合病院に入院している。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "現在は県内の総合病院に入院している。",
+			NULL, "目前正在县内一家综合医院住院。", Line_Normal);
+	ClearMessage();
+
+//r連日取材陣が押しかけているが、一切の面会は謝絶されている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "連日取材陣が押しかけているが、一切の面会は謝絶されている。",
+			NULL, "采访人员连续多日蜂拥而至，但院方拒绝一切会面请求。", Line_Normal);
+	ClearMessage();
+
+//r……重度の記憶障害により事件当日、その前後についての記憶が一切なく、また相当の精神的ショックを受けたのか、退行症を引き起こしている可能性が高い。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……重度の記憶障害により事件当日、その前後についての記憶が一切なく、また相当の精神的ショックを受けたのか、退行症を引き起こしている可能性が高い。",
+			NULL, "……由于严重的记忆障碍，她对事发当天及前后经过毫无记忆；或许还承受了巨大的精神冲击，极有可能出现心理退行。", Line_Normal);
+	ClearMessage();
+
+//r警察の取調べに対しても、正常な応対ができない現状である……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "警察の取調べに対しても、正常な応対ができない現状である……。",
+			NULL, "目前即使面对警方问询，她也无法作出正常回应……", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(5, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene("black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

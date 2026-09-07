@@ -1,0 +1,52 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 10 choice 2
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 1, "sprite/kei2_majime2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200189.「う、うん…知ってるけど。kvS14/02/210200190.それが…？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200189", 256, TRUE);
+	OutputLine(NULL, "「う、うん…知ってるけど。",
+			NULL, "「嗯、嗯……我知道。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200190", 256, TRUE);
+	OutputLine(NULL, "それが…？」",
+			NULL, "然后呢……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100831.「その女の人って、……クラブで働いてるんだろ？kvS14/01/210100832.　つまり、その――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100831", 256, TRUE);
+	OutputLine(NULL, "「その女の人って、……クラブで働いてるんだろ？",
+			NULL, "「那个女人……是在俱乐部工作吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100832", 256, TRUE);
+	OutputLine(NULL, "　つまり、その——」",
+			NULL, "也就是说，那个——」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200191.「……関係ないよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200191", 256, TRUE);
+	OutputLine(NULL, "「……関係ないよ」",
+			NULL, "「……那和这件事无关。」", Line_Normal);
+	ClearMessage();
+
+//rレナは固い口調で、ぴしゃりと言う。目が少し怒ったように、圭一を見返していた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナは固い口調で、ぴしゃりと言う。目が少し怒ったように、圭一を見返していた。",
+			NULL, "蕾娜用生硬的语气，斩钉截铁地说道。她的眼神带着些许怒意，直直回望圭一。", Line_Normal);
+	ClearMessage();
+
+}

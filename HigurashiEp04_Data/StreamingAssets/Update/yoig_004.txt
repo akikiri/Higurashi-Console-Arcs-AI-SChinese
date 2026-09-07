@@ -1,0 +1,3049 @@
+void main()
+{
+
+
+//*Yoigoshi Day 4
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//#4 黒澤失踪
+
+//十和田rvS10/42/410600072.「……きゃあぁぁぁあぁっっ！」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600072", 256, TRUE);
+	OutputLine(NULL, "「……きゃあぁぁぁあぁっっ！」",
+			NULL, "「……呀啊啊啊啊啊啊！！」", Line_Normal);
+	ClearMessage();
+
+//r闇夜を切り裂くような悲鳴を聞いて、俺は我に返った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "闇夜を切り裂くような悲鳴を聞いて、俺は我に返った。",
+			NULL, "听见划破黑夜般的惨叫，我回过神来。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/jysa1_01", 250 );
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	PlayBGM(2, "hm06_26", 128, 0);
+
+//荒川rvS10/00/410100608.「っ、あの声は…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100608", 256, TRUE);
+	OutputLine(NULL, "「っ、あの声は…？！」",
+			NULL, "「那、那个声音是……？！」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(4, 256, "night");
+	ModDrawCharacter(4, 40, "sprite/miyuko_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//美雪rvS10/40/410300439.「――十和田さん！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300439", 256, TRUE);
+	OutputLine(NULL, "「——十和田さん！」",
+			NULL, "「——是十和田小姐！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse12", 256, 64);
+	DrawSceneWithMask( "black", "right", 0, 0, 250 );
+
+//r祭具殿の表にいた俺たちは、一斉に声がしたほうに駆け出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "祭具殿の表にいた俺たちは、一斉に声がしたほうに駆け出す。",
+			NULL, "站在祭具殿外的我们，同时朝声音传来的方向跑去。", Line_Normal);
+	ClearMessage();
+
+//r声が聞こえたのは…、集会所からじゃない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "声が聞こえたのは…、集会所からじゃない。",
+			NULL, "声音传来的地方……不是集会所。", Line_Normal);
+	ClearMessage();
+
+//r鳥居のほうだ…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "鳥居のほうだ…！",
+			NULL, "是鸟居那边……！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse12", 256, 64);
+
+//rパシャ、パシャ、パシャ、パシャ…
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "パシャ、パシャ、パシャ、パシャ…",
+			NULL, "啪沙、啪沙、啪沙、啪沙……", Line_Normal);
+	ClearMessage();
+
+//r雨でぬかるんだ境内を走ってゆく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "雨でぬかるんだ境内を走ってゆく。",
+			NULL, "我们奔跑在被雨水浸得泥泞的境内。", Line_Normal);
+	ClearMessage();
+
+//r乙部の手にした懐中電灯が、古ぼけた鳥居を照らし出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部の手にした懐中電灯が、古ぼけた鳥居を照らし出す。",
+			NULL, "乙部手里的手电筒照亮了陈旧的鸟居。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "ame", 128, 0 );
+	DrawScene("background/ji1_03", 1000 );
+
+//荒川rvS10/00/410100609.「…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100609", 256, TRUE);
+	OutputLine(NULL, "「…！」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r鳥居の柱に背をもたせるようにして、十和田さんがひとり、地面にべったりと尻をついて座っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "鳥居の柱に背をもたせるようにして、十和田さんがひとり、地面にべったりと尻をついて座っていた。",
+			NULL, "十和田小姐独自一人背靠着鸟居柱子，瘫坐在地上。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100610.「十和田さん？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100610", 256, TRUE);
+	OutputLine(NULL, "「十和田さん？！」",
+			NULL, "「十和田小姐？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_sakekaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600073.「……あ、…っ…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600073", 256, TRUE);
+	OutputLine(NULL, "「……あ、…っ…？！」",
+			NULL, "「……啊……？！」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、ゆっくりと俺たちのほうを振り向く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、ゆっくりと俺たちのほうを振り向く。",
+			NULL, "十和田小姐缓缓转头看向我们。", Line_Normal);
+	ClearMessage();
+
+//rその目は、魂を抜かれてしまったかのように虚ろだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その目は、魂を抜かれてしまったかのように虚ろだった。",
+			NULL, "她的眼睛空洞得像是被抽走了灵魂。", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300440.「大丈夫ですか…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300440", 256, TRUE);
+	OutputLine(NULL, "「大丈夫ですか…？」",
+			NULL, "「你还好吗……？」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600074.「……っ……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600074", 256, TRUE);
+	OutputLine(NULL, "「……っ……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse14", 256, 64);
+	DrawScene("black", 1000 );
+
+//r美雪ちゃんが十和田さんに駆け寄り、素早く彼女の様子を確認する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんが十和田さんに駆け寄り、素早く彼女の様子を確認する。",
+			NULL, "美雪跑到十和田小姐身边，迅速确认她的状况。", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300441.「外傷はないようね。kvS10/40/410300442.どこか痛むところは？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300441", 256, TRUE);
+	OutputLine(NULL, "「外傷はないようね。",
+			NULL, "「看起来没有外伤。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300442", 256, TRUE);
+	OutputLine(NULL, "どこか痛むところは？」",
+			NULL, "哪里疼吗？」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600075.「……っ、あぁ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600075", 256, TRUE);
+	OutputLine(NULL, "「……っ、あぁ…」",
+			NULL, "「……啊……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_03", 1000 );
+
+//荒川rvS10/00/410100611.「十和田さん…、何があったんだ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100611", 256, TRUE);
+	OutputLine(NULL, "「十和田さん…、何があったんだ？」",
+			NULL, "「十和田小姐……发生什么了？」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんの前にかがみこみながら、ゆっくりと訊いてみる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんの前にかがみこみながら、ゆっくりと訊いてみる。",
+			NULL, "我蹲到十和田小姐面前，放慢声音问她。", Line_Normal);
+	ClearMessage();
+
+//rだが、十和田さんは全身をガクガクと震わせるだけだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、十和田さんは全身をガクガクと震わせるだけだった。",
+			NULL, "可是，十和田小姐只是浑身发抖。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100612.「…十和田さん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100612", 256, TRUE);
+	OutputLine(NULL, "「…十和田さん？」",
+			NULL, "「……十和田小姐？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600076.「……。kvS10/42/410600077.く、く…ま…が…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600076", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600077", 256, TRUE);
+	OutputLine(NULL, "く、く…ま…が…」",
+			NULL, "车……车子……」", Line_Normal);
+	ClearMessage();
+
+//r何を言いたいのか、分からない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何を言いたいのか、分からない。",
+			NULL, "我听不懂她想说什么。", Line_Normal);
+	ClearMessage();
+
+//r俺は、救いを求めるように美雪ちゃんを見るが、美雪ちゃんも厳しい表情で首を振るだけだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は、救いを求めるように美雪ちゃんを見るが、美雪ちゃんも厳しい表情で首を振るだけだ。",
+			NULL, "我像是寻求帮助般看向美雪，可美雪也只是神情凝重地摇头。", Line_Normal);
+	ClearMessage();
+
+//r十和田さんの大きな瞳には、涙が今にもこぼれそうなほど湛えられていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんの大きな瞳には、涙が今にもこぼれそうなほど湛えられていた。",
+			NULL, "十和田小姐那双大眼睛里，蓄满了几乎随时会掉下来的泪水。", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600078.「くる、…ま…が…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600078", 256, TRUE);
+	OutputLine(NULL, "「くる、…ま…が…！」",
+			NULL, "「车……车……」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300443.「十和田さん、しっかりして下さい。kvS10/40/410300444.…もう大丈夫ですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300443", 256, TRUE);
+	OutputLine(NULL, "「十和田さん、しっかりして下さい。",
+			NULL, "「十和田小姐，请振作一点。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300444", 256, TRUE);
+	OutputLine(NULL, "…もう大丈夫ですよ」",
+			NULL, "……已经没事了。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//十和田rvS10/42/410600079.「はぁっ、はぁっ…！kvS10/42/410600080.　わ、わた…しっ…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600079", 256, TRUE);
+	OutputLine(NULL, "「はぁっ、はぁっ…！",
+			NULL, "「哈啊、哈啊……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600080", 256, TRUE);
+	OutputLine(NULL, "　わ、わた…しっ…！！」",
+			NULL, "我、我……！！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r十和田さんは、何かを必死で俺たちに伝えようとしているのだが、言葉にならない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、何かを必死で俺たちに伝えようとしているのだが、言葉にならない。",
+			NULL, "十和田小姐拼命想向我们传达什么，却组织不成语言。", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんが、十和田さんの肩を抱く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんが、十和田さんの肩を抱く。",
+			NULL, "美雪搂住十和田小姐的肩。", Line_Normal);
+	ClearMessage();
+
+//rしかし、彼女の今にも折れてしまいそうなほど華奢な体は、ずっと小刻みに震え続けていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし、彼女の今にも折れてしまいそうなほど華奢な体は、ずっと小刻みに震え続けていた。",
+			NULL, "然而，她那纤细得仿佛随时会折断的身体，仍一直细细颤抖着。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_03", 1000 );
+
+//荒川rvS10/00/410100613.「何があったんだ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100613", 256, TRUE);
+	OutputLine(NULL, "「何があったんだ…？」",
+			NULL, "「到底发生了什么……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600081.「く…、車が…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600081", 256, TRUE);
+	OutputLine(NULL, "「く…、車が…」",
+			NULL, "「车……车子……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100614.「車がどうした？kvS10/00/410100615.　そうだ、あいつは？kvS10/00/410100616.　…黒澤とかいったっけ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100614", 256, TRUE);
+	OutputLine(NULL, "「車がどうした？",
+			NULL, "「车子怎么了？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100615", 256, TRUE);
+	OutputLine(NULL, "　そうだ、あいつは？",
+			NULL, "对了，那家伙呢？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100616", 256, TRUE);
+	OutputLine(NULL, "　…黒澤とかいったっけ？」",
+			NULL, "……好像叫黑泽来着？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_sakekaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//十和田rvS10/42/410600082.「…！kvS10/42/410600083.　た…、……、も…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600082", 256, TRUE);
+	OutputLine(NULL, "「…！",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600083", 256, TRUE);
+	OutputLine(NULL, "　た…、……、も…」",
+			NULL, "他……也……」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r十和田さんは全部言い切ることができず、口を両手で覆ってしまう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは全部言い切ることができず、口を両手で覆ってしまう。",
+			NULL, "十和田小姐没能把话说完，双手捂住了嘴。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100617.「十和田さん…？！kvS10/00/410100618.　黒澤はどうした？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100617", 256, TRUE);
+	OutputLine(NULL, "「十和田さん…？！",
+			NULL, "「十和田小姐……？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100618", 256, TRUE);
+	OutputLine(NULL, "　黒澤はどうした？！」",
+			NULL, "黑泽怎么了？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600084.「お…、い………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600084", 256, TRUE);
+	OutputLine(NULL, "「お…、い………」",
+			NULL, "「鬼……」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(3, 256, "night");
+	ModDrawCharacter(3, 40, "sprite/miyuko_sakebi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS10/40/410300445.「十和田さん…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300445", 256, TRUE);
+	OutputLine(NULL, "「十和田さん…？！」",
+			NULL, "「十和田小姐……？！」", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(5, 256, "night");
+	ModDrawCharacter(5, 43, "sprite/miono2_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400172.「…あせらないでいいんだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400172", 256, TRUE);
+	OutputLine(NULL, "「…あせらないでいいんだよ」",
+			NULL, "「……不用着急。」", Line_Normal);
+	ClearMessage();
+
+//rいつの間にか近くに来ていた園崎さんが、十和田さんの横にひざまずいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いつの間にか近くに来ていた園崎さんが、十和田さんの横にひざまずいた。",
+			NULL, "不知何时来到近旁的园崎小姐，在十和田小姐身边跪了下来。", Line_Normal);
+	ClearMessage();
+
+//r今までになく優しい声で、十和田さんに話しかける。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今までになく優しい声で、十和田さんに話しかける。",
+			NULL, "她用前所未有的温柔声音，对十和田小姐说话。", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600085.「み…ん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600085", 256, TRUE);
+	OutputLine(NULL, "「み…ん…」",
+			NULL, "「魅……音……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400173.「落ち着いて…。kvS10/43/410400174.さぁ、ゆっくり深呼吸するんだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400173", 256, TRUE);
+	OutputLine(NULL, "「落ち着いて…。",
+			NULL, "「冷静下来……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400174", 256, TRUE);
+	OutputLine(NULL, "さぁ、ゆっくり深呼吸するんだ」",
+			NULL, "来，慢慢深呼吸。」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600086.「園、崎…さん…。kvS10/42/410600087.う、うぅっ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600086", 256, TRUE);
+	OutputLine(NULL, "「園、崎…さん…。",
+			NULL, "「园、崎……小姐……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600087", 256, TRUE);
+	OutputLine(NULL, "う、うぅっ…！」",
+			NULL, "呜、呜呜……！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_warai_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400175.「いいんだよ…、もう、大丈夫だから…。kvS10/43/410400176.慌てなくていいんだ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400175", 256, TRUE);
+	OutputLine(NULL, "「いいんだよ…、もう、大丈夫だから…。",
+			NULL, "「没事了……已经没事了……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400176", 256, TRUE);
+	OutputLine(NULL, "慌てなくていいんだ…」",
+			NULL, "慢慢说就好……」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600088.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600088", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rしゃくりあげる十和田さんの背を、園崎さんがぽんぽんと優しく叩く。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しゃくりあげる十和田さんの背を、園崎さんがぽんぽんと優しく叩く。",
+			NULL, "园崎小姐轻轻拍着抽泣的十和田小姐的背。", Line_Normal);
+	ClearMessage();
+
+//r十和田さんはやがて、いつもの呼吸を取り戻すと、…声を絞り出して、言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんはやがて、いつもの呼吸を取り戻すと、…声を絞り出して、言った。",
+			NULL, "十和田小姐终于恢复了平常的呼吸，然后挤出声音，说道。", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600089.「鬼…かく…し……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600089", 256, TRUE);
+	OutputLine(NULL, "「鬼…かく…し……」",
+			NULL, "「鬼……隐……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100619.「えっ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100619", 256, TRUE);
+	OutputLine(NULL, "「えっ？」",
+			NULL, "「咦？」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600090.「おに…、鬼隠しに…っ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600090", 256, TRUE);
+	OutputLine(NULL, "「おに…、鬼隠しに…っ…！」",
+			NULL, "「他……被鬼隐……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400177.「黒澤が…、鬼隠しに遭ったっていうのかい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400177", 256, TRUE);
+	OutputLine(NULL, "「黒澤が…、鬼隠しに遭ったっていうのかい？」",
+			NULL, "「你是说……黑泽遇上鬼隐了？」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600091.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600091", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、こくんとうなずく。そして、今さっき体験したばかりの怖ろしい出来事を封印するように、唇をぎゅっと結んで顔を伏せた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、こくんとうなずく。そして、今さっき体験したばかりの怖ろしい出来事を封印するように、唇をぎゅっと結んで顔を伏せた。",
+			NULL, "十和田小姐轻轻点头。然后，她像要封住刚刚才经历的恐怖事情一样，紧紧抿住嘴，低下了脸。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400178.「…何があったか、ゆっくり話してごらん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400178", 256, TRUE);
+	OutputLine(NULL, "「…何があったか、ゆっくり話してごらん」",
+			NULL, "「……慢慢说说，发生了什么。」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600092.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600092", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400179.「黒澤は、いつ…、鬼隠しに遭ったんだい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400179", 256, TRUE);
+	OutputLine(NULL, "「黒澤は、いつ…、鬼隠しに遭ったんだい？」",
+			NULL, "「黑泽是什么时候……遇上鬼隐的？」", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+//rやがて。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "やがて。",
+			NULL, "过了一会儿。", Line_Normal);
+	ClearMessage();
+
+//rようやく気持ちが少し落ち着いてきたのか、十和田さんは何度も深呼吸した後、…か細いながらもゆっくりとした口調で話しはじめた……。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ようやく気持ちが少し落ち着いてきたのか、十和田さんは何度も深呼吸した後、…か細いながらもゆっくりとした口調で話しはじめた……。",
+			NULL, "十和田小姐终于稍微平静了一些，几次深呼吸后，用微弱却缓慢的声音开始讲述……", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	DrawFilm( 2, 255, 225, 195, 255, 0, 500, TRUE );
+	DrawScene("background/js7_01", 500 );
+
+//十和田rvS10/42/410600093.「あれから……。kvS10/42/410600094.あれからすぐ、工くんが目を覚まして…。kvS10/42/410600095.そろそろ帰ろうってことになったんです…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600093", 256, TRUE);
+	OutputLine(NULL, "「あれから……。",
+			NULL, "「那之后……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600094", 256, TRUE);
+	OutputLine(NULL, "あれからすぐ、工くんが目を覚まして…。",
+			NULL, "那之后没多久，工君醒了……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600095", 256, TRUE);
+	OutputLine(NULL, "そろそろ帰ろうってことになったんです…」",
+			NULL, "我们就说差不多该回去了……」", Line_Normal);
+	ClearMessage();
+
+//魅音rvS10/43/410400180.「…それで？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400180", 256, TRUE);
+	OutputLine(NULL, "「…それで？」",
+			NULL, "「……然后呢？」", Line_Normal);
+	ClearMessage();
+
+//r黒澤がひとり、酔いつぶれて眠ってしまったせいですっかり遅くなってしまったが、彼らはもともと、日帰りのドライブの予定だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "黒澤がひとり、酔いつぶれて眠ってしまったせいですっかり遅くなってしまったが、彼らはもともと、日帰りのドライブの予定だった。",
+			NULL, "因为黑泽醉倒睡着，他们耽误到了这么晚，但原本计划的是当天往返的兜风。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+	DrawScene("background/jys1_01", 1000 );
+
+//r十和田さんと黒澤は集会所を出ると、境内を歩いてまっすぐ車のほうへ向かっていった…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんと黒澤は集会所を出ると、境内を歩いてまっすぐ車のほうへ向かっていった…。",
+			NULL, "十和田小姐和黑泽离开集会所，穿过境内，径直朝车的方向走去……", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600096.「…みなさん、祭具殿に行くって聞いてたから、挨拶くらいはしておこうかと思ったんですけど…。kvS10/42/410600097.工くんが何となくイヤそうだったから…、やめたんです…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600096", 256, TRUE);
+	OutputLine(NULL, "「…みなさん、祭具殿に行くって聞いてたから、挨拶くらいはしておこうかと思ったんですけど…。",
+			NULL, "「……听说大家去了祭具殿，所以我本来想着至少道个别……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600097", 256, TRUE);
+	OutputLine(NULL, "工くんが何となくイヤそうだったから…、やめたんです…」",
+			NULL, "可是工君好像有点不愿意……于是就算了……」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600098.「たぶん…、自分だけ寝てたから…、何となくバツが悪かったんじゃないかと思うんですけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600098", 256, TRUE);
+	OutputLine(NULL, "「たぶん…、自分だけ寝てたから…、何となくバツが悪かったんじゃないかと思うんですけど…」",
+			NULL, "「也许……是因为只有他睡着了……总觉得有点尴尬吧……」", Line_Normal);
+	ClearMessage();
+
+//rそして黒澤は十和田さんの手をひくと、祭具殿はそのまま素通りして、早足で歩いていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして黒澤は十和田さんの手をひくと、祭具殿はそのまま素通りして、早足で歩いていった。",
+			NULL, "于是黑泽牵着十和田小姐的手，直接从祭具殿旁边经过，快步走开了。", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600099.「それで…、二人でこの鳥居をくぐって…、石段を下りていったんです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600099", 256, TRUE);
+	OutputLine(NULL, "「それで…、二人でこの鳥居をくぐって…、石段を下りていったんです」",
+			NULL, "「然后……我们两个人穿过这座鸟居……走下石阶。」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+	DrawScene("background/jok3", 1000 );
+
+//rだが、石段を下りきってしばらく歩いたところで…彼女たちは呆然と立ち尽くした。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、石段を下りきってしばらく歩いたところで…彼女たちは呆然と立ち尽くした。",
+			NULL, "可是，等他们走完石阶，又往前走了一会儿……两人呆呆地站住了。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sinzouappaku", 256, 64);
+	FadeFilm( 250, FALSE );
+	DrawScene("white", 250 );
+	Negative( 250, FALSE );
+	DrawScene("background/jok3", 250 );
+	Wait( 100 );
+	FadeFilm( 250, FALSE );
+	DrawScene("black", 250 );
+	DrawFilm( 2, 255, 225, 195, 255, 0, 250, FALSE );
+	DrawScene("background/jok3", 250 );
+
+//十和田rvS10/42/410600100.「私たちが乗ってきた車が………、なくなっていたんです…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600100", 256, TRUE);
+	OutputLine(NULL, "「私たちが乗ってきた車が………、なくなっていたんです…！」",
+			NULL, "「我们开来的车……不见了……」", Line_Normal);
+	ClearMessage();
+
+//乙部rvS10/41/410200185.「車が…、なくなった…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200185", 256, TRUE);
+	OutputLine(NULL, "「車が…、なくなった…？！」",
+			NULL, "「车……不见了……？！」", Line_Normal);
+	ClearMessage();
+
+//r乙部がはっ、と息を飲んで俺たちに振り返る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部がはっ、と息を飲んで俺たちに振り返る。",
+			NULL, "乙部倒吸一口气，回头看向我们。", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	FadeFilm( 500, TRUE );
+	PlayBGM( 1, "ame", 128, 0 );
+	ModDrawCharacter(4, 42, "sprite/yae_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ji1_03", 500 );
+
+//荒川rvS10/00/410100620.「おいおい、それって…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100620", 256, TRUE);
+	OutputLine(NULL, "「おいおい、それって…」",
+			NULL, "「喂喂，这不就是……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400181.「…まるで、乙部の時みたいじゃないか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400181", 256, TRUE);
+	OutputLine(NULL, "「…まるで、乙部の時みたいじゃないか」",
+			NULL, "「……简直和乙部那时候一样嘛。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200187.「鬼隠し…。kvS10/41/410200188.まさか…、本当に、鬼隠しが…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200187", 256, TRUE);
+	OutputLine(NULL, "「鬼隠し…。",
+			NULL, "「鬼隐……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200188", 256, TRUE);
+	OutputLine(NULL, "まさか…、本当に、鬼隠しが…？」",
+			NULL, "难道……真的有鬼隐……？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100621.「本当にも何も、まだそうと決まったわけじゃないだろ！kvS10/00/410100622.　車を停めてた場所を、勘違いしたんじゃねーの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100621", 256, TRUE);
+	OutputLine(NULL, "「本当にも何も、まだそうと決まったわけじゃないだろ！",
+			NULL, "「真的个什么啊，还没确定就是那样吧，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100622", 256, TRUE);
+	OutputLine(NULL, "　車を停めてた場所を、勘違いしたんじゃねーの？」",
+			NULL, "会不会是记错停车的地方了？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//十和田rvS10/42/410600103.「勘違いなんて…、そんなはずありません…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600103", 256, TRUE);
+	OutputLine(NULL, "「勘違いなんて…、そんなはずありません…！」",
+			NULL, "「记错什么的……绝对没有……！」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 40, "sprite/miyuko_shinken_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS10/40/410300447.「その車って…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300447", 256, TRUE);
+	OutputLine(NULL, "「その車って…」",
+			NULL, "「那辆车是……」", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんが口を挟んで、車の形状を尋ねる。…十和田さんの説明だと、俺たちが見た車のようだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんが口を挟んで、車の形状を尋ねる。…十和田さんの説明だと、俺たちが見た車のようだ。",
+			NULL, "美雪插话，询问车的外形。按照十和田小姐的说明，那似乎就是我们看见过的那辆车。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 40, "sprite/miyuko_kanashimi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS10/40/410300448.「それなら、私見たわ。kvS10/40/410300449.私たちが来る時、石段の下に停まっていた車がそうですよね？kvS10/40/410300450.　…龍ノ介さん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300448", 256, TRUE);
+	OutputLine(NULL, "「それなら、私見たわ。",
+			NULL, "「那辆车的话，我见过。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300449", 256, TRUE);
+	OutputLine(NULL, "私たちが来る時、石段の下に停まっていた車がそうですよね？",
+			NULL, "我们来的时候，停在石阶下面的那辆车就是吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300450", 256, TRUE);
+	OutputLine(NULL, "　…龍ノ介さん？」",
+			NULL, "……龙之介先生？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100623.「あぁ、そういえば…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100623", 256, TRUE);
+	OutputLine(NULL, "「あぁ、そういえば…」",
+			NULL, "「啊，说起来……」", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	DrawFilm( 2, 255, 225, 195, 255, 0, 500, TRUE );
+	DrawScene("background/mo7_03", 500 );
+
+//rレンタルのミニバンが一台、俺たちがここへ来たときには既に、石段の下に停まっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レンタルのミニバンが一台、俺たちがここへ来たときには既に、石段の下に停まっていた。",
+			NULL, "有一辆租来的小型面包车，在我们来到这里时就已经停在石阶下面了。", Line_Normal);
+	ClearMessage();
+
+//rまた練炭自殺かと思って、肝を冷やしたのを覚えている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "また練炭自殺かと思って、肝を冷やしたのを覚えている。",
+			NULL, "我还记得当时以为又是烧炭自杀，吓得心里一凉。", Line_Normal);
+	ClearMessage();
+
+//rそういえば美雪ちゃんは、やたら真剣にチェックしていたっけ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そういえば美雪ちゃんは、やたら真剣にチェックしていたっけ…。",
+			NULL, "这么说来，美雪当时还特别认真地检查过……", Line_Normal);
+	ClearMessage();
+
+//rということは…少なくとも彼女が荷物を取りに戻った時点では、まだ十和田さんたちの車があったということになる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ということは…少なくとも彼女が荷物を取りに戻った時点では、まだ十和田さんたちの車があったということになる。",
+			NULL, "也就是说，至少在她回去拿行李的那个时间点，十和田小姐他们的车还在那里。", Line_Normal);
+	ClearMessage();
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんの言うことが『本当』だったら、…という条件付きだが。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんの言うことが『本当』だったら、…という条件付きだが。",
+			NULL, "不过，前提是……美雪说的是『实话』。", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "c", 0, 0, 1000 );
+	FadeFilm( 500, TRUE );
+	ModDrawCharacter(5, 43, "sprite/miono2_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 40, "sprite/miyuko_shinken_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(4, 42, "sprite/yae_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ji1_03", 500 );
+
+//美雪rvS10/40/410300451.「あれは…、あなたたちの車だったのね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300451", 256, TRUE);
+	OutputLine(NULL, "「あれは…、あなたたちの車だったのね」",
+			NULL, "「原来那是你们的车。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600104.「でも、さっき見たら、なくなってたんです！kvS10/42/410600105.　車がなくなって、ワケがわからなくなって…、kvS10/42/410600106.私、怖くなってしまって…、そうしたら…、そうしたら…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600104", 256, TRUE);
+	OutputLine(NULL, "「でも、さっき見たら、なくなってたんです！",
+			NULL, "「可是，刚才再去看，它就不见了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600105", 256, TRUE);
+	OutputLine(NULL, "　車がなくなって、ワケがわからなくなって…、",
+			NULL, "车不见了，我完全搞不明白……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600106", 256, TRUE);
+	OutputLine(NULL, "私、怖くなってしまって…、そうしたら…、そうしたら…！」",
+			NULL, "我害怕起来……然后……然后……」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは身体を震わせながら、両腕を抱えるようにしていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは身体を震わせながら、両腕を抱えるようにしていった。",
+			NULL, "十和田小姐一边颤抖，一边像抱住自己似的环住双臂说道。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600107.「そうしたら…、kvS10/42/410600108.わたしたちのすぐ後ろから…、kvS10/42/410600109.足音が聞こえて…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600107", 256, TRUE);
+	OutputLine(NULL, "「そうしたら…、",
+			NULL, "「然后……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600108", 256, TRUE);
+	OutputLine(NULL, "わたしたちのすぐ後ろから…、",
+			NULL, "就在我们身后……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600109", 256, TRUE);
+	OutputLine(NULL, "足音が聞こえて…」",
+			NULL, "传来了脚步声……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 40, "sprite/miyuko_kanashimi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS10/40/410300452.「…足音？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300452", 256, TRUE);
+	OutputLine(NULL, "「…足音？」",
+			NULL, "「……脚步声？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "anahori", 256, 64);
+
+//rジャリ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ジャリ…。",
+			NULL, "沙沙。", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "right", 0, 0, 500 );
+
+//rその時、誰かの足音が背後から聞こえたような気がして、俺はハッと振り返る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その時、誰かの足音が背後から聞こえたような気がして、俺はハッと振り返る。",
+			NULL, "就在那时，我仿佛听见背后传来谁的脚步声，猛地回头。", Line_Normal);
+	ClearMessage();
+
+//r…だが、誰もいない。雨がしとしとと降っているだけだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…だが、誰もいない。雨がしとしとと降っているだけだ。",
+			NULL, "……可是，那里什么人也没有。只有雨静静下着。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 40, "sprite/miyuko_kanashimi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(4, 42, "sprite/yae_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ji1_03", 1000 );
+
+//十和田rvS10/42/410600110.「誰もいるはずなんてないのに…、たしかに足音がしたんです。kvS10/42/410600111.人の気配がしたんです！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600110", 256, TRUE);
+	OutputLine(NULL, "「誰もいるはずなんてないのに…、たしかに足音がしたんです。",
+			NULL, "「明明不可能有人……却确实有脚步声。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600111", 256, TRUE);
+	OutputLine(NULL, "人の気配がしたんです！」",
+			NULL, "我感觉到了人的气息！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "anahori", 256, 64);
+
+//rジャリ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ジャリ…。",
+			NULL, "沙沙。", Line_Normal);
+	ClearMessage();
+
+//r足音は一歩、一歩…と、十和田さんのほうへ近づいてきたらしい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "足音は一歩、一歩…と、十和田さんのほうへ近づいてきたらしい。",
+			NULL, "脚步声似乎一步、一步……朝十和田小姐靠近。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600112.「そして、工くんの背後に、誰かがぼうっと立っていて…、kvS10/42/410600113.私、怖くなって逃げました。kvS10/42/410600114.夢中で石段を駆け上がりました。kvS10/42/410600115.『工くん、逃げて！』って…。kvS10/42/410600116.そう叫びながら…、私…、夢中で…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600112", 256, TRUE);
+	OutputLine(NULL, "「そして、工くんの背後に、誰かがぼうっと立っていて…、",
+			NULL, "「然后，工君的背后，有人模模糊糊地站着……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600113", 256, TRUE);
+	OutputLine(NULL, "私、怖くなって逃げました。",
+			NULL, "我害怕得逃走了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600114", 256, TRUE);
+	OutputLine(NULL, "夢中で石段を駆け上がりました。",
+			NULL, "拼命跑上石阶。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600115", 256, TRUE);
+	OutputLine(NULL, "『工くん、逃げて！』って…。",
+			NULL, "我喊着『工君，快逃！』……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600116", 256, TRUE);
+	OutputLine(NULL, "そう叫びながら…、私…、夢中で…」",
+			NULL, "一边喊……我……拼命地……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_akire_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400182.「でも…、黒澤は、逃げなかった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400182", 256, TRUE);
+	OutputLine(NULL, "「でも…、黒澤は、逃げなかった」",
+			NULL, "「可是……黑泽没有逃。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600117.「逃げなかっただなんて、そんなはずは…。kvS10/42/410600118.でも…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600117", 256, TRUE);
+	OutputLine(NULL, "「逃げなかっただなんて、そんなはずは…。",
+			NULL, "「说他没有逃，这怎么可能……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600118", 256, TRUE);
+	OutputLine(NULL, "でも…」",
+			NULL, "可是……」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、返事をする代わりに力なくうなだれる。そのまま顔をあげることなく言葉を継ごうとするが、なかなか次の言葉を紡ぐことができない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、返事をする代わりに力なくうなだれる。そのまま顔をあげることなく言葉を継ごうとするが、なかなか次の言葉を紡ぐことができない。",
+			NULL, "十和田小姐没有作出回答，只是无力地低下头。她就那样低着脸想继续说下去，却怎么也说不出下一句话。", Line_Normal);
+	ClearMessage();
+
+//r何を言ったらいいのか本当に分からないのか、園崎さんに同意したくないだけなのか、よく分からなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何を言ったらいいのか本当に分からないのか、園崎さんに同意したくないだけなのか、よく分からなかった。",
+			NULL, "我分不清她是真的不知道该说什么，还是单纯不想认同园崎小姐的话。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100624.「…で、あんたはどうしたの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100624", 256, TRUE);
+	OutputLine(NULL, "「…で、あんたはどうしたの？」",
+			NULL, "「……然后，你怎么了？」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600119.「私は…。kvS10/42/410600120.私、石段を登りきって、ここでずっと工くんが来るのを待ってたんです。kvS10/42/410600121.…でも、工くんはいつまで経っても来なくて…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600119", 256, TRUE);
+	OutputLine(NULL, "「私は…。",
+			NULL, "「我……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600120", 256, TRUE);
+	OutputLine(NULL, "私、石段を登りきって、ここでずっと工くんが来るのを待ってたんです。",
+			NULL, "我跑上石阶以后，就一直在这里等工君过来。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600121", 256, TRUE);
+	OutputLine(NULL, "…でも、工くんはいつまで経っても来なくて…」",
+			NULL, "……可是，工君一直都没有来……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400183.「…あんたを助けに行けない事情が、あったのかもしれないねぇ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400183", 256, TRUE);
+	OutputLine(NULL, "「…あんたを助けに行けない事情が、あったのかもしれないねぇ」",
+			NULL, "「……也许他有无法来救你的理由呢。」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200189.「それってもしかして…、黒い影の人に襲われたってことですか…？kvS10/41/410200189_1.　じゃあ、黒澤さんは…もう…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200189", 256, TRUE);
+	OutputLine(NULL, "「それってもしかして…、黒い影の人に襲われたってことですか…？",
+			NULL, "「这该不会是……被黑影人袭击了吧……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200189_1", 256, TRUE);
+	OutputLine(NULL, "　じゃあ、黒澤さんは…もう…！」",
+			NULL, "那黑泽先生已经……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlaySE(3, "tataku", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//十和田rvS10/42/410600122.「そんなこと、まだ、わからないでしょッ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600122", 256, TRUE);
+	OutputLine(NULL, "「そんなこと、まだ、わからないでしょッ！」",
+			NULL, "「那种事，现在还不知道吧！」", Line_Normal);
+	ClearMessage();
+
+//r弾かれたように、十和田さんが即答する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "弾かれたように、十和田さんが即答する。",
+			NULL, "十和田小姐像是被猛然触动，立刻脱口回答。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600123.「そんなこと分からないけど…、kvS10/42/410600124.でも…、でも…、そんな考え、あなただったら信じたくないでしょう？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600123", 256, TRUE);
+	OutputLine(NULL, "「そんなこと分からないけど…、",
+			NULL, "「我知道现在还不能确定……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600124", 256, TRUE);
+	OutputLine(NULL, "でも…、でも…、そんな考え、あなただったら信じたくないでしょう？！」",
+			NULL, "可是……可是……如果换成你，也不愿相信那种事吧？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200190.「それは…、そうですよね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200190", 256, TRUE);
+	OutputLine(NULL, "「それは…、そうですよね…」",
+			NULL, "「那……确实是……」", Line_Normal);
+	ClearMessage();
+
+//r乙部は軽く後ずさりながら、そう言うのが精一杯だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部は軽く後ずさりながら、そう言うのが精一杯だった。",
+			NULL, "乙部轻轻后退，只能勉强这么说道。", Line_Normal);
+	ClearMessage();
+
+//r…その気持ちは理解できる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…その気持ちは理解できる。",
+			NULL, "……那种心情我能理解。", Line_Normal);
+	ClearMessage();
+
+//rただ、襲われたなんて信じられないし、信じたくもないとしても、…そうとしか考えられないのも確かだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ただ、襲われたなんて信じられないし、信じたくもないとしても、…そうとしか考えられないのも確かだった。",
+			NULL, "只是，虽然这种袭击之说让人难以置信，也不愿相信，可眼下确实想不到别的可能。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 40, "sprite/miyuko_kanashimi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS10/40/410300453.「あの…、黒澤さんは、神社とは反対のほうに逃げたってことは考えられませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300453", 256, TRUE);
+	OutputLine(NULL, "「あの…、黒澤さんは、神社とは反対のほうに逃げたってことは考えられませんか？」",
+			NULL, "「那个……有没有可能黑泽先生往神社相反的方向逃了？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600126.「神社とは…、反対…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600126", 256, TRUE);
+	OutputLine(NULL, "「神社とは…、反対…？」",
+			NULL, "「和神社……相反……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 40, "sprite/miyuko_shinken_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS10/40/410300454.「ええ。kvS10/40/410300455.黒澤さんは、あなたが石段を上がっていったのを見て、あなたを巻き添えにしないよう、反対方向…、kvS10/40/410300456.つまり村のほうに向かって走って逃げたってことは、ありうるんじゃないでしょうか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300454", 256, TRUE);
+	OutputLine(NULL, "「ええ。",
+			NULL, "「嗯。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300455", 256, TRUE);
+	OutputLine(NULL, "黒澤さんは、あなたが石段を上がっていったのを見て、あなたを巻き添えにしないよう、反対方向…、",
+			NULL, "黑泽先生看见你跑上石阶，为了不把你卷进去，朝相反方向……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300456", 256, TRUE);
+	OutputLine(NULL, "つまり村のほうに向かって走って逃げたってことは、ありうるんじゃないでしょうか？」",
+			NULL, "也就是朝村子的方向跑走了，这种可能性也存在吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 42, "sprite/yae_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//十和田rvS10/42/410600127.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600127", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400184.「…ありえなくもない話だね。kvS10/43/410400185.ちょいと私が見てこようか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400184", 256, TRUE);
+	OutputLine(NULL, "「…ありえなくもない話だね。",
+			NULL, "「……倒也说得通。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400185", 256, TRUE);
+	OutputLine(NULL, "ちょいと私が見てこようか」",
+			NULL, "那我去看一眼吧。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse16", 256, 64);
+	DrawScene("black", 1000 );
+
+//rそう言って園崎さんが、石段を下りかける。…って、それはこわいもの知らずというより、無謀すぎやしないか？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って園崎さんが、石段を下りかける。…って、それはこわいもの知らずというより、無謀すぎやしないか？！",
+			NULL, "园崎小姐这么说着，正要走下石阶。……喂，这已经不是胆大，而是太鲁莽了吧？！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_03", 1000 );
+
+//荒川rvS10/00/410100625.「おいおいおいおい…！kvS10/00/410100626.　見てくるって、何だよ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100625", 256, TRUE);
+	OutputLine(NULL, "「おいおいおいおい…！",
+			NULL, "「喂喂喂喂……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100626", 256, TRUE);
+	OutputLine(NULL, "　見てくるって、何だよ？！」",
+			NULL, "你说去看一眼是什么意思？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono2_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400186.「だから、黒澤がその辺をウロチョロしてないか、見て来るんだよ。kvS10/43/410400187.…まぁ、これは必要ないか。kvS10/43/410400188.あんたが持ってな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400186", 256, TRUE);
+	OutputLine(NULL, "「だから、黒澤がその辺をウロチョロしてないか、見て来るんだよ。",
+			NULL, "「就是说去看看黑泽有没有在那附近晃悠。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400187", 256, TRUE);
+	OutputLine(NULL, "…まぁ、これは必要ないか。",
+			NULL, "……算了，这个我用不上。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400188", 256, TRUE);
+	OutputLine(NULL, "あんたが持ってな」",
+			NULL, "你拿着吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200191.「へっ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200191", 256, TRUE);
+	OutputLine(NULL, "「へっ？」",
+			NULL, "「咦？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	ModDrawCharacter(5, 43, "sprite/miono1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 100 );
+	PlaySE(3, "addse19", 256, 64);
+	DrawScene("white", 200 );
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(5, 43, "sprite/miono1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawScene("background/ji1_03", 200 );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//乙部rvS10/41/410200192.「…わっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200192", 256, TRUE);
+	OutputLine(NULL, "「…わっ？！」",
+			NULL, "「……哇？！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse16", 256, 64);
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r園崎さんは、和布のカバーと鞘をぽいっと乙部のほうへ放ると剥き身の刀を手に、とんとんと軽い足取りで石段を降りて行こうとする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎さんは、和布のカバーと鞘をぽいっと乙部のほうへ放ると剥き身の刀を手に、とんとんと軽い足取りで石段を降りて行こうとする。",
+			NULL, "园崎小姐把和布包套和刀鞘随手丢向乙部，手握出鞘的刀，迈着轻快的脚步走下石阶。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_sakebi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200193.「待ってください！kvS10/41/410200194.　ひとりでなんて危ないですよ！　僕も…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200193", 256, TRUE);
+	OutputLine(NULL, "「待ってください！",
+			NULL, "「请等一下！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200194", 256, TRUE);
+	OutputLine(NULL, "　ひとりでなんて危ないですよ！　僕も…！」",
+			NULL, "一个人太危险了！我也……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100627.「…待てよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100627", 256, TRUE);
+	OutputLine(NULL, "「…待てよ」",
+			NULL, "「……等一下。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200195.「…え？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200195", 256, TRUE);
+	OutputLine(NULL, "「…え？」",
+			NULL, "「……咦？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100628.「ひとりより二人、二人より三人、三人より四人だ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100628", 256, TRUE);
+	OutputLine(NULL, "「ひとりより二人、二人より三人、三人より四人だ…！」",
+			NULL, "「一个人不如两个人，两个人不如三个人，三个人不如四个人啊……！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200196.「荒川さん…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200196", 256, TRUE);
+	OutputLine(NULL, "「荒川さん…？」",
+			NULL, "「荒川先生……？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100629.「どうせ行くなら、みんなで探しに行ったほうが怖くないってもんだろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100629", 256, TRUE);
+	OutputLine(NULL, "「どうせ行くなら、みんなで探しに行ったほうが怖くないってもんだろ？」",
+			NULL, "「反正都要去找，大家一起去也比较没那么可怕，对吧？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそう言いながら、俺の手は情けないことにぶるぶると震えてしまっている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言いながら、俺の手は情けないことにぶるぶると震えてしまっている。",
+			NULL, "我嘴上这么说，手却很没出息地抖个不停。", Line_Normal);
+	ClearMessage();
+
+//r正体不明の足音なら、俺も聞いた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "正体不明の足音なら、俺も聞いた。",
+			NULL, "那阵来历不明的脚步声，我也听见了。", Line_Normal);
+	ClearMessage();
+
+//r俺だけがそれを聞いたのなら、気のせいで済むかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺だけがそれを聞いたのなら、気のせいで済むかもしれない。",
+			NULL, "如果只有我听见，也许还能当成错觉。", Line_Normal);
+	ClearMessage();
+
+//rだが実際には、十和田さんも足音を聞いている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが実際には、十和田さんも足音を聞いている。",
+			NULL, "可实际上，十和田小姐也听见了脚步声。", Line_Normal);
+	ClearMessage();
+
+//rそして…、足音の主の手で、恋人が鬼隠しに遭ったかもしれないのだ…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして…、足音の主の手で、恋人が鬼隠しに遭ったかもしれないのだ…！",
+			NULL, "而且……她的恋人可能已经被那个脚步声的主人掳走了……！", Line_Normal);
+	ClearMessage();
+
+//rその正体…、確かめておかないわけにはいかないだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その正体…、確かめておかないわけにはいかないだろう。",
+			NULL, "那个东西的真面目……我们必须确认清楚。", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_03", 1000 );
+	ModDrawCharacter(4, 43, "sprite/miono1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400189.「…そんな大勢で行っても、足手まといになるだけだろ。kvS10/43/410400190.私は大丈夫だから、そこにいな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400189", 256, TRUE);
+	OutputLine(NULL, "「…そんな大勢で行っても、足手まといになるだけだろ。",
+			NULL, "「……就算这么多人一起去，也只会碍手碍脚吧，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400190", 256, TRUE);
+	OutputLine(NULL, "私は大丈夫だから、そこにいな」",
+			NULL, "我没问题，你们待在这里。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100630.「でも…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100630", 256, TRUE);
+	OutputLine(NULL, "「でも…！」",
+			NULL, "「可是……！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 43, "sprite/miono1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400191.「心配しなさんな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400191", 256, TRUE);
+	OutputLine(NULL, "「心配しなさんな」",
+			NULL, "「别担心。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 43, "sprite/miono1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlaySE(3, "dsse16", 256, 64);
+	DrawScene("black", 1000 );
+	FadeOutBGM(2, 200, FALSE);
+
+//r園崎さんは去り際に薄っすらとした笑みを浮かべると、そのまま石段を降りていってしまった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎さんは去り際に薄っすらとした笑みを浮かべると、そのまま石段を降りていってしまった。",
+			NULL, "园崎小姐离开时露出一抹淡淡的笑，随后就那样走下了石阶。", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300458.「龍ノ介さん。kvS10/40/410300459.ちょっと気になることがあるんですけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300458", 256, TRUE);
+	OutputLine(NULL, "「龍ノ介さん。",
+			NULL, "「龙之介先生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300459", 256, TRUE);
+	OutputLine(NULL, "ちょっと気になることがあるんですけど…」",
+			NULL, "我有件事有点在意……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_03", 1000 );
+	ModDrawCharacter(4, 40, "sprite/miyuko_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//r仕方なく皆のもとへ戻ると、美雪ちゃんが腑に落ちないという顔で俺に話しかけてきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "仕方なく皆のもとへ戻ると、美雪ちゃんが腑に落ちないという顔で俺に話しかけてきた。",
+			NULL, "我只好回到大家身边，美雪一脸难以释怀地向我搭话。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100632.「どうしたの…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100632", 256, TRUE);
+	OutputLine(NULL, "「どうしたの…？」",
+			NULL, "「怎么了……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300460.「鬼隠しって、たしか…、kvS10/40/410300461.ひとりが死んで、ひとりが消えるんですよね…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300460", 256, TRUE);
+	OutputLine(NULL, "「鬼隠しって、たしか…、",
+			NULL, "「鬼隐应该是……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300461", 256, TRUE);
+	OutputLine(NULL, "ひとりが死んで、ひとりが消えるんですよね…？」",
+			NULL, "一个人死亡，一个人消失，对吧……？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100633.「それはそうだけど…、なんで？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100633", 256, TRUE);
+	OutputLine(NULL, "「それはそうだけど…、なんで？」",
+			NULL, "「是这样没错……怎么了？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300462.「だって、“まだ”、誰も死んでなんかいないじゃないですか。kvS10/40/410300463.もしかしたら、これは鬼隠しでも何でもないのかもしれませんよ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300462", 256, TRUE);
+	OutputLine(NULL, "「だって、“まだ”、誰も死んでなんかいないじゃないですか。",
+			NULL, "「可是，『目前为止』，还没有任何人死去吧，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300463", 256, TRUE);
+	OutputLine(NULL, "もしかしたら、これは鬼隠しでも何でもないのかもしれませんよ…？」",
+			NULL, "说不定这根本就不是鬼隐之类的事情……？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	PlayBGM(2, "hm06_25", 128, 0);
+
+//r美雪ちゃんが真顔で言う。…つまりこれは『祟り』といった超常現象の類ではない、と彼女は言っているのだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんが真顔で言う。…つまりこれは『祟り』といった超常現象の類ではない、と彼女は言っているのだろう。",
+			NULL, "美雪用认真的表情说道。……也就是说，她认为这并非『作祟』那类超常现象吧。", Line_Normal);
+	ClearMessage();
+
+//rとはいえ、すっかりビビッてしまっている俺を安心させようとして言っているのか、本当にそう思って言っているのかは、微妙なところだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "とはいえ、すっかりビビッてしまっている俺を安心させようとして言っているのか、本当にそう思って言っているのかは、微妙なところだ。",
+			NULL, "话虽如此，她是为了让我这个已经被吓破胆的人安心才这么说，还是真的这样认为，就有些微妙了。", Line_Normal);
+	ClearMessage();
+
+//rそれに正直なところ、…ある意味でこの娘が一番、俺にとっては『不気味』な存在だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに正直なところ、…ある意味でこの娘が一番、俺にとっては『不気味』な存在だった。",
+			NULL, "而且老实说……从某种意义上讲，这女孩才是对我而言最『诡异』的存在。", Line_Normal);
+	ClearMessage();
+
+//r『付け焼刃の知識』というわりには、この村の伝承や村の地理の細部を知り過ぎている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "『付け焼刃の知識』というわりには、この村の伝承や村の地理の細部を知り過ぎている。",
+			NULL, "她明明说只是『临时抱佛脚的知识』，却对这个村子的传承和地理细节了解得过头。", Line_Normal);
+	ClearMessage();
+
+//rそれに…、車で偶然見てしまった、取材とはあまり関係のなさそうな資料と機材…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それに…、車で偶然見てしまった、取材とはあまり関係のなさそうな資料と機材…。",
+			NULL, "再加上……我在车里偶然看到的那些似乎和采访关系不大的资料与器材……", Line_Normal);
+	ClearMessage();
+
+//r園崎さんと会った時など初対面のはずなのに、互いに昔から互いに知っているかのような態度だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎さんと会った時など初対面のはずなのに、互いに昔から互いに知っているかのような態度だった。",
+			NULL, "她和园崎小姐见面时，明明应该是初次见面，彼此的态度却像是早就认识一样。", Line_Normal);
+	ClearMessage();
+
+//rさらに不自然なのは、二人とも互いを知っている様子なのに、そのことについては一言も触れないこと。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さらに不自然なのは、二人とも互いを知っている様子なのに、そのことについては一言も触れないこと。",
+			NULL, "更不自然的是，两人看起来都知道对方，却对此只字不提。", Line_Normal);
+	ClearMessage();
+
+//r何がどうなっているんだ…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "何がどうなっているんだ…？",
+			NULL, "到底怎么回事……？", Line_Normal);
+	ClearMessage();
+
+//r彼女は…、一体、何者なんだ…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼女は…、一体、何者なんだ…？",
+			NULL, "她……究竟是什么人……？", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_03", 1000 );
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300464.「龍ノ介さん…、大丈夫ですか…？kvS10/40/410300465.　顔…、真っ青ですよ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300464", 256, TRUE);
+	OutputLine(NULL, "「龍ノ介さん…、大丈夫ですか…？",
+			NULL, "「龙之介先生……你没事吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300465", 256, TRUE);
+	OutputLine(NULL, "　顔…、真っ青ですよ…？」",
+			NULL, "你的脸……很苍白啊……？」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200197.「荒川さん…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200197", 256, TRUE);
+	OutputLine(NULL, "「荒川さん…？」",
+			NULL, "「荒川先生……？」", Line_Normal);
+	ClearMessage();
+
+//r乙部までが、俺を心配そうに見つめている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部までが、俺を心配そうに見つめている。",
+			NULL, "连乙部都担心地看着我。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100634.「あ…、いや…、平気、平気。kvS10/00/410100635.ちょっとぼーっとしちまっただけだって！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100634", 256, TRUE);
+	OutputLine(NULL, "「あ…、いや…、平気、平気。",
+			NULL, "「啊……没、没事，没事。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100635", 256, TRUE);
+	OutputLine(NULL, "ちょっとぼーっとしちまっただけだって！」",
+			NULL, "只是稍微发了会儿呆而已。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300466.「集会所に戻って、少し休んだほうがいいかもしれないですね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300466", 256, TRUE);
+	OutputLine(NULL, "「集会所に戻って、少し休んだほうがいいかもしれないですね…」",
+			NULL, "「回集会所休息一下也许比较好……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//荒川rvS10/00/410100636.「へーきだって！kvS10/00/410100637.　それよりお前…、電話だよ、電話！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100636", 256, TRUE);
+	OutputLine(NULL, "「へーきだって！",
+			NULL, "「我没事啦。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100637", 256, TRUE);
+	OutputLine(NULL, "　それよりお前…、電話だよ、電話！」",
+			NULL, "比起这个，你……电话，电话！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200198.「えっ…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200198", 256, TRUE);
+	OutputLine(NULL, "「えっ…？！」",
+			NULL, "「咦……？！」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100638.「車がなくなってんだから、ケーサツに通報だろ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100638", 256, TRUE);
+	OutputLine(NULL, "「車がなくなってんだから、ケーサツに通報だろ！」",
+			NULL, "「车都没了，当然要报警吧！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200199.「でも、僕のは電池が…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200199", 256, TRUE);
+	OutputLine(NULL, "「でも、僕のは電池が…」",
+			NULL, "「可是，我的手机电池……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100639.「ちっとは生き返ってるかもしんねーだろ？kvS10/00/410100640.　それに、さっき気づいたんだけどさー、乙部のケータイって今年の春のＭモデルだよな？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100639", 256, TRUE);
+	OutputLine(NULL, "「ちっとは生き返ってるかもしんねーだろ？",
+			NULL, "「说不定已经恢复一点电量了吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100640", 256, TRUE);
+	OutputLine(NULL, "　それに、さっき気づいたんだけどさー、乙部のケータイって今年の春のＭモデルだよな？」",
+			NULL, "而且我刚才注意到了，乙部的手机是今年春天的 M 型号吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//乙部rvS10/41/410200200.「えっ？！kvS10/41/410200201.　え、ええ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200200", 256, TRUE);
+	OutputLine(NULL, "「えっ？！",
+			NULL, "「咦？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200201", 256, TRUE);
+	OutputLine(NULL, "　え、ええ…」",
+			NULL, "呃、嗯……」", Line_Normal);
+	ClearMessage();
+
+//r乙部がビクッと肩を震わせる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部がビクッと肩を震わせる。",
+			NULL, "乙部的肩膀猛地一颤。", Line_Normal);
+	ClearMessage();
+
+//rどうして乙部がいちいち動揺するのかは分からないが、よほど小心なのかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "どうして乙部がいちいち動揺するのかは分からないが、よほど小心なのかもしれない。",
+			NULL, "我不明白乙部为什么动不动就慌张，也许他就是胆子特别小。", Line_Normal);
+	ClearMessage();
+
+//rもしくは、常にオドオドしていなければならないような暮らしを送っている…とか？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もしくは、常にオドオドしていなければならないような暮らしを送っている…とか？",
+			NULL, "又或者，他过着某种必须随时战战兢兢的生活……？", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100641.「…違うのかよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100641", 256, TRUE);
+	OutputLine(NULL, "「…違うのかよ？」",
+			NULL, "「……我说错了吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200202.「あ、いえ。確かに、そうですけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200202", 256, TRUE);
+	OutputLine(NULL, "「あ、いえ。確かに、そうですけど…」",
+			NULL, "「啊，没。确实是这样……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100642.「それって、園崎さんのと一緒なんだよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100642", 256, TRUE);
+	OutputLine(NULL, "「それって、園崎さんのと一緒なんだよ」",
+			NULL, "「那和园崎小姐的是同一款。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_sakebi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300467.「えっ？　そうなんですか？kvS10/40/410300468.　ちっとも気がつきませんでした！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300467", 256, TRUE);
+	OutputLine(NULL, "「えっ？　そうなんですか？",
+			NULL, "「咦？是这样吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300468", 256, TRUE);
+	OutputLine(NULL, "　ちっとも気がつきませんでした！」",
+			NULL, "我完全没注意到。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100643.「記者の観察力を舐めてもらっちゃ困るぜー。kvS10/00/410100644.な、乙部！kvS10/00/410100645.　園崎さんのと電池交換すれば、お前のケータイ、また使えるようになるんじゃねぇの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100643", 256, TRUE);
+	OutputLine(NULL, "「記者の観察力を舐めてもらっちゃ困るぜー。",
+			NULL, "「可别小看记者的观察力啊，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100644", 256, TRUE);
+	OutputLine(NULL, "な、乙部！",
+			NULL, "对吧，乙部！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100645", 256, TRUE);
+	OutputLine(NULL, "　園崎さんのと電池交換すれば、お前のケータイ、また使えるようになるんじゃねぇの？」",
+			NULL, "和园崎小姐的手机换一下电池，你的手机不就能重新用了？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//乙部rvS10/41/410200203.「あっ、そうか…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200203", 256, TRUE);
+	OutputLine(NULL, "「あっ、そうか…」",
+			NULL, "「啊，对啊……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100646.「そうかって、お前…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100646", 256, TRUE);
+	OutputLine(NULL, "「そうかって、お前…」",
+			NULL, "「对啊什么啊，你这家伙……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200204.「そうですよね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200204", 256, TRUE);
+	OutputLine(NULL, "「そうですよね…」",
+			NULL, "「是啊……」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rと言いつつ、乙部の顔は全く明るくならない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "と言いつつ、乙部の顔は全く明るくならない。",
+			NULL, "乙部嘴上这么说，脸色却完全没有明朗起来。", Line_Normal);
+	ClearMessage();
+
+//rいったい、どうなってるんだ…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いったい、どうなってるんだ…？",
+			NULL, "这到底怎么回事……？", Line_Normal);
+	ClearMessage();
+
+//r……。いや、それだけじゃない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……。いや、それだけじゃない。",
+			NULL, "……不，还不只是这样。", Line_Normal);
+	ClearMessage();
+
+//rそういえば、最初に車の中に死体を発見したときは美雪ちゃんも、あまりケータイを使いたくない様子だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そういえば、最初に車の中に死体を発見したときは美雪ちゃんも、あまりケータイを使いたくない様子だった。",
+			NULL, "说起来，最开始在车里发现尸体时，美雪好像也不太想用手机。", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんも、乙部も…、どうしてケータイを使いたがらない…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんも、乙部も…、どうしてケータイを使いたがらない…？",
+			NULL, "美雪和乙部……为什么都不想用手机……？", Line_Normal);
+	ClearMessage();
+
+//乙部rvS10/41/410200205.「あれ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200205", 256, TRUE);
+	OutputLine(NULL, "「あれ…？」",
+			NULL, "「咦……？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ji1_03", 1000 );
+	ModDrawCharacter(4, 41, "sprite/otobe_tere_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//荒川rvS10/00/410100647.「…どうした？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100647", 256, TRUE);
+	OutputLine(NULL, "「…どうした？」",
+			NULL, "「怎么了？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 41, "sprite/otobe_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//乙部rvS10/41/410200206.「まずいな…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200206", 256, TRUE);
+	OutputLine(NULL, "「まずいな…」",
+			NULL, "「糟了……」", Line_Normal);
+	ClearMessage();
+
+//r前後のポケットを探っていた乙部は俺に振り返り、申し訳なさそうな表情で言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "前後のポケットを探っていた乙部は俺に振り返り、申し訳なさそうな表情で言った。",
+			NULL, "乙部摸遍前后口袋，回头看向我，露出一脸歉疚的表情说道。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 41, "sprite/otobe_tere_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//乙部rvS10/41/410200207.「…走ってくる途中で、ケータイ、どっかに落としてきたみたいです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200207", 256, TRUE);
+	OutputLine(NULL, "「…走ってくる途中で、ケータイ、どっかに落としてきたみたいです」",
+			NULL, "「……好像是在跑过来的路上，把手机掉到哪里了。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100648.「えぇっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100648", 256, TRUE);
+	OutputLine(NULL, "「えぇっ？！」",
+			NULL, "「咦？！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 41, "sprite/otobe_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//乙部rvS10/41/410200208.「すみません…！　探してきます！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200208", 256, TRUE);
+	OutputLine(NULL, "「すみません…！　探してきます！」",
+			NULL, "「对不起……我去找！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse14", 256, 64);
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r乙部は言うや否や、祭具殿のほうへ駆け出していく。…呼び止める間もなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部は言うや否や、祭具殿のほうへ駆け出していく。…呼び止める間もなかった。",
+			NULL, "乙部话音刚落，就朝祭具殿那边跑去。……我连叫住他的时间都没有。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100649.「おい！　気をつけろよ？kvS10/00/410100650.　ケータイ見つかったら、ソッコー、ケーサツへ連絡な！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100649", 256, TRUE);
+	OutputLine(NULL, "「おい！　気をつけろよ？",
+			NULL, "「喂！小心点啊？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100650", 256, TRUE);
+	OutputLine(NULL, "　ケータイ見つかったら、ソッコー、ケーサツへ連絡な！」",
+			NULL, "找到手机就立刻报警！」", Line_Normal);
+	ClearMessage();
+
+//乙部rvS10/41/410200209.「はい…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200209", 256, TRUE);
+	OutputLine(NULL, "「はい…！」",
+			NULL, "「好！」", Line_Normal);
+	ClearMessage();
+
+//r乙部も園崎さんもいなくなってしまった今、ここにいるのは俺と美雪ちゃん、十和田さんの三人だけ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部も園崎さんもいなくなってしまった今、ここにいるのは俺と美雪ちゃん、十和田さんの三人だけ…。",
+			NULL, "如今乙部和园崎小姐都离开了，这里只剩我、美雪和十和田小姐三个人……", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600128.「私たち…、どうなるんでしょう…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600128", 256, TRUE);
+	OutputLine(NULL, "「私たち…、どうなるんでしょう…？」",
+			NULL, "「我们……会变成什么样呢……？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100651.「なんだかわかんねーけど…、kvS10/00/410100652.異常なことが起きてるってのは、間違いなさそうだよな…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100651", 256, TRUE);
+	OutputLine(NULL, "「なんだかわかんねーけど…、",
+			NULL, "「虽然搞不清楚状况……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100652", 256, TRUE);
+	OutputLine(NULL, "異常なことが起きてるってのは、間違いなさそうだよな…」",
+			NULL, "但发生了异常事件，这点应该没错……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300469.「こんなことになるなんて…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300469", 256, TRUE);
+	OutputLine(NULL, "「こんなことになるなんて…」",
+			NULL, "「竟然会变成这样……」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r一方で美雪ちゃんは、鳥居の下でじっと腕を組んでいる。…爪を噛み、何かを考え込んでいるその表情には、苛立ちのような剣呑さが浮かんでいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "一方で美雪ちゃんは、鳥居の下でじっと腕を組んでいる。…爪を噛み、何かを考え込んでいるその表情には、苛立ちのような剣呑さが浮かんでいた。",
+			NULL, "另一边，美雪站在鸟居下，抱着手臂一动不动。她咬着指甲，像是在思考什么，表情里浮现出近似焦躁的危险气息。", Line_Normal);
+	ClearMessage();
+
+//rやがて、砂利を踏みしめる音が聞こえ、衣擦れの音とともに園崎さんが戻ってくる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "やがて、砂利を踏みしめる音が聞こえ、衣擦れの音とともに園崎さんが戻ってくる。",
+			NULL, "不久后，踩踏碎石的声音响起，伴随着衣料摩擦声，园崎小姐回来了。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse15", 256, 64);
+	Wait( 2000 );
+	ModDrawCharacter(5, 43, "sprite/miono1_kanashimi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400192.「いないねぇ。kvS10/43/410400193.…誰もいないよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400192", 256, TRUE);
+	OutputLine(NULL, "「いないねぇ。",
+			NULL, "「没有人呢，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400193", 256, TRUE);
+	OutputLine(NULL, "…誰もいないよ」",
+			NULL, "……一个人都没有。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_akire_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600129.「いないって…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600129", 256, TRUE);
+	OutputLine(NULL, "「いないって…？」",
+			NULL, "「没有人是指……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono1_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400194.「ひとっ子ひとり、いないのさ。kvS10/43/410400195.血の跡や足跡の類も、ざっと見たところではないようだったね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400194", 256, TRUE);
+	OutputLine(NULL, "「ひとっ子ひとり、いないのさ。",
+			NULL, "「连个人影都没有。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400195", 256, TRUE);
+	OutputLine(NULL, "血の跡や足跡の類も、ざっと見たところではないようだったね」",
+			NULL, "血迹和脚印之类的，我大致看了一圈，也没发现。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100653.「それじゃ、黒澤さんは…、やっぱり車ごと忽然と消えたってことですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100653", 256, TRUE);
+	OutputLine(NULL, "「それじゃ、黒澤さんは…、やっぱり車ごと忽然と消えたってことですか？」",
+			NULL, "「那黑泽先生……果然是连人带车突然消失了吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono1_akire_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400196.「残念だけど、そういうことになるのかねぇ…。kvS10/43/410400197.グルッと見渡してきたけど、他の車も一台もなかったね。kvS10/43/410400198.人の気配もなかったし」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400196", 256, TRUE);
+	OutputLine(NULL, "「残念だけど、そういうことになるのかねぇ…。",
+			NULL, "「很遗憾，看来就是这么回事吧……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400197", 256, TRUE);
+	OutputLine(NULL, "グルッと見渡してきたけど、他の車も一台もなかったね。",
+			NULL, "我绕着周围看了一圈，别的车也一辆都没有。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400198", 256, TRUE);
+	OutputLine(NULL, "人の気配もなかったし」",
+			NULL, "也没有人的气息。」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, FALSE);
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 42, "sprite/yae_akire_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(4, 43, "sprite/miono1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	ModDrawCharacter(5, 40, "sprite/miyuko_sakebi_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300470.「他の車も…、一台も…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300470", 256, TRUE);
+	OutputLine(NULL, "「他の車も…、一台も…？」",
+			NULL, "「别的车也……一辆都没有……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 43, "sprite/miono1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400199.「ああ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400199", 256, TRUE);
+	OutputLine(NULL, "「ああ」",
+			NULL, "「嗯。」", Line_Normal);
+	ClearMessage();
+
+//r園崎さんの言葉を受けて美雪ちゃんは、はっ、と俺に振り返る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎さんの言葉を受けて美雪ちゃんは、はっ、と俺に振り返る。",
+			NULL, "听到园崎小姐的话，美雪猛地回头看向我。", Line_Normal);
+	ClearMessage();
+
+//rそういえば、俺たちが乗ってきた車は、どうなったんだ…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そういえば、俺たちが乗ってきた車は、どうなったんだ…？",
+			NULL, "说起来，我们开来的车怎么样了……？", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100654.「園崎さん。一台もって、どういうことだよ？kvS10/00/410100655.　あんた、どこまで見に行ったんだ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100654", 256, TRUE);
+	OutputLine(NULL, "「園崎さん。一台もって、どういうことだよ？",
+			NULL, "「园崎小姐。一辆都没有是什么意思？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100655", 256, TRUE);
+	OutputLine(NULL, "　あんた、どこまで見に行ったんだ？」",
+			NULL, "你到底看到哪里去了？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 43, "sprite/miono1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400200.「この辺りをグルッとだよ。kvS10/43/410400201.どれくらいって言われても…、さぁ、よくは分からないねぇ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400200", 256, TRUE);
+	OutputLine(NULL, "「この辺りをグルッとだよ。",
+			NULL, "「就在这附近绕了一圈。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400201", 256, TRUE);
+	OutputLine(NULL, "どれくらいって言われても…、さぁ、よくは分からないねぇ」",
+			NULL, "你问我绕了多远……这个嘛，我也说不太清。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300471.「あの…、ごつい四駆を見かけませんでしたか？kvS10/40/410300472.　石段の下から、５００メートルと離れていないところに停めたはずなんですけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300471", 256, TRUE);
+	OutputLine(NULL, "「あの…、ごつい四駆を見かけませんでしたか？",
+			NULL, "「那个……你没看到一辆块头很大的四驱车吗？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300472", 256, TRUE);
+	OutputLine(NULL, "　石段の下から、５００メートルと離れていないところに停めたはずなんですけど…」",
+			NULL, "我们应该停在离石阶下方不到五百米的地方……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 43, "sprite/miono1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400202.「ごつい四駆ぅ～？kvS10/43/410400203.　そんな車があったら、目立つからすぐに分かるだろ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400202", 256, TRUE);
+	OutputLine(NULL, "「ごつい四駆ぅ～？",
+			NULL, "「块头很大的四驱车~？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400203", 256, TRUE);
+	OutputLine(NULL, "　そんな車があったら、目立つからすぐに分かるだろ」",
+			NULL, "要是有那种车，肯定很显眼，一眼就能看见吧。」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_sakebi_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, TRUE );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//美雪rvS10/40/410300473.「…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300473", 256, TRUE);
+	OutputLine(NULL, "「…？！」",
+			NULL, "「……？！」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse14", 256, 64);
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r美雪ちゃんは、弾かれたように石段を駆け下りていく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんは、弾かれたように石段を駆け下りていく。",
+			NULL, "美雪像被弹出去一样冲下石阶。", Line_Normal);
+	ClearMessage();
+
+//rあの車は、美雪ちゃんのものだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あの車は、美雪ちゃんのものだ。",
+			NULL, "那辆车是美雪的。", Line_Normal);
+	ClearMessage();
+
+//rあれがなくなったら…、俺たちは、帰る足をなくしてしまう！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "あれがなくなったら…、俺たちは、帰る足をなくしてしまう！",
+			NULL, "如果那辆车也没了……我们就失去了回去的交通工具。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100657.「帰る…足…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100657", 256, TRUE);
+	OutputLine(NULL, "「帰る…足…？」",
+			NULL, "「回去的……交通工具……？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sinzouappaku", 256, 64);
+	Negative( 500, TRUE );
+	Wait( 250 );
+	FadeFilm( 500, TRUE );
+	Wait( 250 );
+	DrawScene("black", 1000 );
+
+//r自分の発した言葉の意味に気がついて、俺はおそるおそる、ここにいるメンバーの顔を確かめるように見る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "自分の発した言葉の意味に気がついて、俺はおそるおそる、ここにいるメンバーの顔を確かめるように見る。",
+			NULL, "我意识到自己说出口的话意味着什么，战战兢兢地看向在场众人的脸，像是在确认。", Line_Normal);
+	ClearMessage();
+
+//r……乙部は、友達と車が忽然と消えた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "……乙部は、友達と車が忽然と消えた。",
+			NULL, "……乙部的朋友和车，突然消失了。", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、黒澤という恋人と車が、忽然と消えた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、黒澤という恋人と車が、忽然と消えた。",
+			NULL, "十和田小姐的恋人黑泽和车，也突然消失了。", Line_Normal);
+	ClearMessage();
+
+//rそこまで考えて、俺は小さく息を飲んだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そこまで考えて、俺は小さく息を飲んだ。",
+			NULL, "想到这里，我轻轻倒吸一口气。", Line_Normal);
+	ClearMessage();
+
+//r乙部も十和田さんも、すでに帰る足をなくしている…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部も十和田さんも、すでに帰る足をなくしている…！",
+			NULL, "乙部和十和田小姐，都已经失去了回去的交通工具……！", Line_Normal);
+	ClearMessage();
+
+//rしかも二人とも、同道していた友人もろとも、だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかも二人とも、同道していた友人もろとも、だ。",
+			NULL, "而且两个人都是连同行者一起失去的。", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "dsse14", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 500 );
+	DrawSceneWithMask( "black", "left", 0, 0, 500 );
+	DrawScene("background/jok3", 250 );
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(7, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(3, "down", 256, 64);
+	DrawScene("black", 500 );
+
+//荒川rvS10/00/410100658.「美雪ちゃん…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100658", 256, TRUE);
+	OutputLine(NULL, "「美雪ちゃん…？！」",
+			NULL, "「美雪……？！」", Line_Normal);
+	ClearMessage();
+
+//r言葉を発するのと同時に、俺は石段を駆け下りる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "言葉を発するのと同時に、俺は石段を駆け下りる。",
+			NULL, "话出口的同时，我冲下石阶。", Line_Normal);
+	ClearMessage();
+
+//rこれまでの法則通りになるならば、俺は美雪ちゃんという同伴者とこの村からの脱出手段となる車を、セットで失くしてしまうことになる…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "これまでの法則通りになるならば、俺は美雪ちゃんという同伴者とこの村からの脱出手段となる車を、セットで失くしてしまうことになる…！",
+			NULL, "如果事情继续遵循目前的规律，我就会同时失去同行者美雪，以及逃离这座村子的车……！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse14", 256, 64);
+	DrawScene("background/ymo1_01", 1000 );
+
+//荒川rvS10/00/410100659.「美雪ちゃん…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100659", 256, TRUE);
+	OutputLine(NULL, "「美雪ちゃん…！！」",
+			NULL, "「美雪！！」", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃん…、無事でいてくれ…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃん…、無事でいてくれ…！",
+			NULL, "美雪……一定要平安无事……！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "anahori", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//rぬかるみに、いちいち足を取られるのがもどかしい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ぬかるみに、いちいち足を取られるのがもどかしい。",
+			NULL, "每一步都被泥泞拖住，让人焦躁得不得了。", Line_Normal);
+	ClearMessage();
+
+//rもつれるように転がるように、走る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "もつれるように転がるように、走る。",
+			NULL, "脚步踉跄着，像要滚倒一样向前奔跑。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse14", 256, 64);
+	DrawSceneWithMask( "black", "left", 0, 0, 500 );
+
+//r…………。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…………。",
+			NULL, "…………", Line_Normal);
+	ClearMessage();
+
+//rしばらく進んだ先で、俺は美雪ちゃんの姿を発見した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しばらく進んだ先で、俺は美雪ちゃんの姿を発見した。",
+			NULL, "又往前跑了一段，我发现了美雪的身影。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse14", 256, 64);
+	DrawScene("background/ymo2_01", 1000 );
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300474.「龍ノ介さん…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300474", 256, TRUE);
+	OutputLine(NULL, "「龍ノ介さん…！」",
+			NULL, "「龙之介先生……！」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100660.「美雪ちゃん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100660", 256, TRUE);
+	OutputLine(NULL, "「美雪ちゃん…」",
+			NULL, "「美雪……」", Line_Normal);
+	ClearMessage();
+
+//rほっとするあまり、思わず美雪ちゃんを抱きしめそうになってしまった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ほっとするあまり、思わず美雪ちゃんを抱きしめそうになってしまった。",
+			NULL, "我松了一口气，差点忍不住把美雪抱在怀里。", Line_Normal);
+	ClearMessage();
+
+//r…いかん、いかん。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…いかん、いかん。",
+			NULL, "……冷静，冷静。", Line_Normal);
+	ClearMessage();
+
+//rが、俺の心の動きとは裏腹に美雪ちゃんは、瞳に焦燥の色を浮かべていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "が、俺の心の動きとは裏腹に美雪ちゃんは、瞳に焦燥の色を浮かべていた。",
+			NULL, "可是和我的心情相反，美雪的眼里浮着焦躁的神色。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100661.「…どうした？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100661", 256, TRUE);
+	OutputLine(NULL, "「…どうした？」",
+			NULL, "「怎么了？」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300475.「……。kvS10/40/410300476.やっぱり、ないみたいです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300475", 256, TRUE);
+	OutputLine(NULL, "「……。",
+			NULL, "「……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300476", 256, TRUE);
+	OutputLine(NULL, "やっぱり、ないみたいです」",
+			NULL, "果然不见了。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100662.「ないって…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100662", 256, TRUE);
+	OutputLine(NULL, "「ないって…？」",
+			NULL, "「没了……？」", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm06_29", 128, 0);
+	ModDrawCharacter(4, 40, "sprite/miyuko_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300477.「だから、…私たちの、車ですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300477", 256, TRUE);
+	OutputLine(NULL, "「だから、…私たちの、車ですよ」",
+			NULL, "「就是……我们的车啊。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100663.「…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100663", 256, TRUE);
+	OutputLine(NULL, "「…！」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300478.「もしかしたら…、本当に鬼隠しなのかもしれませんね。kvS10/40/410300479.私たちから車をとりあげて…、私たちをこの神社に閉じ込めて…。kvS10/40/410300480.本当に、鬼に一人ずつ殺されてしまうのかも…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300478", 256, TRUE);
+	OutputLine(NULL, "「もしかしたら…、本当に鬼隠しなのかもしれませんね。",
+			NULL, "「也许……这真的是鬼隐吧，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300479", 256, TRUE);
+	OutputLine(NULL, "私たちから車をとりあげて…、私たちをこの神社に閉じ込めて…。",
+			NULL, "从我们手里夺走车……把我们关在这座神社里……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300480", 256, TRUE);
+	OutputLine(NULL, "本当に、鬼に一人ずつ殺されてしまうのかも…」",
+			NULL, "然后真的被鬼一个一个杀掉……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100664.「み、美雪ちゃん！kvS10/00/410100665.　へへ、変なこと言わないでくれよな！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100664", 256, TRUE);
+	OutputLine(NULL, "「み、美雪ちゃん！",
+			NULL, "「美、美雪……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100665", 256, TRUE);
+	OutputLine(NULL, "　へへ、変なこと言わないでくれよな！」",
+			NULL, "别、别说这种怪话吓我啊！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300481.「でも、…誰もいない村なのに、車だけが消えてしまう。kvS10/40/410300482.どう考えても、おかしいですよね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300481", 256, TRUE);
+	OutputLine(NULL, "「でも、…誰もいない村なのに、車だけが消えてしまう。",
+			NULL, "「可是……明明是个空无一人的村子，偏偏只有车消失了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300482", 256, TRUE);
+	OutputLine(NULL, "どう考えても、おかしいですよね？」",
+			NULL, "怎么想都很奇怪吧？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100666.「それは…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100666", 256, TRUE);
+	OutputLine(NULL, "「それは…」",
+			NULL, "「这个……」", Line_Normal);
+	ClearMessage();
+
+//rごくりと唾を飲み込む。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ごくりと唾を飲み込む。",
+			NULL, "我咕咚一声咽下口水。", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんは、俺の反応を確かめると、さらに言葉を継いだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんは、俺の反応を確かめると、さらに言葉を継いだ。",
+			NULL, "美雪确认了我的反应，又接着说了下去。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300483.「もしかしたら…、kvS10/40/410300484.私たちの中に、鬼がいるのかもしれませんよ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300483", 256, TRUE);
+	OutputLine(NULL, "「もしかしたら…、",
+			NULL, "「也许……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300484", 256, TRUE);
+	OutputLine(NULL, "私たちの中に、鬼がいるのかもしれませんよ？」",
+			NULL, "我们之中，也许就有鬼哦？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100667.「…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100667", 256, TRUE);
+	OutputLine(NULL, "「…？！」",
+			NULL, "「……？！」", Line_Normal);
+	ClearMessage();
+
+//r俺たちの中に『鬼』、…つまり、この異常な状況を引き起こした存在がいるというのは、ありえる話だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺たちの中に『鬼』、…つまり、この異常な状況を引き起こした存在がいるというのは、ありえる話だ。",
+			NULL, "我们之中有『鬼』，也就是有某个存在制造了这场异常状况，这种说法并非没有可能。", Line_Normal);
+	ClearMessage();
+
+//rだが…、だとしたら、一体誰が…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが…、だとしたら、一体誰が…？",
+			NULL, "可是……如果真是这样，到底是谁……？", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "se068", 256, 64);
+	Negative( 250, FALSE );
+	ModDrawCharacter(4, 40, "sprite/miyuko_defkaku_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//rそう思いながら美雪ちゃんの顔を見た瞬間、ぞっとするものが背筋を走った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう思いながら美雪ちゃんの顔を見た瞬間、ぞっとするものが背筋を走った。",
+			NULL, "这么想着，看向美雪脸庞的瞬间，一阵寒意窜过我的背脊。", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 500, FALSE );
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300486.「――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300486", 256, TRUE);
+	OutputLine(NULL, "「——」",
+			NULL, "「——」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそこにある感情は猜疑と、…警戒。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そこにある感情は猜疑と、…警戒。",
+			NULL, "她眼中流露出的感情，是猜疑……还有戒备。", Line_Normal);
+	ClearMessage();
+
+//r冗談じゃない…！　美雪ちゃんは、俺でさえも疑っているというのか？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "冗談じゃない…！　美雪ちゃんは、俺でさえも疑っているというのか？！",
+			NULL, "开什么玩笑……！美雪连我都在怀疑吗？！", Line_Normal);
+	ClearMessage();
+
+//rと同時にまた、冷たい目で美雪ちゃんの表情を観察してしまう俺がいる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "と同時にまた、冷たい目で美雪ちゃんの表情を観察してしまう俺がいる。",
+			NULL, "与此同时，我也在用冰冷的目光观察着美雪的表情。", Line_Normal);
+	ClearMessage();
+
+//r今の美雪ちゃんのセリフは、何を意味してるんだ…？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今の美雪ちゃんのセリフは、何を意味してるんだ…？！",
+			NULL, "美雪刚才那句话，到底是什么意思……？！", Line_Normal);
+	ClearMessage();
+
+//r俺は…、どうしたらいい…？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は…、どうしたらいい…？！",
+			NULL, "我……该怎么办……？！", Line_Normal);
+	ClearMessage();
+
+//r俺は…？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は…？！",
+			NULL, "我……？！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/ymo2_01", 1000 );
+	ModDrawCharacter(4, 40, "sprite/miyuko_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//荒川rvS10/00/410100668.「み、みゆ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100668", 256, TRUE);
+	OutputLine(NULL, "「み、みゆ…」",
+			NULL, "「美、美雪……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 40, "sprite/miyuko_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//美雪rvS10/40/410300487.「…そろそろ、戻りましょうか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300487", 256, TRUE);
+	OutputLine(NULL, "「…そろそろ、戻りましょうか」",
+			NULL, "「……差不多该回去了吧。」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100669.「え？kvS10/00/410100670.　あ、ああ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100669", 256, TRUE);
+	OutputLine(NULL, "「え？",
+			NULL, "「咦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100670", 256, TRUE);
+	OutputLine(NULL, "　あ、ああ…」",
+			NULL, "啊、啊啊……」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse16", 256, 64);
+	DrawSceneWithMask( "black", "down", 0, 0, 1000 );
+
+//r俺の不安と逡巡を知ってか知らずか、そう言って美雪ちゃんは神社への道を戻っていく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺の不安と逡巡を知ってか知らずか、そう言って美雪ちゃんは神社への道を戻っていく。",
+			NULL, "美雪像是知道我的不安和犹豫，又像是什么都不知道，说完便沿着神社的路往回走。", Line_Normal);
+	ClearMessage();
+
+//r…石段を上がる間もずっと、俺たちは無言だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…石段を上がる間もずっと、俺たちは無言だった。",
+			NULL, "……走上石阶的时候，我们始终一言不发。", Line_Normal);
+	ClearMessage();
+
+	Wait( 2000 );
+	FadeOutBGM(2, 200, FALSE);
+	PlayBGM( 1, "ame", 128, 0 );
+	DrawScene("white", 1000 );
+	ModDrawCharacter(4, 43, "sprite/miono1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ji1_03", 1000 );
+
+//魅音rvS10/43/410400204.「車…、なかっただろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400204", 256, TRUE);
+	OutputLine(NULL, "「車…、なかっただろ？」",
+			NULL, "「车……没了吧？」", Line_Normal);
+	ClearMessage();
+
+//r園崎さんの言葉に、美雪ちゃんがこっくりとうなずく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎さんの言葉に、美雪ちゃんがこっくりとうなずく。",
+			NULL, "听了园崎小姐的话，美雪轻轻点了点头。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 43, "sprite/miono1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400205.「残念だねぇ。kvS10/43/410400206.みんな仲良く鬼隠しに遭っちまったようだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400205", 256, TRUE);
+	OutputLine(NULL, "「残念だねぇ。",
+			NULL, "「真遗憾啊，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400206", 256, TRUE);
+	OutputLine(NULL, "みんな仲良く鬼隠しに遭っちまったようだ」",
+			NULL, "看来大家全都一起遭了鬼隐。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse16", 256, 64);
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r園崎さんは、大きな唇を歪めてにやりと笑う。そしてくるりと踵を返すと、集会所のほうへ歩きかけた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎さんは、大きな唇を歪めてにやりと笑う。そしてくるりと踵を返すと、集会所のほうへ歩きかけた。",
+			NULL, "园崎小姐嘴角一歪，咧嘴笑了。随后她转过身，朝集会所走去。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100672.「あのな、おい…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100672", 256, TRUE);
+	OutputLine(NULL, "「あのな、おい…」",
+			NULL, "「我说，喂……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400207.「そういや、…乙部は、どうしたんだい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400207", 256, TRUE);
+	OutputLine(NULL, "「そういや、…乙部は、どうしたんだい？」",
+			NULL, "「说起来……乙部去哪了？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//r指摘されて、俺は『あっ』、と思いだす。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "指摘されて、俺は『あっ』、と思いだす。",
+			NULL, "被她这么一提，我才猛地想起来。", Line_Normal);
+	ClearMessage();
+
+//r乙部…？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部…？！",
+			NULL, "乙部……？！", Line_Normal);
+	ClearMessage();
+
+//rそういえば、携帯を探しに行くと行ったきり、戻ってきていない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そういえば、携帯を探しに行くと行ったきり、戻ってきていない。",
+			NULL, "说起来，他说去找手机之后，就一直没回来。", Line_Normal);
+	ClearMessage();
+
+//r誰の仕業で、何が起きているのか…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "誰の仕業で、何が起きているのか…？",
+			NULL, "到底是谁干的，又发生了什么……？", Line_Normal);
+	ClearMessage();
+
+//r実態はまだ何もつかめてはいないが、集団行動から外れて一人で動き回るのは、非常に危険だということだけは確かだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "実態はまだ何もつかめてはいないが、集団行動から外れて一人で動き回るのは、非常に危険だということだけは確かだ。",
+			NULL, "真相仍然完全摸不着头绪，但至少可以确定，离开集体独自行动非常危险。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100673.「乙部？！　乙部ーっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100673", 256, TRUE);
+	OutputLine(NULL, "「乙部？！　乙部ーっ！」",
+			NULL, "「乙部？！乙部——！」", Line_Normal);
+	ClearMessage();
+
+//r乙部はどう見たって、人間を狩る殺人鬼には見えない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部はどう見たって、人間を狩る殺人鬼には見えない。",
+			NULL, "怎么看，乙部都不像会猎杀人类的杀人鬼。", Line_Normal);
+	ClearMessage();
+
+//r乙部がいなくなったとすれば、それはすなわち…、鬼隠しの被害者として選ばれてしまったことを意味する…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部がいなくなったとすれば、それはすなわち…、鬼隠しの被害者として選ばれてしまったことを意味する…！",
+			NULL, "如果乙部不见了，那就意味着……他被选成了鬼隐的受害者……！", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 40, "sprite/miyuko_sakebi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//美雪rvS10/40/410300489.「乙部くーん！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300489", 256, TRUE);
+	OutputLine(NULL, "「乙部くーん！」",
+			NULL, "「乙部——！」", Line_Normal);
+	ClearMessage();
+
+//乙部rvS10/41/410200210.「……え？kvS10/41/410200211.　あ、はーい…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200210", 256, TRUE);
+	OutputLine(NULL, "「……え？",
+			NULL, "「……咦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200211", 256, TRUE);
+	OutputLine(NULL, "　あ、はーい…！」",
+			NULL, "啊，我在——！」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rすると、呼ばれているのに気づいた乙部が、それほど離れていない場所からおおげさな足音を立てながら走ってきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "すると、呼ばれているのに気づいた乙部が、それほど離れていない場所からおおげさな足音を立てながら走ってきた。",
+			NULL, "随后，听见呼喊的乙部从不远处跑了过来，踩得脚步声震天响。", Line_Normal);
+	ClearMessage();
+
+	Wait( 1000 );
+	PlaySE(3, "dsse13", 256, 64);
+	Wait( 2000 );
+	DrawScene("background/ji1_03", 1000 );
+	ModDrawCharacter(4, 41, "sprite/otobe_tere_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlayBGM(2, "hm01_07", 128, 0);
+
+//乙部rvS10/41/410200212.「ど、どうしました…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200212", 256, TRUE);
+	OutputLine(NULL, "「ど、どうしました…？」",
+			NULL, "「怎、怎么了……？」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(5, 40, "sprite/miyuko_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300490.「乙部くんっ！kvS10/40/410300491.　良かったぁ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300490", 256, TRUE);
+	OutputLine(NULL, "「乙部くんっ！",
+			NULL, "「乙部！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300491", 256, TRUE);
+	OutputLine(NULL, "　良かったぁ」",
+			NULL, "太好了。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//荒川rvS10/00/410100674.「全くだ。kvS10/00/410100675.お前まで鬼隠しに遭っちまったのかと思って、アセったぜ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100674", 256, TRUE);
+	OutputLine(NULL, "「全くだ。",
+			NULL, "「真是的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100675", 256, TRUE);
+	OutputLine(NULL, "お前まで鬼隠しに遭っちまったのかと思って、アセったぜ！」",
+			NULL, "我还以为连你都遭遇鬼隐了，吓得够呛啊！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200213.「あ、そうなんですか…？kvS10/41/410200214.　心配かけて、すみません…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200213", 256, TRUE);
+	OutputLine(NULL, "「あ、そうなんですか…？",
+			NULL, "「啊，是这样吗……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200214", 256, TRUE);
+	OutputLine(NULL, "　心配かけて、すみません…」",
+			NULL, "让你们担心了，对不起……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100676.「で、ケータイ見つかったか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100676", 256, TRUE);
+	OutputLine(NULL, "「で、ケータイ見つかったか？」",
+			NULL, "「那，手机找到了吗？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200215.「はい…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200215", 256, TRUE);
+	OutputLine(NULL, "「はい…」",
+			NULL, "「找到了……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100677.「どうした…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100677", 256, TRUE);
+	OutputLine(NULL, "「どうした…？」",
+			NULL, "「怎么了？」", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	ModDrawCharacter(3, 41, "sprite/otobe_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200216.「ケータイはありました。kvS10/41/410200217.でも…、おかしいんですよね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200216", 256, TRUE);
+	OutputLine(NULL, "「ケータイはありました。",
+			NULL, "「手机是找到了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200217", 256, TRUE);
+	OutputLine(NULL, "でも…、おかしいんですよね…」",
+			NULL, "可是……有点奇怪……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300492.「おかしいって…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300492", 256, TRUE);
+	OutputLine(NULL, "「おかしいって…？」",
+			NULL, "「奇怪？」", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//r乙部の黒目は、恐怖と緊張で小刻みに揺れている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部の黒目は、恐怖と緊張で小刻みに揺れている。",
+			NULL, "乙部的瞳孔因恐惧与紧张而微微颤动。", Line_Normal);
+	ClearMessage();
+
+//rおいおい、…今度は、なんだよ？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "おいおい、…今度は、なんだよ？！",
+			NULL, "喂喂……这次又是什么啊？！", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 41, "sprite/otobe_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/ji1_03", 1000 );
+
+//乙部rvS10/41/410200218.「荒川さん。kvS10/41/410200219.見てくださいよ、これ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200218", 256, TRUE);
+	OutputLine(NULL, "「荒川さん。",
+			NULL, "「荒川先生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200219", 256, TRUE);
+	OutputLine(NULL, "見てくださいよ、これ…」",
+			NULL, "你看这个……」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200220.「僕は、落としただけなのに…、kvS10/41/410200221.なんでこんなことになるんでしょう…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200220", 256, TRUE);
+	OutputLine(NULL, "「僕は、落としただけなのに…、",
+			NULL, "「我只是把它弄丢了而已……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200221", 256, TRUE);
+	OutputLine(NULL, "なんでこんなことになるんでしょう…？」",
+			NULL, "为什么会变成这样啊……？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sinzouappaku", 256, 64);
+	Negative( 500, TRUE );
+	Wait( 100 );
+	FadeFilm( 500, TRUE );
+	PlayBGM(2, "hm02_12", 128, 0);
+
+//荒川rvS10/00/410100678.「…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100678", 256, TRUE);
+	OutputLine(NULL, "「…！」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//rそう言って乙部は、手に持っていたケータイを差し出す。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って乙部は、手に持っていたケータイを差し出す。",
+			NULL, "乙部说着，把手里的手机递了出来。", Line_Normal);
+	ClearMessage();
+
+//r折りたたみ式のそれは蝶番の部分が取れかかり、液晶が無残に割れてしまっている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "折りたたみ式のそれは蝶番の部分が取れかかり、液晶が無残に割れてしまっている。",
+			NULL, "那是一部折叠手机，转轴的部分快要脱落，液晶屏也惨不忍睹地裂开了。", Line_Normal);
+	ClearMessage();
+
+//r泥だらけのボタンは３つほど取れてしまっていて…、つまりこのケータイは、どう見てももう使い物にはならない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "泥だらけのボタンは３つほど取れてしまっていて…、つまりこのケータイは、どう見てももう使い物にはならない。",
+			NULL, "沾满泥的按键掉了三个左右……也就是说，这部手机怎么看都已经不能用了。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100679.「何だよ、コレ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100679", 256, TRUE);
+	OutputLine(NULL, "「何だよ、コレ…」",
+			NULL, "「这什么啊……」", Line_Normal);
+	ClearMessage();
+
+//rさすがに俺も、震えずにはいられなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "さすがに俺も、震えずにはいられなかった。",
+			NULL, "就连我也忍不住颤抖起来。", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100680.「どういうことだよ…。kvS10/00/410100681.なんで、こんなことになるんだよ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100680", 256, TRUE);
+	OutputLine(NULL, "「どういうことだよ…。",
+			NULL, "「这到底怎么回事……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100681", 256, TRUE);
+	OutputLine(NULL, "なんで、こんなことになるんだよ…？」",
+			NULL, "为什么会变成这样啊……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300493.「誰かにわざと、めちゃくちゃに壊されたとしか思えないですね…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300493", 256, TRUE);
+	OutputLine(NULL, "「誰かにわざと、めちゃくちゃに壊されたとしか思えないですね…」",
+			NULL, "「只能认为是有人故意把它砸得稀烂了呢……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100682.「だが…、どうして…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100682", 256, TRUE);
+	OutputLine(NULL, "「だが…、どうして…？」",
+			NULL, "「可是……为什么……？」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, FALSE);
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 41, "sprite/otobe_kanashimi_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(4, 40, "sprite/miyuko_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	ModDrawCharacter(5, 42, "sprite/yae_akire_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//十和田rvS10/42/410600130.「これって、誰かがわざと…、やったんですよね？kvS10/42/410600131.　これが乙部くんのケータイだと知っていて…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600130", 256, TRUE);
+	OutputLine(NULL, "「これって、誰かがわざと…、やったんですよね？",
+			NULL, "「这应该是有人故意……做的吧？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600131", 256, TRUE);
+	OutputLine(NULL, "　これが乙部くんのケータイだと知っていて…」",
+			NULL, "而且还知道这是乙部的手机……」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100683.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100683", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//乙部rvS10/41/410200222.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200222", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//十和田rvS10/42/410600132.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600132", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//美雪rvS10/40/410300494.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300494", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "「……」", Line_Normal);
+	ClearMessage();
+
+//r全員が黙りこむ。…その所作の意図することが理解できるだけに、何も言えなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "全員が黙りこむ。…その所作の意図することが理解できるだけに、何も言えなかった。",
+			NULL, "所有人都沉默下来。正因为能理解这个举动意味着什么，谁也说不出话。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, FALSE);
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, FALSE);
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(4, 43, "sprite/miono1_akire_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400208.「あんたたち、何をすっかりビビッてんだい。kvS10/43/410400209.たかが電話の一つや二つ、また買えばいいだろう？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400208", 256, TRUE);
+	OutputLine(NULL, "「あんたたち、何をすっかりビビッてんだい。",
+			NULL, "「你们一个个怎么全吓成这样。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400209", 256, TRUE);
+	OutputLine(NULL, "たかが電話の一つや二つ、また買えばいいだろう？」",
+			NULL, "不过是一两部手机，再买就是了吧？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100684.「そういう問題じゃないのは…、あんたが一番よく知っているはずだぜ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100684", 256, TRUE);
+	OutputLine(NULL, "「そういう問題じゃないのは…、あんたが一番よく知っているはずだぜ？」",
+			NULL, "「事情没这么简单……这一点你应该最清楚吧？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 43, "sprite/miono1_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400210.「…私が？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400210", 256, TRUE);
+	OutputLine(NULL, "「…私が？」",
+			NULL, "「……我？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100685.「…この村では、外界との通信は、絶たなければならない。kvS10/00/410100686.外部との連絡を取ろうとした者は、見せしめに無残な姿にして殺す…。kvS10/00/410100687.そんなやり口、どっかで聞いたことがあると思わねーか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100685", 256, TRUE);
+	OutputLine(NULL, "「…この村では、外界との通信は、絶たなければならない。",
+			NULL, "「……在这个村子里，和外界的通信必须切断。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100686", 256, TRUE);
+	OutputLine(NULL, "外部との連絡を取ろうとした者は、見せしめに無残な姿にして殺す…。",
+			NULL, "想联系外面的人，就会被杀得惨不忍睹，用来警告众人……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100687", 256, TRUE);
+	OutputLine(NULL, "そんなやり口、どっかで聞いたことがあると思わねーか？」",
+			NULL, "这种做法，你不觉得在哪里听过吗？」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//r俺は、ボロボロにされた乙部のケータイを、園崎さんの前に突き出した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は、ボロボロにされた乙部のケータイを、園崎さんの前に突き出した。",
+			NULL, "我把被砸得破破烂烂的乙部手机，递到园崎小姐面前。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 43, "sprite/miono1_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//魅音rvS10/43/410400211.「何だい…？kvS10/43/410400212.　私がやったとでも言うのかい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400211", 256, TRUE);
+	OutputLine(NULL, "「何だい…？",
+			NULL, "「什么意思……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400212", 256, TRUE);
+	OutputLine(NULL, "　私がやったとでも言うのかい？」",
+			NULL, "你想说这是我干的吗？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100688.「そうは言ってない。kvS10/00/410100689.だが…、気になるじゃねーか！kvS10/00/410100690.　外部と連絡が取れないように、ケータイが壊された。kvS10/00/410100691.このケータイは俺たちの代わりに…、見せしめに、ボロボロにされたようなもんだぜ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100688", 256, TRUE);
+	OutputLine(NULL, "「そうは言ってない。",
+			NULL, "「我没这么说。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100689", 256, TRUE);
+	OutputLine(NULL, "だが…、気になるじゃねーか！",
+			NULL, "可这不是很可疑吗！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100690", 256, TRUE);
+	OutputLine(NULL, "　外部と連絡が取れないように、ケータイが壊された。",
+			NULL, "为了让我们无法和外界联系，手机被毁了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100691", 256, TRUE);
+	OutputLine(NULL, "このケータイは俺たちの代わりに…、見せしめに、ボロボロにされたようなもんだぜ？！」",
+			NULL, "这部手机就像代替我们成了警告，被砸成了这副样子啊？！」", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 43, "sprite/miono1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 41, "sprite/otobe_tere_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//乙部rvS10/41/410200223.「それじゃ…、これは…、この村の祟りってことなんですか…？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#e8af52>乙部</color>", NULL, "<color=#e8af52>乙部</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 41, "ps3/s10/41/410200223", 256, TRUE);
+	OutputLine(NULL, "「それじゃ…、これは…、この村の祟りってことなんですか…？！」",
+			NULL, "「那……这个……就是这个村子的作祟吗……？！」", Line_Normal);
+	ClearMessage();
+
+//r乙部の言葉に、…俺たちは思わず押し黙る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "乙部の言葉に、…俺たちは思わず押し黙る。",
+			NULL, "听到乙部这句话……我们不由得沉默了。", Line_Normal);
+	ClearMessage();
+
+//r途端、園崎さんがカラカラと笑い出した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "途端、園崎さんがカラカラと笑い出した。",
+			NULL, "下一瞬间，园崎小姐忽然放声大笑起来。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono1_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400213.「あっははははははっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400213", 256, TRUE);
+	OutputLine(NULL, "「あっははははははっ！」",
+			NULL, "「啊哈哈哈哈哈哈！」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 43, "sprite/miono1_shinken_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS10/43/410400214.「…バカをお言いでないよ。kvS10/43/410400215.悪いけど、私は集会所で休ませてもらうよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400214", 256, TRUE);
+	OutputLine(NULL, "「…バカをお言いでないよ。",
+			NULL, "「……别说傻话了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 43, "ps3/s10/43/410400215", 256, TRUE);
+	OutputLine(NULL, "悪いけど、私は集会所で休ませてもらうよ」",
+			NULL, "不好意思，我要去集会所休息了。」", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse16", 256, 64);
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//r園崎さんは、俺が突き出したケータイを手で払う。そして俺たちの横をすり抜けて、集会所のほうへ歩いていく。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "園崎さんは、俺が突き出したケータイを手で払う。そして俺たちの横をすり抜けて、集会所のほうへ歩いていく。",
+			NULL, "园崎小姐用手拨开我递出的手机。然后她从我们身旁走过，朝集会所去了。", Line_Normal);
+	ClearMessage();
+
+//r美雪ちゃんが、心配そうに俺を見た。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "美雪ちゃんが、心配そうに俺を見た。",
+			NULL, "美雪担心地看着我。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_kanashimi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300495.「龍ノ介さん…、どうしますか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300495", 256, TRUE);
+	OutputLine(NULL, "「龍ノ介さん…、どうしますか？」",
+			NULL, "「龙之介先生……怎么办？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100692.「どうするって…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100692", 256, TRUE);
+	OutputLine(NULL, "「どうするって…？」",
+			NULL, "「怎么办……？」", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 40, "sprite/miyuko_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//美雪rvS10/40/410300496.「私たちも、集会所に戻りませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#aa886c>美雪</color>", NULL, "<color=#aa886c>美雪</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 40, "ps3/s10/40/410300496", 256, TRUE);
+	OutputLine(NULL, "「私たちも、集会所に戻りませんか？」",
+			NULL, "「我们也回集会所吧？」", Line_Normal);
+	ClearMessage();
+
+//荒川rvS10/00/410100693.「あぁ…。だけど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5f5248>荒川</color>", NULL, "<color=#5f5248>荒川</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s10/00/410100693", 256, TRUE);
+	OutputLine(NULL, "「あぁ…。だけど…」",
+			NULL, "「啊啊……可是……」", Line_Normal);
+	ClearMessage();
+
+//rここまでの一連のやり取りがあったすぐ後に、園崎さんのいるところへ戻るのはどうも…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ここまでの一連のやり取りがあったすぐ後に、園崎さんのいるところへ戻るのはどうも…。",
+			NULL, "刚发生了刚才那一连串事，现在就回到园崎小姐所在的地方，总觉得……", Line_Normal);
+	ClearMessage();
+
+//rそう思って、何となく迷っていたその時。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう思って、何となく迷っていたその時。",
+			NULL, "我这么想着，正犹豫不决的时候。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(3, 42, "sprite/yae_akire_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600134.「あの、…すみません、皆さん。kvS10/42/410600135.勝手なお願いですけど、…工くんを、もう少し探してくれませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600134", 256, TRUE);
+	OutputLine(NULL, "「あの、…すみません、皆さん。",
+			NULL, "「那个……对不起，各位。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600135", 256, TRUE);
+	OutputLine(NULL, "勝手なお願いですけど、…工くんを、もう少し探してくれませんか？」",
+			NULL, "这是我冒昧的请求……能不能再帮我找一会儿工君？」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんが切迫した声で、俺たちに頭を下げながら言った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんが切迫した声で、俺たちに頭を下げながら言った。",
+			NULL, "十和田小姐声音急切地向我们低头说道。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_kanashimi_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600136.「私も探します…。kvS10/42/410600137.夜通しこの村を探せば、きっと工くん…見つかると思うんです。kvS10/42/410600138.きっと…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600136", 256, TRUE);
+	OutputLine(NULL, "「私も探します…。",
+			NULL, "「我也会一起找……", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600137", 256, TRUE);
+	OutputLine(NULL, "夜通しこの村を探せば、きっと工くん…見つかると思うんです。",
+			NULL, "只要连夜在这个村子里找，一定能找到工君的。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600138", 256, TRUE);
+	OutputLine(NULL, "きっと…」",
+			NULL, "一定……」", Line_Normal);
+	ClearMessage();
+
+//rまだ生きているという可能性に賭けたいという思いが、ひしひしと伝わってきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まだ生きているという可能性に賭けたいという思いが、ひしひしと伝わってきた。",
+			NULL, "她想赌一把他还活着的可能性，这份心情清楚地传了过来。", Line_Normal);
+	ClearMessage();
+
+//r…気持ちは、痛いほどわかる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…気持ちは、痛いほどわかる。",
+			NULL, "……她的心情，我再清楚不过。", Line_Normal);
+	ClearMessage();
+
+//rだが、その可能性は…、信じるに値するのだろうか…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、その可能性は…、信じるに値するのだろうか…？",
+			NULL, "可是，这种可能……真的值得相信吗……？", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 42, "sprite/yae_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//十和田rvS10/42/410600139.「お願いです、荒川さん。kvS10/42/410600140.工くんを、一緒に探して下さい」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#efb2c1>十和田</color>", NULL, "<color=#efb2c1>十和田</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600139", 256, TRUE);
+	OutputLine(NULL, "「お願いです、荒川さん。",
+			NULL, "「拜托你，荒川先生。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 42, "ps3/s10/42/410600140", 256, TRUE);
+	OutputLine(NULL, "工くんを、一緒に探して下さい」",
+			NULL, "请和我一起去找工君。」", Line_Normal);
+	ClearMessage();
+
+//r十和田さんは、上目遣いに俺を見る。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "十和田さんは、上目遣いに俺を見る。",
+			NULL, "十和田小姐抬眼看着我。", Line_Normal);
+	ClearMessage();
+
+//r猫のように大きな瞳から発せられる強い視線が、うながすように、俺の瞳に吸い付いている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "猫のように大きな瞳から発せられる強い視線が、うながすように、俺の瞳に吸い付いている。",
+			NULL, "她那双猫一样的大眼睛投来强烈的视线，像在催促般紧紧吸住我的目光。", Line_Normal);
+	ClearMessage();
+
+//r迷った末に、俺は…
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "迷った末に、俺は…",
+			NULL, "犹豫过后，我……", Line_Normal);
+	ClearMessage();
+
+	if (GetGlobalFlag(GChoiceMode) == 0) {
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "<color=#aaaaaa>『黒澤を探しに行く』</color>",
+				NULL, "<color=#aaaaaa>『去找黑泽』</color>", Line_Normal);
+		ClearMessage();
+
+		SetGlobalFlag(GConsoleChoice, 0);
+	}
+	else
+	{
+		if (GetGlobalFlag(GChoiceMode) == 2) {
+			DrawBustshotWithFiltering( 6, "2choices_1", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+		}
+		else {
+			DrawBustshotWithFiltering( 6, "2choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+		}
+		char Choice1[2];
+
+		if(GetGlobalFlag(GLanguage) == 1)
+		{
+			Choice1[0] = "去找黑泽";
+			Choice1[1] = "返回集会所";
+		}
+		else
+		{
+			Choice1[0] = "黒澤を探しに行く";
+			Choice1[1] = "集会所へ戻る";
+		}
+
+		Select( 2, Choice1 );
+		DisableWindow();
+		FadeBustshot( 6, FALSE, 0, 0, 0, 0, 200, TRUE );
+		if (LoadValueFromLocalWork( SelectResult ) == 0)
+		{
+			SetGlobalFlag(GConsoleChoice, 0);
+		}
+		else
+		{
+			SetGlobalFlag(GConsoleChoice, 1);
+		}
+	}
+}
