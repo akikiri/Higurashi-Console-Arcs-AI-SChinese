@@ -36,7 +36,7 @@
 
 ## 下载与安装
 
-请从 [Releases](https://github.com/akikiri/Higurashi-Console-Arcs-SChinese/releases) 下载最新 ZIP。
+请从 [Releases](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases) 下载最新 ZIP。
 
 安装前先关闭游戏，并备份：
 
