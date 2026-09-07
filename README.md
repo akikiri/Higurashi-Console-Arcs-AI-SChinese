@@ -1,4 +1,4 @@
-# 《寒蝉鸣泣之时》主机追加篇章简体中文补丁
+# 《寒蝉鸣泣之时》主机追加篇章简体中文补丁-AI汉化（GPT-5.6sol）
 
 这是面向 Steam 版《Higurashi When They Cry Hou - Ch.4 Himatsubushi》（第四章／暇溃篇）的额外主机章节简体中文补丁。
 
@@ -59,8 +59,7 @@ SteamLibrary\steamapps\common\Higurashi 04 - Himatsubushi
 - 大部分文本由 GPT-5.6 Sol 翻译及精校。
 - 部分翻译文本来源：[BV1AN7C66EZF](https://www.bilibili.com/video/BV1AN7C66EZF)（UP主：人工大黑）
 - 中文字形来源：[BV12ecbz1EDq](https://www.bilibili.com/video/BV12ecbz1EDq)（UP主：-雪原）
-- 补丁制作者已完整实机游玩一遍，并在实机过程中校对、修正文本与显示问题。
-- 感谢 07th-Mod 团队提供 Steam 版主机章节支持。
+- 已完整实机游玩一遍，并在实机过程中校对、修正文本与显示问题。
 
 ## 已知问题
 
