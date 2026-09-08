@@ -71,7 +71,7 @@ Higurashi-Console-Arcs-AI-SChinese/
 
 仓库也不包含 `HigurashiEp04_Data/sharedassets0.assets`。该文件保存本补丁使用的中文字形，但体积超过 GitHub 普通 Git 文件限制，请从 Release 安装包取得。
 
-澪尽篇 PS2 版（`haji_*`）以及澪尽篇・表中的 `LConsoleArc==10` 专用分支不属于本补丁的已完成范围。
+澪尽篇 PS2 版：澪尽篇・表中的 `LConsoleArc==10` 专用分支不属于本补丁的已完成范围。
 
 ## 安装前提
 
