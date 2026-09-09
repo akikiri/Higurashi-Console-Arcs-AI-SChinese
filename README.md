@@ -71,7 +71,7 @@ Higurashi-Console-Arcs-AI-SChinese/
 
 仓库也不包含 `HigurashiEp04_Data/sharedassets0.assets`。该文件保存本补丁使用的中文字形，但体积超过 GitHub 普通 Git 文件限制，请从 Release 安装包取得。
 
-澪尽篇 PS2 版：澪尽篇・表中的 `LConsoleArc==10` 专用分支不属于本补丁的已完成范围。
+澪尽篇 PS2 版对应 `omot_*` 中的 `LConsoleArc==10` 专用分支，不属于本补丁的已完成范围。
 
 ## 安装前提
 
@@ -135,7 +135,6 @@ HigurashiEp04_Data/StreamingAssets/Update
 
 ## 已知问题
 
-- 澪尽篇中的“澪”字和“袴”字目前无法正常显示。
 - 部分图片中的文字与正文译文存在差异。
 
 ## 说明
