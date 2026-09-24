@@ -103,7 +103,7 @@ Higurashi-Console-Arcs-AI-SChinese/
 HigurashiEp04_Data\sharedassets0.assets
 ```
 
-然后将 ZIP 内的 `HigurashiEp04_Data` 文件夹复制到第四章游戏根目录，合并文件夹并覆盖同名文件。
+然后将 ZIP 内的 `HigurashiEp04_Data` 文件夹复制到第四章游戏根目录，合并文件夹并覆盖同名文件。此前安装过旧版补丁也直接覆盖即可。
 
 典型路径：
 
@@ -111,7 +111,7 @@ HigurashiEp04_Data\sharedassets0.assets
 SteamLibrary\steamapps\common\Higurashi 04 - Himatsubushi
 ```
 
-脚本编译缓存会由 07th-Mod 根据 `Update` 源脚本自动生成。详细安装、卸载和故障排除说明见压缩包内的 `README_安装说明.txt`。
+启动游戏后，07th-Mod 会根据更新后的 `Update` 源脚本自动重新编译，无需手动删除已编译脚本。详细安装、卸载和故障排除说明见压缩包内的 `README_安装说明.txt`。
 
 仓库中的未打包文件主要用于公开校对与协作。由于 `sharedassets0.assets` 超过 GitHub 普通 Git 文件的大小限制，仓库源码不包含完整字体资产，不能代替 Release 中的安装包。
 
