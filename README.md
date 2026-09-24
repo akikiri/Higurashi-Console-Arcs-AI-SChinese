@@ -77,7 +77,7 @@ Higurashi-Console-Arcs-AI-SChinese/
 
 仓库也不包含 `HigurashiEp04_Data/sharedassets0.assets`。该文件保存本补丁使用的中文字形，但体积超过 GitHub 普通 Git 文件限制，请从 Release 安装包取得。
 
-澪尽篇 PS2 版使用 `omot_*` 中的 `LConsoleArc==10` 专用分支。为更直观地显示它与澪尽表篇的区别，v2.0 Release 另附独立的[澪尽篇 PS2 差异淡蓝色补丁](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.0)。先安装主补丁，再按可选包说明覆盖即可；主补丁不含淡蓝色标记。
+澪尽篇 PS2 版使用 `omot_*` 中的 `LConsoleArc==10` 专用分支。为更直观地显示它与澪尽表篇的区别，v2.0.0 Release 另附独立的[澪尽篇 PS2 差异淡蓝色补丁](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.0.0)。先安装主补丁，再按可选包说明覆盖即可；主补丁不含淡蓝色标记。
 
 **校对提醒：**羞晒篇和澪尽篇 PS2 版尚未经过实机人工校对，AI 翻译可能不准确。欢迎通过 Issue 指出错译、漏译或显示问题。
 
@@ -95,7 +95,7 @@ Higurashi-Console-Arcs-AI-SChinese/
 
 ## 下载与安装
 
-请从 [v2.0 Release](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.0) 下载主补丁 ZIP；淡蓝色补丁是同页的独立可选附件。
+请从 [v2.0.0 Release](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.0.0) 下载主补丁 ZIP；淡蓝色补丁是同页的独立可选附件。
 
 安装前先关闭游戏，并备份：
 
