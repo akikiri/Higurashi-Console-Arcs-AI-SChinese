@@ -1,0 +1,292 @@
+void main()
+{
+
+//*A note from DoctorDiablo
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+	ModEnableNVLModeInADVMode();
+	DrawScene("background/ke_shiryou1_02", 1000 );
+	PlayBGM(2, "hm11_83", 128, 0);
+
+	OutputLine(NULL, "こんにちは、DoctorDiabloです。",
+			NULL, "大家好，我是DoctorDiablo。", Line_WaitForInput);
+	OutputLine(NULL, "　私はコンソールアーク・プロジェクトを始動させてからこの度の完成まで、全体の取りしきりのようなことをしておりました。",
+			NULL, " 我发起了主机追加篇章项目，并从启动一直统筹到今天的完成。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n竜騎士は解答編それぞれに「スタッフルーム」を作っていました。ですので私も10作品をリリースできた今、同じことをさせていただこうと思います。",
+			NULL, "\n\n龙骑士在每部解答篇后都设有「制作室」。如今我们已经发布了10部作品，我也想借这个机会写一篇。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "ところで、作品はお楽しみいただけたでしょうか？",
+			NULL, "顺便问一下，大家喜欢这些作品吗？", Line_WaitForInput);
+	OutputLine(NULL, "　一部の作品には賛否両論があります（少なくない意見をこの目で見てきました）が、少なくとも皆さんに良い時間をお過ごしいただけたものと信じています。",
+			NULL, " 有些作品的评价褒贬不一——我亲眼见过不少这样的意见。不过，我相信它们至少让大家度过了一段不错的时光。", Line_WaitForInput);
+	OutputLine(NULL, "\n私はこれらの作品に関する議論が他者の意見、又聞き、ときには間違った情報に基づいていることがずっと残念でした。そのため、皆さんが実際に作品を読まれた上で皆さん自身の考えを持ってくださることを喜ばしく思っております。",
+			NULL, "\n我一直觉得很遗憾，关于这些作品的讨论往往是基于他人的意见、道听途说，有时甚至是错误的信息。因此，我很高兴大家在实际阅读作品后能有自己的想法。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "また、作品の良し悪しに関しては皆さんが同じ意見なのに、好みに関してはバラバラなのは面白いことです。",
+			NULL, "有趣的是，大家对于哪些作品好、哪些作品差往往看法一致，喜欢哪一部却各不相同。", Line_WaitForInput);
+	OutputLine(NULL, "　私自身、個人的にはのめりこめなかった作品がいくつかありますが、一方でそれが好きだという人を見たこともあります。",
+			NULL, " 我自己也有几部没能投入进去的作品，却见过有人对它们爱不释手。", Line_WaitForInput);
+	OutputLine(NULL, "　ですから全ての作品をリリースするために時間をかけたことには何かしらの価値があったのだと、私は少なくとも思っています。",
+			NULL, " 所以我至少认为，花时间发布所有作品是有价值的。", Line_WaitForInput);
+	OutputLine(NULL, "\nそしてファンの皆さん、もしまだ読まれていない作品があれば、ぜひ一度お読みになってください。",
+			NULL, "\n各位粉丝，如果还有没看过的作品，请务必看一看。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "ついに終わりました。",
+			NULL, "终于结束了。", Line_WaitForInput);
+	OutputLine(NULL, "　このプロジェクトが完成に至ったことが信じられません。",
+			NULL, " 我至今都不敢相信这个项目真的完成了。", Line_WaitForInput);
+	OutputLine(NULL, "\n現時点で18000回以上もダウンロードがされています。そしてその数は言祝し編のリリースでさらに増えることでしょう。",
+			NULL, "\n目前已经下载了18000多次。随着《言祝篇》的发布，这个数字还会增加。", Line_WaitForInput);
+	OutputLine(NULL, "　英語版テキストをファイルに落とし込むだけでもその数は2000ページ強、単語数にして100万弱はありました。",
+			NULL, " 英文文本光是导出成文件就有两千多页，合计将近一百万个单词。", Line_WaitForInput);
+	OutputLine(NULL, "\nすべてにかかった時間は4年半。",
+			NULL, "\n总共花了四年半的时间。", Line_WaitForInput);
+	OutputLine(NULL, "　最初からこんなにかかると知っていれば、やっていなかったかもしれません。",
+			NULL, " 如果我一开始就知道要花这么长时间，我可能就不会做了。", Line_WaitForInput);
+	OutputLine(NULL, "　でも、得られたものが当時の想像をはるかに上回るものであるからこそ、このプロジェクトにつきっきりになってよかったのだと思えます。",
+			NULL, " 但最终成果远超当年的想象，所以我很庆幸自己坚持了下来。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "すこし、昔のお話をさせてください。",
+			NULL, "请允许我讲一点过去的故事。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n実は、私が07th-modに関わるようになったのは「うみねこ」がきっかけでした。",
+			NULL, "\n\n其实，我参与07th-mod是因为《海猫鸣泣之时》。", Line_WaitForInput);
+	OutputLine(NULL, "　「うみねこ」の出題編を終えた後、私はグラフィック関連で助けを必要としていた「祟殺し」に貢献しようと考えました。",
+			NULL, " 完成《海猫》的出题篇后，我想为需要图像制作帮助的《祟杀篇》出一份力。", Line_WaitForInput);
+	OutputLine(NULL, "\n\nその後グラフィック関連で私よりもずっとできる人が現れたことから、私は別の方法で何か貢献できることがないか、探すことにしました。",
+			NULL, "\n\n之后，因为出现了在图形方面比我强得多的人，所以我决定寻找其他我可以做出贡献的方式。", Line_WaitForInput);
+	OutputLine(NULL, "　私が小さな思い付きに至ったのはちょうどその時です。私たちがかつてMod開発に使っていたファイルは、「他の作品」のコンテンツを丸ごと含んでいるではないかと気づいたのです。",
+			NULL, " 就在那时，我突然有了一个小主意。我意识到，我们过去用于Mod开发的文件中包含了“其他作品”的全部内容。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "自分がやっていることは誰にも言わず、こっそりとテストを行ってこれはいけると確信し、始めるに至りました。",
+			NULL, "我没有告诉任何人我在做什么，而是偷偷地进行了测试，确信这可行，于是便开始了。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n1日目に掲げた当初の目標は、「澪尽し」のリリースでした。",
+			NULL, "\n\n第一天设定的最初目标是发布《澪尽篇》。", Line_WaitForInput);
+	OutputLine(NULL, "この作品が好きだから、もっと多くの人に読んでもらいたい。",
+			NULL, "因为喜欢这部作品，所以想让更多人阅读。", Line_WaitForInput);
+	OutputLine(NULL, "　でもそれをするにはとんでもない時間がかかってしまう。だから私はもう少し短い作品から初めることにし、自分にできることは何かを考えました。",
+			NULL, " 可《澪尽篇》的篇幅实在太长。于是我决定先从较短的作品入手，看看自己究竟能做到什么。", Line_WaitForInput);
+	OutputLine(NULL, "\n\nそして、短編であり、話がそれ自体で閉じていて、Steamで配信されている話のネタバレにもあまりならない（「目明し」あたりの時系列の話です）「染伝し」を選びました。染伝し自体、竜騎士原作の漫画に基づいていて面白いだろうなと思ったのです。",
+			NULL, "\n\n我选中了《染传篇》：它篇幅短、故事相对独立，对追看 Steam 版的读者也不至于剧透太多（当时大致更新到《目明篇》）。它又改编自龙骑士原作的漫画，我想应该会有人感兴趣。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "で、なんですが・・・",
+			NULL, "不过……", Line_WaitForInput);
+	OutputLine(NULL, "　もしあなたが、「染伝し」だけだった頃のバージョン1.0を実際に読まれたごく一部の方々の内の一人ならば、ここでお詫びを申し上げなければなりません。",
+			NULL, " 如果您是极少数真正阅读了只有《染传篇》时的版本1.0的人之一，我必须在这里向您道歉。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n最初こそ、技術スタッフや他に翻訳を手伝ってくれる人は集まってくれるだろうと思いながらこのプロジェクトを始めたのですが、応募してきてくれた人はいませんでした。",
+			NULL, "\n\n我起初打算负责技术工作，再招募其他人翻译；但没有人报名。", Line_WaitForInput);
+	OutputLine(NULL, "　ですので、自分の限られた日本語能力で、不完全ではありますが翻訳の草稿を作ることにしました。",
+			NULL, " 我只好凭自己有限的日语能力，先做出一份不够完善的译稿。", Line_WaitForInput);
+	OutputLine(NULL, "\n私は当初、正式リリースが宣伝となって他の人をプロジェクトに呼びよせ、その人たちがきっと私の翻訳を直してくれるだろう、と淡い希望を抱いていました。",
+			NULL, "\n我最初抱有一线希望，认为正式发布会成为一种宣传，吸引其他人加入项目，他们一定会修改我的翻译。", Line_WaitForInput);
+	OutputLine(NULL, "　それ自体はたしかに宣伝にはなったのですが、結局手伝ってくれるボランティアとして来てくれる人は誰もいませんでした。",
+			NULL, " 这本身确实起到了一定的宣传作用，但最终没有志愿者来帮忙。", Line_WaitForInput);
+	OutputLine(NULL, "\nですが、いろんな方に「がんばれ」や「他のも作って」というお言葉がけを頂いたので、私は作業に戻ってできる限りの修正を施し、次の作品に取り掛かりました。",
+			NULL, "\n不过，不少人鼓励我继续做下去，还希望看到更多篇章。我便回头尽力修订旧稿，然后着手制作下一部。", Line_WaitForInput);
+	OutputLine(NULL, "　そして最終的に、既に完成していた作品のレビューを他の人がしてくれたため、作品自体は当初よりもずっと良い出来になってくれました。",
+			NULL, " 后来确实有人帮忙审校先前完成的篇章，使它们比初版好了许多。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm11_82", 128, 0);
+	DrawScene("background/file", 1000 );
+
+	OutputLine(NULL, "コンソールアークのMod自身は、成長しながら何度も変わってきました。",
+			NULL, "主机独占篇章的Mod本身在成长过程中经历了很多次变化。", Line_WaitForInput);
+	OutputLine(NULL, "　一番最初の「染伝し」リリースにはTIPSやお疲れ様会さえ入っていませんでした。",
+			NULL, " 首次发布的《染传篇》，甚至没有 TIPS 和通关后的茶话会。", Line_WaitForInput);
+	OutputLine(NULL, "　これの実装の方法を理解せねばならず、バージョン1.3まで対応はできませんでした。",
+			NULL, " 我不得不弄清楚如何实现这些，直到版本1.3才能支持。", Line_WaitForInput);
+	OutputLine(NULL, "\n\nその後も作品ごとに、乗り越えなければならないハードルや機能がありました。",
+			NULL, "\n\n此后的每一篇也都有必须攻克的难题，或需要实现的新功能。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「影紡し」ではNVLモードとADVモードを切り替える機能を実装し、07th-modインストーラーとの統合を果たしました。",
+			NULL, "在《影纺篇》中，实现了NVL模式和ADV模式切换功能，并与07th-mod安装程序整合。", Line_WaitForInput);
+	OutputLine(NULL, "\n「憑落し」ではリップシンクができるようになりました。",
+			NULL, "\n《凭落篇》加入了口型同步。", Line_WaitForInput);
+	OutputLine(NULL, "\n「盥回し」のリリース前後の期間で、スクリプトの生成手法を見直しました。これによって開発における作業時間を大幅に削減することができました。また、TIPSの名前諸々が表示されるようになり、実際のTIPSのように動作できるようになりました。",
+			NULL, "\n在《盥回篇》发布前后，我重新设计了脚本生成方式，大幅减少了开发中的手工工作。TIPS 也能显示标题等信息，像真正的 TIPS 那样运行。", Line_WaitForInput);
+	OutputLine(NULL, "\n「宵越し」では、選択肢機能が初めて追加されました。この機能がうまく動作してくれるように、いくつも技巧を凝らす必要がありました。オープニングやチャプターのジャンプの実装、文字化けで日本語が読めない問題の修正にも同様に手間がかかりました。",
+			NULL, "\n《宵越篇》首次加入选项。为了让它正常工作，我费了不少心思。开场动画、章节跳转，以及导致日文无法阅读的乱码问题，也都花了不少工夫。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「解々し」では、・・・特に大きな変更点はありませんでした。このときは普通の忙しさだったと思います。",
+			NULL, "《解解篇》……倒没有什么重大变化，算是照常忙碌吧。", Line_WaitForInput);
+	OutputLine(NULL, "\n「澪尽し　表」では、絵柄の好みに合わせてMangaGamerと竜騎士の絵が選択できる機能を追加しました。",
+			NULL, "\n《澪尽篇·表》加入了按喜好选择 MangaGamer 或龙骑士画风的功能。", Line_WaitForInput);
+	OutputLine(NULL, "　そして、この時に待望の選択スキップ機能が追加されました。この作品はとてつもなく長く、仕上げるのには無限に時間がかかりました。",
+			NULL, " 这时也终于加入了跳过选项的功能。篇幅实在太长，完成它花了我很久。", Line_WaitForInput);
+	OutputLine(NULL, "\n「澪尽し　裏」の作業自体は特に滞ることなく進みました。しかし裏で同時並行していた「カケラ紡ぎ」の実装がかなり大変でした。",
+			NULL, "\n《澪尽篇·里》本身推进得很顺利，但同时进行的「碎片编织」功能可难做多了。", Line_WaitForInput);
+	OutputLine(NULL, "　最終的に、「カケラ」機能を一から作るのではなく、TIPSのように動作させることで再現に成功しました。正直、こっちのやり方のほうがいいのではと思っています。",
+			NULL, " 最后，我没有从零重建碎片界面，而是让它像 TIPS 一样运行。说实话，我觉得这样反而更好。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "「澪尽し(PS2)」では、タイポのような細かい修正を一度にできるようにスクリプトファイルを「表」と共有する仕様にしたため、非常に骨が折れました。大変ではありましたが、これは長期間の作業の中でもいい選択だったんじゃないでしょうか。",
+			NULL, "《澪尽篇 PS2版》很棘手：我希望它和《澪尽篇·表》共用脚本，这样错字等细节修正能同时应用到两版。实现起来虽然费力，但从长远看是正确的选择。", Line_WaitForInput);
+	OutputLine(NULL, "\n「羞晒し」ではとんでもない量のエフェクトをこの手で実装するハメになりました。なぜかというと、スクリプティングを担当していた人が、・・・その、・・・・・・イカれてしまったからです。",
+			NULL, "\n《羞晒篇》有多得惊人的特效，最后只能由我亲手补上。因为负责写脚本的人……呃……后来有点崩溃了。", Line_WaitForInput);
+	OutputLine(NULL, "\n「言祝し」では私以外の人が初めて翻訳を担当してくれたため、他の人と連絡を取りながら共同作業をするという今までで一番大変な仕事に直面しました",
+			NULL, "\n《言祝篇》首次由别人负责翻译，于是我遇到了迄今最难的一关：与另一个人沟通、协调合作。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm03_15", 128, 0);
+	DrawScene("background/hard_drive_crash", 1000 );
+
+	OutputLine(NULL, "このプロジェクトを進める中で1つ、面白い話がありました。",
+			NULL, "在这个项目推进的过程中，有一件有趣的事情。", Line_WaitForInput);
+	OutputLine(NULL, "　・・・もしかすると「面白い」というのは正しい表現ではないかもしれません。",
+			NULL, " ……也许“有趣”不是正确的表达方式。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n「澪尽し」に取り掛かっていたある時、HDDが動かなくなってしまいました。",
+			NULL, "\n\n在制作《澪尽篇》的某个时候，硬盘突然无法工作了。", Line_WaitForInput);
+	OutputLine(NULL, "　通常通りバックアップを行ったことで、翻訳は2日分の作業の消失だけで済みました。",
+			NULL, " 多亏了定期备份，翻译工作只损失了两天的进度。", Line_WaitForInput);
+	OutputLine(NULL, "　しかし、他のファイルが大量に消失してしまったことから、復旧業者に頼んでHDDからデータをできる限り復旧してもらうことにしました。",
+			NULL, " 但是，由于丢失了大量其他文件，我决定请数据恢复公司尽可能多地恢复硬盘上的数据。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "データは完全に消えてしまったと諦めていたのですが、業者の方がデータの8割ほどをなんとか復旧してくれました。その中には、たくさんのイラストであったりもう無いと思っていた一連の翻訳データ全てが含まれていました。",
+			NULL, "我本已放弃，认为数据完全消失了，但工作人员设法恢复了大约80%的数据。其中包含了许多插图，以及一系列我以为已经不复存在的翻译数据。", Line_WaitForInput);
+	OutputLine(NULL, "\n今ご覧いただいている画像は、破損した状態からサルベージできたファイルのうちの1つです。",
+			NULL, "\n大家现在看到的图片，就是从损坏硬盘中救回、但已经受损的文件之一。", Line_WaitForInput);
+	OutputLine(NULL, "\nそれでも、「フローチャート」のPSDファイルのように、いくつかは復旧ができませんでした。しかしこのことによるプロジェクトへの大きな影響はありませんでした。",
+			NULL, "\n尽管如此，还有一些文件无法恢复，例如“流程图”的PSD文件。但是，这并没有对项目造成重大影响。", Line_WaitForInput);
+	OutputLine(NULL, "　悪く言っても2週間ほどの遅れが生じた程度です。",
+			NULL, " 充其量只是造成了大约两周的延误。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "おっと、もうお気づきかもしれませんが、なにやら聴き慣れない曲がさっきから数曲ほど流れていますね。",
+			NULL, "哦，大家可能已经注意到，这段时间放了几首不太熟悉的曲子。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n実は、この曲はCS版のひぐらしに収録されているものなのですが、コンソールアークModでは流す機会がありませんでした。",
+			NULL, "\n\n这些曲子收录在主机版《寒蝉》里，却没有机会在主机追加篇章 Mod 中播放。", Line_WaitForInput);
+	OutputLine(NULL, "　本編でしか流れないもの、メニュー画面やオヤシロショックで流れるもの、等々です。",
+			NULL, " 有些只在正篇出现，有些用于菜单或 Oyashiro Shock 等处。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n誰も聴く機会がないのが残念で、日の目を見ることができるように、と思いここで流すことにしました。",
+			NULL, "\n\n让这些曲子一直无人听见太可惜了，所以我想在这里让它们露露脸。", Line_WaitForInput);
+	OutputLine(NULL, "　で・・・もうちょっと曲が聴けるようにもう少しお話を続けましょうか？いやまあ（笑）・・・・・・まさかしないですけど。",
+			NULL, " 那么……要不要再多聊一会儿，让大家多听一阵？哈哈……我才不会故意这样做呢。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm11_93", 128, 0);
+	DrawScene("background/sora", 1000 );
+
+	OutputLine(NULL, "で、その・・・・・・",
+			NULL, "所以，那个……", Line_WaitForInput);
+	OutputLine(NULL, "　ついにコンソールアークへの取り組みが終わったので、そろそろ他のことに取り掛かるかもしれません。",
+			NULL, " 关于主机版独占篇章的工作终于结束了，所以差不多是时候开始做点别的事情了。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n私自身は、新しいプロジェクトを告知するのは非常に楽しいと思っています。",
+			NULL, "\n\n现在宣布一个新项目，听起来一定很过瘾。", Line_WaitForInput);
+	OutputLine(NULL, "\n\nそうじゃないですか？",
+			NULL, "\n\n不是吗？", Line_WaitForInput);
+	OutputLine(NULL, "\n\nでも、いや（笑）・・・・・・流石にしません。少なくとも今はするつもりはないです。",
+			NULL, "\n\n不过，哈哈……我不会现在就宣布。至少眼下不会。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "じゃあこういうことにしましょう。「ひぐらし奉+」で追加された新しい物語の翻訳は必ずやると約束します。",
+			NULL, "那么我们就这么决定吧。我保证一定会翻译《寒蝉奉+》中新增的故事。", Line_WaitForInput);
+	OutputLine(NULL, "　もし翻訳が中断されるとすれば、",
+			NULL, " 如果翻译中断，那可能是因为：", Line_WaitForInput);
+	OutputLine(NULL, "\n\n・公式版が発表された場合。",
+			NULL, "\n\n- 官方宣布推出译本。", Line_WaitForInput);
+	OutputLine(NULL, "\n・他の人が先にやってしまった場合",
+			NULL, "\n- 其他人先翻译了。", Line_WaitForInput);
+	OutputLine(NULL, "\n・私が死んだ場合。",
+			NULL, "\n- 我死了。", Line_WaitForInput);
+	OutputLine(NULL, "\n\nですので・・・期待して待っていてください！",
+			NULL, "\n\n所以……请期待吧！", Line_WaitForInput);
+	OutputLine(NULL, "　・・・私が死なない限り。",
+			NULL, " ……我是说期待新故事，可别期待我死。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm10_65", 128, 0);
+	DrawScene("background/ng_bijyutu", 1000 );
+
+	OutputLine(NULL, "ところで、実は私には他にもやってみたいことがたくさんあります。本当に取り掛かるべきはどれか、今は思案している最中です。",
+			NULL, "说起来，我还有不少想做的项目，正琢磨着该先做哪一个。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "・漫画版「ひぐらし」の翻訳。「語咄し編」、「絆」、「うみねこ」とのクロスオーバーである「エピソードX」など、完全に訳されていないものがまだまだある。",
+			NULL, "- 漫画版《寒蝉鸣泣之时》的翻译。《语咄篇》、《绊》、与《海猫》联动的《Episode X》等，还有很多没有完全翻译的内容。", Line_WaitForInput);
+	OutputLine(NULL, "\n・「ひぐらし命」のPC版移植および翻訳。",
+			NULL, "\n- 《寒蝉命》PC版的移植和翻译。", Line_WaitForInput);
+	OutputLine(NULL, "\n・「ひぐらしのなく頃に Elite」。業や卒から使えそうな部分を使い、もっと派手なsteam版「ひぐらし」のModを作る。",
+			NULL, "\n- 《寒蝉鸣泣之时 Elite》。利用《业》和《卒》中可用的部分，制作更华丽的Steam版《寒蝉》Mod。", Line_WaitForInput);
+	OutputLine(NULL, "\n・「ROSE GUNS DAYS」の編集とTLC passの実装。",
+			NULL, "\n- 为《ROSE GUNS DAYS》进行编辑和译文校对。", Line_WaitForInput);
+	OutputLine(NULL, "「彼岸花の咲く夜に」にも同じことをする。",
+			NULL, "对《彼岸花绽放之夜》做同样的事情。", Line_WaitForInput);
+	OutputLine(NULL, "\n・漫画版のイラストを使い、「ROSE GUNS DAYS」の拡張版を作る。「彼岸花の咲く夜に」も同様。",
+			NULL, "\n- 使用漫画版的插图，制作《ROSE GUNS DAYS》的扩展版。《彼岸花绽放之夜》也一样。", Line_WaitForInput);
+	OutputLine(NULL, "\n・「恋愛ハーレム終了のお知らせがくる頃に」。",
+			NULL, "\n- 《恋爱后宫游戏结束通知到来之时》。", Line_WaitForInput);
+	OutputLine(NULL, "\n・「トライアンソロジー～三面鏡の国のアリス～」。",
+			NULL, "\n- 《三面镜之国的爱丽丝》。", Line_WaitForInput);
+	OutputLine(NULL, "\nこれは聞いたら驚くと思いますが、・竜騎士が作った「リーフファイトTCG」のカードとルールの翻訳をし、プレイできるようにする。",
+			NULL, "\n还有一项你们可能想不到：翻译龙骑士制作的《Leaf Fight》卡牌及规则，让大家能一起玩。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "あー、・・・今は思いつきませんが他にもたくさんやりたいことがあります。",
+			NULL, "啊，……现在想不起来了，但还有很多其他想做的事情。", Line_WaitForInput);
+	OutputLine(NULL, "\n過去には「ひぐらしデイブレイク」や「祝姫」、「Loopers」の翻訳も考えたことがありました。しかし全て翻訳されたことにより、私はトラブルをあらかじめ避けることができました。(よかった。)",
+			NULL, "\n过去，我也曾考虑过翻译《寒蝉破晓》、《祝姬》和《Loopers》。但由于它们都已经有了翻译，让我提前避免了麻烦。（太好了。）", Line_WaitForInput);
+	OutputLine(NULL, "\nですので、今述べたプロジェクトのどれかにでも関心があったり他にもいいアイディアがあれば、是非私に教えてください。",
+			NULL, "\n因此，如果您对刚才提到的任何一个项目感兴趣，或者有其他好主意，请务必告诉我。", Line_WaitForInput);
+	OutputLine(NULL, "　もしプロジェクトの中の1つでもいいねと思ってくれたり、リリースが待ちきれないという人がいれば、それを選ぶ可能性はもっと高くなると思います。",
+			NULL, " 如果有人喜欢其中某个项目，或是等不及它发布，我就更可能选择它。", Line_WaitForInput);
+	OutputLine(NULL, "　それがプロジェクトを進めるうえでの大きな励みになります。",
+			NULL, " 这将成为推进项目的巨大动力。", Line_WaitForInput);
+	OutputLine(NULL, "\n\nただし、「ゲロカス」の翻訳の依頼についてだけはしないようにお願いします。",
+			NULL, "\n\n但是，请不要委托翻译《Gerokasu》。", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm11_85", 128, 0);
+	DrawScene("background/jt1", 1000 );
+
+	OutputLine(NULL, "とまあ、ここまで長々と喋り続けてきたのでそろそろ話を終える潮時でしょう。",
+			NULL, "好了，我已经说了这么久，也该收尾了。", Line_WaitForInput);
+	OutputLine(NULL, "\n\nこのプロジェクトは私の子供のようなものではありますが、他の多くの方々の協力なくして完成に至ることは決してできませんでした。",
+			NULL, "\n\n虽然这个项目就像我的孩子一样，但如果没有那么多其他人的帮助，绝对无法完成。", Line_WaitForInput);
+	OutputLine(NULL, "\n問題の解決にご協力頂いた方々、リポジトリに修正をご投稿いただいた方々、githubやdiscordで問題の報告をしてくださった方々には、ここで厚くお礼申し上げます。",
+			NULL, "\n在此衷心感谢帮忙解决问题、向代码仓库提交修正，以及通过 GitHub 或 Discord 报告问题的各位。", Line_WaitForInput);
+	OutputLine(NULL, "　またプレイをして動作報告をしてくださった方々も、大きな助けとなりました。",
+			NULL, " 此外，那些游玩并反馈运行情况的人们也给了我很大的帮助。", Line_WaitForInput);
+	OutputLine(NULL, "　実際に「面白かった」とコメントしてくださった方や、手を止めて「ありがとう」言ってくださった方、「他の作品も楽しみにしてます」といってくださった方、これらのコメントには感謝しております。",
+			NULL, " 有人留言说「很有趣」，有人特地停下来道谢，也有人说期待其他篇章。这些话我都十分感激。", Line_WaitForInput);
+	OutputLine(NULL, "\nそれはなぜなら、何よりもコミュニティの熱望こそが、私にこの数年間ずっとプロジェクトを続ける気力をもたらしてくれたからです。",
+			NULL, "\n正是社群的期待，让我在过去几年里始终有动力把项目做下去。", Line_Normal);
+	ClearMessage();
+
+	OutputLine(NULL, "ですので、最後にこれを申し上げて本当の終わりにしたいと思います。",
+			NULL, "所以，最后我想以此作为真正的结束语。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n\nみなさん全員へ。",
+			NULL, "\n\n\n致所有人。", Line_WaitForInput);
+	OutputLine(NULL, "\n\n\nこのプロジェクトに参加してくださり、本当にありがとうございました。",
+			NULL, "\n\n\n非常感谢大家参与这个项目。", Line_Normal);
+	ClearMessage();
+
+	ModDisableNVLModeInADVMode();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

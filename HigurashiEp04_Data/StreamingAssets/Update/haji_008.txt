@@ -1,0 +1,1727 @@
+void main()
+{
+
+
+//*Hajisarashi Day 8
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//#8 俺たちは、四人で暗黒の四天王さ！
+
+	DrawScene("black", 1000 );
+	ModEnableNVLModeInADVMode();
+
+//r…その時、kその頼もしい声は、k俺の内側から聞こえた。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…その時、",
+			NULL, "……就在那时，", Line_WaitForInput);
+	OutputLine(NULL, "その頼もしい声は、",
+			NULL, "那令人安心的声音，", Line_WaitForInput);
+	OutputLine(NULL, "俺の内側から聞こえた。",
+			NULL, "从我心底响了起来。", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlayBGM(2, "hm10_70", 128, 0);
+	PlaySE(3, "se051", 256, 64);
+	DrawSceneWithMask( "background/kakera", "v_hurricane", 0, 0, 2000 );
+
+//？？？rvS23/10/VTH_irie1001.Ｋ、諦めてはいけない！krvS23/10/VTH_irie1002.どんなに簡単な願いや想いも、r諦めたらそこまでなんだ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1001", 256, TRUE);
+	OutputLine(NULL, "Ｋ、諦めてはいけない！",
+			NULL, "“Ｋ，决不能放弃！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1002", 256, TRUE);
+	OutputLine(NULL, "\nどんなに簡単な願いや想いも、\n諦めたらそこまでなんだ！！",
+			NULL, "\n无论多么微不足道的愿望与心愿，\n一旦放弃就到此为止了！！”", Line_Normal);
+	ClearMessage();
+
+//？？？rvS23/08/VTH_tomi1001.男として生まれたからには、誰だってモテモテになりたいッ！krvS23/08/VTH_tomi1002.その人生最大の野望を、rこの程度のピンチで諦めたりするのかいッ？！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1001", 256, TRUE);
+	OutputLine(NULL, "男として生まれたからには、誰だってモテモテになりたいッ！",
+			NULL, "“既然身为男儿身，谁都想大受欢迎啊！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1002", 256, TRUE);
+	OutputLine(NULL, "\nその人生最大の野望を、\nこの程度のピンチで諦めたりするのかいッ？！",
+			NULL, "\n这可是人生最大的野心，\n难道要因为这点危机就放弃吗？！", Line_Normal);
+	ClearMessage();
+
+//？？？rvS23/11/VTH_oishi1001_1.んっふっふっふっ！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1001_1", 256, TRUE);
+	OutputLine(NULL, "んっふっふっふっ！",
+			NULL, "“嗯呵呵呵！”", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(4, 196, "none");
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 1, "portrait/kei3_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS23/01/VTH_k11231.……な、何ぃ…？！k|yvS23/01/VTH_k11232.　ぅ、ぅおおおおおおおおおお？！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11231", 256, TRUE);
+	OutputLine(NULL, "……な、何ぃ…？！",
+			NULL, "“……什、什么…？！", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "portrait/kei3_ikari2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11232", 256, TRUE);
+	OutputLine(NULL, "　ぅ、ぅおおおおおおおおおお？！",
+			NULL, " 呜、呜喔喔喔喔喔喔喔喔喔喔？！", Line_Normal);
+	ClearMessage();
+
+	ModDisableNVLModeInADVMode();
+	DisableWindow();
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "hikaru", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 2000 );
+	ModSetLayerFilter(4, 256, "none");
+	PlayBGM(2, "hm10_43", 128, 0);
+	PlaySE(4, "a6", 256, 64);
+	ModDrawCharacter(4, 1, "portrait/kei3_ikari2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/oki_pool2", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+	PlaySE(3, "vse_wrap", 256, 64);
+	DrawScene("black", 500 );
+	PlaySE(4, "vse_firewall", 256, 64);
+	DrawScene("background/furiker_a", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(3, "vse_firewall", 256, 64);
+	DrawScene("background/furiker_b", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(4, "vse_firewall", 256, 64);
+	DrawScene("background/furiker_c", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	PlaySE(3, "finish", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 250 );
+	DrawScene("black", 1000 );
+
+//r凄まじい爆音と共に、俺の周囲に隕石が降り注いだような衝撃！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "凄まじい爆音と共に、俺の周囲に隕石が降り注いだような衝撃！！",
+			NULL, "伴随着骇人的巨响，周围传来了宛如陨石倾盆砸落般的冲击！！", Line_Normal);
+	ClearMessage();
+
+//rその隕石の数は３つ！！k　いや、隕石じゃない！！k　ま、まさかッ？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その隕石の数は３つ！！",
+			NULL, "那陨石的数量是3颗！！", Line_WaitForInput);
+	OutputLine(NULL, "　いや、隕石じゃない！！",
+			NULL, " 不，不是陨石！！", Line_WaitForInput);
+	OutputLine(NULL, "　ま、まさかッ？！",
+			NULL, " 难、难道说？！", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot( 6, "waku_b3", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 10, TRUE );
+	PlaySE(3, "vse_wrap", 256, 64);
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacterWithFiltering(3, 8, "portrait/tomi9_a_", "0", "up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 500, TRUE );
+
+//？？？rvS23/08/VTH_tomi1003.「男に生まれたからには、いつかはなりたい、モテモテ男ッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1003", 256, TRUE);
+	OutputLine(NULL, "「男に生まれたからには、いつかはなりたい、モテモテ男ッ！！」",
+			NULL, "“既然身为男儿身，终有一天想要成为大受欢迎的男人！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_wrap", 256, 64);
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacterWithFiltering(5, 11, "portrait/oisi9_a_", "0", "down", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 18, 500, TRUE );
+
+//？？？rvS23/11/VTH_oishi1001.「それを叶える魔法の海パン！kvS23/11/VTH_oishi1002.　素敵じゃないですか、んっふっふ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1001", 256, TRUE);
+	OutputLine(NULL, "「それを叶える魔法の海パン！",
+			NULL, "“能实现这一愿望的魔法泳裤！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1002", 256, TRUE);
+	OutputLine(NULL, "　素敵じゃないですか、んっふっふ！！」",
+			NULL, " 这不是非常美妙吗，嗯呵呵呵！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_wrap", 256, 64);
+	ModDrawCharacterWithFiltering(4, 10, "portrait/iri9_a_", "0", "up", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 19, 500, TRUE );
+
+//？？？rvS23/10/VTH_irie1003.「しかも３時間履けば魔法が宿り、海パンは次の持ち主の手に渡る。kvS23/10/VTH_irie1004.そう！！　ソウルブラザーは全員揃って、モテモテを実現し、萌えとロマンの究極世界へ至る扉についに手をかけることができるのですッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1003", 256, TRUE);
+	OutputLine(NULL, "「しかも３時間履けば魔法が宿り、海パンは次の持ち主の手に渡る。",
+			NULL, "“而且只要穿满3小时，魔法便会生效，泳裤还能交到下一位持有者手里。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>？？？</color>", NULL, "<color=#f5e6d3>？？？</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1004", 256, TRUE);
+	OutputLine(NULL, "そう！！　ソウルブラザーは全員揃って、モテモテを実現し、萌えとロマンの究極世界へ至る扉についに手をかけることができるのですッ！！」",
+			NULL, "没错！！灵魂兄弟将全员一起实现大受欢迎的梦想，终于能够触及通往萌与浪漫究极世界的大门了！！”", Line_Normal);
+	ClearMessage();
+
+//圭一rvS23/01/VTH_k11233.「ト、トミー、クラウド、…そしてイリーッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11233", 256, TRUE);
+	OutputLine(NULL, "「ト、トミー、クラウド、…そしてイリーッ！！！」",
+			NULL, "“托、托米，库劳德，……还有伊利——！！！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "furu", 256, 64);
+	ModDrawCharacter(3, 8, "portrait/tomi9_a_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	ModDrawCharacter(5, 11, "portrait/oisi9_a_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	ModDrawCharacter(4, 10, "portrait/iri9_a_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "black", "up", 0, 0, 500 );
+	PlaySE(3, "finish", 256, 64);
+	DrawScene("white", 250 );
+	ModDrawCharacter(5, 8, "sprite/tomi4_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	ModDrawCharacter(4, 11, "sprite/oisi3_5_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	ModDrawCharacter(3, 10, "sprite/iri4_majime2_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	DrawScene("background/oki_pool2", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//トミー＆イリー＆クラウドro65.vS23/08/VTH_tomi1004|S23/10/VTH_irie1005|S23/11/VTH_oishi1003.「「暗黒四天王、ここに集結ッ！！！」」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>＆<color=#c89a80>イリー</color>＆<color=#a59da9>クラウド</color>", NULL, "<color=#945c44>托米</color>＆<color=#c89a80>伊利</color>＆<color=#a59da9>库劳德</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1004", 256, TRUE);
+	ModPlayVoiceLS(5, 10, "ps3/s23/10/vth_irie1005", 256, TRUE);
+	ModPlayVoiceLS(6, 11, "ps3/s23/11/vth_oishi1003", 256, TRUE);
+	OutputLine(NULL, "「「暗黒四天王、ここに集結ッ！！！」」",
+			NULL, "““暗黑四天王，在此集结！！！””", Line_Normal);
+	ClearMessage();
+
+//r富竹、大石、入江とは仮の名…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "富竹、大石、入江とは仮の名…。",
+			NULL, "富竹、大石、入江不过是他们暂用的名字……。", Line_Normal);
+	ClearMessage();
+
+//r彼の真の名はトミー、クラウド、そしてイリー！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "彼の真の名はトミー、クラウド、そしてイリー！！",
+			NULL, "他们真正的名字是托米、库劳德，以及伊利！！", Line_Normal);
+	ClearMessage();
+
+//r萌えとロマンを実現させるため、人生の全てを賭した熱き漢たちッ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "萌えとロマンを実現させるため、人生の全てを賭した熱き漢たちッ！！",
+			NULL, "为了实现萌与浪漫，赌上整个人生的热血汉子们！！", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 8, "sprite/tomi4_ikari_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//トミーrvS23/08/VTH_tomi1005.「そして圭一くんの名も仮のものに過ぎない！！kvS23/08/VTH_tomi1006.　その真の名はッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>托米</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1005", 256, TRUE);
+	OutputLine(NULL, "「そして圭一くんの名も仮のものに過ぎない！！",
+			NULL, "“而且圭一君的名字也只不过是假名而已！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1006", 256, TRUE);
+	OutputLine(NULL, "　その真の名はッ！！」",
+			NULL, " 他真正的名字是——！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "a6", 256, 64);
+	ModSetLayerFilter(6, 256, "none");
+	ModDrawCharacter(6, 1, "portrait/kei3_ikari2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//圭一rvS23/01/VTH_k11234.「漆黒の魔王、Ｋだぁあぁあああぁぁッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11234", 256, TRUE);
+	OutputLine(NULL, "「漆黒の魔王、Ｋだぁあぁあああぁぁッ！！！」",
+			NULL, "“漆黑的魔王，Ｋ啊啊啊啊啊啊啊！！！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "daidageki", 256, 64);
+	DrawScene("background/furiker_a", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 50 );
+	PlaySE(5, "daidageki", 256, 64);
+	DrawScene("background/furiker_b", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 50 );
+	PlaySE(3, "daidageki", 256, 64);
+	DrawScene("background/furiker_a", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 50 );
+	PlaySE(5, "finish", 256, 64);
+	DrawScene("background/furiker_c", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 1000 );
+	ModEnableNVLModeInADVMode();
+
+//ナレーターrvS23/00/VTH_narra1001.ついに……rＫを筆頭に、悪の四天王が揃い踏む。
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ナレーター</color>", NULL, "<color=#f5e6d3>旁白</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s23/00/vth_narra1001", 256, TRUE);
+	OutputLine(NULL, "ついに……\nＫを筆頭に、悪の四天王が揃い踏む。",
+			NULL, "终于……\n以Ｋ为首，邪恶四天王悉数登场。", Line_Normal);
+	ClearMessage();
+
+//ナレーターrvS23/00/VTH_narra1002.最高だぞ、もっとやれッ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>ナレーター</color>", NULL, "<color=#f5e6d3>旁白</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s23/00/vth_narra1002", 256, TRUE);
+	OutputLine(NULL, "最高だぞ、もっとやれッ！！",
+			NULL, "太棒了，再多来点！！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawScene("white", 250 );
+	DrawSceneWithMask( "white", "down", 0, 0, 250 );
+	ModDrawCharacter(4, 4, "sprite/sa7_hannbeso_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "down", 0, 0, 250 );
+	ModDisableNVLModeInADVMode();
+
+//沙都子rvS23/04/VTH_satoko1060.「ななななな、何なんですのこれはー！！kvS23/04/VTH_satoko1061.　また妙チクリンな連中が４人も揃っちゃいましてよーッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1060", 256, TRUE);
+	OutputLine(NULL, "「ななななな、何なんですのこれはー！！",
+			NULL, "“这这这这这、这到底是搞什么啊——！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1061", 256, TRUE);
+	OutputLine(NULL, "　また妙チクリンな連中が４人も揃っちゃいましてよーッ！！」",
+			NULL, " 又凑齐了4个古里古怪的家伙啊——！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 3, "sprite/me6_huteki_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1143.「ふふん！　今頃、増援とはねぇ！k|yvS23/03/VTH_mion1144.　しかし、この人数に対して、たかだか３人が来たところでどうにもならないと思うけどねぇ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1143", 256, TRUE);
+	OutputLine(NULL, "「ふふん！　今頃、増援とはねぇ！",
+			NULL, "“哼哼！事到如今居然叫援军啊！", Line_WaitForInput);
+	ModDrawCharacter(3, 3, "sprite/me6_tokui_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1144", 256, TRUE);
+	OutputLine(NULL, "　しかし、この人数に対して、たかだか３人が来たところでどうにもならないと思うけどねぇ？」",
+			NULL, " 不过，就算来了3个人，面对我们这么多人，又能怎么样呢？”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 2, "sprite/re5_komaru_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1068.「ど、どうだろう…。kvS23/02/VTH_rena1069.あの４人が揃うと、いっつもめちゃくちゃになっちゃうし。はぅ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1068", 256, TRUE);
+	OutputLine(NULL, "「ど、どうだろう…。",
+			NULL, "“这、这可说不准哦……。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1069", 256, TRUE);
+	OutputLine(NULL, "あの４人が揃うと、いっつもめちゃくちゃになっちゃうし。はぅ…」",
+			NULL, "只要那4个人聚在一起，每次都会变得一团糟的。哈呜……”", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	ModEnableNVLModeInADVMode();
+
+//r人数だけを見れば確かに、krわずか３人の増援は焼け石に水にしか見えない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "人数だけを見れば確かに、",
+			NULL, "单看人数的话确实，", Line_WaitForInput);
+	OutputLine(NULL, "\nわずか３人の増援は焼け石に水にしか見えない。",
+			NULL, "\n区区3个人的援军看起来不过是杯水车薪。", Line_Normal);
+	ClearMessage();
+
+//rだが、現れた３人の体から噴出す闘志のオーラは凄まじく、kr人数だけでは説明のつかない戦闘力があることを物語っている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だが、現れた３人の体から噴出す闘志のオーラは凄まじく、",
+			NULL, "然而，现身的3人身上喷涌而出的斗志气场惊人，", Line_WaitForInput);
+	OutputLine(NULL, "\n人数だけでは説明のつかない戦闘力があることを物語っている。",
+			NULL, "\n彰显着他们拥有单纯用人数无法解释的强大战斗力。", Line_Normal);
+	ClearMessage();
+
+//r…さっき聞こえた壊れるような音は、kr特撮映画にありがちなヒーロー登場シーンの爆発音に違いない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…さっき聞こえた壊れるような音は、",
+			NULL, "……刚才那阵轰然巨响，", Line_WaitForInput);
+	OutputLine(NULL, "\n特撮映画にありがちなヒーロー登場シーンの爆発音に違いない。",
+			NULL, "\n一定是特摄电影里常见的英雄登场场景的爆炸声。", Line_Normal);
+	ClearMessage();
+
+//r人数にモノを言わせたエンジェルモート親衛隊も、kr萌えを理解する兵士たちだからこそ、krこの３人が桁違いの戦闘力を持っていることをr悟らざるを得ない…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "人数にモノを言わせたエンジェルモート親衛隊も、",
+			NULL, "依仗人多势众的Angle Mort亲卫队，", Line_WaitForInput);
+	OutputLine(NULL, "\n萌えを理解する兵士たちだからこそ、",
+			NULL, "\n正因为是深谙萌道的战士，", Line_WaitForInput);
+	OutputLine(NULL, "\nこの３人が桁違いの戦闘力を持っていることを\n悟らざるを得ない…！",
+			NULL, "\n也不得不意识到\n这3人拥有着非同寻常的战斗力……！", Line_Normal);
+	ClearMessage();
+
+	ModDisableNVLModeInADVMode();
+	ModDrawCharacter(5, 8, "sprite/tomi4_ikari_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(4, 11, "sprite/oisi3_5_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	ModDrawCharacter(3, 10, "sprite/iri4_majime2_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/oki_pool2", 1000 );
+
+//圭一rvS23/01/VTH_k11235.「トミー、クラウド、イリー！kvS23/01/VTH_k11236.　ピ、ピンチに駆けつけてくれてありがとうよ…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11235", 256, TRUE);
+	OutputLine(NULL, "「トミー、クラウド、イリー！",
+			NULL, "“托米、库劳德、伊利！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11236", 256, TRUE);
+	OutputLine(NULL, "　ピ、ピンチに駆けつけてくれてありがとうよ…！！」",
+			NULL, " 谢、谢谢你们在危急时刻赶来相助……！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 10, "sprite/iri4_majime_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//イリーrvS23/10/VTH_irie1006.「礼には及びません。kvS23/10/VTH_irie1007.Ｋはもうじき、日本男児の本懐、モテモテの夢を叶えます！kvS23/10/VTH_irie1008.　それを守るのはソウルブラザーとして当然のことですよ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1006", 256, TRUE);
+	OutputLine(NULL, "「礼には及びません。",
+			NULL, "“不必言谢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1007", 256, TRUE);
+	OutputLine(NULL, "Ｋはもうじき、日本男児の本懐、モテモテの夢を叶えます！",
+			NULL, "Ｋ马上就要实现日本男儿的夙愿，成为万人迷！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1008", 256, TRUE);
+	OutputLine(NULL, "　それを守るのはソウルブラザーとして当然のことですよ！」",
+			NULL, " 守护那份梦想，作为灵魂兄弟乃是理所当然的事情！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 11, "sprite/oisi3_3_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//クラウドrvS23/11/VTH_oishi1004.「残り時間はあとどのくらいですかな？kvS23/11/VTH_oishi1005.　その時間まで、我らソウルブラザー暗黒四天王！kvS23/11/VTH_oishi1006.　この程度の人数、防ぎきって見せちゃいますよぅ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>库劳德</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1004", 256, TRUE);
+	OutputLine(NULL, "「残り時間はあとどのくらいですかな？",
+			NULL, "“剩余时间还有多久呢？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1005", 256, TRUE);
+	OutputLine(NULL, "　その時間まで、我らソウルブラザー暗黒四天王！",
+			NULL, " 在那之前，我们灵魂兄弟暗黑四天王！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1006", 256, TRUE);
+	OutputLine(NULL, "　この程度の人数、防ぎきって見せちゃいますよぅ！！」",
+			NULL, " 区区这点人数，我们一定能挡住！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 8, "sprite/tomi4_shinken_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//トミーrvS23/08/VTH_tomi1007.「さぁ、僕たちが怖くなければかかってくるがいい！！kvS23/08/VTH_tomi1008.　浜の真砂が尽きようとも、僕らの萌えは尽きたりしないッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>托米</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1007", 256, TRUE);
+	OutputLine(NULL, "「さぁ、僕たちが怖くなければかかってくるがいい！！",
+			NULL, "“来吧，如果不怕我们就尽管放马过来！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1008", 256, TRUE);
+	OutputLine(NULL, "　浜の真砂が尽きようとも、僕らの萌えは尽きたりしないッ！！」",
+			NULL, " 就算海滩上的细沙淘尽，我们的萌也绝不会枯竭！！”", Line_Normal);
+	ClearMessage();
+
+//圭一rvS23/01/VTH_k11237.「へ、へへへへへ！！kvS23/01/VTH_k11238.　こいつぁ心強いぜッ！！kvS23/01/VTH_k11239.　任せてくれみんな！kvS23/01/VTH_k11240.　俺にモテモテの魔法が宿ったら、この海パンはソウルブラザーみんなの財産にするぜ！！kvS23/01/VTH_k11241.　そしてみんなでモテモテを満喫するんだ！！kvS23/01/VTH_k11242.　もちろん俺も、みんなに魔法が宿るまでガッチリ護衛してやるからなッ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11237", 256, TRUE);
+	OutputLine(NULL, "「へ、へへへへへ！！",
+			NULL, "“嘿、嘿嘿嘿嘿嘿！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11238", 256, TRUE);
+	OutputLine(NULL, "　こいつぁ心強いぜッ！！",
+			NULL, " 这可真是太令人安心了！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11239", 256, TRUE);
+	OutputLine(NULL, "　任せてくれみんな！",
+			NULL, " 交给我吧大家！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11240", 256, TRUE);
+	OutputLine(NULL, "　俺にモテモテの魔法が宿ったら、この海パンはソウルブラザーみんなの財産にするぜ！！",
+			NULL, " 等受欢迎的魔法寄宿到我身上后，这条泳裤就是灵魂兄弟大家的财产了！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11241", 256, TRUE);
+	OutputLine(NULL, "　そしてみんなでモテモテを満喫するんだ！！",
+			NULL, " 然后大家一起尽情享受大受欢迎的滋味！！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11242", 256, TRUE);
+	OutputLine(NULL, "　もちろん俺も、みんなに魔法が宿るまでガッチリ護衛してやるからなッ！」",
+			NULL, " 当然，在魔法寄宿到你们身上之前，我也会好好担任护卫保护大家的！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 11, "sprite/oisi3_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//クラウドrvS23/11/VTH_oishi1007.「んっふっふ！　そういうことです！kvS23/11/VTH_oishi1008.　海パンの怪しげな試練も、私たちソウルブラザーの結束の前には、物の数ではありませんッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>库劳德</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1007", 256, TRUE);
+	OutputLine(NULL, "「んっふっふ！　そういうことです！",
+			NULL, "“嗯呵呵！就是这么回事！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1008", 256, TRUE);
+	OutputLine(NULL, "　海パンの怪しげな試練も、私たちソウルブラザーの結束の前には、物の数ではありませんッ！！」",
+			NULL, " 泳裤那可疑的试炼，在我们灵魂兄弟的团结面前根本不值一提！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "right", 0, 0, 250 );
+	ModDrawCharacter(4, 9, "sprite/ta6_kanashimi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "right", 0, 0, 250 );
+
+//鷹野rvS23/09/VTH_takano1016.「ひどいわねジロウさん。私という女がいながら、他の女にまでモテたいのかしら…？kvS23/09/VTH_takano1017.　悲しいわよ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1016", 256, TRUE);
+	OutputLine(NULL, "「ひどいわねジロウさん。私という女がいながら、他の女にまでモテたいのかしら…？",
+			NULL, "“真过分啊，次郎。明明有我在，你还想受别的女人欢迎吗……？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1017", 256, TRUE);
+	OutputLine(NULL, "　悲しいわよ…？」",
+			NULL, " 人家好伤心哦……？”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse05", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//トミーrvS23/08/VTH_tomi1009.「…す、………すまない、鷹野さん…！kvS23/08/VTH_tomi1010.　僕が富竹ジロウだったなら、こんな海パンに惑わされず、黙って君のもとへ走るだろう。kvS23/08/VTH_tomi1011.だが、今の僕はソウルブラザーのトミーなんだッ！！kvS23/08/VTH_tomi1012.　こんな僕を許してくれッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>托米</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1009", 256, TRUE);
+	OutputLine(NULL, "「…す、………すまない、鷹野さん…！",
+			NULL, "“……对、……对不起，鹰野小姐……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1010", 256, TRUE);
+	OutputLine(NULL, "　僕が富竹ジロウだったなら、こんな海パンに惑わされず、黙って君のもとへ走るだろう。",
+			NULL, " 要是我还是富竹次郎，就不会被这种泳裤迷惑，一定会毫不犹豫地奔向你。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1011", 256, TRUE);
+	OutputLine(NULL, "だが、今の僕はソウルブラザーのトミーなんだッ！！",
+			NULL, "但是，现在的我是灵魂兄弟的托米啊！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1012", 256, TRUE);
+	OutputLine(NULL, "　こんな僕を許してくれッ！！」",
+			NULL, " 请原谅这样的我吧！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 9, "sprite/ta6_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//鷹野rvS23/09/VTH_takano1018.「……くすくすくす？　何だかそこまで言われると、カチンと来るわね？k|yvS23/09/VTH_takano1019.　魅音ちゃん、確か、何でもありなのよね？kvS23/09/VTH_takano1020.　前原くんの海パンを脱がすのに、一切の手加減は無用なのよね…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1018", 256, TRUE);
+	OutputLine(NULL, "「……くすくすくす？　何だかそこまで言われると、カチンと来るわね？",
+			NULL, "“……咯咯咯？被说到这种地步，还真是让人火大呢？", Line_WaitForInput);
+	ModDrawCharacter(4, 9, "sprite/ta6_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1019", 256, TRUE);
+	OutputLine(NULL, "　魅音ちゃん、確か、何でもありなのよね？",
+			NULL, " 魅音酱，我记得是不管用什么手段都可以的吧？", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1020", 256, TRUE);
+	OutputLine(NULL, "　前原くんの海パンを脱がすのに、一切の手加減は無用なのよね…？」",
+			NULL, "为了脱掉前原君的泳裤，完全不用手下留情的对吧……？”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse19", 256, 64);
+	DrawScene("white", 250 );
+	ModDrawCharacter(4, 9, "sprite/ta6_akuwarai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/oki_pool1", 250 );
+
+//r鷹野は魅音に許可がもらえると、実に彼女に似合うニタリとした笑みを浮かべ、おもむろにトランシーバーのようなものを取り出した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "鷹野は魅音に許可がもらえると、実に彼女に似合うニタリとした笑みを浮かべ、おもむろにトランシーバーのようなものを取り出した。",
+			NULL, "鹰野得到魅音的许可后，露出一抹再适合她不过的坏笑，不慌不忙地掏出一个像对讲机的东西。", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 100, TRUE);
+	ModDrawCharacter(5, 9, "sprite/ta6_akuwarai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	ModDrawCharacter(3, 3, "sprite/me6_yowaki_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+
+//魅音rvS23/03/VTH_mion1145.「えぇ、まぁ。地球破壊爆弾以外なら何でもアリです。k|yvS23/03/VTH_mion1146.……って、どこから出しました、そのトランシーバー？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1145", 256, TRUE);
+	OutputLine(NULL, "「えぇ、まぁ。地球破壊爆弾以外なら何でもアリです。",
+			NULL, "“嗯，是啊。只要不是地球破坏炸弹，用什么都行。", Line_WaitForInput);
+	ModDrawCharacter(3, 3, "sprite/me6_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1146", 256, TRUE);
+	OutputLine(NULL, "……って、どこから出しました、そのトランシーバー？」",
+			NULL, "……等等，你那对讲机是从哪里掏出来的啊？”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 9, "sprite/ta6_warai_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//鷹野rvS23/09/VTH_takano1021.「くすくす……それは禁則事項よ。k|yvS23/09/VTH_takano1022.ともかく、良くぞ言ったわ！！kvS23/09/VTH_takano1023.　後は私に任せてもらうわよッ！！k|yvS23/09/VTH_takano1024.　小此木ッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1021", 256, TRUE);
+	OutputLine(NULL, "「くすくす……それは禁則事項よ。",
+			NULL, "“咯咯……那是禁止事项哦。", Line_WaitForInput);
+	ModDrawCharacter(5, 9, "sprite/ta6_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1022", 256, TRUE);
+	OutputLine(NULL, "ともかく、良くぞ言ったわ！！",
+			NULL, "不管怎么说，说得好！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1023", 256, TRUE);
+	OutputLine(NULL, "　後は私に任せてもらうわよッ！！",
+			NULL, " 接下来就交给我吧！！", Line_WaitForInput);
+	PlaySE(3, "addse17", 256, 64);
+	ModDrawCharacter(5, 9, "portrait/ta6_sakebi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1024", 256, TRUE);
+	OutputLine(NULL, "　小此木ッ！！」",
+			NULL, " 小此木！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse20", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 250 );
+	DrawScene("background/oki_pool3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//rその声に、あちこちのプールからザバンザバンと飛沫が上がり、酸素ボンベに全身スイムスーツの怪しげな男たちが何人を姿を現すッ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その声に、あちこちのプールからザバンザバンと飛沫が上がり、酸素ボンベに全身スイムスーツの怪しげな男たちが何人を姿を現すッ！！",
+			NULL, "话音刚落，各处泳池都哗啦哗啦地溅起水花，几个背着氧气瓶、身穿全身潜水服的可疑男子冒了出来！！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse136", 256, 64);
+	ModDrawCharacter(4, 14, "portrait/oko2_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//小此木rvS23/14/VTH_okonogi1001.「へっへへ、はははははは！　出番がなかったらどーしよーかと思ってましたわ！！k|yvS23/14/VTH_okonogi1002.　キラーン！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>小此木</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1001", 256, TRUE);
+	OutputLine(NULL, "「へっへへ、はははははは！　出番がなかったらどーしよーかと思ってましたわ！！",
+			NULL, "“嘿嘿嘿，哈哈哈哈哈哈！我还想着要是没有出场机会该怎么办呢！！", Line_WaitForInput);
+	PlaySE(3, "vse_megane", 256, 64);
+	ModDrawCharacter(4, 14, "portrait/oko2_niyari_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawSprite( 7, "eye/star", NULL, -130, -70, 100, 80, 80, 0, FALSE, FALSE, 0, 0, 20, 100, TRUE );
+	MoveSprite( 7, -230, -70, 100, 179, -100, -100, 0, 500, FALSE );
+	FadeSprite( 7, 500, TRUE );
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1002", 256, TRUE);
+	OutputLine(NULL, "　キラーン！」",
+			NULL, " 闪亮登场！”", Line_Normal);
+	ClearMessage();
+
+//r怪しい顔つきのくせに、いやに爽やかそうなウィンクで応える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "怪しい顔つきのくせに、いやに爽やかそうなウィンクで応える。",
+			NULL, "他的脸看着可疑，却眨了眨眼，露出出奇爽朗的笑容。", Line_Normal);
+	ClearMessage();
+
+//r鷹野の部下、小此木であった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "鷹野の部下、小此木であった。",
+			NULL, "正是鹰野的手下，小此木。", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	ModDrawCharacter(5, 8, "sprite/tomi4_ikari_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "right", 0, 0, 500 );
+
+//トミーrvS23/08/VTH_tomi1013.「なっ、小此木くんか！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>托米</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1013", 256, TRUE);
+	OutputLine(NULL, "「なっ、小此木くんか！！」",
+			NULL, "“什、小此木君吗！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 4, "sprite/sa7_odoroki_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS23/04/VTH_satoko1062.「まま、また怪しげな人が登場しましたわねぇ！！kvS23/04/VTH_satoko1063.　酸素ボンベ背負って、ずっとプールの底に隠れてたわけですのー？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1062", 256, TRUE);
+	OutputLine(NULL, "「まま、また怪しげな人が登場しましたわねぇ！！",
+			NULL, "“又、又登场了一个可疑的人呢！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1063", 256, TRUE);
+	OutputLine(NULL, "　酸素ボンベ背負って、ずっとプールの底に隠れてたわけですのー？！」",
+			NULL, " 背着氧气瓶，难道是一直藏在池底的吗——？！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse24", 256, 64);
+	DrawScene("red", 1000 );
+	DrawScene("black", 1000 );
+	ModDrawCharacter(4, 22, "sprite/tie2_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "right", 0, 0, 500 );
+
+//知恵rvS23/22/VTH_chie1016.「そこ！　このプールでは酸素ボンベは禁止ですよ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1016", 256, TRUE);
+	OutputLine(NULL, "「そこ！　このプールでは酸素ボンベは禁止ですよ！」",
+			NULL, "“那边的！这个泳池里是禁止使用氧气瓶的哦！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_horror", 256, 64);
+	ModSetLayerFilter(6, 128, "none");
+	DrawBustshot( 6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 2000, TRUE );
+	PlaySE(3, "suzu_1", 256, 64);
+	ModSetLayerFilter(3, 196, "none");
+	ModDrawCharacter(3, 12, "sprite/ha4_muhyou_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
+
+//羽入rvS23/12/VTH_hanyu1029.「…プールサイドでカレーを食べるのも多分、禁止だと思いますのですが」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1029", 256, TRUE);
+	OutputLine(NULL, "「…プールサイドでカレーを食べるのも多分、禁止だと思いますのですが」",
+			NULL, "“……在泳池边吃咖喱我想大概也是被禁止的吧”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri7_majime_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1060.「……それ言ったら殺されるわよ。たとえあんたでも」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1060", 256, TRUE);
+	OutputLine(NULL, "「……それ言ったら殺されるわよ。たとえあんたでも」",
+			NULL, "“……说出那句话可是会被杀掉的哦。哪怕是你也一样”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	ModSetLayerFilter(6, 256, "none");
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(4, 10, "sprite/iri4_majime2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "left", 0, 0, 250 );
+
+//イリーrvS23/10/VTH_irie1009.「お、小此木さん…！kvS23/10/VTH_irie1010.　これはどういうわけですか！kvS23/10/VTH_irie1011.　まさか、この私に刃向かうおつもりですか！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1009", 256, TRUE);
+	OutputLine(NULL, "「お、小此木さん…！",
+			NULL, "“小、小此木先生……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1010", 256, TRUE);
+	OutputLine(NULL, "　これはどういうわけですか！",
+			NULL, " 这是怎么回事！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1011", 256, TRUE);
+	OutputLine(NULL, "　まさか、この私に刃向かうおつもりですか！！」",
+			NULL, " 难不成，你是打算跟我作对吗！！”", Line_Normal);
+	ClearMessage();
+
+//小此木rvS23/14/VTH_okonogi1003.「へっへー、すんませんねぇ、入江所長。kvS23/14/VTH_okonogi1004.うちらもゼニで雇われている以上、仕方ないこってすわ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>小此木</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1003", 256, TRUE);
+	OutputLine(NULL, "「へっへー、すんませんねぇ、入江所長。",
+			NULL, "“嘿嘿，真是对不住了啊，入江所长。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1004", 256, TRUE);
+	OutputLine(NULL, "うちらもゼニで雇われている以上、仕方ないこってすわ！」",
+			NULL, "我们也是拿钱办事的，这也是没办法的事啊！”", Line_Normal);
+	ClearMessage();
+
+//鷹野rvS23/09/VTH_takano1025.「くすくすくす！　どうかしら、入江先生？　ジロウさん？kvS23/09/VTH_takano1026.　さらにこれだけの人数！kvS23/09/VTH_takano1027.　さすがにもうどうしようもなくないかしらぁ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1025", 256, TRUE);
+	OutputLine(NULL, "「くすくすくす！　どうかしら、入江先生？　ジロウさん？",
+			NULL, "“咯咯咯！怎么样，入江医生？次郎？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1026", 256, TRUE);
+	OutputLine(NULL, "　さらにこれだけの人数！",
+			NULL, " 而且又多了这么多人！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1027", 256, TRUE);
+	OutputLine(NULL, "　さすがにもうどうしようもなくないかしらぁ？」",
+			NULL, " 事到如今你们差不多也束手无策了吧？”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 10, "sprite/iri4_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//イリーrvS23/10/VTH_irie1012.「……な、何と言うことでしょう…。kvS23/10/VTH_irie1013.小此木さんめ、いつの間にか鷹野さんサイドに寝返っていたとは…！kvS23/10/VTH_irie1014.　富竹さん、他に増援を呼べませんか？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1012", 256, TRUE);
+	OutputLine(NULL, "「……な、何と言うことでしょう…。",
+			NULL, "“……怎、怎么会这样……。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1013", 256, TRUE);
+	OutputLine(NULL, "小此木さんめ、いつの間にか鷹野さんサイドに寝返っていたとは…！",
+			NULL, "小此木这家伙，竟然不知什么时候倒向鹰野小姐那边了……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1014", 256, TRUE);
+	OutputLine(NULL, "　富竹さん、他に増援を呼べませんか？！」",
+			NULL, " 富竹先生，还能叫到其他援军吗？！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 8, "sprite/tomi4_ikari_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//トミーrvS23/08/VTH_tomi1014.「く、呼んでも来るのにだいぶ掛かるだろうね…！kvS23/08/VTH_tomi1015.　今のこの急場には間に合いそうもない！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>托米</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1014", 256, TRUE);
+	OutputLine(NULL, "「く、呼んでも来るのにだいぶ掛かるだろうね…！",
+			NULL, "“唔，就算叫了赶过来也要花不少时间吧……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1015", 256, TRUE);
+	OutputLine(NULL, "　今のこの急場には間に合いそうもない！」",
+			NULL, " 眼下这种危急关头根本赶不上！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 11, "sprite/oisi3_2_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
+
+//クラウドrvS23/11/VTH_oishi1009.「んっふっふっふ！　となれば私の出番ですねぇ！kvS23/11/VTH_oishi1010.　地元のことは地元警察にお任せあれ！！k|yvS23/11/VTH_oishi1011.　そぉれ、機動隊の皆さぁあぁぁんッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>库劳德</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1009", 256, TRUE);
+	OutputLine(NULL, "「んっふっふっふ！　となれば私の出番ですねぇ！",
+			NULL, "“嗯呵呵呵！既然如此就轮到我出场了呢！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1010", 256, TRUE);
+	OutputLine(NULL, "　地元のことは地元警察にお任せあれ！！",
+			NULL, " 本地的事情就交给本地警察吧！！", Line_WaitForInput);
+	PlaySE(3, "addse16", 256, 64);
+	ModDrawCharacter(5, 11, "portrait/oisi3_3_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1011", 256, TRUE);
+	OutputLine(NULL, "　そぉれ、機動隊の皆さぁあぁぁんッ！！」",
+			NULL, " 来吧，机动队的各位——！！”", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "addse28", 256, 64);
+	DrawScene("black", 2000 );
+	PlaySE(3, "addse29", 256, 64);
+	Wait( 2000 );
+	PlaySE(3, "addse18", 256, 64);
+	PlayBGM(2, "hm01_02", 128, 0);
+	DrawScene("background/oki_pool1", 1000 );
+
+//r市民プールのフェンスを突き破り、黒塗りの装甲車のような車が何台も飛び込んでくる！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "市民プールのフェンスを突き破り、黒塗りの装甲車のような車が何台も飛び込んでくる！！",
+			NULL, "撞破市民泳池的铁丝网栅栏，好几辆漆黑的宛如装甲车般的车辆冲了进来！！", Line_Normal);
+	ClearMessage();
+
+//r後部扉が開き、次々と県警の機動隊が現れ、クラウドの前に集結するッ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "後部扉が開き、次々と県警の機動隊が現れ、クラウドの前に集結するッ！！",
+			NULL, "后门打开，县警的机动队员接连现身，在库劳德面前集结完毕！！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "daidageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+	ModDrawCharacter(4, 1, "portrait/kei3_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS23/01/VTH_k11243.「す、すげぇぜクラウド！！kvS23/01/VTH_k11244.　機動隊まで呼び出せるのかよ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11243", 256, TRUE);
+	OutputLine(NULL, "「す、すげぇぜクラウド！！",
+			NULL, "“太、太厉害了库劳德！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11244", 256, TRUE);
+	OutputLine(NULL, "　機動隊まで呼び出せるのかよ！！」",
+			NULL, " 居然连机动队都能调动过来吗！！”", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 100, TRUE);
+	ModDrawCharacter(3, 8, "sprite/tomi4_def_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	ModDrawCharacter(4, 10, "sprite/iri4_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	ModDrawCharacter(5, 11, "sprite/oisi3_2_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, TRUE );
+
+//クラウドrvS23/11/VTH_oishi1012.「んっふっふー！！　勤めて今年で勤続４０年超ぉぉぉ！！！k|yvS23/11/VTH_oishi1013.　今の私に興宮で不可能はありません！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>クラウド</color>", NULL, "<color=#a59da9>库劳德</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1012", 256, TRUE);
+	OutputLine(NULL, "「んっふっふー！！　勤めて今年で勤続４０年超ぉぉぉ！！！",
+			NULL, "“嗯呵呵——！！我在警界工作，到今年已经超过40年啦——！！！", Line_WaitForInput);
+	PlaySE(3, "a6", 256, 64);
+	ModDrawCharacter(5, 11, "sprite/oisi3_5_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	ModPlayVoiceLS(4, 11, "ps3/s23/11/vth_oishi1013", 256, TRUE);
+	OutputLine(NULL, "　今の私に興宮で不可能はありません！！」",
+			NULL, " 现在的我在兴宫就没有办不到的事！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 8, "sprite/tomi4_warai_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//トミーrvS23/08/VTH_tomi1016.「これは誤算じゃないかい、鷹野さん、小此木くん！kvS23/08/VTH_tomi1017.　これだけの衆人環視と警察の面前じゃ、君たちもやりにくいはずだよ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>托米</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1016", 256, TRUE);
+	OutputLine(NULL, "「これは誤算じゃないかい、鷹野さん、小此木くん！",
+			NULL, "“这下失算了吧，鹰野小姐、小此木君！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1017", 256, TRUE);
+	OutputLine(NULL, "　これだけの衆人環視と警察の面前じゃ、君たちもやりにくいはずだよ！！」",
+			NULL, " 在这么多人的注视下，又有警察在场，你们也不好动手吧！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	ModDrawCharacter(5, 9, "sprite/ta6_iradachi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "left", 0, 0, 250 );
+
+//鷹野rvS23/09/VTH_takano1028.「……く、小此木！！kvS23/09/VTH_takano1029.　こっちは戦闘のプロでしょう！kvS23/09/VTH_takano1030.　機動隊が何よ、殲滅しなさいッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1028", 256, TRUE);
+	OutputLine(NULL, "「……く、小此木！！",
+			NULL, "“……唔，小此木！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1029", 256, TRUE);
+	OutputLine(NULL, "　こっちは戦闘のプロでしょう！",
+			NULL, " 你们可是战斗的行家吧！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1030", 256, TRUE);
+	OutputLine(NULL, "　機動隊が何よ、殲滅しなさいッ！！」",
+			NULL, " 机动队算什么，给我全歼他们！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 14, "sprite/oko2_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//小此木rvS23/14/VTH_okonogi1005.「へへっ、そりゃあ難しいこってす。kvS23/14/VTH_okonogi1006.向こうは完全武装の機動隊。kvS23/14/VTH_okonogi1007.こちとら、徒手空拳。k|yvS23/14/VTH_okonogi1008.せめて武器とは言いませんから、普通に服着て対峙したいもんです。kvS23/14/VTH_okonogi1009.……は、ハクション！」|y
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#3e5745>小此木</color>", NULL, "<color=#3e5745>小此木</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1005", 256, TRUE);
+	OutputLine(NULL, "「へへっ、そりゃあ難しいこってす。",
+			NULL, "“嘿嘿，那可就强人所难了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1006", 256, TRUE);
+	OutputLine(NULL, "向こうは完全武装の機動隊。",
+			NULL, "对方是全副武装的机动队。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1007", 256, TRUE);
+	OutputLine(NULL, "こちとら、徒手空拳。",
+			NULL, "我们这边可是赤手空拳。", Line_WaitForInput);
+	ModDrawCharacter(3, 14, "sprite/oko2_niyari_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1008", 256, TRUE);
+	OutputLine(NULL, "せめて武器とは言いませんから、普通に服着て対峙したいもんです。",
+			NULL, "至少我也没奢求武器，好歹想穿着正经衣服去对峙啊。", Line_WaitForInput);
+	ModDrawCharacter(3, 14, "sprite/oko2_odoroki_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	ModPlayVoiceLS(4, 14, "ps3/s23/14/vth_okonogi1009", 256, TRUE);
+	OutputLine(NULL, "……は、ハクション！」",
+			NULL, "……哈、阿嚏！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 9, "sprite/ta6_sakebi_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//鷹野rvS23/09/VTH_takano1031.「その格好でずっと潜水してたのはアンタの趣味でしょうがー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>鹰野</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1031", 256, TRUE);
+	OutputLine(NULL, "「その格好でずっと潜水してたのはアンタの趣味でしょうがー！！」",
+			NULL, "“以那副打扮一直潜水明明就是你自己的爱好吧——！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	ModDrawCharacter(4, 1, "sprite/kei3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "left", 0, 0, 250 );
+
+//圭一rvS23/01/VTH_k11245.「ざまぁねぇなぁ、鷹野さん！k|yvS23/01/VTH_k11246.　せっかくの切り札も、クラウドの機動隊の前じゃあ役立たずみたいだぜ！！kvS23/01/VTH_k11247.　次はどう来るつもりだー？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11245", 256, TRUE);
+	OutputLine(NULL, "「ざまぁねぇなぁ、鷹野さん！",
+			NULL, "“真难看啊，鹰野小姐！", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "sprite/kei3_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11246", 256, TRUE);
+	OutputLine(NULL, "　せっかくの切り札も、クラウドの機動隊の前じゃあ役立たずみたいだぜ！！",
+			NULL, " 亏你亮出王牌，在库劳德的机动队面前好像也毫无用武之地呢！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11247", 256, TRUE);
+	OutputLine(NULL, "　次はどう来るつもりだー？」",
+			NULL, " 接下来你打算怎么出招啊——？”", Line_Normal);
+	ClearMessage();
+
+	ModEnableNVLModeInADVMode();
+
+//知恵rvS23/22/VTH_chie1017.ふ、…余裕ですね前原くん。
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1017", 256, TRUE);
+	OutputLine(NULL, "ふ、…余裕ですね前原くん。",
+			NULL, "哼、……挺从容的嘛，前原同学。", Line_Normal);
+	ClearMessage();
+
+	ModDisableNVLModeInADVMode();
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	ModDrawCharacter(4, 22, "sprite/tie2_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "left", 0, 0, 250 );
+
+//知恵rvS23/22/VTH_chie1018.「ですが、先生の前に機動隊の壁など無意味ですよ。kvS23/22/VTH_chie1019.真の私が得意とするのは空中戦とbとうてき.<投擲>術！kvS23/22/VTH_chie1020.　この程度の人垣、ひとっ跳びに超えて、この必殺Ｔ型定規のbとうてき.<投擲>で海パンを引き裂いてやりますッ！！kvS23/22/VTH_chie1021.　ゴッドハンター知恵の名は伊達ではありませんよッ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1018", 256, TRUE);
+	OutputLine(NULL, "「ですが、先生の前に機動隊の壁など無意味ですよ。",
+			NULL, "“但是，在老师面前，机动队的防壁毫无意义哦。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1019", 256, TRUE);
+	OutputLine(NULL, "真の私が得意とするのは空中戦と投擲(とうてき)術！",
+			NULL, "我真正擅长的是空战与投掷术！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1020", 256, TRUE);
+	OutputLine(NULL, "　この程度の人垣、ひとっ跳びに超えて、この必殺Ｔ型定規の投擲(とうてき)で海パンを引き裂いてやりますッ！！",
+			NULL, "这种程度的人墙，我一跃就能翻过，用这必杀的Ｔ字尺投掷将你的泳裤撕个粉碎！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1021", 256, TRUE);
+	OutputLine(NULL, "　ゴッドハンター知恵の名は伊達ではありませんよッ！」",
+			NULL, "神圣猎手（God Hunter）知惠的名号可不是白叫的哦！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sword", 256, 64);
+	DrawSprite( 7, "eye/tie3", NULL, 0, 0, -200, 0, 0, 0, FALSE, FALSE, 0, 0, 20, 250, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	MoveSprite( 7, 0, 0, 0, 0, 0, 0, 0, 500, FALSE );
+	FadeSprite( 7, 500, TRUE );
+	DrawScene("black", 1000 );
+	ModEnableNVLModeInADVMode();
+
+//イリーrvS23/10/VTH_irie1015.それは困りますね、知恵先生。krvS23/10/VTH_irie1016.ふふふ、さぁこれをご覧なさい！！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1015", 256, TRUE);
+	OutputLine(NULL, "それは困りますね、知恵先生。",
+			NULL, "那可就让人伤脑筋了呢，知惠老师。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1016", 256, TRUE);
+	OutputLine(NULL, "\nふふふ、さぁこれをご覧なさい！！",
+			NULL, "\n呵呵呵，请看看这个吧！！", Line_Normal);
+	ClearMessage();
+
+	ModDisableNVLModeInADVMode();
+	PlaySE(3, "vse_jump", 256, 64);
+	DrawSceneWithMask( "white", "up", 0, 0, 250 );
+	DrawSceneWithMask( "black", "up", 0, 0, 250 );
+	Wait( 250 );
+	PlaySE(3, "vse_gard1", 256, 64);
+	ModDrawCharacter(4, 22, "sprite/tie2_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/oki_pool2", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//r入江が、まるで人質でも取るようにカレーのレトルトパックを掲げると、それにメスを当てた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "入江が、まるで人質でも取るようにカレーのレトルトパックを掲げると、それにメスを当てた。",
+			NULL, "入江宛如挟持人质一般高举起即食咖喱包，将手术刀架在了上面。", Line_Normal);
+	ClearMessage();
+
+//r…この間抜けな光景も、知恵先生に限ってだけは致命的だ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…この間抜けな光景も、知恵先生に限ってだけは致命的だ！！",
+			NULL, "……这滑稽可笑的景象，唯独对知惠老师而言是致命的！！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "down", 256, 64);
+	ModDrawCharacter(4, 22, "sprite/tie2_3_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//知恵rvS23/22/VTH_chie1022.「そ、そのカレーはッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1022", 256, TRUE);
+	OutputLine(NULL, "「そ、そのカレーはッ！！！」",
+			NULL, "“那、那份咖喱是！！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//イリーrvS23/10/VTH_irie1017.「そうです、幻のカレー店でひそかに売り出された、テイクアウト用レトルトパックです！kvS23/10/VTH_irie1018.　しかもこれは、お店の改装イベント時に限定で１０パックだけ作られた超々レアカレーなのです！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1017", 256, TRUE);
+	OutputLine(NULL, "「そうです、幻のカレー店でひそかに売り出された、テイクアウト用レトルトパックです！",
+			NULL, "“没错，这是那家传说中的咖喱店秘密推出的外带咖喱包！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1018", 256, TRUE);
+	OutputLine(NULL, "　しかもこれは、お店の改装イベント時に限定で１０パックだけ作られた超々レアカレーなのです！！」",
+			NULL, "而且是在店铺翻新活动期间，限量制作10包的超级稀有咖喱！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "daidageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//イリーrvS23/10/VTH_irie1019.「その滴るような味わい、語りきれないコク、深み、辛さの中にも甘さがあり、絶品中の絶品と誉れ高い究極の一品！！kvS23/10/VTH_irie1020.　それを今この場で引き裂いて、ブチまけられても平気ですかッ？！kvS23/10/VTH_irie1021.　いや、できますまい！kvS23/10/VTH_irie1022.　くっくっく、真にカレーを愛するあならだからこそ屈するしかないのです！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1019", 256, TRUE);
+	OutputLine(NULL, "「その滴るような味わい、語りきれないコク、深み、辛さの中にも甘さがあり、絶品中の絶品と誉れ高い究極の一品！！",
+			NULL, "“那浓郁欲滴的风味，难以言尽的浓醇、厚重，辛辣中兼具甘甜，享有极品中之极品美誉的终极逸品！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1020", 256, TRUE);
+	OutputLine(NULL, "　それを今この場で引き裂いて、ブチまけられても平気ですかッ？！",
+			NULL, "如果现在当场把它切开、洒得一地都是，你也能无动于衷吗？！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1021", 256, TRUE);
+	OutputLine(NULL, "　いや、できますまい！",
+			NULL, "不，绝不可能！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1022", 256, TRUE);
+	OutputLine(NULL, "　くっくっく、真にカレーを愛するあならだからこそ屈するしかないのです！！」",
+			NULL, "呵呵呵，正因为你是真正爱咖喱的人，才不得不屈服！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_sword1", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//イリーrvS23/10/VTH_irie1023.「さぁ跪きなさい、そしてカレーと我を讃えよッ！！kvS23/10/VTH_irie1024.　そして水着ではいけません、メイドさんの格好にお着替えして、お許し下さいご主人さま、どうかそのカレーを私めに召し上がらせてくださいと、首輪付きで四つんばいになって、卑しそうにしながら叫ぶのですッ！！！kvS23/10/VTH_irie1025.　さぁさぁさぁ、ほらぁッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1023", 256, TRUE);
+	OutputLine(NULL, "「さぁ跪きなさい、そしてカレーと我を讃えよッ！！",
+			NULL, "“来吧，跪下，赞美咖喱与我吧！！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1024", 256, TRUE);
+	OutputLine(NULL, "　そして水着ではいけません、メイドさんの格好にお着替えして、お許し下さいご主人さま、どうかそのカレーを私めに召し上がらせてくださいと、首輪付きで四つんばいになって、卑しそうにしながら叫ぶのですッ！！！",
+			NULL, "不过，泳装可不行。换上女仆装，戴着项圈趴在地上，卑微地喊‘请原谅我，主人！请让我吃一口那份咖喱吧！’！！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1025", 256, TRUE);
+	OutputLine(NULL, "　さぁさぁさぁ、ほらぁッ！！」",
+			NULL, "来啊来啊来啊，快点！！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeSprite( 5, 10, TRUE );
+	PlaySE(3, "vse_oppai", 256, 64);
+	DrawBustshot(3, "eye/maid", -260, -60, 100, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 0, FALSE );
+	DrawBustshot(5, "eye/maid2", 260, 210, 100, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 0, FALSE );
+	DrawSceneWithMask("background/imagebg", "v_heart", 0, 0, 400 );
+	MoveSprite( 3, -260, 150, 100, 0, 0, 0, 20, 3000, FALSE );
+	MoveSprite( 5, 260, 0, 100, 0, 0, 0, 21, 3000, FALSE );
+	DrawBustshot(6, "text/maturi_txt8-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	ModPlayVoiceLS(4, 10, "ps3/s13/10/ds41100441", 256, TRUE);
+	Wait( 1200 );
+	DrawBustshot(6, "text/maturi_txt9-", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 50, TRUE );
+	Wait( 500 );
+	DrawScene( "text/maturi_txt9", 100 );
+	PlaySE(3, "finish", 256, 64);
+	DrawScene( "text/maturi_txt10", 50 );
+	StartShakingOfWindow( 248, 30, 0, 2, 2*2, FALSE );
+	StartShakingOfAllObjects( 248, 30, 0, 2, 2*2, TRUE );
+	Wait( 150 );
+	DrawScene( "text/maturi_txt10b", 200 );
+	Wait( 700 );
+	PlaySE( 0, "kaminari2", 128, 64 );
+	DrawScene( "white", 400 );
+	FadeSprite( 3, 10, FALSE );
+	FadeSprite( 5, 10, TRUE );
+	DrawBustshot( 6, "waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, FALSE );
+	ModDrawCharacter(4, 22, "portrait/tie2_3_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/imagebg", 1000 );
+
+//知恵rvS23/22/VTH_chie1023.「あああぁああああぁぁぁぁぁ！！kvS23/22/VTH_chie1024.　お許し下さいご主人さま、どうかそのカレーを私めに～～～！！！kvS23/22/VTH_chie1025.　後で必ずお仕置きしますけど、今はどうかお許しください～～！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1023", 256, TRUE);
+	OutputLine(NULL, "「あああぁああああぁぁぁぁぁ！！",
+			NULL, "“啊啊啊啊啊啊啊啊啊啊！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1024", 256, TRUE);
+	OutputLine(NULL, "　お許し下さいご主人さま、どうかそのカレーを私めに～～～！！！",
+			NULL, "主人请原谅我，求求您把那份咖喱赐给奴婢～～～！！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 22, "ps3/s23/22/vth_chie1025", 256, TRUE);
+	OutputLine(NULL, "　後で必ずお仕置きしますけど、今はどうかお許しください～～！！」",
+			NULL, "事后一定会好好惩罚你，但现在还请原谅我啊～～！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse06", 256, 64);
+	DrawScene("white", 1000 );
+	DrawScene("black", 1000 );
+	ModDrawCharacter(4, 1, "sprite/kei3_nayamu_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/oki_pool1", 1000 );
+
+//圭一rvS23/01/VTH_k11248.「……あ、明日の学校が怖いと思うのは俺の気のせいだろうか…。k|yvS23/01/VTH_k11249.……とと、とりあえず今はそれは忘れよう。k|yvS23/01/VTH_k11250.今はモテモテの魔法を身につける方が先だ！kvS23/01/VTH_k11251.　どうだ魅音！　鷹野さんも知恵先生も屈したぞ！kvS23/01/VTH_k11252.　後は何だ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11248", 256, TRUE);
+	OutputLine(NULL, "「……あ、明日の学校が怖いと思うのは俺の気のせいだろうか…。",
+			NULL, "“……觉、觉得明天的学校很可怕，是我多心了吗……。", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "sprite/kei3_komaru_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11249", 256, TRUE);
+	OutputLine(NULL, "……とと、とりあえず今はそれは忘れよう。",
+			NULL, "……总、总之现在先忘掉那个吧。", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "sprite/kei3_ikari2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11250", 256, TRUE);
+	OutputLine(NULL, "今はモテモテの魔法を身につける方が先だ！",
+			NULL, "现在获得大受欢迎的魔法才是当务之急！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11251", 256, TRUE);
+	OutputLine(NULL, "　どうだ魅音！　鷹野さんも知恵先生も屈したぞ！",
+			NULL, "怎么样啊魅音！鹰野小姐和知惠老师都屈服了哦！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11252", 256, TRUE);
+	OutputLine(NULL, "　後は何だ？！」",
+			NULL, "接下来还有什么？！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	ModDrawCharacter(4, 6, "sprite/si4_ikari_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "left", 0, 0, 250 );
+
+//詩音rvS23/06/VTH_shion1021.「今です、葛西！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s23/06/vth_shion1021", 256, TRUE);
+	OutputLine(NULL, "「今です、葛西！！」",
+			NULL, "“就是现在，葛西！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	PlaySE(3, "vse_wrap", 256, 64);
+	ModDrawCharacter(4, 15, "portrait/kasa_2_", "0", 700, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	MoveSprite( 4, 0, 0, 0, 0, 0, 0, 0, 500, TRUE );
+	FadeSprite( 4, 10, FALSE );
+	ModDrawCharacter(5, 15, "portrait/kasa_2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 10, TRUE );
+
+//葛西rvS14/15/2215000011.「――承知ッッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>葛西</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(5, 15, "ps3/s14/15/2215000011", 256, TRUE);
+	OutputLine(NULL, "「——承知ッッ！！」",
+			NULL, "“——明白！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse19", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+	PlaySE(3, "vse_firewall", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 500 );
+	DrawSceneWithMask( "black", "c", 0, 0, 500 );
+
+//r詩音が合図を送ると、事務所の影に隠れていた葛西が、構えていたものを放つ！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "詩音が合図を送ると、事務所の影に隠れていた葛西が、構えていたものを放つ！",
+			NULL, "诗音发出暗号的同时，躲在事务所阴影处的葛西射出了架好的武器！", Line_Normal);
+	ClearMessage();
+
+//rそれは、グレネードランチャー！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それは、グレネードランチャー！！",
+			NULL, "那是，榴弹发射器！！", Line_Normal);
+	ClearMessage();
+
+//rグレネードランチャーはその名の通り、グレネードを発射する武器だが、詰める弾によって多様な使い道がある！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "グレネードランチャーはその名の通り、グレネードを発射する武器だが、詰める弾によって多様な使い道がある！",
+			NULL, "榴弹发射器顾名思义是发射榴弹的武器，但根据装填弹药的不同有着多样的用途！", Line_Normal);
+	ClearMessage();
+
+//r今、葛西が放ったのは爆発するグレネードではなく、スタングレネード！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今、葛西が放ったのは爆発するグレネードではなく、スタングレネード！！",
+			NULL, "葛西刚才射出的并非爆破用榴弹，而是闪光震撼弹！！", Line_Normal);
+	ClearMessage();
+
+//r閃光と音響で、標的の目と耳を瞬時に無力化し、その間に取り押さえるという、近年流行りのアレだ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "閃光と音響で、標的の目と耳を瞬時に無力化し、その間に取り押さえるという、近年流行りのアレだ！！",
+			NULL, "以强光与巨响瞬间瘫痪目标的视听，并趁机将其制服，正是近年来流行的那款装备！！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "left", 0, 0, 250 );
+	ModDrawCharacter(4, 1, "portrait/kei3_ikari2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "left", 0, 0, 250 );
+
+//圭一rvS23/01/VTH_k11253.「な、何だありゃあ…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11253", 256, TRUE);
+	OutputLine(NULL, "「な、何だありゃあ…！！」",
+			NULL, "“那、那是搞什么鬼啊……！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "kyupirn", 256, 64);
+	DrawScene("white", 250 );
+	ModDrawCharacter(4, 1, "portrait/kei3_ikari2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/oki_pool1", 250 );
+
+//トミーrvS23/08/VTH_tomi1018.「危ない、Ｋぇええぇええぇいいッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>托米</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1018", 256, TRUE);
+	OutputLine(NULL, "「危ない、Ｋぇええぇええぇいいッ！！！」",
+			NULL, "“危险，Ｋ啊啊啊啊啊啊！！！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM(2, 200, FALSE);
+	ModDrawCharacter(4, 1, "portrait/kei3_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	Wait( 250 );
+	PlaySE(3, "daidageki", 256, 64);
+	DrawScene("background/furiker_c", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(4, "bb", 256, 64);
+	DrawScene("white", 1000 );
+	DrawScene("black", 1000 );
+
+//r耳をつんざく炸裂音と閃光が辺り一面を覆った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "耳をつんざく炸裂音と閃光が辺り一面を覆った。",
+			NULL, "震耳欲聋的爆响和刺眼的强光笼罩了四周。", Line_Normal);
+	ClearMessage();
+
+//rこの隙をついて一気に襲い掛かり、圭一の海パンを脱がすッ！！　………だ、だが？！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "この隙をついて一気に襲い掛かり、圭一の海パンを脱がすッ！！　………だ、だが？！",
+			NULL, "企图趁此破绽一鼓作气扑上前扒掉圭一的泳裤！！……但、但是？！", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm11_84", 128, 0);
+	PlaySE(3, "vse_charge", 256, 64);
+	DrawScene("scene/sil7", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//圭一rvS23/01/VTH_k11254.「……ト、…トミー…！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11254", 256, TRUE);
+	OutputLine(NULL, "「……ト、…トミー…！！！」",
+			NULL, "“……托、……托米……！！！”", Line_Normal);
+	ClearMessage();
+
+//rスタングレネードの爆発を、…何と、鍛え上げられた鋼の肉体で富竹が庇ったのだッ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "スタングレネードの爆発を、…何と、鍛え上げられた鋼の肉体で富竹が庇ったのだッ！！",
+			NULL, "富竹竟用那身锻炼得如钢铁般结实的肉体，替圭一挡下了震撼弹！！", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	ModDrawCharacter(5, 4, "sprite/sa7_hannbeso_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "right", 0, 0, 250 );
+
+//沙都子rvS23/04/VTH_satoko1064.「に、肉のカーテンでございますかぁっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1064", 256, TRUE);
+	OutputLine(NULL, "「に、肉のカーテンでございますかぁっ？！」",
+			NULL, "“难、难道是肌肉护盾（肉之幕帘）吗？！”", Line_Normal);
+	ClearMessage();
+
+//トミーrvS23/08/VTH_tomi1019.「ふっふっふ！　僕の肉体は鉄壁さ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>トミー</color>", NULL, "<color=#945c44>托米</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 8, "ps3/s23/08/vth_tomi1019", 256, TRUE);
+	OutputLine(NULL, "「ふっふっふ！　僕の肉体は鉄壁さ！」",
+			NULL, "“哼哼哼！我的肉体可是铁壁！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 6, "sprite/si4_tohoho_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//詩音rvS23/06/VTH_shion1022.「な、…何てメチャクチャなんです！k|yvS23/06/VTH_shion1023.　スタングレネードを胸板で防ぎますかッ？！kvS23/06/VTH_shion1024.　ありえなーーい！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s23/06/vth_shion1022", 256, TRUE);
+	OutputLine(NULL, "「な、…何てメチャクチャなんです！",
+			NULL, "“怎、……怎么会如此乱来！", Line_WaitForInput);
+	ModDrawCharacter(3, 6, "sprite/si4_odoroki_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModPlayVoiceLS(4, 6, "ps3/s23/06/vth_shion1023", 256, TRUE);
+	OutputLine(NULL, "　スタングレネードを胸板で防ぎますかッ？！",
+			NULL, " 居然用胸膛挡住震撼弹？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s23/06/vth_shion1024", 256, TRUE);
+	OutputLine(NULL, "　ありえなーーい！！」",
+			NULL, " 这绝不可能——！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "black", "right", 0, 0, 250 );
+	ModDrawCharacter(4, 10, "sprite/iri4_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "right", 0, 0, 250 );
+
+//イリーrvS23/10/VTH_irie1027.「さぁて、詩音さんもそろそろ落ち着きましょう。kvS23/10/VTH_irie1028.さぁ御覧なさい！kvS23/10/VTH_irie1029.　これは我が雛見沢ファイターズの秘蔵写真集です！k|yvS23/10/VTH_irie1030.　あなたも知らない無防備な悟史くんの写真が満載！kvS23/10/VTH_irie1031.　それを今この場で引き裂いて流水プールに流されてしまってもいいのですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1027", 256, TRUE);
+	OutputLine(NULL, "「さぁて、詩音さんもそろそろ落ち着きましょう。",
+			NULL, "“好啦，诗音小姐也差不多该冷静下来了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1028", 256, TRUE);
+	OutputLine(NULL, "さぁ御覧なさい！",
+			NULL, "请看这个！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1029", 256, TRUE);
+	OutputLine(NULL, "　これは我が雛見沢ファイターズの秘蔵写真集です！",
+			NULL, " 这是我们雏见泽斗士队的珍藏相册！", GetGlobalFlag(GLinemodeSp));
+	ModDrawCharacter(4, 10, "sprite/iri4_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1030", 256, TRUE);
+	OutputLine(NULL, "　あなたも知らない無防備な悟史くんの写真が満載！",
+			NULL, "里面满载着连你都不知道的、悟史君毫无戒备的抓拍照！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1031", 256, TRUE);
+	OutputLine(NULL, "　それを今この場で引き裂いて流水プールに流されてしまってもいいのですか？」",
+			NULL, " 现在要是把它撕碎，让照片飘进环流泳池，你也不在乎吗？”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_oppai", 256, 64);
+	DrawBustshot( 6, "waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, FALSE );
+	ModDrawCharacter(5, 6, "portrait/si4_odoroki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/imagebg", "v_heart", 0, 0, 500 );
+
+//詩音rvS23/06/VTH_shion1025.「え、えええぇええぇえぇ？！kvS23/06/VTH_shion1026.　おお、お許し下さい、ご主人様ぁあぁ～～！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>诗音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s23/06/vth_shion1025", 256, TRUE);
+	OutputLine(NULL, "「え、えええぇええぇえぇ？！",
+			NULL, "“咦、咦咦咦咦咦？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s23/06/vth_shion1026", 256, TRUE);
+	OutputLine(NULL, "　おお、お許し下さい、ご主人様ぁあぁ～～！！」",
+			NULL, " 求、求求您饶了我吧，主人～～！！”", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 500 );
+	ModDrawCharacter(4, 10, "sprite/iri4_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/oki_pool2", 500 );
+
+//イリーrvS23/10/VTH_irie1032.「もちろんそれだけではありません！kvS23/10/VTH_irie1033.　こちらは鷹野さんのスクラップ帳です！k|yvS23/10/VTH_irie1034.　さぁ跪きなさい！！kvS23/10/VTH_irie1035.　メイドさんの衣装に着替えて許しを請うのですッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>イリー</color>", NULL, "<color=#c89a80>伊利</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1032", 256, TRUE);
+	OutputLine(NULL, "「もちろんそれだけではありません！",
+			NULL, "“当然不仅如此！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1033", 256, TRUE);
+	OutputLine(NULL, "　こちらは鷹野さんのスクラップ帳です！",
+			NULL, " 这边是鹰野小姐的剪报簿！", Line_WaitForInput);
+	ModDrawCharacter(4, 10, "sprite/iri4_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1034", 256, TRUE);
+	OutputLine(NULL, "　さぁ跪きなさい！！",
+			NULL, " 来吧，跪下！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 10, "ps3/s23/10/vth_irie1035", 256, TRUE);
+	OutputLine(NULL, "　メイドさんの衣装に着替えて許しを請うのですッ！！」",
+			NULL, " 换上女仆装请求原谅吧！！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "vse_oppai", 256, 64);
+	DrawBustshot( 7, "waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, FALSE );
+	ModDrawCharacter(5, 9, "portrait/ta6_kanashimi_", "0", -320, 100, -200, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	ModDrawCharacter(6, 6, "portrait/si4_odoroki_a1_", "0", 0, 100, -200, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 22, "portrait/tie2_3_", "0", 320, 100, -200, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawSceneWithMask( "background/imagebg", "v_heart", 0, 0, 500 );
+	ModEnableNVLModeInADVMode();
+
+//鷹野＆詩音＆知恵ro65.vS23/09/VTH_takano1032|S23/06/VTH_shion1027|S23/22/VTH_chie1026.お許し下さい、ご主人様ぁあぁ～～！！！
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>＆<color=#5ec69a>詩音</color>＆<color=#68aee5>知恵</color>", NULL, "<color=#f6d9a8>鹰野</color>＆<color=#5ec69a>诗音</color>＆<color=#68aee5>知惠</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "ps3/s23/09/vth_takano1032", 256, TRUE);
+	ModPlayVoiceLS(5, 6, "ps3/s23/06/vth_shion1027", 256, TRUE);
+	ModPlayVoiceLS(6, 22, "ps3/s23/22/vth_chie1026", 256, TRUE);
+	OutputLine(NULL, "お許し下さい、ご主人様ぁあぁ～～！！！",
+			NULL, "求求您饶了我们吧，主人～～！！！", Line_Normal);
+	ClearMessage();
+
+	ModDisableNVLModeInADVMode();
+	DisableWindow();
+	PlaySE(3, "finish", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("background/furiker_c", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("white", 1000 );
+	DrawScene("black", 1000 );
+
+//r今やプールサイドに、鷹野、知恵、詩音の３人が仲良くメイド姿で並び、すっかり入江のスチャラカ時空の虜にされてしまっている…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "今やプールサイドに、鷹野、知恵、詩音の３人が仲良くメイド姿で並び、すっかり入江のスチャラカ時空の虜にされてしまっている…。",
+			NULL, "如今泳池边，鹰野、知惠和诗音3人身穿女仆装，和和气气地并排站着，彻底落入了入江那荒唐世界的魔掌……。", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(6, 4, "sprite/sa7_akireru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, FALSE );
+	DrawScene("background/oki_pool1", 1000 );
+
+//沙都子rvS23/04/VTH_satoko1065.「い、一番頼りになりそうだった方々には、ことごとく弱点がありましたのね…。kvS23/04/VTH_satoko1066.悔しいですけど、今の圭一さんたちには歯が立ちませんでしてよ…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1065", 256, TRUE);
+	OutputLine(NULL, "「い、一番頼りになりそうだった方々には、ことごとく弱点がありましたのね…。",
+			NULL, "“看、看起来最靠得住的那几位，全都有着致命弱点呢……。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1066", 256, TRUE);
+	OutputLine(NULL, "悔しいですけど、今の圭一さんたちには歯が立ちませんでしてよ…！！」",
+			NULL, "虽然很不甘心，但现在的圭一他们根本不是我们能应付的哦……！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri7_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1061.「……というわけで、圭一は一生自分だけを愛する、素敵でアブないナルシさんになってしまうのでした。にぱ～☆」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1061", 256, TRUE);
+	OutputLine(NULL, "「……というわけで、圭一は一生自分だけを愛する、素敵でアブないナルシさんになってしまうのでした。にぱ～☆」",
+			NULL, "“……于是乎，圭一注定要变成一生只爱自己、美妙又危险的自恋狂了。咪啪～”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 3, "sprite/me6_odoroki_a1_", "0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1147.「そんなの駄目だってばー！！kvS23/03/VTH_mion1148.　大体、何でこんな怪しげなマジックアイテムが雛見沢界隈に転がってるわけよ！kvS23/03/VTH_mion1149.　信じらんなーい！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1147", 256, TRUE);
+	OutputLine(NULL, "「そんなの駄目だってばー！！",
+			NULL, "“那样绝对不行啦——！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1148", 256, TRUE);
+	OutputLine(NULL, "　大体、何でこんな怪しげなマジックアイテムが雛見沢界隈に転がってるわけよ！",
+			NULL, " 话说回来，雏见泽一带为什么会冒出这么可疑的魔法道具啊！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1149", 256, TRUE);
+	OutputLine(NULL, "　信じらんなーい！！」",
+			NULL, " 真是难以置信——！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri7_niko_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1062.「……オヤシロさまは本来、縁結びの神様なのですよ？kvS23/05/VTH_rika1063.　だからオヤシロさま縁のものには、縁結びの効果や、モテモテの効果があってもおかしくないのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1062", 256, TRUE);
+	OutputLine(NULL, "「……オヤシロさまは本来、縁結びの神様なのですよ？",
+			NULL, "“……御社神大人本来就是缔结良缘的神明哦？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1063", 256, TRUE);
+	OutputLine(NULL, "　だからオヤシロさま縁のものには、縁結びの効果や、モテモテの効果があってもおかしくないのです」",
+			NULL, " 所以与御社神大人有渊源之物，拥有缔结良缘或大受欢迎的效果也不奇怪呢”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 2, "sprite/re5_komaru_a1_", "0", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1070.「そ、それはとっても素敵だけど、手鏡を見つめてニヤけるナルシさん生活なんて、そんなの絶対駄目だよね…、はぅ…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1070", 256, TRUE);
+	OutputLine(NULL, "「そ、それはとっても素敵だけど、手鏡を見つめてニヤけるナルシさん生活なんて、そんなの絶対駄目だよね…、はぅ…」",
+			NULL, "“那、那样虽然很棒，但整天对着手镜傻笑的自恋狂生活，无论如何都不能接受吧……哈呜……”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(6, 4, "sprite/sa7_yareyare_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
+
+//沙都子rvS23/04/VTH_satoko1067.「ナルシさんが一体どんな人なのか、私にはまだよくわかりませんですけど。k|yvS23/04/VTH_satoko1068.……とにかく、あの勝ち誇ったような圭一さんに一泡吹かせてやらなければ、収まりがつきませんでしてよー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1067", 256, TRUE);
+	OutputLine(NULL, "「ナルシさんが一体どんな人なのか、私にはまだよくわかりませんですけど。",
+			NULL, "“自恋狂到底是什么样的人，我虽然还不太清楚。", Line_WaitForInput);
+	PlaySE(3, "down2", 256, 64);
+	ModDrawCharacter(6, 4, "sprite/sa7_odoroki_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1068", 256, TRUE);
+	OutputLine(NULL, "……とにかく、あの勝ち誇ったような圭一さんに一泡吹かせてやらなければ、収まりがつきませんでしてよー！！」",
+			NULL, "……总之，不对那个得意扬扬的圭一迎头痛击一次，我可咽不下这口气哦——！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 3, "sprite/me6_yowaki_a1_", "0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1150.「どうしようどうしよう…！kvS23/03/VTH_mion1151.　圭ちゃんの周りは、今や機動隊が守りを固め、期待の戦力だった鷹野さん、知恵先生、詩音も監督のメイドインヘヴンに囚われちゃったし…。kvS23/03/VTH_mion1152.どんな狙撃からも富竹のおじさまがマッスルガードで守っちゃうし…。k|yvS23/03/VTH_mion1153.もうどうしようもないよー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1150", 256, TRUE);
+	OutputLine(NULL, "「どうしようどうしよう…！",
+			NULL, "“怎么办怎么办……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1151", 256, TRUE);
+	OutputLine(NULL, "　圭ちゃんの周りは、今や機動隊が守りを固め、期待の戦力だった鷹野さん、知恵先生、詩音も監督のメイドインヘヴンに囚われちゃったし…。",
+			NULL, " 小圭身边现在被机动队严密防守，本以为是主力的鹰野小姐、知惠老师和诗音也被教练的天堂制造（Maid in Heaven）给俘虏了……。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1152", 256, TRUE);
+	OutputLine(NULL, "どんな狙撃からも富竹のおじさまがマッスルガードで守っちゃうし…。",
+			NULL, "无论什么样的狙击都有富竹大叔用肌肉屏障挡下……。", Line_WaitForInput);
+	ModDrawCharacter(3, 3, "sprite/me6_tohoho_a1_", "0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1153", 256, TRUE);
+	OutputLine(NULL, "もうどうしようもないよー！！」",
+			NULL, " 已经彻底束手无策了啦——！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri7_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1064.「……実にもう、どうしようもないのですよ。にぱ～☆」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1064", 256, TRUE);
+	OutputLine(NULL, "「……実にもう、どうしようもないのですよ。にぱ～☆」",
+			NULL, "“……确实已经无可奈何了呢。咪啪～”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 3, "sprite/me6_majime_a1_", "0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1154.「梨花ちゃん、さっきから余裕っぽいけど、kvS23/03/VTH_mion1155.…実はあの海パン、魔法なんてのはガセ？kvS23/03/VTH_mion1156.　古手神社の巫女だから、そういうのには詳しいとか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1154", 256, TRUE);
+	OutputLine(NULL, "「梨花ちゃん、さっきから余裕っぽいけど、",
+			NULL, "“梨花酱从刚才开始就显得很从容，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1155", 256, TRUE);
+	OutputLine(NULL, "…実はあの海パン、魔法なんてのはガセ？",
+			NULL, "……其实那条泳裤的所谓魔法是骗人的？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1156", 256, TRUE);
+	OutputLine(NULL, "　古手神社の巫女だから、そういうのには詳しいとか？」",
+			NULL, " 因为是古手神社的巫女，所以对这些很精通之类的？”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri7_def_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1065.「……はいです。kvS23/05/VTH_rika1066.ボクはオヤシロさまの巫女だから、オヤシロさまの霊験のあるアイテムには詳しいのです。k|yvS23/05/VTH_rika1067.だからわかります。あの海パンは本物ですよ。k|yvS23/05/VTH_rika1068.だからもうすぐ、圭一は素敵なナルシさんになってしまって、異性に見向きもしなくなるのです。にぱ～☆」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1065", 256, TRUE);
+	OutputLine(NULL, "「……はいです。",
+			NULL, "“……是的哦。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1066", 256, TRUE);
+	OutputLine(NULL, "ボクはオヤシロさまの巫女だから、オヤシロさまの霊験のあるアイテムには詳しいのです。",
+			NULL, "因为我是御社神大人的巫女，所以很清楚蕴含御社神大人灵验力量的道具。", Line_WaitForInput);
+	ModDrawCharacter(5, 5, "sprite/ri7_niko_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1067", 256, TRUE);
+	OutputLine(NULL, "だからわかります。あの海パンは本物ですよ。",
+			NULL, "所以我很清楚，那条泳裤是真的哦。", GetGlobalFlag(GLinemodeSp));
+	ModDrawCharacter(5, 5, "sprite/ri7_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1068", 256, TRUE);
+	OutputLine(NULL, "だからもうすぐ、圭一は素敵なナルシさんになってしまって、異性に見向きもしなくなるのです。にぱ～☆」",
+			NULL, "所以很快圭一就会变成美妙的自恋狂，对异性连看都不看一眼了哦。咪啪～”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 3, "sprite/me6_odoroki_a1_", "0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1157.「うわああぁああ、それは駄目だよ、駄目ダメ駄目ぇえぇ～！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1157", 256, TRUE);
+	OutputLine(NULL, "「うわああぁああ、それは駄目だよ、駄目ダメ駄目ぇえぇ～！！」",
+			NULL, "“哇啊啊啊啊，那样可不行，不行不行不行啊啊～！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_horror", 256, 64);
+	ModSetLayerFilter(7, 128, "none");
+	DrawBustshot( 7, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 1000, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri7_niyari_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 23, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1069.「……ちなみに羽入、圭一がそうなった未来の姿はあなたなら見えるかしら？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1069", 256, TRUE);
+	OutputLine(NULL, "「……ちなみに羽入、圭一がそうなった未来の姿はあなたなら見えるかしら？」",
+			NULL, "“……顺便问一句，羽入，你能看到圭一变成那样后的未来吗？”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "suzu_1", 256, 64);
+	ModSetLayerFilter(9, 196, "none");
+	ModDrawCharacter(9, 12, "sprite/ha4_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 24, 200, TRUE );
+
+//羽入rvS23/12/VTH_hanyu1030.「あぅ？　ま、まぁ様子くらいは見ることができますが、k|yvS23/12/VTH_hanyu1031.――うぐはっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1030", 256, TRUE);
+	OutputLine(NULL, "「あぅ？　ま、まぁ様子くらいは見ることができますが、",
+			NULL, "“阿呜？大、大概情况还是能看到的，", Line_WaitForInput);
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "vse_sword1", 256, 64);
+	Negative( 250, FALSE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	ModDrawCharacter(9, 12, "sprite/ha4_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 24, 100, TRUE );
+	Wait( 150 );
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1031", 256, TRUE);
+	OutputLine(NULL, "——うぐはっ？！」",
+			NULL, "——呜咕哇？！”", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "kaze_lp", 128, 0 );
+	ModDrawCharacter(5, 5, "sprite/ri7_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 23, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1070.「ど、どうしたの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1070", 256, TRUE);
+	OutputLine(NULL, "「ど、どうしたの？」",
+			NULL, "“怎、怎么了？”", Line_Normal);
+	ClearMessage();
+
+	FadeFilm( 500, TRUE );
+	FadeOutBGM(1, 200, TRUE);
+	PlayBGM(2, "hm11_92", 128, 0);
+	ModDrawCharacter(9, 12, "sprite/ha4_au_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 24, 200, TRUE );
+
+//羽入rvS23/12/VTH_hanyu1032.「き、気色の悪いものを見てしまったのですよ……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1032", 256, TRUE);
+	OutputLine(NULL, "「き、気色の悪いものを見てしまったのですよ……」",
+			NULL, "“看、看到了极度恶心的东西啊……”", Line_Normal);
+	ClearMessage();
+
+//羽入rvS23/12/VTH_hanyu1033.「た、たとえるなら真夏の暑い日にシュークリームを後で食べようと机の上に放置したまま、うっかり友達の家に遊びに行ってついつい一泊して、翌日の夕方自宅に戻ったときに味わうbあびきょうかん.<阿鼻叫喚>の地獄絵図」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1033", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-3>", Line_Continue); }
+	OutputLine(NULL, "「た、たとえるなら真夏の暑い日にシュークリームを後で食べようと机の上に放置したまま、うっかり友達の家に遊びに行ってついつい一泊して、翌日の夕方自宅に戻ったときに味わう阿鼻叫喚(あびきょうかん)の地獄絵図」",
+			NULL, "“打、打个比方，就像盛夏把泡芙搁在桌上，想着待会儿再吃，结果跑去朋友家玩，还在那里住了一晚，直到第二天傍晚才回家——眼前简直是一幅阿鼻地狱图。”", Line_Normal);
+	ClearMessage();
+
+//羽入rvS23/12/VTH_hanyu1033_1.「そのニオイははたして甘いのか苦いのかすっぱいのかとにかくもう形容しがたいかぐわしさで、ただ目を開けているだけでも涙がポロポロポロポロ出てきて意識までもが遠のきそうで、それでも片付けだけでもしなければとデロデロになったそのシュークリムのよ～なものを手にとった瞬間、一瞬アーモンドと間違えかけた黒光りするヤツがひょっこり顔を見せた時のような気分とでも申しましょうか……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1033_1", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-8>", Line_Continue); }
+	OutputLine(NULL, "「そのニオイははたして甘いのか苦いのかすっぱいのかとにかくもう形容しがたいかぐわしさで、ただ目を開けているだけでも涙がポロポロポロポロ出てきて意識までもが遠のきそうで、それでも片付けだけでもしなければとデロデロになったそのシュークリムのよ～なものを手にとった瞬間、一瞬アーモンドと間違えかけた黒光りするヤツがひょっこり顔を見せた時のような気分とでも申しましょうか……」",
+			NULL, "“那气味是甜是苦还是酸，已经分不清了。光是睁着眼，泪水就止不住地往下掉，意识也快模糊了。可总得收拾吧？就在我拿起那团融化得不成样子的东西时，一个油光锃亮、差点被我当成杏仁的小家伙，突然探出了头……就是那种心情。”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_sword3", 256, 64);
+	ModDrawCharacter(5, 5, "sprite/ri7_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 23, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//梨花rvS23/05/VTH_rika1071.「う、うぐっ？！k|yvS23/05/VTH_rika1072.　……は、羽入っ！　あんた、なんてわかりやすい例えを！kvS23/05/VTH_rika1073.　さっきの約束取り消しよ！kvS23/05/VTH_rika1074.　シュークリームはしばらく見たくもないわっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1071", 256, TRUE);
+	OutputLine(NULL, "「う、うぐっ？！",
+			NULL, "“呜、唔咕？！", Line_WaitForInput);
+	ModDrawCharacter(5, 5, "sprite/ri7_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 23, 200, TRUE );
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1072", 256, TRUE);
+	OutputLine(NULL, "　……は、羽入っ！　あんた、なんてわかりやすい例えを！",
+			NULL, " ……羽、羽入！你打的这什么过分形象的比方啊！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1073", 256, TRUE);
+	OutputLine(NULL, "　さっきの約束取り消しよ！",
+			NULL, " 刚才的约定取消！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1074", 256, TRUE);
+	OutputLine(NULL, "　シュークリームはしばらく見たくもないわっ！」",
+			NULL, " 泡芙我近期连看都不想看到了！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(9, 12, "sprite/ha4_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 24, 200, TRUE );
+
+//羽入rvS23/12/VTH_hanyu1034.「あっ、あぅうっ？！kvS23/12/VTH_hanyu1035.　そ、そんなぁ、説明しろって言ったのは梨花じゃないのですかぁ？k|yvS23/12/VTH_hanyu1036.　あぅぅ……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1034", 256, TRUE);
+	OutputLine(NULL, "「あっ、あぅうっ？！",
+			NULL, "“啊、阿呜呜？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1035", 256, TRUE);
+	OutputLine(NULL, "　そ、そんなぁ、説明しろって言ったのは梨花じゃないのですかぁ？",
+			NULL, " 怎、怎么这样，叫我说明的不正是梨花吗？", Line_WaitForInput);
+	ModDrawCharacter(9, 12, "sprite/ha4_yowaki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 24, 200, TRUE );
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1036", 256, TRUE);
+	OutputLine(NULL, "　あぅぅ……」",
+			NULL, " 阿呜呜……”", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot( 7, FALSE, 0, 0, 0, 0, 250, TRUE );
+	ModDrawCharacter(3, 3, "sprite/me6_yowaki_a1_", "0", -320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1158.「ど、どうしたの梨花ちゃん？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1158", 256, TRUE);
+	OutputLine(NULL, "「ど、どうしたの梨花ちゃん？！」",
+			NULL, "“怎、怎么了梨花酱？！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_sword1", 256, 64);
+	ModDrawCharacter(5, 5, "sprite/ri7_komaru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//梨花rvS23/05/VTH_rika1075.「な、なんでもないのですよ……。に、にぱ～」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1075", 256, TRUE);
+	OutputLine(NULL, "「な、なんでもないのですよ……。に、にぱ～」",
+			NULL, "“没、没什么的哦……。咪、咪啪～”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(6, 4, "sprite/sa7_hannbeso_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
+
+//沙都子rvS23/04/VTH_satoko1069.「ど、どうしましょうか？kvS23/04/VTH_satoko1070.　もう万策尽きましたわ！kvS23/04/VTH_satoko1071.　残りは１時間もありませんし！kvS23/04/VTH_satoko1072.　…レナさん、他に何か手がありまして……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1069", 256, TRUE);
+	OutputLine(NULL, "「ど、どうしましょうか？",
+			NULL, "“该、该如何是好呢？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1070", 256, TRUE);
+	OutputLine(NULL, "　もう万策尽きましたわ！",
+			NULL, "已经无计可施了呀！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1071", 256, TRUE);
+	OutputLine(NULL, "　残りは１時間もありませんし！",
+			NULL, "而且剩下连1小时都没有了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1072", 256, TRUE);
+	OutputLine(NULL, "　…レナさん、他に何か手がありまして……？」",
+			NULL, "……蕾娜，还有别的办法吗……？”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 2, "sprite/re5_nande_a1_", "0", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1071.「……う、…うん。kvS23/02/VTH_rena1072.…状況を整理するとつまり、…圭一くんに強力な味方が現れちゃったから、手が出せなくなっちゃったんだよね…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1071", 256, TRUE);
+	OutputLine(NULL, "「……う、…うん。",
+			NULL, "“……嗯、……嗯。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1072", 256, TRUE);
+	OutputLine(NULL, "…状況を整理するとつまり、…圭一くんに強力な味方が現れちゃったから、手が出せなくなっちゃったんだよね…？」",
+			NULL, "整理一下现状的话也就是说……圭一君出现了强力的帮手，所以我们才无从下手了对吧……？”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(6, 4, "sprite/sa7_yareyare_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 200, TRUE );
+
+//沙都子rvS23/04/VTH_satoko1073.「そういうことですわね。kvS23/04/VTH_satoko1074.少なくとも、あのソウルブラザーの連中さえ現れなければ、海パン奪取は時間の問題だったはずですもの！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1073", 256, TRUE);
+	OutputLine(NULL, "「そういうことですわね。",
+			NULL, "“就是这么回事呢。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1074", 256, TRUE);
+	OutputLine(NULL, "少なくとも、あのソウルブラザーの連中さえ現れなければ、海パン奪取は時間の問題だったはずですもの！」",
+			NULL, "至少，只要那帮灵魂兄弟没有出现，夺回泳裤本来只是时间问题而已呢！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 2, "sprite/re5_def_a1_", "0", 320, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1073.「………ということは、……ソウルブラザーの３人をどうにかできれば…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1073", 256, TRUE);
+	OutputLine(NULL, "「………ということは、……ソウルブラザーの３人をどうにかできれば…」",
+			NULL, "“……也就是说，……只要想办法搞定灵魂兄弟那3个人……”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_horror", 256, 64);
+	ModDrawCharacter(9, 12, "sprite/ha4_yowaki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 10, TRUE );
+	DrawBustshot( 7, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 22, 1000, TRUE );
+	ModDrawCharacter(5, 5, "sprite/ri7_niyari_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 23, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1076.「……ふう、せっかく面白くなってきたのに、レナが何かを思いついたようね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1076", 256, TRUE);
+	OutputLine(NULL, "「……ふう、せっかく面白くなってきたのに、レナが何かを思いついたようね」",
+			NULL, "“……呼，难得变得有趣起来，蕾娜似乎想到什么办法了呢”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(9, 12, "sprite/ha4_au_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 24, 200, TRUE );
+
+//羽入rvS23/12/VTH_hanyu1037.「り、梨花……さすがに、良心が痛みませんか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1037", 256, TRUE);
+	OutputLine(NULL, "「り、梨花……さすがに、良心が痛みませんか？」",
+			NULL, "“梨、梨花……事情到了这步，良心不会痛吗？”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri7_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 23, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1077.「もういないし、両方とも」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1077", 256, TRUE);
+	OutputLine(NULL, "「もういないし、両方とも」",
+			NULL, "“良心？我的双亲早就不在了。”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "tatakiwaru", 256, 64);
+	ModDrawCharacter(9, 12, "portrait/ha4_sakebi_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 24, 200, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//羽入rvS23/12/VTH_hanyu1038.「そっちの両親じゃないのです！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1038", 256, TRUE);
+	OutputLine(NULL, "「そっちの両親じゃないのです！」",
+			NULL, "“说的不是双亲啦！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(2, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(8, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(2, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 8, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	ModSetLayerFilter(7, 256, "none");
+	ModSetLayerFilter(9, 256, "none");
+	SetValidityOfInput( TRUE );
+
+}

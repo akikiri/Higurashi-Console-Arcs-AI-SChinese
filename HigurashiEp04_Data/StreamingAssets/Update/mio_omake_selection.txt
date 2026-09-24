@@ -1,0 +1,42 @@
+void main()
+{
+	ModEnableNVLModeInADVMode();
+	DrawScene("black", 1000 );
+
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "このお疲れさま会には2つのバージョンがあります。",
+			NULL, "本次庆功会有两个版本。", Line_WaitForInput);
+	OutputLine(NULL, "\n\nPS3版は、本編とコンソールアークを全て読み終えたプレイヤー向けです。",
+			NULL, "\n\nPS3版适合已读完全部本篇及主机篇章的玩家。", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "\nSwitch版は、これに加えて「ひぐらしのなく頃に奉」の全てのシナリオを読み終えたプレイヤー向けです。\n\nどちらを読みたいですか？",
+			NULL, "\nSwitch版适合在此基础上，还读完了《寒蝉鸣泣之时奉》全部篇章的玩家。\n\n你想阅读哪个版本？", Line_Normal);
+
+	DrawBustshotWithFiltering( 6, "2choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+
+	char OmakeMode[2];
+
+	if (GetGlobalFlag(GLanguage) == 1) {
+		OmakeMode[0] = "PS3版";
+		OmakeMode[1] = "Switch版";
+	} else {
+		OmakeMode[0] = "PS3版";
+		OmakeMode[1] = "Switch版";
+	}
+
+	Select( 2, OmakeMode );
+
+	ModDisableNVLModeInADVMode();
+	DisableWindow();
+	DrawScene("black", 250 );
+
+	if (LoadValueFromLocalWork(SelectResult) == 0)
+	{
+		CallScript( "mio_omake_ps3" );
+	}
+	else {
+		CallScript( "mio_omake_switch" );
+	}
+
+}

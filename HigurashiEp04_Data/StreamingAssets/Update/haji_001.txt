@@ -1,0 +1,112 @@
+void main()
+{
+
+
+//*Hajisarashi Day 1
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//羞晒し編
+
+//#1 さぁ、ショータイムだ！
+
+	DrawScene("black", 500 );
+	DrawSprite( 6, "text/hazi_fre", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 32, 1000, TRUE );
+	Wait( 7000 );
+	FadeSprite( 6, 2000, TRUE );
+	ModEnableNVLModeInADVMode();
+
+//魅音rvS23/03/VTH_mion1001.えー、この物語はフィクションです。krvS23/03/VTH_mion1002.間違いなくフィクションです。krvS23/03/VTH_mion1003.よって実在する場所、人物、団体名などとはr一切関係ありません。krvS23/03/VTH_mion1004.……よいこのみんな、真似しちゃダメだよ？
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1001", 256, TRUE);
+	OutputLine(NULL, "えー、この物語はフィクションです。",
+			NULL, "呃，这个故事纯属虚构。\n", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1002", 256, TRUE);
+	OutputLine(NULL, "\n間違いなくフィクションです。",
+			NULL, "毫无疑问是虚构的。\n", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1003", 256, TRUE);
+	OutputLine(NULL, "\nよって実在する場所、人物、団体名などとは\n一切関係ありません。",
+			NULL, "因此，与现实中的任何地点、人物或团体\n都没有半点关系。\n", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1004", 256, TRUE);
+	OutputLine(NULL, "\n……よいこのみんな、真似しちゃダメだよ？",
+			NULL, "……乖孩子们，可千万别模仿哦？", Line_Normal);
+	ClearMessage();
+
+	ModDisableNVLModeInADVMode();
+	PlayBGM(2, "hm01_06", 128, 0);
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 3, "sprite/me2_wink_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 1, "sprite/kei2_majime2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawScene("background/hi4", 1000 );
+
+//圭一rvS23/01/VTH_k11001.「いや、魅音がそれを言っても、説得力ないんじゃないか、k|yvS23/01/VTH_k11002.――ぐはっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11001", 256, TRUE);
+	OutputLine(NULL, "「いや、魅音がそれを言っても、説得力ないんじゃないか、",
+			NULL, "“我说，魅音，这话从你嘴里说出来，没什么说服力吧，", Line_WaitForInput);
+	ModDrawCharacter(3, 3, "sprite/me2_hig_maji_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	ModDrawCharacter(5, 1, "sprite/kei2_nayamu_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	PlaySE(3, "vse_punch3", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11002", 256, TRUE);
+	OutputLine(NULL, "——ぐはっ？！」",
+			NULL, "——噗哇？！”", Line_Normal);
+	ClearMessage();
+
+	FadeAllBustshots( 200, TRUE );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 5, "sprite/ri2_niko_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1001.「なお特別編の関係上、本編とは微妙に話がかみ合っていなかったりもしますですが、kvS23/05/VTH_rika1002.こんな平和な日常もあったかもということで皆さん、あたたかく見守ってくださいなのです。ぺこり」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1001", 256, TRUE);
+	OutputLine(NULL, "「なお特別編の関係上、本編とは微妙に話がかみ合っていなかったりもしますですが、",
+			NULL, "“另外，因为这是特别篇，故事可能和正篇有些出入。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1002", 256, TRUE);
+	OutputLine(NULL, "こんな平和な日常もあったかもということで皆さん、あたたかく見守ってくださいなのです。ぺこり」",
+			NULL, "就当我们也曾有过这样平静的日常，请大家多多包涵。鞠躬。”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 4, "sprite/sa2a_akuwarai_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//沙都子rvS23/04/VTH_satoko1001.「よーするに、とにかく楽しければなんでもありってことですわ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1001", 256, TRUE);
+	OutputLine(NULL, "「よーするに、とにかく楽しければなんでもありってことですわ」",
+			NULL, "“说白了，只要玩得开心，怎么都行嘛。”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 2, "sprite/re2b_nande_b1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1001.「み、身も蓋もないね沙都子ちゃん……。k|yvS23/02/VTH_rena1002.それでは『ひぐらしのなく頃に粋・bはじさら.<羞晒>し編』、はじまりぃ～」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1001", 256, TRUE);
+	OutputLine(NULL, "「み、身も蓋もないね沙都子ちゃん……。",
+			NULL, "“这、这话也太直白了吧，沙都子……。", Line_WaitForInput);
+	ModDrawCharacter(5, 2, "sprite/re2b_warai_b1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1002", 256, TRUE);
+	OutputLine(NULL, "それでは『ひぐらしのなく頃に粋・羞晒(はじさら)し編』、はじまりぃ～」",
+			NULL, "那么，《寒蝉鸣泣之时粹·羞晒篇》，开场啦～”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

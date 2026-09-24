@@ -1,4 +1,4 @@
-# 《寒蝉鸣泣之时》主机追加篇章简体中文补丁-AI汉化（GPT-5.6sol）
+# 《寒蝉鸣泣之时》主机追加篇章简体中文补丁
 
 这是面向 Steam 版《Higurashi When They Cry Hou - Ch.4 Himatsubushi》（第四章／暇溃篇）的额外主机章节简体中文补丁。
 
@@ -6,7 +6,7 @@
 
 ## 汉化内容
 
-本补丁的汉化范围为 Steam 指南所推荐的篇章；下列未提及的篇章均未汉化。
+本补丁汉化以下追加篇章；未列出的篇章不在本补丁范围内。
 
 - 盥回篇
 - 凭落篇
@@ -17,8 +17,12 @@
 - 解解篇
 - 碎片编织
 - 澪尽篇・表
+- 澪尽篇 PS2 版专有分支
 - 澪尽篇・里
 - 言祝篇
+- 羞晒篇
+- 尾声
+- 对应茶话会与制作回顾
 - 对应的正文、分支、附录、Tips、章节选择、篇章说明及剧情图片
 - 07th-Mod 菜单、开场提示、选择模式界面和简体中文字形
 
@@ -34,9 +38,11 @@
 | 警方案件档案 | `prol_*` |
 | 解解篇 | `toki_*` |
 | 碎片编织 | `kake_*` |
-| 澪尽篇・表 | `omot_*` |
+| 澪尽篇・表／PS2 版 | `omot_*` |
 | 澪尽篇・里 | `ura_*` |
 | 言祝篇 | `koto_*` |
+| 羞晒篇 | `haji_*` |
+| 尾声 | `epilogue` 相关入口与 Tips |
 
 正文、分支、附录和 Tips 通常沿用对应篇章的前缀，可据此在 `HigurashiEp04_Data/StreamingAssets/Update` 中定位文件。
 
@@ -71,7 +77,9 @@ Higurashi-Console-Arcs-AI-SChinese/
 
 仓库也不包含 `HigurashiEp04_Data/sharedassets0.assets`。该文件保存本补丁使用的中文字形，但体积超过 GitHub 普通 Git 文件限制，请从 Release 安装包取得。
 
-澪尽篇 PS2 版对应 `omot_*` 中的 `LConsoleArc==10` 专用分支，不属于本补丁的已完成范围。
+澪尽篇 PS2 版使用 `omot_*` 中的 `LConsoleArc==10` 专用分支。为更直观地显示它与澪尽表篇的区别，v2.0 Release 另附独立的[澪尽篇 PS2 差异淡蓝色补丁](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.0)。先安装主补丁，再按可选包说明覆盖即可；主补丁不含淡蓝色标记。
+
+**校对提醒：**羞晒篇和澪尽篇 PS2 版尚未经过实机人工校对，AI 翻译可能不准确。欢迎通过 Issue 指出错译、漏译或显示问题。
 
 ## 安装前提
 
@@ -87,7 +95,7 @@ Higurashi-Console-Arcs-AI-SChinese/
 
 ## 下载与安装
 
-请从 [Releases](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases) 下载最新 ZIP。
+请从 [v2.0 Release](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.0) 下载主补丁 ZIP；淡蓝色补丁是同页的独立可选附件。
 
 安装前先关闭游戏，并备份：
 
@@ -128,10 +136,12 @@ HigurashiEp04_Data/StreamingAssets/Update
 ## 来源与致谢
 
 - 大部分文本由 GPT-5.6 Sol 翻译及精校。
+- 羞晒篇、澪尽篇 PS2 版等剩余篇章由 GPT-6 Sol 独立翻译。
+- 感谢[贴吧用户](https://tieba.baidu.com/home/main?id=tb.1.e572eed9.wI7i7SaPPXhZMRSeh39JyA%3Ft%3D1790237898&fr=pb)提供剩余篇章的中文图片支持。
 - 部分翻译文本来源：[BV1AN7C66EZF](https://www.bilibili.com/video/BV1AN7C66EZF)（UP主：人工大黑）
 - 中文字形来源：[BV12ecbz1EDq](https://www.bilibili.com/video/BV12ecbz1EDq)（UP主：-雪原）
 - 特别感谢 GitHub 用户 [@cattopo](https://github.com/cattopo) 在 [Issue #1](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/issues/1) 中提供补充缺失字形的字体文件，帮助解决游戏中的缺字显示问题。
-- 全部篇章均经过一遍完整实机校对，并修正了文本与显示问题。
+- 早期已发布篇章经过实机校对；羞晒篇和澪尽篇 PS2 版仍待实机人工校对。
 - 本补丁基于 07th-Mod 的 Steam 版主机章节功能制作。
 
 ## 已知问题

@@ -1,0 +1,871 @@
+void main()
+{
+
+
+//*Hajisarashi Day 5
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//#5 俺のオットセイがトップギアだぜ！
+
+	PlaySE(3, "addse20", 256, 64);
+	DrawScene("white", 250 );
+	PlayBGM(2, "hm11_89", 128, 0);
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 1, "portrait/kei3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/oki_pool1", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//圭一rvS23/01/VTH_k11143.「へ、へっへー！kvS23/01/VTH_k11144.　どうした、俺はこっちだぞー？！」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11143", 256, TRUE);
+	OutputLine(NULL, "「へ、へっへー！",
+			NULL, "“嘿，嘿嘿——！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11144", 256, TRUE);
+	OutputLine(NULL, "　どうした、俺はこっちだぞー？！」",
+			NULL, " 怎么了，我在这边哦——？！”", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 3, "sprite/me6_tohoho_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "left", 0, 0, 500 );
+
+//魅音rvS23/03/VTH_mion1087.「――ぷはっ！kvS23/03/VTH_mion1088.　く、くそー！　なんてすばしっこいんだよ～！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1087", 256, TRUE);
+	OutputLine(NULL, "「——ぷはっ！",
+			NULL, "“——噗哈！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1088", 256, TRUE);
+	OutputLine(NULL, "　く、くそー！　なんてすばしっこいんだよ～！」",
+			NULL, " 可，可恶——！怎么这么敏捷啊～！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "portrait/kei3_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "right", 0, 0, 500 );
+
+//圭一rvS23/01/VTH_k11145.「へっへっへ！　どうせ平穏な一日には終わらねぇと覚悟してたからな。kvS23/01/VTH_k11146.この程度の追いかけっこ、どうってことないぜ！！kvS23/01/VTH_k11147.　ほらほらどうした。鬼さん、こーちらー！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11145", 256, TRUE);
+	OutputLine(NULL, "「へっへっへ！　どうせ平穏な一日には終わらねぇと覚悟してたからな。",
+			NULL, "“嘿嘿嘿！反正我早就做好了今天不会平静结束的心理准备了。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11146", 256, TRUE);
+	OutputLine(NULL, "この程度の追いかけっこ、どうってことないぜ！！",
+			NULL, " 这种程度的追逐战，根本算不上什么！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11147", 256, TRUE);
+	OutputLine(NULL, "　ほらほらどうした。鬼さん、こーちらー！」",
+			NULL, " 来呀来呀，鬼在这边哦——！”", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(6, 256, "none");
+	ModDrawCharacter(6, 4, "sprite/sa7_akireru_a1_", "0", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "left", 0, 0, 500 );
+
+//沙都子rvS23/04/VTH_satoko1029.「ぷはっ……け、圭一さんの分際で、今日は絶好調でいますのね…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1029", 256, TRUE);
+	OutputLine(NULL, "「ぷはっ……け、圭一さんの分際で、今日は絶好調でいますのね…！」",
+			NULL, "“噗哈……区、区区圭一，今天状态真是绝佳呢…！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 5, "sprite/ri7_komaru_a2_", "0", 300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1042.「ぷはっ……３時間履ききればモテモテになれると信じてるので、圭一も必死なのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1042", 256, TRUE);
+	OutputLine(NULL, "「ぷはっ……３時間履ききればモテモテになれると信じてるので、圭一も必死なのです」",
+			NULL, "“噗哈……因为深信只要穿满3小时就能大受欢迎，所以圭一也是拼了命的呢。”", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 3, "sprite/me6_odoroki_a1_", "0", -300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1089.「圭ちゃんの馬鹿ぁー！kvS23/03/VTH_mion1090.　それはモテモテになれる魔法じゃないのにーー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1089", 256, TRUE);
+	OutputLine(NULL, "「圭ちゃんの馬鹿ぁー！",
+			NULL, "“小圭你个笨蛋——！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1090", 256, TRUE);
+	OutputLine(NULL, "　それはモテモテになれる魔法じゃないのにーー！！」",
+			NULL, " 那根本不是能让人大受欢迎的魔法啊——！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_sword3", 256, 64);
+	ModDrawCharacter(3, 2, "portrait/re5_kaii_a1_", "0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 150 );
+
+//レナrvS23/02/VTH_rena1039.「そんなのはどうでもいいから、圭一くんのすべすべ素肌とオットセイ、お～持ち返りぃいいぃ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1039", 256, TRUE);
+	OutputLine(NULL, "「そんなのはどうでもいいから、圭一くんのすべすべ素肌とオットセイ、お～持ち返りぃいいぃ！！」",
+			NULL, "“那些事怎样都好啦，圭一君滑溜溜的肌肤和海狗，我要带～回家啊啊啊！！”", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "background/oki_pool1", "right", 0, 0, 500 );
+	ModDrawCharacter(4, 1, "sprite/kei3_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS23/01/VTH_k11148.「ほらほら、どうしたどうした！！k|yvS23/01/VTH_k11149.　こう見えても小学校の頃はスイミングスクールに通ってたんだぜ！kvS23/01/VTH_k11150.　そんなザマじゃ俺にゃ追いつけないぜー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11148", 256, TRUE);
+	OutputLine(NULL, "「ほらほら、どうしたどうした！！",
+			NULL, "“来呀来呀，怎么了怎么了！！", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "sprite/kei3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11149", 256, TRUE);
+	OutputLine(NULL, "　こう見えても小学校の頃はスイミングスクールに通ってたんだぜ！",
+			NULL, " 别看我这样，我小学的时候可是上过游泳班的哦！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11150", 256, TRUE);
+	OutputLine(NULL, "　そんなザマじゃ俺にゃ追いつけないぜー！！」",
+			NULL, " 就凭你们那副模样是追不上我的——！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 4, "sprite/sa7_hannbeso_a1_", "0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "left", 0, 0, 500 );
+
+//沙都子rvS23/04/VTH_satoko1030.「くぅうぅ、圭一さんの分際でまるでトビウオですわーー！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1030", 256, TRUE);
+	OutputLine(NULL, "「くぅうぅ、圭一さんの分際でまるでトビウオですわーー！」",
+			NULL, "“咕呜呜，区区圭一简直就像飞鱼一样嘛——！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 2, "sprite/re5_okoru_a1_", "0", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1040.「魅ぃちゃん、何とかうまく追い込めるように指示できないー？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1040", 256, TRUE);
+	OutputLine(NULL, "「魅ぃちゃん、何とかうまく追い込めるように指示できないー？！」",
+			NULL, "“小魅，能不能指挥大家把他逼到死角啊——？！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 3, "sprite/me6_yowaki_a1_", "0", 300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1091.「わ、私も改築が終わってから初めて来たからね…、kvS23/03/VTH_mion1092.まだ地形が把握しきれてないんだよぅ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1091", 256, TRUE);
+	OutputLine(NULL, "「わ、私も改築が終わってから初めて来たからね…、",
+			NULL, "“我、我也是改建完成后第一次来嘛…，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1092", 256, TRUE);
+	OutputLine(NULL, "まだ地形が把握しきれてないんだよぅ！」",
+			NULL, " 还没完全掌握这里的地形呢！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(6, 5, "sprite/ri7_warai_a1_", "0", -300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1043.「……とにかく捕まえて、圭一の海パンを引き摺り下ろすのです。み～！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1043", 256, TRUE);
+	OutputLine(NULL, "「……とにかく捕まえて、圭一の海パンを引き摺り下ろすのです。み～！」",
+			NULL, "“……总之先抓住他，然后把圭一的泳裤扒下来。咪～！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM(2, 200, FALSE);
+	DrawSceneWithMask( "black", "down", 0, 0, 1000 );
+	PlayBGM( 1, "semi", 128, 0 );
+	DrawScene("white", 1000 );
+	DrawScene("background/sora", 1000 );
+	ModEnableNVLModeInADVMode();
+
+//rへっへっへ！！　面白くなってきやがったぜ！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "へっへっへ！！　面白くなってきやがったぜ！！",
+			NULL, "嘿嘿嘿！！事情变得有趣起来了呢！！", Line_Normal);
+	ClearMessage();
+
+//rここのところ、インドア系の部活でrコテンパンにされてきた俺には、r今日のプールでのドタバタはあまりに心地いい。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ここのところ、インドア系の部活で\nコテンパンにされてきた俺には、\n今日のプールでのドタバタはあまりに心地いい。",
+			NULL, "最近在室内活动的社团游戏里\n总被打得落花流水，\n今天在泳池里闹上一场，真是痛快。", Line_Normal);
+	ClearMessage();
+
+//rしかも、最後まで逃げ切れたご褒美には、rモテモテになれる魔法が宿るって言うんだからなぁ…！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかも、最後まで逃げ切れたご褒美には、\nモテモテになれる魔法が宿るって言うんだからなぁ…！！",
+			NULL, "而且，作为坚持逃到最后的奖励，\n据说还能获得让我变得大受欢迎的魔法呢…！！", Line_Normal);
+	ClearMessage();
+
+//rするとどうなるんだろうな。krr今、追いかけてる部活メンバーたちが、r急にメロメロになっちまうんだろうか…？krrいや待て…。rよくよく考えたら、r…すでにもうメロメロなんじゃないか？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "するとどうなるんだろうな。",
+			NULL, "那么到底会变成怎样呢。", Line_WaitForInput);
+	OutputLine(NULL, "\n今、追いかけてる部活メンバーたちが、\n急にメロメロになっちまうんだろうか…？",
+			NULL, "\n现在正在追着我的这些社团成员们，\n会突然变得对我神魂颠倒吗…？", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "\nいや待て…。\nよくよく考えたら、\n…すでにもうメロメロなんじゃないか？",
+			NULL, "\n不，等等…。\n仔细想想，\n…她们现在不就已经对我神魂颠倒了吗？", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+	ModDrawCharacter(4, 1, "sprite/kei3_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/oki_pool1", 1000 );
+	ModDisableNVLModeInADVMode();
+
+//圭一rvS23/01/VTH_k11151.「ふっふっふっ……！kvS23/01/VTH_k11152.　すげえぜ、レナも魅音も沙都子も梨花ちゃんも、あんなにも必死に俺を追い求めてくるなんてさ！k|yvS23/01/VTH_k11153.　こりゃ早くも効果が出はじめてるってか？k|yvS23/01/VTH_k11154.　あ、あひゃひゃひゃひゃ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11151", 256, TRUE);
+	OutputLine(NULL, "「ふっふっふっ……！",
+			NULL, "“呼呼呼……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11152", 256, TRUE);
+	OutputLine(NULL, "　すげえぜ、レナも魅音も沙都子も梨花ちゃんも、あんなにも必死に俺を追い求めてくるなんてさ！",
+			NULL, " 太厉害了，蕾娜、魅音、沙都子还有梨花酱，竟然都这么拼命地来追求我！", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "sprite/kei3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11153", 256, TRUE);
+	OutputLine(NULL, "　こりゃ早くも効果が出はじめてるってか？",
+			NULL, " 这难道是魔法已经开始生效了吗？", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "sprite/kei3_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11154", 256, TRUE);
+	OutputLine(NULL, "　あ、あひゃひゃひゃひゃ！！」",
+			NULL, " 啊，啊哈哈哈哈！！”", Line_Normal);
+	ClearMessage();
+
+//圭一rvS23/01/VTH_k11155.//「モテる男は辛いぜー！あひゃひゃひゃひゃ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11155", 256, TRUE);
+	OutputLine(NULL, "「モテる男は辛いぜー！あひゃひゃひゃひゃ！！」",
+			NULL, "“受欢迎的男人真是辛苦啊！啊哈哈哈哈！！”", Line_Continue);
+	DrawSprite( 8, "sprite/kei3_warai_0", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 20, 25, TRUE );
+	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 25, TRUE );
+	PlaySE(3, "vse_jump", 256, 64);
+	MoveSprite( 8, 600, 0, 0, 0, 0, 0, 0, 500, TRUE );
+	OutputLine(NULL, "",
+			NULL, "", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 3, "sprite/me6_ikari_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1093.「まてぇ、圭ちゃん！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1093", 256, TRUE);
+	OutputLine(NULL, "「まてぇ、圭ちゃん！」",
+			NULL, "“站住，小圭！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 2, "sprite/re5_okoru_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1041.「魅ぃちゃん、圭一くんはウォータースライダーに向かったよ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1041", 256, TRUE);
+	OutputLine(NULL, "「魅ぃちゃん、圭一くんはウォータースライダーに向かったよ！」",
+			NULL, "“小魅，圭一君朝水上滑梯那边去了！”", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeOutBGM(1, 200, TRUE);
+	DrawScene("background/sora", 1000 );
+	PlayBGM(2, "hm11_86", 128, 0);
+
+//r俺は軽快にウォータースライダーに上ると、捕まる直前でおさらばする怪盗よろしく、スライダーから滑り降りて脱出する！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は軽快にウォータースライダーに上ると、捕まる直前でおさらばする怪盗よろしく、スライダーから滑り降りて脱出する！",
+			NULL, "我轻快地爬上水上滑梯，像个在被抓住前向对手告别的怪盗，顺着滑梯滑下去逃走！", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "portrait/kei3_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS23/01/VTH_k11156.「わっはははは！kvS23/01/VTH_k11157.　さらばだ少年探偵団諸君！！kvS23/01/VTH_k11158.　残念だったなぁー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11156", 256, TRUE);
+	OutputLine(NULL, "「わっはははは！",
+			NULL, "“哇哈哈哈哈！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11157", 256, TRUE);
+	OutputLine(NULL, "　さらばだ少年探偵団諸君！！",
+			NULL, " 再见了，少年侦探团的诸位！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11158", 256, TRUE);
+	OutputLine(NULL, "　残念だったなぁー！！」",
+			NULL, " 真是遗憾啊——！！”", Line_Normal);
+	ClearMessage();
+
+//レナrvS23/02/VTH_rena1042.「待ってぇええー！k|ivS23/02/VTH_rena1043.　生まれたまんまの圭一くん、お持ち返りなのー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1042", 256, TRUE);
+	OutputLine(NULL, "「待ってぇええー！",
+			NULL, "“等等啊——！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1043", 256, TRUE);
+	OutputLine(NULL, "　生まれたまんまの圭一くん、お持ち返りなのー！！」",
+			NULL, " 一丝不挂的圭一君，我要带回家——！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "portrait/kei3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS23/01/VTH_k11159.「いっくぜぇ！k|yvS23/01/VTH_k11160.　うりゃぁぁあぁっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11159", 256, TRUE);
+	OutputLine(NULL, "「いっくぜぇ！",
+			NULL, "“上啦！", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "portrait/kei3_ikari2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11160", 256, TRUE);
+	OutputLine(NULL, "　うりゃぁぁあぁっ！」",
+			NULL, " 乌拉啊啊啊！”", Line_Normal);
+	ClearMessage();
+
+	DrawSprite( 8, "portrait/kei3_ikari2_0", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 20, 25, TRUE );
+	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 25, TRUE );
+	PlaySE(3, "vse_jump", 256, 64);
+	MoveSprite( 8, -700, 0, 0, 0, 0, 0, 0, 500, TRUE );
+	PlaySE(3, "addse20", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 250 );
+	ModDrawCharacter(4, 3, "portrait/me6_akuwarai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/oki_pool1", 1000 );
+
+//魅音rvS23/03/VTH_mion1094.「くっくっく！kvS23/03/VTH_mion1095.　圭ちゃん、甘いよ、その手は読まれてる！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1094", 256, TRUE);
+	OutputLine(NULL, "「くっくっく！",
+			NULL, "“哼哼哼！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1095", 256, TRUE);
+	OutputLine(NULL, "　圭ちゃん、甘いよ、その手は読まれてる！！」",
+			NULL, " 小圭，你太天真了，这招早被我看穿了！！”", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "white", "left", 0, 0, 250 );
+	DrawScene("black", 250 );
+	DrawBustshot( 5, "waku_b2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 1, FALSE );
+	ModDrawCharacter(4, 4, "sprite/sa7_akuwarai_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/oki_pool3", 1000 );
+
+//圭一rvS23/01/VTH_k11161.「うん？kvS23/01/VTH_k11162.　何、スライダーの下のプールで沙都子が待ち構えてやがるのか？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11161", 256, TRUE);
+	OutputLine(NULL, "「うん？",
+			NULL, "“嗯？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11162", 256, TRUE);
+	OutputLine(NULL, "　何、スライダーの下のプールで沙都子が待ち構えてやがるのか？！」",
+			NULL, " 什么，沙都子居然在滑梯下面的水池里埋伏？！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "hikaru", 256, 64);
+	DrawScene("white", 250 );
+	ModDrawCharacter(3, 4, "portrait/sa7_warai_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool3", "c", 0, 0, 1000 );
+
+//沙都子rvS23/04/VTH_satoko1031.「をーっほっほっほ！！kvS23/04/VTH_satoko1032.　すでにニ重三重のトラップを張り終えていましてよ！！kvS23/04/VTH_satoko1033.　さぁ、網に掛かりなさいませッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1031", 256, TRUE);
+	OutputLine(NULL, "「をーっほっほっほ！！",
+			NULL, "“喔——呵呵呵！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1032", 256, TRUE);
+	OutputLine(NULL, "　すでにニ重三重のトラップを張り終えていましてよ！！",
+			NULL, " 我已经布好了两三重陷阱哦！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1033", 256, TRUE);
+	OutputLine(NULL, "　さぁ、網に掛かりなさいませッ！！」",
+			NULL, " 来吧，乖乖落网吧！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "portrait/ri7_warai_a1_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1044.「……にぱー☆」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1044", 256, TRUE);
+	OutputLine(NULL, "「……にぱー☆」",
+			NULL, "“……咪啪——”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "dsse135", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlaySE(4, "dsse135", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//r沙都子と梨花ちゃんが、魚網のようなものを水中から引っ張りあげる！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "沙都子と梨花ちゃんが、魚網のようなものを水中から引っ張りあげる！",
+			NULL, "沙都子和梨花酱从水里拉起了像渔网一样的东西！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//圭一rvS23/01/VTH_k11163.「くそ、マズイぜ、あんなものに絡めとられたらアウトだぜッ！！k|yvS23/01/VTH_k11164.　く、うおおおおぉおおおぉ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11163", 256, TRUE);
+	OutputLine(NULL, "「くそ、マズイぜ、あんなものに絡めとられたらアウトだぜッ！！",
+			NULL, "“可恶，糟了，被那种东西缠住的话就彻底完了！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11164", 256, TRUE);
+	OutputLine(NULL, "　く、うおおおおぉおおおぉ！！」",
+			NULL, " 可，呜哦哦哦哦哦哦哦！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse05", 256, 64);
+	DrawScene("background/sora", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//r俺は、滑り落ちるスライダーの左右の淵を、超握力で握り締めて停止する！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は、滑り落ちるスライダーの左右の淵を、超握力で握り締めて停止する！！",
+			NULL, "我使出惊人的握力，死死抓住滑梯两侧，硬是在滑到一半时停了下来！！", Line_Normal);
+	ClearMessage();
+
+//r手がひりひりするぜ、よい子は絶対マネしちゃいけない危険技だッ！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "手がひりひりするぜ、よい子は絶対マネしちゃいけない危険技だッ！",
+			NULL, "手火辣辣地疼，好孩子绝对不要模仿这种危险动作！", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "left", 0, 0, 500 );
+	ModDrawCharacter(4, 3, "portrait/me6_odoroki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "left", 0, 0, 500 );
+
+//魅音rvS23/03/VTH_mion1096.「な、何ぃ？！kvS23/03/VTH_mion1097.　スライダーの途中で停止したぁ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1096", 256, TRUE);
+	OutputLine(NULL, "「な、何ぃ？！",
+			NULL, "“什，什么？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1097", 256, TRUE);
+	OutputLine(NULL, "　スライダーの途中で停止したぁ？！」",
+			NULL, " 竟然在滑梯半路停下来了？！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "furu", 256, 64);
+	DrawSceneWithMask( "white", "left", 0, 0, 500 );
+	ModDrawCharacter(4, 1, "portrait/kei3_ikari2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawSceneWithMask( "background/sora", "left", 0, 0, 500 );
+
+//圭一rvS23/01/VTH_k11165.「甘いぜ、沙都子！k|yvS23/01/VTH_k11166.　トラップがあるとわかって飛び込む馬鹿がいるとでも思ったかぁ！！kvS23/01/VTH_k11167.　そらよッ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11165", 256, TRUE);
+	OutputLine(NULL, "「甘いぜ、沙都子！",
+			NULL, "“太天真了，沙都子！", Line_WaitForInput);
+	ModDrawCharacter(4, 1, "portrait/kei3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11166", 256, TRUE);
+	OutputLine(NULL, "　トラップがあるとわかって飛び込む馬鹿がいるとでも思ったかぁ！！",
+			NULL, " 你以为有哪个笨蛋明知有陷阱还会往里跳吗！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11167", 256, TRUE);
+	OutputLine(NULL, "　そらよッ！！」",
+			NULL, " 看招！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "vse_jump", 256, 64);
+	DrawScene("white", 250 );
+	DrawSceneWithMask( "black", "down", 0, 0, 500 );
+
+//魅音rvS23/03/VTH_mion1098.「あ、あ！！　と、飛び降りたぁ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1098", 256, TRUE);
+	OutputLine(NULL, "「あ、あ！！　と、飛び降りたぁ！！」",
+			NULL, "“啊，啊！！跳，跳下去了！！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse20", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 250 );
+	DrawScene("background/oki_pool3", 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 1000 );
+	PlaySE(3, "vse_whistle", 256, 64);
+
+//rピーーーっと危険を咎めるホイッスルが鳴り響くが何のその！　俺はスライダーの途中で飛び降り、見事に沙都子のトラップを回避するのだった…！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ピーーーっと危険を咎めるホイッスルが鳴り響くが何のその！　俺はスライダーの途中で飛び降り、見事に沙都子のトラップを回避するのだった…！！",
+			NULL, "警告危险行为的哨声“哔——”地响了起来，可我哪管得了这些！我从滑梯中途跳下，漂亮地躲开了沙都子的陷阱……！！", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	ModDrawCharacter(4, 12, "portrait/ha4_def_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//羽入rvS23/12/VTH_hanyu1020.「良い子の皆さん、絶対に真似しないでなのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1020", 256, TRUE);
+	OutputLine(NULL, "「良い子の皆さん、絶対に真似しないでなのです」",
+			NULL, "“好孩子们，绝对不要模仿哦。”", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	ModDrawCharacter(3, 4, "portrait/sa7_hannbeso_a1_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/oki_pool3", 1000 );
+
+//沙都子rvS23/04/VTH_satoko1034.「く、や、やりますのねぇ！！kvS23/04/VTH_satoko1035.　追いますわよ、梨花ぁ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1034", 256, TRUE);
+	OutputLine(NULL, "「く、や、やりますのねぇ！！",
+			NULL, "“可恶，干、干得漂亮嘛！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1035", 256, TRUE);
+	OutputLine(NULL, "　追いますわよ、梨花ぁ！！」",
+			NULL, " 快追，梨花！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "portrait/ri7_komaru_a2_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1045.「……その前に網をお片付けしないといけませんのですよ。み～☆」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1045", 256, TRUE);
+	OutputLine(NULL, "「……その前に網をお片付けしないといけませんのですよ。み～☆」",
+			NULL, "“……在那之前必须先把网收好才行哦。咪～”", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "left", 0, 0, 500 );
+	ModDrawCharacter(4, 3, "portrait/me6_odoroki_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawSceneWithMask( "background/oki_pool1", "left", 0, 0, 500 );
+
+//魅音rvS23/03/VTH_mion1099.「ああっ？！　圭ちゃんがプールの出口に！kvS23/03/VTH_mion1100.　まさか、プールを出て行く気？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1099", 256, TRUE);
+	OutputLine(NULL, "「ああっ？！　圭ちゃんがプールの出口に！",
+			NULL, "“啊？！小圭跑到泳池出口去了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1100", 256, TRUE);
+	OutputLine(NULL, "　まさか、プールを出て行く気？！」",
+			NULL, " 难道，他打算离开泳池？！”", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "kyupirn", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 250 );
+	DrawBustshot(4, "eye/eye_base_r", 0, -130, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 1, 200, TRUE );
+	PlaySE(3, "vse_wrap", 256, 64);
+	DrawBustshot(3, "eye/eye_ri", 800, -130, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 2, 200, FALSE );
+	MoveBustshot( 3, NULL, 0, -130, 0, 2, 500, TRUE );
+	Wait( 250 );
+
+//梨花rvS23/05/VTH_rika1046.「させないわ、――羽入っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1046", 256, TRUE);
+	OutputLine(NULL, "「させないわ、——羽入っ！」",
+			NULL, "“休想得逞，——羽入！”", Line_Normal);
+	ClearMessage();
+
+	DrawBustshot(6, "eye/eye_base_b", 0, 30, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 3, 200, TRUE );
+	PlaySE(3, "vse_wrap", 256, 64);
+	DrawBustshot(5, "eye/eye_ha", -800, 30, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 4, 200, FALSE );
+	MoveBustshot( 5, NULL, 0, 30, 0, 2, 500, TRUE );
+	Wait( 250 );
+
+//羽入rvS23/12/VTH_hanyu1021.「時間よとまれ、シュークリームのために！kvS23/12/VTH_hanyu1022.　神の世界、展開！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1021", 256, TRUE);
+	OutputLine(NULL, "「時間よとまれ、シュークリームのために！",
+			NULL, "“时间啊停止吧，为了奶油泡芙！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1022", 256, TRUE);
+	OutputLine(NULL, "　神の世界、展開！！」",
+			NULL, " 神的领域，展开！！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "taitoru", 256, 64);
+	DrawBustshot( 7, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	FadeBustshot( 7, FALSE, 0, 0, 0, 0, 100, FALSE );
+	MoveBustshot( 3, NULL, -50, -130, 0, 2, 200, FALSE );
+	MoveBustshot( 5, NULL, 50, 30, 0, 2, 200, TRUE );
+	MoveBustshot( 3, NULL, 800, -130, 0, 2, 500, FALSE );
+	MoveBustshot( 5, NULL, -800, 30, 0, 2, 500, FALSE );
+	DrawScene("black", 500 );
+	DrawScene("white", 3000 );
+	Negative( 100, FALSE );
+	DrawBustshot( 3, "waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 100, FALSE );
+	DrawScene("background/oki_pool2", 250 );
+	DrawSprite( 4, "portrait/kei3_def1_0", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "kyupirn", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 1000 );
+	PlayBGM( 1, "vse_clock", 128, 0 );
+	ModSetLayerFilter(5, 196, "none");
+	ModDrawCharacter(5, 12, "portrait/ha4_def_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 35, 200, TRUE );
+
+//羽入rvS23/12/VTH_hanyu1023.「……で、この間に圭一の向きを、出口からプールに向けて……。k|yvS23/12/VTH_hanyu1023_1.よいしょ、よいしょ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1023", 256, TRUE);
+	OutputLine(NULL, "「……で、この間に圭一の向きを、出口からプールに向けて……。",
+			NULL, "“……好了，趁现在把圭一的身体从朝向出口，转成朝向泳池……。", Line_WaitForInput);
+	PlaySE(3, "fly", 256, 64);
+	FadeSprite( 4, 100, TRUE );
+	DrawSprite( 4, "portrait/kei3_def1_reverse_0", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 19, 100, TRUE );
+	DrawSprite( 5, "portrait/ha4_warai_0", NULL, -670, -240, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 35, 200, TRUE );
+	MoveSprite( 5, 230, -240, 0, 0, 0, 0, 0, 1500, FALSE );
+	MoveSprite( 4, 800, 0, 0, 0, 0, 0, 0, 1500, FALSE );
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1023_1", 256, TRUE);
+	OutputLine(NULL, "よいしょ、よいしょ」",
+			NULL, " 嘿咻，嘿咻”", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+	FadeSprite( 5, 10, TRUE );
+	DrawBustshot( 3, "waku_w", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 21, 100, FALSE );
+	ModDrawCharacter(4, 1, "portrait/kei3_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	ModDrawCharacter(5, 12, "portrait/ha4_warai_", "0", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 35, 100, FALSE );
+	DrawScene("background/oki_pool1", 1000 );
+
+//羽入rvS23/12/VTH_hanyu1024.「――はい、解除！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>羽入</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 12, "ps3/s23/12/vth_hanyu1024", 256, TRUE);
+	OutputLine(NULL, "「——はい、解除！」",
+			NULL, "“——好，解除！”", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(5, FALSE, 0, 0, 0, 0, 200, TRUE);
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "kyupirn", 256, 64);
+	FadeFilm( 250, FALSE );
+	FadeBustshot( 3, FALSE, 0, 0, 0, 0, 250, FALSE );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	PlayBGM( 1, "semi", 128, 0 );
+	ModDrawCharacter(4, 1, "portrait/kei3_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS23/01/VTH_k11168.「はっはっはっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11168", 256, TRUE);
+	OutputLine(NULL, "「はっはっはっ！」",
+			NULL, "“哈哈哈！”", Line_Normal);
+	ClearMessage();
+
+//圭一rvS23/01/VTH_k11169.//「さらばだ諸君っ、——のわはっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11169", 256, TRUE);
+	OutputLine(NULL, "「さらばだ諸君っ、——のわはっ！」",
+			NULL, "“诸位再见了，——呜哇哈！”", Line_Continue);
+	DrawSprite( 8, "portrait/kei3_warai_0", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 20, 25, TRUE );
+	FadeBustshot( 4, FALSE, 0, 0, 0, 0, 25, TRUE );
+	PlaySE(3, "vse_jump", 256, 64);
+	MoveSprite( 8, 700, 0, 0, 0, 0, 0, 0, 500, TRUE );
+	OutputLine(NULL, "",
+			NULL, "", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "addse20", 256, 64);
+	DrawSceneWithMask( "white", "c", 0, 0, 500 );
+	DrawScene("black", 500 );
+	PlayBGM(2, "hm01_06", 128, 0);
+
+//圭一rvS23/01/VTH_k11170.「な、なんでだ？kvS23/01/VTH_k11171.　俺、出口に向かっていたはずなのに……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11170", 256, TRUE);
+	OutputLine(NULL, "「な、なんでだ？",
+			NULL, "“为，为什么？", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11171", 256, TRUE);
+	OutputLine(NULL, "　俺、出口に向かっていたはずなのに……？」",
+			NULL, " 我明明应该是朝着出口走的啊……？”", Line_Normal);
+	ClearMessage();
+
+//沙都子rvS23/04/VTH_satoko1036.「お待ちなさいな、圭一さぁぁん！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1036", 256, TRUE);
+	OutputLine(NULL, "「お待ちなさいな、圭一さぁぁん！！」",
+			NULL, "“你给我站住，圭一！！”", Line_Normal);
+	ClearMessage();
+
+//圭一rvS23/01/VTH_k11172.「くっ、ふ、ふはははは！kvS23/01/VTH_k11173.　甘い、甘いわ！kvS23/01/VTH_k11174.　今の俺に追いつける者などこの世には存在しないぃぃ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11172", 256, TRUE);
+	OutputLine(NULL, "「くっ、ふ、ふはははは！",
+			NULL, "“哼，呵呵，哈哈哈哈！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11173", 256, TRUE);
+	OutputLine(NULL, "　甘い、甘いわ！",
+			NULL, " 天真，太天真了！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11174", 256, TRUE);
+	OutputLine(NULL, "　今の俺に追いつける者などこの世には存在しないぃぃ！！」",
+			NULL, " 能追上现在的我的人，在这个世界上是不存在的！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 2, "sprite/re5_komaru_a2_", "0", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawSceneWithMask( "background/oki_pool2", "right", 0, 0, 500 );
+
+//レナrvS23/02/VTH_rena1044.「け、圭一くん、すばしっこい～～、kvS23/02/VTH_rena1045.待ってぇえぇ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1044", 256, TRUE);
+	OutputLine(NULL, "「け、圭一くん、すばしっこい～～、",
+			NULL, "“圭、圭一君，好灵活啊～～，", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1045", 256, TRUE);
+	OutputLine(NULL, "待ってぇえぇ…！」",
+			NULL, "等等啊……！”", Line_Normal);
+	ClearMessage();
+
+//圭一rvS23/01/VTH_k11175.「そいつぁ聞けねぇ相談だぜー？！kvS23/01/VTH_k11176.　何しろ、あと２時間逃げ切れば、世界中のギャルにモテモテになる魔力が授かれるんだからなぁ！kvS23/01/VTH_k11177.　この試練を見事乗り越えて、是が非でもモテモテになってやるぜ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11175", 256, TRUE);
+	OutputLine(NULL, "「そいつぁ聞けねぇ相談だぜー？！",
+			NULL, "“那可办不到啊——？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11176", 256, TRUE);
+	OutputLine(NULL, "　何しろ、あと２時間逃げ切れば、世界中のギャルにモテモテになる魔力が授かれるんだからなぁ！",
+			NULL, " 毕竟只要再躲上2个小时，我就能得到让全世界的女孩都喜欢我的魔力了！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11177", 256, TRUE);
+	OutputLine(NULL, "　この試練を見事乗り越えて、是が非でもモテモテになってやるぜ！！」",
+			NULL, " 我要漂亮地度过这个试炼，无论如何都要变得超级受欢迎！！”", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 3, "sprite/me6_ikari_a1_", "0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1101.「何バカな夢見てんのー！！kvS23/03/VTH_mion1102.　そんなうまい話、あるわけないでしょー？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1101", 256, TRUE);
+	OutputLine(NULL, "「何バカな夢見てんのー！！",
+			NULL, "“做什么白日梦呢——！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1102", 256, TRUE);
+	OutputLine(NULL, "　そんなうまい話、あるわけないでしょー？！」",
+			NULL, " 怎么可能会有那种好事嘛——？！”", Line_Normal);
+	ClearMessage();
+
+//圭一rvS23/01/VTH_k11178.「それがあるんだよ、大有りなんだよ！！kvS23/01/VTH_k11179.　その証拠に、お前らは俺のこの海パンを脱がせようと襲い掛かってきてるじゃねぇか！kvS23/01/VTH_k11180.　この海パンの魔力を成就させるには、モテない男たちの怨念から逃れる試練を乗り越えなきゃならねぇんだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11178", 256, TRUE);
+	OutputLine(NULL, "「それがあるんだよ、大有りなんだよ！！",
+			NULL, "“怎么没有，大大的有啊！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11179", 256, TRUE);
+	OutputLine(NULL, "　その証拠に、お前らは俺のこの海パンを脱がせようと襲い掛かってきてるじゃねぇか！",
+			NULL, " 作为证据，你们不就是为了脱掉我这条泳裤才扑过来的吗！", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11180", 256, TRUE);
+	OutputLine(NULL, "　この海パンの魔力を成就させるには、モテない男たちの怨念から逃れる試練を乗り越えなきゃならねぇんだ」",
+			NULL, " 要让这条泳裤的魔力生效，我就必须挺过这逃离不受欢迎男人们怨念的试炼啊”", Line_Normal);
+	ClearMessage();
+
+//圭一rvS23/01/VTH_k11181.「そう、魅音たちは今、モテない男たちの怨念に駆り立てられてるだけなのさ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>圭一</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s23/01/vth_k11181", 256, TRUE);
+	OutputLine(NULL, "「そう、魅音たちは今、モテない男たちの怨念に駆り立てられてるだけなのさ！！」",
+			NULL, "“没错，魅音你们现在只是被不受欢迎的男人们的怨念驱使着而已！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(6, 4, "sprite/sa7_akireru_a1_", "0", -300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 200, TRUE );
+
+//沙都子rvS23/04/VTH_satoko1037.「何を勝手な脳内ストーリー作ってやがりますの…！！kvS23/04/VTH_satoko1038.　あの、絶好調な笑顔が最高にムカつきましてよー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1037", 256, TRUE);
+	OutputLine(NULL, "「何を勝手な脳内ストーリー作ってやがりますの…！！",
+			NULL, "“你擅自编了个什么离谱故事啊……！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1038", 256, TRUE);
+	OutputLine(NULL, "　あの、絶好調な笑顔が最高にムカつきましてよー！！」",
+			NULL, " 那个状态绝佳的笑容真是太让人火大了——！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 5, "sprite/ri7_niko_a1_", "0", 300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1047.「……こうして圭一は２時間逃げ切って、アブない魔空間のひとりウットリ住人になって、女の子に興味がなくなってしまうのでした。にぱ～☆」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1047", 256, TRUE);
+	OutputLine(NULL, "「……こうして圭一は２時間逃げ切って、アブない魔空間のひとりウットリ住人になって、女の子に興味がなくなってしまうのでした。にぱ～☆」",
+			NULL, "“……就这样，圭一又逃了2个小时，成了那个危险魔法世界里独自陶醉的居民，从此对女孩子失去了兴趣。咪啪～”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 3, "sprite/me6_odoroki_a1_", "0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1103.「そんなの駄目ぇえぇ！！！kvS23/03/VTH_mion1104.　圭ちゃん、大人しく捕まってったらぁあー！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1103", 256, TRUE);
+	OutputLine(NULL, "「そんなの駄目ぇえぇ！！！",
+			NULL, "“那可不行啊啊啊！！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1104", 256, TRUE);
+	OutputLine(NULL, "　圭ちゃん、大人しく捕まってったらぁあー！！」",
+			NULL, " 小圭，你给我乖乖被抓啦——！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 2, "sprite/re5_nande_a1_", "0", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1046.「む、無理だよ魅ぃちゃん…。kvS23/02/VTH_rena1047.本気の圭一くんが相手じゃ、とても捕まえられない…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1046", 256, TRUE);
+	OutputLine(NULL, "「む、無理だよ魅ぃちゃん…。",
+			NULL, "“不、不行啊小魅……。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1047", 256, TRUE);
+	OutputLine(NULL, "本気の圭一くんが相手じゃ、とても捕まえられない…」",
+			NULL, "对上认真的圭一君，根本抓不到他啊…”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(6, 4, "sprite/sa7_odoroki_a1_", "0", -300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 200, TRUE );
+
+//沙都子rvS23/04/VTH_satoko1039.「ましてや、いかがわしい目的が掛かっていますものね…！kvS23/04/VTH_satoko1040.　普段の３割増ですばしっこくなってましてよ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1039", 256, TRUE);
+	OutputLine(NULL, "「ましてや、いかがわしい目的が掛かっていますものね…！",
+			NULL, "“何况他还有那种不怀好意的目的……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1040", 256, TRUE);
+	OutputLine(NULL, "　普段の３割増ですばしっこくなってましてよ！！」",
+			NULL, " 简直比平时敏捷了百分之三十还要多啊！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 5, "sprite/ri7_komaru_a2_", "0", 300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//梨花rvS23/05/VTH_rika1048.「……超すけべぇ魂でパワーアップなのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>梨花</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s23/05/vth_rika1048", 256, TRUE);
+	OutputLine(NULL, "「……超すけべぇ魂でパワーアップなのです」",
+			NULL, "“……是被超级色鬼之魂强化了呢”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 3, "sprite/me6_ikari_a1_", "0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1105.「レナ、あんただってすべすべ素肌の圭ちゃん、お持ち返りしたいでしょ？！kvS23/03/VTH_mion1106.　かぁいいモードはどうしたのよ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1105", 256, TRUE);
+	OutputLine(NULL, "「レナ、あんただってすべすべ素肌の圭ちゃん、お持ち返りしたいでしょ？！",
+			NULL, "“蕾娜，你也想把光溜溜的小圭带回家吧？！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1106", 256, TRUE);
+	OutputLine(NULL, "　かぁいいモードはどうしたのよ！！」",
+			NULL, " 你的好～可爱模式去哪了啊！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 2, "sprite/re5_bikkuri_a1_", "0", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//レナrvS23/02/VTH_rena1048.「はぅ～、素手じゃお持ち返りできないもんー。kvS23/02/VTH_rena1049.お持ち返りするにはリヤカーとかバトル用の鉈とかがないと～。k|yvS23/02/VTH_rena1050.持ってきてもいいのかな、かな…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>蕾娜</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1048", 256, TRUE);
+	OutputLine(NULL, "「はぅ～、素手じゃお持ち返りできないもんー。",
+			NULL, "“哈呜～，空手带不回去嘛。", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1049", 256, TRUE);
+	OutputLine(NULL, "お持ち返りするにはリヤカーとかバトル用の鉈とかがないと～。",
+			NULL, "要把他带回家，得有板车或者战斗用的柴刀才行呀～。", Line_WaitForInput);
+	ModDrawCharacter(4, 2, "sprite/re5_hig_muhyou_a1_", "0", 100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	ModPlayVoiceLS(4, 2, "ps3/s23/02/vth_rena1050", 256, TRUE);
+	OutputLine(NULL, "持ってきてもいいのかな、かな…？」",
+			NULL, "我可以带过来吗，可以吗…？”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 3, "sprite/me6_odoroki_a1_", "0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1107.「い、いや、それは駄目だね、ウンウン！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1107", 256, TRUE);
+	OutputLine(NULL, "「い、いや、それは駄目だね、ウンウン！！」",
+			NULL, "“不，不行，那个可不行啊，嗯嗯！！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(6, 4, "sprite/sa7_yareyare_a1_", "0", -300, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 17, 200, TRUE );
+
+//沙都子rvS23/04/VTH_satoko1041.「しかし、これだけ広いと４人で捕まえるのは難しいですわ…！kvS23/04/VTH_satoko1042.　もっと応援が必要でしてよ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>沙都子</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1041", 256, TRUE);
+	OutputLine(NULL, "「しかし、これだけ広いと４人で捕まえるのは難しいですわ…！",
+			NULL, "“可是泳池这么大，光靠我们4个人很难抓住他……！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 4, "ps3/s23/04/vth_satoko1042", 256, TRUE);
+	OutputLine(NULL, "　もっと応援が必要でしてよ？！」",
+			NULL, " 需要更多的帮手才行？！”", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 3, "sprite/me6_majime_a1_", "0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//魅音rvS23/03/VTH_mion1108.「そ、そうか…、人数を増やすって手があったね…！！k|yvS23/03/VTH_mion1109.　これも全て圭ちゃんのため！！kvS23/03/VTH_mion1110.　我が部に禁じ手ナシ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>魅音</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1108", 256, TRUE);
+	OutputLine(NULL, "「そ、そうか…、人数を増やすって手があったね…！！",
+			NULL, "“是、是啊…还有增加人数这招呢…！！", Line_WaitForInput);
+	ModDrawCharacter(5, 3, "sprite/me6_ikari_a1_", "0", -100, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1109", 256, TRUE);
+	OutputLine(NULL, "　これも全て圭ちゃんのため！！",
+			NULL, " 这一切也都是为了小圭！！", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "ps3/s23/03/vth_mion1110", 256, TRUE);
+	OutputLine(NULL, "　我が部に禁じ手ナシ！！」",
+			NULL, " 我们社团可没有什么禁招！！”", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(9, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(8, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}
