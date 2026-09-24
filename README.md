@@ -137,7 +137,7 @@ HigurashiEp04_Data/StreamingAssets/Update
 
 - 大部分文本由 GPT-5.6 Sol 翻译及精校。
 - 羞晒篇、澪尽篇 PS2 版等剩余篇章由 GPT-6 Sol 独立翻译。
-- 感谢[贴吧用户](https://tieba.baidu.com/home/main?id=tb.1.e572eed9.wI7i7SaPPXhZMRSeh39JyA%3Ft%3D1790237898&fr=pb)提供剩余篇章的中文图片支持。
+- 感谢[贴吧用户：Tokiuta](https://tieba.baidu.com/home/main?id=tb.1.e572eed9.wI7i7SaPPXhZMRSeh39JyA%3Ft%3D1790237898&fr=pb)提供剩余篇章的中文图片支持。
 - 部分翻译文本来源：[BV1AN7C66EZF](https://www.bilibili.com/video/BV1AN7C66EZF)（UP主：人工大黑）
 - 中文字形来源：[BV12ecbz1EDq](https://www.bilibili.com/video/BV12ecbz1EDq)（UP主：-雪原）
 - 特别感谢 GitHub 用户 [@cattopo](https://github.com/cattopo) 在 [Issue #1](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/issues/1) 中提供补充缺失字形的字体文件，帮助解决游戏中的缺字显示问题。
