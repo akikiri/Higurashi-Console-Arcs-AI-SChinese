@@ -54,6 +54,7 @@ Higurashi-Console-Arcs-AI-SChinese/
 ├─ CONTRIBUTING.md                   校对、修改及提交说明
 ├─ CHANGELOG.md                      版本更新记录
 └─ HigurashiEp04_Data/
+   ├─ chapterjump.json                附加内容中的章节跳转列表
    ├─ localization.json              07th-Mod 界面及菜单文本
    ├─ tips.json                      Tips 名称与相关索引文本
    └─ StreamingAssets/

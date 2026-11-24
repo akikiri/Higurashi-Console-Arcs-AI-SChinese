@@ -15,7 +15,10 @@ HigurashiEp04_Data/StreamingAssets/Update
 ```text
 HigurashiEp04_Data/localization.json
 HigurashiEp04_Data/tips.json
+HigurashiEp04_Data/chapterjump.json
 ```
+
+`chapterjump.json` 的 `English` 字段对应简体中文显示。校对时保留日文标签、条目顺序和跳转字段。章节跳转页的返回按钮由 `tools/patch_extras_button.py` 写入发布包的 `sharedassets0.assets`。
 
 ## 脚本修改规则
 
