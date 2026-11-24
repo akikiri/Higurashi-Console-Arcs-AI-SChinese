@@ -116,6 +116,8 @@ SteamLibrary\steamapps\common\Higurashi 04 - Himatsubushi
 
 安装主补丁后，可以另外安装[设置页汉化](optional/config-zh/README.md)。
 
+使用 07th-Mod Console Arcs v10.2.0 的 Windows 玩家可以另外安装 [PS2 语音口型补偿](optional/ps2-lipsync/README.md)。
+
 仓库中的未打包文件主要用于公开校对与协作。由于 `sharedassets0.assets` 超过 GitHub 普通 Git 文件的大小限制，仓库源码不包含完整字体资产，不能代替 Release 中的安装包。
 
 ## 参与校对
