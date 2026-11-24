@@ -113,6 +113,8 @@ SteamLibrary\steamapps\common\Higurashi 04 - Himatsubushi
 
 启动游戏后，07th-Mod 会根据更新后的 `Update` 源脚本自动重新编译，无需手动删除已编译脚本。详细安装、卸载和故障排除说明见压缩包内的 `README_安装说明.txt`。
 
+安装主补丁后，可以另外安装[设置页汉化](optional/config-zh/README.md)。
+
 仓库中的未打包文件主要用于公开校对与协作。由于 `sharedassets0.assets` 超过 GitHub 普通 Git 文件的大小限制，仓库源码不包含完整字体资产，不能代替 Release 中的安装包。
 
 ## 参与校对
