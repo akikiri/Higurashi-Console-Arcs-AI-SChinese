@@ -4,11 +4,11 @@
 
 ## 安装
 
-1. 关闭游戏，解压可选补丁。
-2. 双击 `install.cmd`，粘贴含有 `HigurashiEp04.exe` 的游戏目录。
-3. 看到「安装完成」后启动游戏，在 Mod 菜单使用主机版立绘并开启口型同步。播放澪尽篇 PS2 版中较轻的语音时会自动补偿。
+1. 关闭游戏，备份原来的 `HigurashiEp04_Data/Managed/Assembly-CSharp.dll`。
+2. 把 ZIP 解压到含有 `HigurashiEp04.exe` 的游戏目录，确认覆盖 `HigurashiEp04_Data/Managed/Assembly-CSharp.dll`。
+3. 启动游戏，在 Mod 菜单使用主机版立绘并开启口型同步。播放澪尽篇 PS2 版语音时会自动应用口型补偿。
 
-安装器会检查当前 DLL 是否对应此版本，并备份到游戏目录下的 `HigurashiEp04_Data/Managed/Assembly-CSharp.dll.ps2-lipsync-backup`。要恢复原版口型，关闭游戏并双击 `restore.cmd`，输入同一个游戏目录。
+要恢复原版口型，关闭游戏后把备份的 DLL 覆盖回同一位置。
 
 ## 源码
 
