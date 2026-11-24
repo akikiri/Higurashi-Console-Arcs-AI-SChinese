@@ -1,0 +1,143 @@
+--- a/Assets.Scripts.Core.Scene/SceneController.cs
++++ b/Assets.Scripts.Core.Scene/SceneController.cs
+@@ -77,7 +77,8 @@
+ 
+ 		public Scene MODActiveScene => GetActiveScene();
+ 
+-		private float expression2Threshold = .7f;
++		private const float DefaultFullOpenThreshold = .70f;
++		private float expression2Threshold = DefaultFullOpenThreshold;
+ 		private float expression1Threshold = .3f;
+ 		private bool forceComputedLipsync = true;
+ 
+@@ -937,7 +938,90 @@
+ 			}
+ 		}
+ 
+-		private IEnumerator MODComputedLipSync(int character, int audiolayer, AudioClip audioClip, ulong coroutineId, Texture2D exp2, Texture2D exp3, Texture2D exp4)
++		private static float GetPs2LipSyncGain(AudioClip audioClip, int framesPerChunk, int numChunks)
++		{
++			const int chunksPerRead = 16;
++			const int minimumActiveChunks = 5;
++			const float maximumGain = 2f;
++			const float targetSpeechPeak = .50f;
++
++			if (numChunks < minimumActiveChunks)
++			{
++				return 1f;
++			}
++
++			int samplesPerChunk = framesPerChunk * audioClip.channels;
++			var chunkPeaks = new float[numChunks];
++			var samples = new float[Math.Min(chunksPerRead, numChunks) * samplesPerChunk];
++
++			try
++			{
++				for (int first = 0; first < numChunks; first += chunksPerRead)
++				{
++					int chunksToRead = Math.Min(chunksPerRead, numChunks - first);
++					if (chunksToRead * samplesPerChunk != samples.Length)
++					{
++						samples = new float[chunksToRead * samplesPerChunk];
++					}
++
++					audioClip.GetData(samples, first * framesPerChunk);
++					for (int chunk = 0; chunk < chunksToRead; chunk++)
++					{
++						int start = chunk * samplesPerChunk;
++						float peak = 0f;
++						for (int sample = start; sample < start + samplesPerChunk; sample++)
++						{
++							if (samples[sample] > peak)
++							{
++								peak = samples[sample];
++							}
++						}
++						chunkPeaks[first + chunk] = peak;
++					}
++				}
++			}
++			catch (Exception)
++			{
++				return 1f;
++			}
++
++			Array.Sort(chunkPeaks);
++
++			// Ignore most pauses and background noise when estimating the speech level.
++			float activityFloor = Math.Max(.025f, .12f * chunkPeaks[numChunks - 1]);
++			int firstActive = Array.BinarySearch(chunkPeaks, activityFloor);
++			if (firstActive < 0)
++			{
++				firstActive = ~firstActive;
++			}
++			else
++			{
++				while (firstActive > 0 && chunkPeaks[firstActive - 1] >= activityFloor)
++				{
++					firstActive--;
++				}
++			}
++
++			int activeCount = numChunks - firstActive;
++			if (activeCount < minimumActiveChunks)
++			{
++				return 1f;
++			}
++
++			float speechPeak = chunkPeaks[firstActive + (int)(.80 * (activeCount - 1))];
++			float gain = Math.Min(maximumGain, targetSpeechPeak / speechPeak);
++
++			// Limit how many frames can newly reach the default fully open expression.
++			float sustainedPeak = chunkPeaks[(int)(.85 * (numChunks - 1))];
++			if (sustainedPeak > 0f)
++			{
++				gain = Math.Min(gain, DefaultFullOpenThreshold / sustainedPeak);
++			}
++
++			return Math.Max(1f, gain);
++		}
++
++		private IEnumerator MODComputedLipSync(int character, int audiolayer, AudioClip audioClip, ulong coroutineId, Texture2D exp2, Texture2D exp3, Texture2D exp4, bool compensatePs2)
+ 		{
+ 			const float CHUNK_LENGTH_SECONDS = .05f;
+ 
+@@ -951,6 +1035,7 @@
+ 
+ 			// If there is a leftover chunk (this happens if there is a remainder during the below division), it will be excluded/skipped.
+ 			int numChunks = numFrames / framesPerChunk;
++			float lipSyncGain = compensatePs2 ? GetPs2LipSyncGain(audioClip, framesPerChunk, numChunks) : 1f;
+ 
+ 			bool voiceStartedPlaying = false;
+ 
+@@ -1009,6 +1094,9 @@
+ 						}
+ 					}
+ 
++					// Apply gain to mouth detection only. The audio clip and its playback level stay unchanged.
++					max *= lipSyncGain;
++
+ 					//Use the max to determine what mouth sprite should be displayed
+ 					if (max > expression2Threshold)
+ 					{
+@@ -1049,9 +1137,10 @@
+ 			Texture2D exp3 = group.halfOpen_1;
+ 			Texture2D exp2 = group.fullOpen_2;
+ 
++			bool compensatePs2 = audiofile.StartsWith("ps2/", StringComparison.OrdinalIgnoreCase);
+ 			if (forceComputedLipsync)
+ 			{
+-				yield return StartCoroutine(MODComputedLipSync(character, audiolayer, audioClip, coroutineId, exp2, exp3, exp4));
++				yield return StartCoroutine(MODComputedLipSync(character, audiolayer, audioClip, coroutineId, exp2, exp3, exp4, compensatePs2));
+ 			}
+ 			else // If the spectrum file doesn't exist, use the "computed lipsync" method
+ 			{
+@@ -1063,7 +1152,7 @@
+ 				}
+ 				else
+ 				{
+-					yield return StartCoroutine(MODComputedLipSync(character, audiolayer, audioClip, coroutineId, exp2, exp3, exp4));
++					yield return StartCoroutine(MODComputedLipSync(character, audiolayer, audioClip, coroutineId, exp2, exp3, exp4, compensatePs2));
+ 				}
+ 			}
+ 
