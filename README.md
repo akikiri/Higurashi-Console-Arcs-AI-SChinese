@@ -78,7 +78,7 @@ Higurashi-Console-Arcs-AI-SChinese/
 
 仓库也不包含 `HigurashiEp04_Data/sharedassets0.assets`。该文件保存本补丁使用的中文字形，但体积超过 GitHub 普通 Git 文件限制，请从 Release 安装包取得。
 
-澪尽篇 PS2 版使用 `omot_*` 中的 `LConsoleArc==10` 专用分支。为更直观地显示它与澪尽表篇的区别，v2.0.0 Release 另附独立的[澪尽篇 PS2 差异淡蓝色补丁](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.0.0)。先安装主补丁，再按可选包说明覆盖即可；主补丁不含淡蓝色标记。
+澪尽篇 PS2 版使用 `omot_*` 中的 `LConsoleArc==10` 专用分支。可选淡蓝色补丁标记这些分支中的专有台词，方便与澪尽篇·表对照。
 
 **校对提醒：**羞晒篇和澪尽篇 PS2 版尚未经过实机人工校对，AI 翻译可能不准确。欢迎通过 Issue 指出错译、漏译或显示问题。
 
@@ -96,7 +96,13 @@ Higurashi-Console-Arcs-AI-SChinese/
 
 ## 下载与安装
 
-请从 [v2.0.0 Release](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.0.0) 下载主补丁 ZIP；淡蓝色补丁是同页的独立可选附件。
+请从 [v2.1.0 Release](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/releases/tag/v2.1.0) 下载所需的 ZIP。
+
+| 包 | 内容 |
+| --- | --- |
+| 主补丁 | 追加篇章的剧情、菜单、字形与图片汉化，包含本次 72 张图片和两处剧情文本的修正。 |
+| 可选补丁 1 | 将澪尽篇 PS2 版专有台词标为淡蓝色。 |
+| 可选补丁 2 | 为澪尽篇 PS2 版语音提供实时口型补偿，适用于 Windows 上的 07th-Mod Console Arcs v10.2.0。 |
 
 安装前先关闭游戏，并备份：
 
@@ -114,9 +120,9 @@ SteamLibrary\steamapps\common\Higurashi 04 - Himatsubushi
 
 启动游戏后，07th-Mod 会根据更新后的 `Update` 源脚本自动重新编译，无需手动删除已编译脚本。详细安装、卸载和故障排除说明见压缩包内的 `README_安装说明.txt`。
 
-安装主补丁后，可以另外安装[设置页汉化](optional/config-zh/README.md)。
+两个可选包可按需安装。先装主补丁，再将选用的 ZIP 解压到同一个游戏目录。安装口型补偿前请备份原来的 DLL，具体路径见 [PS2 语音口型补偿说明](optional/ps2-lipsync/README.md)。
 
-使用 07th-Mod Console Arcs v10.2.0 的 Windows 玩家可以另外安装 [PS2 语音口型补偿](optional/ps2-lipsync/README.md)。
+旧版 v2.0.0 的[设置页汉化](optional/config-zh/README.md)仍可从对应说明取得。
 
 仓库中的未打包文件主要用于公开校对与协作。由于 `sharedassets0.assets` 超过 GitHub 普通 Git 文件的大小限制，仓库源码不包含完整字体资产，不能代替 Release 中的安装包。
 
@@ -148,10 +154,6 @@ HigurashiEp04_Data/StreamingAssets/Update
 - 特别感谢 GitHub 用户 [@cattopo](https://github.com/cattopo) 在 [Issue #1](https://github.com/akikiri/Higurashi-Console-Arcs-AI-SChinese/issues/1) 中提供补充缺失字形的字体文件，帮助解决游戏中的缺字显示问题。
 - 早期已发布篇章经过实机校对；羞晒篇和澪尽篇 PS2 版仍待实机人工校对。
 - 本补丁基于 07th-Mod 的 Steam 版主机章节功能制作。
-
-## 已知问题
-
-- 部分图片中的文字与正文译文存在差异。
 
 ## 说明
 
